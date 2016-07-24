@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gaël Varoquaux</title><link>http://gael-varoquaux.info/</link><description></description><atom:link href="http://gael-varoquaux.info/feeds/alexandre-abadie-gael-varoquaux.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 20 May 2016 00:00:00 +0200</lastBuildDate><item><title>Better Python compressed persistence in joblib</title><link>http://gael-varoquaux.info/programming/new_low-overhead_persistence_in_joblib_for_big_data.html</link><description>&lt;div class="section" id="problem-setting-persistence-for-big-data"&gt;
+&lt;h2&gt;Problem setting: persistence for big data&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://pythonhosted.org/joblib/"&gt;Joblib&lt;/a&gt; is a powerful Python package
+for management of computation: parallel computing, caching, and
+primitives for out-of-core computing. It is handy when working on so
+called &lt;strong&gt;big data&lt;/strong&gt;, that can consume more than the available RAM (several GB
+nowadays). In such situations, objects in the working space must be
+persisted to disk, for out-of-core computing, distribution of jobs, or
+caching.&lt;/p&gt;
+&lt;p&gt;An efficient strategy to write code dealing with big data is to rely on
+&lt;strong&gt;numpy arrays to hold large chunks of structured data&lt;/strong&gt;.
+The code then handles objects or arbitrary containers (list, dict) with
+numpy arrays. For data management, joblib provides transparent disk
+persistence that is very efficient with such objects. The internal
+mechanism relies on specializing &lt;a class="reference external" href="https://docs.python.org/3/library/pickle.html"&gt;pickle&lt;/a&gt; to handle better numpy
+arrays.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://github.com/joblib/joblib/pull/260"&gt;Recent improvements&lt;/a&gt;
+reduce vastly the memory overhead of data persistence.&lt;/p&gt;
+&lt;div class="section" id="limitations-of-the-old-implementation"&gt;
+&lt;h3&gt;Limitations of the old implementation&lt;/h3&gt;
+&lt;p&gt;❶ Dumping/loading persisted data &lt;strong&gt;with compression&lt;/strong&gt; was a memory hog,
+because of internal copies of data, limiting the maximum size
+of usable data with compressed persistence:&lt;/p&gt;
+&lt;img alt="" class="large" src="http://gael-varoquaux.info/programming/attachments/old_pickle_mem_profile.png" /&gt;
+&lt;p&gt;We see the increased memory usage during the calls to &lt;tt class="docutils literal"&gt;dump&lt;/tt&gt; and
+&lt;tt class="docutils literal"&gt;load&lt;/tt&gt; functions, profiled using the &lt;a class="reference external" href="https://pypi.python.org/pypi/memory_profiler"&gt;memory_profiler package&lt;/a&gt; with this &lt;a class="reference external" href="https://gist.github.com/aabadie/7cba3385406d1cec7d3dd4407ba3f164"&gt;gist&lt;/a&gt;&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;❷ Another drawback was that large numpy arrays (&amp;gt;10MB) contained in an
+arbitrary Python object were dumped in separate &lt;tt class="docutils literal"&gt;.npy&lt;/tt&gt; file, increasing
+the load on the file system &lt;a class="footnote-reference" href="#id4" id="id1"&gt;[1]&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;joblib&lt;/span&gt; &lt;span class="c1"&gt;# joblib version: 0.9.4&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;obj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ones&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;))]&lt;/span&gt;
+
+&lt;span class="c1"&gt;# 3 files are generated:&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;compress&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl_01.npy.z&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl_02.npy.z&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;load&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;]],&lt;/span&gt;
+ &lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;0.47006195&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.5436392&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.1218267&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.48592789&lt;/span&gt;&lt;span class="p"&gt;]])]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;!-- XXX: announce content of post earlier
+
+Let's now discover the new features and improvements that comes with
+version 0.10.0. After that, we'll compare speed and memory consumption with
+other libraries and discuss the results. Then we'll give some details about the
+new internal implementation. --&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-s-new-compression-low-memory"&gt;
+&lt;h2&gt;What’s new: compression, low memory…&lt;/h2&gt;
+&lt;p&gt;❶ &lt;strong&gt;Memory usage is now stable&lt;/strong&gt;:&lt;/p&gt;
+&lt;img alt="" src="http://gael-varoquaux.info/programming/attachments/new_pickle_mem_profile.png" /&gt;
+&lt;p&gt;❷ &lt;strong&gt;All numpy arrays are persisted in a single file&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;joblib&lt;/span&gt; &lt;span class="c1"&gt;# joblib version: 0.10.0 (dev)&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;obj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ones&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;))]&lt;/span&gt;
+
+&lt;span class="c1"&gt;# only 1 file is generated:&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;compress&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;load&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;]],&lt;/span&gt;
+ &lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;0.47006195&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.5436392&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.1218267&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.48592789&lt;/span&gt;&lt;span class="p"&gt;]])]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;❸ &lt;strong&gt;Persistence in a file handle&lt;/strong&gt; (ongoing work in a &lt;a class="reference external" href="https://github.com/joblib/joblib/pull/351"&gt;pull request&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;❹ &lt;strong&gt;More compression formats are available&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;Backward compatibility&lt;/p&gt;
+&lt;p&gt;Existing joblib users can be reassured: the new version is &lt;strong&gt;still
+compatible with pickles generated by older versions&lt;/strong&gt; (&amp;gt;= 0.8.4). You
+are encouraged to update (rebuild?) your cache if you want to take
+advantage of this new version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="benchmarks-speed-and-memory-consumption"&gt;
+&lt;h2&gt;Benchmarks: speed and memory consumption&lt;/h2&gt;
+&lt;p&gt;Joblib strives to have &lt;strong&gt;minimum dependencies&lt;/strong&gt; (only numpy) and to
+&lt;strong&gt;be agnostic to the input data&lt;/strong&gt;. Hence the goals are to deal with any
+kind of data while trying to &lt;strong&gt;be as efficient as possible with numpy arrays&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;To illustrate the benefits and cost of the new persistence implementation, let’s
+now compare a real life use case
+(&lt;a class="reference external" href="http://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_lfw_people.html"&gt;LFW dataset from scikit-learn&lt;/a&gt;)
+with different libraries:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Joblib, with 2 different versions,
+0.9.4 and master (dev),&lt;/li&gt;
+&lt;li&gt;Pickle&lt;/li&gt;
+&lt;li&gt;Numpy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img alt="" class="large" src="http://gael-varoquaux.info/programming/attachments/persistence_lfw_bench.png" /&gt;
+&lt;p&gt;The four first lines use non compressed persistence strategies, the last
+four use persistence with zlib/gzip &lt;a class="footnote-reference" href="#id5" id="id2"&gt;[2]&lt;/a&gt; strategies. Code to reproduce the
+benchmarks is available on this &lt;a class="reference external" href="https://gist.github.com/aabadie/2ba94d28d68f19f87eb8916a2238a97c"&gt;gist&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;⚫ &lt;strong&gt;Speed&lt;/strong&gt;: the results between joblib 0.9.4 and 0.10.0 (dev) are
+similar whereas &lt;strong&gt;numpy and pickle are clearly slower than joblib&lt;/strong&gt; in both
+compressed and non compressed cases.&lt;/p&gt;
+&lt;p&gt;⚫ &lt;strong&gt;Memory consumption&lt;/strong&gt;: Without compression, old and
+new joblib versions are the same; with compression, the new joblib version is
+much better than the old one.
+&lt;strong&gt;Joblib clearly outperforms pickle and numpy in terms of
+memory consumption&lt;/strong&gt;. This can be explained by the fact that numpy relies on
+pickle if the object is not a pure numpy array (a list or a dict with arrays for
+example), so in this case it inherits the memory drawbacks from pickle. When
+persisting pure numpy arrays (not tested here), numpy uses its internal save/load
+functions which are efficient in terms of speed and memory consumption.&lt;/p&gt;
+&lt;p&gt;⚫ &lt;strong&gt;Disk used&lt;/strong&gt;: results are as expected: non compressed files have
+the same size as the in-memory data; compressed files are smaller.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;Caveat Emptor: performance is data-dependent&lt;/p&gt;
+&lt;p&gt;Different data compress more or less easily. Speed and disk used will
+vary depending on the data. Key considerations are:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Fraction of data in arrays&lt;/strong&gt;: joblib is efficient if much of the
+data is contained in numpy arrays. The worst case scenario is
+something like a large dictionary of random numbers as keys and
+values.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Entropy of the data&lt;/strong&gt;: an array fully of zeros will compress well
+and fast. A fully random array will compress slowly, and use a lot
+of disk. Real data is often somewhere in the middle.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="extra-improvements-in-compressed-persistence"&gt;
+&lt;h2&gt;Extra improvements in compressed persistence&lt;/h2&gt;
+&lt;div class="section" id="new-compression-formats"&gt;
+&lt;h3&gt;New compression formats&lt;/h3&gt;
+&lt;p&gt;Joblib can use new compression formats based on Python standard library modules:
+&lt;strong&gt;zlib, gzip, bz2, lzma and xz&lt;/strong&gt; (the last 2 are available for Python
+greater than 3.3). &lt;strong&gt;The compressor is
+selected automatically when the file name has an explicit extension&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.z&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;   &lt;span class="c1"&gt;# zlib&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.z&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.gz&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;# gzip&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.gz&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.bz2&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;# bz2&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.bz2&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.lzma&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;# lzma&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.lzma&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.xz&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c1"&gt;# xz&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.xz&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;One can tune the compression level, setting the compressor explicitly:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.compressed&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;compress&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;zlib&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.compressed&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/tmp/test.compressed&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;compress&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;lzma&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.compressed&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On loading, joblib uses the magic number of the file to determine the
+right decompression method. This makes loading compressed pickle transparent:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;load&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.compressed&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;]],&lt;/span&gt;
+ &lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;0.47006195&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.5436392&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.1218267&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.48592789&lt;/span&gt;&lt;span class="p"&gt;]])]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Importantly, the generated compressed files use a &lt;strong&gt;standard
+compression file format&lt;/strong&gt;: for instance, regular command line tools (zip/unzip,
+gzip/gunzip, bzip2, lzma, xz) can be used to compress/uncompress a pickled file
+generated with joblib. Joblib will be able to load cache compressed with those
+tools.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;Toward more and faster compression&lt;/p&gt;
+&lt;p&gt;Specific compression strategies have been developped for fast
+compression, sometimes even faster than disk reads such as &lt;a class="reference external" href="http://google.github.io/snappy/"&gt;snappy&lt;/a&gt; , &lt;a class="reference external" href="http://www.blosc.org/"&gt;blosc&lt;/a&gt;, LZO or LZ4. With a file-like interface, they should be
+readily usable with joblib.&lt;/p&gt;
+&lt;p&gt;In the benchmarks above, loading and dumping with compression is
+slower than without (though only by a factor of 3 for loading). These
+were done on a computer with an SSD, hence with very fast I/O. In a
+situation with slower I/O, as &lt;strong&gt;on a network drive, compression could
+save time&lt;/strong&gt;. With faster compressors, compression will save time on most
+hardware.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="compressed-persistence-into-a-file-handle"&gt;
+&lt;h3&gt;Compressed persistence into a file handle&lt;/h3&gt;
+&lt;p&gt;Now that everything is stored in a
+single file using standard compression formats, joblib can
+persist in an &lt;a class="reference external" href="https://github.com/joblib/joblib/pull/351"&gt;open file handle&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;wb&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;    &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rb&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;load&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;]],&lt;/span&gt;
+ &lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;0.47006195&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.5436392&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.1218267&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.48592789&lt;/span&gt;&lt;span class="p"&gt;]])]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This also works with compression file object available in the standard library,
+like &lt;tt class="docutils literal"&gt;gzip.GzipFile&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;bz2.Bz2File&lt;/tt&gt; or &lt;tt class="docutils literal"&gt;lzma.LzmaFile&lt;/tt&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;gzip&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;gzip&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;GzipFile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.gz&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;wb&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;    &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.gz&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;gzip&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;GzipFile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.gz&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rb&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;load&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;]],&lt;/span&gt;
+ &lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;0.47006195&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.5436392&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.1218267&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.48592789&lt;/span&gt;&lt;span class="p"&gt;]])]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Be sure that you use a decompressor matching the internal compression when
+loading with the above method. If
+unsure, simply use &lt;tt class="docutils literal"&gt;open&lt;/tt&gt;, joblib will &lt;strong&gt;select the right decompressor&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.gz&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rb&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;     &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;load&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="p"&gt;]],&lt;/span&gt;
+ &lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;0.47006195&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.5436392&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.1218267&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.48592789&lt;/span&gt;&lt;span class="p"&gt;]])]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;Towards dumping to elaborate stores&lt;/p&gt;
+&lt;p&gt;Working with file handles opens the door to &lt;strong&gt;storing cache data in database blob or cloud
+storage such as Amazon S3, Amazon Glacier and Google Cloud Storage&lt;/strong&gt;
+(for instance via the Python package &lt;a class="reference external" href="https://github.com/boto/boto"&gt;boto&lt;/a&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="implementation"&gt;
+&lt;h2&gt;Implementation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;A Pickle Subclass&lt;/strong&gt;: joblib relies on subclassing the Python Pickler/Unpickler
+&lt;a class="footnote-reference" href="#id6" id="id3"&gt;[3]&lt;/a&gt;. These are state machines that walk the graph of nested objects (a
+dict may contain a list, that may contain…), creating a string
+representation of each object encountered. The new implementation
+proceeds as follows:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Pickling an arbitrary object&lt;/strong&gt;: when an &lt;tt class="docutils literal"&gt;np.ndarray&lt;/tt&gt; object is reached,
+instead of using the default pickling functions (__reduce__()), the joblib
+Pickler replaces in pickle stream the ndarray with a wrapper object containing
+all important array metadata (shape, dtype, flags). Then it writes the array
+content in the pickle file. Note that this step breaks the pickle
+compatibility. One benefit is that it enables using fast code for
+copyless handling of the numpy array. For compression, we pass chunks
+of the data to a compressor object (using the buffer protocol to avoid
+copies).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unpickling from a file&lt;/strong&gt;: when pickle reaches the array wrapper, as the
+object is in the pickle stream, the file handle is at the
+beginning of the array content. So at this point the Unpickler simply
+constructs an array based on the metadata contained in the wrapper and then
+fills the array buffer directly from the file. The object returned is the
+reconstructed array, the array wrapper being dropped. A benefit is that
+if the data is stored not compressed, &lt;strong&gt;the array can be directly memory
+mapped from the storage&lt;/strong&gt; (the mmap_mode option of &lt;a class="reference external" href="https://pythonhosted.org/joblib/generated/joblib.load.html"&gt;joblib.load&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This technique allows joblib to pickle all objects in a single file but also to
+have memory-efficient dump and load.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;A fast compression stream&lt;/strong&gt;: as the pickling refactoring opens the door
+to file objects usage, joblib is now able to persist data in any kind of file
+object: &lt;tt class="docutils literal"&gt;open&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;gzip.GzipFile&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;bz2.Bz2file&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;lzma.LzmaFile&lt;/tt&gt;. For
+performance reason and usability, the new joblib version uses its own file
+object &lt;tt class="docutils literal"&gt;BinaryZlibFile&lt;/tt&gt; for zlib compression. Compared to
+&lt;tt class="docutils literal"&gt;GzipFile&lt;/tt&gt;, it disables crc computation, which bring a performance gain of 15%.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;Speed penalties of on-the-fly writes&lt;/p&gt;
+&lt;p&gt;There’s also a small speed difference with dict/list objects between new/old
+joblib when using compression.
+The old version pickles the data inside a &lt;tt class="docutils literal"&gt;io.BytesIO&lt;/tt&gt; buffer and then
+compress it in a row whereas the new version write “on the fly” compressed
+chunk of pickled data to the file.
+Because of this internal buffer the old implementation is not memory safe as it
+indeed copy the data in memory before compressing. The small speed difference
+was judged acceptable compared to this memory duplication.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion-and-future-work"&gt;
+&lt;h2&gt;Conclusion and future work&lt;/h2&gt;
+&lt;p&gt;Memory copies were a limitation when caching on disk very large
+numpy arrays, e.g arrays with a size close to the available RAM on the computer.
+The problem was solved via intensive buffering and a lot of hacking on top of
+pickle and numpy. Unfortunately, our strategy has poor performance with
+big dictionaries or list compared to a &lt;tt class="docutils literal"&gt;cPickle&lt;/tt&gt;, hence try to use
+numpy arrays in your internal data structures (note that something like
+scipy sparse matrices works well, as it builds on arrays).&lt;/p&gt;
+&lt;p&gt;For the future, maybe numpy’s pickle methods could be improved and make a
+better use of &lt;a class="reference external" href="https://www.python.org/dev/peps/pep-3154/#bit-opcodes-for-large-objects"&gt;64-bit opcodes for large objects&lt;/a&gt;
+that were introduced in Python recently.&lt;/p&gt;
+&lt;p&gt;Pickling using file handles is a first step toward pickling in
+sockets, enabling broadcasting of data between computing units
+on a network. This will be priceless with &lt;a class="reference external" href="https://github.com/joblib/joblib/pull/325"&gt;joblib’s new distributed backends&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Other improvements will come from better compressor, making everything
+faster.&lt;/p&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;The pull request was implemented by &lt;a class="reference external" href="https://github.com/aabadie"&gt;&amp;#64;aabadie&lt;/a&gt;. He thanks &lt;a class="reference external" href="https://github.com/lesteve"&gt;&amp;#64;lesteve&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/ogrisel"&gt;&amp;#64;ogrisel&lt;/a&gt;
+and &lt;a class="reference external" href="https://github.com/GaelVaroquaux"&gt;&amp;#64;GaelVaroquaux&lt;/a&gt; for the valuable
+help, reviews and support.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The load created by multiple files on the filesystem is
+particularly detrimental for network filesystems, as it triggers
+multiple requests and isn’t cache friendly.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;gzip is based on zlib with additional crc checks and a default
+compression level of 3.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A drawback of subclassing the Python Pickler/Unpickler is that it
+is done for the pure-Python version, and not the “cPickle” version.
+The latter is much faster when dealing with a large number of Python
+objects. Once again, joblib is efficient when most of the data is
+represented as numpy arrays or subclasses.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexandre Abadie &amp; Gaël Varoquaux</dc:creator><pubDate>Fri, 20 May 2016 00:00:00 +0200</pubDate><guid>tag:gael-varoquaux.info,2016-05-20:programming/new_low-overhead_persistence_in_joblib_for_big_data.html</guid><category>joblib</category><category>persistence</category><category>big data</category></item></channel></rss>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/misc.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2016-07-23T00:00:00+02:00</updated><entry><title>Unison 2.48 binaries for ARM</title><link href="http://gael-varoquaux.info/misc/unison-248-binaries-for-arm.html" rel="alternate"></link><updated>2016-07-23T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-07-23:misc/unison-248-binaries-for-arm.html</id><summary type="html">&lt;p&gt;I have built static binaries of Unison 2.48 for ARM &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; and x86 64bits.
+Run on my NAS, the arm architecture is necessary to synchronize with the
+latest Ubuntu. The x86 is useful, eg to synchronize with older Ubuntu
+releases:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="programming/attachments/unison-2.48.4-armel.zip"&gt;unison-2.48.4-armel.zip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="programming/attachments/unison-2.48.4-amd64.zip"&gt;unison-2.48.4-amd64.zip&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="warning"&gt;
+&lt;p class="first admonition-title"&gt;Warning&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I will not support these binaries&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="last"&gt;I will not answer any questions or request on these binaries. I have
+built them for my personal use and put them online in case it might be
+useful for others.&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Following instructions on &lt;a class="reference external" href="http://www.crutzi.info/unison/binary/armel"&gt;http://www.crutzi.info/unison/binary/armel&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="remark-on-backward-compatibility"&gt;
+&lt;h2&gt;Remark on backward compatibility&lt;/h2&gt;
+&lt;p&gt;Why don’t the Unison devs ensure compatibility between minor version of
+Unison?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Breaking compatibility is bad practice, in particular between minor
+versions&lt;/strong&gt;. It breaks the trust that users have in updating the software.
+Programmers complain that users always run old versions of
+OSs/libraries/programs, but this is explained by the fear of stuff
+breaking during upgrades.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="software"></category></entry><entry><title>New website</title><link href="http://gael-varoquaux.info/misc/new-website.html" rel="alternate"></link><updated>2014-10-09T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2014-10-09:misc/new-website.html</id><summary type="html">&lt;p&gt;I am moving my website to a new design, relying on &lt;a class="reference external" href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; and more modern CSS.&lt;/p&gt;
+&lt;p&gt;So far, I had been using &lt;a class="reference external" href="http://www.voidspace.org.uk/python/rest2web/"&gt;rest2web&lt;/a&gt; to generate the static
+part of the website, and a local install of wordpress for the blog. I
+wasn’t doing good on keeping the wordpress install up to date, and I
+eventually got hacked. It was hurting my desire of simplicity to need a
+dynamic website. The combination of &lt;a class="reference external" href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; for my content, and &lt;a class="reference external" href="https://disqus.com/"&gt;Disqus&lt;/a&gt; suits very well my need, as it enables me to have
+a simpler website, and still have blog posts and discussions.&lt;/p&gt;
+&lt;p&gt;I also took the opportunity to clean up the website, remove some old
+content, and move my travel pictures to
+&lt;a class="reference external" href="https://www.flickr.com/photos/gaelvaroquaux/"&gt;flickr&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="technical-choices"&gt;
+&lt;h2&gt;Technical choices&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;a class="reference external" href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; for the core engine. I like
+the fact that it generates a static blog, that it uses restructured
+text to store the content, and &lt;a class="reference external" href="http://jinja.pocoo.org"&gt;jinja&lt;/a&gt; as a
+templating engine.&lt;/p&gt;
+&lt;p&gt;One interesting aspect of redoing my website with a more modern content
+managment system was that I could lay out the information based on tags
+and categories, rather than the old way of having a tree of nested
+topics. This is much more flexible because one article is likely to
+fall in many topics. Modern information organization is moving away
+from the notion of path used to access to an entry, to the notion of
+set of properties (tags here).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;a class="reference external" href="http://purecss.io"&gt;Pure CSS&lt;/a&gt; as a CSS base layer. I chose to use
+Pure CSS rather than &lt;a class="reference external" href="http://getbootstrap.com/"&gt;Bootstrap&lt;/a&gt; as it is a
+pure CSS framework (no javascript) and it is much lighter. I find that
+Bootstrap websites can easily slow down browsing (due to download size
+and javascript). Bootstrap also does play very well with html documents
+in which ones doesn’t control the class tags, as those generated from
+restructured text. But that’s true of most web front-end frameworks.
+Another option was &lt;a class="reference external" href="http://foundation.zurb.com/"&gt;Foundation&lt;/a&gt;. I
+didn’t explore it in details, but it looked like an interesting
+tradeoff between Pure, which is very bare bones, and Bootstrap, the
+heavy lifter. I chose to go for the most lightweight option, because I
+had simple needs.&lt;/p&gt;
+&lt;p&gt;A result of using more modern CSS is that the website should look good
+on any screen size, from very large screens to mobile phones.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="web"></category></entry><entry><title>SVG Word map of countries</title><link href="http://gael-varoquaux.info/misc/svg-word-map-of-countries.html" rel="alternate"></link><updated>2010-08-24T10:55:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-08-24:misc/svg-word-map-of-countries.html</id><summary type="html">&lt;p&gt;To be able to visualize some quantities attached to countries all over
+the world, I needed a image with various countries color-coded. The
+fantastic &lt;a class="reference external" href="http://matplotlib.sourceforge.net/basemap/doc/html/"&gt;matplotlib basemap package&lt;/a&gt; was not an option as I really
+needed a static image.&lt;/p&gt;
+&lt;p&gt;So I generated an SVG image with all the countries. It was generating by
+tracing a bitmap, so it has a lot of imperfections, but being an SVG
+with each (major) country as a different object, it can be used to
+create a colored-code world map. I am uploading it here under a
+public-domain license. Enjoy!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PNG&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2010/countries.png" style="width: 50%;" /&gt;
+&lt;p&gt;&lt;strong&gt;SVG&lt;/strong&gt;: &lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2010/countries.svg"&gt;http://gael-varoquaux.info/blog/wp-content/uploads/2010/countries.svg&lt;/a&gt;&lt;/p&gt;
+&lt;!-- _ --&gt;
+</summary><category term="python"></category><category term="scientific computing"></category><category term="travels"></category><category term="art"></category></entry><entry><title>Frank Willison on the French</title><link href="http://gael-varoquaux.info/misc/frank-willison-on-the-french.html" rel="alternate"></link><updated>2009-01-29T17:20:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-01-29:misc/frank-willison-on-the-french.html</id><summary type="html">&lt;p&gt;I couldn’t help myself, this Franck-Willison quote is brilliant:&lt;/p&gt;
+&lt;blockquote class="epigraph"&gt;
+“And the Europeans accept chaos and know how to live with it. I came
+away from France believing in the strong faith of the French people,
+not because of their magnificent cathedrals, but because I saw them
+drive around L’Arc du Triomphe. As they careened around this monument
+in vehicles that were little more than motorized Altoid containers,
+they looked like a network run by Linux servers: little packets
+hurtling within inches of each other, traveling together for a time,
+separated by other packets coming from other sources, reassembling as
+they sped out of the circle and onto the Champs Élysées. It’s no
+surprise to me that much of the interest in IPv6 is coming from
+France–if they don’t understand delay-sensitive traffic in France,
+they understand it nowhere.”&lt;/blockquote&gt;
+</summary><category term="personnal"></category><category term="humor"></category></entry><entry><title>GPS coordinates for the world’s major cities</title><link href="http://gael-varoquaux.info/misc/gps-coordinates-for-the-worlds-major-cities.html" rel="alternate"></link><updated>2008-12-31T00:53:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-12-31:misc/gps-coordinates-for-the-worlds-major-cities.html</id><summary type="html">&lt;p&gt;This may sound stupid, but I have failed to find on the web a
+simply-accessible text file giving the GPS coordinates for the world’s
+major cities. The web site &lt;a class="reference external" href="http://www.world-gazetteer.com"&gt;World-gazetteer&lt;/a&gt; is helpful, but doesn’t
+really give what I want. So I wrote a small Python web-scraping script
+to get the data I needed. BeautifulSoup is really cool, but somehow I
+feel I could be spending my time in a better way. And on a side note, I
+still struggle to get good conversion from unicode to ascii (I needed
+ascii, as this will be fed to software that don’t understand unicode).&lt;/p&gt;
+&lt;p&gt;I am attaching both the data file produced, and the Python script, in
+case someone finds them useful.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/12/cities.txt"&gt;GPS coordinate list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/12/cities_py"&gt;Web-scraping Python script&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: About 10 minutes after posting, I did a better google
+search, and found a page that might have been easier to scrape:
+&lt;a class="reference external" href="http://www.bcca.org/misc/qiblih/latlong_oc.html"&gt;http://www.bcca.org/misc/qiblih/latlong_oc.html&lt;/a&gt;&lt;/p&gt;
+</summary><category term="data"></category></entry><entry><title>Hello world… hu I mean Planet !</title><link href="http://gael-varoquaux.info/misc/hello-world-hu-i-mean-planet.html" rel="alternate"></link><updated>2008-01-02T22:41:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-01-02:misc/hello-world-hu-i-mean-planet.html</id><summary type="html">&lt;p&gt;Thanks to Jarrod Millman, we now have planet.scipy . This means it is time for
+me to create a blog, on top of my good old static site.&lt;/p&gt;
+</summary><category term="personnal"></category><category term="scipy"></category></entry></feed>

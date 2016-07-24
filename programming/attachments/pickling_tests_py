@@ -1,0 +1,71 @@
+import pickle
+
+def with_print(func):
+    """ Decorate a function to print its arguments.
+    """
+    def my_func(*args, **kwargs):
+        print args, kwargs
+        return func(*args, **kwargs)
+
+    return my_func
+
+@with_print
+def f(x):
+    print 'f called'
+
+
+def try_pickle(f):
+    try:
+        pickle.dumps(f)
+        print 'Pickling successful'
+    except pickle.PicklingError, e:
+        print e
+        print "Oops, can't pickle"
+
+try_pickle(f)
+
+################################################################################
+class WithPrint(object):
+    
+    def __init__(self, func):
+        self.func = func
+
+    def __call__(self, *args, **kwargs):
+        print args, kwargs
+        return self.func(*args, **kwargs)
+
+
+@WithPrint
+def g(x):
+    print 'g called'
+
+try_pickle(g)
+
+def h(x):
+    print 'h called'
+
+i = WithPrint(h)
+
+try_pickle(i)
+
+################################################################################
+from functools import wraps
+
+def with_print(func):
+    """ Decorate a function to print its arguments.
+    """
+    @wraps(func)
+    def my_func(*args, **kwargs):
+        print args, kwargs
+        return func(*args, **kwargs)
+
+    return my_func
+
+@with_print
+def j(x):
+    print 'j called'
+
+try_pickle(j)
+
+################################################################################
+

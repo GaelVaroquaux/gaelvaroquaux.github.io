@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2015-12-08T00:00:00+01:00</updated><entry><title>Job offer: data crunching brain functional connectivity for biomarkers</title><link href="http://gael-varoquaux.info/science/job-offer-data-crunching-brain-functional-connectivity-for-biomarkers.html" rel="alternate"></link><updated>2015-12-08T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2015-12-08:science/job-offer-data-crunching-brain-functional-connectivity-for-biomarkers.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;My research group&lt;/a&gt; is looking to fill
+a &lt;strong&gt;post-doc position on learning biomarkers from functional
+connectivity&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="section" id="scientific-context"&gt;
+&lt;h2&gt;Scientific context&lt;/h2&gt;
+&lt;p&gt;The challenge is to use resting-state fMRI at the level of a population
+to understand how intrinsic functional connectivity captures pathologies
+and other cognitive phenotypes. Rest fMRI is a promising tool for
+large-scale population analysis of brain function as it is easy to
+acquire and accumulate. Scans for thousands of subjects have already been
+shared, and more is to come. However, the signature of cognitions in this
+modality are weak. Extracting biomarkers is a challenging data processing
+and machine learning problem. This challenge is the expertise of my
+research group. Medical applications cover a wider range of brain
+pathologies, for which diagnosis is challenging, such as autism or
+Alzheimer’s disease.&lt;/p&gt;
+&lt;p&gt;This project is a collaboration with the &lt;a class="reference external" href="http://www.childmind.org/"&gt;Child Mind Institute&lt;/a&gt;, experts on psychiatric disorders and
+resting-state fMRI, as well as coordinators of the major data sharing
+initiatives for rest fRMI data (eg ABIDE).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="objectives-of-the-project"&gt;
+&lt;h2&gt;Objectives of the project&lt;/h2&gt;
+&lt;p&gt;The project hinges on processing of very large rest fMRI databases.
+Important novelties of the project are:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Building predictive models that can discriminate &lt;strong&gt;multiple
+pathologies&lt;/strong&gt; in &lt;strong&gt;large inhomogeneous datasets&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Using and improving &lt;strong&gt;advanced connectomics&lt;/strong&gt; and
+&lt;strong&gt;brain-parcellation&lt;/strong&gt; techniques in fMRI.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Expected results include the discovery of neurophenotypes for several
+brain pathologies, as well as intrinsic brain structures, such as
+functional parcellations or connectomes, that carry signatures of
+cognition.&lt;/p&gt;
+&lt;p&gt;The analysis framework is based on algorithmic tools developed in Python
+(crucially, leveraging scikit-learn for predictive modeling).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="desired-profile"&gt;
+&lt;h2&gt;Desired profile&lt;/h2&gt;
+&lt;p&gt;We are looking for a post-doctoral fellow to hire in spring. The ideal
+candidate would have some, but not all, of the following expertise and
+interests:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Experience in advanced processing of fMRI&lt;/li&gt;
+&lt;li&gt;General knowledge of brain structure and function&lt;/li&gt;
+&lt;li&gt;Good communication skills to write high-impact neuroscience publications&lt;/li&gt;
+&lt;li&gt;Good computing skills, in particular with Python. Cluster computing
+experience is desired.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="a-great-research-environment"&gt;
+&lt;h2&gt;A great research environment&lt;/h2&gt;
+&lt;p&gt;The work environment is dynamic and exiting, using state-of-the-art
+machine learning to answer challenging functional neuroimaging question.&lt;/p&gt;
+&lt;p&gt;The post-doc will be employed by &lt;a class="reference external" href="http://www.inria.fr"&gt;INRIA&lt;/a&gt;, the lead
+computing research institute in France. We are a team of computer
+scientists specialized in image processing and statistical data analysis,
+integrated in one of the top French brain research centers, &lt;a class="reference external" href="http://i2bm.cea.fr/dsv/i2bm/Pages/NeuroSpin.aspx"&gt;NeuroSpin&lt;/a&gt;, south of Paris. We
+work mostly in Python. The team includes core contributors to the
+&lt;a class="reference external" href="http://scikit-learn.org"&gt;scikit-learn project&lt;/a&gt;, for machine learning in
+Python, and the &lt;a class="reference external" href="http://nilearn.github.io/"&gt;nilearn project&lt;/a&gt;, for
+statistical learning in NeuroImaging.&lt;/p&gt;
+&lt;p&gt;In addition, the post-doc will interact closely with researchers from the
+&lt;a class="reference external" href="http://www.childmind.org/"&gt;Child Mind Institute&lt;/a&gt;, with deep expertise
+in brain pathologies and in the details of the fMRI acquisitions.
+Finally, he or she will have access to advanced storage and grid
+computing facilities at INRIA.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contact information&lt;/strong&gt;: gael dotnospam varoquaux atnotspam inria dotnospam fr&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="jobs"></category><category term="neuromaging"></category><category term="science"></category><category term="python"></category><category term="scientific computing"></category></entry><entry><title>Publishing scientific software matters</title><link href="http://gael-varoquaux.info/science/publishing-scientific-software-matters.html" rel="alternate"></link><updated>2013-09-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2013-09-19:science/publishing-scientific-software-matters.html</id><summary type="html">&lt;p class="light"&gt;Christophe Pradal, Hans Peter Langtangen, and myself recently edited
+&lt;a class="reference external" href="http://www.sciencedirect.com/science/journal/18777503/4/5"&gt;a version&lt;/a&gt; of the
+Journal of Computational Science on scientific software, in
+particular those written in Python. We wrote &lt;a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S1877750313000938"&gt;an editorial&lt;/a&gt;
+defending writing and publishing open source scientific software that
+I wish to summarize here. The &lt;a class="reference external" href="http://hal.inria.fr/hal-00858663/en"&gt;full text preprint&lt;/a&gt; is openly available in &lt;a class="reference external" href="http://gael-varoquaux.info/publications.html"&gt;my
+publications list&lt;/a&gt; as always. It
+includes, amongst other things, references.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Software is a central part of modern scientific discovery.&lt;/strong&gt; Software turns a
+theoretical model into quantitative predictions; software controls an
+experiment; and software extracts from raw data evidence supporting or
+rejecting a theory. As of today, scientific publications seldom discuss
+software in depth, maybe because it is both highly technical and a recent
+addition to scientific tools. But times are changing. More and more scientific
+investigators are developing software and it is important to establish norms
+for publication of this work. Producing scientific software is an important
+part of the landscape of research activities. Very visible scientific software
+is found in products developed by private companies, such as Mathwork’s Matlab
+or Wolfram’s Mathematica, but let us not forget that these build upon code
+written by and for academics. Scientists writing software contribute to the
+advancement of Science via several factors.&lt;/p&gt;
+&lt;p&gt;First, software developed in one field, if written in a sufficiently general
+way, can often be applied to advance a different field if the underlying
+mathematics is common. &lt;strong&gt;Modern scientific software development has a strong
+emphasis on generality and reusability by taking advantage of the general
+properties of the mathematical structures in the problem.&lt;/strong&gt; This feature of
+modern software help close the gap between fields and accelerate scientific
+discovery through packaging mathematical theories in a directly applicable way.&lt;/p&gt;
+&lt;p&gt;Second, &lt;strong&gt;the public availability of code is a corner stone of the
+scientific method&lt;/strong&gt;, as it is a requirement to reproducing scientific
+results: “&lt;em&gt;if it’s not open and verifiable by others, it’s not science,
+or engineering, or whatever it is you call what we do.&lt;/em&gt;” (V. Stodden,
+&lt;em&gt;The scientific method in practice&lt;/em&gt;). Emphasizing code to an extreme,
+Buckheit and Donoho have challenged the traditional view that a
+publication was the valuable outcome of scientific research: “&lt;em&gt;an article
+about computational science in a scientific publication is not the
+scholarship itself, it is merely advertising of the scholarship. The
+actual scholarship is the complete software development environment
+[…]&lt;/em&gt;”.&lt;/p&gt;
+&lt;p&gt;It is important to keep in mind that &lt;strong&gt;going beyond replication of
+results requires reusable software tools&lt;/strong&gt;: code that is portable, comes
+with documentation, and, most of all, is maintained throughout the years.
+Indeed, &lt;strong&gt;software development is a major undertaking that must build
+upon best practices and a quality process&lt;/strong&gt;. Reversing Buckheit and
+Donoho’s argument, publications about scientific software play an increasingly
+important part in the scientific methodology. First, in the publish-or-perish
+academic culture, such publications give an incentive to software production
+and maintenance, because good software can lead to highly-cited papers. Second,
+&lt;strong&gt;the publication and review process are the de facto standards of
+ensuring quality in the scientific world. As software is becoming increasingly
+more central to the scientific discovery process, it must be subject to these
+standards&lt;/strong&gt;. We have found that writing an article on software leads the
+authors to better clarify the project vision, technically and scientifically,
+the prior art, and the contributions. Last but not least, scientists publishing
+new results based on a particular software need an informed analysis of the
+validity of that software. Unfortunately, much of the current practice for
+adopting research software relies on ease of use of the package and reputation
+of the authors.&lt;/p&gt;
+&lt;p&gt;[…]&lt;/p&gt;
+&lt;p&gt;Today, software is to scientific research what Galileo’s telescope was to
+astronomy: a tool, combining science and engineering. It lies outside the
+central field of principal competence among the researchers that rely on it.
+Like the telescope, it also builds upon scientific progress and shapes our
+scientific vision. Galileo’s telescope was a leap forward in optics, a field of
+investigation that is now well established, with its own high-impact journals
+and scholarly associations. Similarly, we hope that visibility and recognition
+of scientific software development will grow.&lt;/p&gt;
+</summary><category term="publishing"></category><category term="open source"></category><category term="scientific computing"></category><category term="reproducible research"></category><category term="scientific software"></category></entry><entry><title>The problems of low statistical power and publication bias</title><link href="http://gael-varoquaux.info/science/the-problems-of-low-statistical-power-and-publication-bias.html" rel="alternate"></link><updated>2012-04-14T16:16:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2012-04-14:science/the-problems-of-low-statistical-power-and-publication-bias.html</id><summary type="html">&lt;img alt="" class="align-right" src="http://idoubtit.files.wordpress.com/2010/12/coldfusion.jpg" style="width: 30%;" /&gt;
+&lt;p&gt;Lately, I have been a mood of scientific scepticism: I have the feeling
+that the worldwide academic system is more and more failing to produce
+useful research. Christophe Lalanne’s &lt;a class="reference external" href="https://twitter.com/#!/chlalanne"&gt;twitter feed&lt;/a&gt; lead me to an
+interesting article in a non-mainstream journal: &lt;a class="reference external" href="http://beheco.oxfordjournals.org/content/15/6/1044.short"&gt;A farewell to
+Bonferroni: the problems of low statistical power and publication
+bias&lt;/a&gt;, by Shinichi Nakagawa.&lt;/p&gt;
+&lt;p&gt;Each study performed has a probability of being wrong. Thus performing
+many studies will lead to some wrong conclusions by chance. This is
+known in statistics as the &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Multiple_comparisons"&gt;multiple comparisons&lt;/a&gt; problem. When a
+working hypothesis is not verified empirically in a study, this null
+finding is seldom reported, leading to what is called &lt;em&gt;publication
+bias&lt;/em&gt;: &lt;strong&gt;discoveries are further studied; negative results are usually
+ignored&lt;/strong&gt; (Y. Benjamini). Because only &lt;em&gt;discoveries&lt;/em&gt;, called
+&lt;em&gt;detections&lt;/em&gt; in statistical terms, are reported, &lt;strong&gt;published results
+contain more false detections than the individual experiments and very
+little false negatives&lt;/strong&gt;. Arguably, the original investigators have
+corrected using the understanding that they gained the experiments
+performed and account in a &lt;em&gt;post-hoc analysis&lt;/em&gt; for the fact that some of
+their working hypothesis could not have been correct. Such a correction
+can work only in a field where there is a good mechanistic
+understanding, or models, such as physics, but in my opinion not in life
+and social sciences.&lt;/p&gt;
+&lt;p&gt;Let me quote some relevant extracts of &lt;a class="reference external" href="http://beheco.oxfordjournals.org/content/15/6/1044.short"&gt;the article&lt;/a&gt;, as you may never
+have access to it thanks to the way scientific publishing works:&lt;/p&gt;
+&lt;blockquote class="epigraph"&gt;
+&lt;p&gt;Recently, Jennions and Moller (2003) carried out a meta-analysis
+on statistical power in the field of behavioral ecology and animal
+behavior, reviewing 10 leading journals including Behavioral
+Ecology. Their results showed dismayingly low average statistical
+power (note that a meta-analytic review of statistical power is
+different from post hoc power analysis as criticized in Hoenig and
+Heisey, 2001). The statistical power of a null hypothesis (Ho)
+significance test is the probability that the test will reject Ho
+when a research hypothesis (Ha) is true.&lt;/p&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;p&gt;The meta-analysis on statistical power by Jennions and Moller
+(2003) revealed that, in the field of behavioral ecology and animal
+behavior, statistical power of less than 20% to detect a small
+effect and power of less than 50% to detect a medium effect existed.
+This means, for example, that the average behavioral scientist
+performing a statistical test has a greater probability of making a
+Type II error (or beta) (&lt;em&gt;i.e.&lt;/em&gt;, not rejecting Ho when Ho is false;
+note that statistical power is equals to 1 - beta) than if they had
+flipped a coin, when an experiment effect is of medium size.&lt;/p&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;p&gt;Imagine that we conduct a study where we measure as many relevant
+variables as possible, 10 variables, for example. We find only two
+variables statistically significant. Then, what should we do? We
+could decide to write a paper highlighting these two variables (and
+not reporting the other eight at all) as if we had hypotheses about
+the two significant variables in the first place. Subsequently, our
+paper would be published. Alternatively, we could write a paper
+including all 10 variables. When the paper is reviewed, referees
+might tell us that there were no significant results if we had
+“appropriately” employed Bonferroni corrections, so that our study
+would not be advisable for publication. However, the latter paper is
+scientifically more important than the former paper. For example, if
+one wants to conduct a meta-analysis to investigate an overall
+effect in a specific area of study, the latter paper is five times
+more informative than the former paper. In the long term,
+statistical significance of particular tests may be of trivial
+importance (if not always), although, in the short term, it makes
+papers publishable. Bonferroni procedures may, in part, be
+preventing the accumulation of knowledge in the field of behavioral
+ecology and animal behavior, thus hindering the progress of the
+field as science.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img alt="" class="align-right" src="http://farm6.staticflickr.com/5206/5330056727_a98c97c3c5.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;Some of the concerns raised here are partly a criticism of Bonferoni
+corrections, &lt;em&gt;i.e.&lt;/em&gt; in technical terms correcting for &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Familywise_error_rate"&gt;family-wise error
+rate (FWER)&lt;/a&gt;. It is actually the message that the author wants to
+convey in his paper. Proponents of controling for &lt;a class="reference external" href="http://en.wikipedia.org/wiki/False_discovery_rate"&gt;false discovery rate
+(FDR)&lt;/a&gt; argue that an investigator shouldn’t be penalized for asking
+more questions, and the fraction of errors in the answers should be
+controlled, rather than the absolute value. That said, FDR, while
+useful, does not answer the problems of publication bias.&lt;/p&gt;
+</summary><category term="statistics"></category><category term="computational science"></category><category term="science"></category></entry><entry><title>Conference posters</title><link href="http://gael-varoquaux.info/science/conference-posters.html" rel="alternate"></link><updated>2011-09-05T04:15:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2011-09-05:science/conference-posters.html</id><summary type="html">&lt;p&gt;At the request of a friend, I am putting up some of the posters that I
+recently presented at conferences.&lt;/p&gt;
+&lt;img alt="" class="align-left" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_nips.png" style="width: 30%;" /&gt;
+&lt;p&gt;&lt;strong&gt;Large-scale functional-connectivity graphical models for individual
+subjects using population prior.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is a poster for &lt;a class="reference external" href="http://hal.inria.fr/inria-00512451/en"&gt;our NIPS work&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_nips.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;hr class="docutils" /&gt;
+&lt;img alt="" class="align-left" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_ipmi.png" style="width: 30%;" /&gt;
+&lt;p&gt;&lt;strong&gt;Multi-subject dictionary learning to segment an atlas of brain
+spontaneous activity.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is a poster for &lt;a class="reference external" href="http://hal.inria.fr/inria-00588898/en"&gt;our IPMI work&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_ipmi.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;hr class="docutils" /&gt;
+&lt;img alt="" class="align-left" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_mayavi.png" style="width: 30%;" /&gt;
+&lt;p&gt;&lt;strong&gt;Mayavi for 3D visualization of neuroimaging data: powerful scripting
+and reusable components in Python.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_mayavi.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;hr class="docutils" /&gt;
+&lt;img alt="" class="align-left" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_scikit.png" style="width: 30%;" /&gt;
+&lt;p&gt;&lt;strong&gt;Machine learning for fMRI in Python: inverse inference with
+scikit-learn.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_scikit.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+</summary><category term="neuroimaging"></category><category term="machine learning"></category><category term="science"></category><category term="publishing"></category></entry><entry><title>My conference travels: Scipy 2011 and HBM 2011</title><link href="http://gael-varoquaux.info/science/my-conference-travels-scipy-2011-and-hbm-2011.html" rel="alternate"></link><updated>2011-07-23T23:45:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2011-07-23:science/my-conference-travels-scipy-2011-and-hbm-2011.html</id><summary type="html">&lt;div class="section" id="the-scipy-2011-conference-in-austin"&gt;
+&lt;h2&gt;The Scipy 2011 conference in Austin&lt;/h2&gt;
+&lt;p&gt;Last week, I was at the Scipy conference in Austin. It was really great
+to see old friends, and Austin is such a &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=37"&gt;nice&lt;/a&gt; &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=39"&gt;place&lt;/a&gt;.&lt;/p&gt;
+&lt;img alt="" class="align-center" src="http://farm7.static.flickr.com/6143/5931239349_13c78bbef5_m.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;The Scipy conference was held in &lt;a class="reference external" href="http://www.meetattexas.com/"&gt;UT Austin’s conference center&lt;/a&gt;, which
+is a fantastic venue. This is the first geek’s conference I have been at
+where the wireless network worked flawlessly with a good bandwidth, even
+thought 200 geeks were pounding on it. As a tutorial presenter, this was
+incredibly useful.&lt;/p&gt;
+&lt;div class="section" id="conference-highlight"&gt;
+&lt;h3&gt;Conference highlight&lt;/h3&gt;
+&lt;p&gt;Here is a short list of what I &lt;em&gt;felt&lt;/em&gt; were the big trends and highlights
+of the conference. This is obviously biased by my own interests. I am
+not listing parallel computing, as it is clearly an important area of
+progress and debates, but it has been the case for the last few years.&lt;/p&gt;
+&lt;div class="section" id="eric-jone-s-keynote"&gt;
+&lt;h4&gt;Eric Jone’s keynote&lt;/h4&gt;
+&lt;p&gt;Of course Eric’s keynote was excellent. Eric is a great speaker and
+always has good insights on how to run a team and a project. This year
+he shared (some) of his tricks in making Enthought deliver on software
+projects: &lt;em&gt;“What Matters in Scientific Software Projects? 10 Years of
+Success and Failure Distilled”&lt;/em&gt;. The video is not yet online,
+unfortunately. Grab it when you can.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="hilary-mason-s-keynote"&gt;
+&lt;h4&gt;Hilary Mason’s keynote&lt;/h4&gt;
+&lt;p&gt;Hilary is an applied data geek, just what I like! She gave an
+interesting &lt;a class="reference external" href="http://conference.scipy.org/scipy2011/slides/mason_awesome.pdf"&gt;keynote&lt;/a&gt; on how &lt;a class="reference external" href="https://bitly.com/"&gt;bitly&lt;/a&gt; (an URL-shortening startup, for
+those living under a rock) mines the requests on the URLs that the serve
+to do things like ranking or phishing attempts detection. Of course, I
+couldn’t resist asking what tools they used, thinking that she would
+reply R. She mentioned that they did do some roll-their-own, but she
+mentioned &lt;a class="reference external" href="https://mlpy.fbk.eu/"&gt;mlpy&lt;/a&gt; and &lt;a class="reference external" href="http://scikit-learn.sourceforge.net/"&gt;scikit-learn&lt;/a&gt;, with a mention that it was very
+nice, at which point I believe that I blushed. She stressed that R was
+hard to use and production and raised the point that most often academic
+software doesn’t pan out in these settings (I hope that I am not
+distorting her thoughts too much).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="statistics-and-learning"&gt;
+&lt;h4&gt;Statistics and learning&lt;/h4&gt;
+&lt;p&gt;I had the feeling that statistics and data mining played a big role at
+scipy this year. Maybe it is because I am more tuned to these questions
+nowadays, but some signs do not lie. There was a special session on
+Python in data sciences, a panel discussion on Python in finance and
+&lt;a class="reference external" href="http://conference.scipy.org/scipy2011/slides/cron_gpustats.pdf"&gt;many&lt;/a&gt;
+&lt;a class="reference external" href="http://conference.scipy.org/scipy2011/slides/refsdal_sherpa.zip"&gt;many&lt;/a&gt;
+&lt;a class="reference external" href="http://conference.scipy.org/scipy2011/slides/mckinney_time_series.pdf"&gt;statistics&lt;/a&gt; and &lt;a class="reference external" href="http://conference.scipy.org/scipy2011/slides/determan_vision_spreadsheet.pdf"&gt;data&lt;/a&gt; &lt;a class="reference external" href="http://conference.scipy.org/scipy2011/slides/caraciolo_crab_recommendation.pdf"&gt;related&lt;/a&gt; talks, as well as two tutorials and
+a keynote.&lt;/p&gt;
+&lt;p&gt;In addition, on a personal basis it was really great to meet part of the
+team behind &lt;a class="reference external" href="http://statsmodels.sourceforge.net/"&gt;scikits.statmodels&lt;/a&gt;. We had plenty of very interesting
+discussions and they really help me understand the way that some
+statisticians abord data: very differently than me, because they have
+fairly little data, and can afford to inspect reports and graphs,
+whereas I rely more on automated decision rules.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="ipython"&gt;
+&lt;h4&gt;IPython&lt;/h4&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://twitter.com/#!/minrk"&gt;Min&lt;/a&gt; gave &lt;a class="reference external" href="http://minrk.github.com/scipy-tutorial-2011/"&gt;an excellent tutorial&lt;/a&gt; on how to do parallel computing
+using IPython. These guys have certainly done an excellent job to make
+cluster-level programming in Python easier. While they don’t play yet
+terribly well with the restrictive job-queue policy of the clusters to
+which I have access, they have all the right low-level tools to address
+these issues and Min told me that they will be working on this next
+year.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://fperez.org/"&gt;Fernando&lt;/a&gt; gave &lt;a class="reference external" href="http://conference.scipy.org/scipy2011/slides/perez_ipython.pdf"&gt;an impressive talk&lt;/a&gt; on the new developments of
+IPython. In particular, the new Qt-based terminal is &lt;em&gt;`really cool`_&lt;/em&gt;
+and there is a web frontend in the works.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cluster-computing-as-facility"&gt;
+&lt;h4&gt;Cluster computing as facility&lt;/h4&gt;
+&lt;p&gt;While I mention cluster computing, I must confess that I have always
+stayed away from this beast: I find it a time sink, and I find that I
+get more science done without it. This is why I really like the
+presentation of the &lt;a class="reference external" href="http://www.picloud.com/"&gt;PiCould&lt;/a&gt; guys on, … cluster computing! The
+reason I liked it, is that they start from the principle that your time
+is more important than CPU time. I hear so much about &lt;em&gt;bigger better
+faster more&lt;/em&gt; high-performance computing when researchers forget to
+address the biggest issue:&lt;/p&gt;
+&lt;blockquote class="epigraph"&gt;
+… a whole generation of researchers turned into system
+administrators by the demands of computing - Dan Reed, VP Microsoft&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="section" id="abstract-code-manipulation-for-numerical-computation"&gt;
+&lt;h4&gt;Abstract code manipulation for numerical computation&lt;/h4&gt;
+&lt;p&gt;Finally, a trend that is picking up in the Python-based scientific
+computing is the abstract manipulation of expressions to generate fast
+code. This ranges from &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Just-in-time_compilation"&gt;JIT (just in time) compilation&lt;/a&gt; generating
+machine code, to rewriting mathematical expressions. Peter Wang had a
+&lt;a class="reference external" href="http://conference.scipy.org/scipy2011/slides/wang_metagraph.pdf"&gt;talk&lt;/a&gt; in this alley, but the topic was also brough up be Aron Ahmadia.
+Of course this is not new: &lt;a class="reference external" href="http://code.google.com/p/numexpr/"&gt;numexpr&lt;/a&gt; has been using these tricks for
+years, and more recently &lt;a class="reference external" href="http://deeplearning.net/software/theano/"&gt;Theano&lt;/a&gt; has been making good use of GPUs
+thanks to them.&lt;/p&gt;
+&lt;p&gt;Seeing this topic emerges in more and more places fr good reasons: with
+faster and more numerous CPU, the number of operations a second is less
+the bottleneck, and the order in which they are applied, or the physical
+location, is becoming critical.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="my-own-agenda"&gt;
+&lt;h3&gt;My own agenda&lt;/h3&gt;
+&lt;div class="section" id="sprinting-on-scikit-learn"&gt;
+&lt;h4&gt;Sprinting on scikit-learn&lt;/h4&gt;
+&lt;a class="reference external image-reference" href="http://scikit-learn.org/dev/auto_examples/mixture/plot_gmm.html"&gt;&lt;img alt="" src="http://scikit-learn.org/dev/_images/plot_gmm_1.png" /&gt;&lt;/a&gt;
+&lt;p&gt;We had two days of sprints after the conference. A huge number of people
+voted for sprint on the &lt;a class="reference external" href="http://scikit-learn.sourceforge.net/"&gt;scikit-learn&lt;/a&gt; but only two people showed up:
+Minwoo Lee and &lt;a class="reference external" href="http://www-etud.iro.umontreal.ca/~wardefar"&gt;David Warde-Farley&lt;/a&gt;. Thanks heaps to these guys! My
+priority for the sprint was to review and merge branches. That worked
+beautifully: we merged in the following features:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://scikit-learn.sourceforge.net/dev/modules/mixture.html#the-dirichlet-process"&gt;Dirichlet-Process Gaussian mixture models&lt;/a&gt;, by Alex Passos&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://scikit-learn.sourceforge.net/dev/modules/decomposition.html#sparse-principal-components-analysis-sparsepca"&gt;Sparse PCA&lt;/a&gt; by Vlad Niculae.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://scikit-learn.sourceforge.net/dev/modules/gaussian_process.html"&gt;Speedups in Gaussian processes&lt;/a&gt; by Vincent Schut.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://scikit-learn.sourceforge.net/dev/modules/clustering.html#mini-batch-k-means"&gt;Sparse implementation of the mini-batch k-means&lt;/a&gt; by Peter
+Prettenhofer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In addition, David added dataset downloader for the &lt;a class="reference external" href="http://cs.nyu.edu/~roweis/data/olivettifaces.gif"&gt;Olivetti face
+datasets&lt;/a&gt; which is lightweight, but rich-enough to give very
+interesting examples.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="my-presentation"&gt;
+&lt;h4&gt;My presentation&lt;/h4&gt;
+&lt;p&gt;I gave a talk on my research work, and the software stack that
+undermines it: &lt;a class="reference external" href="http://www.slideshare.net/GaelVaroquaux/python-for-brain-mining-neuroscience-with-state-of-the-art-machine-learning-and-data-visualization"&gt;Python for brain mining: (neuro)science with state of
+the art machine learning and data visualization&lt;/a&gt;. I think that it was
+well received by the audience. What is really crazy is that I uploaded
+the slides on slideshare, and they got a ridiculous amount of viewing. I
+suspect that it is because of the title: &lt;em&gt;brain mining&lt;/em&gt; does sound
+fancy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mayavi"&gt;
+&lt;h4&gt;Mayavi&lt;/h4&gt;
+&lt;p&gt;Because of technical and political reasons, I cannot get &lt;a class="reference external" href="http://code.enthought.com/projects/mayavi/"&gt;Mayavi&lt;/a&gt;
+installed on the computers at work. This, and the fact that many people
+ask for help, but little contribute, even in the form of answers on the
+mailing list, had been mining me a bit. I got so much great feedback on
+Mayavi at the conference that I feel much more motivated to invest
+energy on it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-humain-brain-mapping-conference-in-quebec-city"&gt;
+&lt;h2&gt;The Humain Brain Mapping conference in Quebec City&lt;/h2&gt;
+&lt;img alt="" class="align-center" src="http://farm7.static.flickr.com/6018/5968391718_002105ccd1.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;This blog post is getting too long. It is well beyond my own attention
+span. However scipy is not the only conference to which I have been
+recently. Two weeks before I was in Quebec, for the &lt;a class="reference external" href="http://www.humanbrainmapping.org/i4a/pages/index.cfm?pageID=3419"&gt;Human Brain Mapping
+conference&lt;/a&gt;. As each year, HBM is a fun ride. It has fantastic parties
+in the evenings. But I didn’t stay up too late as, this year was a busy
+for me: I was teaching in a educational course, and chairing a
+symposium, both on comparing brain functional connectivity across
+subjects.&lt;/p&gt;
+&lt;p&gt;But the really big deal at HBM this year came at the end. As I was
+dosing off, vaguely listening to Russ Poldrak’s closing comments, he
+brought up on screen a slide entitled &lt;em&gt;the year of Python&lt;/em&gt;. This is a
+big deal: we’ve been working for years to get Python in the neuroimaging
+word, and it is clearly making progress, despite all the roadblocks.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="conferences"></category><category term="travels"></category><category term="machine learning"></category><category term="mayavi"></category><category term="python"></category><category term="science"></category><category term="scikit-learn"></category></entry><entry><title>Research jobs in France: the black humor of 2010 is the reality of 2011</title><link href="http://gael-varoquaux.info/science/research-jobs-in-france-the-black-humor-of-2010-is-the-reality-of-2011.html" rel="alternate"></link><updated>2011-01-15T11:41:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2011-01-15:science/research-jobs-in-france-the-black-humor-of-2010-is-the-reality-of-2011.html</id><summary type="html">&lt;p&gt;The French basic research landscape is dominated by a few nationwide
+institute, similar to the NIST or the NIH in the US. The largest of these
+is the &lt;a class="reference external" href="http://www.cnrs.fr/index.php"&gt;CNRS&lt;/a&gt; (Centre National de la Recherche Scientific). Getting a
+tenured job in one of those institutes enables someone to focus on basic
+research rather than teaching or going in the industry. It has always
+been quite challenging to get such position as many people apply for very
+few positions, and the choice of the candidates is quite political. Each
+year there is a call for applications, through a impressive formal
+process that young researchers trying to get jobs in France end up
+knowing quite well.&lt;/p&gt;
+&lt;p&gt;Last year, I was visiting a research lab (&lt;a class="reference external" href="http://www.incm.cnrs-mrs.fr/en_index.php"&gt;INCM&lt;/a&gt;) and I saw in their
+coffee-break room the following poster (below), that I could
+clearly recognize as the official call for application for positions at
+CNRS.&lt;/p&gt;
+&lt;p&gt;Now this poster says ‘&lt;strong&gt;The CNRS recruits 3 researchers (m/w) in all
+fields of research&lt;/strong&gt;’. Of course it’s a fake poster and black humor: 3
+positions nationwide in all fields of research is ridiculously low. It
+is however an expression of the nightmare of thousands of young
+researchers who are applying each year and keep hearing that the
+government will &lt;a class="reference external" href="http://www.latribune.fr/actualites/economie/france/20100415trib000499181/la-fonction-publique-d-etat-perdra-34.000-postes-en-2011-selon-georges-tron.html"&gt;slash the number of state employees&lt;/a&gt;.&lt;/p&gt;
+&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/cnrs_recruits.jpg" style="width: 70%;" /&gt;
+&lt;p&gt;The call for the 2011 applications for research positions at &lt;a class="reference external" href="http://en.inria.fr/"&gt;INRIA&lt;/a&gt;,
+the French national computer science institute, that is another one of
+the big research institutions in France, is &lt;a class="reference external" href="http://www.inria.fr/institut/recrutement-metiers/offres/concours-2011-5-postes-de-charge-de-recherche-2e-classe-sont-a-pourvoir/concours-2011"&gt;out&lt;/a&gt;. The page is entitled
+&lt;em&gt;Cinq postes de chargé de recherche 2e classe sont à pourvoir&lt;/em&gt; (&lt;strong&gt;5
+positions for junior researchers are available&lt;/strong&gt;). This is not a joke,
+and it is striking to see the similarity between &lt;strong&gt;the dark humor of
+2010 and the reality of 2011&lt;/strong&gt;. To be fair INRIA is smaller than CNRS,
+as it covers only computer science and applications (listed as applied
+maths, numerical computing and simulation, algorithm and software
+research, networks and distributed systems, and computational modeling
+for life sciences). The number of applications is in hundred and not
+thousands, but having only 5 jobs available nationwide still feels
+really awkward.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/cnrs_recruits.pdf"&gt;PDF posters&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;A minor detail: I am trying to get a job in computational science
+research in France.&lt;/p&gt;
+</summary><category term="personnal"></category><category term="science"></category></entry><entry><title>Machine learning humour</title><link href="http://gael-varoquaux.info/science/machine-learning-humour.html" rel="alternate"></link><updated>2010-09-16T23:11:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-09-16:science/machine-learning-humour.html</id><summary type="html">&lt;div class="section" id="yes-but-they-overfit"&gt;
+&lt;h2&gt;Yes, but they overfit&lt;/h2&gt;
+&lt;p&gt;If you are reading this post through a planet, the movie isn’t showing
+up, just &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=140"&gt;click through&lt;/a&gt; to understand what the hell this is about.&lt;/p&gt;
+&lt;p&gt;
+&lt;object width="480" height="385"&gt;
+&lt;embed src="http://www.youtube.com/v/m60lVGz34hU?fs=1&amp;amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"&gt;
+&lt;/embed&gt;
+&lt;/object&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;div class="section" id="some-explanations"&gt;
+&lt;h2&gt;Some explanations…&lt;/h2&gt;
+&lt;div class="section" id="machine-learning-geeks-and-beers"&gt;
+&lt;h3&gt;Machine learning, geeks, and beers&lt;/h3&gt;
+&lt;p&gt;Sorry for the bad humour. In the previous weeks my social geek life had
+two strong moments:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.pycon.fr/conference/edition2010"&gt;Pycon fr&lt;/a&gt;, the French Python conference, and ensuing drinking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img alt="" src="http://farm5.static.flickr.com/4077/4938486734_378f52fd3d.jpg" style="width: 45%;" /&gt;
+&lt;img alt="" src="http://farm5.static.flickr.com/4114/4938124265_027853c81a.jpg" style="width: 45%;" /&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://fseoane.net/blog/2010/second-scikitslearn-coding-sprint/"&gt;The second sprint&lt;/a&gt; on the &lt;a class="reference external" href="http://scikit-learn.sourceforge.net/"&gt;scikit learn&lt;/a&gt;, a library for machine
+learning in Python.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At the first event (or maybe the related drinking) there was a lot of
+discussion about NoSQL databases, and I was introduced to &lt;a class="reference external" href="http://www.xtranormal.com/watch/6995033/&amp;quot;&amp;quot;"&gt;this
+fantastic video&lt;/a&gt; making fun of MongoDB fanboys. A few days later I was
+hacking on the scikit, comparing estimators and discussing hype versus
+fact in machine learning algorithms (hint: &lt;a class="reference external" href="http://en.wikipedia.org/wiki/No_free_lunch_in_search_and_optimization"&gt;there is no free lunch&lt;/a&gt;,
+but you may get &lt;a class="reference external" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.79.2501&amp;amp;rep=rep1&amp;amp;type=pdf"&gt;a free brunch&lt;/a&gt;). As in brain imaging people seem to
+be doing nothing but SVMs over and over while &lt;a class="reference external" href="http://hal.inria.fr/hal-00504095/PDF/icpr_2010_tv.pdf"&gt;methods with more
+appropriate sparsity clearly perform better&lt;/a&gt;, I composed this stupid
+video.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="anything-to-learn-about-machine-learning-in-there"&gt;
+&lt;h3&gt;Anything to learn about machine learning in there?&lt;/h3&gt;
+&lt;p&gt;The short answer is: probably no. This video is humour, and there is
+little truth (well, RFE is indeed slow as a dog). However, not every
+reader of this blog are machine learning experts, so let me explain the
+stakes of the pseudo discussion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Overfitting&lt;/strong&gt;: when you learn a predictive model on a noisy data set,
+for instance trying to learn how to predict whether a movie is popular
+or not from ratings, if you have a finite amount of data, you should be
+careful not to learn by heart every detail of the data. You will learn
+noise that, by chance, correlated to what you are trying to predict.
+When you try to generalize to new data, these features that you learned
+from noise will be detrimental to your prediction performance. For
+instance, &lt;a class="reference external" href="http://www.reddit.com/r/Python/comments/cwq37/announcing_python_nltk_demos_natural_language/"&gt;the presence of Matt Damon&lt;/a&gt; is not the sole predictor of the
+quality of movie. This is called overfitting. The goal of
+&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Regularization_%28mathematics%29"&gt;regularization&lt;/a&gt; is to avoid this overfitting.&lt;/p&gt;
+&lt;p&gt;Both SVM and elasticnet implement regularization, but in different ways.
+In the case of brain imaging, as the predictive features (voxels) are
+very sparse, but the noise is highly structured, SVM (that do not
+operate on voxels directly) are not able to select directly the relevant
+voxels and tend to overfit (which can be counter-balanced by univariate
+feature selection as in the &lt;a class="reference external" href="http://scikit-learn.org/stable/auto_examples/svm/plot_svm_anova.html"&gt;scikit example&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RFE (recursive feature elimination) is slow as dog&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scikits.learn&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;datasets&lt;/span&gt;
+&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="n"&gt;digits&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;datasets&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;load_digits&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;digits&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;
+&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;digits&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;target&lt;/span&gt;
+&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scikits.learn.svm&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;LinearSVC&lt;/span&gt;
+&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="n"&gt;svc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;LinearSVC&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scikits.learn.rfe&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;RFE&lt;/span&gt;
+&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;timeit&lt;/span&gt; &lt;span class="n"&gt;RFE&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;estimator&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;svc&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n_features&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;percentage&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;loops&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;best&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;21.5&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="n"&gt;per&lt;/span&gt; &lt;span class="n"&gt;loop&lt;/span&gt;
+&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scikits.learn.glm&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ElasticNet&lt;/span&gt;
+&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;timeit&lt;/span&gt; &lt;span class="n"&gt;ElasticNet&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;alpha&lt;/span&gt;&lt;span class="o"&gt;=.&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;rho&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.7&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="n"&gt;loops&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;best&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;26.7&lt;/span&gt; &lt;span class="n"&gt;ms&lt;/span&gt; &lt;span class="n"&gt;per&lt;/span&gt; &lt;span class="n"&gt;loop&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Yeah, but it does much more than simply building a predictor, it builds
+a ‘heat map’ of which features help predicting (run &lt;a class="reference external" href="http://scikit-learn.sourceforge.net/auto_examples/rfe_digits.html"&gt;this scikit-learn
+example&lt;/a&gt; to get an idea).&lt;/p&gt;
+&lt;p&gt;I am afraid that all the examples I pointed to require the development
+version of the scikit. Sorry, we just finished a sprint, and there will
+be a release soon.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="personnal"></category><category term="python"></category><category term="humor"></category></entry><entry><title>Making posters for scientific conferences</title><link href="http://gael-varoquaux.info/science/making-posters-for-scientific-conferences.html" rel="alternate"></link><updated>2010-07-12T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-07-12:science/making-posters-for-scientific-conferences.html</id><summary type="html">&lt;p&gt;This page gives some advices and examples on making posters for
+scientific conference.&lt;/p&gt;
+&lt;p&gt;Here are some posters I made (one in 2007, the other in 2011). They don’t
+follow all the advice on this page, but should.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/poster_YAO.pdf"&gt;&lt;img alt="poster1" src="attachments/poster_YAO.jpg" style="width: 33%;" /&gt;&lt;/a&gt; &lt;a class="reference external" href="attachments/poster_hbm2011.pdf"&gt;&lt;img alt="poster2" src="attachments/poster_hbm2011.png" style="width: 33%;" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;LaTeX sources&lt;/p&gt;
+&lt;p&gt;This poster is written in LaTeX. You can download the whole source of
+the posters for &lt;a class="reference external" href="attachments/poster.zip"&gt;the first poster (left)&lt;/a&gt;,
+and &lt;a class="reference external" href="attachments/poster_hbm2011.zip"&gt;the second one (right)&lt;/a&gt;. These
+are some of my personnal projects, not meant for sharing. As a result
+they have a fair amount of hacking. I have been asked for source code
+more than once, so I put it on the web. I do not however have time to
+provide &lt;strong&gt;any&lt;/strong&gt; support for it (I am already to busy supporting other
+things. Any mail asking for help on these files will unanswered. Sorry.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Here is another example, a bit more visually appealing, as it is intended
+for a less technical audience.&lt;/p&gt;
+&lt;a class="reference external image-reference" href="attachments/poster_ICE.pdf"&gt;&lt;img alt="" class="align-center" src="attachments/poster_ICE.jpg" /&gt;&lt;/a&gt;
+&lt;p&gt;One more about my work: this one was made to convey a strong message and
+simplified the content a lot to get the message accross. I am not too sure
+it worked, but I still find the poster pretty.&lt;/p&gt;
+&lt;a class="reference external image-reference" href="attachments/poster_ICOLS07.pdf"&gt;&lt;img alt="" class="align-center" src="attachments/poster_ICOLS07.jpg" /&gt;&lt;/a&gt;
+&lt;p&gt;And finally two made by Emmanuelle with really nice colours.&lt;/p&gt;
+&lt;a class="reference external image-reference" href="attachments/poster_Emmanuelle.pdf"&gt;&lt;img alt="" src="attachments/poster_Emmanuelle.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/poster_blue.pdf"&gt;&lt;img alt="" src="attachments/poster_blue.jpg" /&gt;&lt;/a&gt;
+&lt;div class="section" id="advice-on-poster-presentation"&gt;
+&lt;h2&gt;Advice on poster presentation&lt;/h2&gt;
+&lt;p&gt;See also &lt;a class="reference external" href="http://www.ncsu.edu/project/posters"&gt;http://www.ncsu.edu/project/posters&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="fonts"&gt;
+&lt;h3&gt;Fonts&lt;/h3&gt;
+&lt;p&gt;Sans-serif fonts look really nice, but are less readable in
+paragraphs. Use them for titles and headers. Use serif fonts for
+paragraphs. Stick to a simple font family like times. Use bold fonts
+when writing with a light colour on a dark background.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="colours"&gt;
+&lt;h3&gt;Colours&lt;/h3&gt;
+&lt;p&gt;Stick to a rather little numbers of colours, but well chosen.
+Put a very light colour behind your text blocks. If ink is not too
+expensive, I would use a dark background, and have light text blocks on
+it. Have well separated areas of your posters (like the background, and
+the text blocks), and have the background, or other decorative elements,
+have little contrast: they should not stand out too much (mine stood out
+too much in my poster, its because the print-out didn’t look like want
+was on the screen).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="page-layout"&gt;
+&lt;h3&gt;Page layout&lt;/h3&gt;
+&lt;p&gt;Break symmetry and order. A well aligned poster is boring to the
+eye, and does not catch attention from afar. People read your poster by
+first scanning through it and stopping at a few key points (usually
+first at the upper left, then the upper left, then down right, and down
+left), then they might read it more thoroughly after their first scan.
+You want to define visually these key points, make them appealing, and
+put key ideas there.&lt;/p&gt;
+&lt;p&gt;Long lines are difficult to read. Pick up a book, a flyer, anything made
+by a professional publisher, it will never have long lines. A good rule
+of thumb is that if a text block has lines longer than 80 characters, it
+needs breaking down in several columns.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="which-software-to-use"&gt;
+&lt;h2&gt;Which software to use&lt;/h2&gt;
+&lt;p&gt;Many people use PowerPoint to make their posters. It is easy to use, but
+it is not dedicated to making posters, and it does horrible pdfs.&lt;/p&gt;
+&lt;p&gt;If you want to pay a lot there is Quark Xpress that is very good for that
+kind of things. Adobe PageMaker is also a very good software. &lt;a class="reference external" href="http://www.xara.com/"&gt;Xara&lt;/a&gt; is a cheap and good design program, and a free
+version will soon be available for linux.&lt;/p&gt;
+&lt;p&gt;I use LaTeX. Just because I love the way it positions characters. But I
+admit it is a bit brutal. What I would advice you to use is &lt;a class="reference external" href="http://www.scribus.net"&gt;scribus&lt;/a&gt; it is dedicate to making posters and is free
+and open source. I sometimes use LaTeX to create the text boxes, and
+scribus to lay them around. I wrote a &lt;a class="reference external" href="LaTeX-scribus.html"&gt;page&lt;/a&gt;
+describing how I do it.&lt;/p&gt;
+&lt;!-- See also :
+http://theoval.cmp.uea.ac.uk/~nlct/jpgfdraw/manual/postertutorial.html --&gt;
+&lt;p&gt;One last remark: use vector graphics (eps, ps, pdf, svg), not bitmaps,
+they scale up really badly.
+Try to get a vector logo of your institution. Usually asking the PR
+people is the only thing it take to get one. Of course if you are using
+powerpoint chances are that you wont be able to insert it in your poster.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="latex"></category><category term="publishing"></category><category term="conferences"></category><category term="selected"></category></entry><entry><title>A simple LaTeX example</title><link href="http://gael-varoquaux.info/science/a-simple-latex-example.html" rel="alternate"></link><updated>2010-06-01T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-06-01:science/a-simple-latex-example.html</id><summary type="html">&lt;p&gt;Here is a very simple example of a laTeX document that uses good package
+to have a simple but nice layout:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="attachments/simple.tex"&gt;The LaTeX source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="attachments/simple.pdf"&gt;The pdf document&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;&lt;strong&gt;Some advice&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Use &lt;a class="reference external" href="http://www.texniccenter.org/"&gt;texniccenter&lt;/a&gt; if you don’t have a
+favorite editor.&lt;/li&gt;
+&lt;li&gt;Read the &lt;a class="reference external" href="http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf"&gt;not so short introduction to latex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="latex"></category><category term="publishing"></category><category term="science"></category></entry><entry><title>PCA and ICA: Identifying combinations of variables</title><link href="http://gael-varoquaux.info/science/ica_vs_pca.html" rel="alternate"></link><updated>2010-02-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-02-05:science/ica_vs_pca.html</id><summary type="html">&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;&lt;strong&gt;Dimension reduction and interpretability&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose you have statistical data that too many dimensions, in other
+words too many variables of the same random process, that has been
+observed many times. You want to find out, from all these variables (or all
+these dimensions when speaking in terms of multivariate data),
+what are the relevant combinations, or directions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="dimension-reduction-with-pca"&gt;
+&lt;h2&gt;Dimension reduction with PCA&lt;/h2&gt;
+&lt;p&gt;If we have three-dimensional data, for instance simultaneous measurements
+made by three thermometers positioned at different locations in a room.
+The data forms a cluster of points in a 3D space:&lt;/p&gt;
+&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/science/attachments/ica_pca/3d_data.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;If the temperature in that room is conditioned by only two parameters,
+the setting of a heater and the outside temperature, we probably have
+too much data: the three sets of measurements can be expressed as a
+linear combination of two fluctuating variable, and an additional much
+smaller noise parameter. In other words, the data mostly lies in a 2D
+plane embedded in the 3D measurement space.&lt;/p&gt;
+&lt;p&gt;We can use PCA (Principal Component Analysis) to find this plane: PCA
+will give us the orthogonal basis in which the covariance matrix of our
+data is diagonal. The vectors of this basis point in successive
+orthogonal directions in which the data variance is maximum. In the case
+of data mainly residing on a 2D plane, the variance is much greater along
+the two first vectors, which define our plane of interest, than along the
+third one:&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="http://gael-varoquaux.info/science/attachments/ica_pca/3d_data_pca_axis.jpg" style="width: 50%;" /&gt;
+&lt;p class="caption"&gt;The covariance eigenvectors identified by PCA are shown in red. The
+plane defined by the 2 largest eigenvectors is shown in light red.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If we look at the data in the plane identified by PCA, it is clear that
+it was mostly 2D:&lt;/p&gt;
+&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/science/attachments/ica_pca/3d_data_pca.jpg" style="width: 50%;" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="understanding-pca-with-a-gaussian-model"&gt;
+&lt;h2&gt;Understanding PCA with a Gaussian model&lt;/h2&gt;
+&lt;p&gt;Let &lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt; be two normal-distributed variables, describing the
+processes we are observing:&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;i&gt;x&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
+&lt;/div&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;i&gt;y&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
+&lt;/div&gt;
+&lt;p&gt;Let &lt;cite&gt;a&lt;/cite&gt; and &lt;cite&gt;b&lt;/cite&gt; be two observation variables, linear combinations of &lt;cite&gt;x&lt;/cite&gt;
+and &lt;cite&gt;y&lt;/cite&gt;:&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;i&gt;a&lt;/i&gt; = &lt;i&gt;x&lt;/i&gt; + &lt;i&gt;y&lt;/i&gt;
+&lt;/div&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;i&gt;b&lt;/i&gt; = 2 &lt;i&gt;y&lt;/i&gt;
+&lt;/div&gt;
+&lt;p&gt;PCA is performed by applying an SVD (singular value decomposition) on the
+observed data matrix:&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;i&gt;Y&lt;/i&gt; = [&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...; &lt;i&gt;b&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...]
+&lt;/div&gt;
+&lt;p&gt;This is equivalent to find the eigenvalues and eigenvectors of
+&lt;span class="formula"&gt;&lt;i&gt;Y&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/span&gt;, the correlation matrix of the observed data. The
+multidimensional (or multivariate, in statistical jargon) probability
+density function of Y is written:&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ~ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;M&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
+&lt;/div&gt;
+&lt;p&gt;where &lt;cite&gt;r&lt;/cite&gt; is the position is the &lt;cite&gt;(a,b)&lt;/cite&gt; observation space, and &lt;cite&gt;M&lt;/cite&gt; the
+correlation matrix. Diagonalizing the matrix &lt;cite&gt;M&lt;/cite&gt; corresponds to finding
+a rotation matrix &lt;cite&gt;U&lt;/cite&gt; such that:&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ~ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;U&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;S&lt;/i&gt; &lt;i&gt;U&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
+&lt;/div&gt;
+&lt;p&gt;With &lt;cite&gt;S&lt;/cite&gt; a diagonal matrix. In other words, &lt;cite&gt;U&lt;/cite&gt; is a rotation of the
+observation space to change to a basis where the probability density
+function is written:&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ~ &lt;i&gt;exp&lt;/i&gt;( − &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="symbol"&gt;∑&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;) = &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="symbol"&gt;∏&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;)
+&lt;/div&gt;
+&lt;p&gt;In this new basis, &lt;cite&gt;Y&lt;/cite&gt; can thus be interpreted as a sum of independent
+normal processes of different variance.&lt;/p&gt;
+&lt;p&gt;We can thus picture the PCA as a way of finding independent normal
+processes. The different steps of the argument exposed above can be
+pictured in the following figure:&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="http://gael-varoquaux.info/science/attachments/ica_pca/pca_on_gaussian_data.png" style="width: 80%;" /&gt;
+&lt;p class="caption"&gt;First we represent samples drawn from
+&lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt; in their original space, the basis of the independent
+variables. Then we represent the (&lt;cite&gt;a&lt;/cite&gt;, &lt;cite&gt;b&lt;/cite&gt;) samples, and we apply PCA on
+these samples, to estimate the eigenvectors of the covariance matrix.
+Then we represent the data projected in the basis estimated by PCA. One
+important detail to note, is that after PCA, the data is most often
+rescaled: each direction is divided by the corresponding sample standard
+deviation identified by PCA. After this operation, all directions of
+space play the same role, the data is spheric, or “white”.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;PCA was able to identify the original independent variables &lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt;
+in the &lt;cite&gt;a&lt;/cite&gt; and &lt;cite&gt;b&lt;/cite&gt; samples only because they were mixed with different
+variance. For a isotropic Gaussian model, any basis can describe the data
+in terms of independent normal process.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pca-on-non-normal-data"&gt;
+&lt;h2&gt;PCA on non normal data&lt;/h2&gt;
+&lt;p&gt;More generally, the PCA algorithm can be understood as an algorithm
+finding the direction of space with the highest sample variance, and
+moving on to the orthogonal subspace of this direction to find the next
+highest variance, and iteratively discovering an ordered orthogonal basis
+of highest variance. This is well adapted to normal processes, as their
+covariance is indeed diagonal in an orthogonal basis. In addition, the
+resulting vectors come with a “PCA score”, ie the variance of the data
+projected along the direction they define. Thus when using PCA for
+dimension reduction, we can choose the subspace defined by the first &lt;cite&gt;n&lt;/cite&gt;
+PCA vectors, on the basis that they explain a given percentage of the
+variance, and that the subspace they define is the subspace of dimension
+&lt;cite&gt;n&lt;/cite&gt; that explains the largest possible fraction of the total variance.&lt;/p&gt;
+&lt;p&gt;However, on strongly non-Gaussian processes, the variance may not be the
+quantity of interest.&lt;/p&gt;
+&lt;p&gt;Let us consider the same model as above, with two independent variables
+&lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt; thought with strongly non-Gaussian distributions. Here we
+use a mixture of a narrow Gaussian, and wide one, to populate the tails:&lt;/p&gt;
+&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/science/attachments/ica_pca/non_gaussian_pdf.png" style="width: 40%;" /&gt;
+&lt;p&gt;We can apply the same operations on these random variables: change of
+basis to an observation basis made of &lt;cite&gt;a&lt;/cite&gt; and &lt;cite&gt;b&lt;/cite&gt;, and PCA on the
+resulting sample:&lt;/p&gt;
+&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/science/attachments/ica_pca/pca_on_non_gaussian_data.png" style="width: 80%;" /&gt;
+&lt;p&gt;We can see that the PCA did not properly identify the original
+independent variables. The variance criteria is not good-enough when the
+principle axis of the observed distribution are not orthogonal, as the
+highest variance can be found in a direction mixing the two process.
+Indeed the largest PCA direction is found slightly off axis. In addition
+the second direction can only be found orthogonal to the first one, as
+this is a restriction of PCA.&lt;/p&gt;
+&lt;p&gt;On the other side, the data after PCA is much more spheric than the
+original data. No strong anisotropy is found in the central part of the
+sample cloud, which contributes most to the variance.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="ica-independent-non-gaussian-variables"&gt;
+&lt;h2&gt;ICA: independent, non-Gaussian variables&lt;/h2&gt;
+&lt;p&gt;For strongly non-Gaussian processes, the above example shows that
+separating independent process should be done by looking at fine details
+of the distribution, such as the tails. Indeed, after PCA, the Gaussian
+part of the processes have been separated by their variance, and the
+resulting, rescaled, samples cannot be decomposed in independent process
+in a Gaussian model, as they all have the same variance, and would
+already be considered independent under a Gaussian hypothesis.&lt;/p&gt;
+&lt;p&gt;A popular class of algorithms to separate independent sources, called ICA
+(independent component analysis) makes the simplification that finding
+independent sources out of such data can be reduced to finding maximally
+non-Gaussian. Indeed, the central-limit theorem tells us that the sum of
+non-Gaussian processes lead to Gaussian process. Conversely, with equal
+variance multivariate samples, the more non-Gaussian a signal extracted
+from the data, the less independent -and non-Gaussian- variables it
+contains.&lt;/p&gt;
+&lt;p&gt;A good discussion of these arguments can be found in following paper:
+&lt;a class="reference external" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/IJCNN99_tutorial3.html"&gt;http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/IJCNN99_tutorial3.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ICA is thus an optimization algorithm that from the data extracts the
+direction with the least-Gaussian PDF, removes the data explained by this
+variable from the signal, and iterates.&lt;/p&gt;
+&lt;p&gt;Applying ICA to the previous model yields the following:&lt;/p&gt;
+&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/science/attachments/ica_pca/ica_on_non_gaussian_data.png" style="width: 80%;" /&gt;
+&lt;p&gt;We can see that ICA has well identified the original independent data
+variables. Its use of the tails of the distribution was paramount for
+this task. In addition, ICA relaxes the constraint that all identified
+directions must be perpendicular. This flexibility was also important to
+match our data.&lt;/p&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This discussion can now be seen as an &lt;a class="reference external" href="http://scikit-learn.org/stable/auto_examples/decomposition/plot_ica_vs_pca.html"&gt;example of the scikit-learn&lt;/a&gt;.
+Thus you can replicate the figure using the code in the scikit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- vim:set spell:
+vim:set autoindent: --&gt;
+&lt;/div&gt;
+</summary><category term="machine learning"></category><category term="scientific computing"></category><category term="selected"></category></entry><entry><title>General relativity, quantum physics, freely-falling planes and Bayesian statistics</title><link href="http://gael-varoquaux.info/science/general-relativity-quantum-physics-freely-falling-planes-and-bayesian-statistics.html" rel="alternate"></link><updated>2009-12-08T22:20:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-12-08:science/general-relativity-quantum-physics-freely-falling-planes-and-bayesian-statistics.html</id><summary type="html">&lt;p&gt;We’re famous: the &lt;a class="reference external" href="http://gael-varoquaux.info/science/acceleration-estimation-in-atom-interferometric-tests-of-the-einstein-equivalence-principle.html"&gt;work&lt;/a&gt; that concluded my PhD is now picked up by the
+press &lt;a class="reference external" href="http://www.physorg.com/news179481148.html"&gt;http://www.physorg.com/news179481148.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I hadn’t realized before reading this journalist’s version of the story,
+but we have all the proper buzz words:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;general relativity&lt;/li&gt;
+&lt;li&gt;quantum physics&lt;/li&gt;
+&lt;li&gt;freely-falling planes&lt;/li&gt;
+&lt;li&gt;Bayesian statistics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This kind of stuff makes great headlines, but the way we are judged on
+this “success” is actually harmful (I believe), as there is so much
+interesting research that lies away of the trendy words and that needs
+to be done.&lt;/p&gt;
+</summary><category term="personnal"></category><category term="physics"></category><category term="science"></category></entry><entry><title>Acceleration estimation in atom-interferometric tests of the Einstein equivalence principle</title><link href="http://gael-varoquaux.info/science/acceleration-estimation-in-atom-interferometric-tests-of-the-einstein-equivalence-principle.html" rel="alternate"></link><updated>2009-11-07T15:24:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-11-07:science/acceleration-estimation-in-atom-interferometric-tests-of-the-einstein-equivalence-principle.html</id><summary type="html">&lt;p&gt;Hurray! The pivot article that marks my transition from physics to
+statistic modeling is finally out:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;a class="reference external" href="http://www.iop.org/EJ/article/1367-2630/11/11/113010/njp9_11_113010.pdf"&gt;How to estimate the differential acceleration in a two-species atom interferometer to test the equivalence principle&lt;/a&gt;
+&lt;em&gt;G Varoquaux, R A Nyman, R Geiger, P Cheinet, A Landragin and P Bouyer&lt;/em&gt;&lt;/blockquote&gt;
+&lt;p&gt;To put things in context, at the end of my PhD, we had been building an
+atom interferometer to test the Einstein equivalence principle and my
+reflections on the limits of atom interferometry shifted from worrying
+about the underlying physics, to worrying about the estimation: the
+inverse problem of going from the experimental signal, to the underlying
+quantities that we are measuring, confounded by all the horrible
+experimental noise.&lt;/p&gt;
+&lt;div class="section" id="atoms-light-gravity-fields-and-free-fall-planes"&gt;
+&lt;h2&gt;Atoms, light, gravity fields and free-fall planes&lt;/h2&gt;
+&lt;p&gt;The problem is: we want to do high precision metrologic tests in a
+free-falling plane. We use interferometry to measure gravity fields. But
+rather than doing interferometry with light, we use atoms, that are much
+more coupled to gravity. When probing gravity fields with light, the
+trick is to use huge highly-sensitive interferometers. For instance the
+&lt;a class="reference external" href="http://www.ligo.caltech.edu/"&gt;ligo&lt;/a&gt; and &lt;a class="reference external" href="http://www.virgo.infn.it/"&gt;virgo&lt;/a&gt; projects are kilometer-long light interferometers
+listening for gravitational waves, and the &lt;a class="reference external" href="http://www.ringlaser.org.nz/content/facilities.php"&gt;giant ring lasers&lt;/a&gt; can test
+for tiny modifications in the Earth rotation and gravity field.
+Gravimetric coupling with matter waves and light waves describes the
+&lt;a class="reference external" href="http://www.turpion.org/php/paper.phtml?journal_id=pu&amp;amp;paper_id=6425"&gt;very exact same underlying physics&lt;/a&gt;. However, matter waves, atoms in
+the case of PhD, fall in gravity fields. While this is the expression of
+the very exact phenomena we are trying to measure, it also means that to
+build a very large atom interferometer, you have to let the atoms fall
+for a large distance. And I can attest that even &lt;a class="reference external" href="http://gael-varoquaux.info/physics/KRubLog/07/0518/P1010619.jpg"&gt;laboratory-sized
+versions&lt;/a&gt; of &lt;a class="reference external" href="http://gael-varoquaux.info/physics/KRubLog/index.html"&gt;atom-interferometric experiments&lt;/a&gt; are fairly nasty to
+run:&lt;/p&gt;
+&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/physics/KRubLog/07/0518/P1010619.jpg" style="width: 55%;" /&gt;
+&lt;p&gt;This is why we simply decided to build an experiment in a
+&lt;a class="reference external" href="http://arxiv.org/pdf/0705.2922"&gt;freely-falling plane&lt;/a&gt;: let’s fall &lt;a class="reference external" href="http://gael-varoquaux.info/physics/ICELog/index.html"&gt;with the atoms&lt;/a&gt; for 6
+kilometers (30 seconds).&lt;/p&gt;
+&lt;img alt="" src="http://gael-varoquaux.info/physics/ICELog/07/0328/DSCF0662.jpg" style="width: 40%;" /&gt;
+&lt;img alt="" src="http://gael-varoquaux.info/physics/ICELog/07/0327/100_6838.jpg" style="width: 40%;" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="measuring-free-fall-while-in-free-fall"&gt;
+&lt;h2&gt;Measuring free fall, while in free fall?&lt;/h2&gt;
+&lt;img alt="" class="align-right" src="http://gael-varoquaux.info/blog/wp-content/uploads/2009/11/coyote.png" /&gt;
+&lt;p&gt;Of course, the plane is not really in free fall. The pilots try as hard
+as possible to compensate for drag and atmospheric turbulence but there
+is a limit to what they can achieve with an Airbus. The atoms are a
+vacuum apparatus, so they are indeed in free fall (before they crash in
+the side of the apparatus). However, making sens of measure of fall-free
+made relative to an unstable, and unpredictable platform is not trivial.
+This is where the statistical modeling kicked in. After reading a bit
+about noise in interferometers, I realized that we had a well-known
+problem in statistics: estimation of hidden variables from noisy
+observations. I learned about &lt;a class="reference external" href="http://www.google.fr/url?sa=t&amp;amp;source=web&amp;amp;ct=res&amp;amp;cd=1&amp;amp;ved=0CAcQFjAA&amp;amp;url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRecursive_Bayesian_estimation&amp;amp;ei=S331StLdCof34Ab117i4BA&amp;amp;usg=AFQjCNFeQT7-ruBii_IfqL5C7smW9jBL3Q&amp;amp;sig2=fYSw1ieKbBFPLqnoBEsdEQ"&gt;recursive Bayesian estimation&lt;/a&gt;, coded a
+proof-of-principle algorithm for our problem (in Python, of course), and
+was sold. The rest of the story is about noise simulations, and trying
+to convince a metrology community that you could perform good
+measurements in a noisy environment.&lt;/p&gt;
+&lt;p&gt;It took us a lot of time (2 years) to write an article that was
+acceptable to the target scientific community, while keeping the core
+estimation and statistics message. Publishing new ideas is hard, because
+you are not answering questions that people already have in mind. This
+is why the fact that &lt;a class="reference external" href="http://www.iop.org/EJ/abstract/1367-2630/11/11/113010"&gt;this article&lt;/a&gt; is out is a huge deal for me. It
+marks a turning point in my reflection: I switched from worrying only
+about forward models, with which try to describe as well as possible the
+system at hand, to inverse problems, in which you worry about estimating
+the parameters from the data.&lt;/p&gt;
+&lt;p&gt;I was startled to see that people are ready to spend a huge amount of
+money and efforts in improving complicated experiments involving quantum
+physics and very sophisticated technology, but can be weary of
+processing the output signal to increase statistical power. Scientific
+communities have their own goals that they pitch (e.g. reducing the
+phase noise in lasers) and there can be huge divides between different
+scientific interests. Realizing this played an important role in &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=34"&gt;my
+career shift&lt;/a&gt;. I wanted to know more about the power of statistical
+modeling and machine learning applied to real-life system. I decided
+that to learn more, I had to work with people that had a different
+culture from mine. It’s been a huge amount of fun so far… More about
+that later.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="personnal"></category><category term="science"></category><category term="physics"></category><category term="scientific computing"></category></entry><entry><title>What’s wrong with young academic careers in France</title><link href="http://gael-varoquaux.info/science/whats-wrong-with-young-academic-careers-in-france.html" rel="alternate"></link><updated>2008-10-13T22:36:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-10-13:science/whats-wrong-with-young-academic-careers-in-france.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://cournape.wordpress.com/"&gt;David&lt;/a&gt; just blogged a link to an &lt;a class="reference external" href="http://insidehighered.com/views/2008/09/15/altbach"&gt;article&lt;/a&gt; about careers in higher
+education. I thought the paragraph on the French system was so much to
+the point that I would like to quote it entirely here:&lt;/p&gt;
+&lt;blockquote&gt;
+In France, the access to a first permanent position as &lt;em&gt;maître de
+conférences&lt;/em&gt; occurs rather early compared with other countries (on
+average prior to the age of 33 years) and opens the path to 35 to 40
+years of an academic career. These recruitments happen after a
+period of high uncertainty as in almost all disciplines the ratio of
+“open positions per doctors” has worsened, while the doctoral degree
+is still not recognized as a qualification by businesses or the
+public sector. Recruiting a new &lt;em&gt;maître de conférences&lt;/em&gt; thus
+constitutes a high-stakes decision. But currently university
+departments have about two months to examine the candidates, select
+some of them, hold a 20- to 30-minute interview with those on the
+short list, and rank the best ones. Despite the highly selective
+process that the first candidate on the list successfully passes,
+this new colleague is rarely considered as a chance on which to
+build by the recruiting university. Not only is the salary based on
+a national bureaucratic scale below the average GDP per capita for
+France, but new academics are frequently not offered a personal
+office and may be asked to teach the classes colleagues do not want
+to offer or to accept administrative duties. The difficult road
+toward the doctorate leads to a rather disappointing and frequently
+non-well-remunerated situation, thus undermining the attractiveness
+of the career.&lt;/blockquote&gt;
+&lt;p&gt;I don’t regret doing a PhD, but I think the current situation needs to
+be stressed, especially to future PhD students: high risk, little gain
+career. You better really love what you’ll be doing. And keep in mind an
+exit door.&lt;/p&gt;
+</summary><category term="science"></category><category term="scientific computing"></category></entry><entry><title>LaTeX files of my PhD thesis</title><link href="http://gael-varoquaux.info/science/latex-files-of-my-phd-thesis.html" rel="alternate"></link><updated>2008-04-01T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-04-01:science/latex-files-of-my-phd-thesis.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="attachments/gaeltex.zip"&gt;Here&lt;/a&gt; are the main files I use for writing
+&lt;a class="reference external" href="http://tel.archives-ouvertes.fr/tel-00265714"&gt;my PhD thesis&lt;/a&gt; with
+LaTeX. I am not publishing them on the net as a model of what to do, as
+at the end I was too much in a hurry to do a good job, and I hacked
+kludges all over the code (it does not compile without overflows
+anymore).&lt;/p&gt;
+&lt;p&gt;What turned out to be very handy was the use of the &lt;a class="reference external" href="http://www.ctan.org/tex-archive/macros/latex/contrib/memoir/"&gt;memoir package&lt;/a&gt;. It
+allowed me just enough customization while staying compact. In order to
+make it work with some other packages I use, I had to hack it a bit
+(horrible kludges again).&lt;/p&gt;
+&lt;p&gt;You need an install of the garamond fonts to build this (for epigraphs).
+I use my own version.&lt;/p&gt;
+&lt;p&gt;Don’t e-mail me to debug the problems you get by copying the kludges in
+here. This is ugly code, that I put out because people were asking for
+it.&lt;/p&gt;
+</summary><category term="latex"></category><category term="publishing"></category></entry><entry><title>Mission accomplished</title><link href="http://gael-varoquaux.info/science/mission-accomplished.html" rel="alternate"></link><updated>2008-01-19T11:59:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-01-19:science/mission-accomplished.html</id><summary type="html">&lt;p&gt;I defended my PhD yesterday. I am pretty happy to be done with this.&lt;/p&gt;
+&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/01/talking1.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/01/talking1.jpg" /&gt;&lt;/a&gt;
+&lt;p&gt;After the defense, the other PhD students offered me a plastic python
+(well it was a cobra, actually, but they told me to pretend it was a
+Python.&lt;/p&gt;
+&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/01/python.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/01/python.jpg" /&gt;&lt;/a&gt;
+</summary><category term="personnal"></category><category term="science"></category><category term="physics"></category></entry><entry><title>Garamond fonts for LaTeX</title><link href="http://gael-varoquaux.info/science/garamond-fonts-for-latex.html" rel="alternate"></link><updated>2006-10-01T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2006-10-01:science/garamond-fonts-for-latex.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Garamond"&gt;Garamond fonts&lt;/a&gt; are a large
+family of fonts. At a friend’s request I modified the &lt;a class="reference external" href="ftp://dante.ctan.org/tex-archive/fonts/urw/garamond/"&gt;URW-garamond&lt;/a&gt; fonts to improve
+kerning, add old style numbers, and make some letters prettier. These
+fonts are available under the &lt;a class="reference external" href="http://www.cs.wisc.edu/~ghost/doc/cvs/Public.htm"&gt;Aladdin Free Public License&lt;/a&gt; , which states, if I
+understand it correctly, that you can use and modify the fonts freely for
+non commercial purposes.&lt;/p&gt;
+&lt;p&gt;Here is &lt;a class="reference external" href="attachments/baudelaire.pdf"&gt;a pdf file&lt;/a&gt; that gives an example
+of the fonts.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;Questions and suggestions&lt;/p&gt;
+&lt;p&gt;I made this font in 2006. Time has passed, and I have completely
+forgotten the skills required to modify it. I cannot go anywhere
+beyond providing the file for download. Sorry, if you send me a kind
+email mentionning that the accents or the numbers are not right, I am
+unable to address it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="instructions-for-use-with-pdflatex"&gt;
+&lt;h2&gt;Instructions for use with pdfLaTeX&lt;/h2&gt;
+&lt;p&gt;The standard procedure for installing new fonts in a LaTeX installation
+is quite complicated and varies from one LaTeX distribution to another.&lt;/p&gt;
+&lt;p&gt;I strongly suggest that you install the fonts only in your documents
+folder. This make your document portable: as long as you give the
+complete folder to your colleagues, they will be able to compile it.&lt;/p&gt;
+&lt;p&gt;If you want to install the fonts in the TeXMF (so that all documents
+compiled on your installation have access to the fonts) I assume you know
+TeX well enough to perform the installation without further help.&lt;/p&gt;
+&lt;div class="section" id="installing-in-the-current-folder"&gt;
+&lt;h3&gt;Installing in the current folder&lt;/h3&gt;
+&lt;p&gt;Here is an easy way to install the fonts in your document’s folder (this
+will only work if you are using pdfLaTeX):&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/garamond.zip"&gt;Here&lt;/a&gt; is a package to use these fonts with LaTeX.&lt;/p&gt;
+&lt;p&gt;Unzip &lt;em&gt;garamond.zip&lt;/em&gt; in the same folder than the LaTeX document you
+are working on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="using-in-a-latex-document"&gt;
+&lt;h3&gt;Using in a LaTeX document&lt;/h3&gt;
+&lt;p&gt;In your LaTeX file, include the package “garamond”:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;garamond&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You also need to use the T1 font encoding:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="na"&gt;[T1]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fontenc&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The garamond package defines a new command &lt;tt class="docutils literal"&gt;\garamond&lt;/tt&gt; that switches
+the font in the current group to garamond. Here is a minimal example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;\documentclass&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;article&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="na"&gt;[T1]&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;fontenc&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;lmodern&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;span class="k"&gt;\usepackage&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;garamond&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;\begin&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+
+&lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\garamond&lt;/span&gt;
+The Quick Brown Fox Jumps Over The Lazy Dog. 0123456789 &lt;span class="k"&gt;\\&lt;/span&gt;
+    &lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\slshape&lt;/span&gt; This is garamond slanted&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="k"&gt;\\&lt;/span&gt;
+    &lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\bfseries&lt;/span&gt; This is garamond bold face&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="k"&gt;\\&lt;/span&gt;
+    &lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\scshape&lt;/span&gt; This is in small caps&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="k"&gt;\\&lt;/span&gt;
+    &lt;span class="nb"&gt;{&lt;/span&gt;&lt;span class="k"&gt;\slshape&lt;/span&gt; &lt;span class="k"&gt;\bfseries&lt;/span&gt; This is slanted and bold face&lt;span class="nb"&gt;}&lt;/span&gt; &lt;span class="k"&gt;\\&lt;/span&gt;
+&lt;span class="nb"&gt;}&lt;/span&gt;
+And this is written with the latin modern fonts.
+
+&lt;span class="k"&gt;\garamond&lt;/span&gt;
+
+Here we switch to garamond.
+&lt;span class="k"&gt;\ungaramond&lt;/span&gt;
+
+Here we switch back to the default.
+
+&lt;span class="k"&gt;\end&lt;/span&gt;&lt;span class="nb"&gt;{&lt;/span&gt;document&lt;span class="nb"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;img alt="minimal example of a LaTeX file using garamond fonts" class="align-center" src="attachments/minimal.png" /&gt;
+&lt;p&gt;One remark on this example: you should never, ever, use the standards
+out-of-the-box T1 fonts with pdfLaTeX, they look ugly. Always include the
+“lmodern” or “pslatex” package, that uses much better postscript fonts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="latex"></category><category term="publishing"></category><category term="selected"></category></entry><entry><title>Timing problems with a computer</title><link href="http://gael-varoquaux.info/science/timing-problems-with-a-computer.html" rel="alternate"></link><updated>2006-03-20T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2006-03-20:science/timing-problems-with-a-computer.html</id><summary type="html">&lt;p&gt;Computers are very versatile beasts. Physicists are tempted to use them
+to do real-time signal processing and for instance implement a
+feedback-loop on an instrument. If the frequencies are above 10Hz this is
+not as easy as one might think (after they run at several gHz). I will
+try to explore some difficulties here.&lt;/p&gt;
+&lt;p&gt;Remember, these are just the ramblings of a physics phD student. I have
+little formal training in IT, so don’t hesitate to correct me if I didn’t
+get things right.&lt;/p&gt;
+&lt;div class="section" id="operating-systems-timing-and-latencies"&gt;
+&lt;h2&gt;Operating systems, timing and latencies&lt;/h2&gt;
+&lt;p&gt;If you want to build an I/O system that interacts in real-time with
+external devices you will want to control the timing of the signals you
+send to the instruments.&lt;/p&gt;
+&lt;p&gt;Computers are not good at generating events at a precise timing. This is
+due to the fact that modern operating systems share the processor time
+between a large number of tasks. Your process does not control completely
+the computer, and it has to ask for time to the operating system. The
+operating system shares time between different processes, but it also has
+some internal tasks to do (like allocating memory). All these
+operations may not perform in a predictable time-lapse &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[2]&lt;/a&gt;, and make it
+harder for a process to produce an event (eg a hardware output signal) at
+a precise instant.&lt;/p&gt;
+&lt;p&gt;One solution to avoid problems is to run the program with a single task
+operating-system, like DOS. Even when doing this you have to be careful,
+as all system operations asked by your program may not return in a
+controlled amount of time. The good solution is to use a &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Real-time_operating_system"&gt;hard real-time
+operating system&lt;/a&gt;, but this
+forces us to use dedicated system and makes the job much harder as we
+cannot use standard programming techniques and libraries.&lt;/p&gt;
+&lt;p&gt;I will attempt to study the limitations of a simple approach, using
+standard operating systems and programming techniques, to put numbers of
+the performance one can expect.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="real-time-clock-interrupt-latency"&gt;
+&lt;h2&gt;Real-time clock interrupt latency&lt;/h2&gt;
+&lt;p&gt;The right tool to control timing under linux is the “real time clock”
+&lt;a class="footnote-reference" href="#id6" id="id2"&gt;[3]&lt;/a&gt;. It can be used to generate interrupts at a given frequency or
+instant.&lt;/p&gt;
+&lt;p&gt;To quote Wikipedia: “in computing, an interrupt is an asynchronous signal
+from hardware indicating the need for attention or a synchronous event in
+software indicating the need for a change in execution”. In our case the
+interrupt is a signal generated by the real time clock that is trapped by
+a process.&lt;/p&gt;
+&lt;p&gt;I have ran a few experiments on the computers I have available to test
+the reliability of timing of these interrupts, that is the time it take
+to the process to get the interrupt. This is known as “interrupt
+latency” (for more details see &lt;a class="reference external" href="http://lwn.net/Articles/139784/"&gt;this article&lt;/a&gt;), and it limits both the response
+time and the timing accuracy of a program that does not monopolize the
+CPU, as it corresponds to the time needed for the OS to hand over control
+to the program.&lt;/p&gt;
+&lt;div class="section" id="the-experiment-and-the-results"&gt;
+&lt;h3&gt;The experiment and the results&lt;/h3&gt;
+&lt;p&gt;I used a test program to measure interrupt latency &lt;a class="footnote-reference" href="#id7" id="id3"&gt;[4]&lt;/a&gt; on linux. The test
+code first sets the highest scheduling priority it can, then asks to be
+waken up at a given frequency &lt;em&gt;f&lt;/em&gt; by the real-time clock. It checks the
+real-time clock to see if it was really waken-up when it asked for. It
+computes the differences between the measured delay between 2 interrupts
+and the theoretical one &lt;em&gt;1/f&lt;/em&gt;. Here is a plot of histogram of the delays
+on different systems. The delay is plotted in units of the period &lt;em&gt;1/f&lt;/em&gt;.&lt;/p&gt;
+&lt;img alt="" class="align-center" src="attachments/real_time_results.png" /&gt;
+&lt;p&gt;While the code was running I put some stress on the system, pinging
+google.com, copying data to the disk, and calculating an md5 hash. This
+is not supposed to be representative of any particular use, I just wanted
+not the system to be idle aside from my test code. The tests where run
+under a gnome session but without any user action.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="interpretation-of-the-results"&gt;
+&lt;h3&gt;Interpretation of the results&lt;/h3&gt;
+&lt;p&gt;I am no kernel guru, so my interpretations may be imprecise, but I can
+see that the results are pretty bad.&lt;/p&gt;
+&lt;p&gt;There is a jitter that can go up to half a period at 1kHz. Depending on
+how important it is to have a narrow linewidth of your “digital
+oscillator” the jitter sets a limit to the frequency where the computer
+can be used as a “digital oscillator”.&lt;/p&gt;
+&lt;p&gt;This also tells us that an interrupt request takes in average 0.5ms to
+get through to the program it targets. This allows us to estimate the
+time it take for an event (for instance generated by an I/O card) to
+reach a program, if this one is not running.&lt;/p&gt;
+&lt;p&gt;Keep in mind that this experiment only measures jitter and frequency
+offset due to software imperfection (kernel: operating system related),
+on top of this you must add all the I/O bus and buffer problems, if you
+want to control an external device.&lt;/p&gt;
+&lt;p&gt;An interesting remark is to see how the results vary from one computer to
+another. Quite clearly omega’s RTC is not working properly, this is
+probably due to driver problems. Beta has good results, and this is
+probably due to its pre-emptible kernel. The results of our computer
+(digamma) are surprisingly bad. This is powerful 4 CPU computer. It seems
+to me that the process my be getting relocated from one CPU to another,
+which generates big jitter. Aramis is a 2 CPU (+ multithreading, that’s
+why it appears as 4) box, and it performs much better. The CPU are
+different, and the kernel versions are different, but I would expect more
+recent kernels to fare better.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;The take home message: do not trust computers under the milisecond.&lt;/strong&gt;&lt;/blockquote&gt;
+&lt;p&gt;Other sources have indeed confirmed that with a standard linux kernel, at
+the time of the writing (linux 2.6.18) interrupt latency is of the order
+of the millisecond. The “RT_PREEMPT” compile switch has been measured to
+drop the interrupt latency to 50 microseconds, which is of the order of
+the hardware limit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="implications-of-this-jitter"&gt;
+&lt;h3&gt;Implications of this jitter&lt;/h3&gt;
+&lt;p&gt;These histograms can be seen as frequency spectra of the signal generated
+by the computer.&lt;/p&gt;
+&lt;p&gt;We can see that the signal created can be slightly off in frequency (the
+peak is not always centered on zero). The RTC is not well calibrated.
+This should not be a major problem if the offset is repeatable, as it can
+be measured and taken in account for.&lt;/p&gt;
+&lt;p&gt;We can see that the spectrum has a non negligible width at high
+frequency. This means that in a servo-loop like system the computer will
+add high frequency noise at around 1kHz. It also means that the
+timing of a computer created event cannot be trusted at the millisecond
+level.&lt;/p&gt;
+&lt;p&gt;However it is interesting to note that very few events reach out of the
++/- 1 period. This means that the computer does not skip a beat very
+often. It does perform the work in a reliable way, but it does not
+deliver it on time. This means that if we correct for this jitter the
+computer can act as a servo loop up to 1kHz. The preempt kernel performs
+very well in terms of reliability, even though it is on an old box with
+little computing power.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="dealing-with-the-jitter"&gt;
+&lt;h3&gt;Dealing with the jitter&lt;/h3&gt;
+&lt;p&gt;First we could try to correct for the jitter with a software trick. For
+instance we could ask for the interrupt in advance, and block the CPU by
+doing busy-waiting (to ensure that the scheduler does not schedule us
+out) until the exact moment comes.&lt;/p&gt;
+&lt;p&gt;Another option is to use an I/O device with an embedded clock, that
+corrects for the jitter. For instance a hardware trigged acquisition
+card. I prefer this solution as it is more versatile and scalable.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This brings us to something that seems to be quite general with real-time
+computer control: buffers and external clocks. The computer has the
+processing power to do the work in the required amount of time. The
+buffer and the external clock correct for the jitter introduced by the
+software.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Finally recompiling a kernel with the RT-preempt patch would probably
+help a lot, given that it reduces the interrupt latency by two orders of
+magnitudes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="technical-details-about-the-experiment"&gt;
+&lt;h3&gt;Technical details about the experiment&lt;/h3&gt;
+&lt;div class="section" id="the-measuring-code"&gt;
+&lt;h4&gt;The measuring code&lt;/h4&gt;
+&lt;p&gt;The way this work is that a small C code (borrowed and adapted from
+Andrew Morton’s “realfeel.c”) asks for the highest scheduling priority it
+can get, then set the real-time clock to generate an interrupt at a give
+frequency. It then loops, waiting for the real-time clock (RTC). The OS
+schedules other tasks during the waiting period, but when the interrupt
+is generated by the RTC the OS gives the CPU back to the program. It then
+compares the time delay between the last time it got the interrupt, and
+this time, and stores the difference. The results are stored in a
+histogram file.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-stress-code"&gt;
+&lt;h4&gt;The stress code&lt;/h4&gt;
+&lt;p&gt;I have very ugly way of putting stress and the computer, so that the
+kernel actually schedules other tasks. I did not put tremendous stress
+on the CPU, as I want to simulate standard use cases. This is the way I
+did it:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="o"&gt;((&lt;/span&gt;  &lt;span class="nv"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt;  i &amp;lt;&lt;span class="o"&gt;=&lt;/span&gt; 10&lt;span class="p"&gt;;&lt;/span&gt;  i++  &lt;span class="o"&gt;))&lt;/span&gt;
+&lt;span class="k"&gt;do&lt;/span&gt;
+    ping -c &lt;span class="m"&gt;10&lt;/span&gt; www.google.com &lt;span class="p"&gt;&amp;amp;&lt;/span&gt;
+    dd &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/urandom &lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1M &lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;40&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; md5sum - &lt;span class="p"&gt;&amp;amp;&lt;/span&gt;
+    dd &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/zero &lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/tmp/foo &lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1M &lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;500
+    sync
+rm /tmp/foo
+&lt;span class="k"&gt;done&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Three tasks running in parallel: pinging google, calculation the md5 hash
+of a random chunk of bits (which also means generating it), and writing
+500Mb to the disk. If the system and the network are fast enough the 2
+first task finish before the last one. This is done on purpose.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="making-your-own-measurements"&gt;
+&lt;h3&gt;Making your own measurements&lt;/h3&gt;
+&lt;p&gt;You can reproduce the histograms under linux by running the
+“stresstest.sh” script given be the &lt;a class="reference external" href="attachments/real_time_stress_test.zip"&gt;following archive&lt;/a&gt; . The plots can be obtained by
+running the “process.py” python scripts (requires scipy and matplotlib).
+You may have to increase the real-time clock frequency user limit. You
+can do this by running (as root) ” echo 1024 &amp;gt;
+/proc/sys/dev/rtc/max-user-freq”&lt;/p&gt;
+&lt;p&gt;Send me the results dir created by the “stresstest.sh” script on your
+box, I am very interested to gather more statistics.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="conclusion"&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The jitter measurement is interesting not because it shows the absolute
+limit of the technology (hard real-time OSs, like RTlinux could go much
+further), but because it shows the performance achievable with simple
+techniques. Looking at this data I would say that anything with
+frequencies below 10 to 100Hz is fairly easy to achieve with the RTC
+interrupts, anything around several kiloHertz can be done with a bit more
+work, and anything above require a lot of work.&lt;/p&gt;
+&lt;p&gt;My current policy is to try to move to embedded devices anything with
+speeds above 10Hz.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Acknowledgments&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I would like to thank Nicolas George for enlightening discussions on
+these matters, as useful questions on the purpose of this experiment. I
+would also like to thank David Cournapeau for pointing me to interesting
+references and to the Linux Audio Developer mailing list for more
+information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;[1]&lt;/td&gt;&lt;td&gt;Wikipedia article on real-time computing:
+&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Real-time_computing"&gt;http://en.wikipedia.org/wiki/Real-time_computing&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A very clear article about fighting latency in the linux kernel:
+&lt;a class="reference external" href="http://lac.zkm.de/2006/papers/lac2006_lee_revell.pdf"&gt;http://lac.zkm.de/2006/papers/lac2006_lee_revell.pdf&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;About the RTC: &lt;a class="reference external" href="http://www.die.net/doc/linux/man/man4/rtc.4.html"&gt;http://www.die.net/doc/linux/man/man4/rtc.4.html&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;What this code is actually measuring is, in technical terms, the
+interrupt latency, that is the time it takes for the kernel to catch
+the interrupt, and the rescheduling latency, that is the time it take
+for the kernel to reschedule from one process to another.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;[5]&lt;/td&gt;&lt;td&gt;A different benchmark, that probably studies more directly the
+intrinsic kernel limits than my code: &lt;a class="reference external" href="http://lwn.net/Articles/139403/"&gt;http://lwn.net/Articles/139403/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id9" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;[6]&lt;/td&gt;&lt;td&gt;Another benchmark, that also benchmarks the RT-preempt patch and
+shows the impressive improvements achieved with this patch:
+&lt;a class="reference external" href="http://kerneltrap.org/node/5466"&gt;http://kerneltrap.org/node/5466&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id10" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;[7]&lt;/td&gt;&lt;td&gt;A course on real-time computing, with the lecture notes.
+&lt;a class="reference external" href="http://lamspeople.epfl.ch/decotignie/#InfoTR"&gt;http://lamspeople.epfl.ch/decotignie/#InfoTR&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!-- http://www.captain.at/adeos-ipipe-jitter-latency-test.php --&gt;
+&lt;!-- vim:spell:spelllang=en_us ft=rst --&gt;
+&lt;/div&gt;
+</summary><category term="linux"></category><category term="science"></category></entry></feed>

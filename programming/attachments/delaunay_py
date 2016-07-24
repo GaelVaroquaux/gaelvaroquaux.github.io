@@ -1,0 +1,76 @@
+"""
+An example ilustrating 3D Delaunay tessalation.
+
+In this example, a cloud of random unconnected points is transformed into
+a connected scalar field with Delaunay tessalation. We extract the edges
+of the cells to display the corresponding tessalation. An inner
+region of the unstructured grid is extracted with a GeometryFilter TVTK
+filter, forming a slab that highlights the connectivity of the
+unstructured grid. Finally, the continuous scalar field resulting from
+the tessalation (via Delaunay interpolation in the cells) is
+rendered using volume rendering.
+"""
+
+################################################################################
+# Create a set of points, with given density
+import numpy as np
+# We set the seed of the random generator for reproducible results.
+np.random.seed(3)
+N = 500
+extent = 5*N**(0.3)
+
+x, y, z = extent*(1-2*np.random.random((3, N)))
+indices = np.arange(N)
+
+################################################################################
+# Visualize the points.
+from enthought.mayavi import mlab
+fig = mlab.figure(1, bgcolor=(1, 1, 1))
+# We disable rendering, to speed up the construction of the scene. It
+# will be re-enabled at the end.
+fig.scene.disable_render = True
+
+# Create unconnected points
+pts = mlab.pipeline.scalar_scatter(x, y, z, indices)
+
+# Display the points as spheres. We use the 'Paired' colormap as it has a 
+# high local contrast: two values close to each other differ strongly
+# color.
+mlab.pipeline.glyph(pts, colormap='Paired', scale_mode='none', 
+                         scale_factor=0.6)
+
+# Create connectivty, extract the edges and display them.
+delaunay = mlab.pipeline.delaunay3d(pts)
+edges = mlab.pipeline.extract_edges(delaunay)
+mlab.pipeline.surface(edges, colormap='Paired', opacity=0.25)
+
+
+# Use a GeometryFilter to cut out a slab
+geom = mlab.pipeline.user_defined(edges, filter='GeometryFilter')
+geom.filter.extent = [-0.8*extent, 0.8*extent, 
+                      -0.2*extent, 0.2*extent,
+                      -0.8*extent, 0.8*extent, ]
+geom.filter.extent_clipping = True
+
+# Display connections in the selected slab as thick tubes.
+mlab.pipeline.surface(mlab.pipeline.tube(geom, 
+                            tube_radius=0.25,
+                            tube_sides=10,
+                        ),
+            colormap='Paired')
+
+# Display the scalar field with volume rendering.
+vol = mlab.pipeline.volume(delaunay)
+
+# Change the opacity transfer function
+from enthought.tvtk.util.ctf import PiecewiseFunction
+otf = PiecewiseFunction()
+otf.add_point(0, 0)
+otf.add_point(N, 0.02)
+vol._otf = otf
+vol._volume_property.set_scalar_opacity(otf)
+
+# And now choose a view, and re-enable rendering.
+mlab.view(166, 80, 82)
+fig.scene.disable_render = False
+mlab.show()

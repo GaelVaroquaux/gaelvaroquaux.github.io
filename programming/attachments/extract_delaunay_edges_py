@@ -1,0 +1,41 @@
+from enthought.mayavi import mlab
+import numpy as np
+
+def compute_delaunay_edges(x, y, z, visualize=False):
+    """ Given 3-D points, returns the edges of their 
+        Delaunay triangulation.
+
+        Parameters
+        -----------
+        x: ndarray
+            x coordinates of the points
+        y: ndarray
+            y coordinates of the points
+        z: ndarray        
+            z coordinates of the points
+
+        Returns
+        ---------  
+        edges: 2D ndarray. 
+            The indices of the edges of the Delaunay triangulation as a 
+            (2, N) array [[pair1_index1, pair2_index1, ...],
+            [pair1_index2, pair2_index2, .. ]]
+    """
+    if visualize:
+        vtk_source =  mlab.points3d(x, y, z)
+    else:
+        vtk_source =  mlab.pipeline.scalar_scatter(x, y, z, figure=False)
+    delaunay =  mlab.pipeline.delaunay3d(vtk_source)
+    edges = mlab.pipeline.extract_edges(delaunay)
+    if visualize:
+        mlab.pipeline.surface(edges)
+    lines = edges.outputs[0].lines.to_array()
+    return np.array([lines[1::3], lines[2::3]])
+
+
+if __name__ == '__main__':
+    N = 200
+    x, y, z = np.random.random((3, N))
+    edges = compute_delaunay_edges(x, y, z, visualize=True)
+    mlab.show()
+
