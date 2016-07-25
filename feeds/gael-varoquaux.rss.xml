@@ -1369,7 +1369,7 @@ to all
 &lt;a class="reference external" href="http://scikit-learn.org/stable/whats_new.html#people"&gt;involved&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="section" id="a-long-development-stretch"&gt;
 &lt;h2&gt;A long development stretch&lt;/h2&gt;
-&lt;p&gt;It’s been a while since the &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=169"&gt;last release of
+&lt;p&gt;It’s been a while since the &lt;a class="reference external" href="http://gael-varoquaux.info/programming/scikit-learn-014-release-features-and-benchmarks.html"&gt;last release of
 scikit-learn&lt;/a&gt;. So a lot has
 happened. Exactly 2611 commits according my count. Quite clearly, we
 have more and more existing code, more and more features to support.
@@ -2270,7 +2270,7 @@ bar. I am sure it helps reviewing code!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="was-it-worth-the-money"&gt;
 &lt;h2&gt;Was it worth the money?&lt;/h2&gt;
-&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2012/skl_activity.png" style="width: 90%;" /&gt;
+&lt;img alt="" src="attachments/skl_activity.png" style="width: 90%;" /&gt;
 &lt;p&gt;I really appreciate that the sponsors did not ask for specific returns on
 investment beyond acknowledgments, but I think that it is useful for us
 to ask the question: was it worth the money? After all, we got around
@@ -2426,7 +2426,7 @@ that&amp;nbsp;develop and maintain their toys is. Borrowing the figure below fro
 &lt;a class="reference external" href="http://www.euroscipy.org/file/6459?vid=download"&gt;Fernando Perez’s talk&amp;nbsp;at Euroscipy&lt;/a&gt;,&amp;nbsp;the number of people that do 90%
 of the grunt work to get the core&amp;nbsp;scientific Python ecosystem going is
 around two handfuls:&lt;/p&gt;
-&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2012/fperez_euroscipy_2011_contributors.jpg" style="width: 70%;" /&gt;
+&lt;img alt="" src="attachments/fperez_euroscipy_2011_contributors.jpg" style="width: 70%;" /&gt;
 &lt;p&gt;I’d like to think that this recruitment problem is a lack of skill set:
 users that have the&amp;nbsp;ability to contribute are just too rare. This is not
 entirely true, there&amp;nbsp;are scores of skilled people on the mailing lists.
@@ -2446,7 +2446,7 @@ condescending to my ears.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I hope that I haven’t overreacted too badly :), that email turned me on.
 That said, I am not sure that people realize how much they owe to the
 open source developers breaking their backs on the packages they use.&lt;/p&gt;
-&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2012/fperez_euroscipy_2011_i_want_you.jpg" style="width: 50%;" /&gt;
+&lt;img alt="" src="attachments/fperez_euroscipy_2011_i_want_you.jpg" style="width: 50%;" /&gt;
 &lt;p&gt;All credit for images goes to &lt;a class="reference external" href="http://fperez.org/"&gt;Fernando Perez&lt;/a&gt;&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Thu, 08 Mar 2012 22:46:00 +0100</pubDate><guid>tag:gael-varoquaux.info,2012-03-08:programming/want-features-just-code.html</guid><category>python</category><category>scientific computing</category><category>community</category></item><item><title>Book review: NumPy 1.5 Beginner’s guide</title><link>http://gael-varoquaux.info/programming/book-review-numpy-15-beginners-guide.html</link><description>&lt;p&gt;Packt publishing sent me a copy of &lt;a class="reference external" href="http://www.packtpub.com/numpy-1-5-using-real-world-examples-beginners-guide/Book"&gt;NumPy 1.5 Beginner’s guide&lt;/a&gt; by Ivan
 Idris.&lt;/p&gt;
@@ -2552,17 +2552,17 @@ speed compromises. In addition, I benched numpy’s builtin
 &lt;p&gt;I would like to stress that I am comparing a general purpose persistence
 engine (joblib) to specific I/O libraries either optimized for the data
 (Nifti), or requiring some massaging to enable persistence (pytables).&lt;/p&gt;
-&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/blog/wp-content/uploads/2012/joblib_rel_0.6_speed/disk.png" style="width: 66%;" /&gt;
+&lt;img alt="" class="align-center" src="attachments/joblib_rel_0.6_speed/disk.png" style="width: 66%;" /&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/blog/wp-content/uploads/2012/joblib_rel_0.6_speed/write.png" style="width: 66%;" /&gt;
+&lt;img alt="" class="align-center" src="attachments/joblib_rel_0.6_speed/write.png" style="width: 66%;" /&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/blog/wp-content/uploads/2012/joblib_rel_0.6_speed/read.png" style="width: 66%;" /&gt;
+&lt;img alt="" class="align-center" src="attachments/joblib_rel_0.6_speed/read.png" style="width: 66%;" /&gt;
 &lt;p&gt;&lt;em&gt;Comparing to other libraries&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Actual numbers can be found &lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2012/joblib_rel_0.6_speed/results_nii.csv"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Actual numbers can be found &lt;a class="reference external" href="attachments/joblib_rel_0.6_speed/results_nii.csv"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Take home messages&lt;/strong&gt; - The graphs are not crystal-clear, but a few
 tendencies appear:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -2606,17 +2606,17 @@ a strain on memory resources.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Species&lt;/strong&gt; - Occurence of species measured in latin America, with a
 lot of missing data.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/blog/wp-content/uploads/2012/joblib_rel_0.6_speed/joblib_disk.png" style="width: 50%;" /&gt;
+&lt;img alt="" class="align-center" src="attachments/joblib_rel_0.6_speed/joblib_disk.png" style="width: 50%;" /&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/blog/wp-content/uploads/2012/joblib_rel_0.6_speed/joblib_write.png" style="width: 50%;" /&gt;
+&lt;img alt="" class="align-center" src="attachments/joblib_rel_0.6_speed/joblib_write.png" style="width: 50%;" /&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/blog/wp-content/uploads/2012/joblib_rel_0.6_speed/joblib_read.png" style="width: 50%;" /&gt;
+&lt;img alt="" class="align-center" src="attachments/joblib_rel_0.6_speed/joblib_read.png" style="width: 50%;" /&gt;
 &lt;p&gt;Actual numbers can be found
-&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2012/joblib_rel_0.6_speed/joblib_results.csv"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a class="reference external" href="attachments/joblib_rel_0.6_speed/joblib_results.csv"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What this tells us&lt;/strong&gt; - The main message from these benchmarks is that
 datasets with redundant information, i.e. that compress well, give fast
 I/O. This is not surprising. In particular, good compression can give
@@ -2801,27 +2801,27 @@ submission site. Authors are encouraged to use IEEE two column format.&lt;/p&gt;
 &lt;/div&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Sun, 11 Sep 2011 15:52:00 +0200</pubDate><guid>tag:gael-varoquaux.info,2011-09-11:programming/python-at-scientific-conferences.html</guid><category>conferences</category><category>python</category><category>scipy</category><category>science</category><category>scientific computing</category></item><item><title>Conference posters</title><link>http://gael-varoquaux.info/science/conference-posters.html</link><description>&lt;p&gt;At the request of a friend, I am putting up some of the posters that I
 recently presented at conferences.&lt;/p&gt;
-&lt;img alt="" class="align-left" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_nips.png" style="width: 30%;" /&gt;
+&lt;img alt="" class="align-left" src="attachments/scientific_posters/poster_nips.png" style="width: 30%;" /&gt;
 &lt;p&gt;&lt;strong&gt;Large-scale functional-connectivity graphical models for individual
 subjects using population prior.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is a poster for &lt;a class="reference external" href="http://hal.inria.fr/inria-00512451/en"&gt;our NIPS work&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_nips.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/scientific_posters/poster_nips.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
-&lt;img alt="" class="align-left" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_ipmi.png" style="width: 30%;" /&gt;
+&lt;img alt="" class="align-left" src="attachments/scientific_posters/poster_ipmi.png" style="width: 30%;" /&gt;
 &lt;p&gt;&lt;strong&gt;Multi-subject dictionary learning to segment an atlas of brain
 spontaneous activity.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is a poster for &lt;a class="reference external" href="http://hal.inria.fr/inria-00588898/en"&gt;our IPMI work&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_ipmi.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/scientific_posters/poster_ipmi.png"&gt;PDF&lt;/a&gt;&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
-&lt;img alt="" class="align-left" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_mayavi.png" style="width: 30%;" /&gt;
+&lt;img alt="" class="align-left" src="attachments/scientific_posters/poster_mayavi.png" style="width: 30%;" /&gt;
 &lt;p&gt;&lt;strong&gt;Mayavi for 3D visualization of neuroimaging data: powerful scripting
 and reusable components in Python.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_mayavi.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/scientific_posters/poster_mayavi.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
-&lt;img alt="" class="align-left" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_scikit.png" style="width: 30%;" /&gt;
+&lt;img alt="" class="align-left" src="attachments/scientific_posters/poster_scikit.png" style="width: 30%;" /&gt;
 &lt;p&gt;&lt;strong&gt;Machine learning for fMRI in Python: inverse inference with
 scikit-learn.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_scikit.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/scientific_posters/poster_scikit.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Mon, 05 Sep 2011 04:15:00 +0200</pubDate><guid>tag:gael-varoquaux.info,2011-09-05:science/conference-posters.html</guid><category>neuroimaging</category><category>machine learning</category><category>science</category><category>publishing</category></item><item><title>Hiring a junior developer on the scikit-learn</title><link>http://gael-varoquaux.info/programming/hiring-a-junior-developer-on-the-scikit-learn.html</link><description>&lt;p&gt;Once again, we are looking for a junior developer to work on the
 scikit-learn. Below is the official job posting. As a personal remark, I
 would like to stress that this is a unique opportunity to be payed for
@@ -2886,7 +2886,7 @@ dotnospam fr&lt;/li&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Sat, 03 Sep 2011 07:26:00 +0200</pubDate><guid>tag:gael-varoquaux.info,2011-09-03:programming/hiring-a-junior-developer-on-the-scikit-learn.html</guid><category>machine learning</category><category>python</category><category>science</category><category>jobs</category><category>scikit-learn</category></item><item><title>My conference travels: Scipy 2011 and HBM 2011</title><link>http://gael-varoquaux.info/science/my-conference-travels-scipy-2011-and-hbm-2011.html</link><description>&lt;div class="section" id="the-scipy-2011-conference-in-austin"&gt;
 &lt;h2&gt;The Scipy 2011 conference in Austin&lt;/h2&gt;
 &lt;p&gt;Last week, I was at the Scipy conference in Austin. It was really great
-to see old friends, and Austin is such a &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=37"&gt;nice&lt;/a&gt; &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=39"&gt;place&lt;/a&gt;.&lt;/p&gt;
+to see old friends, and Austin is such a nice  place.&lt;/p&gt;
 &lt;img alt="" class="align-center" src="http://farm7.static.flickr.com/6143/5931239349_13c78bbef5_m.jpg" style="width: 50%;" /&gt;
 &lt;p&gt;The Scipy conference was held in &lt;a class="reference external" href="http://www.meetattexas.com/"&gt;UT Austin’s conference center&lt;/a&gt;, which
 is a fantastic venue. This is the first geek’s conference I have been at
@@ -3389,7 +3389,7 @@ positions nationwide in all fields of research is ridiculously low. It
 is however an expression of the nightmare of thousands of young
 researchers who are applying each year and keep hearing that the
 government will &lt;a class="reference external" href="http://www.latribune.fr/actualites/economie/france/20100415trib000499181/la-fonction-publique-d-etat-perdra-34.000-postes-en-2011-selon-georges-tron.html"&gt;slash the number of state employees&lt;/a&gt;.&lt;/p&gt;
-&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/cnrs_recruits.jpg" style="width: 70%;" /&gt;
+&lt;img alt="" class="align-center" src="attachments/cnrs_recruits.jpg" style="width: 70%;" /&gt;
 &lt;p&gt;The call for the 2011 applications for research positions at &lt;a class="reference external" href="http://en.inria.fr/"&gt;INRIA&lt;/a&gt;,
 the French national computer science institute, that is another one of
 the big research institutions in France, is &lt;a class="reference external" href="http://www.inria.fr/institut/recrutement-metiers/offres/concours-2011-5-postes-de-charge-de-recherche-2e-classe-sont-a-pourvoir/concours-2011"&gt;out&lt;/a&gt;. The page is entitled
@@ -3404,7 +3404,7 @@ for life sciences). The number of applications is in hundred and not
 thousands, but having only 5 jobs available nationwide still feels
 really awkward.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/cnrs_recruits.pdf"&gt;PDF posters&lt;/a&gt;&lt;/blockquote&gt;
+&lt;a class="reference external" href="attachments/cnrs_recruits.pdf"&gt;PDF poster&lt;/a&gt;&lt;/blockquote&gt;
 &lt;p&gt;A minor detail: I am trying to get a job in computational science
 research in France.&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Sat, 15 Jan 2011 11:41:00 +0100</pubDate><guid>tag:gael-varoquaux.info,2011-01-15:science/research-jobs-in-france-the-black-humor-of-2010-is-the-reality-of-2011.html</guid><category>personnal</category><category>science</category></item><item><title>Scientific publication for software development</title><link>http://gael-varoquaux.info/programming/scientific-publication-for-software-development.html</link><description>&lt;p&gt;The academic community seems to judge the validity and significance of
@@ -3592,7 +3592,7 @@ pure Python image-analysis code:&lt;/p&gt;
 &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Sat, 18 Sep 2010 09:40:00 +0200</pubDate><guid>tag:gael-varoquaux.info,2010-09-18:programming/multitouch-with-vtk-and-medinria-and-mayavi.html</guid><category>mayavi</category><category>python</category><category>scientific computing</category></item><item><title>Machine learning humour</title><link>http://gael-varoquaux.info/science/machine-learning-humour.html</link><description>&lt;div class="section" id="yes-but-they-overfit"&gt;
 &lt;h2&gt;Yes, but they overfit&lt;/h2&gt;
 &lt;p&gt;If you are reading this post through a planet, the movie isn’t showing
-up, just &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=140"&gt;click through&lt;/a&gt; to understand what the hell this is about.&lt;/p&gt;
+up, just &lt;a class="reference external" href="http://gael-varoquaux.info/science/machine-learning-humour.html"&gt;click through&lt;/a&gt; to understand what the hell this is about.&lt;/p&gt;
 &lt;p&gt;
 &lt;object width="480" height="385"&gt;
 &lt;embed src="http://www.youtube.com/v/m60lVGz34hU?fs=1&amp;amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"&gt;
@@ -3900,7 +3900,7 @@ of the &lt;em&gt;inspect&lt;/em&gt; module to find the signature of the &lt;em&g
                 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__class__&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__name__&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
             &lt;span class="nb"&gt;setattr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;The full code can be seen &lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2010/base_estimator_py"&gt;here&lt;/a&gt; and adds a bit more features, such as
+&lt;p&gt;The full code can be seen &lt;a class="reference external" href="attachments/base_estimator.py"&gt;here&lt;/a&gt; and adds a bit more features, such as
 a clever &lt;em&gt;__repr__&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;What I like about this solution is that it (almost) does not use
 metaprograming, and avoids code duplication without forcing any specific
@@ -4195,7 +4195,7 @@ the already-submitted abstract, or submit new abstracts.&lt;/p&gt;
 &lt;div class="line"&gt;EuroScipy 2010 is the annual European conference for scientists using Python. It will be held July 8-11 2010, in ENS, Paris, France.&lt;/div&gt;
 &lt;div class="line"&gt;&lt;strong&gt;Links: `Conference website`_,&amp;nbsp; `Call for papers`_,&amp;nbsp; `Practical information`_&lt;/strong&gt;&lt;/div&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Sat, 15 May 2010 23:36:00 +0200</pubDate><guid>tag:gael-varoquaux.info,2010-05-15:programming/euroscipy-abstract-submission-deadline-extended.html</guid><category>python</category><category>scientific computing</category><category>conferences</category><category>science</category></item><item><title>EuroScipy is finally open for registration</title><link>http://gael-varoquaux.info/programming/euroscipy-is-finally-open-for-registration.html</link><description>&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2010/poster_euroscipy_2010.pdf"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2010/poster_euroscipy_2010.jpg" /&gt;&lt;/a&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Sat, 15 May 2010 23:36:00 +0200</pubDate><guid>tag:gael-varoquaux.info,2010-05-15:programming/euroscipy-abstract-submission-deadline-extended.html</guid><category>python</category><category>scientific computing</category><category>conferences</category><category>science</category></item><item><title>EuroScipy is finally open for registration</title><link>http://gael-varoquaux.info/programming/euroscipy-is-finally-open-for-registration.html</link><description>&lt;a class="reference external image-reference" href="attachments/poster_euroscipy_2010.pdf"&gt;&lt;img alt="" src="attachments/poster_euroscipy_2010.jpg" /&gt;&lt;/a&gt;
 &lt;div class="section" id="the-registration-for-euroscipy-is-finally-open"&gt;
 &lt;h2&gt;The registration for &lt;a class="reference external" href="http://www.euroscipy.org//conference/euroscipy2010"&gt;EuroScipy&lt;/a&gt; is finally open.&lt;/h2&gt;
 &lt;p&gt;To register, go to the &lt;a class="reference external" href="http://www.euroscipy.org//conference/euroscipy2010"&gt;website&lt;/a&gt;, create an account, and you will see a
@@ -4320,7 +4320,7 @@ surface, but also an additional scalar value at these position:&lt;/p&gt;
 &lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;view&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;177&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;82&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;32&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2010/mesh_example.png" /&gt;
+&lt;img alt="" src="attachments/mesh_example.png" /&gt;
 &lt;p&gt;As you can see, this solution is really simple, and solves the problem.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="a-generic-way-of-representing-several-scalar-attributes-with-one-visualization"&gt;
@@ -4332,7 +4332,7 @@ turns the scalar value ‘z’ in elevation (using a WarpScalar filter). We
 would like to be able to add an addition scalar value ‘w’ and turn it
 into color, just like ‘z’ is turned into elevation. The pipeline that is
 created by the surf function is the following:&lt;/p&gt;
-&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2010/surf_pipeline.png" /&gt;
+&lt;img alt="" src="attachments/surf_pipeline.png" /&gt;
 &lt;p&gt;The first element of the pipeline after the scene is the data source
 created for us by the surf function: it is a 2D array that contains the
 ‘z’ value as a scalar value. The ‘WarpScalar’ filter is applied, and
@@ -4391,7 +4391,7 @@ color:&lt;/p&gt;
 &lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;show&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The pipeline that is created is the following:&lt;/p&gt;
-&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2010/complex_pipeline.png" /&gt;
+&lt;img alt="" src="attachments/complex_pipeline.png" /&gt;
 &lt;p&gt;In the first part of the pipeline, the ‘WarpScalar’ filter is applied to
 the ‘z’ scalar value, whereas, due to the ‘SetActiveAttribute’ filter,
 the ‘Surface’ module uses the ‘w’ scalar value to display the color.&lt;/p&gt;
@@ -4617,7 +4617,7 @@ science&lt;/a&gt;&lt;/li&gt;
 &lt;div class="section" id="help-us-spread-the-word"&gt;
 &lt;h2&gt;Help us spread the word&lt;/h2&gt;
 &lt;p&gt;The poster of the conference can be downloaded:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2010/poster_euroscipy_2010.pdf"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2010/poster_euroscipy_2010.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/poster_euroscipy_2010.pdf"&gt;&lt;img alt="" src="attachments/poster_euroscipy_2010.jpg" /&gt;&lt;/a&gt;
 &lt;p&gt;Help us spread the word: print it and post it at your workplace!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="the-exciting-city-of-paris"&gt;
@@ -4629,7 +4629,7 @@ for a French croissant, served by a French waiter with a typical French
 accent in English. In the evenings, walk one block to enjoy the night
 life “rue Mouffetard”, or venture further to stroll on the river banks
 of the Seine, along which people dance to street music.&lt;/p&gt;
-&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2010/banner_euroscipy.jpg" /&gt;
+&lt;img alt="" src="attachments/banner_euroscipy.jpg" /&gt;
 &lt;/div&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Sun, 14 Feb 2010 00:02:00 +0100</pubDate><guid>tag:gael-varoquaux.info,2010-02-14:programming/euroscipy-2010-paris-july-8-11-save-the-date.html</guid><category>python</category><category>science</category><category>scientific computing</category><category>conferences</category></item><item><title>PCA and ICA: Identifying combinations of variables</title><link>http://gael-varoquaux.info/science/ica_vs_pca.html</link><description>&lt;div class="topic"&gt;
 &lt;p class="topic-title first"&gt;&lt;strong&gt;Dimension reduction and interpretability&lt;/strong&gt;&lt;/p&gt;
@@ -5114,7 +5114,7 @@ memory for free without worrying about race conditions).&lt;/li&gt;
 &lt;p&gt;This pattern has actually evolved in the &lt;a class="reference external" href="https://pythonhosted.org/joblib/"&gt;joblib project&lt;/a&gt; ,
 which provides a lot of cleverness under the hood.&lt;/p&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Mon, 09 Nov 2009 00:10:00 +0100</pubDate><guid>tag:gael-varoquaux.info,2009-11-09:programming/writing-parallel-code-in-a-readable-way.html</guid><category>python</category><category>scientific computing</category><category>scipy</category><category>software engineering</category></item><item><title>Acceleration estimation in atom-interferometric tests of the Einstein equivalence principle</title><link>http://gael-varoquaux.info/science/acceleration-estimation-in-atom-interferometric-tests-of-the-einstein-equivalence-principle.html</link><description>&lt;p&gt;Hurray! The pivot article that marks my transition from physics to
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Mon, 09 Nov 2009 00:10:00 +0100</pubDate><guid>tag:gael-varoquaux.info,2009-11-09:programming/writing-parallel-code-in-a-readable-way.html</guid><category>python</category><category>scientific computing</category><category>scipy</category><category>software engineering</category><category>joblib</category></item><item><title>Acceleration estimation in atom-interferometric tests of the Einstein equivalence principle</title><link>http://gael-varoquaux.info/science/acceleration-estimation-in-atom-interferometric-tests-of-the-einstein-equivalence-principle.html</link><description>&lt;p&gt;Hurray! The pivot article that marks my transition from physics to
 statistic modeling is finally out:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;a class="reference external" href="http://www.iop.org/EJ/article/1367-2630/11/11/113010/njp9_11_113010.pdf"&gt;How to estimate the differential acceleration in a two-species atom interferometer to test the equivalence principle&lt;/a&gt;
@@ -5141,19 +5141,19 @@ Gravimetric coupling with matter waves and light waves describes the
 the case of PhD, fall in gravity fields. While this is the expression of
 the very exact phenomena we are trying to measure, it also means that to
 build a very large atom interferometer, you have to let the atoms fall
-for a large distance. And I can attest that even &lt;a class="reference external" href="http://gael-varoquaux.info/physics/KRubLog/07/0518/P1010619.jpg"&gt;laboratory-sized
-versions&lt;/a&gt; of &lt;a class="reference external" href="http://gael-varoquaux.info/physics/KRubLog/index.html"&gt;atom-interferometric experiments&lt;/a&gt; are fairly nasty to
+for a large distance. And I can attest that even laboratory-sized
+versions of atom-interferometric experiments are fairly nasty to
 run:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/physics/KRubLog/07/0518/P1010619.jpg" style="width: 55%;" /&gt;
+&lt;img alt="" class="align-center" src="attachments/P1010619.jpg" style="width: 55%;" /&gt;
 &lt;p&gt;This is why we simply decided to build an experiment in a
-&lt;a class="reference external" href="http://arxiv.org/pdf/0705.2922"&gt;freely-falling plane&lt;/a&gt;: let’s fall &lt;a class="reference external" href="http://gael-varoquaux.info/physics/ICELog/index.html"&gt;with the atoms&lt;/a&gt; for 6
+&lt;a class="reference external" href="http://arxiv.org/pdf/0705.2922"&gt;freely-falling plane&lt;/a&gt;: let’s fall with the atoms for 6
 kilometers (30 seconds).&lt;/p&gt;
 &lt;img alt="" src="http://gael-varoquaux.info/physics/ICELog/07/0328/DSCF0662.jpg" style="width: 40%;" /&gt;
 &lt;img alt="" src="http://gael-varoquaux.info/physics/ICELog/07/0327/100_6838.jpg" style="width: 40%;" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="measuring-free-fall-while-in-free-fall"&gt;
 &lt;h2&gt;Measuring free fall, while in free fall?&lt;/h2&gt;
-&lt;img alt="" class="align-right" src="http://gael-varoquaux.info/blog/wp-content/uploads/2009/11/coyote.png" /&gt;
+&lt;img alt="" class="align-right" src="attachments/coyote.png" /&gt;
 &lt;p&gt;Of course, the plane is not really in free fall. The pilots try as hard
 as possible to compensate for drag and atmospheric turbulence but there
 is a limit to what they can achieve with an Airbus. The atoms are a
@@ -5183,7 +5183,7 @@ physics and very sophisticated technology, but can be weary of
 processing the output signal to increase statistical power. Scientific
 communities have their own goals that they pitch (e.g. reducing the
 phase noise in lasers) and there can be huge divides between different
-scientific interests. Realizing this played an important role in &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=34"&gt;my
+scientific interests. Realizing this played an important role in &lt;a class="reference external" href="http://gael-varoquaux.info/personnal/update-on-my-life.html"&gt;my
 career shift&lt;/a&gt;. I wanted to know more about the power of statistical
 modeling and machine learning applied to real-life system. I decided
 that to learn more, I had to work with people that had a different
@@ -5682,9 +5682,9 @@ window with only your visualization, and a toolbar. If you want to
 change the properties of the objects on the visualization, or add some
 more, you need to click on a button on the toolbar, which displays a
 dialog, from which you can open more dialogs to edit the objects:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2009/02/mayavi_old_ui.png"&gt;&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/blog/wp-content/uploads/2009/02/mayavi_old_ui.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/mayavi_old_ui.png"&gt;&lt;img alt="" class="align-center" src="attachments/mayavi_old_ui.png" /&gt;&lt;/a&gt;
 &lt;p&gt;I am thinking to changing this to a single dialog:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2009/02/mayavi_new_ui.png"&gt;&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/blog/wp-content/uploads/2009/02/mayavi_new_ui.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/mayavi_new_ui.png"&gt;&lt;img alt="" class="align-center" src="attachments/mayavi_new_ui.png" /&gt;&lt;/a&gt;
 &lt;p&gt;The single-object-editing dialogs could still be opened by
 double-clicking on the pipeline.&lt;/p&gt;
 &lt;p&gt;I am not going to discuss why I believe the new version would be better
@@ -5946,7 +5946,7 @@ bad timing.&lt;/p&gt;
 in the &lt;a class="reference external" href="https://pythonhosted.org/joblib/"&gt;joblib&lt;/a&gt; library.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Tue, 23 Dec 2008 01:26:00 +0100</pubDate><guid>tag:gael-varoquaux.info,2008-12-23:programming/tracking-objects-in-scientific-code.html</guid><category>python</category><category>scientific computing</category><category>software engineering</category><category>software architecture</category><category>selected</category></item><item><title>What’s new in Mayavi 3.1.0?</title><link>http://gael-varoquaux.info/programming/whats-new-in-mayavi-310.html</link><description>&lt;p&gt;Mayavi 3.1.0 has just been released, and I think it is a fantastic
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Tue, 23 Dec 2008 01:26:00 +0100</pubDate><guid>tag:gael-varoquaux.info,2008-12-23:programming/tracking-objects-in-scientific-code.html</guid><category>python</category><category>scientific computing</category><category>software engineering</category><category>software architecture</category><category>selected</category><category>joblib</category></item><item><title>What’s new in Mayavi 3.1.0?</title><link>http://gael-varoquaux.info/programming/whats-new-in-mayavi-310.html</link><description>&lt;p&gt;Mayavi 3.1.0 has just been released, and I think it is a fantastic
 version. We are starting to be able to focus on the details and the
 focus. In addition, we are getting user feedback, which helps identify
 the pain points.&lt;/p&gt;
@@ -6075,7 +6075,7 @@ the Glyph tab in this tab), to reduce the scale factor to 0.2. The
 vector field is still too dense, therefore we go to the Masking tab to
 enable masking, mask with an on ratio of 6 (one arrow out of 6 is
 masked) and turn off the random mode.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/11/vector_cut_plane2.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/11/vector_cut_plane2.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/vector_cut_plane2.jpg"&gt;&lt;img alt="" src="attachments/vector_cut_plane2.jpg" /&gt;&lt;/a&gt;
 &lt;p&gt;To have nice colors, we also changed the color map of the vector field
 by going to the Colors and legend node just above the VectorCutPlane,
 and choosing a look up table &lt;strong&gt;in the VectorLUT&lt;/strong&gt; tab, as there can be
@@ -6094,7 +6094,7 @@ initial scalar field. In our case, all the trajectories end up in a
 local potential minimum, and moving the seed point along lets us see in
 which minimum each point will fall into, in other world the basin of
 attraction of each local minimum.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/11/streamline.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/11/streamline.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/streamline.jpg"&gt;&lt;img alt="" src="attachments/streamline.jpg" /&gt;&lt;/a&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Sat, 22 Nov 2008 15:22:00 +0100</pubDate><guid>tag:gael-varoquaux.info,2008-11-22:programming/using-mayavi-to-explore-a-potential-field.html</guid><category>mayavi</category><category>scipy</category><category>scientific computing</category></item><item><title>Using Mayavi with Scipy: a tutorial</title><link>http://gael-varoquaux.info/programming/using-mayavi-with-scipy-a-tutorial.html</link><description>&lt;p&gt;Many years ago, I was working with a bright undergrad on the
 trajectories of a atoms in a complex light field created by the
 intersection of two laser beams. She had developped a code in C, and I
@@ -6158,7 +6158,7 @@ result.&lt;/p&gt;
 &lt;p&gt;We can now click on the Colors and legends on the pipeline and change
 the colors used, by selecting a different LUT (Look Up Table). Let us
 select ‘Paired’ as it separates well levels.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/11/potential_ipython.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/11/potential_ipython.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/potential_ipython.jpg"&gt;&lt;img alt="" src="attachments/potential_ipython.jpg" /&gt;&lt;/a&gt;
 &lt;p&gt;To get a better view of the potential, we would like to display more
 contours, but the problem with this approach is that closed contours
 hide their interior. On solution is to use a cut plane. Right-click on
@@ -6170,7 +6170,7 @@ colorbar. We can do this by typing:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;colorbar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Potential&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;orientation&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;vertical&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Or using the options in the LUT dialog visited earlier.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/11/potential.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/11/potential.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/potential.jpg"&gt;&lt;img alt="" src="attachments/potential.jpg" /&gt;&lt;/a&gt;
 &lt;p&gt;We want to study the motion of a particle in this potential. For this we
 need to derive the corresponding force, given by the gradient of the
 potential. We create a gradient function:&lt;/p&gt;
@@ -6192,7 +6192,7 @@ on our grid:&lt;/p&gt;
 &lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;quiver3d&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;Z&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
                      &lt;span class="n"&gt;Vx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Vy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Vz&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;scale_factor&lt;/span&gt;&lt;span class="o"&gt;=-&lt;/span&gt;&lt;span class="mf"&gt;0.2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/11/gradient.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/11/gradient.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/gradient.jpg"&gt;&lt;img alt="" src="attachments/gradient.jpg" /&gt;&lt;/a&gt;
 &lt;p&gt;Now we can use scipy to integrate the trajectories. We first have to
 define a dynamical flow, the function that returns the derivative of the
 different parameters as a function of these parameters and of time. The
@@ -6228,7 +6228,7 @@ colormap:&lt;/p&gt;
                     &lt;span class="n"&gt;tube_radius&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;colorbar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;trajectory&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Time&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;orientation&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;vertical&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/11/trajectories.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/11/trajectories.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/trajectories.jpg"&gt;&lt;img alt="" src="attachments/trajectories.jpg" /&gt;&lt;/a&gt;
 &lt;p&gt;If I have time, I’ll show later how some of the operations we have done
 with numpy can be done with VTK and Mayavi. This will give us control of
 these operation via widgets and thus more interativity.&lt;/p&gt;
@@ -6293,7 +6293,7 @@ US and to spend the summer doing Python-related stuff.&lt;/p&gt;
 Actually it was the Enthought guys who really made my fantastic summer
 possible by paying me a good salary and thus indirectly funding my
 travels. Thanks Enthought, you guys rock.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/10/enthought-longhorn1.png"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/10/enthought-longhorn1.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/enthought-longhorn1.png"&gt;&lt;img alt="" src="attachments/enthought-longhorn1.png" /&gt;&lt;/a&gt;
 &lt;p&gt;Austin is a nice city. It’s got a very nice night life (thought the
 tequilla doesn’t match Jarrod’s expectations, and they don’t always
 accept South Africans in bars because they look like kids and “any
@@ -6310,7 +6310,7 @@ community better than I do.&lt;/p&gt;
 you don’t speak Texan, this means “out in the bush”, ie in a remote
 location). It might even have been a trap: he lives in a &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Dry_counties"&gt;dry county&lt;/a&gt;.
 Moreover, I woke up one morning to find this in my living room:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/10/scorpion.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/10/scorpion-300x240.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/scorpion-300x240.jpg"&gt;&lt;img alt="" src="attachments/scorpion-300x240.jpg" /&gt;&lt;/a&gt;
 &lt;p&gt;It’s not deadly, I have been told, it just hurts a lot. On top of that,
 the kids brought back a dead black widow one day. Now it may seem to
 some that I am making a stupid fuss about nothing, but the scariest
@@ -6323,7 +6323,7 @@ change jobs, that a good sign). I’ll talk about what I did there in
 another post (I actually started a screen cast about this, but the state
 of video-editing software under Linux is abymissimal, and I could never
 edit the sound track).&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/10/p1010588.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/10/p1010588-300x187.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/p1010588-300x187.jpg"&gt;&lt;img alt="" src="attachments/p1010588-300x187.jpg" /&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;div class="section" id="visits-to-california"&gt;
 &lt;h2&gt;Visits to California&lt;/h2&gt;
@@ -6388,9 +6388,9 @@ need better docs. We need more marketing (we are really bad at this: we
 have fantastic tools, but it is hard to see them). We need people to
 help each-others on the mailing lists. We need packaging. All this is
 paramount and takes a lot of time… And we need coding.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/10/s_p10105761.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/10/s_p10105761-225x300.jpg" /&gt;&lt;/a&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/10/s_p10105732.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/10/s_p10105732-225x300.jpg" /&gt;&lt;/a&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/10/s_p10105831.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/10/s_p10105831-225x300.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/s_p10105761-225x300.jpg"&gt;&lt;img alt="" src="attachments/s_p10105761-225x300.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/s_p10105732-225x300.jpg"&gt;&lt;img alt="" src="attachments/s_p10105732-225x300.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/s_p10105831.jpg"&gt;&lt;img alt="" src="attachments/s_p10105831.jpg" /&gt;&lt;/a&gt;
 &lt;/div&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Sun, 05 Oct 2008 23:24:00 +0200</pubDate><guid>tag:gael-varoquaux.info,2008-10-05:programming/my-travels-this-summer.html</guid><category>python</category><category>scipy</category><category>mayavi</category><category>personnal</category><category>scientific computing</category><category>travels</category></item><item><title>SciPy Conference proceedings</title><link>http://gael-varoquaux.info/programming/scipy-conference-proceedings.html</link><description>&lt;p&gt;The SciPy conference proceedings are finally available online:
 &lt;a class="reference external" href="http://conference.scipy.org/proceedings/SciPy2008"&gt;http://conference.scipy.org/proceedings/SciPy2008&lt;/a&gt; .&lt;/p&gt;
@@ -8825,7 +8825,7 @@ did a PhD in an experimental lab, building a couple of experiments on
 Bose Einstein Condensation and atom interferometry. After this, I moved
 to Florence to do a post-doc also on a BEC experiment.&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/05/gregor_in_lab.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/05/gregor_in_lab.jpg" style="width: 66%;" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/gregor_in_lab.jpg"&gt;&lt;img alt="" src="attachments/gregor_in_lab.jpg" style="width: 66%;" /&gt;&lt;/a&gt;
 &lt;p class="caption"&gt;A colleague working on the experiment in Florence&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;This kind of work is very experimental. These experiments are monsters
@@ -8916,11 +8916,11 @@ you need.&lt;/p&gt;
 &lt;p&gt;As a result the ETS is made of a set of interdependent packages. Maybe
 they went a bit too far in the modularity, and there are almost 50
 packages. The dependency graph looks like this:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/04/ets_deps1.png"&gt;&lt;img alt="image0" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/04/ets_deps1.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/ets_deps1.png"&gt;&lt;img alt="image0" src="attachments/ets_deps1.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Just to reassure you, the next version of the ETS has a much reduced
 number of packages, just because some packages where grouped, and the
 dependency graph indeed is sane:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/04/ets3_deps.png"&gt;&lt;img alt="image1" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/04/ets3_deps.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/ets3_deps.png"&gt;&lt;img alt="image1" src="attachments/ets3_deps.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;As you can see, there is a complex dependency graph. So how do you ship
 this to the user? Another problem that should not be underestimated is:
 how do you make it easy for people who distribute your projects to
@@ -9305,7 +9305,7 @@ also loses track of the scalar data attached to my mesh. As I am
 interested in having a scalar reflecting altitude, in order to associate
 a pleasing color with it, I rebuild this scalar using the
 ElevationFilter filter.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/02/france.png"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/02/france.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/france.png"&gt;&lt;img alt="" src="attachments/france.png" /&gt;&lt;/a&gt;
 &lt;p&gt;I find the result very pleasing: the mesh simplification is very
 impressive, because it yields a good rendering of the landscape with
 little faces. For example, the triangles around a river are elongated
@@ -9348,7 +9348,7 @@ is a bit tedious to learn. This is why Martin Chilvers (the Envisage
 author) has written Envisage3, but this is another story as Mayavi2 is
 currently based on Envisage2. To avoid forcing Envisage on people
 wanting to use Mayavi2, we have been working on decoupling the two. As I
-showed in a &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=3"&gt;previous post&lt;/a&gt;, Mayavi2 can now be fully used without
+showed in a &lt;a class="reference external" href="http://gael-varoquaux.info/programming/mayavi2-using-from-ipython.html"&gt;previous post&lt;/a&gt;, Mayavi2 can now be fully used without
 Envisage. But this is in the development version, and some people are
 stuck with the current release.&lt;/p&gt;
 &lt;p&gt;Today I would like to show how one can add some very simple
@@ -9400,13 +9400,13 @@ the dialog that allows the user to interact with the visualization. This
 is very crude, but is a simple example. If you run this code using
 “mayavi2 -x”, the Mayavi2 application window appears with our
 visualization, and in addition the dialog to interact with it.&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/02/mayayi2-customui.png"&gt;&lt;img alt="mayayi2-customui.png" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/02/mayayi2-customui.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/mayayi2-customui.png"&gt;&lt;img alt="mayayi2-customui.png" src="attachments/mayayi2-customui.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;With the development version of Mayavi2, you can simply change the last
 line from ‘model.edit_traits()’ to ‘model.configure_traits()’ and the
 file can be run as a normal Python file: there is no need for the
 Envisage framework. As a result the UI is a bit simpler, which can be
 seen as a pro, or as a con, depending on what you want to do:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/02/mayavi2-noui.png"&gt;&lt;img alt="mayavi2-noui.png" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/02/mayavi2-noui.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/mayayi2-noui.png"&gt;&lt;img alt="mayavi2-noui.png" src="attachments/mayayi2-noui.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Tue, 05 Feb 2008 02:37:00 +0100</pubDate><guid>tag:gael-varoquaux.info,2008-02-05:programming/adding-simple-customisation-to-mayavi2.html</guid><category>python</category><category>mayavi</category><category>scientific computing</category></item><item><title>Mayavi2 in Ubuntu</title><link>http://gael-varoquaux.info/programming/mayavi2-in-ubuntu.html</link><description>&lt;p&gt;After Debian, Mayavi2 has just made it into Ubuntu Hardy
 (&lt;a class="reference external" href="http://packages.ubuntu.com/hardy/science/mayavi"&gt;http://packages.ubuntu.com/hardy/science/mayavi&lt;/a&gt;2). From what I can
 see, the deps look just good, thanks a lot to Varun for making sure the
@@ -9425,11 +9425,11 @@ always be a bit old and lacking the shiny features that we add in the
 SVN. When I find time, I will put myself together and make debs for
 Gusty. It not hard, I just have to find the time (yes, promises …).&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Sat, 26 Jan 2008 10:10:00 +0100</pubDate><guid>tag:gael-varoquaux.info,2008-01-26:programming/mayavi2-in-ubuntu.html</guid><category>scipy</category><category>mayavi</category><category>scientific computing</category></item><item><title>Mission accomplished</title><link>http://gael-varoquaux.info/science/mission-accomplished.html</link><description>&lt;p&gt;I defended my PhD yesterday. I am pretty happy to be done with this.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/01/talking1.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/01/talking1.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="../science/attachments/talking1.jpg"&gt;&lt;img alt="" src="../science/attachments/talking1.jpg" /&gt;&lt;/a&gt;
 &lt;p&gt;After the defense, the other PhD students offered me a plastic python
 (well it was a cobra, actually, but they told me to pretend it was a
 Python.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/01/python.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/01/python.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="../science/attachments/gael_with_python.jpg"&gt;&lt;img alt="" src="../science/attachments/gael_with_python.jpg" /&gt;&lt;/a&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Sat, 19 Jan 2008 11:59:00 +0100</pubDate><guid>tag:gael-varoquaux.info,2008-01-19:science/mission-accomplished.html</guid><category>personnal</category><category>science</category><category>physics</category></item><item><title>Mayavi2 in Debian</title><link>http://gael-varoquaux.info/programming/mayavi2-in-debian.html</link><description>&lt;p&gt;Thanks to the combined efforts of Ondrej Certik, who made me do the
 necessary tarballs, and Varun Hiremath, who finalized the packaging
 efforts, Mayavi2 is now in Debian (

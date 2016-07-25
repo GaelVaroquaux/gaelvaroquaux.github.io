@@ -1,0 +1,49 @@
+        Dataset,    library,     strategy,  write,   read,   disk
+       Olivetti,     joblib,        zlib0,  0.424,  0.3459,  12.5
+       Olivetti,     joblib,        zlib1,  0.675,  0.3061,   4.1
+       Olivetti,     joblib,        zlib3,  0.977,  0.2117,   3.8
+       Olivetti,     joblib,        zlib6,  1.893,  0.1985,   3.4
+       Olivetti,     joblib,        zlib9,  2.151,  0.2256,   3.4
+       Olivetti,     joblib,         mmap,  0.351,  0.0495,  12.5
+        20 news,     joblib,        zlib0,  0.838,  0.8203,  23.3
+        20 news,     joblib,        zlib1,  1.450,  0.7361,  10.1
+        20 news,     joblib,        zlib3,  1.804,  0.6642,   9.5
+        20 news,     joblib,        zlib6,  2.925,  0.6696,   8.9
+        20 news,     joblib,        zlib9,  3.942,  0.6609,   8.9
+        20 news,     joblib,         mmap,  0.779,  0.7766,  23.3
+      LFW pairs,     joblib,        zlib0,  1.587,  1.2689,  48.9
+      LFW pairs,     joblib,        zlib1,  3.406,  1.6071,  21.6
+      LFW pairs,     joblib,        zlib3,  5.042,  1.3703,  18.5
+      LFW pairs,     joblib,        zlib6,  11.045,  1.4042,  18.4
+      LFW pairs,     joblib,        zlib9,  54.136,  1.3077,  17.4
+      LFW pairs,     joblib,         mmap,  1.843,  0.0347,  48.9
+        Species,     joblib,        zlib0,  3.478,  3.2757,  103.2
+        Species,     joblib,        zlib1,  1.023,  0.5925,   4.3
+        Species,     joblib,        zlib3,  1.191,  0.5833,   3.8
+        Species,     joblib,        zlib6,  1.976,  0.5042,   3.0
+        Species,     joblib,        zlib9,  4.065,  0.5262,   2.9
+        Species,     joblib,         mmap,  3.390,  0.0440,  103.2
+     LFW people,     joblib,        zlib0,  5.120,  4.8691,  147.4
+     LFW people,     joblib,        zlib1,  10.516,  4.2227,  66.7
+     LFW people,     joblib,        zlib3,  16.605,  3.6898,  59.8
+     LFW people,     joblib,        zlib6,  35.514,  3.5517,  60.0
+     LFW people,     joblib,        zlib9,  177.556,  3.3716,  56.7
+     LFW people,     joblib,         mmap,  5.584,  0.0353,  147.4
+     Big people,     joblib,        zlib0,  14.932,  16.5549,  441.6
+     Big people,     joblib,        zlib1,  31.742,  14.1864,  199.9
+     Big people,     joblib,        zlib3,  49.663,  10.5100,  179.3
+     Big people,     joblib,        zlib6,  107.638,  10.8660,  179.9
+     Big people,     joblib,        zlib9,  531.109,  10.3962,  170.0
+     Big people,     joblib,         mmap,  15.026,  0.0396,  441.6
+         MNI(F),     joblib,        zlib0,  2.236,  1.4416,  62.0
+         MNI(F),     joblib,        zlib1,  0.972,  0.5342,   2.1
+         MNI(F),     joblib,        zlib3,  0.964,  0.5341,   2.1
+         MNI(F),     joblib,        zlib6,  1.640,  0.6598,   1.9
+         MNI(F),     joblib,        zlib9,  2.246,  0.6274,   1.8
+         MNI(F),     joblib,         mmap,  2.175,  0.0159,  62.0
+     Juelich(F),     joblib,        zlib0,  3.360,  3.4312,  104.2
+     Juelich(F),     joblib,        zlib1,  0.850,  0.3948,   0.9
+     Juelich(F),     joblib,        zlib3,  0.847,  0.4032,   0.9
+     Juelich(F),     joblib,        zlib6,  1.962,  0.5942,   0.6
+     Juelich(F),     joblib,        zlib9,  2.378,  0.5915,   0.6
+     Juelich(F),     joblib,         mmap,  3.564,  0.0054,  104.2

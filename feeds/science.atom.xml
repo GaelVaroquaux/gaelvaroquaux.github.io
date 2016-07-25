@@ -214,31 +214,31 @@ controlled, rather than the absolute value. That said, FDR, while
 useful, does not answer the problems of publication bias.&lt;/p&gt;
 </summary><category term="statistics"></category><category term="computational science"></category><category term="science"></category></entry><entry><title>Conference posters</title><link href="http://gael-varoquaux.info/science/conference-posters.html" rel="alternate"></link><updated>2011-09-05T04:15:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2011-09-05:science/conference-posters.html</id><summary type="html">&lt;p&gt;At the request of a friend, I am putting up some of the posters that I
 recently presented at conferences.&lt;/p&gt;
-&lt;img alt="" class="align-left" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_nips.png" style="width: 30%;" /&gt;
+&lt;img alt="" class="align-left" src="attachments/scientific_posters/poster_nips.png" style="width: 30%;" /&gt;
 &lt;p&gt;&lt;strong&gt;Large-scale functional-connectivity graphical models for individual
 subjects using population prior.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is a poster for &lt;a class="reference external" href="http://hal.inria.fr/inria-00512451/en"&gt;our NIPS work&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_nips.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/scientific_posters/poster_nips.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
-&lt;img alt="" class="align-left" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_ipmi.png" style="width: 30%;" /&gt;
+&lt;img alt="" class="align-left" src="attachments/scientific_posters/poster_ipmi.png" style="width: 30%;" /&gt;
 &lt;p&gt;&lt;strong&gt;Multi-subject dictionary learning to segment an atlas of brain
 spontaneous activity.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is a poster for &lt;a class="reference external" href="http://hal.inria.fr/inria-00588898/en"&gt;our IPMI work&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_ipmi.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/scientific_posters/poster_ipmi.png"&gt;PDF&lt;/a&gt;&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
-&lt;img alt="" class="align-left" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_mayavi.png" style="width: 30%;" /&gt;
+&lt;img alt="" class="align-left" src="attachments/scientific_posters/poster_mayavi.png" style="width: 30%;" /&gt;
 &lt;p&gt;&lt;strong&gt;Mayavi for 3D visualization of neuroimaging data: powerful scripting
 and reusable components in Python.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_mayavi.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/scientific_posters/poster_mayavi.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
-&lt;img alt="" class="align-left" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_scikit.png" style="width: 30%;" /&gt;
+&lt;img alt="" class="align-left" src="attachments/scientific_posters/poster_scikit.png" style="width: 30%;" /&gt;
 &lt;p&gt;&lt;strong&gt;Machine learning for fMRI in Python: inverse inference with
 scikit-learn.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/poster_scikit.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="attachments/scientific_posters/poster_scikit.pdf"&gt;PDF&lt;/a&gt;&lt;/p&gt;
 </summary><category term="neuroimaging"></category><category term="machine learning"></category><category term="science"></category><category term="publishing"></category></entry><entry><title>My conference travels: Scipy 2011 and HBM 2011</title><link href="http://gael-varoquaux.info/science/my-conference-travels-scipy-2011-and-hbm-2011.html" rel="alternate"></link><updated>2011-07-23T23:45:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2011-07-23:science/my-conference-travels-scipy-2011-and-hbm-2011.html</id><summary type="html">&lt;div class="section" id="the-scipy-2011-conference-in-austin"&gt;
 &lt;h2&gt;The Scipy 2011 conference in Austin&lt;/h2&gt;
 &lt;p&gt;Last week, I was at the Scipy conference in Austin. It was really great
-to see old friends, and Austin is such a &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=37"&gt;nice&lt;/a&gt; &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=39"&gt;place&lt;/a&gt;.&lt;/p&gt;
+to see old friends, and Austin is such a nice  place.&lt;/p&gt;
 &lt;img alt="" class="align-center" src="http://farm7.static.flickr.com/6143/5931239349_13c78bbef5_m.jpg" style="width: 50%;" /&gt;
 &lt;p&gt;The Scipy conference was held in &lt;a class="reference external" href="http://www.meetattexas.com/"&gt;UT Austin’s conference center&lt;/a&gt;, which
 is a fantastic venue. This is the first geek’s conference I have been at
@@ -413,7 +413,7 @@ positions nationwide in all fields of research is ridiculously low. It
 is however an expression of the nightmare of thousands of young
 researchers who are applying each year and keep hearing that the
 government will &lt;a class="reference external" href="http://www.latribune.fr/actualites/economie/france/20100415trib000499181/la-fonction-publique-d-etat-perdra-34.000-postes-en-2011-selon-georges-tron.html"&gt;slash the number of state employees&lt;/a&gt;.&lt;/p&gt;
-&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/blog/wp-content/uploads/2011/cnrs_recruits.jpg" style="width: 70%;" /&gt;
+&lt;img alt="" class="align-center" src="attachments/cnrs_recruits.jpg" style="width: 70%;" /&gt;
 &lt;p&gt;The call for the 2011 applications for research positions at &lt;a class="reference external" href="http://en.inria.fr/"&gt;INRIA&lt;/a&gt;,
 the French national computer science institute, that is another one of
 the big research institutions in France, is &lt;a class="reference external" href="http://www.inria.fr/institut/recrutement-metiers/offres/concours-2011-5-postes-de-charge-de-recherche-2e-classe-sont-a-pourvoir/concours-2011"&gt;out&lt;/a&gt;. The page is entitled
@@ -428,13 +428,13 @@ for life sciences). The number of applications is in hundred and not
 thousands, but having only 5 jobs available nationwide still feels
 really awkward.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2011/cnrs_recruits.pdf"&gt;PDF posters&lt;/a&gt;&lt;/blockquote&gt;
+&lt;a class="reference external" href="attachments/cnrs_recruits.pdf"&gt;PDF poster&lt;/a&gt;&lt;/blockquote&gt;
 &lt;p&gt;A minor detail: I am trying to get a job in computational science
 research in France.&lt;/p&gt;
 </summary><category term="personnal"></category><category term="science"></category></entry><entry><title>Machine learning humour</title><link href="http://gael-varoquaux.info/science/machine-learning-humour.html" rel="alternate"></link><updated>2010-09-16T23:11:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-09-16:science/machine-learning-humour.html</id><summary type="html">&lt;div class="section" id="yes-but-they-overfit"&gt;
 &lt;h2&gt;Yes, but they overfit&lt;/h2&gt;
 &lt;p&gt;If you are reading this post through a planet, the movie isn’t showing
-up, just &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=140"&gt;click through&lt;/a&gt; to understand what the hell this is about.&lt;/p&gt;
+up, just &lt;a class="reference external" href="http://gael-varoquaux.info/science/machine-learning-humour.html"&gt;click through&lt;/a&gt; to understand what the hell this is about.&lt;/p&gt;
 &lt;p&gt;
 &lt;object width="480" height="385"&gt;
 &lt;embed src="http://www.youtube.com/v/m60lVGz34hU?fs=1&amp;amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"&gt;
@@ -821,19 +821,19 @@ Gravimetric coupling with matter waves and light waves describes the
 the case of PhD, fall in gravity fields. While this is the expression of
 the very exact phenomena we are trying to measure, it also means that to
 build a very large atom interferometer, you have to let the atoms fall
-for a large distance. And I can attest that even &lt;a class="reference external" href="http://gael-varoquaux.info/physics/KRubLog/07/0518/P1010619.jpg"&gt;laboratory-sized
-versions&lt;/a&gt; of &lt;a class="reference external" href="http://gael-varoquaux.info/physics/KRubLog/index.html"&gt;atom-interferometric experiments&lt;/a&gt; are fairly nasty to
+for a large distance. And I can attest that even laboratory-sized
+versions of atom-interferometric experiments are fairly nasty to
 run:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/physics/KRubLog/07/0518/P1010619.jpg" style="width: 55%;" /&gt;
+&lt;img alt="" class="align-center" src="attachments/P1010619.jpg" style="width: 55%;" /&gt;
 &lt;p&gt;This is why we simply decided to build an experiment in a
-&lt;a class="reference external" href="http://arxiv.org/pdf/0705.2922"&gt;freely-falling plane&lt;/a&gt;: let’s fall &lt;a class="reference external" href="http://gael-varoquaux.info/physics/ICELog/index.html"&gt;with the atoms&lt;/a&gt; for 6
+&lt;a class="reference external" href="http://arxiv.org/pdf/0705.2922"&gt;freely-falling plane&lt;/a&gt;: let’s fall with the atoms for 6
 kilometers (30 seconds).&lt;/p&gt;
 &lt;img alt="" src="http://gael-varoquaux.info/physics/ICELog/07/0328/DSCF0662.jpg" style="width: 40%;" /&gt;
 &lt;img alt="" src="http://gael-varoquaux.info/physics/ICELog/07/0327/100_6838.jpg" style="width: 40%;" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="measuring-free-fall-while-in-free-fall"&gt;
 &lt;h2&gt;Measuring free fall, while in free fall?&lt;/h2&gt;
-&lt;img alt="" class="align-right" src="http://gael-varoquaux.info/blog/wp-content/uploads/2009/11/coyote.png" /&gt;
+&lt;img alt="" class="align-right" src="attachments/coyote.png" /&gt;
 &lt;p&gt;Of course, the plane is not really in free fall. The pilots try as hard
 as possible to compensate for drag and atmospheric turbulence but there
 is a limit to what they can achieve with an Airbus. The atoms are a
@@ -863,7 +863,7 @@ physics and very sophisticated technology, but can be weary of
 processing the output signal to increase statistical power. Scientific
 communities have their own goals that they pitch (e.g. reducing the
 phase noise in lasers) and there can be huge divides between different
-scientific interests. Realizing this played an important role in &lt;a class="reference external" href="http://gael-varoquaux.info/blog/?p=34"&gt;my
+scientific interests. Realizing this played an important role in &lt;a class="reference external" href="http://gael-varoquaux.info/personnal/update-on-my-life.html"&gt;my
 career shift&lt;/a&gt;. I wanted to know more about the power of statistical
 modeling and machine learning applied to real-life system. I decided
 that to learn more, I had to work with people that had a different
@@ -916,11 +916,11 @@ I use my own version.&lt;/p&gt;
 here. This is ugly code, that I put out because people were asking for
 it.&lt;/p&gt;
 </summary><category term="latex"></category><category term="publishing"></category></entry><entry><title>Mission accomplished</title><link href="http://gael-varoquaux.info/science/mission-accomplished.html" rel="alternate"></link><updated>2008-01-19T11:59:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-01-19:science/mission-accomplished.html</id><summary type="html">&lt;p&gt;I defended my PhD yesterday. I am pretty happy to be done with this.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/01/talking1.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/01/talking1.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="../science/attachments/talking1.jpg"&gt;&lt;img alt="" src="../science/attachments/talking1.jpg" /&gt;&lt;/a&gt;
 &lt;p&gt;After the defense, the other PhD students offered me a plastic python
 (well it was a cobra, actually, but they told me to pretend it was a
 Python.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/01/python.jpg"&gt;&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2008/01/python.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="../science/attachments/gael_with_python.jpg"&gt;&lt;img alt="" src="../science/attachments/gael_with_python.jpg" /&gt;&lt;/a&gt;
 </summary><category term="personnal"></category><category term="science"></category><category term="physics"></category></entry><entry><title>Garamond fonts for LaTeX</title><link href="http://gael-varoquaux.info/science/garamond-fonts-for-latex.html" rel="alternate"></link><updated>2006-10-01T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2006-10-01:science/garamond-fonts-for-latex.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Garamond"&gt;Garamond fonts&lt;/a&gt; are a large
 family of fonts. At a friend’s request I modified the &lt;a class="reference external" href="ftp://dante.ctan.org/tex-archive/fonts/urw/garamond/"&gt;URW-garamond&lt;/a&gt; fonts to improve
 kerning, add old style numbers, and make some letters prettier. These

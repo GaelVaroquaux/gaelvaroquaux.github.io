@@ -1,0 +1,65 @@
+        Dataset,    library,     strategy,  write,   read,   disk
+         MNI(C),      Nifti,      .nii.gz,  4.863,  0.7271,   2.1
+         MNI(C),      Nifti,         .nii,  5.873,  0.0258,  62.0
+         MNI(C),   pytables,       zlib 0,  2.071,  1.7280,  62.0
+         MNI(C),   pytables,       zlib 1,  0.869,  0.4340,   4.4
+         MNI(C),   pytables,       zlib 3,  1.025,  0.3931,   3.8
+         MNI(C),   pytables,       zlib 6,  2.235,  0.4761,   3.2
+         MNI(C),   pytables,          lzo,  0.244,  0.2708,   6.1
+         MNI(C),   pytables,      blosc 1,  1.026,  1.1705,  33.6
+         MNI(C),   pytables,      blosc 3,  0.952,  1.0392,  30.3
+         MNI(C),   pytables,      blosc 6,  0.424,  0.3866,  10.0
+         MNI(C),   pytables,      blosc 9,  0.426,  0.3506,   9.9
+         MNI(C),      numpy,   compressed,  2.651,  0.7015,  62.0
+         MNI(C),     joblib,       zlib 0,  2.227,  1.7652,  62.0
+         MNI(C),     joblib,       zlib 1,  1.196,  0.7144,   4.4
+         MNI(C),     joblib,       zlib 6,  2.580,  0.6889,   3.1
+         MNI(C),     joblib,         mmap,  2.307,  0.0224,  62.0
+     Juelich(C),      Nifti,      .nii.gz,  8.139,  1.1864,   0.9
+     Juelich(C),      Nifti,         .nii,  9.726,  0.0256,  104.2
+     Juelich(C),   pytables,       zlib 0,  3.691,  3.9037,  104.2
+     Juelich(C),   pytables,       zlib 1,  0.789,  0.5511,   1.7
+     Juelich(C),   pytables,       zlib 3,  0.812,  0.5439,   1.6
+     Juelich(C),   pytables,       zlib 6,  2.142,  0.7080,   1.1
+     Juelich(C),   pytables,          lzo,  0.212,  0.3776,   2.2
+     Juelich(C),   pytables,      blosc 1,  0.278,  0.4414,   3.0
+     Juelich(C),   pytables,      blosc 3,  0.248,  0.4355,   2.2
+     Juelich(C),   pytables,      blosc 6,  0.298,  0.4363,   2.0
+     Juelich(C),   pytables,      blosc 9,  0.206,  0.2446,   2.4
+     Juelich(C),      numpy,   compressed,  4.912,  1.0463,  104.2
+     Juelich(C),     joblib,       zlib 0,  3.466,  3.7209,  104.2
+     Juelich(C),     joblib,       zlib 1,  0.905,  0.4570,   1.7
+     Juelich(C),     joblib,       zlib 6,  2.177,  0.5869,   1.1
+     Juelich(C),     joblib,         mmap,  3.204,  0.0028,  104.2
+         MNI(F),      Nifti,      .nii.gz,  0.710,  0.7669,   2.1
+         MNI(F),      Nifti,         .nii,  1.861,  0.0094,  62.0
+         MNI(F),   pytables,       zlib 0,  4.057,  1.8260,  62.0
+         MNI(F),   pytables,       zlib 1,  2.755,  0.4686,   4.4
+         MNI(F),   pytables,       zlib 3,  2.922,  0.4355,   3.8
+         MNI(F),   pytables,       zlib 6,  4.130,  0.4747,   3.2
+         MNI(F),   pytables,          lzo,  2.181,  0.3418,   6.1
+         MNI(F),   pytables,      blosc 1,  2.994,  1.2746,  33.6
+         MNI(F),   pytables,      blosc 3,  2.874,  1.0014,  30.3
+         MNI(F),   pytables,      blosc 6,  2.292,  0.4108,  10.0
+         MNI(F),   pytables,      blosc 9,  2.312,  0.3840,   9.9
+         MNI(F),      numpy,   compressed,  2.338,  0.7008,  62.0
+         MNI(F),     joblib,       zlib 0,  2.236,  1.4416,  62.0
+         MNI(F),     joblib,       zlib 1,  0.972,  0.5342,   2.1
+         MNI(F),     joblib,       zlib 6,  1.640,  0.6598,   1.9
+         MNI(F),     joblib,         mmap,  2.275,  0.0109,  62.0
+     Juelich(F),      Nifti,      .nii.gz,  0.922,  1.1831,   0.9
+     Juelich(F),      Nifti,         .nii,  3.332,  0.0267,  104.2
+     Juelich(F),   pytables,       zlib 0,  6.307,  3.9626,  104.2
+     Juelich(F),   pytables,       zlib 1,  3.377,  0.5557,   1.7
+     Juelich(F),   pytables,       zlib 3,  3.390,  0.5437,   1.6
+     Juelich(F),   pytables,       zlib 6,  4.714,  0.7088,   1.1
+     Juelich(F),   pytables,          lzo,  2.804,  0.3788,   2.2
+     Juelich(F),   pytables,      blosc 1,  2.850,  0.4714,   3.0
+     Juelich(F),   pytables,      blosc 3,  2.828,  0.4407,   2.2
+     Juelich(F),   pytables,      blosc 6,  2.881,  0.4467,   2.0
+     Juelich(F),   pytables,      blosc 9,  2.768,  0.2459,   2.4
+     Juelich(F),      numpy,   compressed,  4.625,  1.0357,  104.2
+     Juelich(F),     joblib,       zlib 0,  3.360,  3.4312,  104.2
+     Juelich(F),     joblib,       zlib 1,  0.850,  0.3948,   0.9
+     Juelich(F),     joblib,       zlib 6,  1.962,  0.5942,   0.6
+     Juelich(F),     joblib,         mmap,  3.164,  0.0022,  104.2
