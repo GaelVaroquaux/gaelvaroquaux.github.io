@@ -1,0 +1,61 @@
+datasets,n_samples,	n_features, tree,		train time, test time
+little make_blobs,  1000,	3,	    scipy cKDTree,	0.0002,	    0.0003
+little make_blobs,  1000,	3,	    sklearn KDTree,	0.0002,	    0.0002
+little make_blobs,  1000,	3,	    sklearn BallTree,	0.0002,	    0.0003
+make_blobs,	    100000,	3,	    scipy cKDTree,	0.017,	    0.047
+make_blobs,	    100000,	3,	    sklearn KDTree,	0.052,	    0.040
+make_blobs,	    100000,	3,	    sklearn BallTree,	0.044,	    0.463
+lfw,		    13233,	3,	    scipy cKDTree,	0.002,	    0.005
+lfw,		    13233,	3,	    sklearn KDTree,	0.004,	    0.003
+lfw,		    13233,	3,	    sklearn BallTree,	0.003,	    0.036
+little make_blobs,  1000,	10,	    scipy cKDTree,	0.0003,	    0.0011
+little make_blobs,  1000,	10,	    sklearn KDTree,	0.0003,	    0.0004
+little make_blobs,  1000,	10,	    sklearn BallTree,	0.0003,	    0.0006
+make_blobs,	    100000,	10,	    scipy cKDTree,	0.028,	    2.149
+make_blobs,	    100000,	10,	    sklearn KDTree,	0.118,	    1.961
+make_blobs,	    100000,	10,	    sklearn BallTree,	0.111,	    5.369
+lfw,		    13233,	10,	    scipy cKDTree,	0.002,	    0.138
+lfw,		    13233,	10,	    sklearn KDTree,	0.006,	    0.060
+lfw,		    13233,	10,	    sklearn BallTree,	0.006,	    0.235
+little make_blobs,  1000,	30,	    scipy cKDTree,	0.0004,	    0.0032
+little make_blobs,  1000,	30,	    sklearn KDTree,	0.0005,	    0.0012
+little make_blobs,  1000,	30,	    sklearn BallTree,	0.0006,	    0.0021
+make_blobs,	    100000,	30,	    scipy cKDTree,	0.064,	    26.655
+make_blobs,	    100000,	30,	    sklearn KDTree,	0.281,	    10.102
+make_blobs,	    100000,	30,	    sklearn BallTree,	0.309,	    13.810
+lfw,		    13233,	30,	    scipy cKDTree,	0.004,	    0.793
+lfw,		    13233,	30,	    sklearn KDTree,	0.014,	    0.452
+lfw,		    13233,	30,	    sklearn BallTree,	0.015,	    0.880
+little make_blobs,  1000,	100,	    scipy cKDTree,	0.0008,	    0.0117
+little make_blobs,  1000,	100,	    sklearn KDTree,	0.0014,	    0.0037
+little make_blobs,  1000,	100,	    sklearn BallTree,	0.0015,	    0.0045
+make_blobs,	    100000,	100,	    scipy cKDTree,	0.143,	    110.243
+make_blobs,	    100000,	100,	    sklearn KDTree,	0.935,	    26.543
+make_blobs,	    100000,	100,	    sklearn BallTree,	1.027,	    54.046
+lfw,		    13233,	100,	    scipy cKDTree,	0.008,	    1.694
+lfw,		    13233,	100,	    sklearn KDTree,	0.057,	    2.406
+lfw,		    13233,	100,	    sklearn BallTree,	0.062,	    3.243
+little make_blobs,  1000,	200,	    scipy cKDTree,	0.0013,	    0.0259
+little make_blobs,  1000,	200,	    sklearn KDTree,	0.0025,	    0.0100
+little make_blobs,  1000,	200,	    sklearn BallTree,	0.0028,	    0.0132
+make_blobs,	    100000,	200,	    scipy cKDTree,	0.204,	    224.225
+make_blobs,	    100000,	200,	    sklearn KDTree,	2.053,	    38.915
+make_blobs,	    100000,	200,	    sklearn BallTree,	2.201,	    60.843
+lfw,		    13233,	200,	    scipy cKDTree,	0.012,	    2.228
+lfw,		    13233,	200,	    sklearn KDTree,	0.122,	    4.249
+lfw,		    13233,	200,	    sklearn BallTree,	0.133,	    4.710
+mnist, 		    70000,	3,	    scipy cKDTree,	0.0104,	    0.0262
+mnist, 		    70000,	3,	    sklearn KDTree,	0.0273,	    0.0207
+mnist, 		    70000,	3,	    sklearn BallTree,	0.0222,	    0.1330
+mnist,		    70000,	10,	    scipy cKDTree,	0.0167,	    0.9048
+mnist,		    70000,	10,	    sklearn KDTree,	0.0596,	    0.8669
+mnist,		    70000,	10,	    sklearn BallTree,	0.0579,	    6.0216
+mnist,		    70000,	30,	    scipy cKDTree,	0.0240,	    13.3986
+mnist,		    70000,	30,	    sklearn KDTree,	0.1710,	    10.0948
+mnist,		    70000,	30,	    sklearn BallTree,	0.1861,	    34.7539
+mnist,		    70000,	100,	    scipy cKDTree,	0.0490,	    47.5808
+mnist,		    70000,	100,	    sklearn KDTree,	0.5905,	    59.5856
+mnist,		    70000,	100,	    sklearn BallTree,	0.6547,	    110.6736
+mnist,		    70000,	200,	    scipy cKDTree,	0.0805,	    62.6022
+mnist,		    70000,	200,	    sklearn KDTree,	1.3471,	    109.3878
+mnist,		    70000,	200,	    sklearn BallTree,	1.4349,	    159.6839

@@ -1,0 +1,38 @@
+@import url("http://cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css");
+
+.ChampRes {
+    display: none;
+}
+
+.ValeurRes {
+    display: inline;
+    margin-left: 0px;
+}
+
+.Rubrique {
+    color: #2E3F56;
+}
+
+.Titre {
+    color: #333332;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+@media (max-width: 767px) {
+    .Titre {
+	font-size: 95%;
+    }
+}
+
+.ValeurRes a {
+    color: #333332;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.ValeurRes a:hover {
+    text-decoration: underline;
+}
+
+
