@@ -4024,8 +4024,8 @@ with each (major) country as a different object, it can be used to
 create a colored-code world map. I am uploading it here under a
 public-domain license. Enjoy!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;PNG&lt;/strong&gt;&lt;/p&gt;
-&lt;img alt="" src="http://gael-varoquaux.info/blog/wp-content/uploads/2010/countries.png" style="width: 50%;" /&gt;
-&lt;p&gt;&lt;strong&gt;SVG&lt;/strong&gt;: &lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2010/countries.svg"&gt;http://gael-varoquaux.info/blog/wp-content/uploads/2010/countries.svg&lt;/a&gt;&lt;/p&gt;
+&lt;img alt="" src="../images/misc/countries.png" style="width: 50%;" /&gt;
+&lt;p&gt;&lt;strong&gt;SVG&lt;/strong&gt;: &lt;a class="reference external" href="../images/misc/countries.svg"&gt;countries.svg&lt;/a&gt;&lt;/p&gt;
 &lt;!-- _ --&gt;
 </summary><category term="python"></category><category term="scientific computing"></category><category term="travels"></category><category term="art"></category></entry><entry><title>Software design for maintainability</title><link href="http://gael-varoquaux.info/programming/software-design-for-maintainability.html" rel="alternate"></link><updated>2010-08-01T23:47:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-08-01:programming/software-design-for-maintainability.html</id><summary type="html">&lt;p&gt;I have just spent the best part of my Sunday fixing a bug that turned
 out being a &lt;a class="reference external" href="https://svn.enthought.com/enthought/changeset/25699/"&gt;seemingly-trivial two-liner&lt;/a&gt;. Such unpleasant experiences
@@ -6126,8 +6126,8 @@ ascii, as this will be fed to software that don’t understand unicode).&lt;/p&g
 &lt;p&gt;I am attaching both the data file produced, and the Python script, in
 case someone finds them useful.&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/12/cities.txt"&gt;GPS coordinate list&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://gael-varoquaux.info/blog/wp-content/uploads/2008/12/cities_py"&gt;Web-scraping Python script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="../images/misc/cities.txt"&gt;GPS coordinate list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="../images/misc/cities.py"&gt;Web-scraping Python script&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: About 10 minutes after posting, I did a better google
 search, and found a page that might have been easier to scrape:
