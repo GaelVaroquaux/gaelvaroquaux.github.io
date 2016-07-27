@@ -408,7 +408,7 @@ p.links {
 }
 .post-meta {
     color: #999;
-    font-size: 90%;
+    font-size: 80%;
     margin-top: -10px;
 }
 
@@ -702,6 +702,7 @@ div.topic p {
 
 div.topic ul {
     font-size: smaller ;
+    padding-top: 1ex;
 }
 
 div.topic p.topic-title {
