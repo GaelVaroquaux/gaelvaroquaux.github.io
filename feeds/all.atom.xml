@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2016-07-23T00:00:00+02:00</updated><entry><title>Unison 2.48 binaries for ARM</title><link href="http://gael-varoquaux.info/misc/unison-248-binaries-for-arm.html" rel="alternate"></link><updated>2016-07-23T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-07-23:misc/unison-248-binaries-for-arm.html</id><summary type="html">&lt;p&gt;I have built static binaries of Unison 2.48 for ARM &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; and x86 64bits.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2016-08-05T00:00:00+02:00</updated><entry><title>Backward-incompatible changes and dependencies make science and software brittle</title><link href="http://gael-varoquaux.info/programming/backward-incompatible-changes-and-dependencies-make-science-and-software-brittle.html" rel="alternate"></link><updated>2016-08-05T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-08-05:programming/backward-incompatible-changes-and-dependencies-make-science-and-software-brittle.html</id><summary type="html">&lt;p&gt;Here’s a small anecdote that reveals why the combination of
+backward-incompatible changes and dependencies make science and software
+brittle.&lt;/p&gt;
+&lt;!-- Let's make upgrading not suck --&gt;
+&lt;p&gt;Scipy 0.18.0 was &lt;a class="reference external" href="https://github.com/scipy/scipy/releases"&gt;released&lt;/a&gt;
+10 days ago; 6 months of hard work and awesome new features. But it
+changed a minor corner case in &lt;a class="reference external" href="http://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.affine_transform.html"&gt;ndimage.affine_transform&lt;/a&gt;
+and this broke &lt;a class="reference external" href="http://nilearn.github.io/"&gt;nilearn&lt;/a&gt;, our neuroimaging
+library, in a fairly subtle way. We detected it via indirect consequences
+on the continuous integration of our documentation, and I lost a day
+understand and fixing the problem.&lt;/p&gt;
+&lt;p&gt;However, what’s most problematic is that many others will not have the
+tools to audit there code and find how and why it is broken. In other
+words, &lt;strong&gt;there will be some science done with broken code&lt;/strong&gt;, and &lt;strong&gt;code
+of published paper will stop reproducing them&lt;/strong&gt;. In effect, this create
+code rot. Active software maintenance is the solution to code rot, but we
+cannot expect that for all published results.&lt;/p&gt;
+&lt;p&gt;Pining versions of libraries is a solution to reproduce a given
+scientific result, but I hate it as amount to deep freezing science: in
+my eyes, &lt;a class="reference external" href="software-for-reproducible-science-lets-not-have-a-misunderstanding.html"&gt;reusability matters as much as reproducibility for science&lt;/a&gt;.
+For libraries like nilearn, imposing strong constraints on dependency
+version defeats their purpose: combining these libraries becomes harder
+and sometimes impossible.&lt;/p&gt;
+&lt;p&gt;Dependencies enable you to use today the hard work of others, but makes
+you fragile to what they may change. Whether to depend on an external
+package for a functionality or to reimplement that functionality boils
+down to how hard to code this functionality.&lt;/p&gt;
+&lt;p&gt;The complex tangle of dependencies and software changes makes it very
+hard to guarantee that a code will give the same answers in the future.&lt;/p&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;ul class="last simple"&gt;
+&lt;li&gt;&lt;strong&gt;Use dependencies sparingly&lt;/strong&gt;: they make us powerful, yet and fragile.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Refrain from backward-incompatible changes&lt;/strong&gt;:
+they break other people’s code, and tarnish
+the trust in your code. Avoid&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;&lt;strong&gt;Related&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="of-packaging-installation-and-dependencies.html"&gt;An old post that show how complex dependencies graphs get&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="scipy"></category><category term="python"></category><category term="scientific computing"></category><category term="software engineering"></category></entry><entry><title>Unison 2.48 binaries for ARM</title><link href="http://gael-varoquaux.info/misc/unison-248-binaries-for-arm.html" rel="alternate"></link><updated>2016-07-23T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-07-23:misc/unison-248-binaries-for-arm.html</id><summary type="html">&lt;p&gt;I have built static binaries of Unison 2.48 for ARM &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; and x86 64bits.
 Run on my NAS, the arm architecture is necessary to synchronize with the
 latest Ubuntu. The x86 is useful, eg to synchronize with older Ubuntu
 releases:&lt;/p&gt;
