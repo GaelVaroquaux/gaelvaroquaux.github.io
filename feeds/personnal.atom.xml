@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/personnal.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2008-06-02T00:00:00+02:00</updated><entry><title>Asie centrale: 17 mai - 8 juin 2008: Kyrgyzstan</title><link href="http://gael-varoquaux.info/personnal/asie_centrale_kyrgyzstan.html" rel="alternate"></link><updated>2008-06-02T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-06-02:personnal/asie_centrale_kyrgyzstan.html</id><summary type="html">&lt;p&gt;Deuxième partie du voyage: au Kirghizstan.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/personnal.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2008-06-02T00:00:00+02:00</updated><entry><title>Asie centrale: 17 mai - 8 juin 2008: Kyrgyzstan</title><link href="http://gael-varoquaux.info/personnal/asie_centrale_kyrgyzstan.html" rel="alternate"></link><published>2008-06-02T00:00:00+02:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-06-02:personnal/asie_centrale_kyrgyzstan.html</id><summary type="html">&lt;p&gt;Deuxième partie du voyage: au Kirghizstan.&lt;/p&gt;
 &lt;p&gt;Photos et panoramas : Gaël | Récit, mise en page et retouches photos :
 Emmanuelle&lt;/p&gt;
 &lt;div class="note"&gt;
@@ -1478,7 +1478,7 @@ Centrale. Il faudra y retourner, peut-être en ayant appris un peu plus de
 russe, et à monter à cheval : il doit y avoir peu d’endroits où les
 paysages sont si beaux et les gens aussi gentils.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="travels"></category></entry><entry><title>Asie centrale: 17 mai - 8 juin 2008: Ouzbekistan</title><link href="http://gael-varoquaux.info/personnal/asie_centrale_uzbekistan.html" rel="alternate"></link><updated>2008-06-02T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-06-02:personnal/asie_centrale_uzbekistan.html</id><summary type="html">&lt;a class="reference external image-reference" href="vignettes.jpg"&gt;&lt;img alt="vignettes" class="align-center" src="http://gael-varoquaux.info/personnal/attachments/central_asia/vignettes.jpg" style="width: 100%;" /&gt;&lt;/a&gt;
+</summary><category term="travels"></category></entry><entry><title>Asie centrale: 17 mai - 8 juin 2008: Ouzbekistan</title><link href="http://gael-varoquaux.info/personnal/asie_centrale_uzbekistan.html" rel="alternate"></link><published>2008-06-02T00:00:00+02:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-06-02:personnal/asie_centrale_uzbekistan.html</id><summary type="html">&lt;a class="reference external image-reference" href="vignettes.jpg"&gt;&lt;img alt="vignettes" class="align-center" src="http://gael-varoquaux.info/personnal/attachments/central_asia/vignettes.jpg" style="width: 100%;" /&gt;&lt;/a&gt;
 &lt;p&gt;Trois semaines en Ouzbékistan, puis au Kirghizstan… en train, bus,
 marshrutka, cheval, et beaucoup à pied !&lt;/p&gt;
 &lt;p&gt;Photos et panoramas : Gaël | Récit, mise en page et retouches photos :
@@ -2041,7 +2041,7 @@ sur sa chaise à faire des commentaires sur les passants !&lt;/p&gt;
 &lt;p class="last"&gt;&lt;strong&gt;Suite du voyage&lt;/strong&gt;: &lt;a class="reference external" href="asie_centrale_kyrgyzstan.html"&gt;la suite récit, sur la page du Kyrgyzstan.&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</summary><category term="travels"></category></entry><entry><title>Update on my life</title><link href="http://gael-varoquaux.info/personnal/update-on-my-life.html" rel="alternate"></link><updated>2008-05-05T09:35:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-05-05:personnal/update-on-my-life.html</id><summary type="html">&lt;p&gt;I am currently changing jobs and changing countries. This is why I have
+</summary><category term="travels"></category></entry><entry><title>Update on my life</title><link href="http://gael-varoquaux.info/personnal/update-on-my-life.html" rel="alternate"></link><published>2008-05-05T09:35:00+02:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-05-05:personnal/update-on-my-life.html</id><summary type="html">&lt;p&gt;I am currently changing jobs and changing countries. This is why I have
 been really bad at dealing with questions on the mailing-lists,
 bug-reports or feature requests.&lt;/p&gt;
 &lt;div class="section" id="before"&gt;
@@ -2098,7 +2098,7 @@ I will have to discover a new field. The good news is that a lot of the
 work is centered on computers, and one of the core technologies used at
 Neurospin is Python.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="personnal"></category><category term="physics"></category><category term="scientific computing"></category><category term="neuroimaging"></category></entry><entry><title>Croisière des arts et métiers en Sicile</title><link href="http://gael-varoquaux.info/personnal/sicily_2005.html" rel="alternate"></link><updated>2005-03-01T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2005-03-01:personnal/sicily_2005.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Du 20 au 27 février 2005, récit de Luc&lt;/strong&gt;&lt;/p&gt;
+</summary><category term="personnal"></category><category term="physics"></category><category term="scientific computing"></category><category term="neuroimaging"></category></entry><entry><title>Croisière des arts et métiers en Sicile</title><link href="http://gael-varoquaux.info/personnal/sicily_2005.html" rel="alternate"></link><published>2005-03-01T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2005-03-01:personnal/sicily_2005.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Du 20 au 27 février 2005, récit de Luc&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Incroyable, mais vrai : après 3 ans de louze, on a enfin réussi cette
 année à s’inscrire à la croisière organisée par le BDE de l’ENSAM, qui se
 déroulait en Sicile, cette année. Il y a donc eu 3 équipages de
@@ -2230,7 +2230,7 @@ nectar-multivitaminé.&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
 &lt;p&gt;Luc, qui que merci encore à Gaël de nous avoir skippé et de nous avoir
 sortis indemnes de l’orage!&lt;/p&gt;
-</summary><category term="travels"></category><category term="sailing"></category></entry><entry><title>Raid catamaran en baie de Quiberon</title><link href="http://gael-varoquaux.info/personnal/raid-catamaran-en-baie-de-quiberon.html" rel="alternate"></link><updated>2004-09-12T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2004-09-12:personnal/raid-catamaran-en-baie-de-quiberon.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Du 6 au 10 septembre 2004. Récit de Clara&lt;/strong&gt;&lt;/p&gt;
+</summary><category term="travels"></category><category term="sailing"></category></entry><entry><title>Raid catamaran en baie de Quiberon</title><link href="http://gael-varoquaux.info/personnal/raid-catamaran-en-baie-de-quiberon.html" rel="alternate"></link><published>2004-09-12T00:00:00+02:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2004-09-12:personnal/raid-catamaran-en-baie-de-quiberon.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Du 6 au 10 septembre 2004. Récit de Clara&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Naviguer sur un catamaran de sport pendant une semaine, dormir sur la
 plage, tracer sa route au petit matin selon les conditions météo, tirer
 des bords de près de plus de deux heures.. Voilà une idée qui me tentait
@@ -3369,7 +3369,7 @@ aime vraiment !&lt;/p&gt;
 capable de vous raconter les vacances dans le Jura il y a quatre ans, ou
 encore ma petite saison aux Glénans, ou même pire, ma vie à la fac !!!!&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="travels"></category><category term="sailing"></category></entry><entry><title>Voyage en Islande</title><link href="http://gael-varoquaux.info/personnal/islande.html" rel="alternate"></link><updated>2004-08-01T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2004-08-01:personnal/islande.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Du 23 juin au 22 juillet 2004, récit d’Emmanuelle&lt;/strong&gt;&lt;/p&gt;
+</summary><category term="travels"></category><category term="sailing"></category></entry><entry><title>Voyage en Islande</title><link href="http://gael-varoquaux.info/personnal/islande.html" rel="alternate"></link><published>2004-08-01T00:00:00+02:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2004-08-01:personnal/islande.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;Du 23 juin au 22 juillet 2004, récit d’Emmanuelle&lt;/strong&gt;&lt;/p&gt;
 &lt;div class="section" id="introduction"&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Comment Gaël et moi avons-nous eu la drôle d’idée de partir un mois en
@@ -4708,7 +4708,7 @@ gentils ici ; je conseille l’endroit à tous, le camping restant à prix
 raisonnable et pour les plus fortunés il y avait un restaurant et de
 jolies huttes…&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="travels"></category></entry><entry><title>Balades dans les crevasses</title><link href="http://gael-varoquaux.info/personnal/balades-dans-les-crevasses.html" rel="alternate"></link><updated>2003-05-12T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-05-12:personnal/balades-dans-les-crevasses.html</id><summary type="html">&lt;p&gt;Cool week end, malgré le mauvais temps.  Pour une fois j’étais
+</summary><category term="travels"></category></entry><entry><title>Balades dans les crevasses</title><link href="http://gael-varoquaux.info/personnal/balades-dans-les-crevasses.html" rel="alternate"></link><published>2003-05-12T00:00:00+02:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-05-12:personnal/balades-dans-les-crevasses.html</id><summary type="html">&lt;p&gt;Cool week end, malgré le mauvais temps.  Pour une fois j’étais
 ailleurs que dans Fjordland. J’essaie de me tirer de Fjordland pour voir
 le reste de cette fabuleuse ile (c’est dûr). Je crois que je ne mettrais
 même pas le pied dans la deuxième région classée patrimoine mondial, elle
@@ -4815,7 +4815,7 @@ Tout le monde se racontait le week end et j’ai appris par Adrian qu’ils
 avaient eut de la neige sur Secretary Island ! On peut pas tout faire. Je
 crois que je n’irais jamais sur cette ile, mais j’ai une bonne idée de ce
 à quoi elle ressemble.&lt;/p&gt;
-</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Mes vacances de pâques : 10 jours dans l’arrière pays</title><link href="http://gael-varoquaux.info/personnal/mes-vacances-de-paques-10-jours-dans-larriere-pays.html" rel="alternate"></link><updated>2003-05-07T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-05-07:personnal/mes-vacances-de-paques-10-jours-dans-larriere-pays.html</id><summary type="html">&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/personnal/attachments/nz/panorama.jpg" style="width: 100%;" /&gt;
+</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Mes vacances de pâques : 10 jours dans l’arrière pays</title><link href="http://gael-varoquaux.info/personnal/mes-vacances-de-paques-10-jours-dans-larriere-pays.html" rel="alternate"></link><published>2003-05-07T00:00:00+02:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-05-07:personnal/mes-vacances-de-paques-10-jours-dans-larriere-pays.html</id><summary type="html">&lt;img alt="" class="align-center" src="http://gael-varoquaux.info/personnal/attachments/nz/panorama.jpg" style="width: 100%;" /&gt;
 &lt;p&gt;Tout a commencé il y a deux semaines, je me demandais ce que j’allais
 faire pendant les vacances de pâques. L’hivers approche ici, et un type
 normal resterait à Dunedin, une petite ville bien sympa. Bon étant donné
@@ -5644,10 +5644,10 @@ froid mais mon dos se plaind que le matelas de ma chambre est trop
 confortable, mes yeux se plaignent des rideaux que je vois en me
 réveillant… Dormir dans le froid et marcher dans la brousse me
 manquent.&lt;/p&gt;
-</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>What the local newspaper writes on the French</title><link href="http://gael-varoquaux.info/personnal/what-the-local-newspaper-writes-on-the-french.html" rel="alternate"></link><updated>2003-04-10T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-04-10:personnal/what-the-local-newspaper-writes-on-the-french.html</id><summary type="html">&lt;p&gt;&lt;em&gt;In the “Otago daily times”, lost in NZ’s South island&lt;/em&gt;&lt;/p&gt;
+</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>What the local newspaper writes on the French</title><link href="http://gael-varoquaux.info/personnal/what-the-local-newspaper-writes-on-the-french.html" rel="alternate"></link><published>2003-04-10T00:00:00+02:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-04-10:personnal/what-the-local-newspaper-writes-on-the-french.html</id><summary type="html">&lt;p&gt;&lt;em&gt;In the “Otago daily times”, lost in NZ’s South island&lt;/em&gt;&lt;/p&gt;
 &lt;a class="reference external image-reference" href="http://gael-varoquaux.info/personnal/attachments/nz/Juliet.jpg"&gt;&lt;img alt="Enorme !" class="align-center" src="http://gael-varoquaux.info/personnal/attachments/nz/Juliet.jpg" style="width: 100%;" /&gt;&lt;/a&gt;
 &lt;p&gt;Sans commentaires (autre que j’ai trouvé cela très bon)&lt;/p&gt;
-</summary><category term="humor"></category><category term="new zealand"></category></entry><entry><title>La “Milford Track”.</title><link href="http://gael-varoquaux.info/personnal/la-milford-track.html" rel="alternate"></link><updated>2003-04-08T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-04-08:personnal/la-milford-track.html</id><summary type="html">&lt;p&gt;Ce week end j’ai fait la plus célebre rando du monde. Il s’agit du
+</summary><category term="humor"></category><category term="new zealand"></category></entry><entry><title>La “Milford Track”.</title><link href="http://gael-varoquaux.info/personnal/la-milford-track.html" rel="alternate"></link><published>2003-04-08T00:00:00+02:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-04-08:personnal/la-milford-track.html</id><summary type="html">&lt;p&gt;Ce week end j’ai fait la plus célebre rando du monde. Il s’agit du
 “Milford Track” ; j’en avais entendu parlé même en France et il est
 tellement célébre qu’il avait fallut que je le réserve dès mon arrivée
 ici. Il y a bien longtemps (cela veut dire que je ne connais pas la date)
@@ -5812,7 +5812,7 @@ rivières tumultueuses, ses chutes rugissantes… Tant de paysages
 différents, et pourtant membre d’un tout formidable, indompté et
 surhumain. J’ai appris que cette région était classé patrimoine mondial
 de l’Unesco, j’espère que cela lui permettera de garder sa magie.&lt;/p&gt;
-</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Le “RouteBurn track”</title><link href="http://gael-varoquaux.info/personnal/le-routeburn-track.html" rel="alternate"></link><updated>2003-04-04T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-04-04:personnal/le-routeburn-track.html</id><summary type="html">&lt;p&gt;Il y a dans ce chouet pays quelques chemins (“track”) qui vont
+</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Le “RouteBurn track”</title><link href="http://gael-varoquaux.info/personnal/le-routeburn-track.html" rel="alternate"></link><published>2003-04-04T00:00:00+02:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-04-04:personnal/le-routeburn-track.html</id><summary type="html">&lt;p&gt;Il y a dans ce chouet pays quelques chemins (“track”) qui vont
 d’un ilot de civilisation à un autre à travers la brousse. Ce sont les
 seuls chemins réelement marqués et parcourus. Parmis ceux-là quelques-uns
 sont trés célébres, ce sont les “great walks”. Il faut les réserver et le
@@ -5845,7 +5845,7 @@ aprés.&lt;/p&gt;
 &lt;img alt="" src="http://gael-varoquaux.info/personnal/attachments/nz/divide.jpg" style="width: 25%;" /&gt;
 &lt;img alt="" src="http://gael-varoquaux.info/personnal/attachments/nz/routeburn-falls.jpg" style="width: 25%;" /&gt;
 &lt;img alt="" src="http://gael-varoquaux.info/personnal/attachments/nz/fjordland-moutains.jpg" style="width: 25%;" /&gt;
-</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Tunnel beach</title><link href="http://gael-varoquaux.info/personnal/tunnel-beach.html" rel="alternate"></link><updated>2003-03-26T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-03-26:personnal/tunnel-beach.html</id><summary type="html">&lt;img alt="" class="align-right" src="http://gael-varoquaux.info/personnal/attachments/nz/tunnel-beach-rocks.jpg" style="width: 25%;" /&gt;
+</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Tunnel beach</title><link href="http://gael-varoquaux.info/personnal/tunnel-beach.html" rel="alternate"></link><published>2003-03-26T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-03-26:personnal/tunnel-beach.html</id><summary type="html">&lt;img alt="" class="align-right" src="http://gael-varoquaux.info/personnal/attachments/nz/tunnel-beach-rocks.jpg" style="width: 25%;" /&gt;
 &lt;p&gt;Hier je suis retourné à tunnel Beach. Je voulais aller en au de Mt
 Cargill pour voir le coucher de soleil et les nuages envahir la montagne,
 mais à 4 heures les nuages étaient déjà là, donc j’ai pris mon vélo (et
@@ -5867,7 +5867,7 @@ d’artifice qui retombe bien vite pour laisser la mer tout aussi calme…
 jusqu’à la prochaine vague.&lt;/p&gt;
 &lt;img alt="" src="http://gael-varoquaux.info/personnal/attachments/nz/tunnel-beach-cliffs.jpg" style="width: 40%;" /&gt;
 &lt;img alt="" src="http://gael-varoquaux.info/personnal/attachments/nz/tunnel-beach-peak.jpg" style="width: 40%;" /&gt;
-</summary><category term="travels"></category><category term="new zealand"></category></entry><entry><title>A travers la brousse de Fiordland : la “Gorge Burn”</title><link href="http://gael-varoquaux.info/personnal/a-travers-la-brousse-de-fiordland-la-gorge-burn.html" rel="alternate"></link><updated>2003-03-25T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-03-25:personnal/a-travers-la-brousse-de-fiordland-la-gorge-burn.html</id><summary type="html">&lt;p&gt;Ce week-end : Fiordland, un voyage organisé par le “tramping club”
+</summary><category term="travels"></category><category term="new zealand"></category></entry><entry><title>A travers la brousse de Fiordland : la “Gorge Burn”</title><link href="http://gael-varoquaux.info/personnal/a-travers-la-brousse-de-fiordland-la-gorge-burn.html" rel="alternate"></link><published>2003-03-25T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-03-25:personnal/a-travers-la-brousse-de-fiordland-la-gorge-burn.html</id><summary type="html">&lt;p&gt;Ce week-end : Fiordland, un voyage organisé par le “tramping club”
 composé d’une quinzaine de sortie. Pour ma part j’avais choisi celle
 d’Adrian, car c’était celle qui s’enfonçait le plus profondement dans
 l’étendue sauvage qu’est Fiordland.&lt;/p&gt;
@@ -5994,7 +5994,7 @@ monde dûr, sauvage et indompté, et les plaines de Central Otago qui, bien
 que désertes et inhospitalières, sont placés sous le reigne du genre
 humain.&lt;/p&gt;
 &lt;img alt="" class="align-center" src="http://gael-varoquaux.info/personnal/attachments/nz/fowler-pass-top.jpg" style="width: 70%;" /&gt;
-</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Le nord de l’ile</title><link href="http://gael-varoquaux.info/personnal/le-nord-de-lile.html" rel="alternate"></link><updated>2003-03-20T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-03-20:personnal/le-nord-de-lile.html</id><summary type="html">&lt;p&gt;Vendredi j’avais terminé mes bobines, je les avait câblées et testées,
+</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Le nord de l’ile</title><link href="http://gael-varoquaux.info/personnal/le-nord-de-lile.html" rel="alternate"></link><published>2003-03-20T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-03-20:personnal/le-nord-de-lile.html</id><summary type="html">&lt;p&gt;Vendredi j’avais terminé mes bobines, je les avait câblées et testées,
 et j’allais passer à l’optique. Cependant il me manquait des miroirs
 pour faire passer les faisceaux, et il fallait les commander, ce qui
 signifiait que les prochaines semaines allaient être assez relax, passées
@@ -6155,7 +6155,7 @@ routes, avec son vélo. Pas mal pour une sextagénaire.&lt;/p&gt;
 de deux heures à deux doigts du but ; cela m’a flanqué une sacrée trouille
 de ne pas arriver à Dunedin pour la nuit. Mais je suis arrivé sans
 problème à la tombée de la nuit.&lt;/p&gt;
-</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Un Week end à “Paradize”.</title><link href="http://gael-varoquaux.info/personnal/un-week-end-a-paradize.html" rel="alternate"></link><updated>2003-03-10T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-03-10:personnal/un-week-end-a-paradize.html</id><summary type="html">&lt;img alt="" class="align-right" src="http://gael-varoquaux.info/personnal/attachments/nz/adrian.jpg" style="width: 30%;" /&gt;
+</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Un Week end à “Paradize”.</title><link href="http://gael-varoquaux.info/personnal/un-week-end-a-paradize.html" rel="alternate"></link><published>2003-03-10T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-03-10:personnal/un-week-end-a-paradize.html</id><summary type="html">&lt;img alt="" class="align-right" src="http://gael-varoquaux.info/personnal/attachments/nz/adrian.jpg" style="width: 30%;" /&gt;
 &lt;p&gt;C’était le premier week end organisé par le club de l’année. Il y avait
 120 personnes inscrites. Le départ a été un basard monstrueux. Il y avait
 une bande hétéroclyte d’ahuris se baladant au point de rendez-vous : des
@@ -6267,7 +6267,7 @@ repartait.&lt;/p&gt;
 continuait paisiblement dans la vallée. A dix heures Adrian me déposait
 devant ma maison, me promettant que la prochaine fois que nous partirions
 ensemble la brousse serait plus épaisse.&lt;/p&gt;
-</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Tunnel beach et chocs culturels culinaires</title><link href="http://gael-varoquaux.info/personnal/tunnel-beach-et-chocs-culturels-culinaires.html" rel="alternate"></link><updated>2003-03-06T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-03-06:personnal/tunnel-beach-et-chocs-culturels-culinaires.html</id><summary type="html">&lt;p&gt;Ce soir j’avais la pèche comme c’est pas croyable: dans ces cas je
+</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Tunnel beach et chocs culturels culinaires</title><link href="http://gael-varoquaux.info/personnal/tunnel-beach-et-chocs-culturels-culinaires.html" rel="alternate"></link><published>2003-03-06T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-03-06:personnal/tunnel-beach-et-chocs-culturels-culinaires.html</id><summary type="html">&lt;p&gt;Ce soir j’avais la pèche comme c’est pas croyable: dans ces cas je
 prend  mon vélo et je pédale comme un taré. Je voulais visiter la
 “Kaikorai valley” mais je l’ai traversé trop vite, alors j’ai continué
 jusqu’à la côte. Là je suis tombé sur la route menant à “Tunnel beach”,
@@ -6316,7 +6316,7 @@ veux, mais c’est toujours plutôt bon ; les autres, eux, ont décidé que
 mes goûts étaient dégeulasses, et qu’il n’y avait rien à faire. Et
 pourtant j’apprécie leur cuisine, elle est juste trés différente de la
 cuisine Européenne. M’en fout : je mange bien, et c’est l’important.&lt;/p&gt;
-</summary><category term="travels"></category><category term="new zealand"></category></entry><entry><title>Le Mont Cook</title><link href="http://gael-varoquaux.info/personnal/le-mont-cook.html" rel="alternate"></link><updated>2003-03-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-03-05:personnal/le-mont-cook.html</id><summary type="html">&lt;p&gt;Cela me trottait dans la tête depuis quelque temps : une superbe photo
+</summary><category term="travels"></category><category term="new zealand"></category></entry><entry><title>Le Mont Cook</title><link href="http://gael-varoquaux.info/personnal/le-mont-cook.html" rel="alternate"></link><published>2003-03-05T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-03-05:personnal/le-mont-cook.html</id><summary type="html">&lt;p&gt;Cela me trottait dans la tête depuis quelque temps : une superbe photo
 du Mont Cook trone au dessus du bureau de la secrétaire du département de
 physique. La photo est impressionante par sa taille, mais aussi par
 l’empillement de glacier, de falaises, de couloirs d’avalanche… qu’elle
@@ -6529,7 +6529,7 @@ suis couché tôt, mais j’ai révé de la “Ball pass”. Si je trouve le tem
 j’y retourne, j’ai maintenant des informations précises sur l’itinéraire
 et je sais ou trouver une météo pour le Mont Cook. De plus j’aimerais
 quand même l’appercevoir à moins de dix kilomètres.&lt;/p&gt;
-</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Une rando de folie dans les Fjords</title><link href="http://gael-varoquaux.info/personnal/une-rando-de-folie-dans-les-fjords.html" rel="alternate"></link><updated>2003-02-15T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-02-15:personnal/une-rando-de-folie-dans-les-fjords.html</id><summary type="html">&lt;p&gt;Voici le récit d’une rando dans “Fjordland”, un endroit assez
+</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Une rando de folie dans les Fjords</title><link href="http://gael-varoquaux.info/personnal/une-rando-de-folie-dans-les-fjords.html" rel="alternate"></link><published>2003-02-15T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-02-15:personnal/une-rando-de-folie-dans-les-fjords.html</id><summary type="html">&lt;p&gt;Voici le récit d’une rando dans “Fjordland”, un endroit assez
 exeptionnel…&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
 &lt;p&gt;Mercredi soir, 7h, j’attendais sur le balcon, en train de lire le
@@ -7046,7 +7046,7 @@ des animaux fourrager à cet endroit. Heureusement mon picnic du lendemain
 je mangais mon picnic devant sa ferme. Il y a ici un contact fabuleux
 avec les gens et le pays. Je vais partir à travers ce pays un de ses
 quatres, le pouce levé sur les routes pour voir où cela me mènera…&lt;/p&gt;
-</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Des Kiwis, des pengouins, des chinois et des colines</title><link href="http://gael-varoquaux.info/personnal/des-kiwis-des-pengouins-des-chinois-et-des-colines.html" rel="alternate"></link><updated>2003-02-03T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-02-03:personnal/des-kiwis-des-pengouins-des-chinois-et-des-colines.html</id><summary type="html">&lt;img alt="" class="align-right" src="http://gael-varoquaux.info/personnal/attachments/nz/vacuum-side.jpg" style="width: 30%;" /&gt;
+</summary><category term="travels"></category><category term="new zealand"></category><category term="hiking"></category></entry><entry><title>Des Kiwis, des pengouins, des chinois et des colines</title><link href="http://gael-varoquaux.info/personnal/des-kiwis-des-pengouins-des-chinois-et-des-colines.html" rel="alternate"></link><published>2003-02-03T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-02-03:personnal/des-kiwis-des-pengouins-des-chinois-et-des-colines.html</id><summary type="html">&lt;img alt="" class="align-right" src="http://gael-varoquaux.info/personnal/attachments/nz/vacuum-side.jpg" style="width: 30%;" /&gt;
 &lt;p&gt;Ouf, l’atelier a pris du retard et je n’ai pas les pièces dont j’ai
 besoin… Je ne peux donc pas travailler ! En ce moment je monte les
 chambres à vides. En tout il y a de quoi s’acheter une belle Ferrari (
@@ -7299,7 +7299,7 @@ cela veux dire des centaines de kilomètres carrés sans route ni quoi que
 ce soit..&lt;/p&gt;
 &lt;blockquote&gt;
 Affaire à suivre.&lt;/blockquote&gt;
-</summary><category term="travels"></category><category term="new zealand"></category></entry><entry><title>Ma Nouvelle maison</title><link href="http://gael-varoquaux.info/personnal/ma-nouvelle-maison.html" rel="alternate"></link><updated>2003-01-26T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-01-26:personnal/ma-nouvelle-maison.html</id><summary type="html">&lt;p&gt;Je suis dans ma nouvelle maison, devant mon écran favoris. Ma chambre
+</summary><category term="travels"></category><category term="new zealand"></category></entry><entry><title>Ma Nouvelle maison</title><link href="http://gael-varoquaux.info/personnal/ma-nouvelle-maison.html" rel="alternate"></link><published>2003-01-26T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-01-26:personnal/ma-nouvelle-maison.html</id><summary type="html">&lt;p&gt;Je suis dans ma nouvelle maison, devant mon écran favoris. Ma chambre
 est plutôt vide : Ellen et son copain Tim sont revenus de l’autre bout du
 monde et ont récupéré le gigantesque lit double. A la place j’ai mis
 deux matelas l’un sur l’autre : on se croirait dans une chambre de l’ens
@@ -7337,7 +7337,7 @@ décontractés, c’est agréable.&lt;/p&gt;
 l’ile du sud ainsi qu’un livre intitulé “Wild New Zeland” et j’ai
 commencé à tripper. C’est clair je vais essayer de prendre le maximum de
 longs week-ends et d’aller me balader dans l’ile.&lt;/p&gt;
-</summary><category term="travels"></category><category term="new zealand"></category></entry><entry><title>le labo</title><link href="http://gael-varoquaux.info/personnal/le-labo.html" rel="alternate"></link><updated>2003-01-24T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-01-24:personnal/le-labo.html</id><summary type="html">&lt;p&gt;Puisque je suis au boulôt, parlons boulôt :&lt;/p&gt;
+</summary><category term="travels"></category><category term="new zealand"></category></entry><entry><title>le labo</title><link href="http://gael-varoquaux.info/personnal/le-labo.html" rel="alternate"></link><published>2003-01-24T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-01-24:personnal/le-labo.html</id><summary type="html">&lt;p&gt;Puisque je suis au boulôt, parlons boulôt :&lt;/p&gt;
 &lt;p&gt;Andrew est un type de ma taille, la quarantaine, assez sympa mais
 plutôt mou. Il dirige l’équipe expérimentale qui est constituée de deux
 post doc : Calum, un petit gros qui se balade toujours avec des t-shirts
@@ -7419,7 +7419,7 @@ là.&lt;/p&gt;
 directement de l’Antartique. Comme je n’avais pas de chauffage j’ai
 utilisé ma technique de rando : une polaire par dessus le pijama, cela
 marche trés bien et ce n’est même pas inconfortable.&lt;/p&gt;
-</summary><category term="travels"></category><category term="new zealand"></category></entry><entry><title>Je me trouve un appartement</title><link href="http://gael-varoquaux.info/personnal/je-me-trouve-un-appartement.html" rel="alternate"></link><updated>2003-01-23T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-01-23:personnal/je-me-trouve-un-appartement.html</id><summary type="html">&lt;p&gt;Ce message est sans accent : les claviers Néo-Zélandais ne pardonnent
+</summary><category term="travels"></category><category term="new zealand"></category></entry><entry><title>Je me trouve un appartement</title><link href="http://gael-varoquaux.info/personnal/je-me-trouve-un-appartement.html" rel="alternate"></link><published>2003-01-23T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-01-23:personnal/je-me-trouve-un-appartement.html</id><summary type="html">&lt;p&gt;Ce message est sans accent : les claviers Néo-Zélandais ne pardonnent
 pas…&lt;/p&gt;
 &lt;p&gt;Aujoud’hui j’ai trouve un appart. !! Je commencais a streeser
 car je ne trouvais rien. A chaque fois c’etait la meme chose : Yes, yes,
@@ -7443,7 +7443,7 @@ Quand a l’ammeublement, bein pour l’instant j’ai un matelas, et puis un
 tas de vieux trucs poussiereux, plus tot des cartons.&lt;/p&gt;
 &lt;p&gt;Bon, he bien je sens que je vais passer beaucoup de temps en activites
 diverses et variee a l’exterieur.&lt;/p&gt;
-</summary><category term="travels"></category><category term="new zealand"></category></entry><entry><title>Voyage et arrivée en Nouvelle Zélande</title><link href="http://gael-varoquaux.info/personnal/voyage-et-arrivee-en-nouvelle-zelande.html" rel="alternate"></link><updated>2003-01-19T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-01-19:personnal/voyage-et-arrivee-en-nouvelle-zelande.html</id><summary type="html">&lt;p&gt;Je suis dans ma chambre et je commence donc a écrire un e-mail que je
+</summary><category term="travels"></category><category term="new zealand"></category></entry><entry><title>Voyage et arrivée en Nouvelle Zélande</title><link href="http://gael-varoquaux.info/personnal/voyage-et-arrivee-en-nouvelle-zelande.html" rel="alternate"></link><published>2003-01-19T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2003-01-19:personnal/voyage-et-arrivee-en-nouvelle-zelande.html</id><summary type="html">&lt;p&gt;Je suis dans ma chambre et je commence donc a écrire un e-mail que je
 ne pourrais envoyer (un peu débile mais j’ai des difficultés pour me
 connecter à clipper)… Bon, au moins j’ai un CD de Chick Corea qui
 tourne…&lt;/p&gt;
