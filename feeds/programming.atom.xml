@@ -1,5 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2016-05-20T00:00:00+02:00</updated><entry><title>Better Python compressed persistence in joblib</title><link href="http://gael-varoquaux.info/programming/new_low-overhead_persistence_in_joblib_for_big_data.html" rel="alternate"></link><published>2016-05-20T00:00:00+02:00</published><author><name>Alexandre Abadie &amp; Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-05-20:programming/new_low-overhead_persistence_in_joblib_for_big_data.html</id><summary type="html">&lt;div class="section" id="problem-setting-persistence-for-big-data"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2016-11-11T00:00:00+01:00</updated><entry><title>Data science instrumenting social media for advertising is responsible for todays politics</title><link href="http://gael-varoquaux.info/programming/data-science-instrumenting-social-media-for-advertising-is-responsible-for-todays-politics.html" rel="alternate"></link><published>2016-11-11T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-11-11:programming/data-science-instrumenting-social-media-for-advertising-is-responsible-for-todays-politics.html</id><summary type="html">&lt;p&gt;&lt;em&gt;To my friends developing data science for the social media, marketing, and
+advertising industries,&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It is time to accept that we have our share of responsibility in the outcome of
+the US elections and the vote on Brexit. We are not creating the
+society that we would like. Facebook,
+Twitter, targeted advertising, customer profiling, are harmful to truth
+and have helped Brexiting and electing Trump. Journalism
+has been replaced by social media and commercial content tailored to
+influence the reader: your own personal distorted reality.&lt;/p&gt;
+&lt;p&gt;There are many deep reasons why Trump won the election. Here, as a
+data scientist, I want to talk about the factors created by data science.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Rumor replaces truth&lt;/strong&gt;: the way we, data-miners, aggregate and
+recommend content is based on its popularity, on readership statistics.
+In no way is it based in the truthfulness of the content. As a
+result, Facebook, Twitter, Medium, and the like amplify rumors and
+sensational news, with no reality check &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is nothing new: clickbait and tabloids build upon it. However, social networking and
+active recommendation makes things significantly worst. Indeed, birds of
+a feather flock together, reinforcing their own biases. &lt;strong&gt;We receive
+filtered information&lt;/strong&gt;: have you noticed that every single argument you
+heard was overwhelmingly against (or in favor of) Brexit? To make matters
+even worse, our brain loves it: to resolve cognitive dissonance we avoid
+information that contradicts our biases &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="align-right note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;We all believe more information when it confirms our biases&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Gossiping, rumors, and propaganda have always made sane decisions
+difficult. The &lt;strong&gt;filter bubble&lt;/strong&gt;, algorithmically-tuned rose-colored
+glasses of Facebook, escalate this problem into a major dysfunction of
+our society. They amplify messy and false information better than
+anything before. Soviet-style propaganda builds on a carefully-crafted
+lies; post-truth politics build on a flood of information that does not
+even pretend to be credible in the long run.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Active distortion of reality&lt;/strong&gt;: amplifying biases to the point that
+they drown truth is bad. Social networks actually do worse: they give
+tools for active manipulation of our perception of the world. Indeed, the
+revenue of today’s Internet information engines comes from advertising.
+For this purpose they are designed to learn as much as possible about the
+reader. Then they sell this information bundled with a slot where the
+buyer can insert the optimal message to influence the reader.&lt;/p&gt;
+&lt;a class="reference external image-reference" href="https://www.flickr.com/photos/benterrett/6929895752/"&gt;&lt;img alt="" class="align-right" src="https://farm8.staticflickr.com/7212/6929895752_2e359557b8_z_d.jpg" style="width: 25%;" /&gt;&lt;/a&gt;
+&lt;p&gt;The Trump campaign used targeted Facebook ads presenting to
+unenthusiastic democrats information about Clinton tuned to discourage
+them from voting. For instance, &lt;a class="reference external" href="http://www.theverge.com/2016/10/27/13434246/donald-trump-targeted-dark-facebook-ads-black-voters"&gt;portraying her as racist to black voters&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Information manipulation works. The Trump campaign has been a smearing
+campaign aimed at suppressing votes of his opponent. Release of
+negative information on Clinton &lt;a class="reference external" href="https://medium.com/&amp;#64;jonathonmorgan/we-are-more-than-our-partisanship-4ea179592c1f"&gt;did affect her supporter allegiance&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tech created the perfect mind-control tool, with an eyes on
+sales revenue. Someone used it for politics.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The tech industry is mostly socially-liberal and highly educated,
+wishing the best for society. But it must accept its share of the blame.
+My friends improving machine-learning for costumer profiling and add
+placement, &lt;strong&gt;you help shaping a world of lies and deception&lt;/strong&gt;. I will
+not blame you for accepting this money: if it were not for you, others
+would do it. But we should all be thinking about how do we improve this
+system. How do we use data science to build a world based on objectivity,
+transparency, and truth, rather than Internet-based marketing?&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;&lt;strong&gt;References analysing the erosion of truth&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.economist.com/news/briefing/21706498-dishonesty-politics-nothing-new-manner-which-some-politicians-now-lie-and"&gt;Must-read article in the economist on lies in politics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Post-truth_politics"&gt;Wikipedia page on Post-truth politics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://nymag.com/selectall/2016/11/donald-trump-won-because-of-facebook.html"&gt;Donald Trump won because of Facebook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://inverseprobability.com/2016/06/23/the-real-story-behind-todays-referendum"&gt;The real story behind todays referendum&lt;/a&gt; : Neil Lawrence’s analysis of the filter-bublle effect in Brexit&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://users.polisci.wisc.edu/behavior/Papers/Toff&amp;amp;Kim2013.pdf"&gt;A 2013 academic study showing that twitter increases partisan
+polarization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;&lt;strong&gt;Disgression: other social issues of data science&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The tech industry is &lt;strong&gt;increasing inequalities&lt;/strong&gt;, making the rich richer and
+leaving the poor behind. Data-science, with its ability to automate
+actions and wield large sources of information, is a major contributor
+to these sources of inequalities.&lt;/li&gt;
+&lt;li&gt;Internet-based marketing is building &lt;strong&gt;a huge spying machine&lt;/strong&gt; that
+infers as much as possible about the user. The Trump campaign was able
+to target a specific population, black voters leaning towards
+democrats. What if this data was used for direct executive action? This
+could come quicker than we think, given how intelligence agencies tap
+into social media.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I preferred to focus this post on how data-science can help distort truth.
+Indeed, it is a problem too often ignored by data scientists who like to
+think that they are empowering users.&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- The wikileaks dumps of Clinton's mail resemble the
+`Kompromat &lt;https://en.wikipedia.org/wiki/Kompromat&gt;`_ techniques used
+by post-soviet regimes, using private information on opponents to
+control them. --&gt;
+&lt;p class="align-right"&gt;In memory of &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Aaron_Swartz"&gt;Aaron Schwartz&lt;/a&gt;
+who fought centralized power on Internet.&lt;/p&gt;
+&lt;hr class="docutils" /&gt;
+&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Facebook was until recently using human curators, &lt;a class="reference external" href="http://arstechnica.com/business/2016/08/facebook-fires-human-editors-algorithm-immediately-posts-fake-news/"&gt;but fired them,
+leading to a loss of control on veracity&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It is a well-known and well-studied cognitive bias that
+&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Cognitive_dissonance"&gt;individuals strive to reduce cognitive dissonace and actively avoid
+situations and information likely to increase it&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;a class="reference external image-reference" href="https://www.flickr.com/photos/cdevers/4602805654"&gt;&lt;img alt="" class="align-center" src="https://farm2.staticflickr.com/1376/4602805654_db8b6569fb_z_d.jpg" style="width: 80%;" /&gt;&lt;/a&gt;
+</summary><category term="politics"></category><category term="data science"></category><category term="software"></category><category term="machine learning"></category><category term="society"></category></entry><entry><title>Better Python compressed persistence in joblib</title><link href="http://gael-varoquaux.info/programming/new_low-overhead_persistence_in_joblib_for_big_data.html" rel="alternate"></link><published>2016-05-20T00:00:00+02:00</published><author><name>Alexandre Abadie &amp; Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-05-20:programming/new_low-overhead_persistence_in_joblib_for_big_data.html</id><summary type="html">&lt;div class="section" id="problem-setting-persistence-for-big-data"&gt;
 &lt;h2&gt;Problem setting: persistence for big data&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://pythonhosted.org/joblib/"&gt;Joblib&lt;/a&gt; is a powerful Python package
 for management of computation: parallel computing, caching, and
