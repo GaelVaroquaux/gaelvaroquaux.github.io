@@ -4,8 +4,8 @@ Run on my NAS, the arm architecture is necessary to synchronize with the
 latest Ubuntu. The x86 is useful, eg to synchronize with older Ubuntu
 releases:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="programming/attachments/unison-2.48.4-armel.zip"&gt;unison-2.48.4-armel.zip&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="programming/attachments/unison-2.48.4-amd64.zip"&gt;unison-2.48.4-amd64.zip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="../programming/attachments/unison-2.48.4-armel.zip"&gt;unison-2.48.4-armel.zip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="../programming/attachments/unison-2.48.4-amd64.zip"&gt;unison-2.48.4-amd64.zip&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="warning"&gt;
 &lt;p class="first admonition-title"&gt;Warning&lt;/p&gt;
