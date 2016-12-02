@@ -3988,11 +3988,11 @@ Davison, and John B. Cole&lt;/strong&gt;&lt;/p&gt;
 Analysis&lt;/strong&gt; (PCA), I wrote a few Python scripts producing &lt;a class="reference external" href="http://gael-varoquaux.info/scientific_computing/ica_pca/index.html"&gt;some
 visualizations explaining the difference&lt;/a&gt; that have had a bit of
 success.&lt;/p&gt;
-&lt;p&gt;During the last sprint on &lt;a class="reference external" href="http://scikit-learn.sourceforge.net/"&gt;scikit-learn&lt;/a&gt;, a machine learning
+&lt;p&gt;During the last sprint on &lt;a class="reference external" href="http://scikit-learn.org"&gt;scikit-learn&lt;/a&gt;, a machine learning
 toolkit in Python, we cleaned up the ICA code that I had been using, and
-we added it to the scikit, along with &lt;a class="reference external" href="http://scikit-learn.sourceforge.net/auto_examples/plot_ica_vs_pca.html"&gt;an example&lt;/a&gt; inspired from this
+we added it to the scikit, along with &lt;a class="reference external" href="http://scikit-learn.org/stable/auto_examples/decomposition/plot_ica_vs_pca.html"&gt;an example&lt;/a&gt; inspired from this
 earlier toy problem.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://scikit-learn.org/stable/auto_examples/plot_ica_vs_pca.html"&gt;&lt;img alt="" class="align-center" src="http://scikit-learn.org/stable/_images/plot_ica_vs_pca.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="http://scikit-learn.org/stable/auto_examples/decomposition/plot_ica_vs_pca.html"&gt;&lt;img alt="" class="align-center" src="http://scikit-learn.org/stable/_images/sphx_glr_plot_ica_vs_pca_001.png" /&gt;&lt;/a&gt;
 &lt;p&gt;While the pictures are not as pretty as the initial ones I had done
 (because we wanted to keep the example as simple as possible), I am very
 happy that this discussion is know more than a set of static pictures,
