@@ -1,5 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2016-11-11T00:00:00+01:00</updated><entry><title>Data science instrumenting social media for advertising is responsible for todays politics</title><link href="http://gael-varoquaux.info/programming/data-science-instrumenting-social-media-for-advertising-is-responsible-for-todays-politics.html" rel="alternate"></link><published>2016-11-11T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-11-11:programming/data-science-instrumenting-social-media-for-advertising-is-responsible-for-todays-politics.html</id><summary type="html">&lt;p&gt;&lt;em&gt;To my friends developing data science for the social media, marketing, and
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2016-12-31T00:00:00+01:00</updated><entry><title>Our research in 2016: personnal scientific highlights</title><link href="http://gael-varoquaux.info/science/our-research-in-2016-personnal-scientific-highlights.html" rel="alternate"></link><published>2016-12-31T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-12-31:science/our-research-in-2016-personnal-scientific-highlights.html</id><summary type="html">&lt;p&gt;Year 2016 has been productive for science in &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;my team&lt;/a&gt;. Here are some personal highlights:
+bridging artificial intelligence tools to human cognition,
+markers of neuropsychiatric conditions from brain activity at rest,
+algorithmic speedups for matrix factorization on huge datasets…&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="artificial-intelligence-convolutional-networks-map-well-the-human-visual-system"&gt;
+&lt;h2&gt;Artificial-intelligence convolutional networks map well the human visual system&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S1053811916305481"&gt;Eickenberg et al&lt;/a&gt;
+(&lt;a class="reference external" href="https://hal.inria.fr/hal-01389809/document"&gt;preprint&lt;/a&gt;), showed that
+convolutional networks –machine-learning tools developed in artificial
+intelligence for image analysis– map well the human visual system. This
+is interesting because it shows that cognitive vision and artificial
+computer vision have evolved to similar architectures. It is not that
+surprising, as they are both driven by the statistics of natural images.
+From the point of view of inference in neuroscience, what I found really
+interesting is that we demonstrated that our computational model of brain
+activity generalizes across experimental paradigms. This is something new
+to my knowledge.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="using-brain-activity-at-rest-to-predicting-autism-status-across-clinical-sites"&gt;
+&lt;h2&gt;Using brain activity at rest to predicting Autism status across clinical sites&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S1053811916305924"&gt;Abraham et al&lt;/a&gt;
+(&lt;a class="reference external" href="https://arxiv.org/pdf/1611.06066"&gt;preprint&lt;/a&gt;) used resting-state brain
+activity to predict whether individuals were typical controls or
+diagnosed with Autistic symptoms. The important aspect of this study
+is that it was performed on a large data collection across many sites
+that had not concerted each other during the acquisition. Given that
+prediction was successful across sites, the study shows the viability of
+extracting predictive biomarkers across inhomogeneous multi-site data. I
+think that it is an important result for the future of psychiatric
+neuroimaging research. The paper also highlights the aspects of the
+predictive pipeline that were important for this success.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="dictionary-learning-for-massive-matrix-factorization"&gt;
+&lt;h2&gt;Dictionary Learning for Massive Matrix Factorization&lt;/h2&gt;
+&lt;p&gt;On a pure machine-learning side, &lt;a class="reference external" href="http://jmlr.org/proceedings/papers/v48/mensch16.html"&gt;Mensch et al&lt;/a&gt; introduced a new
+algorithm for matrix factorization that gives 10 times speedups compared
+to the state of the art on absolutely huge datasets (Terabyte scales).
+The key aspect is to combine online learning with random subampling that
+exploits redundancies in the data. For neuroimaging, this algorithmic
+advances is needed to tackle larger and larger resting-state data. We
+will use it to scale predictive models to epidemiologic cohorts. The
+original paper was purely heuristic but &lt;a class="reference external" href="https://arxiv.org/pdf/1611.10041"&gt;later work&lt;/a&gt; comes with proofs and we will soon
+be submitting a very rich journal paper about this class of algorithms.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="a-guide-to-cross-validation-in-neuroimaging"&gt;
+&lt;h2&gt;A guide to cross-validation in neuroimaging&lt;/h2&gt;
+&lt;p&gt;We published &lt;a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S105381191630595X"&gt;a review on cross-validation for neuroimaging&lt;/a&gt;
+(&lt;a class="reference external" href="https://arxiv.org/pdf/1606.05201"&gt;preprint&lt;/a&gt;). While this may sound
+less leading edge than other of our work, cross-validation is central to
+everything we do. Doing it right is important. We learned some
+interesting tradeoffs while doing the experiments for the review. One of
+them is that for predictive models that are quite stable, such as SVMs,
+it may be profitable to use default hyper-parameters than to tune them by
+cross-validation. This is because with the small sample sizes typical of
+neuroimaging cross-validation is fairly noisy.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Though not in my team, &lt;a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S1053811916306103"&gt;Liem et al&lt;/a&gt;
+(&lt;a class="reference external" href="http://www.biorxiv.org/content/biorxiv/early/2016/11/07/085506.full.pdf"&gt;preprint&lt;/a&gt;)
+collaborated with us for a beautiful study showing multimodal prediction
+of brain age from rest brain activity and brain anatomy. Interestingly,
+they showed that discrepancy between predicted age and chronological age
+captures cognitive impairment.&lt;/p&gt;
+&lt;p&gt;We have many interesting things in the pipeline, but it will be for next
+year. On an unrelated note, I’ve been doing more &lt;a class="reference external" href="http://www.flickriver.com/photos/gaelvaroquaux/popular-interesting/"&gt;art photography&lt;/a&gt;
+on my free time in 2016.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="science"></category><category term="research"></category><category term="neuroimaging"></category><category term="brain science"></category><category term="machine learning"></category></entry><entry><title>Data science instrumenting social media for advertising is responsible for todays politics</title><link href="http://gael-varoquaux.info/programming/data-science-instrumenting-social-media-for-advertising-is-responsible-for-todays-politics.html" rel="alternate"></link><published>2016-11-11T00:00:00+01:00</published><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-11-11:programming/data-science-instrumenting-social-media-for-advertising-is-responsible-for-todays-politics.html</id><summary type="html">&lt;p&gt;&lt;em&gt;To my friends developing data science for the social media, marketing, and
 advertising industries,&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It is time to accept that we have our share of responsibility in the outcome of
 the US elections and the vote on Brexit. We are not creating the
