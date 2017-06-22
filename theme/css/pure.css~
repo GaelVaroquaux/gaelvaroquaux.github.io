@@ -169,7 +169,7 @@ div.main-title:hover:after{
 
 @media (max-width: 1200px) {
     div.main-title:hover:after{
-	content: "&rarr; About me";
+	content: "\2B95\0020 About me";
     }
 }
 
@@ -290,15 +290,21 @@ span.social_links {
 }
 
 /* Scale down the size of the social icons when the sidebar gets small */
-@media (max-width: 1000px) {
-    p.social i.fa-3x {
+@media (max-width: 1065px) {
+    div.social i.fa-3x {
 	font-size: 2.5em;
     }
 }
 
-@media (max-width: 900px) {
-    p.social i.fa-3x {
+@media (max-width: 940px) {
+    div.social i.fa-3x {
 	font-size: 2.2em;
+    }
+}
+
+@media (max-width: 870px) {
+    div.social i.fa-3x {
+	font-size: 2em;
     }
 }
 
@@ -308,6 +314,62 @@ span.social_links {
     }
 }
 
+/* For the flick display */
+.social div#flickrstream {
+    background-color: #cdd2d8;
+    border: #111 solid 1px;
+    visibility: hidden;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -30px;
+    padding: 3px;
+   -webkit-transition:all .5s ease;  
+   -moz-transition:all .5s ease;  
+   -o-transition:all .5s ease;  
+   transition:all .5s ease;
+   box-shadow: 5px 5px 5px #4e4e4e;
+   display: inline-block;
+   width: 853px;
+}
+
+@media (min-width: 960px) {
+    div.social:hover div#flickrstream {
+	visibility: visible;
+    }
+}
+
+/* FlickrStream */
+#flickrstream, #flickrstream ul, #flickrstream li {
+   margin: 0px 0px 0px -6px;
+   padding: 0px;
+}
+
+#flickrstream li {
+   display: inline-block;
+   height: 75px;
+   margin: 4px;
+   padding: 0px;
+   width: 75px;
+}
+
+#flickrstream li:hover {
+   border: none;
+}
+
+#flickrstream a {
+    padding: 0px;
+}
+
+#flickrstream img {
+   float: none;
+   margin: 0px;
+   padding: 1px;
+   background-color: #111;
+}
+
+#flickrstream img:hover {
+   border: 1px solid #111;
+}
 
 *[tooltip] {
     position: relative;
@@ -529,7 +591,7 @@ a.post-category:hover {
     position: relative;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 760px) {
     .sidebar {
         width: 100%;
         position: relative;
@@ -601,7 +663,7 @@ a.post-category:hover {
 	margin: 4px;
     }
 
-    .header p.social, p.links {
+    .header div.social, p.links {
 	margin: .7em 0px 0px 0px;
     }
 
@@ -675,6 +737,10 @@ div.align-right {
 
 div.align-left {
     float: left;
+}
+
+p.align-right {
+    text-align: right;
 }
 
 div.formula {
