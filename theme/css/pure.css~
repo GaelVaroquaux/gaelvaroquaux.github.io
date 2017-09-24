@@ -340,7 +340,7 @@ span.social_links {
 
 /* FlickrStream */
 #flickrstream, #flickrstream ul, #flickrstream li {
-   margin: 0px 0px 0px -6px;
+   margin: 0px 0px 0px -7px;
    padding: 0px;
 }
 

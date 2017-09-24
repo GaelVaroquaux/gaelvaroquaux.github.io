@@ -1,5 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Gaël Varoquaux</title><link>http://gael-varoquaux.info/</link><description></description><lastBuildDate>Fri, 23 Jun 2017 00:00:00 +0200</lastBuildDate><item><title>Scikit-learn Paris sprint 2017</title><link>http://gael-varoquaux.info/programming/scikit-learn-paris-sprint-2017.html</link><description>&lt;object class="align-right" data="attachments/scikit-learn-logo.svg" style="width: 400px;" type="image/svg+xml"&gt;
+<rss version="2.0"><channel><title>Gaël Varoquaux</title><link>http://gael-varoquaux.info/</link><description></description><lastBuildDate>Tue, 19 Sep 2017 12:10:00 +0200</lastBuildDate><item><title>Beyond computational reproducibility, let us aim for reusability</title><link>http://gael-varoquaux.info/programming/beyond-computational-reproducibility-let-us-aim-for-reusability.html</link><description>&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;Scientific progress calls for reproducing results. Due to limited
+resources, this is difficult even in computational sciences. Yet,
+reproducibility is only a means to an end. It is not enough by itself
+to enable new scientific results. Rather, new discoveries must build
+on reuse and modification of the state of the art. As time goes, this
+state of the art must be consolidated in software libraries, just as
+scientific knowledge as been consolidated on bookshelves of
+brick-and-mortar libraries.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="small container"&gt;
+I am reposting &lt;a class="reference external" href="https://openlab-flowers.inria.fr/uploads/default/original/1X/65addc14bb2a6a7feaf7690865fa3708d5b0990f.pdf"&gt;an essay&lt;/a&gt;
+that I wrote on reproducible science and software libraries. The full
+discussion is in &lt;a class="reference external" href="https://openlab-flowers.inria.fr/t/ieee-cis-newsletter-on-cognitive-and-developmental-systems/129/1"&gt;IEEE CIS TC Cognitive and Developmental Systems&lt;/a&gt;,
+but I’ve been told that it is hard to find.&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;Science is based on the ability to falsify claims. Thus, reproduction or
+replication of published results is central to the progress of science.
+Researchers failing to reproduce a result will raise questions:
+Are these investigators not skilled enough? Did they misunderstand the
+original scientific endeavor? Or is the scientific claim unfounded? For
+this reason, the quality of the methods description in a research paper
+is crucial. Beyond papers, computers —central to science in our digital
+era— bring the hope of automating reproduction. Indeed, computers excel
+at doing the same thing several times.&lt;/p&gt;
+&lt;p&gt;However, there are many challenges to computational reproducibility. To
+begin with, computers enable reproducibility only if all steps of a
+scientific study are automated. In this sense, interactive environments
+—productivity-boosters for many— are detrimental unless they enable easy
+recording and replay of the actions performed. Similarly, as a
+computational-science study progresses, it is crucial to keep track of
+changes to the corresponding data and scripts. With a
+software-engineering perspective, version control is the solution. It
+should be in the curriculum of today’s scientists. But it does not
+suffice. Automating a computational study is difficult. This is because
+it comes with a large maintenance burden: operations change rapidly,
+straining limited resources —processing power and storage. Saving
+intermediate results helps. As does devising light experiments that are
+easier to automate. These are crucial to the progress of science, as
+laboratory classes or thought experiments in physics. A software
+engineer would relate them to unit tests, elementary operations checked
+repeatedly to ensure the quality of a program.&lt;/p&gt;
+&lt;div class="align-right container"&gt;
+Archiving computers in thermally-regulated nuclear-proof vaults?&lt;/div&gt;
+&lt;p&gt;Once a study is automated and published, ensuring reproducibility should
+be easy; just a matter of archiving the computer used, preferably in a
+thermally-regulated nuclear-proof vault. Maybe, dear reader, the
+scientist in you frowns at this solution. Indeed, studies should also be
+reproduced by new investigators. Hardware and software variations then
+get in the way. Portability, &lt;em&gt;ie&lt;/em&gt; achieving identical results across
+platforms, is well-known by the software industry as being a difficult
+problem. It faces great hurdles due to incompatibilities in compilers,
+libraries, or operating systems. Beyond these issues, portability also
+faces numerical and statistical stability issues in scientific computing.
+Hiding instability problems with heavy restrictions on the environment is
+like rearranging deck chairs on the Titanic. While enough freezing will
+recover reproducibility, unstable operations cast doubt upon scientific
+conclusions they might lead to. Computational reproducibility is more
+than a software engineering challenge; it must build upon solid numerical
+and statistical methods.&lt;/p&gt;
+&lt;p&gt;Reproducibility is not enough. It is only a means to an end, scientific
+progress. Setting in stone a numerical pipeline that produces a figure is
+of little use to scientific thinking if it is a black box. Researchers
+need to understand the corresponding set of operations to relate them to
+modeling assumptions. New scientific discoveries will arise from varying
+those assumptions, or applying the methodology to new questions or new
+data. Future studies build upon past studies, standing on the shoulders
+of giants, as Isaac Newton famously wrote. In this process, published
+results need to be modified and adapted, not only reproduced. Enabling
+reuse is an important goal.&lt;/p&gt;
+&lt;div class="align-right container"&gt;
+Libraries as reusable computational experiments&lt;/div&gt;
+&lt;p&gt;To a software architect, a reusable computational experiment may sound
+like a library. Software libraries are not only a good analogy, but also
+an essential tool. The demanding process of designing a good library
+involves isolating elementary steps, ensuring their quality, and
+documenting them. It is akin to the editorial work needed to assemble a
+textbook from the research literature.&lt;/p&gt;
+&lt;p&gt;Science should value libraries made of code, and not only bookshelves.
+But they are expensive to develop, and even more so to maintain. Where to
+set the cursor? It is clear that in physics not every experimental setup
+can be stored for later reuse. Costs are less tangible with computational
+science; but they should not be underestimated. In addition, the race to
+publish creates legions of studies. As an example, Google scholar lists
+28000 publications concerning compressive sensing in 2015. Arguably many
+are incremental and research could do with less publications. Yet the
+very nature of research is to explore new ideas, not all of which are to
+stay.&lt;/p&gt;
+&lt;div class="align-right container"&gt;
+Identifying and consolidating major results for reuse&lt;/div&gt;
+&lt;p&gt;Computational research will best create scientific progress by
+identifying and consolidating the major results. It is a difficult but
+important task. These studies should be made reusable. Limited resources
+imply that the remainder will suffer from “code rot”, with results
+becoming harder and harder to reproduce as their software environment
+becomes obsolete. Libraries, curated and maintained, are the building
+blocks that can enable progress.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grey container"&gt;
+If you want to cite this essay in an academic publication, please
+cite the version in
+&lt;a class="reference external" href="https://openlab-flowers.inria.fr/t/ieee-cis-newsletter-on-cognitive-and-developmental-systems/129/1"&gt;IEEE CIS TC Cognitive and Developmental Systems&lt;/a&gt;
+(volume 32, number 2, 2016).&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;&lt;strong&gt;Related posts&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="software-for-reproducible-science-lets-not-have-a-misunderstanding.html"&gt;Software for reproducible science: let’s not have a misunderstanding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="mloss-2015-wising-up-to-building-open-source-machine-learning.html"&gt;MLOSS 2015: wising up to building open-source machine learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="../science/publishing-scientific-software-matters.html"&gt;Publishing scientific software matters&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Tue, 19 Sep 2017 12:10:00 +0200</pubDate><guid isPermaLink="false">tag:gael-varoquaux.info,2017-09-19:programming/beyond-computational-reproducibility-let-us-aim-for-reusability.html</guid><category>science</category><category>scientific computing</category><category>publishing</category><category>software</category><category>reproducible science</category></item><item><title>Scikit-learn Paris sprint 2017</title><link>http://gael-varoquaux.info/programming/scikit-learn-paris-sprint-2017.html</link><description>&lt;object class="align-right" data="attachments/scikit-learn-logo.svg" style="width: 400px;" type="image/svg+xml"&gt;
 &lt;/object&gt;
 &lt;p&gt;Two week ago, we held in Paris a large international sprint on
 &lt;a class="reference external" href="http://scikit-learn.org"&gt;scikit-learn&lt;/a&gt;. It was incredibly productive
