@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/alexandre-abadie-gael-varoquaux.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2016-05-20T00:00:00+02:00</updated><entry><title>Better Python compressed persistence in joblib</title><link href="http://gael-varoquaux.info/programming/new_low-overhead_persistence_in_joblib_for_big_data.html" rel="alternate"></link><published>2016-05-20T00:00:00+02:00</published><author><name>Alexandre Abadie &amp; Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-05-20:programming/new_low-overhead_persistence_in_joblib_for_big_data.html</id><summary type="html">&lt;div class="section" id="problem-setting-persistence-for-big-data"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - Alexandre Abadie &amp; Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/alexandre-abadie-gael-varoquaux.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2016-05-20T00:00:00+02:00</updated><entry><title>Better Python compressed persistence in joblib</title><link href="http://gael-varoquaux.info/programming/new_low-overhead_persistence_in_joblib_for_big_data.html" rel="alternate"></link><published>2016-05-20T00:00:00+02:00</published><updated>2016-05-20T00:00:00+02:00</updated><author><name>Alexandre Abadie &amp; Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-05-20:/programming/new_low-overhead_persistence_in_joblib_for_big_data.html</id><summary type="html">&lt;p class="first last"&gt;New persistence in joblib enables low-overhead storage of big data contained in arbitrary objects&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="problem-setting-persistence-for-big-data"&gt;
 &lt;h2&gt;Problem setting: persistence for big data&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://pythonhosted.org/joblib/"&gt;Joblib&lt;/a&gt; is a powerful Python package
 for management of computation: parallel computing, caching, and
@@ -285,7 +286,7 @@ sockets, enabling broadcasting of data between computing units
 on a network. This will be priceless with &lt;a class="reference external" href="https://github.com/joblib/joblib/pull/325"&gt;joblib’s new distributed backends&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Other improvements will come from better compressor, making everything
 faster.&lt;/p&gt;
-&lt;div class="note"&gt;
+&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;The pull request was implemented by &lt;a class="reference external" href="https://github.com/aabadie"&gt;&amp;#64;aabadie&lt;/a&gt;. He thanks &lt;a class="reference external" href="https://github.com/lesteve"&gt;&amp;#64;lesteve&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/ogrisel"&gt;&amp;#64;ogrisel&lt;/a&gt;
 and &lt;a class="reference external" href="https://github.com/GaelVaroquaux"&gt;&amp;#64;GaelVaroquaux&lt;/a&gt; for the valuable
@@ -320,4 +321,4 @@ represented as numpy arrays or subclasses.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-</summary><category term="joblib"></category><category term="persistence"></category><category term="big data"></category></entry></feed>
+</content><category term="joblib"></category><category term="persistence"></category><category term="big data"></category></entry></feed>
