@@ -83,7 +83,7 @@ opens the door to decoding in experiments that were so far too fast.&lt;/p&gt;
 field that has been worrying me lot: &lt;strong&gt;often, we do not have enough
 samples to assess properly the predictive power in neuroimaging&lt;/strong&gt;.
 Indeed, the typical predictive analysis in neuroimaging uses 100 samples.&lt;/p&gt;
-&lt;div class="figure align-right"&gt;
+&lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="figure align-right"&gt;
 &lt;img alt="" src="attachments/2017_highlights/binomial_cdf.png" style="width: 300px;" /&gt;
 &lt;/div&gt;
 &lt;p&gt;The error distribution on the measure of prediction accuracy of a decoding
