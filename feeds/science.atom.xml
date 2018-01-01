@@ -20,7 +20,7 @@ the art decoders based on &lt;a class="reference external" href="http://ieeexplo
 In &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1053811917308182"&gt;Hoyos-Idrobo et al&lt;/a&gt;
 (&lt;a class="reference external" href="https://hal.inria.fr/INRIA/hal-01615015v1"&gt;preprint&lt;/a&gt;)
 we used a different technique based on ensembling: combining many fast
-decoders. The resulting decoder, dubbed &lt;em&gt;FReM&lt;/em&gt; predict better, faster,
+decoders. The resulting decoder, dubbed &lt;em&gt;FReM&lt;/em&gt;, predicts better, faster,
 and with more stable maps than existing methods. Indeed, we have learned
 that good prediction accuracy was not the only important feature of a
 decoder.&lt;/p&gt;
