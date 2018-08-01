@@ -13,6 +13,15 @@ a:focus {
     text-decoration: underline;
 }
 
+/* Multi-columns divs */
+div.pure-g {
+    margin-right: -10px;
+}
+
+div.pure-g .pure-u-1-3 {
+    padding-right: 5px;
+}
+
 
 .comments {
     padding: 50px 0 0;
@@ -46,9 +55,10 @@ pre.literal-block {
     margin-left: -25%;
 }
 
-.sidebar.small {
+.sidebar.small, .container.small {
     font-size: smaller;
 }
+
 
 .cover-img {
     position: absolute;
@@ -316,7 +326,7 @@ span.social_links {
 
 /* For the flick display */
 .social div#flickrstream {
-    background-color: #cdd2d8;
+    background-color: black;
     border: #111 solid 1px;
     visibility: hidden;
     position: absolute;
@@ -329,7 +339,7 @@ span.social_links {
    transition:all .5s ease;
    box-shadow: 5px 5px 5px #4e4e4e;
    display: inline-block;
-   width: 853px;
+   width: 973px;
 }
 
 @media (min-width: 960px) {
@@ -347,7 +357,7 @@ span.social_links {
 #flickrstream li {
    display: inline-block;
    height: 75px;
-   margin: 4px;
+   margin: 8px 10px;
    padding: 0px;
    width: 75px;
 }
