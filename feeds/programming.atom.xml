@@ -1,5 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - programming</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2017-09-19T12:10:00+02:00</updated><entry><title>Beyond computational reproducibility, let us aim for reusability</title><link href="http://gael-varoquaux.info/programming/beyond-computational-reproducibility-let-us-aim-for-reusability.html" rel="alternate"></link><published>2017-09-19T12:10:00+02:00</published><updated>2017-09-19T12:10:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2017-09-19:/programming/beyond-computational-reproducibility-let-us-aim-for-reusability.html</id><summary type="html">&lt;div class="admonition note"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - programming</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2018-08-01T00:00:00+02:00</updated><entry><title>Sprint on scikit-learn, in Paris and Austin</title><link href="http://gael-varoquaux.info/programming/sprint-on-scikit-learn-in-paris-and-austin.html" rel="alternate"></link><published>2018-08-01T00:00:00+02:00</published><updated>2018-08-01T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2018-08-01:/programming/sprint-on-scikit-learn-in-paris-and-austin.html</id><summary type="html">&lt;p&gt;Two weeks ago, we held a scikit-learn sprint in Austin and Paris. Here is
+a brief report, on progresses and challenges.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;Several sprints&lt;/p&gt;
+&lt;p&gt;We actually held two sprint in Austin: one open sprint, at the scipy
+conference sprints, which was open to new contributors, and one core
+sprint, for more …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Two weeks ago, we held a scikit-learn sprint in Austin and Paris. Here is
+a brief report, on progresses and challenges.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;Several sprints&lt;/p&gt;
+&lt;p&gt;We actually held two sprint in Austin: one open sprint, at the scipy
+conference sprints, which was open to new contributors, and one core
+sprint, for more advanced contributors. Thank you to all who joined
+the scipy conference sprint. As I wasn’t there, I cannot report on
+it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="many-achievements"&gt;
+&lt;h2&gt;Many achievements&lt;/h2&gt;
+&lt;p&gt;Too many things were done to be listed here. Here is brief overview:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Optics got merged&lt;/strong&gt;: &lt;a class="reference external" href="http://scikit-learn.org/dev/modules/clustering.html#optics"&gt;The optics clustering algorithm&lt;/a&gt; is a
+density-base clustering, as DBScan, but with hyperparameters more
+flexible and easier to set. Our implementation is also more scaleable
+for very large number of samples. The &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/1984"&gt;Pull request&lt;/a&gt; was opened
+in 2013, and got many many improvements over the years.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Yeo-Johnson&lt;/strong&gt;: &lt;a class="reference external" href="http://scikit-learn.org/dev/modules/preprocessing.html#mapping-to-a-gaussian-distribution"&gt;The Yeo-Johnson transform&lt;/a&gt;
+is a simple parametric transformation of the data that can be used to
+make it more Gaussian. It is similar to the Box-Cox transform but can
+deal with negative data
+(&lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/11520"&gt;PR&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Novelty versus outlier detection&lt;/strong&gt;: Novelty detection attempts to
+find on new data observations that differ from train data. Outlier
+detection considers that even in the train data there are aberrant
+observation. New modes in scikit-learn enable both usage scenario with
+the same algorithms (see &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/issues/8693"&gt;this issue&lt;/a&gt; and &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/10700"&gt;this
+PR&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Missing-value indicator&lt;/strong&gt;: a new transform that adds indicator columns
+marking missing data
+(&lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/8075"&gt;PR&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pypy support&lt;/strong&gt;: pypy support was merged.
+(&lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/11010"&gt;PR&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Random Forest with 100 estimators&lt;/strong&gt; The default of &lt;cite&gt;n_estimator&lt;/cite&gt; in
+RandomForest was changed from 10, which was fast but statistically
+poor, to 100 (&lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/11542"&gt;PR&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Changing to 5-fold&lt;/strong&gt;: we changed to default of cross-validation from
+3-fold to 5-fold
+(&lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/11557"&gt;PR&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Toward release 0.20&lt;/strong&gt;: most of the effort of the sprint was actually
+spent on addressing issues for the 0.20 release: a long list of quality
+improvements
+(&lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/milestone/24"&gt;milestone&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="scikit-learn-is-hard-work"&gt;
+&lt;h2&gt;Scikit-learn is hard work&lt;/h2&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="attachments/dev_scikit-learn.png" style="width: 300px;" /&gt;
+&lt;p class="caption"&gt;Even for the almighty &amp;#64;amueller&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Two days of intense group work on scikit-learn reminded me how much it is
+hard work. I thought that it was maybe a good idea to try to illustrate
+why.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Mathematical errors&lt;/strong&gt;: maintaining the library requires mathematical
+understanding of the models. For instance Ivan Panico &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/11585"&gt;fixed the sparse
+PCA&lt;/a&gt;, for
+which the transform was mathematically incorrect.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Numerical instabilities&lt;/strong&gt;: sometimes, however, when models give a
+result different from the expected one, this is due to numerical
+instability. For instance, Sergul Aydöre &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/11587"&gt;changed the tolerance for
+certain variants of ridge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keeping examples and documentation up to date&lt;/strong&gt;:
+Each change requires changing all documentation and examples. We have a
+lot these. For instance, Alex Boucault &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/11557"&gt;had to update many examples and
+documentation pages when changing the default cross-validation&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clean deprecation path&lt;/strong&gt;: We make sure that our changes do not break
+users code, and therefore we provide a smooth update path, with
+progressive deprecations. For instance, &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/11557"&gt;the change of default
+cross-validation&lt;/a&gt; introduce
+an intermediate step where the default is kept the same and warns that
+it will change in two releases.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Consistent behavior across the library&lt;/strong&gt;:
+One of the acclaimed values of scikit-learn is that it has a very
+consistent behavior across different models. We enforce this by “common
+tests”, that test some properties of the estimators altogether. For
+instance, Sergul implemented &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/11558"&gt;common tests for sample weights&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Extensive testing&lt;/strong&gt;: We test many many things in scikit-learn:
+that the code snippets in the documentation are correct, that &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/11421"&gt;the
+docstring conventions&lt;/a&gt; are
+respected, that there are no deprecation errors raised, including from
+our dependencies. As a results, continuous integration is a core part
+of our development. During the sprint, we flooded our cloud-based
+continuous integration, and as a result iteration really slowed down.
+&lt;a class="reference external" href="https://travis-ci.org/"&gt;TravisCI&lt;/a&gt; were kind enough to fix this by
+allocating us freely more computing power.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Supporting many versions&lt;/strong&gt;: Least by not least, one constraint that
+makes development hard with scikit-learn is that we support many
+different versions of Python, of our dependencies, of linear-algebra
+libraries, and of operating system. This makes development harder, and
+continuous integration slower. But we feel that this is very valuable
+for a core library: narrowing the supported versions means that users
+are more likely to end up in unsatisfiable dependencies situations,
+where different parts of a project want different version numbers of a
+dependency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="admonition warning"&gt;
+&lt;p class="first admonition-title"&gt;Warning&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dropping support for Python 2&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Supporting many version slows development. It also prevents
+implementing new features: supporting Python 2 makes it harder to
+provide  better parallelism or traceback management.&lt;/p&gt;
+&lt;p class="last"&gt;Python 3 has been out for 10 years. It is solid and comes with many
+improvements over Python 2. Alongside with &lt;a class="reference external" href="http://python3statement.org"&gt;many other projects&lt;/a&gt;, we will be requiring Python 3 for
+the future releases of scikit-learn (0.21 and later). scikit-learn
+0.20 will be the last release to support Python 2. It will enable
+us to develop faster a better toolkit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="credits-and-acknowledgments"&gt;
+&lt;h2&gt;Credits and acknowledgments&lt;/h2&gt;
+&lt;div class="section" id="contributors-to-the-sprint"&gt;
+&lt;h3&gt;Contributors to the sprint&lt;/h3&gt;
+&lt;div class="sidebar"&gt;
+&lt;p class="first sidebar-title"&gt;Women contributors&lt;/p&gt;
+&lt;p class="last"&gt;We deeply regret having only one woman in this long list of
+contributors. We would love to welcome more contributors from
+under-represented groups.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;In Paris&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="columns simple"&gt;
+&lt;li&gt;Albert Thomas, Huawey&lt;/li&gt;
+&lt;li&gt;Alexandre Boucaud, Inria&lt;/li&gt;
+&lt;li&gt;Alexandre Gramfort, Inria&lt;/li&gt;
+&lt;li&gt;Eric Lebigot, CFM&lt;/li&gt;
+&lt;li&gt;Gaël Varoquaux, Inria&lt;/li&gt;
+&lt;li&gt;Ivan Panico, Deloitte&lt;/li&gt;
+&lt;li&gt;Jean-Baptiste Schiratti, Telecom ParisTech&lt;/li&gt;
+&lt;li&gt;Jérémie du Boisberranger, Inria&lt;/li&gt;
+&lt;li&gt;Léo Dreyfus-Schmidt, Dataiku&lt;/li&gt;
+&lt;li&gt;Nicolas Goix&lt;/li&gt;
+&lt;li&gt;Samuel Ronsin, Dataiku&lt;/li&gt;
+&lt;li&gt;Sebastien Treguer, Independent&lt;/li&gt;
+&lt;li&gt;Sergül Aydöre, Stevens Institute of Technology&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;In Austin&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="columns simple"&gt;
+&lt;li&gt;Andreas Mueller, Columbia&lt;/li&gt;
+&lt;li&gt;Andreas Mueller, Columbia&lt;/li&gt;
+&lt;li&gt;Guillaume Lemaître, Inria&lt;/li&gt;
+&lt;li&gt;Jan van Rijn, Columbia&lt;/li&gt;
+&lt;li&gt;Joan Massich, Inria&lt;/li&gt;
+&lt;li&gt;Joris Van den Bosches, Inria&lt;/li&gt;
+&lt;li&gt;Nicolas Hug, Columbia&lt;/li&gt;
+&lt;li&gt;Olivier Grisel, Inria&lt;/li&gt;
+&lt;li&gt;Roman Yurchak, independent&lt;/li&gt;
+&lt;li&gt;William de Vazelhes, Inria&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Remote&lt;/strong&gt;&lt;/p&gt;
+&lt;ul class="columns simple"&gt;
+&lt;li&gt;Hanmin Qin, Peking University&lt;/li&gt;
+&lt;li&gt;Joel Nothman, University of Sydney&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="sponsors"&gt;
+&lt;h3&gt;Sponsors&lt;/h3&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://franceisai.com/"&gt;France Is AI&lt;/a&gt; payed the travel of the French
+contributors to Austin&lt;/li&gt;
+&lt;li&gt;The NSF and the Sloan foundation payed the travel of the people from
+Columbia.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://scipy2018.scipy.org"&gt;SciPy 2018&lt;/a&gt; organizers (and sponsors) hosted the first part of the sprint in Austin,&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.enthought.com/"&gt;Enthought&lt;/a&gt; hosted the second part of the sprint in Austin,&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.dataiku.com/"&gt;Dataiku&lt;/a&gt; hosted us in Paris&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://travis-ci.org/"&gt;TravisCI&lt;/a&gt; raised our number of workers for
+online testing&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.meetup.com/Paris-Machine-learning-applications-group/"&gt;ParisML meetup&lt;/a&gt; helped us with the organization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank you all for the support&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Also thanks to Andy Mueller and Olivier Grisel for feedback on this blog post.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="scikit-learn"></category><category term="open-source"></category><category term="reproducible research"></category><category term="scientific software"></category></entry><entry><title>Beyond computational reproducibility, let us aim for reusability</title><link href="http://gael-varoquaux.info/programming/beyond-computational-reproducibility-let-us-aim-for-reusability.html" rel="alternate"></link><published>2017-09-19T12:10:00+02:00</published><updated>2017-09-19T12:10:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2017-09-19:/programming/beyond-computational-reproducibility-let-us-aim-for-reusability.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;Scientific progress calls for reproducing results. Due to limited
 resources, this is difficult even in computational sciences. Yet,

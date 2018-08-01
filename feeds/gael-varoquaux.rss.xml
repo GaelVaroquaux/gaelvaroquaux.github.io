@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Gaël Varoquaux - Gaël Varoquaux</title><link>http://gael-varoquaux.info/</link><description></description><lastBuildDate>Sun, 31 Dec 2017 00:00:00 +0100</lastBuildDate><item><title>Our research in 2017: personal scientific highlights</title><link>http://gael-varoquaux.info/science/our-research-in-2017-personal-scientific-highlights.html</link><description>&lt;p&gt;In my opinion the scientific highlights of 2017 for &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;my team&lt;/a&gt; were on multivariate predictive
+<rss version="2.0"><channel><title>Gaël Varoquaux - Gaël Varoquaux</title><link>http://gael-varoquaux.info/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0200</lastBuildDate><item><title>Sprint on scikit-learn, in Paris and Austin</title><link>http://gael-varoquaux.info/programming/sprint-on-scikit-learn-in-paris-and-austin.html</link><description>&lt;p&gt;Two weeks ago, we held a scikit-learn sprint in Austin and Paris. Here is
+a brief report, on progresses and challenges.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;Several sprints&lt;/p&gt;
+&lt;p&gt;We actually held two sprint in Austin: one open sprint, at the scipy
+conference sprints, which was open to new contributors, and one core
+sprint, for more …&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Wed, 01 Aug 2018 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:gael-varoquaux.info,2018-08-01:/programming/sprint-on-scikit-learn-in-paris-and-austin.html</guid><category>scikit-learn</category><category>open-source</category><category>reproducible research</category><category>scientific software</category></item><item><title>Our research in 2017: personal scientific highlights</title><link>http://gael-varoquaux.info/science/our-research-in-2017-personal-scientific-highlights.html</link><description>&lt;p&gt;In my opinion the scientific highlights of 2017 for &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;my team&lt;/a&gt; were on multivariate predictive
 analysis for brain imaging: a brain decoder more efficient and faster
 than alternatives, improvement clinical predictions by predicting jointly
 multiple traits of subjects, decoding based on the raw time-series of
