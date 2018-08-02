@@ -133,8 +133,8 @@ us to develop faster a better toolkit.&lt;/p&gt;
 &lt;div class="sidebar"&gt;
 &lt;p class="first sidebar-title"&gt;Women contributors&lt;/p&gt;
 &lt;p class="last"&gt;We deeply regret having only one woman in this long list of
-contributors. We would love to welcome more contributors from
-under-represented groups.&lt;/p&gt;
+contributors. We care about diversity and welcome contributors from
+under-represented groups &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[*]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;In Paris&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="columns simple"&gt;
@@ -193,6 +193,15 @@ online testing&lt;/li&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Also thanks to Andy Mueller and Olivier Grisel for feedback on this blog post.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[*]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;We aspire to treat everybody excatly the same way. However,
+acknowledging the fact that there is currently a lack of diversity, we
+are happy to do some outreach and give extra help onboarding
+newcomers.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content><category term="scikit-learn"></category><category term="open-source"></category><category term="reproducible research"></category><category term="scientific software"></category></entry><entry><title>Our research in 2017: personal scientific highlights</title><link href="http://gael-varoquaux.info/science/our-research-in-2017-personal-scientific-highlights.html" rel="alternate"></link><published>2017-12-31T00:00:00+01:00</published><updated>2017-12-31T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2017-12-31:/science/our-research-in-2017-personal-scientific-highlights.html</id><summary type="html">&lt;p&gt;In my opinion the scientific highlights of 2017 for &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;my team&lt;/a&gt; were on multivariate predictive
