@@ -1,5 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2018-08-01T00:00:00+02:00</updated><entry><title>Sprint on scikit-learn, in Paris and Austin</title><link href="http://gael-varoquaux.info/programming/sprint-on-scikit-learn-in-paris-and-austin.html" rel="alternate"></link><published>2018-08-01T00:00:00+02:00</published><updated>2018-08-01T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2018-08-01:/programming/sprint-on-scikit-learn-in-paris-and-austin.html</id><summary type="html">&lt;p&gt;Two weeks ago, we held a scikit-learn sprint in Austin and Paris. Here is
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2018-09-17T00:00:00+02:00</updated><entry><title>A foundation for scikit-learn at Inria</title><link href="http://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html" rel="alternate"></link><published>2018-09-17T00:00:00+02:00</published><updated>2018-09-17T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2018-09-17:/programming/a-foundation-for-scikit-learn-at-inria.html</id><summary type="html">&lt;p&gt;We have just announced that a foundation will be supporting scikit-learn
+at Inria &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;: &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;scikit-learn.fondation-inria.fr&lt;/a&gt;&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+Growth and sustainability&lt;/div&gt;
+&lt;p&gt;This is an exciting turn for us, because it enables us to receive private
+funding. As a result, we will be able to have secure employment for some
+existing core …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We have just announced that a foundation will be supporting scikit-learn
+at Inria &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;: &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;scikit-learn.fondation-inria.fr&lt;/a&gt;&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+Growth and sustainability&lt;/div&gt;
+&lt;p&gt;This is an exciting turn for us, because it enables us to receive private
+funding. As a result, we will be able to have secure employment for some
+existing core contributors, and to hire more people on the team. The goal
+is to help sustaining quality (more frequent releases?) and to tackle
+some ambitious features.&lt;/p&gt;
+&lt;div class="section" id="a-foundation-what-and-why"&gt;
+&lt;h2&gt;A foundation? What and why?&lt;/h2&gt;
+&lt;p&gt;Open source lives and thrives by the basis, the community of developers.
+And scikit-learn is a fantastic example of these dynamics. Because of its
+grass-root origins, it has focused on features that matter for the small
+and the many, such as ease of use and statistical models that work well
+in data-poor situations. Over the years, decisions have been based on
+their technical merit, rather than the importance of displaying a list of
+features that are trendy. A consequence of the breadth of contributors
+with different backgrounds is the library tends to be well-suited for
+many applications, including some models that are less mainstream.&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+People with dedicated time to support the community&lt;/div&gt;
+&lt;p&gt;That said, over time this is an increasing need for a core team of
+maintainers. As the library gets bigger, is it more and more difficult to
+have a full view of what is happening. Integration of new features,
+quality assurances, and releases are best done by developers who can
+dedicate a large amount of time to the library. Also, ambitious changes
+to the library, such as improving the parallel computing engine, need
+long efforts. For many years, we have always had people with dedicated
+time to support the community. In France, we were going through hoops to
+find public money to found them. As someone who has done this effort, I
+can tell you that is a complicated one &lt;a class="footnote-reference" href="#id6" id="id2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The ability to receive money from sponsors will enable us to scale up our
+operations. I was initially worried that we would have difficulties
+finding partners that accepted to give us money without asking for
+control on the project. However, I was proven wrong, and we have found a
+small set of &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/en/home/#sponsors"&gt;great partners&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-will-people-work-on-how-will-decisions-be-made"&gt;
+&lt;h2&gt;What will people work on? How will decisions be made?&lt;/h2&gt;
+&lt;p&gt;It can be a difficult exercise to balance how money is used in a
+community-driven project. The project should not loose its drive where
+the community of developers is important. Interests of the sponsors
+should not prime over interests of the user base.&lt;/p&gt;
+&lt;p&gt;We will make sure that the money that the foundation receives is invested
+for the interest of the community. We have a technical committee that
+supervises the activity of the foundation. Its decisions will be informed
+by the community &lt;a class="footnote-reference" href="#id7" id="id3"&gt;[3]&lt;/a&gt;. For this, we have an advisory board composed of
+core contributors of scikit-learn. Beside the advisory board, the
+technical committee also comprises a delegate from each sponsor. I am
+excited about the input that our partners will provide us on
+the priorities for them, as they represent various industries.
+Voting power will be spread so that sponsors and community have the same
+voting power.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="why-not-an-existing-foundation-such-as-numfocus-or-the-psf"&gt;
+&lt;h2&gt;Why not an existing foundation such as NumFOCUS, or the PSF?&lt;/h2&gt;
+&lt;p&gt;There are several reasons why we choose this particular legal vessel. Our
+endeavor is slightly from the prominent foundations in our ecosystem,
+&lt;a class="reference external" href="https://numfocus.org"&gt;NumFocus&lt;/a&gt; and the &lt;a class="reference external" href="https://www.python.org/psf"&gt;PSF (Python Software
+Foundation)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The first important aspect is that we want to employ full-time
+developers. Different countries have very different legal frameworks, and
+it is really hard to transfer money overseas in a non profit. Physical
+assets like employing people or owning real estate is even harder. We
+needed something in France. And there might be a need for something else
+in another country at some point.&lt;/p&gt;
+&lt;p&gt;Another reason to be embedded in the Inria foundation is that it is
+giving us a really good deal. We basically get legal advice, accounting,
+office space, and IT support, for an 8% overhead. This is an excellent
+deal and is part of the sponsoring efforts that Inria will keep doing.&lt;/p&gt;
+&lt;p&gt;Last, we feel that a foundation targeting specifically scikit-learn can
+raise money from different people than other foundations. I think that
+there is value  having multiple foundations seeking money for open-source
+software. Indeed, a foundation builds a case and an image, to convince
+donors. Different donors require a different case and a different image.
+For instance the president of NumFOCUS &lt;a class="reference external" href="https://twitter.com/aterrel/status/1039488246454083585"&gt;argues for a name less focused on
+numerics&lt;/a&gt;. Yet,
+too wide of a scope can dilute the image.&lt;/p&gt;
+&lt;p&gt;We have in mind to make it easy for other foundations to support
+scikit-learn. We have majors contributors at leading institutions, such
+as Andreas Mueller at Columbia or Joel Nothman at Sydney university. It
+is important that these institutions can easily gather donations too, in
+the legal framework suited to their country. Hence the name reflects that
+the foundation is embedded at Inria, leaving room for other initiatives.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-s-the-scope"&gt;
+&lt;h2&gt;What’s the scope?&lt;/h2&gt;
+&lt;p&gt;The scope of our work is everything scikit-learn related. It is not the
+whole pydata or scipy ecosystem: it is focused on scikit-learn. But we
+will not hesitate contribute fixes and enhancements to neighboring
+projects, like in the past, even all the way up to core Python &lt;a class="footnote-reference" href="#id8" id="id4"&gt;[4]&lt;/a&gt;.&lt;/p&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;I’m am very excited. A strong team of full-time contributors will allow
+us to do ambitious things with scikit-learn.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;&lt;strong&gt;Join us&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We will be recruiting! See &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/people"&gt;our positions&lt;/a&gt;. Come work with us
+in Paris.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I want to end by thanking the amazing men and women who have been
+contributing to scikit-learn, and are with us in this fantastic
+adventure! The energy that is in this project is incredible. We are
+are launching this effort thank to you, and to empower you even more.&lt;/p&gt;
+&lt;img alt="" class="align-center" src="attachments/code_sklearn_crop.jpg" style="width: 90%;" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I am quite proud that over the years, my group has employed
+&lt;a class="reference external" href="https://github.com/ogrisel"&gt;Olivier Grisel&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/jorisvandenbossche"&gt;Joris van den Bossche&lt;/a&gt; (working on pandas in
+addition to scikit-learn), &lt;a class="reference external" href="https://github.com/glemaitre"&gt;Guillaume Lemaître&lt;/a&gt; (working on imbalanced-learn in
+addition to scikit-learn), &lt;a class="reference external" href="https://github.com/jeremiedbb"&gt;Jérémie du Boisberranger&lt;/a&gt;,
+&lt;a class="reference external" href="https://github.com/tomMoral"&gt;Tom Moreau&lt;/a&gt;,
+&lt;a class="reference external" href="https://github.com/lesteve"&gt;Loic Estève&lt;/a&gt;,
+&lt;a class="reference external" href="https://github.com/fabianp"&gt;Fabian Pedregosa&lt;/a&gt;, to name only a
+few. All these people, and the many others students that we have
+payed part time to work on software, have had an structuring
+impact on our ecosystem, going beyond the bounds of scikit-learn
+and touching many aspects of computing in Python. However, because
+of the constraints of research funding in France, public money
+forced my to hire them with short-term contracts.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Technically, it is a tax-deductible scikit-learn consortium inside
+the Inria foundation, which is an non-profit entity related to Inria.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Details on the goverance of the foundation can be found at
+&lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/en/mission-and-governance"&gt;https://scikit-learn.fondation-inria.fr/en/mission-and-governance&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;For instance Olivier and Tom have been making parallelism more
+robust in Python 3.7 (amongst various issues
+&lt;a class="reference external" href="https://bugs.python.org/issue33056"&gt;https://bugs.python.org/issue33056&lt;/a&gt; and
+&lt;a class="reference external" href="https://bugs.python.org/issue31699"&gt;https://bugs.python.org/issue31699&lt;/a&gt;). Olivier helped defining the
+&lt;a class="reference external" href="https://www.python.org/dev/peps/pep-0574/"&gt;new pickling protocol&lt;/a&gt;, crucial to
+efficient persistence.
+This is hard work. Yet it is
+important, because it benefits all libraries.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</content><category term="scikit-learn"></category><category term="open-source"></category><category term="sustainabilty"></category><category term="scientific software"></category></entry><entry><title>Sprint on scikit-learn, in Paris and Austin</title><link href="http://gael-varoquaux.info/programming/sprint-on-scikit-learn-in-paris-and-austin.html" rel="alternate"></link><published>2018-08-01T00:00:00+02:00</published><updated>2018-08-01T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2018-08-01:/programming/sprint-on-scikit-learn-in-paris-and-austin.html</id><summary type="html">&lt;p&gt;Two weeks ago, we held a scikit-learn sprint in Austin and Paris. Here is
 a brief report, on progresses and challenges.&lt;/p&gt;
 &lt;div class="topic"&gt;
 &lt;p class="topic-title first"&gt;Several sprints&lt;/p&gt;

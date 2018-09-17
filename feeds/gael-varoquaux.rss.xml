@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Gaël Varoquaux - Gaël Varoquaux</title><link>http://gael-varoquaux.info/</link><description></description><lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0200</lastBuildDate><item><title>Sprint on scikit-learn, in Paris and Austin</title><link>http://gael-varoquaux.info/programming/sprint-on-scikit-learn-in-paris-and-austin.html</link><description>&lt;p&gt;Two weeks ago, we held a scikit-learn sprint in Austin and Paris. Here is
+<rss version="2.0"><channel><title>Gaël Varoquaux - Gaël Varoquaux</title><link>http://gael-varoquaux.info/</link><description></description><lastBuildDate>Mon, 17 Sep 2018 00:00:00 +0200</lastBuildDate><item><title>A foundation for scikit-learn at Inria</title><link>http://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html</link><description>&lt;p&gt;We have just announced that a foundation will be supporting scikit-learn
+at Inria &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;: &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;scikit-learn.fondation-inria.fr&lt;/a&gt;&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+Growth and sustainability&lt;/div&gt;
+&lt;p&gt;This is an exciting turn for us, because it enables us to receive private
+funding. As a result, we will be able to have secure employment for some
+existing core …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Gaël Varoquaux</dc:creator><pubDate>Mon, 17 Sep 2018 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:gael-varoquaux.info,2018-09-17:/programming/a-foundation-for-scikit-learn-at-inria.html</guid><category>scikit-learn</category><category>open-source</category><category>sustainabilty</category><category>scientific software</category></item><item><title>Sprint on scikit-learn, in Paris and Austin</title><link>http://gael-varoquaux.info/programming/sprint-on-scikit-learn-in-paris-and-austin.html</link><description>&lt;p&gt;Two weeks ago, we held a scikit-learn sprint in Austin and Paris. Here is
 a brief report, on progresses and challenges.&lt;/p&gt;
 &lt;div class="topic"&gt;
 &lt;p class="topic-title first"&gt;Several sprints&lt;/p&gt;
