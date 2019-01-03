@@ -753,6 +753,8 @@ p.align-right {
     text-align: right;
 }
 
+
+
 div.formula {
     margin-left: 2em;
 }
@@ -834,6 +836,12 @@ div.sidebar p.first {
 	/*float: center;*/
 	width: 50%;
 	padding: .1ex 0ex 0.5ex 2ex;
+    }
+}
+
+@media (max-width: 900px) {
+    div.figure.align-right {
+	float: center;
     }
 }
 
@@ -1054,7 +1062,7 @@ ul.columns.simple:after {
 
 /* Side hanging footnotes */
 @media (min-width: 1600px) {
-    table.footnote .side-hanging {
+    table.footnote.side-hanging {
 	position: absolute;
 	right: 1ex;
 	margin-top: -10ex;
@@ -1063,7 +1071,7 @@ ul.columns.simple:after {
 }
 
 @media (min-width: 1750px) {
-    table.footnote .side-hanging {
+    table.footnote.side-hanging {
 	width: 25em;
     }
 
