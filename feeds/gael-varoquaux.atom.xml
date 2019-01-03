@@ -233,7 +233,7 @@ categories.&lt;/p&gt;
 &lt;div class="figure align-right"&gt;
 &lt;a class="reference external image-reference" href="https://dirty-cat.github.io/stable/auto_examples/02_fit_predict_plot_employee_salaries.html"&gt;&lt;img alt="" src="attachments/2018_highlights/predict_employee_salaries.png" style="width: 230px;" /&gt;&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;We run an extensive empirical study, and show that &lt;strong&gt;similarity encoding
+&lt;p&gt;We ran an extensive empirical study, and show that &lt;strong&gt;similarity encoding
 leads to better prediction accuracy without curation of the data&lt;/strong&gt;,
 outperforming all the other approaches that we tried. The paper is purely
 empirical, but stay tuned: a theoretical analysis of why this is the case
