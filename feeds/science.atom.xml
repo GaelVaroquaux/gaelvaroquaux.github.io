@@ -1,5 +1,291 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2017-12-31T00:00:00+01:00</updated><entry><title>Our research in 2017: personal scientific highlights</title><link href="http://gael-varoquaux.info/science/our-research-in-2017-personal-scientific-highlights.html" rel="alternate"></link><published>2017-12-31T00:00:00+01:00</published><updated>2017-12-31T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2017-12-31:/science/our-research-in-2017-personal-scientific-highlights.html</id><summary type="html">&lt;p&gt;In my opinion the scientific highlights of 2017 for &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;my team&lt;/a&gt; were on multivariate predictive
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2019-01-03T00:00:00+01:00</updated><entry><title>Science in 2018: my year in review</title><link href="http://gael-varoquaux.info/science/science-in-2018-my-year-in-review.html" rel="alternate"></link><published>2019-01-03T00:00:00+01:00</published><updated>2019-01-03T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-01-03:/science/science-in-2018-my-year-in-review.html</id><summary type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; was once again extremely exciting
+thank to awesome collaborators (at &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;Inria&lt;/a&gt;, with &lt;a class="reference external" href="https://project.inria.fr/dirtydata/"&gt;DirtyData&lt;/a&gt;, and our &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/"&gt;local scikit-learn team&lt;/a&gt;).
+Rather than going over everything that we did in 2018, I would like to
+give a few highlights: We published major work using &lt;strong&gt;machine learning to …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; was once again extremely exciting
+thank to awesome collaborators (at &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;Inria&lt;/a&gt;, with &lt;a class="reference external" href="https://project.inria.fr/dirtydata/"&gt;DirtyData&lt;/a&gt;, and our &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/"&gt;local scikit-learn team&lt;/a&gt;).
+Rather than going over everything that we did in 2018, I would like to
+give a few highlights: We published major work using &lt;strong&gt;machine learning to
+map cognition in the brain&lt;/strong&gt;, We started a new research project on &lt;strong&gt;analysis
+of non-curated data&lt;/strong&gt; (addressing all of data science, beyond brain
+imaging); And we worked a lot on &lt;strong&gt;growing scikit-learn&lt;/strong&gt;.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It’s already 2019, I am indeed late in posting this summary.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="contents topic" id="highlights"&gt;
+&lt;p class="topic-title first"&gt;Highlights&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#cognitive-brain-mapping" id="id5"&gt;Cognitive brain mapping&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#data-science-without-data-cleaning" id="id6"&gt;Data science without data cleaning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#scikit-learn-growth-and-consolidation" id="id7"&gt;Scikit-learn: growth and consolidation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cognitive-brain-mapping"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;Cognitive brain mapping&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;We have been exploring &lt;strong&gt;how predictive models can help mapping cognition
+in the human brain&lt;/strong&gt;. In 2018, these long-running efforts led to important
+publications.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="atlases-of-cognition-with-large-scale-human-brain-mapping"&gt;
+&lt;h3&gt;Atlases of cognition with large-scale human brain mapping&lt;/h3&gt;
+&lt;p&gt;More than 6 years ago, with my student Yannick Schwartz, we started
+working on &lt;strong&gt;compiling an altases of cognition across many cognitive
+neuroimaging studies&lt;/strong&gt;. This turned out to be quite challenging for several
+reasons:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Formalizing the links between mental processes&lt;/strong&gt; studied across the
+literature is challenging. Strictly speaking, every paper studies a
+different mental process. However, to build an atlas of cognition, we
+are interested in finding commonalities across the literature.&lt;/li&gt;
+&lt;li&gt;While cognitive studies tend to target a specific mental function,
+the psychological manipulations that they use also recruit many other
+processes. For instance, a memory study might use a &lt;em&gt;visual n-back&lt;/em&gt;
+task, and hence recruit the visual cortex. The problem is more than an
+experimental inconvience: &lt;strong&gt;varying details of an experiment may
+trigger different cognitive processes&lt;/strong&gt;. For instance, there are common
+and separate pathways for visual word recognition and auditory word
+recognition.&lt;/li&gt;
+&lt;li&gt;Simply &lt;strong&gt;detecting regions that are recruited in a given mental operation
+leads to selecting the whole cortex&lt;/strong&gt; with enough statistical power. Indeed
+tasks are never fully balanced; reading might for instance require more
+attention than listening.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These challenges are related on the one hand to the problem of &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1364661305003360"&gt;reverse
+inference&lt;/a&gt;
+&lt;a class="footnote-reference" href="#id4" id="id3"&gt;[2]&lt;/a&gt;, and on the other hand to that of mental-process decomposition, or
+cognitive subtraction, both central to cognitive neuroimaging. They also
+call for formal knowledge representation, &lt;em&gt;eg&lt;/em&gt; by building ontologies,
+which is a task harder than it might seem at first glance.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;In essence, the reverse inference problem arises because in a
+cognitive brain imaging the observed brain activity is a consequence
+of the behavior, and not a cause. While a conclusion that activity in
+a brain structure causes a certain behavior is desirable, it is not
+directly supported by a cognition neuroimaging experiment.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In our work &lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006565"&gt;[Varoquaux et al, PLOS 2018]&lt;/a&gt;,
+we tackled these challenges to build atlases of cognition as follows:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;We assigned to each brain-activity image labels describing the
+&lt;em&gt;multiple&lt;/em&gt; mental processes related to the experimental manipulation&lt;/li&gt;
+&lt;li&gt;We used decoding –&lt;em&gt;ie&lt;/em&gt; prediction of the cognitive labels from the brain
+activity– to ground a principled &lt;em&gt;reverse inference&lt;/em&gt; interpretation:
+regions selected indeed do imply the corresponding behavior.&lt;/li&gt;
+&lt;li&gt;Regions in the atlas were built of brain structures that both implied
+the corresponding cognition, and were triggered by it (conditional and
+marginal link), to ground a strong selectivity:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006565"&gt;&lt;img alt="" src="attachments/2018_highlights/mapping_types.png" style="width: 700px;" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;We applied these techniques to the data from 30 different studies,
+resulting in a detailed break down of the cortex in functionally-specialized
+modules:&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006565"&gt;&lt;img alt="" src="attachments/2018_highlights/cognitive_regions.png" style="width: 700px;" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Importantly, the validity of this decomposition in regions is established
+by the ability of these regions to predict the cognitive aspects of new
+experimental paradigms.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="predictive-models-avoid-excessive-reductionism-in-cognitive-neuroimaging"&gt;
+&lt;h3&gt;Predictive models avoid excessive reductionism in cognitive neuroimaging&lt;/h3&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="attachments/2018_highlights/decoding.png" style="width: 400px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;While machine learning is generally seen as an engineering tool to build
+predictive models or automate tasks, I see in it a central method of
+modern science. Indeed, it can distill &lt;strong&gt;evidence that generalizes&lt;/strong&gt; from
+vast –high dimensional– and ill-structured experimental data. Beyond
+prediction, it can guide understanding.&lt;/p&gt;
+&lt;p&gt;With Russ Poldrack, we wrote an opinion paper &lt;a class="reference external" href="https://hal.archives-ouvertes.fr/hal-01856412/"&gt;[Varoquaux &amp;amp; Poldrack,
+Curr Opinion Neurobio 2019]&lt;/a&gt; that details why
+predictive models are important tools to building wider theories of brain
+function. It reviews many exciting progresses in uncovering with
+predictive models how brain mechanisms support the mind. It makes the
+point that &lt;strong&gt;ability generalize is a fundamentally desirable priority of
+scientific inference&lt;/strong&gt;. Models that are grounded on explicit
+generalization give a solid path to build broad theories of the mind.
+Particularly interesting is generalization to significantly different
+settings, &lt;em&gt;ie&lt;/em&gt; going further than typical cross-validation experiments of
+machine learning, where identical data are artificially split.&lt;/p&gt;
+&lt;p&gt;Something that is dear to my heart is that we are aiming for
+&lt;strong&gt;quantitative generalization&lt;/strong&gt;, while psychology often contents itself
+with qualitative generalization.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="individual-brain-charting-a-high-resolution-fmri-dataset-for-cognitive-mapping"&gt;
+&lt;h3&gt;Individual Brain Charting, a high-resolution fMRI dataset for cognitive mapping&lt;/h3&gt;
+&lt;p&gt;We are convinced about the importance of analyzing brain response across
+multiple paradigms, to build models of brain function that generalize
+across these paradigms. However, addressing such a research program by
+aggregating multiple studies is hindered by data heterogeneity, due to
+inter-individual differences or to differing scanners.&lt;/p&gt;
+&lt;p&gt;Hence, my team, &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;Parietal&lt;/a&gt;, has
+undertook a major data acquisition, the &lt;a class="reference external" href="https://project.inria.fr/IBC"&gt;Individual Brain Charting
+project&lt;/a&gt;: scanning a few individuals
+under a huge amount of cognitive tasks. The data acquisition will last
+for many years, as the individuals come back to the lab for new
+acquisitions. The images are of excellent quality, thanks to the unique
+expertise of our scanning site, Neurospin, a brain-imaging research
+facility.&lt;/p&gt;
+&lt;p&gt;The data are completely &lt;strong&gt;openly accessible&lt;/strong&gt;: the raw data, preprocessed
+data, statistical outputs, alongside with the processing script. We are
+releasing new data as the project moves forward. This year, we published
+the data paper &lt;a class="reference external" href="https://www.nature.com/articles/sdata2018105"&gt;[Pinho et al, Scientific Data 2018]&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;Data accumulation in brain imaging&lt;/p&gt;
+&lt;p&gt;We are living exciting times, as &lt;strong&gt;there are more and more large volumes
+of shared brain imaging data&lt;/strong&gt;. &lt;a class="reference external" href="https://openfmri.org/"&gt;OpenfMRI&lt;/a&gt;
+aggregates data in a consistent way across brain-imaging
+studies. Large projects such as the Human Connectome Project, our
+Individual Brain Charting project, or the UK BioBank, are designed
+from the beginning to be shared. We are entering an era of
+brain-image analysis on many terabytes of data, with dozens of
+thousands of subjects, compounding hundreds of different clinical or
+cognitive conditions.&lt;/p&gt;
+&lt;p&gt;Massive data accumulation opens exciting new scientific prospects,
+and raises new engineering challenges. Some of these challenges are
+to scale up neuroimaging data-processing practices, eg inter-subject
+alignments at the scale of many thousands subjects. Some of these
+challenges are new to neuroimaging: &lt;strong&gt;when compounding hundreds of
+sources of data into an analysis, the human cost of data
+integration becomes a major roadblock&lt;/strong&gt;. As I have become convinced
+that analysing more, and more diverse, data is an important way
+forward, I have started working on data intergration per se.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="data-science-without-data-cleaning"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Data science without data cleaning&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="a-new-personal-research-agenda-dirtydata"&gt;
+&lt;h3&gt;A new personal research agenda: DirtyData&lt;/h3&gt;
+&lt;p&gt;Challenges to integrating data in a statistical analysis are ubiquitous,
+including in brain imaging. Data cleaning &lt;a class="reference external" href="https://www.kaggle.com/surveys/2017"&gt;is recognized&lt;/a&gt; as the number one time sink for
+data scientists. When advising scikit-learn users, including very large
+companies, I often find that the major roadblock is going from the raw
+data sources to the data matrix that is input to scikit-learn.&lt;/p&gt;
+&lt;p&gt;A year ago, I started a new research focus, around the &lt;a class="reference external" href="https://project.inria.fr/dirtydata"&gt;DirtyData project&lt;/a&gt;. We now have a team with multiple
+exciting collaborations, and funding. Our goal is to &lt;strong&gt;facilitate
+statistical analysis of non-curated data&lt;/strong&gt;. We hope to foster better
+understanding of how powerful machine-learning models can cope with
+imperfect, non homogeneous data. As we go, we will publish this
+understanding, but also distribute code with new methods, and hopefully
+influence common data-science practices and software. This is an exciting
+adventure (and yes, &lt;strong&gt;we are hiring&lt;/strong&gt;; see our &lt;a class="reference external" href="https://project.inria.fr/dirtydata/job-offers"&gt;job offers&lt;/a&gt; or contact me).&lt;/p&gt;
+&lt;p&gt;The topics are vast, at the intersection between database research and
+statistics. In particular, it calls for integrating machine learning
+with:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Knowledge representation&lt;/li&gt;
+&lt;li&gt;Information retrieval&lt;/li&gt;
+&lt;li&gt;Information extraction&lt;/li&gt;
+&lt;li&gt;Statistics with missing data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="similarity-encoding-analysis-with-non-normalized-string-categories"&gt;
+&lt;h3&gt;Similarity encoding: analysis with non-normalized string categories&lt;/h3&gt;
+&lt;p&gt;While the DirtyData project is young, we already made progress for
+analysis of &lt;strong&gt;dirty categories, ie categorical data represented with
+strings that lack curation&lt;/strong&gt;. These can have typos or other simple
+morphological variants (&lt;em&gt;eg&lt;/em&gt; “patient” vs “patients”), or they can have
+more structured and fundamental differences, &lt;em&gt;eg&lt;/em&gt; arising from the merge
+of multiple data sources. This latter problem is well-known of database
+research, where it is seen as a &lt;em&gt;record linkage&lt;/em&gt; or &lt;em&gt;alignment&lt;/em&gt; problem.&lt;/p&gt;
+&lt;p&gt;For statistical analysis, in particular machine learning, the problem
+with these non-curated string categories is that they must be encoded to
+numerical representations, and classic categorical encodings are not well
+suited for them. For instance, one-hot encoding leads to very high
+cardinality.&lt;/p&gt;
+&lt;p&gt;In &lt;a class="reference external" href="https://hal.inria.fr/hal-01806175"&gt;Cerda et al (2018)&lt;/a&gt;, we
+contribute a simple encoding approach, &lt;em&gt;similarity encoding&lt;/em&gt;, based on
+interpolating one-hot encoding with string similarities between the
+categories.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="https://dirty-cat.github.io/stable/auto_examples/01_investigating_dirty_categories.html"&gt;&lt;img alt="" src="attachments/2018_highlights/investigating_dirty_categories.png" style="width: 600px;" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="figure align-right"&gt;
+&lt;a class="reference external image-reference" href="https://dirty-cat.github.io/stable/auto_examples/02_fit_predict_plot_employee_salaries.html"&gt;&lt;img alt="" src="attachments/2018_highlights/predict_employee_salaries.png" style="width: 230px;" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;We run an extensive empirical study, and show that &lt;strong&gt;similarity encoding
+leads to better prediction accuracy without curation of the data&lt;/strong&gt;,
+outperforming all the other approaches that we tried. The paper is purely
+empirical, but stay tuned: a theoretical analysis of why this is the case
+is coming soon.&lt;/p&gt;
+&lt;p&gt;For the benefit of data scientists and researchers, we are released a
+small Python package, &lt;a class="reference external" href="https://dirty-cat.github.io/stable/"&gt;dirty-cat&lt;/a&gt;,
+for learning with dirty categories.&lt;/p&gt;
+&lt;p&gt;This is just the beginning of the DirtyData project, more exciting work
+is under way.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="scikit-learn-growth-and-consolidation"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id7"&gt;Scikit-learn: growth and consolidation&lt;/a&gt;&lt;/h2&gt;
+&lt;img alt="" class="align-right" src="attachments/2018_highlights/scikit-learn-logo-notext.png" style="width: 150px;" /&gt;
+&lt;p&gt;In 2018, a lot of my energy went to consolidating scikit-learn as a
+project. Describing the work in detail is for another post. However, my
+main efforts where around growing the team and working on sustainability.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;We established a &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/"&gt;scikit-learn foundation at Inria&lt;/a&gt;, in which companies
+partner with us to fund scikit-learn development. This took a lot of
+effort to establish good partnerships and create the legal vessels.
+Indeed, we want to make sure that the common effort is invested to make
+scikit-learn better. For instance, working with Intel, who are somewhat
+running an arms race for computing speed, we improved our test suite,
+and are slowly but surely learning how to improve our speed.&lt;/li&gt;
+&lt;li&gt;A consequence of the foundation is that we are hiring to grow the team
+(check out &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/people/"&gt;our open positions&lt;/a&gt;). In 2018, my own
+team grew, with more excellent people working on scikit-learn, but also
+&lt;a class="reference external" href="http://joblib.readthedocs.io/"&gt;joblib&lt;/a&gt;, and even contributing to
+core Python and numpy to improve &lt;a class="reference external" href="https://github.com/python/cpython/pull/3895"&gt;parallel computing&lt;/a&gt; and &lt;a class="reference external" href="https://github.com/numpy/numpy/pull/12133"&gt;pickling&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;As the scikit-learn community is growing, it seemed important to
+formalize a bit more how decisions are made. To me, an important aspect
+was laying out clearly that the project is still governed by the
+community, and not partners or people paid by the foundation. We have a
+draft of a &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/12878"&gt;governance document&lt;/a&gt;, that is
+pretty much ready for merge. We also worked on a &lt;a class="reference external" href="https://scikit-learn.org/dev/roadmap.html"&gt;roadmap&lt;/a&gt;. It is a non binding
+document, but it still was an interesting exercise.&lt;/li&gt;
+&lt;li&gt;Scikit-learn 0.20 was released, &lt;a class="reference external" href="https://scikit-learn.org/dev/whats_new.html"&gt;with many enhancements&lt;/a&gt;. And the 0.20 release
+was followed by two minor releases, to make sure that our users got
+robust code with backward compatibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;We are busy finishing a few very interesting studies; next year will be
+exciting! I hope that we will have much to say about population analysis
+with brain imaging, which is a amazingly interesting subject.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="neuroimaging"></category><category term="brain science"></category></entry><entry><title>Our research in 2017: personal scientific highlights</title><link href="http://gael-varoquaux.info/science/our-research-in-2017-personal-scientific-highlights.html" rel="alternate"></link><published>2017-12-31T00:00:00+01:00</published><updated>2017-12-31T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2017-12-31:/science/our-research-in-2017-personal-scientific-highlights.html</id><summary type="html">&lt;p&gt;In my opinion the scientific highlights of 2017 for &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;my team&lt;/a&gt; were on multivariate predictive
 analysis for brain imaging: a brain decoder more efficient and faster
 than alternatives, improvement clinical predictions by predicting jointly
 multiple traits of subjects, decoding based on the raw time-series of

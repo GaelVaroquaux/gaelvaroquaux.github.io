@@ -330,7 +330,7 @@ span.social_links {
     border: #111 solid 1px;
     visibility: hidden;
     position: absolute;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-top: -30px;
     padding: 3px;
    -webkit-transition:all .5s ease;  
@@ -1050,6 +1050,23 @@ ul.columns.simple:after {
      content: " ";
      clear: both;
      height: 0;
+}
+
+/* Side hanging footnotes */
+@media (min-width: 1600px) {
+    table.footnote .side-hanging {
+	position: absolute;
+	right: 1ex;
+	margin-top: -10ex;
+	width: 17em;
+    }
+}
+
+@media (min-width: 1750px) {
+    table.footnote .side-hanging {
+	width: 25em;
+    }
+
 }
 
 /*---- For the static pages (eg the about page )--------------------------*/
