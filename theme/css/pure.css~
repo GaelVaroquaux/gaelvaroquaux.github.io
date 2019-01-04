@@ -643,7 +643,7 @@ a.post-category:hover {
         font-size: 85%;
     }
 
-    .cover-img {
+    div.sidebar div.cover-img {
         background-position: 0;
         background-size: cover;
     }
