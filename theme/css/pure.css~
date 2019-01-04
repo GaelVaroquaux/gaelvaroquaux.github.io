@@ -630,7 +630,7 @@ a.post-category:hover {
     span.links {
 	display: block;
 	margin-top: .5ex;
-	margin-bottom: -2.5ex;
+	margin-bottom: -3ex;
     }
 
     .content {
