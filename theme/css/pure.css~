@@ -81,11 +81,12 @@ div.cover-img {
     background-image: url('http://gael-varoquaux.info/images/cover_img.jpg');
 }
 
-@media (min-width: 860px) {
-    div.sidebar div.cover-img {
-	background-position-x: right;
-    }
+div.sidebar div.cover-img {
+    background-position-x: right;
+}
 
+
+@media (min-width: 860px) {
     .header-article {
 	padding-top: .7em;
     }
@@ -630,7 +631,7 @@ a.post-category:hover {
     span.links {
 	display: block;
 	margin-top: .5ex;
-	margin-bottom: -3ex;
+	margin-bottom: -2.5ex;
     }
 
     .links a {
