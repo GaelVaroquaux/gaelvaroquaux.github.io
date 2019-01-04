@@ -77,6 +77,10 @@ pre.literal-block {
     box-shadow: inset -1px 0 0 rgba(0,0,0,0.3);
 }
 
+div.cover-img {
+    background-image: url('http://gael-varoquaux.info/images/cover_img.jpg');
+}
+
 @media (min-width: 860px) {
     div.sidebar div.cover-img {
 	background-position-x: right;
@@ -601,16 +605,32 @@ a.post-category:hover {
     position: relative;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 767px) {
     .sidebar {
         width: 100%;
         position: relative;
         margin: 0;
+	height: 15ex;
     }
+
     .sidebar.sidebar-article {
         height: auto;
         border-bottom: 1px #dededc solid;
         padding-bottom: 35px;
+    }
+
+    .social {
+	display: none;
+    }
+
+    p.links {
+	display: inline;
+    }
+
+    span.links {
+	display: block;
+	margin-top: .5ex;
+	margin-bottom: -2.5ex;
     }
 
     .content {
@@ -649,6 +669,7 @@ a.post-category:hover {
 	right: 20px;
 	top: 20px;
 	margin-top: 0px;
+	z-index: 10;
     }
 
     .header,
@@ -685,7 +706,6 @@ a.post-category:hover {
 	/* Shifts a bit the shadow down */
 	margin-top: -.3em;
     }
-
 
 }
 
@@ -841,7 +861,7 @@ div.sidebar p.first {
 
 @media (max-width: 900px) {
     div.figure.align-right {
-	float: center;
+	float: none;
     }
 }
 
