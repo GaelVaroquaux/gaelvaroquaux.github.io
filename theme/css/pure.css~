@@ -633,6 +633,10 @@ a.post-category:hover {
 	margin-bottom: -3ex;
     }
 
+    .links a {
+	font-size: 13px;
+    }
+
     .content {
         padding: 1em 1.5em 0;
         font-size: 85%;
