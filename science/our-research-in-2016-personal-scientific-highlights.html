@@ -1,4 +1,149 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta name=description content="Gaël Varoquaux, computer / data / brain science"><link rel=alternate href=http://gael-varoquaux.info/feeds/all.atom.xml type=application/atom+xml title="Gaël Varoquaux Full Atom Feed"><title>Our research in 2016: personal scientific highlights -- Gaël Varoquaux: computer / data / brain science</title><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css><link rel=stylesheet href=../theme/css/pure.css><script src=//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js></script></head><body><div class=pure-g-r id=layout><div class="sidebar sidebar-article pure-u"><header class=header-article><hgroup><a href=..><img class=avatar alt="Gaël Varoquaux" src=http://gael-varoquaux.info/images/gael.png></a><a href=.. class=article-info><h2 class=article-info>Gaël Varoquaux</h2></a><p>Sat 31 December 2016</p><a href=/ >&larr;Home</a></hgroup></header></div><div class=pure-u><div class=content><section class=post><header class=post-header><h1>Our research in 2016: personal scientific highlights</h1><p class=post-meta> under <a class=post-category href=../tag/science.html>science</a><a class=post-category href=../tag/research.html>research</a><a class=post-category href=../tag/neuroimaging.html>neuroimaging</a><a class=post-category href=../tag/brain-science.html>brain science</a><a class=post-category href=../tag/machine-learning.html>machine learning</a><span class=social_links><a href=http://twitter.com/share class=twitter-share-button data-count=horizontal data-via=GaelVaroquaux>Tweet</a><script type=text/javascript src=http://platform.twitter.com/widgets.js async defer></script><span class=g-plusone data-size=medium></span></span></p></header></section><p>Year 2016 has been productive for science in <a href=https://team.inria.fr/parietal/ class="reference external">my team</a>. Here are some personal highlights: bridging artificial intelligence tools to human cognition, markers of neuropsychiatric conditions from brain activity at rest, algorithmic speedups for matrix factorization on huge datasets…</p><div class=line-block><div class=line><br></div></div><div class=section id=artificial-intelligence-convolutional-networks-map-well-the-human-visual-system><h2>Artificial-intelligence convolutional networks map well the human visual system</h2><p><a class="reference external" href=http://www.sciencedirect.com/science/article/pii/S1053811916305481>Eickenberg et al</a> (<a class="reference external" href=https://hal.inria.fr/hal-01389809/document>preprint</a>), showed that convolutional networks –machine-learning tools developed in artificial intelligence for image analysis– map well the human visual system. This is interesting because it shows that cognitive vision and artificial computer vision have evolved to similar architectures. It is not that surprising, as they are both driven by the statistics of natural images. From the point of view of inference in neuroscience, what I found really interesting is that we demonstrated that our computational model of brain activity generalizes across experimental paradigms. This is something new to my knowledge.</p><div class=line-block><div class=line><br></div></div></div><div class=section id=using-brain-activity-at-rest-to-predicting-autism-status-across-clinical-sites><h2>Using brain activity at rest to predicting Autism status across clinical sites</h2><p><a class="reference external" href=http://www.sciencedirect.com/science/article/pii/S1053811916305924>Abraham et al</a> (<a class="reference external" href=https://arxiv.org/pdf/1611.06066>preprint</a>) used resting-state brain activity to predict whether individuals were typical controls or diagnosed with Autistic symptoms. The important aspect of this study is that it was performed on a large data collection across many sites that had not concerted each other during the acquisition. Given that prediction was successful across sites, the study shows the viability of extracting predictive biomarkers across inhomogeneous multi-site data. I think that it is an important result for the future of psychiatric neuroimaging research. The paper also highlights the aspects of the predictive pipeline that were important for this success.</p><div class=line-block><div class=line><br></div></div></div><div class=section id=dictionary-learning-for-massive-matrix-factorization><h2>Dictionary Learning for Massive Matrix Factorization</h2><p>On a pure machine-learning side, <a class="reference external" href=http://jmlr.org/proceedings/papers/v48/mensch16.html>Mensch et al</a> introduced a new algorithm for matrix factorization that gives 10 times speedups compared to the state of the art on absolutely huge datasets (Terabyte scales). The key aspect is to combine online learning with random subampling that exploits redundancies in the data. For neuroimaging, this algorithmic advances is needed to tackle larger and larger resting-state data. We will use it to scale predictive models to epidemiologic cohorts. The original paper was purely heuristic but <a class="reference external" href=https://arxiv.org/pdf/1611.10041>later work</a> comes with proofs and we will soon be submitting a very rich journal paper about this class of algorithms.</p><div class=line-block><div class=line><br></div></div></div><div class=section id=a-guide-to-cross-validation-in-neuroimaging><h2>A guide to cross-validation in neuroimaging</h2><p>We published <a class="reference external" href=http://www.sciencedirect.com/science/article/pii/S105381191630595X>a review on cross-validation for neuroimaging</a> (<a class="reference external" href=https://arxiv.org/pdf/1606.05201>preprint</a>). While this may sound less leading edge than other of our work, cross-validation is central to everything we do. Doing it right is important. We learned some interesting tradeoffs while doing the experiments for the review. One of them is that for predictive models that are quite stable, such as SVMs, it may be profitable to use default hyper-parameters than to tune them by cross-validation. This is because with the small sample sizes typical of neuroimaging cross-validation is fairly noisy.</p><div class=line-block><div class=line><br></div></div><p>Though not in my team, <a class="reference external" href=http://www.sciencedirect.com/science/article/pii/S1053811916306103>Liem et al</a> (<a class="reference external" href=http://www.biorxiv.org/content/biorxiv/early/2016/11/07/085506.full.pdf>preprint</a>) collaborated with us for a beautiful study showing multimodal prediction of brain age from rest brain activity and brain anatomy. Interestingly, they showed that discrepancy between predicted age and chronological age captures cognitive impairment.</p><p>We have many interesting things in the pipeline, but it will be for next year. On an unrelated note, I’ve been doing more <a href=http://www.flickriver.com/photos/gaelvaroquaux/popular-interesting/ class="reference external">art photography</a> on my free time in 2016.</p></div><div class=hr style="margin-bottom: -.5em;"></div><span class=social_links><a href=http://twitter.com/share class=twitter-share-button data-count=horizontal data-via=GaelVaroquaux>Tweet</a><script type=text/javascript src=http://platform.twitter.com/widgets.js async defer></script><span class=g-plusone data-size=medium></span></span><a href=# class=go-top>Go Top</a><div class=comments><div id=disqus_thread></div><script type=text/javascript>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / brain science">
+
+        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Our research in 2016: personal scientific highlights -- Gaël Varoquaux: computer / data / brain science</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="..">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="http://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href=".." class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Sat 31 December 2016</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Our research in 2016: personal scientific highlights</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="../tag/science.html">science</a>
+                                <a class="post-category" href="../tag/research.html">research</a>
+                                <a class="post-category" href="../tag/neuroimaging.html">neuroimaging</a>
+                                <a class="post-category" href="../tag/brain-science.html">brain science</a>
+                                <a class="post-category" href="../tag/machine-learning.html">machine learning</a>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <p>Year 2016 has been productive for science in <a class="reference external" href="https://team.inria.fr/parietal/">my team</a>. Here are some personal highlights:
+bridging artificial intelligence tools to human cognition,
+markers of neuropsychiatric conditions from brain activity at rest,
+algorithmic speedups for matrix factorization on huge datasets…</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="artificial-intelligence-convolutional-networks-map-well-the-human-visual-system">
+<h2>Artificial-intelligence convolutional networks map well the human visual system</h2>
+<p><a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S1053811916305481">Eickenberg et al</a>
+(<a class="reference external" href="https://hal.inria.fr/hal-01389809/document">preprint</a>), showed that
+convolutional networks –machine-learning tools developed in artificial
+intelligence for image analysis– map well the human visual system. This
+is interesting because it shows that cognitive vision and artificial
+computer vision have evolved to similar architectures. It is not that
+surprising, as they are both driven by the statistics of natural images.
+From the point of view of inference in neuroscience, what I found really
+interesting is that we demonstrated that our computational model of brain
+activity generalizes across experimental paradigms. This is something new
+to my knowledge.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="using-brain-activity-at-rest-to-predicting-autism-status-across-clinical-sites">
+<h2>Using brain activity at rest to predicting Autism status across clinical sites</h2>
+<p><a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S1053811916305924">Abraham et al</a>
+(<a class="reference external" href="https://arxiv.org/pdf/1611.06066">preprint</a>) used resting-state brain
+activity to predict whether individuals were typical controls or
+diagnosed with Autistic symptoms. The important aspect of this study
+is that it was performed on a large data collection across many sites
+that had not concerted each other during the acquisition. Given that
+prediction was successful across sites, the study shows the viability of
+extracting predictive biomarkers across inhomogeneous multi-site data. I
+think that it is an important result for the future of psychiatric
+neuroimaging research. The paper also highlights the aspects of the
+predictive pipeline that were important for this success.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="dictionary-learning-for-massive-matrix-factorization">
+<h2>Dictionary Learning for Massive Matrix Factorization</h2>
+<p>On a pure machine-learning side, <a class="reference external" href="http://jmlr.org/proceedings/papers/v48/mensch16.html">Mensch et al</a> introduced a new
+algorithm for matrix factorization that gives 10 times speedups compared
+to the state of the art on absolutely huge datasets (Terabyte scales).
+The key aspect is to combine online learning with random subampling that
+exploits redundancies in the data. For neuroimaging, this algorithmic
+advances is needed to tackle larger and larger resting-state data. We
+will use it to scale predictive models to epidemiologic cohorts. The
+original paper was purely heuristic but <a class="reference external" href="https://arxiv.org/pdf/1611.10041">later work</a> comes with proofs and we will soon
+be submitting a very rich journal paper about this class of algorithms.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="a-guide-to-cross-validation-in-neuroimaging">
+<h2>A guide to cross-validation in neuroimaging</h2>
+<p>We published <a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S105381191630595X">a review on cross-validation for neuroimaging</a>
+(<a class="reference external" href="https://arxiv.org/pdf/1606.05201">preprint</a>). While this may sound
+less leading edge than other of our work, cross-validation is central to
+everything we do. Doing it right is important. We learned some
+interesting tradeoffs while doing the experiments for the review. One of
+them is that for predictive models that are quite stable, such as SVMs,
+it may be profitable to use default hyper-parameters than to tune them by
+cross-validation. This is because with the small sample sizes typical of
+neuroimaging cross-validation is fairly noisy.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Though not in my team, <a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S1053811916306103">Liem et al</a>
+(<a class="reference external" href="http://www.biorxiv.org/content/biorxiv/early/2016/11/07/085506.full.pdf">preprint</a>)
+collaborated with us for a beautiful study showing multimodal prediction
+of brain age from rest brain activity and brain anatomy. Interestingly,
+they showed that discrepancy between predicted age and chronological age
+captures cognitive impairment.</p>
+<p>We have many interesting things in the pipeline, but it will be for next
+year. On an unrelated note, I’ve been doing more <a class="reference external" href="http://www.flickriver.com/photos/gaelvaroquaux/popular-interesting/">art photography</a>
+on my free time in 2016.</p>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = "gaelvaroquaux"; // required: replace example with your forum shortname
 
@@ -8,11 +153,25 @@
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><footer class=footer><p>&copy; Gaël Varoquaux &ndash; Built with <a href=https://github.com/PurePelicanTheme/pure>Pure Theme</a> for <a href=http://blog.getpelican.com/ >Pelican</a></p></footer></div></div></div><script src=//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js></script><script>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
-    </script><script>
+    </script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -35,7 +194,8 @@
         $('body').on('click', 'a[href="#"]', function(event) {
             event.preventDefault();
         });
-    </script><script language=JavaScript type=text/javascript>
+    </script>
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -153,12 +313,18 @@
 	}
     //66885349@N03
     }
-    </script><script type=text/javascript src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&format=json&amp;" defer=defer></script><script src=https://apis.google.com/js/platform.js async defer></script><script type=text/javascript>
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script><script type=text/javascript>
+    </script>
+    <script type="text/javascript">
         try {
             var pageTracker = _gat._getTracker("UA-55589822-1");
             pageTracker._trackPageview();
             } catch(err) {}
-    </script></body></html>
+    </script>
+</body>
+</html>

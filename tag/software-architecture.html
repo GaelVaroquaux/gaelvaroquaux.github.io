@@ -1,4 +1,226 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta name=description content="Gaël Varoquaux, computer / data / brain science"><link rel=alternate href=http://gael-varoquaux.info/feeds/all.atom.xml type=application/atom+xml title="Gaël Varoquaux Full Atom Feed"><title>software architecture tag // Gaël Varoquaux: computer / data / brain science</title><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css><link rel=stylesheet href=../theme/css/pure.css><script src=//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js></script></head><body><div class=pure-g-r id=layout><div class="sidebar pure-u"><div class=cover-img><div class="cover-profile tooltip-below" tooltip="About me"><div class=round-border><a href=../about.html><img src=http://gael-varoquaux.info/images/gael.png></a></div></div><div class=cover-body><header class=header><hgroup><div style="display: inline-block"><a class=brand-main href=/ tooltip="Main page"><h1 class=brand-main>Gaël Varoquaux</h1><p class=tagline>computer / data / brain science</p></a></div><span class=links><p class=links><a href=../tag/selected.html>Selected posts</a></p><p class=links><a href=../index.html#posts>Latest posts</a></p><p class=links><a href=../about.html>About me</a></p></span><p class=social><div class=social><a href="http://scholar.google.fr/citations?user=OGGu384AAAAJ" tooltip="Google scholar"><i class="fa fa-graduation-cap fa-3x"></i></a></div><div class=social><a href=https://twitter.com/GaelVaroquaux tooltip=twitter><i class="fa fa-twitter-square fa-3x"></i></a></div><div class=social><a href=https://github.com/GaelVaroquaux/ tooltip=GitHub><i class="fa fa-github fa-3x"></i></a></div><div class=social><a href=http://www.flickriver.com/photos/gaelvaroquaux/popular-interesting/ tooltip=Artwork><i class="fa fa-camera-retro fa-3x"></i></a><div class=extra><div id=flickrstream></div></div></div><p></hgroup></header></div></div></div><div class=pure-u-1><div class=content><div class=posts><h1 class=content-subhead id=posts> software architecture posts </h1><section class=post><header class=post-header><h3><a class=post-title href=../programming/software-design-for-maintainability.html>Software design for maintainability</a></h3><p class=post-meta><p>I have just spent the best part of my Sunday fixing a bug that turned out being a <a href=https://svn.enthought.com/enthought/changeset/25699/ class="reference external">seemingly-trivial two-liner</a>. Such unpleasant experiences are all too frequent, and weight a lot on my view of code design.</p><div class=section id=my-stance-on-code-design><h2>My stance on code design</h2><img alt class=align-right src=../programming/attachments/software_design_for_maintainability/cool-car-drawing-5.jpg style="width: 30%;"><p>I call <em>code design</em> the process of designing …</p></div></p><p class=post-meta style="clear: both; margin-bottom: 0pt;"> in <a href=../category/programming.html>programming</a> &middot; 01 August 2010 <a href=../programming/software-design-for-maintainability.html class=post-link> Read <i class="fa fa-arrow-right"></i></a></p></header></section><section class=post><header class=post-header><h3><a class=post-title href=../programming/simple-object-signatures.html>Simple object signatures</a></h3><p class=post-meta><div class=section id=a-signature-pattern><h2>A <em>signature</em> pattern</h2><p>There are many libraries around to specify what I call a <em>‘signature’</em> for an object, in other words a list of attributes that define its parameter set. I have heavily used <a class="reference external" href=http://code.enthought.com/projects/traits>Enthought’s Traits library</a> for this purpose, but the concept is fairly general and can be …</p></div></p><p class=post-meta style="clear: both; margin-bottom: 0pt;"> in <a href=../category/programming.html>programming</a> &middot; 16 July 2010 <a href=../programming/simple-object-signatures.html class=post-link> Read <i class="fa fa-arrow-right"></i></a></p></header></section><section class=post><header class=post-header><h3><a class=post-title href=../programming/decoration-in-python-done-right-decorating-and-pickling.html>Decoration in Python done right: Decorating and pickling</a></h3><p class=post-meta><p>Decoration is a fantastic pattern in Python that allows for very light-weight metaprograming with functions rather than objects (see <a class="reference external" href=http://www.ibm.com/developerworks/linux/library/l-cpdecor.html>this article</a> for an in-depth discussion). However, when decorating, it is very easy to break another great feature of the language: its reflectivity and its ability to do static representations of …</p></p><p class=post-meta style="clear: both; margin-bottom: 0pt;"> in <a href=../category/programming.html>programming</a> &middot; 13 November 2009 <a href=../programming/decoration-in-python-done-right-decorating-and-pickling.html class=post-link> Read <i class="fa fa-arrow-right"></i></a></p></header></section><section class=post><header class=post-header><h3><a class=post-title href=../programming/object-oriented-design-framework-objects-versus-data-containers.html>Object-oriented design: framework objects versus data containers</a></h3><p class=post-meta><p>I find that in object oriented design, there are two kinds of objects:</p><ul class=simple><li>A first kind is the object encoding logics. This is an object for which clever and complex design will hold together the logics of a state-full application. It can often be part of a forest of objects …</li></ul></p><p class=post-meta style="clear: both; margin-bottom: 0pt;"> in <a href=../category/programming.html>programming</a> &middot; 01 July 2009 <a href=../programming/object-oriented-design-framework-objects-versus-data-containers.html class=post-link> Read <i class="fa fa-arrow-right"></i></a></p></header></section><section class=post><header class=post-header><h3><a class=post-title href=../programming/tracking-objects-in-scientific-code.html>Tracking objects in scientific code</a></h3><p class=post-meta><p>When I started working in my new field (data analysis of functional brain images), I was surprised to find in our data-analysis scripts what I thought was a very particular <a class="reference external" href=http://en.wikipedia.org/wiki/Code_smell>code smell</a>: the numerical code is always doing a lot of filename and path manipulation, loading and saving data even …</p></p><p class=post-meta style="clear: both; margin-bottom: 0pt;"> in <a href=../category/programming.html>programming</a> &middot; 23 December 2008 <a href=../programming/tracking-objects-in-scientific-code.html class=post-link> Read <i class="fa fa-arrow-right"></i></a></p></header></section><section class=post><header class=post-header><h3><a class=post-title href=../programming/of-packaging-installation-and-dependencies.html>Of packaging, installation and dependencies</a></h3><p class=post-meta><p>I have been struggling for the last few days trying to understand the issues behind packaging and installing the Enthought Tool Suite. I think have been making progress, though only in my head, no actual code or packages so far are terribly satisfying.</p><div class=section id=the-problem><h2>The problem</h2><p>If you are developing a …</p></div></p><p class=post-meta style="clear: both; margin-bottom: 0pt;"> in <a href=../category/programming.html>programming</a> &middot; 12 April 2008 <a href=../programming/of-packaging-installation-and-dependencies.html class=post-link> Read <i class="fa fa-arrow-right"></i></a></p></header></section><section class=post><header class=post-header><h3><a class=post-title href=../programming/objects-modules-and-traits-and-envisage.html>Objects, modules and Traits and Envisage</a></h3><p class=post-meta><p>I have been reading an article about a new language paradigm (<a class="reference external" href=http://users.encs.concordia.ca/~grogono/Erasmus/E01.pdf>Erasmus, a modular language for concurrent programming</a>). The authors discuss the limitations of objects in terms of modularity. To sum up their point (and most probably distort it completely), the limitations with objects comes from the fact that you …</p></p><p class=post-meta style="clear: both; margin-bottom: 0pt;"> in <a href=../category/programming.html>programming</a> &middot; 05 April 2008 <a href=../programming/objects-modules-and-traits-and-envisage.html class=post-link> Read <i class="fa fa-arrow-right"></i></a></p></header></section><section class=post><header class=post-header><h3><a class=post-title href=../programming/usability.html>Usability</a></h3><p class=post-meta><p>I just wanted to echo a <a class="reference external" href=http://log.ometer.com/2008-03.html#5>very good blog post</a> about usability:</p><blockquote class=epigraph><p><strong>Users are busy not stupid.</strong></p><p>As you design something, ask “is this relevant to what people are trying to do?” rather than “is this confusing?” […] It doesn’t matter whether people <em>could</em> figure something out. It matters whether …</p></blockquote></p><p class=post-meta style="clear: both; margin-bottom: 0pt;"> in <a href=../category/programming.html>programming</a> &middot; 06 March 2008 <a href=../programming/usability.html class=post-link> Read <i class="fa fa-arrow-right"></i></a></p></header></section><div class="pagination-wrapper content-subhead"><div class=pagination><div class=pagination-left> &nbsp; </div><span>Page 1 / 1</span><div class=pagination-right></div></div></div><footer class=footer><p>&copy; Gaël Varoquaux &ndash; Built with <a href=https://github.com/PurePelicanTheme/pure>Pure Theme</a> for <a href=http://blog.getpelican.com/ >Pelican</a></p></footer></div></div></div></div><script>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / brain science">
+
+        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>software architecture tag // Gaël Varoquaux: computer / data / brain science</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+<div class="sidebar pure-u">
+    <!-- The background-image is now set in the CSS, to facilitate
+         override -->
+    <div class="cover-img">
+        <div class="cover-profile tooltip-below" tooltip="About me">
+	    <div class="round-border"> 
+		<a href="../about.html">
+		    <img src="http://gael-varoquaux.info/images/gael.png">
+		</a>
+	    </div>
+	</div>
+        <div class="cover-body">
+            <header class="header">
+                <hgroup>
+		    <div style="display: inline-block">
+		    <a class="brand-main" href="/" tooltip="Main page">
+                    <h1 class="brand-main">Gaël Varoquaux</h1>
+                    <p class="tagline">computer / data / brain science</p>
+		    </a></div>
+		<span class="links">
+                    <p class="links"><a href="../tag/selected.html">Selected posts</a></p>
+                    <p class="links"><a href="../index.html#posts">Latest posts</a></p>
+                    <p class="links"><a href="../about.html">About me</a></p>
+		</span>
+                    <p class="social">
+			<div class=social>
+                        <a href="http://scholar.google.fr/citations?user=OGGu384AAAAJ" tooltip="Google scholar">
+                            <i class="fa fa-graduation-cap fa-3x"></i>
+                        </a>
+			</div>
+			<div class=social>
+                        <a href="https://twitter.com/GaelVaroquaux" tooltip="twitter">
+                            <i class="fa fa-twitter-square fa-3x"></i>
+                        </a>
+			</div>
+			<div class=social>
+                        <a href="https://github.com/GaelVaroquaux/" tooltip="GitHub">
+                            <i class="fa fa-github fa-3x"></i>
+                        </a>
+			</div>
+			<div class=social>
+                        <a href="http://www.flickriver.com/photos/gaelvaroquaux/popular-interesting/" tooltip="Artwork">
+                            <i class="fa fa-camera-retro fa-3x"></i>
+                        </a><div class="extra"><div id="flickrstream"></div></div>
+			</div>
+                    <p>
+                </hgroup>
+            </header>
+        </div>
+    </div>
+</div>    <div class="pure-u-1">
+        <div class="content">
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead" id="posts">
+software architecture posts                </h1>
+<section class="post">
+    <header class="post-header">
+        <h3><a class="post-title" href="../programming/software-design-for-maintainability.html">Software design for maintainability</a></h3>
+            <p class="post-meta"><p>I have just spent the best part of my Sunday fixing a bug that turned
+out being a <a class="reference external" href="https://svn.enthought.com/enthought/changeset/25699/">seemingly-trivial two-liner</a>. Such unpleasant experiences
+are all too frequent, and weight a lot on my view of code design.</p>
+<div class="section" id="my-stance-on-code-design">
+<h2>My stance on code design</h2>
+<img alt="" class="align-right" src="../programming/attachments/software_design_for_maintainability/cool-car-drawing-5.jpg" style="width: 30%;" />
+<p>I call <em>code design</em> the process of designing …</p></div></p>
+            <p class="post-meta" style="clear: both; margin-bottom: 0pt;">
+                in <a href="../category/programming.html">programming</a> &middot; 01 August 2010
+	    <a href="../programming/software-design-for-maintainability.html" class="post-link">
+	    Read <i class="fa fa-arrow-right"></i>
+	    </a>
+            </p>
+    </header>
+</section><section class="post">
+    <header class="post-header">
+        <h3><a class="post-title" href="../programming/simple-object-signatures.html">Simple object signatures</a></h3>
+            <p class="post-meta"><div class="section" id="a-signature-pattern">
+<h2>A <em>signature</em> pattern</h2>
+<p>There are many libraries around to specify what I call a <em>‘signature’</em>
+for an object, in other words a list of attributes that define its
+parameter set. I have heavily used <a class="reference external" href="http://code.enthought.com/projects/traits">Enthought’s Traits library</a> for
+this purpose, but the concept is fairly general and can be …</p></div></p>
+            <p class="post-meta" style="clear: both; margin-bottom: 0pt;">
+                in <a href="../category/programming.html">programming</a> &middot; 16 July 2010
+	    <a href="../programming/simple-object-signatures.html" class="post-link">
+	    Read <i class="fa fa-arrow-right"></i>
+	    </a>
+            </p>
+    </header>
+</section><section class="post">
+    <header class="post-header">
+        <h3><a class="post-title" href="../programming/decoration-in-python-done-right-decorating-and-pickling.html">Decoration in Python done right: Decorating and pickling</a></h3>
+            <p class="post-meta"><p>Decoration is a fantastic pattern in Python that allows for very
+light-weight metaprograming with functions rather than objects (see
+<a class="reference external" href="http://www.ibm.com/developerworks/linux/library/l-cpdecor.html">this article</a> for an in-depth discussion). However, when decorating,
+it is very easy to break another great feature of the language: its
+reflectivity and its ability to do static representations of …</p></p>
+            <p class="post-meta" style="clear: both; margin-bottom: 0pt;">
+                in <a href="../category/programming.html">programming</a> &middot; 13 November 2009
+	    <a href="../programming/decoration-in-python-done-right-decorating-and-pickling.html" class="post-link">
+	    Read <i class="fa fa-arrow-right"></i>
+	    </a>
+            </p>
+    </header>
+</section><section class="post">
+    <header class="post-header">
+        <h3><a class="post-title" href="../programming/object-oriented-design-framework-objects-versus-data-containers.html">Object-oriented design: framework objects versus data containers</a></h3>
+            <p class="post-meta"><p>I find that in object oriented design, there are two kinds of objects:</p>
+<ul class="simple">
+<li>A first kind is the object encoding logics. This is an object for
+which clever and complex design will hold together the logics of a
+state-full application. It can often be part of a forest of objects …</li></ul></p>
+            <p class="post-meta" style="clear: both; margin-bottom: 0pt;">
+                in <a href="../category/programming.html">programming</a> &middot; 01 July 2009
+	    <a href="../programming/object-oriented-design-framework-objects-versus-data-containers.html" class="post-link">
+	    Read <i class="fa fa-arrow-right"></i>
+	    </a>
+            </p>
+    </header>
+</section><section class="post">
+    <header class="post-header">
+        <h3><a class="post-title" href="../programming/tracking-objects-in-scientific-code.html">Tracking objects in scientific code</a></h3>
+            <p class="post-meta"><p>When I started working in my new field (data analysis of functional
+brain images), I was surprised to find in our data-analysis scripts what
+I thought was a very particular <a class="reference external" href="http://en.wikipedia.org/wiki/Code_smell">code smell</a>: the numerical code is
+always doing a lot of filename and path manipulation, loading and saving
+data even …</p></p>
+            <p class="post-meta" style="clear: both; margin-bottom: 0pt;">
+                in <a href="../category/programming.html">programming</a> &middot; 23 December 2008
+	    <a href="../programming/tracking-objects-in-scientific-code.html" class="post-link">
+	    Read <i class="fa fa-arrow-right"></i>
+	    </a>
+            </p>
+    </header>
+</section><section class="post">
+    <header class="post-header">
+        <h3><a class="post-title" href="../programming/of-packaging-installation-and-dependencies.html">Of packaging, installation and dependencies</a></h3>
+            <p class="post-meta"><p>I have been struggling for the last few days trying to understand the
+issues behind packaging and installing the Enthought Tool Suite. I think
+have been making progress, though only in my head, no actual code or
+packages so far are terribly satisfying.</p>
+<div class="section" id="the-problem">
+<h2>The problem</h2>
+<p>If you are developing a …</p></div></p>
+            <p class="post-meta" style="clear: both; margin-bottom: 0pt;">
+                in <a href="../category/programming.html">programming</a> &middot; 12 April 2008
+	    <a href="../programming/of-packaging-installation-and-dependencies.html" class="post-link">
+	    Read <i class="fa fa-arrow-right"></i>
+	    </a>
+            </p>
+    </header>
+</section><section class="post">
+    <header class="post-header">
+        <h3><a class="post-title" href="../programming/objects-modules-and-traits-and-envisage.html">Objects, modules and Traits and Envisage</a></h3>
+            <p class="post-meta"><p>I have been reading an article about a new language paradigm (<a class="reference external" href="http://users.encs.concordia.ca/~grogono/Erasmus/E01.pdf">Erasmus,
+a modular language for concurrent programming</a>). The authors discuss
+the limitations of objects in terms of modularity. To sum up their point
+(and most probably distort it completely), the limitations with objects
+comes from the fact that you …</p></p>
+            <p class="post-meta" style="clear: both; margin-bottom: 0pt;">
+                in <a href="../category/programming.html">programming</a> &middot; 05 April 2008
+	    <a href="../programming/objects-modules-and-traits-and-envisage.html" class="post-link">
+	    Read <i class="fa fa-arrow-right"></i>
+	    </a>
+            </p>
+    </header>
+</section><section class="post">
+    <header class="post-header">
+        <h3><a class="post-title" href="../programming/usability.html">Usability</a></h3>
+            <p class="post-meta"><p>I just wanted to echo a <a class="reference external" href="http://log.ometer.com/2008-03.html#5">very good blog post</a> about usability:</p>
+<blockquote class="epigraph">
+<p><strong>Users are busy not stupid.</strong></p>
+<p>As you design something, ask “is this relevant to what people are
+trying to do?” rather than “is this confusing?” […] It doesn’t
+matter whether people <em>could</em> figure something out. It matters
+whether …</p></blockquote></p>
+            <p class="post-meta" style="clear: both; margin-bottom: 0pt;">
+                in <a href="../category/programming.html">programming</a> &middot; 06 March 2008
+	    <a href="../programming/usability.html" class="post-link">
+	    Read <i class="fa fa-arrow-right"></i>
+	    </a>
+            </p>
+    </header>
+</section><div class="pagination-wrapper content-subhead">
+    <div class="pagination">
+        <div class="pagination-left">
+                &nbsp;
+        </div>
+        <span>Page 1 / 1</span>
+        <div class="pagination-right">
+        </div>
+    </div>
+</div><footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>            </div>
+        </div>
+    </div>
+</div>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -21,7 +243,8 @@
         $('body').on('click', 'a[href="#"]', function(event) {
             event.preventDefault();
         });
-    </script><script language=JavaScript type=text/javascript>
+    </script>
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -139,12 +362,18 @@
 	}
     //66885349@N03
     }
-    </script><script type=text/javascript src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&format=json&amp;" defer=defer></script><script src=https://apis.google.com/js/platform.js async defer></script><script type=text/javascript>
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script><script type=text/javascript>
+    </script>
+    <script type="text/javascript">
         try {
             var pageTracker = _gat._getTracker("UA-55589822-1");
             pageTracker._trackPageview();
             } catch(err) {}
-    </script></body></html>
+    </script>
+</body>
+</html>

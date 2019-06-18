@@ -1,8 +1,171 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta name=description content="Gaël Varoquaux, computer / data / brain science"><link rel=alternate href=http://gael-varoquaux.info/feeds/all.atom.xml type=application/atom+xml title="Gaël Varoquaux Full Atom Feed"><title>pyreport: literate programming in python -- Gaël Varoquaux: computer / data / brain science</title><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css><link rel=stylesheet href=../theme/css/pure.css><script src=//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js></script></head><body><div class=pure-g-r id=layout><div class="sidebar sidebar-article pure-u"><header class=header-article><hgroup><a href=..><img class=avatar alt="Gaël Varoquaux" src=http://gael-varoquaux.info/images/gael.png></a><a href=.. class=article-info><h2 class=article-info>Gaël Varoquaux</h2></a><p>Wed 23 July 2008</p><a href=/ >&larr;Home</a></hgroup></header></div><div class=pure-u><div class=content><section class=post><header class=post-header><h1><cite>pyreport</cite>: literate programming in python</h1><p class=post-meta> under <a class=post-category href=../tag/python.html>python</a><a class=post-category href=../tag/scipy.html>scipy</a><a class=post-category href=../tag/scientific-computing.html>scientific computing</a><a class=post-category href=../tag/documentation.html>documentation</a><span class=social_links><a href=http://twitter.com/share class=twitter-share-button data-count=horizontal data-via=GaelVaroquaux>Tweet</a><script type=text/javascript src=http://platform.twitter.com/widgets.js async defer></script><span class=g-plusone data-size=medium></span></span></p></header></section><div class=sidebar><p class="first sidebar-title">Downloads :</p><p>pyreport is hosted on <a class="reference external" href=https://pypi.python.org/pypi/pyreport>pypi</a></p><p><strong>Project page :</strong></p><p class=last><a class="reference external" href=http://github.com/joblib/pyreport>Source code on github</a></p></div><p><cite>pyreport</cite> is a program that runs a python script and captures its output, compiling it to a pretty report in a pdf or an html file. It can display the output embedded in the code that produced it and can process special comments (literate comments) according to markup languages ( <a class="reference external" href=http://docutils.sourceforge.net/rst.html>rst</a> or <a href=http://www.latex-project.org/ class="reference external">LaTeX</a> ) to compile a very readable document.</p><p>This allows for extensive literate progamming <a class=footnote-reference href=#id3 id=id1>[1]</a> in python, for generating reports out of calculations written in python, and for making nice tutorials.</p><p><strong>License</strong> pyreport is free software released under a BSD-like license. You can chek out the latest code, submit bugs, ask questions… on the <a class="reference external" href=http://github.com/joblib/pyreport>github project page</a>.</p><div class="admonition warning"><p class="first admonition-title">Warning</p><p><strong>Pyreport is unmaintained</strong></p><p class=last>Due to lack of time, pyreport is unmaintained and looking for a contributor. Please do not contact me to ask questions, unless it is to take over development.</p></div><div class="contents topic" id=contents><p class="topic-title first">Contents</p><ul class=simple><li><a class="reference internal" href=#requirements id=id5>Requirements</a></li><li><a class="reference internal" href=#installing id=id6>Installing</a></li><li><a class="reference internal" href=#examples-and-use-cases id=id7>Examples and use cases</a><ul><li><a class="reference internal" href=#initial-goals id=id8>Initial goals</a></li><li><a class="reference internal" href=#other-possible-uses id=id9>Other possible uses</a></li><li><a class="reference internal" href=#examples id=id10>Examples</a></li><li><a class="reference internal" href=#limitations id=id11>Limitations</a></li></ul></li><li><a class="reference internal" href=#command-line-switches id=id12>Command line switches</a></li></ul></div><div class=section id=requirements><h2><a class=toc-backref href=#id5>Requirements</a></h2><p><cite>pyreport</cite> is Python, and needs the Python interpreter to run. It should work on any operating system where Python and the other requirements are available.</p><ul><li><p class=first><strong>External programs</strong>:</p><p>Under windows make sure they are in the path, elsewhere <cite>pyreport</cite> cannot find them. All these programs are available with the <a href=http://www.miktex.org/ class="reference external">MikTeX</a> LaTeX distribution.</p><ul class=simple><li><cite>pyreport</cite> does not need any external programs to generate html files.</li><li>LaTeX : currently <cite>pyreport</cite> calls LaTeX to generate pdf files. Hopefully one day this will be optional and <cite>pyreport</cite> will use reportlabs to output pdf files.</li><li>epstopdf or ps2pdf if you want to use pylab to insert graphs in your documents. Once <a href=http://matplotlib.sourceforge.net/ class="reference external">matplotlib</a> has a pdf backend this will not be needed.</li></ul></li><li><p class=first><strong>Python packages</strong>:</p><ul class=simple><li>docutils only</li></ul></li></ul></div><div class=section id=installing><h2><a class=toc-backref href=#id6>Installing</a></h2><p>The easiest way to install pyreport is using pip:</p><pre class=literal-block>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / brain science">
+
+        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>pyreport: literate programming in python -- Gaël Varoquaux: computer / data / brain science</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="..">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="http://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href=".." class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Wed 23 July 2008</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1><cite>pyreport</cite>: literate programming in python</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="../tag/python.html">python</a>
+                                <a class="post-category" href="../tag/scipy.html">scipy</a>
+                                <a class="post-category" href="../tag/scientific-computing.html">scientific computing</a>
+                                <a class="post-category" href="../tag/documentation.html">documentation</a>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <div class="sidebar">
+<p class="first sidebar-title">Downloads :</p>
+<p>pyreport is hosted on
+<a class="reference external" href="https://pypi.python.org/pypi/pyreport">pypi</a></p>
+<p><strong>Project page :</strong></p>
+<p class="last"><a class="reference external" href="http://github.com/joblib/pyreport">Source code on github</a></p>
+</div>
+<p><cite>pyreport</cite> is a program that runs a python script and captures its
+output, compiling it to a pretty report in a pdf or an html file. It can
+display the output embedded in the code that produced it and can process
+special comments (literate comments) according to markup languages (
+<a class="reference external" href="http://docutils.sourceforge.net/rst.html">rst</a> or <a class="reference external" href="http://www.latex-project.org/">LaTeX</a> ) to compile a very readable document.</p>
+<p>This allows for extensive literate progamming <a class="footnote-reference" href="#id3" id="id1">[1]</a> in python, for generating
+reports out of calculations written in python, and for making nice
+tutorials.</p>
+<p><strong>License</strong> pyreport is free software released under a BSD-like
+license. You can chek out the latest code, submit bugs, ask questions…
+on the <a class="reference external" href="http://github.com/joblib/pyreport">github project page</a>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p><strong>Pyreport is unmaintained</strong></p>
+<p class="last">Due to lack of time, pyreport is unmaintained and looking for a
+contributor. Please do not contact me to ask questions, unless it is
+to take over development.</p>
+</div>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#requirements" id="id5">Requirements</a></li>
+<li><a class="reference internal" href="#installing" id="id6">Installing</a></li>
+<li><a class="reference internal" href="#examples-and-use-cases" id="id7">Examples and use cases</a><ul>
+<li><a class="reference internal" href="#initial-goals" id="id8">Initial goals</a></li>
+<li><a class="reference internal" href="#other-possible-uses" id="id9">Other possible uses</a></li>
+<li><a class="reference internal" href="#examples" id="id10">Examples</a></li>
+<li><a class="reference internal" href="#limitations" id="id11">Limitations</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#command-line-switches" id="id12">Command line switches</a></li>
+</ul>
+</div>
+<div class="section" id="requirements">
+<h2><a class="toc-backref" href="#id5">Requirements</a></h2>
+<p><cite>pyreport</cite> is Python, and needs the Python interpreter to run. It should
+work on any operating system where Python and the other requirements are
+available.</p>
+<ul>
+<li><p class="first"><strong>External programs</strong>:</p>
+<p>Under windows make sure they are in the path, elsewhere <cite>pyreport</cite>
+cannot find them. All these programs are available with the <a class="reference external" href="http://www.miktex.org/">MikTeX</a> LaTeX distribution.</p>
+<ul class="simple">
+<li><cite>pyreport</cite> does not need any external programs to generate html
+files.</li>
+<li>LaTeX : currently <cite>pyreport</cite> calls LaTeX to generate pdf files.
+Hopefully one day this will be optional and <cite>pyreport</cite> will use
+reportlabs to output pdf files.</li>
+<li>epstopdf or ps2pdf if you want to use pylab to insert graphs in your
+documents. Once <a class="reference external" href="http://matplotlib.sourceforge.net/">matplotlib</a> has a pdf backend this will not be
+needed.</li>
+</ul>
+</li>
+<li><p class="first"><strong>Python packages</strong>:</p>
+<ul class="simple">
+<li>docutils only</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="installing">
+<h2><a class="toc-backref" href="#id6">Installing</a></h2>
+<p>The easiest way to install pyreport is using pip:</p>
+<pre class="literal-block">
 pip install pyreport
-</pre><p>It is recommended to install to your user drive:</p><pre class=literal-block>
+</pre>
+<p>It is recommended to install to your user drive:</p>
+<pre class="literal-block">
 pip install --user pyreport
-</pre></div><div class=section id=examples-and-use-cases><h2><a class=toc-backref href=#id7>Examples and use cases</a></h2><div class=section id=initial-goals><h3><a class=toc-backref href=#id8>Initial goals</a></h3><p>I use python to write small scripts that can do, for instance, numerical calculations, or simple operations <a class=footnote-reference href=#id4 id=id2>[2]</a> and I want to have nice print-outs of these scripts to study off-screen or to hand out to colleagues. Having the code with its relevant output is great for code reviewing. This also allows something similar to mathematica’s notebook in python without having to use a special IDE.</p><blockquote><ul><li><p class=first>First I want to be able to have a print-out of these calculations where I can see the code ran, and the results produced:</p><a class="reference external image-reference" href=attachments/pyreport/simple.png><img alt="The ouput of a session." class=align-center src=attachments/pyreport/simple.png></a></li></ul></blockquote><hr class=docutils><blockquote><ul><li><p class=first>Second I would like all the plots produced by <a href=http://matplotlib.sourceforge.net/ class="reference external">matplotlib</a> to be captured and displayed too.</p><a class="reference external image-reference" href=attachments/pyreport/pylab.png><img alt='The "show()" command gets overloaded.' class=align-center src=attachments/pyreport/pylab.png></a></li></ul></blockquote><hr class=docutils><blockquote><ul><li><p class=first>Last I would be able to comment these reports, give them titles, sections, … This can be done via “literate programming”: comment lines begin with a special sets of characters are interpreted as <a class="reference external" href=http://docutils.sourceforge.net/rst.html>rst</a> or <a href=http://www.latex-project.org/ class="reference external">LaTeX</a>. I also want these files to still be standard python files, and to be able to run them with the python interpreter.</p><pre class=literal-block>
+</pre>
+</div>
+<div class="section" id="examples-and-use-cases">
+<h2><a class="toc-backref" href="#id7">Examples and use cases</a></h2>
+<div class="section" id="initial-goals">
+<h3><a class="toc-backref" href="#id8">Initial goals</a></h3>
+<p>I use python to write small scripts that can do, for instance, numerical
+calculations, or simple operations <a class="footnote-reference" href="#id4" id="id2">[2]</a> and I want to have nice
+print-outs of these scripts to study off-screen or to hand out to
+colleagues. Having the code with its relevant output is great for code
+reviewing. This also allows something similar to mathematica’s notebook
+in python without having to use a special IDE.</p>
+<blockquote>
+<ul>
+<li><p class="first">First I want to be able to have a print-out of these calculations
+where I can see the code ran, and the results produced:</p>
+<a class="reference external image-reference" href="attachments/pyreport/simple.png"><img alt="The ouput of a session." class="align-center" src="attachments/pyreport/simple.png" /></a>
+</li>
+</ul>
+</blockquote>
+<hr class="docutils" />
+<blockquote>
+<ul>
+<li><p class="first">Second I would like all the plots produced by <a class="reference external" href="http://matplotlib.sourceforge.net/">matplotlib</a> to be
+captured and displayed too.</p>
+<a class="reference external image-reference" href="attachments/pyreport/pylab.png"><img alt="The &quot;show()&quot; command gets overloaded." class="align-center" src="attachments/pyreport/pylab.png" /></a>
+</li>
+</ul>
+</blockquote>
+<hr class="docutils" />
+<blockquote>
+<ul>
+<li><p class="first">Last I would be able to comment these reports, give them titles,
+sections, … This can be done via “literate programming”: comment
+lines begin with a special sets of characters are interpreted as
+<a class="reference external" href="http://docutils.sourceforge.net/rst.html">rst</a> or <a class="reference external" href="http://www.latex-project.org/">LaTeX</a>. I also want these files to still be standard
+python files, and to be able to run them with the python interpreter.</p>
+<pre class="literal-block">
 #! Just a title
 #!---------------
 a = &quot;a&quot;
@@ -11,7 +174,68 @@ b = &quot;b&quot;
 #$ This is \LaTeX : $c = 2\cdot(a+b)$
 c = 2*(a+b)
 print c
-</pre><a class="reference external image-reference" href=attachments/pyreport/latex.png><img alt="A python report with a title and a LaTeX formula." class=align-center src=attachments/pyreport/latex.png></a></li></ul></blockquote></div><div class=section id=other-possible-uses><h3><a class=toc-backref href=#id9>Other possible uses</a></h3><blockquote><ul class=simple><li>Hidding the source code allows to generate nice reports from calculation scripts without worrying about writing document generating code in the script itself. The use of the literal comments and <cite>print</cite> statements allow your report to be well structured and self-explaining. The major advantage of having the text of the report in the source of the calulation is that the report always discribes the calculation that was actually ran, and not a previous one, with incorrect constants, for instance.</li><li>With a moin-moin syntax and a pdf output this can be a very useful tool for writing tutorials and putting them on line, with a pdf version.</li></ul></blockquote></div><div class=section id=examples><h3><a class=toc-backref href=#id10>Examples</a></h3><p>Here are two examples showing what you can do with <cite>pyreport</cite> :</p><blockquote><ul><li><p class=first>A calculation of the bifurcation diagram of the logistic mapping</p><p><a class="reference external" href=attachments/pyreport/example2.python>The code</a> , the <a class="reference external" href=attachments/pyreport/example2.pdf>pdf generated</a> , and the <a class="reference external" href=attachments/pyreport/example2.html>html file generated</a></p></li><li><p class=first>An exploration of the Julia sets, this example uses a LaTeX equation (LaTeX embedding does not work with html output, so far):</p><p><a class="reference external" href=attachments/pyreport/example.python>The code</a> , the <a class="reference external" href=attachments/pyreport/example.pdf>pdf generated</a> , and the <a class="reference external" href=attachments/pyreport/example.html>html file generated</a></p></li></ul></blockquote></div><div class=section id=limitations><h3><a class=toc-backref href=#id11>Limitations</a></h3><p>The “sys” module is imported in your code, whether you want it or not. As a general rule, beware of the namespace when running your scripts with <cite>pyreport</cite>, <cite>pyreport</cite> injects a few variables in your namespace.</p><p><cite>from __future__ import foobar</cite> in a script does not work. This a a big caveat ! This is simply not possible in python, as the <cite>from __future__</cite> imports have to be the first statement of a script.</p><p>As a consequence I have made the decision to always import <cite>division</cite>, so that 2/3 = 0.6666.</p><p>Some stange bugs can occur depending on the backend you use for matplotlib. WXAgg has played me a few tricks.</p></div></div><div class=section id=command-line-switches><h2><a class=toc-backref href=#id12>Command line switches</a></h2><p>This is not as useful as a well written documentation, but it is better than nothing:</p><pre class=literal-block>
+</pre>
+<a class="reference external image-reference" href="attachments/pyreport/latex.png"><img alt="A python report with a title and a LaTeX formula." class="align-center" src="attachments/pyreport/latex.png" /></a>
+</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="other-possible-uses">
+<h3><a class="toc-backref" href="#id9">Other possible uses</a></h3>
+<blockquote>
+<ul class="simple">
+<li>Hidding the source code allows to generate nice reports from
+calculation scripts without worrying about writing document generating
+code in the script itself. The use of the literal comments and <cite>print</cite>
+statements allow your report to be well structured and
+self-explaining. The major advantage of having the text of the report
+in the source of the calulation is that the report always discribes
+the calculation that was actually ran, and not a previous one, with
+incorrect constants, for instance.</li>
+<li>With a moin-moin syntax and a pdf output this can be a very useful
+tool for writing tutorials and putting them on line, with a pdf
+version.</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="examples">
+<h3><a class="toc-backref" href="#id10">Examples</a></h3>
+<p>Here are two examples showing what you can do with <cite>pyreport</cite> :</p>
+<blockquote>
+<ul>
+<li><p class="first">A calculation of the bifurcation diagram of the logistic mapping</p>
+<p><a class="reference external" href="attachments/pyreport/example2.python">The code</a> , the <a class="reference external" href="attachments/pyreport/example2.pdf">pdf
+generated</a> , and the <a class="reference external" href="attachments/pyreport/example2.html">html file
+generated</a></p>
+</li>
+<li><p class="first">An exploration of the Julia sets, this example uses a LaTeX equation
+(LaTeX embedding does not work with html output, so far):</p>
+<p><a class="reference external" href="attachments/pyreport/example.python">The code</a> , the <a class="reference external" href="attachments/pyreport/example.pdf">pdf
+generated</a> , and the <a class="reference external" href="attachments/pyreport/example.html">html file
+generated</a></p>
+</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="limitations">
+<h3><a class="toc-backref" href="#id11">Limitations</a></h3>
+<p>The “sys” module is imported in your code, whether you want it or not. As
+a general rule, beware of the namespace when running your scripts with
+<cite>pyreport</cite>, <cite>pyreport</cite> injects a few variables in your namespace.</p>
+<p><cite>from __future__ import foobar</cite> in a script does not work. This a a big
+caveat ! This is simply not possible in python, as the <cite>from __future__</cite>
+imports have to be the first statement of a script.</p>
+<p>As a consequence I have made the decision to always import <cite>division</cite>, so
+that 2/3 = 0.6666.</p>
+<p>Some stange bugs can occur depending on the backend you use for
+matplotlib. WXAgg has played me a few tricks.</p>
+</div>
+</div>
+<div class="section" id="command-line-switches">
+<h2><a class="toc-backref" href="#id12">Command line switches</a></h2>
+<p>This is not as useful as a well written documentation, but it is better
+than nothing:</p>
+<pre class="literal-block">
 usage: pyreport [options] pythonfile
 
 Processes a python script and pretty prints the results using LateX. If
@@ -50,7 +274,39 @@ options:
                         the standard out
   -a ARGS, --arguments=ARGS
                         pass the arguments &quot;ARGS&quot; to the script
-</pre><hr class=docutils><table class="docutils footnote" frame=void id=id3 rules=none><colgroup><col class=label><col></colgroup><tbody valign=top><tr><td class=label><a class=fn-backref href=#id1>[1]</a></td><td><a class="reference external" href=http://en.wikipedia.org/wiki/Literate_programming>literate programming</a> is a programming style that embeds the documentation of a program in its source code. The documentation is generated in the same time that the program is built. I am using the term in a very loose way, as <cite>pyreport</cite> is capable of literate programming, but also of much more, as it embeds the documentation, but also weaves the output of the script in the documentation.</td></tr></tbody></table><table class="docutils footnote" frame=void id=id4 rules=none><colgroup><col class=label><col></colgroup><tbody valign=top><tr><td class=label><a class=fn-backref href=#id2>[2]</a></td><td><a href=http://scipy.org/ class="reference external">scipy</a> provides a very powerful math package to python, and <a href=http://matplotlib.sourceforge.net/ class="reference external">matplotlib</a> is a great plotting interface.</td></tr></tbody></table></div><div class=hr style="margin-bottom: -.5em;"></div><span class=social_links><a href=http://twitter.com/share class=twitter-share-button data-count=horizontal data-via=GaelVaroquaux>Tweet</a><script type=text/javascript src=http://platform.twitter.com/widgets.js async defer></script><span class=g-plusone data-size=medium></span></span><a href=# class=go-top>Go Top</a><div class=comments><div id=disqus_thread></div><script type=text/javascript>
+</pre>
+<hr class="docutils" />
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Literate_programming">literate programming</a> is a programming style
+that embeds the documentation of a program in its source code. The
+documentation is generated in the same time that the program is
+built. I am using the term in a very loose way, as <cite>pyreport</cite> is
+capable of literate programming, but also of much more, as it embeds
+the documentation, but also weaves the output of the script in the
+documentation.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td><a class="reference external" href="http://scipy.org/">scipy</a>  provides a very powerful math package to python, and
+<a class="reference external" href="http://matplotlib.sourceforge.net/">matplotlib</a> is a great plotting interface.</td></tr>
+</tbody>
+</table>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = "gaelvaroquaux"; // required: replace example with your forum shortname
 
@@ -60,11 +316,25 @@ options:
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><footer class=footer><p>&copy; Gaël Varoquaux &ndash; Built with <a href=https://github.com/PurePelicanTheme/pure>Pure Theme</a> for <a href=http://blog.getpelican.com/ >Pelican</a></p></footer></div></div></div><script src=//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js></script><script>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
-    </script><script>
+    </script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -87,7 +357,8 @@ options:
         $('body').on('click', 'a[href="#"]', function(event) {
             event.preventDefault();
         });
-    </script><script language=JavaScript type=text/javascript>
+    </script>
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -205,12 +476,18 @@ options:
 	}
     //66885349@N03
     }
-    </script><script type=text/javascript src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&format=json&amp;" defer=defer></script><script src=https://apis.google.com/js/platform.js async defer></script><script type=text/javascript>
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script><script type=text/javascript>
+    </script>
+    <script type="text/javascript">
         try {
             var pageTracker = _gat._getTracker("UA-55589822-1");
             pageTracker._trackPageview();
             } catch(err) {}
-    </script></body></html>
+    </script>
+</body>
+</html>

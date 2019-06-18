@@ -1,12 +1,134 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta name=description content="Gaël Varoquaux, computer / data / brain science"><link rel=alternate href=http://gael-varoquaux.info/feeds/all.atom.xml type=application/atom+xml title="Gaël Varoquaux Full Atom Feed"><title>Using Mayavi to explore a potential field -- Gaël Varoquaux: computer / data / brain science</title><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css><link rel=stylesheet href=../theme/css/pure.css><script src=//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js></script></head><body><div class=pure-g-r id=layout><div class="sidebar sidebar-article pure-u"><header class=header-article><hgroup><a href=..><img class=avatar alt="Gaël Varoquaux" src=http://gael-varoquaux.info/images/gael.png></a><a href=.. class=article-info><h2 class=article-info>Gaël Varoquaux</h2></a><p>Sat 22 November 2008</p><a href=/ >&larr;Home</a></hgroup></header></div><div class=pure-u><div class=content><section class=post><header class=post-header><h1>Using Mayavi to explore a potential field</h1><p class=post-meta> under <a class=post-category href=../tag/mayavi.html>mayavi</a><a class=post-category href=../tag/scipy.html>scipy</a><a class=post-category href=../tag/scientific-computing.html>scientific computing</a><span class=social_links><a href=http://twitter.com/share class=twitter-share-button data-count=horizontal data-via=GaelVaroquaux>Tweet</a><script type=text/javascript src=http://platform.twitter.com/widgets.js async defer></script><span class=g-plusone data-size=medium></span></span></p></header></section><p>As promised, here is the sequel to the tutorial I posted yesterday on using Mayavi with scipy to understand the trajectories of a particle in a potential. (chances are you are reading this before my previous post. I suggest you first jump to my previous post, and then come back here).</p><p>This tutorial shows you how to use the powerfull VTK and Mayavi feature to explore the trajectories in the same potential. However, the tools we are using do not given us as much control on the dynamics of the system, so this time we do not add damping or oscillation of the potential. At the end of the day, the resulting visualization is however much more interactive. Once again, I would like as much feedback as possible, as this is intended for the Mayavi User Guide.</p><hr class=docutils><p>In this example, we create a vector field from the gradient of a scalar field and explore it interactively. This example shows you how to do some operations similar to the previous example, but interactively, using the filters and module. This approach requires a better knowledge of Mayavi and the VTK filters, but the big gain is that the resulting visualization can be explored interactively.</p><p>First, let us create the same scalar field as the previous example:. We open Mayavi and enter the following code in the Python shell:</p><div class=highlight><pre><span></span><span class=kn>from</span> <span class=nn>enthought.mayavi</span> <span class=kn>import</span> <span class=n>mlab</span>
-<span class=kn>import</span> <span class=nn>numpy</span> <span class=kn>as</span> <span class=nn>np</span>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / brain science">
 
-<span class=k>def</span> <span class=nf>V</span><span class=p>(</span><span class=n>x</span><span class=p>,</span> <span class=n>y</span><span class=p>,</span> <span class=n>z</span><span class=p>):</span>
-    <span class=sd>&quot;&quot;&quot; A 3D sinusoidal lattice with a parabolic confinement. &quot;&quot;&quot;</span>
-    <span class=k>return</span> <span class=n>np</span><span class=o>.</span><span class=n>cos</span><span class=p>(</span><span class=mi>10</span><span class=o>*</span><span class=n>x</span><span class=p>)</span> <span class=o>+</span> <span class=n>np</span><span class=o>.</span><span class=n>cos</span><span class=p>(</span><span class=mi>10</span><span class=o>*</span><span class=n>y</span><span class=p>)</span> <span class=o>+</span> <span class=n>np</span><span class=o>.</span><span class=n>cos</span><span class=p>(</span><span class=mi>10</span><span class=o>*</span><span class=n>z</span><span class=p>)</span> <span class=o>+</span> <span class=mi>2</span><span class=o>*</span><span class=p>(</span><span class=n>x</span><span class=o>**</span><span class=mi>2</span> <span class=o>+</span> <span class=n>y</span><span class=o>**</span><span class=mi>2</span> <span class=o>+</span> <span class=n>z</span><span class=o>**</span><span class=mi>2</span><span class=p>)</span>
-<span class=n>X</span><span class=p>,</span> <span class=n>Y</span><span class=p>,</span> <span class=n>Z</span> <span class=o>=</span> <span class=n>np</span><span class=o>.</span><span class=n>mgrid</span><span class=p>[</span><span class=o>-</span><span class=mi>2</span><span class=p>:</span><span class=mi>2</span><span class=p>:</span><span class=mi>100j</span><span class=p>,</span> <span class=o>-</span><span class=mi>2</span><span class=p>:</span><span class=mi>2</span><span class=p>:</span><span class=mi>100j</span><span class=p>,</span> <span class=o>-</span><span class=mi>2</span><span class=p>:</span><span class=mi>2</span><span class=p>:</span><span class=mi>100j</span><span class=p>]</span>
-<span class=n>mlab</span><span class=o>.</span><span class=n>contour3d</span><span class=p>(</span><span class=n>X</span><span class=p>,</span> <span class=n>Y</span><span class=p>,</span> <span class=n>Z</span><span class=p>,</span> <span class=n>V</span><span class=p>)</span>
-</pre></div><p>As in the previous example, we can change the color map and the values chosen in the isosurfaces.</p><p>We want to take the gradient of the scalar field, to create a vector field. To do this we are going to use the CellDerivatives filter, that takes derivatives of the data located in the cells (that is, between the points, see <a class="reference external" href=http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/data.html>*Creating data for Mayavi*</a>). For this, we first need to interpolate the data from the points where it is located to the cells, using a PointToCellData filter. We can then apply our CellDerivatives filter, and then a CellToPointData filter to get point data back. (remark: if you are not using the latest Mayavi from SVN - 3.1.0 - you need to enable the ‘pass data’ option in the two CellToPointData and PointToCellData filters).</p><p>To visualize the vector field, we can use a VectorCutPlane module. The resulting vectors are too large, and we can go to the Glyph tab, (and the Glyph tab in this tab), to reduce the scale factor to 0.2. The vector field is still too dense, therefore we go to the Masking tab to enable masking, mask with an on ratio of 6 (one arrow out of 6 is masked) and turn off the random mode.</p><a class="reference external image-reference" href=attachments/vector_cut_plane2.jpg><img alt src=attachments/vector_cut_plane2.jpg></a><p>To have nice colors, we also changed the color map of the vector field by going to the Colors and legend node just above the VectorCutPlane, and choosing a look up table <strong>in the VectorLUT</strong> tab, as there can be different color maps for vector data and scalar data.</p><p>Unlike the previous example, we can play with all the parameters in the dialog box, like masking, or select color_by_scalar in the Glyph tab, to display the value of the potential. We can also move the cut plane used to display the vectors by dragging it.</p><p>Now that we have a 3D vector field, we can also use Mayavi to integrate the trajectory of a particle in it. For this we can use the streamline module. It displays trajectories starting from the vertices of a seed surface. We choose (in the Seed tab) a Point Widget as a seed. We can then move the seed point by dragging it along in the 3D scene. This allows us to explore the trajectories in the potential created by the initial scalar field. In our case, all the trajectories end up in a local potential minimum, and moving the seed point along lets us see in which minimum each point will fall into, in other world the basin of attraction of each local minimum.</p><a class="reference external image-reference" href=attachments/streamline.jpg><img alt src=attachments/streamline.jpg></a><div class=hr style="margin-bottom: -.5em;"></div><span class=social_links><a href=http://twitter.com/share class=twitter-share-button data-count=horizontal data-via=GaelVaroquaux>Tweet</a><script type=text/javascript src=http://platform.twitter.com/widgets.js async defer></script><span class=g-plusone data-size=medium></span></span><a href=# class=go-top>Go Top</a><div class=comments><div id=disqus_thread></div><script type=text/javascript>
+        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Using Mayavi to explore a potential field -- Gaël Varoquaux: computer / data / brain science</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="..">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="http://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href=".." class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Sat 22 November 2008</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Using Mayavi to explore a potential field</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="../tag/mayavi.html">mayavi</a>
+                                <a class="post-category" href="../tag/scipy.html">scipy</a>
+                                <a class="post-category" href="../tag/scientific-computing.html">scientific computing</a>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <p>As promised, here is the sequel to the tutorial I posted yesterday on
+using Mayavi with scipy to understand the trajectories of a particle in
+a potential. (chances are you are reading this before my previous post.
+I suggest you first jump to my previous post, and then come back here).</p>
+<p>This tutorial shows you how to use the powerfull VTK and Mayavi feature
+to explore the trajectories in the same potential. However, the tools we
+are using do not given us as much control on the dynamics of the system,
+so this time we do not add damping or oscillation of the potential. At
+the end of the day, the resulting visualization is however much more
+interactive. Once again, I would like as much feedback as possible, as
+this is intended for the Mayavi User Guide.</p>
+<hr class="docutils" />
+<p>In this example, we create a vector field from the gradient of a scalar
+field and explore it interactively. This example shows you how to do
+some operations similar to the previous example, but interactively,
+using the filters and module. This approach requires a better knowledge
+of Mayavi and the VTK filters, but the big gain is that the resulting
+visualization can be explored interactively.</p>
+<p>First, let us create the same scalar field as the previous example:. We
+open Mayavi and enter the following code in the Python shell:</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">enthought.mayavi</span> <span class="kn">import</span> <span class="n">mlab</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">V</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; A 3D sinusoidal lattice with a parabolic confinement. &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="n">y</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="n">z</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mgrid</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">100j</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">100j</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">100j</span><span class="p">]</span>
+<span class="n">mlab</span><span class="o">.</span><span class="n">contour3d</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">,</span> <span class="n">V</span><span class="p">)</span>
+</pre></div>
+<p>As in the previous example, we can change the color map and the values
+chosen in the isosurfaces.</p>
+<p>We want to take the gradient of the scalar field, to create a vector
+field. To do this we are going to use the CellDerivatives filter, that
+takes derivatives of the data located in the cells (that is, between the
+points, see <a class="reference external" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/data.html">*Creating data for Mayavi*</a>). For this, we first need to
+interpolate the data from the points where it is located to the cells,
+using a PointToCellData filter. We can then apply our CellDerivatives
+filter, and then a CellToPointData filter to get point data back.
+(remark: if you are not using the latest Mayavi from SVN - 3.1.0 - you
+need to enable the ‘pass data’ option in the two CellToPointData and
+PointToCellData filters).</p>
+<p>To visualize the vector field, we can use a VectorCutPlane module. The
+resulting vectors are too large, and we can go to the Glyph tab, (and
+the Glyph tab in this tab), to reduce the scale factor to 0.2. The
+vector field is still too dense, therefore we go to the Masking tab to
+enable masking, mask with an on ratio of 6 (one arrow out of 6 is
+masked) and turn off the random mode.</p>
+<a class="reference external image-reference" href="attachments/vector_cut_plane2.jpg"><img alt="" src="attachments/vector_cut_plane2.jpg" /></a>
+<p>To have nice colors, we also changed the color map of the vector field
+by going to the Colors and legend node just above the VectorCutPlane,
+and choosing a look up table <strong>in the VectorLUT</strong> tab, as there can be
+different color maps for vector data and scalar data.</p>
+<p>Unlike the previous example, we can play with all the parameters in the
+dialog box, like masking, or select color_by_scalar in the Glyph tab,
+to display the value of the potential. We can also move the cut plane
+used to display the vectors by dragging it.</p>
+<p>Now that we have a 3D vector field, we can also use Mayavi to integrate
+the trajectory of a particle in it. For this we can use the streamline
+module. It displays trajectories starting from the vertices of a seed
+surface. We choose (in the Seed tab) a Point Widget as a seed. We can
+then move the seed point by dragging it along in the 3D scene. This
+allows us to explore the trajectories in the potential created by the
+initial scalar field. In our case, all the trajectories end up in a
+local potential minimum, and moving the seed point along lets us see in
+which minimum each point will fall into, in other world the basin of
+attraction of each local minimum.</p>
+<a class="reference external image-reference" href="attachments/streamline.jpg"><img alt="" src="attachments/streamline.jpg" /></a>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = "gaelvaroquaux"; // required: replace example with your forum shortname
 
@@ -16,11 +138,25 @@
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><footer class=footer><p>&copy; Gaël Varoquaux &ndash; Built with <a href=https://github.com/PurePelicanTheme/pure>Pure Theme</a> for <a href=http://blog.getpelican.com/ >Pelican</a></p></footer></div></div></div><script src=//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js></script><script>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
-    </script><script>
+    </script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -43,7 +179,8 @@
         $('body').on('click', 'a[href="#"]', function(event) {
             event.preventDefault();
         });
-    </script><script language=JavaScript type=text/javascript>
+    </script>
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -161,12 +298,18 @@
 	}
     //66885349@N03
     }
-    </script><script type=text/javascript src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&format=json&amp;" defer=defer></script><script src=https://apis.google.com/js/platform.js async defer></script><script type=text/javascript>
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script><script type=text/javascript>
+    </script>
+    <script type="text/javascript">
         try {
             var pageTracker = _gat._getTracker("UA-55589822-1");
             pageTracker._trackPageview();
             } catch(err) {}
-    </script></body></html>
+    </script>
+</body>
+</html>

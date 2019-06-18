@@ -1,4 +1,151 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta name=description content="Gaël Varoquaux, computer / data / brain science"><link rel=alternate href=http://gael-varoquaux.info/feeds/all.atom.xml type=application/atom+xml title="Gaël Varoquaux Full Atom Feed"><title>Scikit-learn 2014 sprint: a report -- Gaël Varoquaux: computer / data / brain science</title><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css><link rel=stylesheet href=../theme/css/pure.css><script src=//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js></script></head><body><div class=pure-g-r id=layout><div class="sidebar sidebar-article pure-u"><header class=header-article><hgroup><a href=..><img class=avatar alt="Gaël Varoquaux" src=http://gael-varoquaux.info/images/gael.png></a><a href=.. class=article-info><h2 class=article-info>Gaël Varoquaux</h2></a><p>Fri 25 July 2014</p><a href=/ >&larr;Home</a></hgroup></header></div><div class=pure-u><div class=content><section class=post><header class=post-header><h1>Scikit-learn 2014 sprint: a report</h1><p class=post-meta> under <a class=post-category href=../tag/sprint.html>sprint</a><a class=post-category href=../tag/scikit-learn.html>scikit-learn</a><a class=post-category href=../tag/python.html>python</a><a class=post-category href=../tag/machine-learning.html>machine learning</a><span class=social_links><a href=http://twitter.com/share class=twitter-share-button data-count=horizontal data-via=GaelVaroquaux>Tweet</a><script type=text/javascript src=http://platform.twitter.com/widgets.js async defer></script><span class=g-plusone data-size=medium></span></span></p></header></section><p>A week ago, the 2014 edition of the <a class="reference external" href=http://scikit-learn.org>scikit-learn</a> sprint was held in Paris. This was the third time that we held an internation sprint and it was hugely productive, and great fun, as always.</p><div class=section id=great-people-and-great-venues><h2>Great people and great venues</h2><img alt class=align-center src=https://pbs.twimg.com/media/BsqD4BeCQAEnT6w.jpg style="width: 65%;"><p>We had a mix of core contributors and newcomers, which is a great combination, as it enables us to be productive, but also to foster the new generation of core developers. Were present:</p><ul class=simple><li>Laurent Direr</li><li>Michael Eickenberg</li><li>Loic Esteve</li><li>Alexandre Gramfort</li><li>Olivier Grisel</li><li>Arnaud Joly</li><li>Kyle Kastner</li><li>Manoj Kumar</li><li>Balazs Kegl</li><li>Nicolas Le Roux</li><li>Andreas Mueller</li><li>Vlad Niculae</li><li>Fabian Pedregosa</li><li>Amir Sani</li><li>Danny Sullivan</li><li>Gabriel Synnaeve</li><li>Roland Thiolliere</li><li>Gael Varoquaux</li></ul><img alt class=align-center src=https://pbs.twimg.com/media/BsqRedvCEAE5Opw.jpg style="width: 65%;"><p>As the sprint extended through a French bank holiday and the week end, we were hosted in a variety of venues:</p><ul class=simple><li><a class="reference external" href=http://lapaillasse.org>La paillasse</a>, a Paris bio-hacker space</li><li><a class="reference external" href=http://www.inria.fr>INRIA</a>, the French computer-science national research, and the place where I work :)</li><li><a class="reference external" href=http://www.criteo.com>Criteo</a>, a French company doing word-wide add-banner placement. The venue there was absolutely gorgeous, with a beautiful terrace on the roofs of Paris. And they even had a social event with free drinks one evening.</li><li><a class="reference external" href=http://www.tinyclues.com>Tinyclues</a>, a French startup mining e-commerce data.</li></ul><p>I must say that we were treated like kings during the whole stay; each host welcoming us as well they could. Thank you to all of our hosts!</p></div><div class=section id=sponsored-by-the-digicosm-labex><h2>Sponsored by the Digicosm Labex</h2><p>Beyond our hosts, we need to thank the <a class="reference external" href=https://digicosme.lri.fr/tiki-index.php>Digicosme Labex</a>. Digicosm gave us funding that covered some of the lunches, accomodations, and travel expenses to bring in our contributors from abroad.</p></div><div class=section id=achievements-during-the-sprint><h2>Achievements during the sprint</h2><p>The first day of the sprint was dedicated to polishing the <a class="reference external" href=http://www.scikit-learn.org/stable/whats_new.html>0.15 release</a>, which was finally released on the morning of the second day, after 10 months of development.</p><p>A large part of the efforts of the sprint were dedicated to improving the coding base, rather than directly adding new features. Some files were reorganized. The input validation code was cleaned up (opening the way for better support of pandas structures in scikit-learn). We hunted dead code, deprecation warnings, numerical instabilities and tests randomly failing. We made the test suite faster, and refactored our common tests that scan all the model.</p><p>Some work of our GSOC student, Manoj Kumar, was merged, making some linear models faster.</p><p>Our <a class="reference external" href=http:/scikit-learn.org/dev>online documentation</a> was improve with the <a class="reference external" href=http://scikit-learn.org/stable/modules/classes.html>API documentation</a> pointing to examples and source code.</p><p>Still work in progress:</p><ul class=simple><li>Faster stochastic gradient descent (with AdaGrad, ASGD, and one day SAG)</li><li>Calibration of probabilities for models that do not have a ‘predict_proba’ method</li><li>Warm restart in random forests to add more estimators to an existing ensemble.</li><li>Infomax ICA algorithm.</li></ul></div><div class=hr style="margin-bottom: -.5em;"></div><span class=social_links><a href=http://twitter.com/share class=twitter-share-button data-count=horizontal data-via=GaelVaroquaux>Tweet</a><script type=text/javascript src=http://platform.twitter.com/widgets.js async defer></script><span class=g-plusone data-size=medium></span></span><a href=# class=go-top>Go Top</a><div class=comments><div id=disqus_thread></div><script type=text/javascript>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / brain science">
+
+        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Scikit-learn 2014 sprint: a report -- Gaël Varoquaux: computer / data / brain science</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="..">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="http://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href=".." class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Fri 25 July 2014</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Scikit-learn 2014 sprint: a report</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="../tag/sprint.html">sprint</a>
+                                <a class="post-category" href="../tag/scikit-learn.html">scikit-learn</a>
+                                <a class="post-category" href="../tag/python.html">python</a>
+                                <a class="post-category" href="../tag/machine-learning.html">machine learning</a>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <p>A week ago, the 2014 edition of the
+<a class="reference external" href="http://scikit-learn.org">scikit-learn</a> sprint was held in Paris.
+This was the third time that we held an internation sprint and it was
+hugely productive, and great fun, as always.</p>
+<div class="section" id="great-people-and-great-venues">
+<h2>Great people and great venues</h2>
+<img alt="" class="align-center" src="https://pbs.twimg.com/media/BsqD4BeCQAEnT6w.jpg" style="width: 65%;" />
+<p>We had a mix of core contributors and newcomers, which is a great
+combination, as it enables us to be productive, but also to foster the
+new generation of core developers. Were present:</p>
+<ul class="simple">
+<li>Laurent Direr</li>
+<li>Michael Eickenberg</li>
+<li>Loic Esteve</li>
+<li>Alexandre Gramfort</li>
+<li>Olivier Grisel</li>
+<li>Arnaud Joly</li>
+<li>Kyle Kastner</li>
+<li>Manoj Kumar</li>
+<li>Balazs Kegl</li>
+<li>Nicolas Le Roux</li>
+<li>Andreas Mueller</li>
+<li>Vlad Niculae</li>
+<li>Fabian Pedregosa</li>
+<li>Amir Sani</li>
+<li>Danny Sullivan</li>
+<li>Gabriel Synnaeve</li>
+<li>Roland Thiolliere</li>
+<li>Gael Varoquaux</li>
+</ul>
+<img alt="" class="align-center" src="https://pbs.twimg.com/media/BsqRedvCEAE5Opw.jpg" style="width: 65%;" />
+<p>As the sprint extended through a French bank holiday and the week end,
+we were hosted in a variety of venues:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://lapaillasse.org">La paillasse</a>, a Paris bio-hacker space</li>
+<li><a class="reference external" href="http://www.inria.fr">INRIA</a>, the French computer-science national
+research, and the place where I work :)</li>
+<li><a class="reference external" href="http://www.criteo.com">Criteo</a>, a French company doing word-wide
+add-banner placement. The venue there was absolutely gorgeous, with a
+beautiful terrace on the roofs of Paris. And they even had a social
+event with free drinks one evening.</li>
+<li><a class="reference external" href="http://www.tinyclues.com">Tinyclues</a>, a French startup mining
+e-commerce data.</li>
+</ul>
+<p>I must say that we were treated like kings during the whole stay; each
+host welcoming us as well they could. Thank you to all of our hosts!</p>
+</div>
+<div class="section" id="sponsored-by-the-digicosm-labex">
+<h2>Sponsored by the Digicosm Labex</h2>
+<p>Beyond our hosts, we need to thank the <a class="reference external" href="https://digicosme.lri.fr/tiki-index.php">Digicosme Labex</a>.
+Digicosm gave us funding that covered some of the lunches, accomodations,
+and travel expenses to bring in our contributors from abroad.</p>
+</div>
+<div class="section" id="achievements-during-the-sprint">
+<h2>Achievements during the sprint</h2>
+<p>The first day of the sprint was dedicated to polishing the <a class="reference external" href="http://www.scikit-learn.org/stable/whats_new.html">0.15
+release</a>, which
+was finally released on the morning of the second day, after 10 months
+of development.</p>
+<p>A large part of the efforts of the sprint were dedicated to improving
+the coding base, rather than directly adding new features. Some files
+were reorganized. The input validation code was cleaned up (opening the
+way for better support of pandas structures in scikit-learn). We hunted
+dead code, deprecation warnings, numerical instabilities and tests
+randomly failing. We made the test suite faster, and refactored our
+common tests that scan all the model.</p>
+<p>Some work of our GSOC student, Manoj Kumar, was merged, making some
+linear models faster.</p>
+<p>Our <a class="reference external" href="http:/scikit-learn.org/dev">online documentation</a> was improve
+with the <a class="reference external" href="http://scikit-learn.org/stable/modules/classes.html">API
+documentation</a>
+pointing to examples and source code.</p>
+<p>Still work in progress:</p>
+<ul class="simple">
+<li>Faster stochastic gradient descent (with AdaGrad, ASGD, and one day
+SAG)</li>
+<li>Calibration of probabilities for models that do not have a
+‘predict_proba’ method</li>
+<li>Warm restart in random forests to add more estimators to an existing
+ensemble.</li>
+<li>Infomax ICA algorithm.</li>
+</ul>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = "gaelvaroquaux"; // required: replace example with your forum shortname
 
@@ -8,11 +155,25 @@
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><footer class=footer><p>&copy; Gaël Varoquaux &ndash; Built with <a href=https://github.com/PurePelicanTheme/pure>Pure Theme</a> for <a href=http://blog.getpelican.com/ >Pelican</a></p></footer></div></div></div><script src=//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js></script><script>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
-    </script><script>
+    </script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -35,7 +196,8 @@
         $('body').on('click', 'a[href="#"]', function(event) {
             event.preventDefault();
         });
-    </script><script language=JavaScript type=text/javascript>
+    </script>
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -153,12 +315,18 @@
 	}
     //66885349@N03
     }
-    </script><script type=text/javascript src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&format=json&amp;" defer=defer></script><script src=https://apis.google.com/js/platform.js async defer></script><script type=text/javascript>
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script><script type=text/javascript>
+    </script>
+    <script type="text/javascript">
         try {
             var pageTracker = _gat._getTracker("UA-55589822-1");
             pageTracker._trackPageview();
             } catch(err) {}
-    </script></body></html>
+    </script>
+</body>
+</html>

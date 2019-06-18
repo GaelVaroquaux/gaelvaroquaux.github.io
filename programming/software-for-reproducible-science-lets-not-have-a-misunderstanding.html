@@ -1,4 +1,395 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta name=description content="Gaël Varoquaux, computer / data / brain science"><link rel=alternate href=http://gael-varoquaux.info/feeds/all.atom.xml type=application/atom+xml title="Gaël Varoquaux Full Atom Feed"><title>Software for reproducible science: let’s not have a misunderstanding -- Gaël Varoquaux: computer / data / brain science</title><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css><link rel=stylesheet href=../theme/css/pure.css><script src=//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js></script></head><body><div class=pure-g-r id=layout><div class="sidebar sidebar-article pure-u"><header class=header-article><hgroup><a href=..><img class=avatar alt="Gaël Varoquaux" src=http://gael-varoquaux.info/images/gael.png></a><a href=.. class=article-info><h2 class=article-info>Gaël Varoquaux</h2></a><p>Mon 18 May 2015</p><a href=/ >&larr;Home</a></hgroup></header></div><div class=pure-u><div class=content><section class=post><header class=post-header><h1>Software for reproducible science: let’s not have a misunderstanding</h1><p class=post-meta> under <a class=post-category href=../tag/science.html>science</a><a class=post-category href=../tag/software.html>software</a><a class=post-category href=../tag/reproducible-research.html>reproducible research</a><a class=post-category href=../tag/scientific-software.html>scientific software</a><span class=social_links><a href=http://twitter.com/share class=twitter-share-button data-count=horizontal data-via=GaelVaroquaux>Tweet</a><script type=text/javascript src=http://platform.twitter.com/widgets.js async defer></script><span class=g-plusone data-size=medium></span></span></p></header></section><div class="admonition note"><p class="first admonition-title">Note</p><p><strong>tl;dr:</strong> &nbsp; <em>Reproducibilty is a noble cause and scientific software a promising vessel. But excess of reproducibility can be at odds with the housekeeping required for good software engineering. Code that “just works” should not be taken for granted.</em></p><p class=last><em>This post advocates for a progressive consolidation effort of scientific code, rather than putting too high a bar on code release.</em></p></div><p><a href=http://ivory.idyll.org/blog/ class="reference external">Titus Brown</a> recently shared <a class="reference external" href=http://ivory.idyll.org/blog/2015-how-should-we-think-about-research-software.html>an interesting war story</a> in which a reviewer refuses to review a paper until he can run the code on his own files. Titus’s comment boils down to:</p><blockquote><blockquote class=epigraph><a class="reference external" href=http://ivory.idyll.org/blog/2015-how-should-we-think-about-research-software.html>“Please destroy this software after publication”</a>.</blockquote></blockquote><div class="admonition align-right note"><p class="first admonition-title">Note</p><p class=last>Reproducible science: Does the emperor have clothes?</p></div><p>In other words, code for a publication is often not reusable. This point of view is very interesting from someone like Titus, who is a <a class="reference external" href=http://ivory.idyll.org/blog/a-conversation-on-reproducibility.html>vocal proponent</a> of reproducible science. His words triggered some surprises, which led Titus to wonder if <a class="reference external" href=http://ivory.idyll.org/blog/2015-we-live-in-a-bubble.html>some of the reproducible science crowd folks live in a bubble</a>. I was happy to see <a class="reference external" href=https://twitter.com/ctitusbrown/status/589171853031186434>the discussion</a> unroll, as I think that there is a strong risk of creating a bubble around reproducible science. Such a bubble will backfire.</p><div class=section id=replication-is-a-must-for-science-and-society><h2>Replication is a must for science and society</h2><p>Science advances by accumulating knowledge built upon observations. It’s easy to forget that these observations, and the corresponding paradigmatic conclusions, are not always as simple to establish as the fact that hot air rises: <strong>replicating many times the scientific process transforms an evidence into a truth</strong>.</p><p>One striking example of scientific replication is <a class="reference external" href=http://www.nature.com/news/first-results-from-psychology-s-largest-reproducibility-test-1.17433>the on-going effort in psychology</a> to replay the evidence behind well-accepted findings central to current line of thoughts in psychological sciences. It implies setting up the experiments accordingly to the seminal publications, acquiring the data, and processing it to come up to the same conclusions. Surprisingly, not everything that was taken for granted holds.</p><div class="admonition align-right note"><p class="first admonition-title">Note</p><p class=last>Findings later discredited backed economic policy</p></div><p>Another example, with massive consequences on Joe Average’s everyday, is the failed replication of Reinhart and Rogoff’s <a class="reference external" href=http://en.wikipedia.org/wiki/Growth_in_a_Time_of_Debt>“Growth in a Time of Debt”</a> publication. The original paper, published in 2010 in the American Economic Review, claimed empirical findings linking important public debt to failure of GDP growth. In a context of economical crisis, it was used by policy makers as a justification for restricted public spending. However, while pursuing a mere homework assignment to replicate these findings, <a class="reference external" href=http://www.bbc.com/news/magazine-22223190>a student uncovered methodological flaws with the paper</a>. Understanding the <a class="reference external" href=http://www.nextnewdeal.net/rortybomb/researchers-finally-replicated-reinhart-rogoff-and-there-are-serious-problems>limitations</a> of the original study took a while, and <strong>discredited the academic backing to the economical doctrine of austerity</strong>. Critically, the analysis of the publication was possible only because Reinhart and Rogoff <strong>released their spreadsheet, with data and analysis details</strong>.</p></div><div class=section id=sharing-code-can-make-science-reproducible><h2>Sharing code can make science reproducible</h2><p>A great example of sharing code to make a publication reproducible is the recent paper on <a class="reference external" href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0126255">orthogonalization of regressors in fMRI models</a>, by Mumford, Poline and Poldrack. The paper is a didactic refutation of non-justified data processing practices. The authors made their point much stronger by giving <a class="reference external" href=http://nbviewer.ipython.org/github/jmumford/orthogonalizaton_ipynb/blob/master/orthogonalization.ipynb>an IPython notebook</a> to reproduce their figures. The recipe works perfectly here, because the ideas underlying the publication are simple and can be illustrated on synthetic data with relatively inexpensive computation. A short IPython notebook is all it takes to convince the reader.</p><div class="admonition align-right note"><p class="first admonition-title">Note</p><p class=last>Sharing complex code… chances are it won’t run on new data.</p></div><p>At the other end of the spectrum, a complex analysis pipeline will not be as easy to share. For instance, a feat of strength such as Miyawaki <em>et al</em>’s <a class="reference external" href=http://www.cell.com/neuron/abstract/S0896-6273%2808%2900958-6>visual image reconstruction from brain activity</a> requires complex statistical signal processing to extract weak signatures. Miyawaki <em>et al</em> shared the data. They might share the code, but it would be a large chunk of code, probably fragile to changes in the environment (Matlab version, OS…). Chances are that it wouldn’t run on new data. This is the scenario that prompted Titus’s words:</p><blockquote><blockquote class=epigraph><a class="reference external" href=http://ivory.idyll.org/blog/2015-how-should-we-think-about-research-software.html>“Please destroy this software after publication”</a>.</blockquote></blockquote><p>I have good news: you can reproduce Miyawaki’s work with <a class="reference external" href=http://nilearn.github.io/auto_examples/decoding/plot_miyawaki_reconstruction.html>an example</a> in <a class="reference external" href=http://nilearn.github.io>nilearn</a>, a library for machine learning on brain images. The example itself is concise, readable and it reliably produces figures close to that of the paper.</p><div class="admonition align-right note"><p class="first admonition-title">Note</p><p class=last>Maintained libraries make feats of strength routinely reproducible.</p></div><p>This easy replication is only possible because <strong>the corresponding code leverages a set of libraries that encapsulate the main steps of the analysis</strong>, mainly <a href=http://scikit-learn.org/stable/ class="reference external">scikit-learn</a> and <a class="reference external" href=http://nilearn.github.io>nilearn</a> here. These libraries are <a class="reference external" href=https://travis-ci.org/nilearn/nilearn>tested</a>, <a class="reference external" href="https://github.com/nilearn/nilearn/issues?q=is%3Aissue+is%3Aclosed">maintained</a> and <a class="reference external" href=http://gael-varoquaux.info/programming/scikit-learn-015-release-highlights.html>released</a>. They enable us to go from a feat of strength to routine replication.</p></div><div class=section id=reproducibility-is-not-sustainable-for-everything><h2>Reproducibility is not sustainable for everything</h2><blockquote class=epigraph> Thinking is easy, acting is difficult &nbsp; &nbsp; &nbsp; — &nbsp; &nbsp; &nbsp; <em>Goethe</em></blockquote><div class="admonition align-right note"><p class="first admonition-title">Note</p><p class=last>Keeping a physics apparatus running for replication years later?</p></div><p>I started my scientific career doing physics, and fairly <a class="reference external" href=http://gael-varoquaux.info/science/general-relativity-quantum-physics-freely-falling-planes-and-bayesian-statistics.html>“heavy” physics</a>: vacuum systems, lasers, free-falling airplanes. In such settings, the cost of maintaining an experiment is apparent to the layman. No-one is expected to keep an apparatus running for replication years later. The pinnacle of reproducible research is when the work becomes doable in a students lab. Such progress is often supported by improved technology, driven by wider applications of the findings.</p><p>However, not every experiment will give rise to a students lab. Replicating the others will not be easy. Even if the instruments are still around the lab, they will require setting up, adjusting and wiring. And chances are that connectors or cables will be missing.</p><p>Software is no different. Storing and sharing it is cheaper. But technology evolves very fast. Every setup is different. Code for a scientific paper has seldom been built for easy maintenance: lack of tests, profusion of exotic dependencies, inexistent documentation. Robustness, portability, isolation, would be desirable, but it is difficult and costly.</p><p>Software developers know that understanding the constraints to design a good program requires writing a prototype. <strong>Code for a scientific paper is very much a prototype</strong>: it’s a first version of an idea, that proves its feasibility. Common sense in software engineering says that <a href=http://blog.codinghorror.com/the-prototype-pitfall/ class="reference external">prototypes are designed to be thrown away</a>. Prototype code is fragile. It’s untested, probably buggy for certain usage. Releasing prototypes amounts to distributing semi-functioning code. This is the case for most code accompanying a publication, and it is to be expected given the very nature of research: exploration and prototyping <a class=footnote-reference href=#id6 id=id3>[1]</a>.</p></div><div class=section id=no-success-without-quality><h2>No success without quality, …</h2><div class="admonition align-right note"><p class="first admonition-title">Note</p><p class=last>Highly-reliable is more useful than state-of-the-art.</p></div><p>My experience with scientific code has taught me that success require quality. Having a good implementation of simple, well-known, methods seems to matter more than doing something fancy. This is what the success of scikit-learn has taught us: we are really providing classic “old” machine learning methods, but with a good API, good docs, computational performance, and stable numerics controlled by stringent tests. There exists plenty of more sophisticated machine-learning methods, including some that I have developed specifically for my data. Yet, I find myself advising my co-workers to use the methods in scikit-learn, because I know that the implementation is reliable and that they will be able to use them <a class=footnote-reference href=#id7 id=id4>[2]</a>.</p><p>This quality is indeed central to doing science with code. What good is a data analysis pipeline if it crashes when I fiddle with the data? How can I draw conclusions from simulations if I cannot change their parameters? As soon as I need trust in code supporting a scientific finding, I find myself tinkering with its input, and often breaking it. Good scientific code is code that can be reused, that can lead to large-scale experiments validating its underlying assumptions.</p><div class="figure align-right"><a class="reference external image-reference" href=https://twitter.com/divineomega/status/576165762911608833><img alt src=../programming/attachments/sqlite_code.png></a><p class=caption>Sqlite is so much used that its developers have been woken up at night by users.</p></div><p>You might say that I am putting the bar too high; that slightly buggy code is more useful than no code. But I frown at the idea of releasing code for which I am unable to do proper quality assurance. I may have done too much of that in the past. And because I am a prolific coder, many people are using code that has been through my hands. My mailbox looks like a battlefield, and when I go the coffee machine I find myself answering questions.</p></div><div class=section id=and-making-difficult-choices><h2>… and making difficult choices</h2><div class="admonition align-right note"><p class="first admonition-title">Note</p><p class=last>Craftsmanship is about trade-offs</p></div><p>Achieving quality requires making choices. Not only because time is limited, but also because the difficulty to maintain and improve a codebase increases much quicker than the numbers of features <a class=footnote-reference href=#id8 id=id5>[3]</a>. This phenomena is actually frightening to watch: adding a feature in scikit-learn these days is much much harder than what it used to be in the early days. Interactions between features is a killer: when you modify something, something else unrelated breaks. For a given functionality, <strong>nothing makes the code more incomprehensible than cyclomatic complexity</strong>: the multiplicity of branching, if/then clauses, for loops. This complexity naturally appears when supporting different input types, or minor variants of a same method.</p><p>The consequence is that ensuring quality for many variants of a method is prohibitory. This limit is a real problem for reproducible science, as science builds upon comparing and opposing models. However, ignoring it simply leads to code that fails doing what it claims to do. What this is telling us, is that if we are really trying to do long-term reproducibility, we <strong>need to identify successful and important research and focus our efforts on it</strong>.</p><p>If you agree with my earlier point that the code of a publication is a prototype, this iterative process seems natural. Various ideas can be thought of as competing prototypes. Some will not lead to publication at all, while others will end up having a high impact. Knowing before-hand is impossible. Focusing too early on achieving high quality is counter productive. What matters is <strong>progressively consolidating the code</strong>.</p></div><div class=section id=reproducible-science-a-rich-trade-off-space><h2>Reproducible science, a rich trade-off space</h2><div class="admonition align-right note"><p class="first admonition-title">Note</p><p class=last>Verbatim replication or reuse?</p></div><p>Does Reinhart and Rogoff’s <em>“Growth in a Time of Debt”</em> paper face the same challenges as the manuscript under review by Titus? One is describing mechanisms while the other is introducing a method. The code of the former is probably much simpler than that of the latter. Different publications come with different goals and code that is more or less easy to share. For verbatim replication of the analysis of a paper, a simple IPython notebook without tests or API is enough. To go beyond requires applying the analysis to different problems or data: reuse. Reuse is very difficult and cannot be a requirement for all publications.</p><p>Conventional wisdom in academia is that science builds upon ideas and concepts rather than methods and code. Galileo is known for his contribution to our understanding of the cosmos. Yet, methods development underpins science. Galileo is also the inventor of the telescope, which was a huge technical achievement. He needed to develop it to back his cosmological theories. Today, Galileo’s measurements are easy to reproduce because telescopes are readily-available as consumer products.</p><div class=line-block><div class=line><br></div></div><blockquote class=epigraph> Standing on the shoulders of giants &nbsp; &nbsp; — &nbsp; &nbsp; <em>Isaac Newton, on software libraries</em></blockquote><div class=line-block><div class=line><br></div></div><div class=topic><p class="topic-title first"><strong>Related posts</strong>:</p><ul class=simple><li><a class="reference external" href=../science/publishing_scientific_software_matters.html>Publishing scientific software matters</a></li><li><a class="reference external" href=views_on_scientific_computing.html>Personal views on scientific computing</a></li></ul></div><table class="docutils footnote" frame=void id=id6 rules=none><colgroup><col class=label><col></colgroup><tbody valign=top><tr><td class=label><a class=fn-backref href=#id3>[1]</a></td><td>To make my point very clear, releasing buggy untested code is not a good thing. However, it is not possible to ask for all research papers to come with industial-quality code. I am trying here to push for a collective, reasoned, undertaking of consolidation.</td></tr></tbody></table><table class="docutils footnote" frame=void id=id7 rules=none><colgroup><col class=label><col></colgroup><tbody valign=top><tr><td class=label><a class=fn-backref href=#id4>[2]</a></td><td>Theory tells us that there is there is no universal machine learning algorithm. Given a specific machine-learning application, it is always possible to devise a custom strategy that out-performs a generic one. However, <a class="reference external" href=http://jmlr.org/papers/volume15/delgado14a/delgado14a.pdf>do we need hundreds of classifiers to solve real world classification problems?</a> Empirical results <a class="reference external" href=http://jmlr.org/papers/volume15/delgado14a/delgado14a.pdf>[Delgado 2014]</a> show that most of the benefits can be achieved with a small number of strategies. Is it desirable and sustainable to distribute and keep alive the code of every machine learning paper?</td></tr></tbody></table><table class="docutils footnote" frame=void id=id8 rules=none><colgroup><col class=label><col></colgroup><tbody valign=top><tr><td class=label><a class=fn-backref href=#id5>[3]</a></td><td>Empirical studies on the workload for programmers to achieve a given task showed that 25 percent increase in problem complexity results in a 100 percent increase in programming complexity: <a class="reference external" href="http://ieeexplore.ieee.org/Xplore/login.jsp?url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F32%2F35909%2F01702600.pdf%3Farnumber%3D1702600&authDecision=-203">An Experiment on Unit increase in Problem Complexity, Woodfield 1979</a>.</td></tr></tbody></table><p class=small>I need to thank my colleague <a class="reference external" href=http://multiplecomparisons.blogspot.fr>Chris Filo Gorgolewski</a> and my sister <a href=http://cbio.ensmp.fr/~nvaroquaux/ class="reference external">Nelle Varoquaux</a> for their feedback on this note.</p></div><div class=hr style="margin-bottom: -.5em;"></div><span class=social_links><a href=http://twitter.com/share class=twitter-share-button data-count=horizontal data-via=GaelVaroquaux>Tweet</a><script type=text/javascript src=http://platform.twitter.com/widgets.js async defer></script><span class=g-plusone data-size=medium></span></span><a href=# class=go-top>Go Top</a><div class=comments><div id=disqus_thread></div><script type=text/javascript>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / brain science">
+
+        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Software for reproducible science: let’s not have a misunderstanding -- Gaël Varoquaux: computer / data / brain science</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="..">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="http://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href=".." class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Mon 18 May 2015</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Software for reproducible science: let’s not have a misunderstanding</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="../tag/science.html">science</a>
+                                <a class="post-category" href="../tag/software.html">software</a>
+                                <a class="post-category" href="../tag/reproducible-research.html">reproducible research</a>
+                                <a class="post-category" href="../tag/scientific-software.html">scientific software</a>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>tl;dr:</strong> &nbsp; <em>Reproducibilty is a noble cause and scientific
+software a promising vessel. But excess of reproducibility can be at
+odds with the housekeeping required for good software engineering.
+Code that “just works” should not be taken for granted.</em></p>
+<p class="last"><em>This post advocates for a progressive consolidation effort of
+scientific code, rather than putting too high a bar on code release.</em></p>
+</div>
+<p><a class="reference external" href="http://ivory.idyll.org/blog/">Titus Brown</a> recently shared <a class="reference external" href="http://ivory.idyll.org/blog/2015-how-should-we-think-about-research-software.html">an
+interesting war story</a>
+in which a reviewer refuses to review a paper until he can run the code
+on his own files. Titus’s comment boils down to:</p>
+<blockquote>
+<blockquote class="epigraph">
+<a class="reference external" href="http://ivory.idyll.org/blog/2015-how-should-we-think-about-research-software.html">“Please destroy this software after publication”</a>.</blockquote>
+</blockquote>
+<div class="admonition align-right note">
+<p class="first admonition-title">Note</p>
+<p class="last">Reproducible science: Does the emperor have clothes?</p>
+</div>
+<p>In other words, code for a publication is often not reusable. This
+point of view is very interesting from someone like Titus, who is a
+<a class="reference external" href="http://ivory.idyll.org/blog/a-conversation-on-reproducibility.html">vocal proponent</a> of
+reproducible science. His words triggered some surprises, which led Titus
+to wonder if <a class="reference external" href="http://ivory.idyll.org/blog/2015-we-live-in-a-bubble.html">some of the reproducible science crowd folks live in a
+bubble</a>. I
+was happy to see <a class="reference external" href="https://twitter.com/ctitusbrown/status/589171853031186434">the discussion</a> unroll, as
+I think that there is a strong risk of creating a bubble around
+reproducible science. Such a bubble will backfire.</p>
+<!-- Let me share my point of view on software for reproducible science. -->
+<div class="section" id="replication-is-a-must-for-science-and-society">
+<h2>Replication is a must for science and society</h2>
+<p>Science advances by accumulating knowledge built upon
+observations. It’s easy to forget that these observations, and the
+corresponding paradigmatic conclusions, are not always as simple to
+establish as the fact that hot air rises: <strong>replicating many times the
+scientific process transforms an evidence into a truth</strong>.</p>
+<p>One striking example of scientific replication is <a class="reference external" href="http://www.nature.com/news/first-results-from-psychology-s-largest-reproducibility-test-1.17433">the on-going effort in
+psychology</a>
+to replay the evidence behind well-accepted findings central to
+current line of thoughts in psychological sciences. It implies setting up
+the experiments accordingly to the seminal publications, acquiring the
+data, and processing it to come up to the same conclusions. Surprisingly,
+not everything that was taken for granted holds.</p>
+<div class="admonition align-right note">
+<p class="first admonition-title">Note</p>
+<p class="last">Findings later discredited backed economic policy</p>
+</div>
+<p>Another example, with massive consequences on Joe Average’s everyday, is
+the failed replication of Reinhart and Rogoff’s <a class="reference external" href="http://en.wikipedia.org/wiki/Growth_in_a_Time_of_Debt">“Growth in a Time of
+Debt”</a>
+publication. The original paper, published in 2010 in the American
+Economic Review, claimed empirical findings linking important public debt
+to failure of GDP growth. In a context of economical crisis, it was used
+by policy makers as a justification for restricted public spending.
+However, while pursuing a mere homework assignment to replicate these
+findings, <a class="reference external" href="http://www.bbc.com/news/magazine-22223190">a student uncovered methodological flaws with the paper</a>. Understanding the
+<a class="reference external" href="http://www.nextnewdeal.net/rortybomb/researchers-finally-replicated-reinhart-rogoff-and-there-are-serious-problems">limitations</a>
+of the original study took a while, and <strong>discredited the academic
+backing to the economical doctrine of austerity</strong>. Critically, the
+analysis of the publication was possible only because Reinhart and Rogoff
+<strong>released their spreadsheet, with data and analysis details</strong>.</p>
+</div>
+<div class="section" id="sharing-code-can-make-science-reproducible">
+<h2>Sharing code can make science reproducible</h2>
+<p>A great example of sharing code to make a publication reproducible is the
+recent paper on <a class="reference external" href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0126255">orthogonalization of regressors in fMRI models</a>,
+by Mumford, Poline and Poldrack. The paper is a didactic refutation
+of non-justified data processing practices. The authors made their
+point much stronger by giving <a class="reference external" href="http://nbviewer.ipython.org/github/jmumford/orthogonalizaton_ipynb/blob/master/orthogonalization.ipynb">an IPython notebook</a>
+to reproduce their figures. The recipe works perfectly here, because the
+ideas underlying the publication are simple and can be illustrated on
+synthetic data with relatively inexpensive computation. A short IPython
+notebook is all it takes to convince the reader.</p>
+<div class="admonition align-right note">
+<p class="first admonition-title">Note</p>
+<p class="last">Sharing complex code… chances are it won’t run on new data.</p>
+</div>
+<p>At the other end of the spectrum, a complex analysis pipeline will not be
+as easy to share. For instance, a feat of strength such as Miyawaki <em>et
+al</em>’s <a class="reference external" href="http://www.cell.com/neuron/abstract/S0896-6273%2808%2900958-6">visual image
+reconstruction from brain activity</a>
+requires complex statistical signal processing to extract weak
+signatures. Miyawaki <em>et al</em> shared the data. They might share the code, but
+it would be a large chunk of code, probably fragile to changes in the
+environment (Matlab version, OS…). Chances are that it wouldn’t run on
+new data. This is the scenario that prompted Titus’s words:</p>
+<blockquote>
+<blockquote class="epigraph">
+<a class="reference external" href="http://ivory.idyll.org/blog/2015-how-should-we-think-about-research-software.html">“Please destroy this software after publication”</a>.</blockquote>
+</blockquote>
+<p>I have good news: you can reproduce Miyawaki’s work with <a class="reference external" href="http://nilearn.github.io/auto_examples/decoding/plot_miyawaki_reconstruction.html">an example</a>
+in <a class="reference external" href="http://nilearn.github.io">nilearn</a>, a library for
+machine learning on brain images. The example itself is concise,
+readable and it reliably produces figures close to that of the paper.</p>
+<div class="admonition align-right note">
+<p class="first admonition-title">Note</p>
+<p class="last">Maintained libraries make feats of strength routinely
+reproducible.</p>
+</div>
+<p>This easy replication is only possible because <strong>the corresponding code
+leverages a set of libraries that encapsulate the main steps of the
+analysis</strong>, mainly <a class="reference external" href="http://scikit-learn.org/stable/">scikit-learn</a> and
+<a class="reference external" href="http://nilearn.github.io">nilearn</a> here. These libraries are
+<a class="reference external" href="https://travis-ci.org/nilearn/nilearn">tested</a>, <a class="reference external" href="https://github.com/nilearn/nilearn/issues?q=is%3Aissue+is%3Aclosed">maintained</a>
+and <a class="reference external" href="http://gael-varoquaux.info/programming/scikit-learn-015-release-highlights.html">released</a>.
+They enable us to go from a feat of strength to routine replication.</p>
+<!-- * An example of non-reproducible research (my ICML paper) -->
+<!-- Can research be up to the software engineering challenge? -->
+</div>
+<div class="section" id="reproducibility-is-not-sustainable-for-everything">
+<h2>Reproducibility is not sustainable for everything</h2>
+<!-- Things are not always that easy
+
+It's not you, it's me
+
+Nobody said it was easy
+
+Living up to the promise? -->
+<blockquote class="epigraph">
+Thinking is easy, acting is difficult &nbsp; &nbsp; &nbsp;
+—  &nbsp; &nbsp; &nbsp;  <em>Goethe</em></blockquote>
+<div class="admonition align-right note">
+<p class="first admonition-title">Note</p>
+<p class="last">Keeping a physics apparatus running for replication years later?</p>
+</div>
+<p>I started my scientific career doing physics, and fairly <a class="reference external" href="http://gael-varoquaux.info/science/general-relativity-quantum-physics-freely-falling-planes-and-bayesian-statistics.html">“heavy” physics</a>:
+vacuum systems, lasers, free-falling airplanes. In such settings, the
+cost of maintaining an experiment is apparent to the layman. No-one is
+expected to keep an apparatus running for replication years later. The
+pinnacle of reproducible research is when the work becomes doable in a
+students lab. Such progress is often supported by improved
+technology, driven by wider applications of the findings.</p>
+<p>However, not every experiment will give rise to a students lab.
+Replicating the others will not be easy. Even if the instruments are
+still around the lab, they will require setting up, adjusting and wiring.
+And chances are that connectors or cables will be missing.</p>
+<p>Software is no different. Storing and sharing it is cheaper. But
+technology evolves very fast. Every setup is different. Code for a
+scientific paper has seldom been built for easy maintenance: lack of
+tests, profusion of exotic dependencies, inexistent documentation.
+Robustness, portability, isolation, would be desirable, but it is
+difficult and costly.</p>
+<p>Software developers know that understanding the constraints to design a
+good program requires writing a prototype. <strong>Code for a scientific paper
+is very much a prototype</strong>: it’s a first version of an idea, that proves
+its feasibility. Common sense in software engineering says that
+<a class="reference external" href="http://blog.codinghorror.com/the-prototype-pitfall/">prototypes are designed to be thrown away</a>. Prototype code
+is fragile. It’s untested, probably buggy for certain usage. Releasing
+prototypes amounts to distributing semi-functioning code. This is the
+case for most code accompanying a publication, and it is to be expected
+given the very nature of research: exploration and prototyping <a class="footnote-reference" href="#id6" id="id3">[1]</a>.</p>
+<!-- Quality scientific software require making choices -->
+<!-- Doing less, better -->
+<!-- Quality scientific software, only for a happy few -->
+</div>
+<div class="section" id="no-success-without-quality">
+<h2>No success without quality, …</h2>
+<div class="admonition align-right note">
+<p class="first admonition-title">Note</p>
+<p class="last">Highly-reliable is more useful than state-of-the-art.</p>
+</div>
+<p>My experience with scientific code has taught me that success require
+quality. Having a good implementation of simple, well-known, methods
+seems to matter more than doing something fancy. This is what the
+success of scikit-learn has taught us: we are really providing classic
+“old” machine learning methods, but with a good API, good docs,
+computational performance, and stable numerics controlled by stringent
+tests. There exists plenty of more sophisticated machine-learning
+methods, including some that I have developed specifically for my data.
+Yet, I find myself advising my co-workers to use the methods in
+scikit-learn, because I know that the implementation is reliable and that
+they will be able to use them <a class="footnote-reference" href="#id7" id="id4">[2]</a>.</p>
+<p>This quality is indeed central to doing science with code. What good is a
+data analysis pipeline if it crashes when I fiddle with the data? How can
+I draw conclusions from simulations if I cannot change their parameters?
+As soon as I need trust in code supporting a scientific
+finding, I find myself tinkering with its input, and often breaking it.
+Good scientific code is code that can be reused, that can lead to
+large-scale experiments validating its underlying assumptions.</p>
+<div class="figure align-right">
+<a class="reference external image-reference" href="https://twitter.com/divineomega/status/576165762911608833"><img alt="" src="../programming/attachments/sqlite_code.png" /></a>
+<p class="caption">Sqlite is so much used that its developers have been woken up at
+night by users.</p>
+</div>
+<p>You might say that I am putting the bar too high; that slightly buggy
+code is more useful than no code. But I frown at the idea of releasing
+code for which I am unable to do proper quality assurance. I may have
+done too much of that in the past. And because I am a prolific coder, many
+people are using code that has been through my hands. My mailbox looks
+like a battlefield, and when I go the coffee machine I find myself
+answering questions.</p>
+<!-- Pour vivre heureux, vivons cachés.
+http://en.wikipedia.org/wiki/Jean-Pierre_Claris_de_Florian -->
+</div>
+<div class="section" id="and-making-difficult-choices">
+<h2>… and making difficult choices</h2>
+<!-- diminishing returns -->
+<div class="admonition align-right note">
+<p class="first admonition-title">Note</p>
+<p class="last">Craftsmanship is about trade-offs</p>
+</div>
+<p>Achieving quality requires making choices. Not only because time
+is limited, but also because the difficulty to maintain and improve a
+codebase increases much quicker than the numbers of features <a class="footnote-reference" href="#id8" id="id5">[3]</a>. This
+phenomena is actually frightening to watch: adding a feature in
+scikit-learn these days is much much harder than what it used to be in
+the early days. Interactions between features is a killer: when you
+modify something, something else unrelated breaks. For a given
+functionality, <strong>nothing makes the code more incomprehensible than
+cyclomatic complexity</strong>: the multiplicity of branching, if/then clauses,
+for loops. This complexity naturally appears when supporting different
+input types, or minor variants of a same method.</p>
+<p>The consequence is that ensuring quality for many variants of a method is
+prohibitory. This limit is a real problem for reproducible
+science, as science builds upon comparing and opposing models. However,
+ignoring it simply leads to code that fails doing what it claims to do.
+What this is telling us, is that if we are really trying to do long-term
+reproducibility, we <strong>need to identify successful and important research
+and focus our efforts on it</strong>.</p>
+<p>If you agree with my earlier point that the code of a publication is
+a prototype, this iterative process seems natural. Various ideas
+can be thought of as competing prototypes. Some will not lead to
+publication at all, while others will end up having a high impact.
+Knowing before-hand is impossible. Focusing too early on achieving high
+quality is counter productive. What matters is <strong>progressively
+consolidating the code</strong>.</p>
+<!-- XXX rephrase the above to avoid 'what matters'? -->
+<!-- I am sorry to say that my publications are not based on code with 90% test coverage. -->
+<!-- say that my methods in machine learning will probably never make it to
+scikit-learn -->
+</div>
+<div class="section" id="reproducible-science-a-rich-trade-off-space">
+<h2>Reproducible science, a rich trade-off space</h2>
+<div class="admonition align-right note">
+<p class="first admonition-title">Note</p>
+<p class="last">Verbatim replication or reuse?</p>
+</div>
+<p>Does Reinhart and Rogoff’s <em>“Growth in a Time of Debt”</em> paper face the
+same challenges as the manuscript under review by Titus? One is
+describing mechanisms while the other is introducing a method. The code
+of the former is probably much simpler than that of the latter. Different
+publications come with different goals and code that is more or less easy
+to share. For verbatim replication of the analysis of a paper, a simple
+IPython notebook without tests or API is enough. To go beyond requires
+applying the analysis to different problems or data: reuse. Reuse is
+very difficult and cannot be a requirement for all publications.</p>
+<!-- As someone who spends a lot of time on method development, I think a lot
+in terms of code reuse. On the contrary, -->
+<p>Conventional wisdom in academia is that science builds upon ideas and
+concepts rather than methods and code. Galileo is known for his
+contribution to our understanding of the cosmos. Yet, methods
+development underpins science. Galileo is also the inventor of the
+telescope, which was a huge technical achievement. He needed to develop
+it to back his cosmological theories. Today, Galileo’s measurements are
+easy to reproduce because telescopes are readily-available as consumer
+products.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote class="epigraph">
+Standing on the shoulders of giants &nbsp; &nbsp; —  &nbsp; &nbsp;
+<em>Isaac Newton, on software libraries</em></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="topic">
+<p class="topic-title first"><strong>Related posts</strong>:</p>
+<ul class="simple">
+<li><a class="reference external" href="../science/publishing_scientific_software_matters.html">Publishing scientific software matters</a></li>
+<li><a class="reference external" href="views_on_scientific_computing.html">Personal views on scientific computing</a></li>
+</ul>
+</div>
+<!-- With great powers come great responsibility -->
+<!-- Some publications, including computational ones, strive to contribute an idea. -->
+<!-- The way I understand Titus's
+phrase *"Please destroy this software after publication"* is that some
+methods publication -->
+<!-- Is the output of a paper the idea, or the code? It depends? (example of
+the ICML) -->
+<!-- Different code complexity, different trade-off (loops back to the point
+above with Poldrack) -->
+<!-- XXX: need to point to the donoho paper and cite it -->
+<!-- Recommendations (in a separate blog post?):
+
+* What the difficulties are (evolving APIs, plus configuration problems)
+  (skip this point?)
+
+* don't publish method work on non open data (very restrictive, I have
+  been criticized for working on 'old', 'uninteresting' data). -->
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[1]</a></td><td>To make my point very clear, releasing buggy untested code is not
+a good thing. However, it is not possible to ask for all research
+papers to come with industial-quality code. I am trying here to push
+for a collective, reasoned, undertaking of consolidation.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[2]</a></td><td>Theory tells us that there is there is no universal machine
+learning algorithm. Given a specific machine-learning application, it
+is always possible to devise a custom strategy that out-performs a
+generic one. However, <a class="reference external" href="http://jmlr.org/papers/volume15/delgado14a/delgado14a.pdf">do we need hundreds of classifiers to solve
+real world classification problems?</a>
+Empirical results <a class="reference external" href="http://jmlr.org/papers/volume15/delgado14a/delgado14a.pdf">[Delgado 2014]</a> show
+that most of the benefits can be achieved with a small number of
+strategies. Is it desirable and sustainable to distribute and keep
+alive the code of every machine learning paper?</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[3]</a></td><td>Empirical studies on the workload for programmers to achieve a
+given task showed that 25 percent increase in problem complexity results in
+a 100 percent increase in programming complexity: <a class="reference external" href="http://ieeexplore.ieee.org/Xplore/login.jsp?url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F32%2F35909%2F01702600.pdf%3Farnumber%3D1702600&amp;authDecision=-203">An Experiment on
+Unit increase in Problem Complexity, Woodfield 1979</a>.</td></tr>
+</tbody>
+</table>
+<p class="small">I need to thank my colleague <a class="reference external" href="http://multiplecomparisons.blogspot.fr">Chris Filo Gorgolewski</a> and my sister <a class="reference external" href="http://cbio.ensmp.fr/~nvaroquaux/">Nelle
+Varoquaux</a> for their
+feedback on this note.</p>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = "gaelvaroquaux"; // required: replace example with your forum shortname
 
@@ -8,11 +399,25 @@
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><footer class=footer><p>&copy; Gaël Varoquaux &ndash; Built with <a href=https://github.com/PurePelicanTheme/pure>Pure Theme</a> for <a href=http://blog.getpelican.com/ >Pelican</a></p></footer></div></div></div><script src=//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js></script><script>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
-    </script><script>
+    </script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -35,7 +440,8 @@
         $('body').on('click', 'a[href="#"]', function(event) {
             event.preventDefault();
         });
-    </script><script language=JavaScript type=text/javascript>
+    </script>
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -153,12 +559,18 @@
 	}
     //66885349@N03
     }
-    </script><script type=text/javascript src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&format=json&amp;" defer=defer></script><script src=https://apis.google.com/js/platform.js async defer></script><script type=text/javascript>
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script><script type=text/javascript>
+    </script>
+    <script type="text/javascript">
         try {
             var pageTracker = _gat._getTracker("UA-55589822-1");
             pageTracker._trackPageview();
             } catch(err) {}
-    </script></body></html>
+    </script>
+</body>
+</html>

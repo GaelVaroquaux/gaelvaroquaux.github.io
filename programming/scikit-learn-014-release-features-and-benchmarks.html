@@ -1,4 +1,463 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta name=description content="Gaël Varoquaux, computer / data / brain science"><link rel=alternate href=http://gael-varoquaux.info/feeds/all.atom.xml type=application/atom+xml title="Gaël Varoquaux Full Atom Feed"><title>Scikit-learn 0.14 release: features and benchmarks -- Gaël Varoquaux: computer / data / brain science</title><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css><link rel=stylesheet href=../theme/css/pure.css><script src=//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js></script></head><body><div class=pure-g-r id=layout><div class="sidebar sidebar-article pure-u"><header class=header-article><hgroup><a href=..><img class=avatar alt="Gaël Varoquaux" src=http://gael-varoquaux.info/images/gael.png></a><a href=.. class=article-info><h2 class=article-info>Gaël Varoquaux</h2></a><p>Thu 08 August 2013</p><a href=/ >&larr;Home</a></hgroup></header></div><div class=pure-u><div class=content><section class=post><header class=post-header><h1>Scikit-learn 0.14 release: features and benchmarks</h1><p class=post-meta> under <a class=post-category href=../tag/scikit-learn.html>scikit-learn</a><a class=post-category href=../tag/machine-learning.html>machine learning</a><span class=social_links><a href=http://twitter.com/share class=twitter-share-button data-count=horizontal data-via=GaelVaroquaux>Tweet</a><script type=text/javascript src=http://platform.twitter.com/widgets.js async defer></script><span class=g-plusone data-size=medium></span></span></p></header></section><p>I have tagged and released the scikit-learn 0.14 release yesterday evening, after more than 6 months of heavy development from the team. I would like to give a quick overview of the highlights of this release in terms of features but also in term of performance. Indeed, the scikit-learn developers believe that <strong>performance matters</strong> and strive to be fast and efficient on fairly datasets.</p><p>I will show in this article on a couple of benchmarks that we have significant performance improvement and are competitive with the faster libraries such as the proprietary WiseRF.</p><div class=section id=prohiminent-new-features><h2>Prohiminent new features</h2><p>Most of the new features of the upcoming release have been mentionned more in details on <a class="reference external" href=http://peekaboo-vision.blogspot.de/2013/07/scikit-learn-sprint-and-014-release.html>Andy Mueller’s blog</a>. I am just giving a quick list here for completness (see also the <a class="reference external" href=http://scikit-learn.org/stable/whats_new.html>full list of changes</a>):</p><p><strong>Major new estimators</strong>:</p><ul class=simple><li><strong>AdaBoost</strong> (by <a class="reference external" href=http://noel.dawe.me>Noel Dawe</a> and <a href=http://www.montefiore.ulg.ac.be/~glouppe/ class="reference external">Gilles Louppe</a>): the classic boosting algorithm. This implementation can be applied to any estimator, but uses trees by default. AdaBoost is a learning strategy that builds from simple learning strategies by focussing successively on samples that are not well predicted. Typically, the simple learners (called <em>weak learners</em>) can be rules as simple as taking simple thresholds of observed quantities (this will form <em>decision stumps</em>). <a class="reference external" href=http://scikit-learn.org/stable/modules/ensemble.html#AdaBoost>Documentation</a> — <a class="reference external" href=http://scikit-learn.org/stable/auto_examples/ensemble/plot_adaboost_twoclass.html>Example</a></li><li><strong>Biclustering</strong> (by <a class="reference external" href=http://www.kemaleren.com>Kemal Eren</a>): clustering rows and columns of the data matrices. Suppose you have access to the shopping list of many consumers, biclustering would consists is grouping both consumers and product they bought to come up with stories such as “geeks buy computers and phones”, where “geeks” would be a group of consumers and “computers” and “phones” would be groups of products. <a class="reference external" href=http://scikit-learn.org/stable/modules/biclustering.html>Documentation</a> — <a class="reference external" href=http://scikit-learn.org/stable/auto_examples/bicluster/plot_spectral_biclustering.html>Example</a></li><li><strong>Missing value imputation</strong> (by <a href=http://nicolastr.com/ class="reference external">Nicolas Tresegnie</a>): simple transformer filling missing data with means or medians. If your data-acquisition has failures, human or material, you can easily end up with some descriptors missing for some observations. It would be a pitty to throw away either those observations, or some descriptors. “Imputation” fills in the blanks with simple strategies. <a class="reference external" href=http://scikit-learn.org/stable/modules/preprocessing.html#imputation-of-missing-values>Documentation</a> — <a class="reference external" href=http://scikit-learn.org/stable/auto_examples/imputation.html>Example</a></li><li><strong>RBMs (Restricted Boltzmann Machines)</strong> (by <a href=http://ynd.github.io/ class="reference external">Yann Dauphin</a>): a neural network model useful for unsupervised learning of features. Restricted Boltzmann machines learn a set of hidden (latent) factors that have, for each observation, a probability to be activated or not. These activations are found so that they explain the data well, when combined across all the hidden factors with connection weights. Typically, they form a new feature set that can be useful in a prediction task. <a class="reference external" href=http://scikit-learn.org/stable/modules/neural_networks.html#restricted-boltzmann-Machines>Documentation</a> — <a class="reference external" href=http://scikit-learn.org/stable/auto_examples/plot_rbm_logistic_classification.html>Example</a></li><li><strong>RandomizedSearchCV</strong> (by <a class="reference external" href=http://peekaboo-vision.blogspot.com>Andreas Mueller</a>): setting meta-parameters on estimators using a randomized parameter exploration rather than a grid, as in a grid-search. A CV (cross-validated) meta-estimator sets parameters of an estimator by maximizing their cross-validated prediction scores. This entails fitting the estimator for each parameter value tried. The randomized-search explores the parameter space randomly, avoiding the exponential growth in number of points to fit of the grid search. <a class="reference external" href=http://scikit-learn.org/stable/modules/grid_search.html#randomized-parameter-optimization>Documentation</a> — <a class="reference external" href=http://scikit-learn.org/stable/auto_examples/randomized_search.html>Example</a></li></ul><p><strong>Infrastucture work</strong>:</p><ul class=simple><li><strong>New wesbite</strong> (mostly by <a href=http://www.montefiore.ulg.ac.be/~glouppe/ class="reference external">Gilles Louppe</a>, <a class="reference external" href=https://github.com/nellev>Nelle Varoquaux</a>, Vincent Michel and <a class="reference external" href=http://peekaboo-vision.blogspot.com>Andreas Mueller</a>). The redesign of the website had two objectives: <em>i)</em> unclutter the pages to help prioritize information, <em>ii)</em> make it easier for users to find the stable documentation, if they follow an external link to a documentation of previous releases. I think that it also looks prettier <em>:)</em>.</li><li><strong>Python 3 support</strong> (<a class="reference external" href=https://github.com/justinvf>Justin Vincent</a>, <a class="reference external" href=https://github.com/larsmans>Lars Buitinck</a>, <a class="reference external" href=https://github.com/smoitra87>Subhodeep Moitra</a> and <a class="reference external" href=http://twitter.com/ogrisel>Olivier Grisel</a>). As a side note, under Python 3.3, on Windows, we have found that <em>np.load</em> can trigger segfaults, which means our test suite crashes. The tests not relying on <em>np.load</em> pass.</li></ul></div><div class=section id=major-api-changes><h2>Major API changes</h2><ul class=simple><li><strong>The scoring parameter</strong> One of the benefits of scikit-learn over other learning packages is that it can set parameters to maximizing a prediction score. However, the prediction that one would want to optimize might depend on the application. Also, some scores can only be computed with specific estimators, for instance because they require probabilistic prediction. <a class="reference external" href=http://peekaboo-vision.blogspot.com>Andreas Mueller</a> and <a class="reference external" href=https://github.com/larsmans>Lars Buitinck</a> came up with <a class="reference external" href=http://scikit-learn.org/dev/modules/model_evaluation.html#the-scoring-parameter-defining-model-evaluation-rules>a new API</a> to specifies the scoring strategy that is versatile and hides complexity from the user. This replaces the <em>score_func</em> argument.</li><li><strong>*sklearn.test()*</strong> is deprecated and will not run the test suite. Please use <em>nosetests sklearn</em> from the command line.</li></ul><p>The full list of API changes can be found on the <a class="reference external" href=http://scikit-learn.org/stable/whats_new.html>change log</a>.</p></div><div class=section id=performance-improvements><h2>Performance improvements</h2><p>Many part of the codebase got speed-ups, with a focus on making <strong>scikit-learn more scalable for bigger data</strong>.</p><ul class=simple><li>The trees (random forests and extra-trees) were massively sped up by <a href=http://www.montefiore.ulg.ac.be/~glouppe/ class="reference external">Gilles Louppe</a>, bringing them to par with the fastest libraries (see benchmarks below)</li><li><a href=http://www.astro.washington.edu/users/vanderplas/ class="reference external">Jake Vanderplas</a> improved the BallTree and implemented fast KDTrees for nearest-neighbor search (benchmarks below).</li><li><a class="reference external" href=https://github.com/cleverless>“cleverless”</a> made the DBSCAN implementation scale to a large number of samples by relying on KDTree and BallTree for neighbor search.</li><li>KMeans much faster on sparse data (<a class="reference external" href=https://github.com/larsmans>Lars Buitinck</a>)</li><li>For text vectorization: much faster CountVectorizer and TfidVectorizer with less memory consumption (Jochen Wersdorfer and Roman Sinayev)</li><li>Out-of-core learning for discrete naive Bayes classifiers by <a class="reference external" href=http://twitter.com/ogrisel>Olivier Grisel</a>. Estimators that implement a <em>partial_fit</em> method can be used to fit the model with an out-of-core strategy, as illustrated by the <a class="reference external" href=http://scikit-learn.org/dev/auto_examples/applications/plot_out_of_core_classification.html>out-of-core classification example</a>. These settings are well suited to very big data.</li><li>FastICA: less memory consumptions and slightly faster code (<a class="reference external" href=https://github.com/dengemann>Denis Engemann</a> and <a class="reference external" href=http://alexandre.gramfort.net>Alexandre Gramfort</a>)</li><li>Faster IsotonicRegression (<a class="reference external" href=https://github.com/nellev>Nelle Varoquaux</a>)</li><li>OrthogonalMatchingPursuitCV by <a class="reference external" href=http://alexandre.gramfort.net>Alexandre Gramfort</a> and <a class="reference external" href=http://vene.ro>Vlad Niculae</a>: while strictly-speaking not a speedup of a existing estimator, this new estimator means that OMP parameters can be set much faster.</li></ul></div><div class=section id=we-are-faster-lies-damn-lies-and-benchmarks><h2>We are faster: lies, damn lies and benchmarks</h2><blockquote class=epigraph><p>“There are three kinds of lies: lies, damned lies and statistics.” —</p><p><em>Mark Twain’s Own Autobiography: The Chapters from the North American Review</em></p></blockquote><p>I claim we have gotten faster at certain things. Other libraries, such as <a href=http://docs.wise.io/ class="reference external">WiseRf</a>, have performance claims compared to us. It turns out that benching statistical learning code is very hard, because speed depends a lot on the properties of the data.</p><div class=section id=fast-neighbor-searches-good-kdtrees-beat-balltrees><h3>Fast neighbor searches: good KDTrees beat BallTrees</h3><p>A good example of interplay between properties of the data and computational speed is the nearest neighbor search. In general, finding the nearest neighbor to a point out of <em>n</em> other points will cost you <em>n</em> operations, as you have to compute the distance to each of these points. However, building a tree-like data structure ahead of time can make this query cost only <em>log n</em>. If these points are in 1D, <em>ie</em> simple scalars, this would be achieve by sorting them. In higher dimensions that can be achieved by building a <em>KDTree</em>, made of planes dividing the space in half-spaces, or a <em>BallTree</em>, made of nested balls.</p><div class="figure align-center"><img alt src=http://www.astroml.org/_images/fig_kdtree_example_1.png style="width: 60%;"><p class=caption><strong>KD Tree</strong> Image from <a class="reference external" href=http://www.astroml.org/index.html>AstroML’s documentation</a></p></div><div class="figure align-center"><img alt src=http://www.astroml.org/_images/fig_balltree_example_1.png style="width: 60%;"><p class=caption><strong>Ball tree</strong> Image from <a class="reference external" href=http://www.astroml.org/index.html>AstroML’s documentation</a></p></div><p>Popular wisdom in machine learning is that in high dimensions, BallTrees scale better than KDTrees. This is explained by the fact that as the dimensionality grows, the number of planes required to break up the space grows too. On the contrary, if the data has structure, BallTrees can more efficiently cover this structure. I have benched scikit-learn’s KDTree and BallTree, as well as scipy’s KDTree, which employs a simpler tree-building strategy, on a variety of datasets, both real-life and artificial. Below if a summary plot giving relative performance of neighbor search</p><div class="figure align-center"><img alt src=../programming/attachments/sklearn_0.14.X_speed/nn_trees.png style="width: 60%;"><p class=caption><em>n</em> is the number of data points, and <em>p</em> the dimensionality.</p></div><p>We can see that no approach win on all counts. That said, it came to a surprise to me to see that even in high dimension, <strong>scikit-learn’s KDTree outperformed the BallTrees</strong>. This is explained because these datasets do not display a heavily-structured low ambient dimension. On highly-structured synthetic data, the benefit of BallTree can clearly stand out, as shown by Jake <a class="reference external" href=http://jakevdp.github.io/blog/2013/04/29/benchmarking-nearest-neighbor-searches-in-python>here</a>. However, on most dataset people encounter, it seems that this is not the case. Note also that <strong>scikit-learn’s KDTree tend to scale better in high dimension than scipy’s</strong>. This is due to the more elaborate choice of cutting planes. Note that it also has a cost, and may backfire, as on some datasets scikit-learn is slower than scipy.</p><p>Overall, the new KDTree in scikit-learn seem to be giving an excellent compromise. Congratulations <a href=http://www.astro.washington.edu/users/vanderplas/ class="reference external">Jake</a>!</p></div><div class=section id=dbscan-is-faster-with-trees><h3>DBSCAN is faster with trees</h3><p><a class="reference external" href=http://scikit-learn.org/stable/modules/clustering.html#dbscan>DBSCAN</a> is a clustering algorithm that relies heavily on the local neighborhood structure. The implementation in scikit-learn 0.13 computed the complete <em>n</em> by <em>n</em> matrix of distance between observations, which means that if you had a lot of data, you would blow your memory. In the 0.14 release, DBSCAN uses the BallTree, and as a result scales to much larger datasets and brings speed benefits. Here is a comparison between 0.13 and 0.14 implementations (I couldn’t put data as large as I wanted because the 0.13 code would blow):</p><table border=1 class=docutils><colgroup><col width=53%><col width=23%><col width=24%></colgroup><thead valign=bottom><tr><th class=head>Dataset</th><th class=head>time with 0.13</th><th class=head>time with 0.14</th></tr></thead><tbody valign=top><tr><td>“lfw”: 13233 samples, 5 features</td><td>6.57 seconds</td><td>3.59 seconds</td></tr><tr><td>“make_blobs”: 30000, with 10 features</td><td>33.50 seconds</td><td>12.87 seconds</td></tr></tbody></table><p>Importantly, the scaling is different: while the 0.13 code scales as <em>n ^ 2</em>, the 0.14 code scales as <em>n log n</em>. This means that the benefit is bigger for large dataset.</p></div><div class=section id=scikit-learn-0-14-s-random-forests-are-fast><h3>Scikit-learn 0.14’s random forests are fast</h3><p><a href=http://www.montefiore.ulg.ac.be/~glouppe/ class="reference external">Gilles Louppe</a> has made the random forests significantly faster in the 0.14 release. Let us bench them in comparison with WiseIO’s <a href=http://docs.wise.io/ class="reference external">WiseRf</a>, a proprietary package that only does random forest and for which the main selling point is that it is significantly than scikit-learn. However, let us also bench <a class="reference external" href=http://scikit-learn.org/stable/modules/ensemble.html#extremely-randomized-trees>ExtraTrees</a>, a tree-based model that is very similar to random forests, but that in our experience can be implemented a bit faster, and tends to work better.</p><p><strong>On the digits dataset (1797 samples, 641 features):</strong></p><table border=1 class=docutils><colgroup><col width=33%><col width=19%><col width=17%><col width=31%></colgroup><tbody valign=top><tr><td>Forest implementation</td><td>train time</td><td>test time</td><td>prediction accuracy</td></tr><tr><td>Sklearn ExtraTrees</td><td>2.641s</td><td>0.082s</td><td>0.986</td></tr><tr><td>Sklearn RandomForest</td><td>5.074s</td><td>0.088s</td><td>0.981</td></tr><tr><td>WiseRF</td><td>5.665s</td><td>0.108s</td><td>0.979</td></tr></tbody></table><p>So we see that on a mid-sized dataset, scikit-learn is faster than WiseRF, and ExtraTrees is twice as fast as RandomForest, for better results.</p><p><strong>On the MNIST dataset (70000 samples, 784 features):</strong></p><table border=1 class=docutils><colgroup><col width=33%><col width=19%><col width=17%><col width=31%></colgroup><tbody valign=top><tr><td>Forest implementation</td><td>train time</td><td>test time</td><td>prediction accuracy</td></tr><tr><td>Sklearn ExtraTrees</td><td>1378.141s</td><td>4.768s</td><td>0.976</td></tr><tr><td>Sklearn RandomForest</td><td>1639.866s</td><td>4.132s</td><td>0.972</td></tr><tr><td>WiseRF</td><td>1102.465s</td><td>14.542s</td><td>0.972</td></tr></tbody></table><p>On a big dataset, WiseRF takes the lead, but not by a large factor.</p><p><strong>Using 2 CPUs (n_jobs=2) on the digits dataset:</strong></p><table border=1 class=docutils><colgroup><col width=33%><col width=19%><col width=17%><col width=31%></colgroup><tbody valign=top><tr><td>Forest implementation</td><td>train time</td><td>test time</td><td>prediction accuracy</td></tr><tr><td>Sklearn ExtraTrees</td><td>4.874s</td><td>1.478s</td><td>0.986</td></tr><tr><td>Sklearn RandomForest</td><td>5.716s</td><td>1.349s</td><td>0.978</td></tr><tr><td>WiseRF</td><td>3.264s</td><td>0.104s</td><td>0.979</td></tr></tbody></table><p>Both scikit-learn and WiseRF can use several CPUs. However, the Python parallel execution model via multiple processes has an overhead in term of computing time and of memory usage. The internals of WiseRF are coded in C++, and thus it is not limited by this overhead. Also, because of the memory duplication with multiples processes in scikit-learn, I could not run it on MNIST with 2 jobs. Next release will address these issues, partly by using memmapped arrays to share memory between processes.</p></div></div><div class=section id=we-make-good-use-of-funding-the-paris-sprint><h2>We make good use of funding: the Paris sprint</h2><p>A couple of weeks ago, we had a coding sprint in Paris. We were able to bring in a lot of core developers from all over Europe thanks to our sponsors: <a class="reference external" href=http://www.frs-fnrs.be/%20>FNRS</a>, <a class="reference external" href=http://www.afpy.org>AFPy</a>, <a href=http://www.telecom-paristech.fr/ class="reference external">Telecom Paristech</a>, and <a class="reference external" href=http://www.svi.cnrs-bellevue.fr>Saint-Gobain Recherche</a>. The total budget, including accommodation and travel, was a couple thousand euros, thanks to <a href=http://www.telecom-paristech.fr/ class="reference external">Telecom Paristech</a> and <a class="reference external" href=http://www.tinyclues.com>tinyclues</a> helping us with accommodation and hosting the sprint.</p><p>The productivity of such a sprint is huge, both because we get together and work efficiently, but also because we get back home and keep working (I have been sleep deprived because of late-night hacking ever since the sprint). As an illustration, here is the diagram of commits as can be seen on Github. The huge spike correspond to the second international sprint: Paris 2013.</p><div class="figure align-center"><img alt src=../programming/attachments/sklearn_0.14.X_speed/commit_graph.png style="width: 100%;"></div><p><strong>We now have a “donate” button</strong> on the <a class="reference external" href=http://scikit-learn.org/stable>website</a>. I can assure you that your donations are well spent and turned into code.</p></div><div class=hr style="margin-bottom: -.5em;"></div><span class=social_links><a href=http://twitter.com/share class=twitter-share-button data-count=horizontal data-via=GaelVaroquaux>Tweet</a><script type=text/javascript src=http://platform.twitter.com/widgets.js async defer></script><span class=g-plusone data-size=medium></span></span><a href=# class=go-top>Go Top</a><div class=comments><div id=disqus_thread></div><script type=text/javascript>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / brain science">
+
+        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Scikit-learn 0.14 release: features and benchmarks -- Gaël Varoquaux: computer / data / brain science</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="..">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="http://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href=".." class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Thu 08 August 2013</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Scikit-learn 0.14 release: features and benchmarks</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="../tag/scikit-learn.html">scikit-learn</a>
+                                <a class="post-category" href="../tag/machine-learning.html">machine learning</a>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <p>I have tagged and released the scikit-learn 0.14 release yesterday
+evening, after more than 6 months of heavy development from the team. I
+would like to give a quick overview of the highlights of this release in
+terms of features but also in term of performance. Indeed, the
+scikit-learn developers believe that <strong>performance matters</strong> and strive
+to be fast and efficient on fairly datasets.</p>
+<p>I will show in this article on a couple of benchmarks that we have
+significant performance improvement and are competitive with the faster
+libraries such as the proprietary WiseRF.</p>
+<div class="section" id="prohiminent-new-features">
+<h2>Prohiminent new features</h2>
+<p>Most of the new features of the upcoming release have been mentionned
+more in details on <a class="reference external" href="http://peekaboo-vision.blogspot.de/2013/07/scikit-learn-sprint-and-014-release.html">Andy Mueller’s
+blog</a>.
+I am just giving a quick list here for completness (see also the <a class="reference external" href="http://scikit-learn.org/stable/whats_new.html">full
+list of changes</a>):</p>
+<p><strong>Major new estimators</strong>:</p>
+<ul class="simple">
+<li><strong>AdaBoost</strong> (by <a class="reference external" href="http://noel.dawe.me">Noel Dawe</a> and <a class="reference external" href="http://www.montefiore.ulg.ac.be/~glouppe/">Gilles
+Louppe</a>): the classic
+boosting algorithm. This implementation can be applied to any
+estimator, but uses trees by default.
+AdaBoost is a learning strategy that builds from simple learning
+strategies by focussing successively on samples that are not well
+predicted. Typically, the simple learners (called <em>weak learners</em>)
+can be rules as simple as taking simple thresholds of observed
+quantities (this will form <em>decision stumps</em>).
+<a class="reference external" href="http://scikit-learn.org/stable/modules/ensemble.html#AdaBoost">Documentation</a>
+—
+<a class="reference external" href="http://scikit-learn.org/stable/auto_examples/ensemble/plot_adaboost_twoclass.html">Example</a></li>
+<li><strong>Biclustering</strong> (by <a class="reference external" href="http://www.kemaleren.com">Kemal Eren</a>):
+clustering rows and columns of the data matrices.
+Suppose you have access to the shopping list of many consumers,
+biclustering would consists is grouping both consumers and product
+they bought to come up with stories such as “geeks buy computers and
+phones”, where “geeks” would be a group of consumers and “computers”
+and “phones” would be groups of products.
+<a class="reference external" href="http://scikit-learn.org/stable/modules/biclustering.html">Documentation</a>
+—
+<a class="reference external" href="http://scikit-learn.org/stable/auto_examples/bicluster/plot_spectral_biclustering.html">Example</a></li>
+<li><strong>Missing value imputation</strong> (by <a class="reference external" href="http://nicolastr.com/">Nicolas
+Tresegnie</a>): simple transformer filling
+missing data with means or medians.
+If your data-acquisition has failures, human or material, you can
+easily end up with some descriptors missing for some observations. It
+would be a pitty to throw away either those observations, or some
+descriptors. “Imputation” fills in the blanks with simple strategies.
+<a class="reference external" href="http://scikit-learn.org/stable/modules/preprocessing.html#imputation-of-missing-values">Documentation</a>
+—
+<a class="reference external" href="http://scikit-learn.org/stable/auto_examples/imputation.html">Example</a></li>
+<li><strong>RBMs (Restricted Boltzmann Machines)</strong> (by <a class="reference external" href="http://ynd.github.io/">Yann
+Dauphin</a>): a neural network model useful
+for unsupervised learning of features.
+Restricted Boltzmann machines learn a set of hidden (latent) factors
+that have, for each observation, a probability to be activated or
+not. These activations are found so that they explain the data well,
+when combined across all the hidden factors with connection weights.
+Typically, they form a new feature set that can be useful in a
+prediction task.
+<a class="reference external" href="http://scikit-learn.org/stable/modules/neural_networks.html#restricted-boltzmann-Machines">Documentation</a>
+—
+<a class="reference external" href="http://scikit-learn.org/stable/auto_examples/plot_rbm_logistic_classification.html">Example</a></li>
+<li><strong>RandomizedSearchCV</strong> (by <a class="reference external" href="http://peekaboo-vision.blogspot.com">Andreas
+Mueller</a>): setting
+meta-parameters on estimators using a randomized parameter
+exploration rather than a grid, as in a grid-search.
+A CV (cross-validated) meta-estimator sets parameters of an
+estimator by maximizing their cross-validated prediction scores. This
+entails fitting the estimator for each parameter value tried. The
+randomized-search explores the parameter space randomly, avoiding the
+exponential growth in number of points to fit of the grid search.
+<a class="reference external" href="http://scikit-learn.org/stable/modules/grid_search.html#randomized-parameter-optimization">Documentation</a>
+—
+<a class="reference external" href="http://scikit-learn.org/stable/auto_examples/randomized_search.html">Example</a></li>
+</ul>
+<p><strong>Infrastucture work</strong>:</p>
+<ul class="simple">
+<li><strong>New wesbite</strong> (mostly by <a class="reference external" href="http://www.montefiore.ulg.ac.be/~glouppe/">Gilles
+Louppe</a>, <a class="reference external" href="https://github.com/nellev">Nelle
+Varoquaux</a>, Vincent Michel and <a class="reference external" href="http://peekaboo-vision.blogspot.com">Andreas
+Mueller</a>). The redesign of
+the website had two objectives: <em>i)</em> unclutter the pages to help
+prioritize information, <em>ii)</em> make it easier for users to find the
+stable documentation, if they follow an external link to a
+documentation of previous releases. I think that it also looks
+prettier <em>:)</em>.</li>
+<li><strong>Python 3 support</strong> (<a class="reference external" href="https://github.com/justinvf">Justin
+Vincent</a>, <a class="reference external" href="https://github.com/larsmans">Lars
+Buitinck</a>, <a class="reference external" href="https://github.com/smoitra87">Subhodeep
+Moitra</a> and <a class="reference external" href="http://twitter.com/ogrisel">Olivier
+Grisel</a>). As a side note, under Python
+3.3, on Windows, we have found that <em>np.load</em> can trigger segfaults,
+which means our test suite crashes. The tests not relying on
+<em>np.load</em> pass.</li>
+</ul>
+</div>
+<div class="section" id="major-api-changes">
+<h2>Major API changes</h2>
+<ul class="simple">
+<li><strong>The scoring parameter</strong> One of the benefits of scikit-learn over
+other learning packages is that it can set parameters to maximizing a
+prediction score. However, the prediction that one would want to
+optimize might depend on the application. Also, some scores can only
+be computed with specific estimators, for instance because they
+require probabilistic prediction. <a class="reference external" href="http://peekaboo-vision.blogspot.com">Andreas
+Mueller</a> and <a class="reference external" href="https://github.com/larsmans">Lars
+Buitinck</a> came up with <a class="reference external" href="http://scikit-learn.org/dev/modules/model_evaluation.html#the-scoring-parameter-defining-model-evaluation-rules">a new
+API</a>
+to specifies the scoring strategy that is versatile and hides
+complexity from the user. This replaces the <em>score_func</em> argument.</li>
+<li><strong>*sklearn.test()*</strong> is deprecated and will not run the test suite.
+Please use <em>nosetests sklearn</em> from the command line.</li>
+</ul>
+<p>The full list of API changes can be found on the <a class="reference external" href="http://scikit-learn.org/stable/whats_new.html">change
+log</a>.</p>
+</div>
+<div class="section" id="performance-improvements">
+<h2>Performance improvements</h2>
+<p>Many part of the codebase got speed-ups, with a focus on making
+<strong>scikit-learn more scalable for bigger data</strong>.</p>
+<ul class="simple">
+<li>The trees (random forests and extra-trees) were massively sped up by
+<a class="reference external" href="http://www.montefiore.ulg.ac.be/~glouppe/">Gilles Louppe</a>,
+bringing them to par with the fastest libraries (see benchmarks
+below)</li>
+<li><a class="reference external" href="http://www.astro.washington.edu/users/vanderplas/">Jake
+Vanderplas</a>
+improved the BallTree and implemented fast KDTrees for
+nearest-neighbor search (benchmarks below).</li>
+<li><a class="reference external" href="https://github.com/cleverless">“cleverless”</a> made the DBSCAN
+implementation scale to a large number of samples by relying on
+KDTree and BallTree for neighbor search.</li>
+<li>KMeans much faster on sparse data (<a class="reference external" href="https://github.com/larsmans">Lars
+Buitinck</a>)</li>
+<li>For text vectorization: much faster CountVectorizer and
+TfidVectorizer with less memory consumption (Jochen Wersdorfer and
+Roman Sinayev)</li>
+<li>Out-of-core learning for discrete naive Bayes classifiers by <a class="reference external" href="http://twitter.com/ogrisel">Olivier
+Grisel</a>. Estimators that implement a
+<em>partial_fit</em> method can be used to fit the model with an
+out-of-core strategy, as illustrated by the <a class="reference external" href="http://scikit-learn.org/dev/auto_examples/applications/plot_out_of_core_classification.html">out-of-core
+classification
+example</a>.
+These settings are well suited to very big data.</li>
+<li>FastICA: less memory consumptions and slightly faster code (<a class="reference external" href="https://github.com/dengemann">Denis
+Engemann</a> and <a class="reference external" href="http://alexandre.gramfort.net">Alexandre
+Gramfort</a>)</li>
+<li>Faster IsotonicRegression (<a class="reference external" href="https://github.com/nellev">Nelle
+Varoquaux</a>)</li>
+<li>OrthogonalMatchingPursuitCV by <a class="reference external" href="http://alexandre.gramfort.net">Alexandre
+Gramfort</a> and <a class="reference external" href="http://vene.ro">Vlad
+Niculae</a>: while strictly-speaking not a speedup of
+a existing estimator, this new estimator means that OMP parameters
+can be set much faster.</li>
+</ul>
+</div>
+<div class="section" id="we-are-faster-lies-damn-lies-and-benchmarks">
+<h2>We are faster: lies, damn lies and benchmarks</h2>
+<blockquote class="epigraph">
+<p>“There are three kinds of lies: lies, damned lies and statistics.” —</p>
+<p><em>Mark Twain’s Own Autobiography: The Chapters from the North
+American Review</em></p>
+</blockquote>
+<p>I claim we have gotten faster at certain things. Other libraries, such
+as <a class="reference external" href="http://docs.wise.io/">WiseRf</a>, have performance claims compared
+to us. It turns out that benching statistical learning code is very
+hard, because speed depends a lot on the properties of the data.</p>
+<div class="section" id="fast-neighbor-searches-good-kdtrees-beat-balltrees">
+<h3>Fast neighbor searches: good KDTrees beat BallTrees</h3>
+<p>A good example of interplay between properties of the data and
+computational speed is the nearest neighbor search. In general, finding
+the nearest neighbor to a point out of <em>n</em> other points will cost you
+<em>n</em> operations, as you have to compute the distance to each of these
+points. However, building a tree-like data structure ahead of time can
+make this query cost only <em>log n</em>. If these points are in 1D, <em>ie</em>
+simple scalars, this would be achieve by sorting them. In higher
+dimensions that can be achieved by building a <em>KDTree</em>, made of planes
+dividing the space in half-spaces, or a <em>BallTree</em>, made of nested
+balls.</p>
+<div class="figure align-center">
+<img alt="" src="http://www.astroml.org/_images/fig_kdtree_example_1.png" style="width: 60%;" />
+<p class="caption"><strong>KD Tree</strong> Image from <a class="reference external" href="http://www.astroml.org/index.html">AstroML’s documentation</a></p>
+</div>
+<div class="figure align-center">
+<img alt="" src="http://www.astroml.org/_images/fig_balltree_example_1.png" style="width: 60%;" />
+<p class="caption"><strong>Ball tree</strong> Image from <a class="reference external" href="http://www.astroml.org/index.html">AstroML’s documentation</a></p>
+</div>
+<p>Popular wisdom in machine learning is that in high dimensions, BallTrees
+scale better than KDTrees. This is explained by the fact that as the
+dimensionality grows, the number of planes required to break up the
+space grows too. On the contrary, if the data has structure, BallTrees
+can more efficiently cover this structure. I have benched scikit-learn’s
+KDTree and BallTree, as well as scipy’s KDTree, which employs a simpler
+tree-building strategy, on a variety of datasets, both real-life and
+artificial. Below if a summary plot giving relative performance of
+neighbor search</p>
+<div class="figure align-center">
+<img alt="" src="../programming/attachments/sklearn_0.14.X_speed/nn_trees.png" style="width: 60%;" />
+<p class="caption"><em>n</em> is the number of data points, and <em>p</em> the dimensionality.</p>
+</div>
+<p>We can see that no approach win on all counts. That said, it came to a
+surprise to me to see that even in high dimension, <strong>scikit-learn’s
+KDTree outperformed the BallTrees</strong>. This is explained because these
+datasets do not display a heavily-structured low ambient dimension. On
+highly-structured synthetic data, the benefit of BallTree can clearly
+stand out, as shown by Jake
+<a class="reference external" href="http://jakevdp.github.io/blog/2013/04/29/benchmarking-nearest-neighbor-searches-in-python">here</a>.
+However, on most dataset people encounter, it seems that this is not the
+case. Note also that <strong>scikit-learn’s KDTree tend to scale better in
+high dimension than scipy’s</strong>. This is due to the more elaborate choice
+of cutting planes. Note that it also has a cost, and may backfire, as on
+some datasets scikit-learn is slower than scipy.</p>
+<p>Overall, the new KDTree in scikit-learn seem to be giving an excellent
+compromise. Congratulations
+<a class="reference external" href="http://www.astro.washington.edu/users/vanderplas/">Jake</a>!</p>
+</div>
+<div class="section" id="dbscan-is-faster-with-trees">
+<h3>DBSCAN is faster with trees</h3>
+<p><a class="reference external" href="http://scikit-learn.org/stable/modules/clustering.html#dbscan">DBSCAN</a>
+is a clustering algorithm that relies heavily on the local neighborhood
+structure. The implementation in scikit-learn 0.13 computed the complete
+<em>n</em> by <em>n</em> matrix of distance between observations, which means that if
+you had a lot of data, you would blow your memory. In the 0.14 release,
+DBSCAN uses the BallTree, and as a result scales to much larger datasets
+and brings speed benefits. Here is a comparison between 0.13 and 0.14
+implementations (I couldn’t put data as large as I wanted because the
+0.13 code would blow):</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="23%" />
+<col width="24%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Dataset</th>
+<th class="head">time with 0.13</th>
+<th class="head">time with 0.14</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>“lfw”: 13233 samples, 5 features</td>
+<td>6.57 seconds</td>
+<td>3.59 seconds</td>
+</tr>
+<tr><td>“make_blobs”: 30000, with 10 features</td>
+<td>33.50 seconds</td>
+<td>12.87 seconds</td>
+</tr>
+</tbody>
+</table>
+<p>Importantly, the scaling is different: while the 0.13 code scales as <em>n
+^ 2</em>, the 0.14 code scales as <em>n log n</em>. This means that the benefit is
+bigger for large dataset.</p>
+</div>
+<div class="section" id="scikit-learn-0-14-s-random-forests-are-fast">
+<h3>Scikit-learn 0.14’s random forests are fast</h3>
+<p><a class="reference external" href="http://www.montefiore.ulg.ac.be/~glouppe/">Gilles Louppe</a> has made
+the random forests significantly faster in the 0.14 release. Let us
+bench them in comparison with WiseIO’s
+<a class="reference external" href="http://docs.wise.io/">WiseRf</a>, a proprietary package that only does
+random forest and for which the main selling point is that it is
+significantly than scikit-learn. However, let us also bench
+<a class="reference external" href="http://scikit-learn.org/stable/modules/ensemble.html#extremely-randomized-trees">ExtraTrees</a>,
+a tree-based model that is very similar to random forests, but that in
+our experience can be implemented a bit faster, and tends to work
+better.</p>
+<p><strong>On the digits dataset (1797 samples, 641 features):</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="19%" />
+<col width="17%" />
+<col width="31%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>Forest implementation</td>
+<td>train time</td>
+<td>test time</td>
+<td>prediction accuracy</td>
+</tr>
+<tr><td>Sklearn ExtraTrees</td>
+<td>2.641s</td>
+<td>0.082s</td>
+<td>0.986</td>
+</tr>
+<tr><td>Sklearn RandomForest</td>
+<td>5.074s</td>
+<td>0.088s</td>
+<td>0.981</td>
+</tr>
+<tr><td>WiseRF</td>
+<td>5.665s</td>
+<td>0.108s</td>
+<td>0.979</td>
+</tr>
+</tbody>
+</table>
+<p>So we see that on a mid-sized dataset, scikit-learn is faster than
+WiseRF, and ExtraTrees is twice as fast as RandomForest, for better
+results.</p>
+<p><strong>On the MNIST dataset (70000 samples, 784 features):</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="19%" />
+<col width="17%" />
+<col width="31%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>Forest implementation</td>
+<td>train time</td>
+<td>test time</td>
+<td>prediction accuracy</td>
+</tr>
+<tr><td>Sklearn ExtraTrees</td>
+<td>1378.141s</td>
+<td>4.768s</td>
+<td>0.976</td>
+</tr>
+<tr><td>Sklearn RandomForest</td>
+<td>1639.866s</td>
+<td>4.132s</td>
+<td>0.972</td>
+</tr>
+<tr><td>WiseRF</td>
+<td>1102.465s</td>
+<td>14.542s</td>
+<td>0.972</td>
+</tr>
+</tbody>
+</table>
+<p>On a big dataset, WiseRF takes the lead, but not by a large factor.</p>
+<p><strong>Using 2 CPUs (n_jobs=2) on the digits dataset:</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="19%" />
+<col width="17%" />
+<col width="31%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>Forest implementation</td>
+<td>train time</td>
+<td>test time</td>
+<td>prediction accuracy</td>
+</tr>
+<tr><td>Sklearn ExtraTrees</td>
+<td>4.874s</td>
+<td>1.478s</td>
+<td>0.986</td>
+</tr>
+<tr><td>Sklearn RandomForest</td>
+<td>5.716s</td>
+<td>1.349s</td>
+<td>0.978</td>
+</tr>
+<tr><td>WiseRF</td>
+<td>3.264s</td>
+<td>0.104s</td>
+<td>0.979</td>
+</tr>
+</tbody>
+</table>
+<p>Both scikit-learn and WiseRF can use several CPUs. However, the Python
+parallel execution model via multiple processes has an overhead in term
+of computing time and of memory usage. The internals of WiseRF are coded
+in C++, and thus it is not limited by this overhead. Also, because of
+the memory duplication with multiples processes in scikit-learn, I could
+not run it on MNIST with 2 jobs. Next release will address these issues,
+partly by using memmapped arrays to share memory between processes.</p>
+</div>
+</div>
+<div class="section" id="we-make-good-use-of-funding-the-paris-sprint">
+<h2>We make good use of funding: the Paris sprint</h2>
+<p>A couple of weeks ago, we had a coding sprint in Paris. We were able to
+bring in a lot of core developers from all over Europe thanks to our
+sponsors: <a class="reference external" href="http://www.frs-fnrs.be/%20">FNRS</a>,
+<a class="reference external" href="http://www.afpy.org">AFPy</a>, <a class="reference external" href="http://www.telecom-paristech.fr/">Telecom
+Paristech</a>, and <a class="reference external" href="http://www.svi.cnrs-bellevue.fr">Saint-Gobain
+Recherche</a>. The total budget,
+including accommodation and travel, was a couple thousand euros, thanks
+to <a class="reference external" href="http://www.telecom-paristech.fr/">Telecom Paristech</a> and
+<a class="reference external" href="http://www.tinyclues.com">tinyclues</a> helping us with accommodation
+and hosting the sprint.</p>
+<p>The productivity of such a sprint is huge, both because we get together
+and work efficiently, but also because we get back home and keep working
+(I have been sleep deprived because of late-night hacking ever since the
+sprint). As an illustration, here is the diagram of commits as can be
+seen on Github. The huge spike correspond to the second international
+sprint: Paris 2013.</p>
+<div class="figure align-center">
+<img alt="" src="../programming/attachments/sklearn_0.14.X_speed/commit_graph.png" style="width: 100%;" />
+</div>
+<p><strong>We now have a “donate” button</strong> on the
+<a class="reference external" href="http://scikit-learn.org/stable">website</a>. I can assure you that
+your donations are well spent and turned into code.</p>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = "gaelvaroquaux"; // required: replace example with your forum shortname
 
@@ -8,11 +467,25 @@
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><footer class=footer><p>&copy; Gaël Varoquaux &ndash; Built with <a href=https://github.com/PurePelicanTheme/pure>Pure Theme</a> for <a href=http://blog.getpelican.com/ >Pelican</a></p></footer></div></div></div><script src=//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js></script><script>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
-    </script><script>
+    </script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -35,7 +508,8 @@
         $('body').on('click', 'a[href="#"]', function(event) {
             event.preventDefault();
         });
-    </script><script language=JavaScript type=text/javascript>
+    </script>
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -153,12 +627,18 @@
 	}
     //66885349@N03
     }
-    </script><script type=text/javascript src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&format=json&amp;" defer=defer></script><script src=https://apis.google.com/js/platform.js async defer></script><script type=text/javascript>
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script><script type=text/javascript>
+    </script>
+    <script type="text/javascript">
         try {
             var pageTracker = _gat._getTracker("UA-55589822-1");
             pageTracker._trackPageview();
             } catch(err) {}
-    </script></body></html>
+    </script>
+</body>
+</html>
