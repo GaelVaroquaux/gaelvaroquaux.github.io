@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / brain science">
+
+        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Getting a big scientific prize for open-source software -- Gaël Varoquaux: computer / data / brain science</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="http://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="http://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Sun 01 December 2019</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Getting a big scientific prize for open-source software</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="http://gael-varoquaux.info/tag/scikit-learn.html">scikit-learn</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/science.html">science</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/scientific-computing.html">scientific computing</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/open-source.html">open source</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/software.html">software</a>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">An important acknowledgement for a different view of doing science:
+open, collaborative, and more than a proof of concept.</p>
+</div>
+<img alt="" class="align-right" src="attachments/sklearn_prize_academie/prize.jpg" style="width: 350px;" />
+<p>A few days ago, Loïc Estève, Alexandre Gramfort, Olivier Grisel, Bertrand
+Thirion, and myself received the <a class="reference external" href="https://www.academie-sciences.fr/fr/Laureats/prix-inria-academie-des-sciences-2019-vincent-hayward-equipe-scikit-learn-et-maria-naya-plasencia.html">“Académie des Sciences Inria prize for transfer”</a>,
+for our contributions to the scikit-learn project. To put things simply,
+it’s quite a big deal to me, because I feel that it illustrates a change
+of culture in academia.</p>
+<div class="align-right docutils container">
+Recognizing an open view of scientific contributions</div>
+<p>It is a great honor, because the selection was made by the members of the
+Académie des Sciences, very accomplished scientists with impressive
+contributions to science. The “Académie” is the hallmark of fundamental
+academic science in France. To me, this prize is also symbolic because it
+recognizes an open view of academic research and transfer, a view that
+sometimes felt as not playing according to the incentives. We started
+scikit-learn as a crazy endeavor, a bit of a <em>hippy</em> science thing.
+People didn’t really take us seriously. We were working on software, and
+not publications. We were doing open source, while industrial transfer is
+made by creating startups or filing patents. We were doing Python, while
+academic machine learning was then done in Matlab, and industrial
+transfer in C++. We were not pursuing the latest publications, while
+these are thought to be research’s best assets. We were interested in
+reaching out to non experts, while partners considered as
+interesting have qualified staff.</p>
+<div class="align-right docutils container">
+Quality and openness, at the cost of quantity and control</div>
+<p>No. We did it different. We reached out to an open community. We did
+BSD-licensed code. We worked to achieve quality at the cost of quantity. We
+cared about installation issues, on-boarding biologists or medical
+doctors, playing well with the wider scientific Python ecosystem.
+We gave decision power to people outside of Inria, sometimes whom we had
+never met in real life. We made sure that Inria was never the sole actor,
+the sole stake-holder. We never pushed our own scientific publications in
+the project. We limited complexity, trading off performance for ease of
+use, ease of installation, ease of understanding.</p>
+<div class="figure align-right">
+<object data="attachments/sklearn_prize_academie/sklearn_website_stats_white.svg" style="width: 25%;" type="image/svg+xml">
+</object>
+</div>
+<p>As a consequence, we slowly but surely assembled a large community. In
+such a community, the
+sum is greater than the parts. The breadth of interlocutors and cultures
+slows movement down, but creates better results, because these results are
+understandable to many and usable on a diversity of problems. The
+consequence of this quality is that
+we were progressively used in more and more places: industrial
+data-science labs, startups, research in applied or fundamental
+statistical learning, teaching. Ironically, the institutional world did
+not notice. It got hard, next to impossible, to get funding <a class="footnote-reference" href="#id3" id="id1">[1]</a>. A few years
+ago, I was told by a central governmental agency that we, open-source
+zealots, were destroying an incredible amount of value by giving away
+for free the production of research <a class="footnote-reference" href="#id4" id="id2">[2]</a>. The French report on AI, lead by a
+Fields medal, cited tensorflow and theano –a discontinued software–, but
+ignored scikit-learn; maybe because we were doing “boring science”?</p>
+<p>But, scikit-learn’s amazing community continued plowing forward. We grew
+so much that we were heard from the top. The prize from the Académie shows
+that we managed to capture the attention of senior scientists with
+open-source software, because this software is really having a worldwide
+impact in many disciplines.</p>
+<div class="figure align-center">
+<img alt="" src="attachments/sklearn_prize_academie/academie_presentation.jpeg" style="width: 70%;" />
+<p class="caption">Presenting scikit-learn at the Academie Des Sciences</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="align-right docutils container">
+An accomplishment of the community</div>
+<p>There were only five of us on stage, as the prize is for Inria permanent
+staff. But this is of course not a fair account of how the project has
+grown and what made it successful.</p>
+<p>In 2011, at <a class="reference external" href="scikit-learn-nips-2011-sprint-international-thanks-to-our-sponsors.html">the first international sprint</a>,
+I felt something was happening: Incredible people whom I had never met
+before were sitting next to me, working very hard on solving problems
+with me. This experience of being united to solve difficult problems is
+something amazing. And I deeply thank every single person who has worked
+on this project, the 1500 contributors, many of those that I have never
+met, in particular <a class="reference external" href="https://scikit-learn.org/stable/about.html#authors">the core team</a> who is committed
+to making sure that every detail of scikit-learn is solid and serves the
+users. The team that has assembled over the years is of incredible
+quality.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="align-right docutils container">
+The promises of data science need open source</div>
+<p>The world does not understand how much the promises of data science,
+for today and tomorrow, need open source projects, easy to install and to use
+by everybody. These projects are like <a class="reference external" href="https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/">roads and bridges</a>:
+they are needed for growth thought no one wants to pay for maintaining
+them. I hope that I can use the podium that the prize will give us to
+stress the importance of the battle that we are fighting.</p>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Getting funding from the government implied too much politics and
+risks. For these reasons, I turned to private donors, in a
+<a class="reference external" href="https://scikit-learn.fondation-inria.fr/">foundation</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Inria <em>always</em> supported us, and often paid developers in my team
+out of its own pockets.</td></tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p>PS: As an another illustration of the culture change toward openness in
+science, it was announced during the ceremony that the <a class="reference external" href="https://en.wikipedia.org/wiki/Comptes_rendus_de_l%27Acad%C3%A9mie_des_Sciences">“Compte Rendu de
+l’Académie des Sciences”</a> is becoming open access, without publication
+charges!</p>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script  language="JavaScript" type="text/javascript">
+    /* From http://evirtus.net/pub/eflickrstream.asp */
+    /* Global variables */
+    var bolOnLoadRun=false;
+    var bolFlickrRun=false;
+    var objFlickrOutput=null;
+    
+    /* OnLoad events */
+    window.onload = function() {
+    bolOnLoadRun=true;
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	eFlickrStream();
+    };
+    }
+    
+    /*
+    eFlickrStream - Lovely, lovely photos! :-)
+    - 02.08.2007 @ 14:33: Initial version
+    */
+    function eFlickrStream() {
+    if (!bolFlickrRun ) { return false; } else { bolFlickrRun=false; }
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var strTarget='flickrstream';// Target container for the flickr badge (must allready exist in the document)
+    /*   *** Options/end ***     */
+    
+    if (!document.getElementById(strTarget)){return false;}// Exsist if target doesn't exsist
+    
+    var objTarget=document.getElementById(strTarget);
+    objTarget.appendChild(objFlickrOutput);// Append output
+    
+    objFlickrOutput=null;// We're done, delete stored variable value
+    objFlickr=null;
+    }
+    
+    /*
+    jsonFlickrFeed - Triggered when the Flickr json "feed" is loaded, generates Flickr photos output list item (Deefer "trigger method" from Patrick Quinn-Graham's DOM Flickr Badge)
+    - 02.08.2007 @ 14:33: Initial version
+    - 23.11.2007 @ 08:24: Updated to use eSetAttr(), enables the flickr link in IE
+    - 29.11.2007 @ 05:52: Some changes for easier configuration (of both options and text-strings)
+    */
+    function jsonFlickrFeed(objFlickr) {
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var intMaxImages=10;// Maximum number of images to show (1-20)
+    var bolThumbSquare=true;// Load the square thumbnails
+    var intThumbWidth=75;// Thumbnail width (omitted if set to "0")
+    var strLightbox='flickrstream';// Lightbox "group name" (define to mark the thumbnails for lightbox usage, adds rel="lightbox[value]" to image links)
+    var strImgAlt='[title]';// Alternative title for images ("[title]" will be replaced by image title)
+    var strImgLinkTitle='View a larger version of \"[title]\"';// Link title for the image link
+    /*   *** Options/end ***     */
+    
+    var objElm,objTxt,objImg,objLnk,objTmp,strTmp;
+    var intPhotos=objFlickr.items.length;
+    var objOut=document.createElement('ul');
+    objOut.setAttribute('class','flickrlist');
+    
+    for (var iCntA=0; ( (iCntA<intPhotos) && (iCntA<intMaxImages)); iCntA++) {
+    
+	objElm=document.createElement('li');// Create item container element (<li>)
+    
+	objLnk=document.createElement('a');// Create link (to the large(r) photo)
+	objLnk.setAttribute('href',objFlickr.items[iCntA].link);
+	objLnk.setAttribute('title',strImgLinkTitle.replace('[title]',objFlickr.items[iCntA].title));
+	if (strLightbox!=''){objLnk.setAttribute('rel','lightbox['+strLightbox+']');}// Add relation value for lightbox usage
+    
+	strTmp=objFlickr.items[iCntA].media.m;// Retreive thumbnail URI
+	if (bolThumbSquare){strTmp=strTmp.replace('_m.jpg','_s.jpg');}// Swap default thumbnail for square...
+    
+	objImg=document.createElement('img');// Main thumbnail
+	eSetAttr(objImg,'class','photo');
+	objImg.setAttribute('src',strTmp);
+	objImg.setAttribute('alt',strImgAlt.replace('[title]',objFlickr.items[iCntA].title));
+	if (intThumbWidth!=0){objImg.setAttribute('width',intThumbWidth);}
+    
+	objLnk.appendChild(objImg);// Append thumbnail to link
+	objElm.appendChild(objLnk);// Append link to container (li)
+
+	objOut.appendChild(objElm);// Append container to output object
+	}
+    
+    objFlickrOutput=objOut;// Store output for later use...
+    
+    if (bolOnLoadRun) {
+	eFlickrStream();
+	}
+    else {
+	bolFlickrRun=true;
+	}
+    }
+    
+    /*
+    eSetAttr/eGetAttr - An attempt to tame IE's weird DOM model
+    - 22.11.2007 @ 12:50 - Initial version
+    */
+    function eSetAttr(objTarget,strAttr,strValue) {
+    if (typeof window.attachEvent!='undefined' && typeof window.opera=='undefined') {
+    //    //Set attributes for IE
+	switch (strAttr) {
+	    case('class'):
+		objTarget.setAttribute('className',strValue);
+		break;
+	    case('style'):
+		objTarget.style.cssText=strValue;
+		break;
+	    default:
+		objTarget.setAttribute(strAttr,strValue);
+		break;
+	    }
+	}
+    else {
+    //    //Set attributes for /Other browsers/
+	objTarget.setAttribute(strAttr,strValue);
+	}
+    //66885349@N03
+    }
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+</body>
+</html>

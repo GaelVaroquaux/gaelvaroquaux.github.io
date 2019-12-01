@@ -1,5 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - programming</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2018-09-17T00:00:00+02:00</updated><entry><title>A foundation for scikit-learn at Inria</title><link href="http://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html" rel="alternate"></link><published>2018-09-17T00:00:00+02:00</published><updated>2018-09-17T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2018-09-17:/programming/a-foundation-for-scikit-learn-at-inria.html</id><summary type="html">&lt;p&gt;We have just announced that a foundation will be supporting scikit-learn
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - programming</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2019-12-01T06:00:00+01:00</updated><entry><title>Getting a big scientific prize for open-source software</title><link href="http://gael-varoquaux.info/programming/getting-a-big-scientific-prize-for-open-source-software.html" rel="alternate"></link><published>2019-12-01T06:00:00+01:00</published><updated>2019-12-01T06:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-12-01:/programming/getting-a-big-scientific-prize-for-open-source-software.html</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;An important acknowledgement for a different view of doing science:
+open, collaborative, and more than a proof of concept.&lt;/p&gt;
+&lt;/div&gt;
+&lt;img alt="" class="align-right" src="attachments/sklearn_prize_academie/prize.jpg" style="width: 350px;" /&gt;
+&lt;p&gt;A few days ago, Loïc Estève, Alexandre Gramfort, Olivier Grisel, Bertrand
+Thirion, and myself received the &lt;a class="reference external" href="https://www.academie-sciences.fr/fr/Laureats/prix-inria-academie-des-sciences-2019-vincent-hayward-equipe-scikit-learn-et-maria-naya-plasencia.html"&gt;“Académie des Sciences Inria prize for transfer”&lt;/a&gt;,
+for our contributions to the scikit-learn project …&lt;/p&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;An important acknowledgement for a different view of doing science:
+open, collaborative, and more than a proof of concept.&lt;/p&gt;
+&lt;/div&gt;
+&lt;img alt="" class="align-right" src="attachments/sklearn_prize_academie/prize.jpg" style="width: 350px;" /&gt;
+&lt;p&gt;A few days ago, Loïc Estève, Alexandre Gramfort, Olivier Grisel, Bertrand
+Thirion, and myself received the &lt;a class="reference external" href="https://www.academie-sciences.fr/fr/Laureats/prix-inria-academie-des-sciences-2019-vincent-hayward-equipe-scikit-learn-et-maria-naya-plasencia.html"&gt;“Académie des Sciences Inria prize for transfer”&lt;/a&gt;,
+for our contributions to the scikit-learn project. To put things simply,
+it’s quite a big deal to me, because I feel that it illustrates a change
+of culture in academia.&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+Recognizing an open view of scientific contributions&lt;/div&gt;
+&lt;p&gt;It is a great honor, because the selection was made by the members of the
+Académie des Sciences, very accomplished scientists with impressive
+contributions to science. The “Académie” is the hallmark of fundamental
+academic science in France. To me, this prize is also symbolic because it
+recognizes an open view of academic research and transfer, a view that
+sometimes felt as not playing according to the incentives. We started
+scikit-learn as a crazy endeavor, a bit of a &lt;em&gt;hippy&lt;/em&gt; science thing.
+People didn’t really take us seriously. We were working on software, and
+not publications. We were doing open source, while industrial transfer is
+made by creating startups or filing patents. We were doing Python, while
+academic machine learning was then done in Matlab, and industrial
+transfer in C++. We were not pursuing the latest publications, while
+these are thought to be research’s best assets. We were interested in
+reaching out to non experts, while partners considered as
+interesting have qualified staff.&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+Quality and openness, at the cost of quantity and control&lt;/div&gt;
+&lt;p&gt;No. We did it different. We reached out to an open community. We did
+BSD-licensed code. We worked to achieve quality at the cost of quantity. We
+cared about installation issues, on-boarding biologists or medical
+doctors, playing well with the wider scientific Python ecosystem.
+We gave decision power to people outside of Inria, sometimes whom we had
+never met in real life. We made sure that Inria was never the sole actor,
+the sole stake-holder. We never pushed our own scientific publications in
+the project. We limited complexity, trading off performance for ease of
+use, ease of installation, ease of understanding.&lt;/p&gt;
+&lt;div class="figure align-right"&gt;
+&lt;object data="attachments/sklearn_prize_academie/sklearn_website_stats_white.svg" style="width: 25%;" type="image/svg+xml"&gt;
+&lt;/object&gt;
+&lt;/div&gt;
+&lt;p&gt;As a consequence, we slowly but surely assembled a large community. In
+such a community, the
+sum is greater than the parts. The breadth of interlocutors and cultures
+slows movement down, but creates better results, because these results are
+understandable to many and usable on a diversity of problems. The
+consequence of this quality is that
+we were progressively used in more and more places: industrial
+data-science labs, startups, research in applied or fundamental
+statistical learning, teaching. Ironically, the institutional world did
+not notice. It got hard, next to impossible, to get funding &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt;. A few years
+ago, I was told by a central governmental agency that we, open-source
+zealots, were destroying an incredible amount of value by giving away
+for free the production of research &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt;. The French report on AI, lead by a
+Fields medal, cited tensorflow and theano –a discontinued software–, but
+ignored scikit-learn; maybe because we were doing “boring science”?&lt;/p&gt;
+&lt;p&gt;But, scikit-learn’s amazing community continued plowing forward. We grew
+so much that we were heard from the top. The prize from the Académie shows
+that we managed to capture the attention of senior scientists with
+open-source software, because this software is really having a worldwide
+impact in many disciplines.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="attachments/sklearn_prize_academie/academie_presentation.jpeg" style="width: 70%;" /&gt;
+&lt;p class="caption"&gt;Presenting scikit-learn at the Academie Des Sciences&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="align-right docutils container"&gt;
+An accomplishment of the community&lt;/div&gt;
+&lt;p&gt;There were only five of us on stage, as the prize is for Inria permanent
+staff. But this is of course not a fair account of how the project has
+grown and what made it successful.&lt;/p&gt;
+&lt;p&gt;In 2011, at &lt;a class="reference external" href="scikit-learn-nips-2011-sprint-international-thanks-to-our-sponsors.html"&gt;the first international sprint&lt;/a&gt;,
+I felt something was happening: Incredible people whom I had never met
+before were sitting next to me, working very hard on solving problems
+with me. This experience of being united to solve difficult problems is
+something amazing. And I deeply thank every single person who has worked
+on this project, the 1500 contributors, many of those that I have never
+met, in particular &lt;a class="reference external" href="https://scikit-learn.org/stable/about.html#authors"&gt;the core team&lt;/a&gt; who is committed
+to making sure that every detail of scikit-learn is solid and serves the
+users. The team that has assembled over the years is of incredible
+quality.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="align-right docutils container"&gt;
+The promises of data science need open source&lt;/div&gt;
+&lt;p&gt;The world does not understand how much the promises of data science,
+for today and tomorrow, need open source projects, easy to install and to use
+by everybody. These projects are like &lt;a class="reference external" href="https://www.fordfoundation.org/work/learning/research-reports/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/"&gt;roads and bridges&lt;/a&gt;:
+they are needed for growth thought no one wants to pay for maintaining
+them. I hope that I can use the podium that the prize will give us to
+stress the importance of the battle that we are fighting.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Getting funding from the government implied too much politics and
+risks. For these reasons, I turned to private donors, in a
+&lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/"&gt;foundation&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inria &lt;em&gt;always&lt;/em&gt; supported us, and often paid developers in my team
+out of its own pockets.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;PS: As an another illustration of the culture change toward openness in
+science, it was announced during the ceremony that the &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Comptes_rendus_de_l%27Acad%C3%A9mie_des_Sciences"&gt;“Compte Rendu de
+l’Académie des Sciences”&lt;/a&gt; is becoming open access, without publication
+charges!&lt;/p&gt;
+</content><category term="scikit-learn"></category><category term="science"></category><category term="scientific computing"></category><category term="open source"></category><category term="software"></category></entry><entry><title>A foundation for scikit-learn at Inria</title><link href="http://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html" rel="alternate"></link><published>2018-09-17T00:00:00+02:00</published><updated>2018-09-17T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2018-09-17:/programming/a-foundation-for-scikit-learn-at-inria.html</id><summary type="html">&lt;p&gt;We have just announced that a foundation will be supporting scikit-learn
 at Inria &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;: &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;scikit-learn.fondation-inria.fr&lt;/a&gt;&lt;/p&gt;
 &lt;div class="align-right docutils container"&gt;
 Growth and sustainability&lt;/div&gt;
