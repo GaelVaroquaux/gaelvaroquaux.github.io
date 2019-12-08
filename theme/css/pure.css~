@@ -1326,6 +1326,21 @@ div.box {
     white-space: normal;
 }
 
+/* -- for maths -- */
+
+span.limits {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+span.limits span.limits {
+    display: block;
+    margin: -4px 0px;
+}
+
+display: inline-block;
+
+vertical-align: middle;
 /*-- Include the pygment.css for browser friendliness -------------------*/
 
 .highlight .hll { background-color: #515151 }
