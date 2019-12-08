@@ -123,12 +123,16 @@ images are exactly the same, but also that they maybe be “close”.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="two-sample-testing-procedures"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="#id3"&gt;Two-sample testing procedures&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Now that we have built metrics, we can derive two sample test statistics. A straightforward way of doing it would involve large sums on all the observations, which would be costly. Hence, we resort to a good approximation by sampling a set of {Tj} locations from the distribution Γ:&lt;/p&gt;
+&lt;p&gt;Now that we have built metrics, we can derive two-sample test statistics.
+A straightforward way of doing it would involve large sums on all the
+observations, which would be costly. Hence, we resort to a good
+approximation by sampling a set of {Tj} locations from the distribution
+Γ:&lt;/p&gt;
 &lt;div class="formula"&gt;
 &lt;i&gt;d̂&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sub class="script"&gt;ℓ&lt;sub&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sub&gt;, &lt;i&gt;μ&lt;/i&gt;, &lt;i&gt;J&lt;/i&gt;&lt;/sub&gt;&lt;sup class="script"&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;&lt;/span&gt;[&lt;i&gt;X&lt;/i&gt;, &lt;i&gt;Y&lt;/i&gt;] :  = &lt;i&gt;n&lt;/i&gt;&lt;sup&gt;&lt;i&gt;p&lt;/i&gt; ⁄ 2&lt;/sup&gt;&lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;⎲&lt;/span&gt;&lt;span class="limit"&gt;⎳&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;j&lt;/i&gt; = 1..&lt;i&gt;J&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;|&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;X&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;T&lt;/i&gt;&lt;sub&gt;&lt;i&gt;j&lt;/i&gt;&lt;/sub&gt;) − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;T&lt;/i&gt;&lt;sub&gt;&lt;i&gt;j&lt;/i&gt;&lt;/sub&gt;)|&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;
 &lt;/div&gt;
 &lt;p&gt;We show that this approximation maintains (on expectancy) the appealing
-metric properties, which generalizes the results that were established by
+metric properties, generalizing the results that were established by
 &lt;a class="reference external" href="http://papers.nips.cc/paper/5685-fast-two-sample-testing-with-analytic-representations-of-probability-measures"&gt;Chwialkowski et al 2015&lt;/a&gt;
 for the special case of the L2 metric.&lt;/p&gt;
 &lt;p&gt;We further develop the testing procedures by showing that other tricks

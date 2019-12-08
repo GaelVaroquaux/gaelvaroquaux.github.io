@@ -171,12 +171,16 @@ images are exactly the same, but also that they maybe be “close”.</p>
 </div>
 <div class="section" id="two-sample-testing-procedures">
 <h2><a class="toc-backref" href="#id3">Two-sample testing procedures</a></h2>
-<p>Now that we have built metrics, we can derive two sample test statistics. A straightforward way of doing it would involve large sums on all the observations, which would be costly. Hence, we resort to a good approximation by sampling a set of {Tj} locations from the distribution Γ:</p>
+<p>Now that we have built metrics, we can derive two-sample test statistics.
+A straightforward way of doing it would involve large sums on all the
+observations, which would be costly. Hence, we resort to a good
+approximation by sampling a set of {Tj} locations from the distribution
+Γ:</p>
 <div class="formula">
 <i>d̂</i><span class="scripts"><sub class="script">ℓ<sub><i>p</i></sub>, <i>μ</i>, <i>J</i></sub><sup class="script"><i>p</i></sup></span>[<i>X</i>, <i>Y</i>] :  = <i>n</i><sup><i>p</i> ⁄ 2</sup><span class="limits"><sup class="limit"> </sup><span class="limit">⎲</span><span class="limit">⎳</span><sub class="limit"><i>j</i> = 1..<i>J</i></sub></span>|<i>μ</i><sub><i>X</i></sub>(<i>T</i><sub><i>j</i></sub>) − <i>μ</i><sub><i>Y</i></sub>(<i>T</i><sub><i>j</i></sub>)|<sup><i>p</i></sup>
 </div>
 <p>We show that this approximation maintains (on expectancy) the appealing
-metric properties, which generalizes the results that were established by
+metric properties, generalizing the results that were established by
 <a class="reference external" href="http://papers.nips.cc/paper/5685-fast-two-sample-testing-with-analytic-representations-of-probability-measures">Chwialkowski et al 2015</a>
 for the special case of the L2 metric.</p>
 <p>We further develop the testing procedures by showing that other tricks
