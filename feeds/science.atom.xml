@@ -1,5 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2019-01-03T00:00:00+01:00</updated><entry><title>2018: my scientific year in review</title><link href="http://gael-varoquaux.info/science/2018-my-scientific-year-in-review.html" rel="alternate"></link><published>2019-01-03T00:00:00+01:00</published><updated>2019-01-03T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-01-03:/science/2018-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; was once again extremely exciting
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2019-12-10T00:00:00+01:00</updated><entry><title>Comparing distributions: Kernels estimate good representants, l1 distances give good tests</title><link href="http://gael-varoquaux.info/science/comparing-distributions-kernels-estimate-good-representants-l1-distances-give-good-tests.html" rel="alternate"></link><published>2019-12-10T00:00:00+01:00</published><updated>2019-12-10T00:00:00+01:00</updated><author><name>Meyer Scetbon &amp; Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-12-10:/science/comparing-distributions-kernels-estimate-good-representants-l1-distances-give-good-tests.html</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;Given two set of observations, are they drawn from the same
+distribution? Our paper &lt;a class="reference external" href="https://papers.nips.cc/paper/9398-comparing-distributions-ell_1-geometry-improves-kernel-two-sample-testing.html"&gt;Comparing distributions: l1 geometry
+improves kernel two-sample testing&lt;/a&gt;
+at the &lt;strong&gt;NeurIPS 2019 conference&lt;/strong&gt; revisits this classic statistical
+problem known as “two-sample testing”.&lt;/p&gt;
+&lt;p class="last"&gt;This post explains the context and the paper with a bit of hand …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;Given two set of observations, are they drawn from the same
+distribution? Our paper &lt;a class="reference external" href="https://papers.nips.cc/paper/9398-comparing-distributions-ell_1-geometry-improves-kernel-two-sample-testing.html"&gt;Comparing distributions: l1 geometry
+improves kernel two-sample testing&lt;/a&gt;
+at the &lt;strong&gt;NeurIPS 2019 conference&lt;/strong&gt; revisits this classic statistical
+problem known as “two-sample testing”.&lt;/p&gt;
+&lt;p class="last"&gt;This post explains the context and the paper with a bit of hand
+waiving.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="contents topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-context-two-sample-testing" id="id1"&gt;The context: two-sample testing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#controlling-the-weak-convergence-of-probability-measures" id="id2"&gt;Controlling the weak convergence of probability measures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#two-sample-testing-procedures" id="id3"&gt;Two-sample testing procedures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-l1-metric-provides-best-testing-power" id="id4"&gt;The L1 metric provides best testing power&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-context-two-sample-testing"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;The context: two-sample testing&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Given two samples from two unknown populations, the goal of the tests are
+to determine whether the difference between these two populations is
+statistically significant. For instance, we may care to know whether the
+spatial distributions across the US differ between McDonald’s and KFC
+restaurants. This is a difficult question: we have access to data points,
+but not the underlying generative mechanism, that is probably governed by
+marketing strategies.&lt;/p&gt;
+&lt;img alt="" class="align-center" src="attachments/comparing_distributions_l1/map_KFC_McDo_simple.png" style="width: 70%;" /&gt;
+&lt;p&gt;Whether or not data points appear close to each other in the original measurement space (here geographic coordinates) conveys a lot of information. Kernel methods arise naturally to capture this information. They nicely apply to distributions, using representative of distributions in the RKHS: &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_embedding_of_distributions"&gt;Kernel embeddings of distributions&lt;/a&gt;. The mean embedding of a distribution P with a kernel k is written:&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) :  = &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;⌠&lt;/span&gt;&lt;span class="limit"&gt;⌡&lt;/span&gt;&lt;sub class="limit"&gt;ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/span&gt;&lt;i&gt;k&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;, &lt;i&gt;t&lt;/i&gt;)&lt;i&gt;dP&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)
+&lt;/div&gt;
+&lt;p&gt;Intuitively, it is related to Kernel Density Estimates (KDEs) which
+estimate a density in continuous space by smoothing the observed data
+points with a kernel.&lt;/p&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="attachments/comparing_distributions_l1/kde.jpg" /&gt;
+&lt;p class="caption"&gt;Mean embeddings for two distributions of points&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;For two-sample testing, kernel embeddings can provide metrics over the
+space of probability measures. Such a metric is well apprehended via the
+notion of Integral Probability Metric (IPM), which defines it as a
+difference of expectations:&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;span class="text"&gt;IPM&lt;/span&gt;[&lt;i&gt;F&lt;/i&gt;, &lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] :  = sup&lt;sub&gt;&lt;i&gt;f&lt;/i&gt; ∈ &lt;i&gt;F&lt;/i&gt;&lt;/sub&gt;(𝔼&lt;sub&gt;&lt;i&gt;x&lt;/i&gt; ~ &lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;&lt;span class="symbol"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)&lt;span class="symbol"&gt;]&lt;/span&gt; − 𝔼&lt;sub&gt;&lt;i&gt;y&lt;/i&gt; ~ &lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;&lt;span class="symbol"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;y&lt;/i&gt;)&lt;span class="symbol"&gt;]&lt;/span&gt;)
+&lt;/div&gt;
+&lt;p&gt;where F is a class of functions. The specific choice of class of function defines the metric. Given a Kernel, it implicitly defines a space of functions (intuitively related to all the possible KDEs generated by varying data points): a Reproducible Kernel Hilbert Space. When F is the unit ball in such an RKHS, the corresponding metric, the IPM, is known as the Maximum Mean Discrepancy (MMD). It can be shown that, rather than computing the maximum, the MMD is equal to the RKHS distance between the mean embeddings:&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;span class="text"&gt;MMD&lt;/span&gt;[&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] = ∥&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt; − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;∥&lt;sub&gt;&lt;i&gt;H&lt;/i&gt;&lt;sub&gt;&lt;i&gt;k&lt;/i&gt;&lt;/sub&gt;&lt;/sub&gt;
+&lt;/div&gt;
+&lt;p&gt;For good choices of kernels, the MMD has appealing mathematical
+properties to compare distributions. With Kernels said to be
+characteristic, eg Gaussian kernels, the MMD is a metric: MMD[P, Q] = 0
+if and only if P = Q. Using the MMD for two-sample testing –given only
+observations from the distributions, and not P and Q–  requires using an
+empirical estimation of the MMD.&lt;/p&gt;
+&lt;p&gt;Our work addresses the question of which norm is best to use on the difference of mean embeddings, µQ - µP (as well as other representatives, namely the smooth characteristic function, SCF). We consider metrics based on their Lp distances:&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;i&gt;d&lt;/i&gt;&lt;sub&gt;&lt;i&gt;L&lt;/i&gt;&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;, &lt;i&gt;μ&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;) :  = &lt;span class="symbol"&gt;(&lt;/span&gt;&lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;⌠&lt;/span&gt;&lt;span class="limit"&gt;⌡&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;t&lt;/i&gt; ∈ ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/span&gt;|&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;)|&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;d&lt;/i&gt;Γ(&lt;i&gt;t&lt;/i&gt;)&lt;span class="symbol"&gt;)&lt;/span&gt;&lt;sup&gt;1 ⁄ &lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;
+&lt;/div&gt;
+&lt;p&gt;where Γ is a Borel probability measure absolutely continuous.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="controlling-the-weak-convergence-of-probability-measures"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;Controlling the weak convergence of probability measures&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;We show that these metrics have good properties. Specifically, for p ≥ 1, as soon as the kernel is bounded continuous and characteristic, these metrics metrize the weak convergence. What this means is that these metrics tend to zero if and only if P and Q weakly converge.&lt;/p&gt;
+&lt;p&gt;The &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Convergence_of_measures#Weak_convergence_of_measures"&gt;weak convergence of probability measures&lt;/a&gt;
+is a notion of convergence that is based not just on having events with
+probabilities that are converging, but also captures that some events are
+“close”. In other terms, it takes in account the topology of the
+observations. For instance, to go back to the problem of spatial
+distributions of restaurants, it does not only look at whether the
+probabilities of having a Mc Donald’s or a KFC restaurant converge on
+11th Wall Street, but also at whether they are close on 9th Wall Street.&lt;/p&gt;
+&lt;p&gt;A simple example to see why these matters is to consider two Dirac
+distributions: spikes in a single point. If we bring these spikes closer
+and closer, merely looking at the probability of events in the same exact
+position will not detect any convergence until the spikes exactly
+overlap.&lt;/p&gt;
+&lt;p&gt;Using Kernel embeddings of distributions enables to capture the aspects of convergence in the spatial domain because the Kernels used give a spatial smoothness to the representatives:&lt;/p&gt;
+&lt;img alt="" class="align-center" src="attachments/comparing_distributions_l1/converging_diracs.png" style="width: 70%;" /&gt;
+&lt;p&gt;Having a metric on probability distributions that captures the topology
+of the observations is important for many applications, for instance when
+fitting GANs to generate images: the goal is not to only capture when two
+images are exactly the same.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="two-sample-testing-procedures"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id3"&gt;Two-sample testing procedures&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Now that we have built metrics, we can derive two sample test statistics. A straightforward way of doing it would involve large sums on all the observations, which would be costly. Hence, we resort to a good approximation by sampling a set of {Tj} locations from the distribution Γ:&lt;/p&gt;
+&lt;div class="formula"&gt;
+&lt;i&gt;d̂&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sub class="script"&gt;ℓ&lt;sub&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sub&gt;, &lt;i&gt;μ&lt;/i&gt;, &lt;i&gt;J&lt;/i&gt;&lt;/sub&gt;&lt;sup class="script"&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;&lt;/span&gt;[&lt;i&gt;X&lt;/i&gt;, &lt;i&gt;Y&lt;/i&gt;] :  = &lt;i&gt;n&lt;/i&gt;&lt;sup&gt;&lt;i&gt;p&lt;/i&gt; ⁄ 2&lt;/sup&gt;Σ&lt;sub&gt;&lt;i&gt;j&lt;/i&gt; = 1..&lt;i&gt;J&lt;/i&gt;&lt;/sub&gt;|&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;X&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;T&lt;/i&gt;&lt;sub&gt;&lt;i&gt;j&lt;/i&gt;&lt;/sub&gt;) − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;T&lt;/i&gt;&lt;sub&gt;&lt;i&gt;j&lt;/i&gt;&lt;/sub&gt;)|&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;
+&lt;/div&gt;
+&lt;p&gt;We show that this approximation maintains (on expectancy) the appealing
+metric properties, which generalizes the results that were established by
+&lt;a class="reference external" href="http://papers.nips.cc/paper/5685-fast-two-sample-testing-with-analytic-representations-of-probability-measures"&gt;Chwialkowski et al 2015&lt;/a&gt;
+for the special case of the L2 metric.&lt;/p&gt;
+&lt;p&gt;We further develop the testing procedures by showing that other tricks
+known to improve testing with the L2 metric can be adapted to other
+metrics, such as the L1 metric. Fast and performant tests can be obtained
+by optimizing the test locations –using an upper-bound on the test power–
+or by testing in the Fourrier domain, using the Smooth Characteristic
+Function of the kernel. Even in the case of the L1 metric, the null
+distribution of the test statistic can be derived, leading to tests that
+can control errors without permutations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-l1-metric-provides-best-testing-power"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id4"&gt;The L1 metric provides best testing power&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Going back to our question of which norm on the difference of
+distribution representative is best suited to detect, we show that when
+using analytics kernels, such as the Gaussian kernel, the L1 metric
+improves upon the L2 metric, which corresponds to the classic definition
+of the MMD.&lt;/p&gt;
+&lt;p&gt;Indeed, analytic kernels are non-zero almost everywhere. As a result,
+when P is different from Q, the difference between their mean embeddings
+will be dense, as well as the differences between the representatives
+that we use to build our tests (for instance the values at the locations
+that we use to build the tests above). l1 norms capture better dense
+differences than l2 norms –this is the reason why, used as penalties,
+they induce sparsity).&lt;/p&gt;
+&lt;img alt="" class="align-right" src="attachments/comparing_distributions_l1/l1_vs_l2.png" style="width: 150px;" /&gt;
+&lt;p&gt;A simple intuition is that dense vectors tend to lie in the diagonals of
+the measurement basis, as none of their coordinates are zero. On these
+diagonals, the l1 norm is much larger than the l1 norm of vectors with
+some zero, or nearly-zero coordinates.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title first"&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For a very simple summary, the story is that: to perform tests of
+whether two distributions differs, it is useful to compute a “mean
+Kernel embedding” –similar to a Kernel density estimate, but without
+normalization– of each distribution, and consider the l1 norm of the
+difference of these embeddings. They can be computed on a small number
+of locations, either drawn at random or optimized. This approach is
+reminiscent of looking at the total variation between the measures,
+however the fact that it uses Kernels makes it robust to small spatial
+noise in the observations, unlike the total variation for which events
+must perfectly coincide in both set of observations (the total
+variation does not metrize the weak convergence).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="two-sample testing"></category><category term="conferences"></category><category term="statistics"></category></entry><entry><title>2018: my scientific year in review</title><link href="http://gael-varoquaux.info/science/2018-my-scientific-year-in-review.html" rel="alternate"></link><published>2019-01-03T00:00:00+01:00</published><updated>2019-01-03T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-01-03:/science/2018-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; was once again extremely exciting
 thank to awesome collaborators (at &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;Inria&lt;/a&gt;, with &lt;a class="reference external" href="https://project.inria.fr/dirtydata/"&gt;DirtyData&lt;/a&gt;, and our &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/"&gt;local scikit-learn team&lt;/a&gt;).
 Rather than going over everything that we did in 2018, I would like to
 give a few highlights: We published major work using &lt;strong&gt;machine learning to …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; was once again extremely exciting
