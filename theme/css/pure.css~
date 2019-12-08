@@ -710,6 +710,7 @@ a.post-category:hover {
     h1.brand-main {
 	/* Shifts a bit the shadow down */
 	margin-top: -.3em;
+	text-shadow: 0 1px 6px rgba(0, 0, 0, 0.85);
     }
 
 }

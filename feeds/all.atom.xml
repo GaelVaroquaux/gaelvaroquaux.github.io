@@ -38,8 +38,8 @@ restaurants. This is a difficult question: we have access to data points,
 but not the underlying generative mechanism, that is probably governed by
 marketing strategies.&lt;/p&gt;
 &lt;img alt="" class="align-center" src="attachments/comparing_distributions_l1/map_KFC_McDo_simple.png" style="width: 70%;" /&gt;
-&lt;p&gt;There is a lot of information in the proximity between observed data
-points in the original measurement space (here geographic coordinates).
+&lt;p&gt;There is a lot of information in how close observed data
+points lie in the original measurement space (here geographic coordinates).
 Kernel methods arise naturally to capture this information. They can be
 applied to distributions, building representatives of distributions:
 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_embedding_of_distributions"&gt;Kernel embeddings of distributions&lt;/a&gt;. The
@@ -54,7 +54,7 @@ points with a kernel.&lt;/p&gt;
 &lt;img alt="" src="attachments/comparing_distributions_l1/kde.jpg" /&gt;
 &lt;p class="caption"&gt;Kernel mean embeddings for two distributions of points&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;For two-sample testing, kernel embeddings can be used to compute distance
+&lt;p&gt;For two-sample testing, kernel embeddings can be used to compute distances
 between distributions, building metrics over the space of probability
 measures. Metrics between probability measures can be defined via the
 notion of Integral Probability Metric (IPM): as a difference of
