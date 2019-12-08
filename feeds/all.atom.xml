@@ -100,7 +100,9 @@ mean emdeddings (p=2 recovers the classic framework):&lt;/p&gt;
 &lt;p&gt;The &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Convergence_of_measures#Weak_convergence_of_measures"&gt;weak convergence of probability measures&lt;/a&gt;
 is a notion of convergence that is based not just on having events with
 probabilities that are converging, but also captures that some events are
-“close”. In other terms, it takes in account the topology of the
+“close”. Indeed, classic convergence in probability just tells us that
+two observations should have the same probability. Weak convergence
+takes in account the topology of the
 observations. For instance, to go back to the problem of spatial
 distributions of restaurants, it does not only look at whether the
 probabilities of having a Mc Donald’s or a KFC restaurant converge on
