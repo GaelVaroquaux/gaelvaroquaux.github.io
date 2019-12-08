@@ -112,12 +112,14 @@ distributions: spikes in a single point. If we bring these spikes closer
 and closer, merely looking at the probability of events in the same exact
 position will not detect any convergence until the spikes exactly
 overlap.&lt;/p&gt;
-&lt;p&gt;Using Kernel embeddings of distributions enables to capture the aspects of convergence in the spatial domain because the Kernels used give a spatial smoothness to the representatives:&lt;/p&gt;
+&lt;p&gt;Using kernel embeddings of distributions enables to capture the aspects
+of convergence in the spatial domain because the kernels used give a
+spatial smoothness to the representatives:&lt;/p&gt;
 &lt;img alt="" class="align-center" src="attachments/comparing_distributions_l1/converging_diracs.png" style="width: 70%;" /&gt;
 &lt;p&gt;Having a metric on probability distributions that captures the topology
 of the observations is important for many applications, for instance when
-fitting GANs to generate images: the goal is not to only capture when two
-images are exactly the same.&lt;/p&gt;
+fitting GANs to generate images: the goal is not to only capture that
+images are exactly the same, but also that they maybe be “close”.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="two-sample-testing-procedures"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="#id3"&gt;Two-sample testing procedures&lt;/a&gt;&lt;/h2&gt;
