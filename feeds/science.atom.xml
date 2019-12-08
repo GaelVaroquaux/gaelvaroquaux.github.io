@@ -62,8 +62,8 @@ expectations:&lt;/p&gt;
 &lt;div class="formula"&gt;
 &lt;span class="text"&gt;IPM&lt;/span&gt;[&lt;i&gt;F&lt;/i&gt;, &lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] :  = sup&lt;sub&gt;&lt;i&gt;f&lt;/i&gt; ∈ &lt;i&gt;F&lt;/i&gt;&lt;/sub&gt;(𝔼&lt;sub&gt;&lt;i&gt;x&lt;/i&gt; ~ &lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;&lt;span class="symbol"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)&lt;span class="symbol"&gt;]&lt;/span&gt; − 𝔼&lt;sub&gt;&lt;i&gt;y&lt;/i&gt; ~ &lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;&lt;span class="symbol"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;y&lt;/i&gt;)&lt;span class="symbol"&gt;]&lt;/span&gt;)
 &lt;/div&gt;
-&lt;p&gt;where F is a class of functions. This defining is appealing between it
-characterized the difference between P and Q by the function for which
+&lt;p&gt;where F is a class of functions. This definition is appealing because it
+characterizes the difference between P and Q by the function for which
 the expectancy differs most. The specific choice of class of function
 defines the metric. If we now consider a kernel, it implicitly defines a
 space of functions (intuitively related to all the possible KDEs
