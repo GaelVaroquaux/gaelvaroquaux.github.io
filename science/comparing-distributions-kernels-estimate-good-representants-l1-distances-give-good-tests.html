@@ -128,8 +128,14 @@ properties to compare distributions. With kernels said to be
 characteristic, eg Gaussian kernels, the MMD is a metric: MMD[P, Q] = 0
 if and only if P = Q. Using the MMD for two-sample testing –given only
 observations from the distributions, and not P and Q–  requires using an
-empirical estimation of the MMD.</p>
-<p>Our work addresses the question of which norm is best to use on the difference of mean embeddings, µQ - µP (as well as other representatives, namely the smooth characteristic function, SCF). We consider metrics based on their Lp distances:</p>
+empirical estimation of the MMD. This can be done by computing the RKHS
+norm in the expression above, which leads to summing kernel evaluations
+on all data points in P and Q.</p>
+<p>Our work builds upon this framework, but deviates a bit from the
+classical definition of MMD as it addresses the question of which norm is
+best to use on the difference of mean embeddings, µQ - µP (as well as
+other representatives, namely the smooth characteristic function, SCF).
+We consider metrics based on their Lp distances:</p>
 <div class="formula">
 <i>d</i><sub><i>L</i><sup><i>p</i></sup>, <i>μ</i></sub>(<i>P</i>, <i>Q</i>) :  = <span class="symbol">(</span><span class="limits"><sup class="limit"> </sup><span class="limit">⌠</span><span class="limit">⌡</span><sub class="limit"><i>t</i> ∈ ℝ<sup><i>d</i></sup></sub></span>|<i>μ</i><sub><i>P</i></sub>(<i>t</i>) − <i>μ</i><sub><i>Q</i></sub>(<i>t</i>)|<sup><i>p</i></sup><i>d</i>Γ(<i>t</i>)<span class="symbol">)</span><sup>1 ⁄ <i>p</i></sup>
 </div>

@@ -80,8 +80,14 @@ properties to compare distributions. With kernels said to be
 characteristic, eg Gaussian kernels, the MMD is a metric: MMD[P, Q] = 0
 if and only if P = Q. Using the MMD for two-sample testing –given only
 observations from the distributions, and not P and Q–  requires using an
-empirical estimation of the MMD.&lt;/p&gt;
-&lt;p&gt;Our work addresses the question of which norm is best to use on the difference of mean embeddings, µQ - µP (as well as other representatives, namely the smooth characteristic function, SCF). We consider metrics based on their Lp distances:&lt;/p&gt;
+empirical estimation of the MMD. This can be done by computing the RKHS
+norm in the expression above, which leads to summing kernel evaluations
+on all data points in P and Q.&lt;/p&gt;
+&lt;p&gt;Our work builds upon this framework, but deviates a bit from the
+classical definition of MMD as it addresses the question of which norm is
+best to use on the difference of mean embeddings, µQ - µP (as well as
+other representatives, namely the smooth characteristic function, SCF).
+We consider metrics based on their Lp distances:&lt;/p&gt;
 &lt;div class="formula"&gt;
 &lt;i&gt;d&lt;/i&gt;&lt;sub&gt;&lt;i&gt;L&lt;/i&gt;&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;, &lt;i&gt;μ&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;) :  = &lt;span class="symbol"&gt;(&lt;/span&gt;&lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;⌠&lt;/span&gt;&lt;span class="limit"&gt;⌡&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;t&lt;/i&gt; ∈ ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/span&gt;|&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;)|&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;d&lt;/i&gt;Γ(&lt;i&gt;t&lt;/i&gt;)&lt;span class="symbol"&gt;)&lt;/span&gt;&lt;sup&gt;1 ⁄ &lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;
 &lt;/div&gt;
