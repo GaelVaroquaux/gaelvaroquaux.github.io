@@ -1338,8 +1338,6 @@ span.limits span.limits {
     margin: -4px 0px;
 }
 
-display: inline-block;
-
 vertical-align: middle;
 /*-- Include the pygment.css for browser friendliness -------------------*/
 
