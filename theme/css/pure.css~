@@ -1333,7 +1333,7 @@ span.limits {
     vertical-align: middle;
 }
 
-span.limits span.limits {
+span.limits span.limit {
     display: block;
     margin: -4px 0px;
 }
