@@ -76,7 +76,7 @@ convenient expression, the RKHS distance between the mean embeddings:&lt;/p&gt;
 &lt;span class="text"&gt;MMD&lt;/span&gt;[&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] = ∥&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt; − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;∥&lt;sub&gt;&lt;i&gt;H&lt;/i&gt;&lt;sub&gt;&lt;i&gt;k&lt;/i&gt;&lt;/sub&gt;&lt;/sub&gt;
 &lt;/div&gt;
 &lt;p&gt;For good choices of kernels, the MMD has appealing mathematical
-properties to compare distributions. With Kernels said to be
+properties to compare distributions. With kernels said to be
 characteristic, eg Gaussian kernels, the MMD is a metric: MMD[P, Q] = 0
 if and only if P = Q. Using the MMD for two-sample testing –given only
 observations from the distributions, and not P and Q–  requires using an
