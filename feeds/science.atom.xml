@@ -30,33 +30,48 @@ waiving.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="the-context-two-sample-testing"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;The context: two-sample testing&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Given two samples from two unknown populations, the goal of the tests are
-to determine whether the difference between these two populations is
-statistically significant. For instance, we may care to know whether the
+&lt;p&gt;Given two samples from two unknown populations, the goal of two-sample tests is
+to determine whether the underlying populations differ with a statistical
+significance. For instance, we may care to know whether the
 spatial distributions across the US differ between McDonald’s and KFC
 restaurants. This is a difficult question: we have access to data points,
 but not the underlying generative mechanism, that is probably governed by
 marketing strategies.&lt;/p&gt;
 &lt;img alt="" class="align-center" src="attachments/comparing_distributions_l1/map_KFC_McDo_simple.png" style="width: 70%;" /&gt;
-&lt;p&gt;Whether or not data points appear close to each other in the original measurement space (here geographic coordinates) conveys a lot of information. Kernel methods arise naturally to capture this information. They nicely apply to distributions, using representative of distributions in the RKHS: &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_embedding_of_distributions"&gt;Kernel embeddings of distributions&lt;/a&gt;. The mean embedding of a distribution P with a kernel k is written:&lt;/p&gt;
+&lt;p&gt;There is a lot of information in the proximity between observed data
+points in the original measurement space (here geographic coordinates).
+Kernel methods arise naturally to capture this information. They can be
+applied to distributions, building representatives of distributions:
+&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_embedding_of_distributions"&gt;Kernel embeddings of distributions&lt;/a&gt;. The
+mean embedding of a distribution P with a kernel k is written:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) :  = &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;⌠&lt;/span&gt;&lt;span class="limit"&gt;⌡&lt;/span&gt;&lt;sub class="limit"&gt;ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/span&gt;&lt;i&gt;k&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;, &lt;i&gt;t&lt;/i&gt;)&lt;i&gt;dP&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)
+&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) :  = &lt;span class="limits"&gt;&lt;span class="limit"&gt;⌠&lt;/span&gt;&lt;span class="limit"&gt;⌡&lt;/span&gt;&lt;/span&gt;&lt;sub&gt;ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;i&gt;k&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;, &lt;i&gt;t&lt;/i&gt;)&lt;i&gt;dP&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)
 &lt;/div&gt;
-&lt;p&gt;Intuitively, it is related to Kernel Density Estimates (KDEs) which
+&lt;p&gt;Intuitively, it is related to &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_density_estimation"&gt;Kernel Density Estimates (KDEs)&lt;/a&gt; which
 estimate a density in continuous space by smoothing the observed data
 points with a kernel.&lt;/p&gt;
 &lt;div class="figure align-right"&gt;
 &lt;img alt="" src="attachments/comparing_distributions_l1/kde.jpg" /&gt;
-&lt;p class="caption"&gt;Mean embeddings for two distributions of points&lt;/p&gt;
+&lt;p class="caption"&gt;Kernel mean embeddings for two distributions of points&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;For two-sample testing, kernel embeddings can provide metrics over the
-space of probability measures. Such a metric is well apprehended via the
-notion of Integral Probability Metric (IPM), which defines it as a
-difference of expectations:&lt;/p&gt;
+&lt;p&gt;For two-sample testing, kernel embeddings can be used to compute distance
+between distributions, building metrics over the space of probability
+measures. Metrics between probability measures can be defined via the
+notion of Integral Probability Metric (IPM): as a difference of
+expectations:&lt;/p&gt;
 &lt;div class="formula"&gt;
 &lt;span class="text"&gt;IPM&lt;/span&gt;[&lt;i&gt;F&lt;/i&gt;, &lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] :  = sup&lt;sub&gt;&lt;i&gt;f&lt;/i&gt; ∈ &lt;i&gt;F&lt;/i&gt;&lt;/sub&gt;(𝔼&lt;sub&gt;&lt;i&gt;x&lt;/i&gt; ~ &lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;&lt;span class="symbol"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)&lt;span class="symbol"&gt;]&lt;/span&gt; − 𝔼&lt;sub&gt;&lt;i&gt;y&lt;/i&gt; ~ &lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;&lt;span class="symbol"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;y&lt;/i&gt;)&lt;span class="symbol"&gt;]&lt;/span&gt;)
 &lt;/div&gt;
-&lt;p&gt;where F is a class of functions. The specific choice of class of function defines the metric. Given a Kernel, it implicitly defines a space of functions (intuitively related to all the possible KDEs generated by varying data points): a Reproducible Kernel Hilbert Space. When F is the unit ball in such an RKHS, the corresponding metric, the IPM, is known as the Maximum Mean Discrepancy (MMD). It can be shown that, rather than computing the maximum, the MMD is equal to the RKHS distance between the mean embeddings:&lt;/p&gt;
+&lt;p&gt;where F is a class of functions. This defining is appealing between it
+characterized the difference between P and Q by the function for which
+the expectancy differs most. The specific choice of class of function
+defines the metric. If we now consider a kernel, it implicitly defines a
+space of functions (intuitively related to all the possible KDEs
+generated by varying data points): a Reproducible Kernel Hilbert Space
+(RKHS). Defining a metric (an IPM) with a function class F as the unit
+ball in such an RKHS, is known as the Maximum Mean Discrepancy (MMD). It
+can be shown that, rather than computing the maximum, the MMD has a more
+convenient expression, the RKHS distance between the mean embeddings:&lt;/p&gt;
 &lt;div class="formula"&gt;
 &lt;span class="text"&gt;MMD&lt;/span&gt;[&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] = ∥&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt; − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;∥&lt;sub&gt;&lt;i&gt;H&lt;/i&gt;&lt;sub&gt;&lt;i&gt;k&lt;/i&gt;&lt;/sub&gt;&lt;/sub&gt;
 &lt;/div&gt;
