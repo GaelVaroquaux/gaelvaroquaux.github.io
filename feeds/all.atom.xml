@@ -1,5 +1,296 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2019-12-08T00:00:00+01:00</updated><entry><title>Comparing distributions: Kernels estimate good representations, l1 distances give good tests</title><link href="http://gael-varoquaux.info/science/comparing-distributions-kernels-estimate-good-representations-l1-distances-give-good-tests.html" rel="alternate"></link><published>2019-12-08T00:00:00+01:00</published><updated>2019-12-08T00:00:00+01:00</updated><author><name>Meyer Scetbon &amp; Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-12-08:/science/comparing-distributions-kernels-estimate-good-representations-l1-distances-give-good-tests.html</id><summary type="html">&lt;div class="admonition note"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2020-01-05T00:00:00+01:00</updated><entry><title>2019: my scientific year in review</title><link href="http://gael-varoquaux.info/science/2019-my-scientific-year-in-review.html" rel="alternate"></link><published>2020-01-05T00:00:00+01:00</published><updated>2020-01-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2020-01-05:/science/2019-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;My current research spans wide: from brain sciences to core data
+science. My overall interest is to build &lt;strong&gt;methodology drawing insights from
+data&lt;/strong&gt; for questions that have often been addressed qualitatively. If I can
+highlight a few publications from 2019 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;, the common thread would be
+computational statistics, from dirty …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My current research spans wide: from brain sciences to core data
+science. My overall interest is to build &lt;strong&gt;methodology drawing insights from
+data&lt;/strong&gt; for questions that have often been addressed qualitatively. If I can
+highlight a few publications from 2019 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;, the common thread would be
+computational statistics, from dirty data to brain images. Let me try to
+give the gist of these progresses, in simple terms.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It’s already 2020, I’m always late.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="contents topic" id="highlights"&gt;
+&lt;p class="topic-title first"&gt;Highlights&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#comparing-distributions" id="id5"&gt;Comparing distributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#predictive-pipelines-on-brain-functional-connectomes" id="id6"&gt;Predictive pipelines on brain functional connectomes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#population-shrinkage-of-covariance" id="id7"&gt;Population shrinkage of covariance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#deep-learning-on-non-translation-invariant-images" id="id8"&gt;Deep learning on non-translation-invariant images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#open-science" id="id9"&gt;Open science&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="comparing-distributions"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;Comparing distributions&lt;/a&gt;&lt;/h2&gt;
+&lt;p class="align-right"&gt;&lt;em&gt;Fundamental computational-statistics work&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What if you are given two set of observations and need to conclude on
+whether they are drawn from the same distribution? We are interested in
+this question for the &lt;a class="reference external" href="https://project.inria.fr/dirtydata/"&gt;DirtyData&lt;/a&gt;
+research project, to facilitate analysis of data without manual curation.
+Comparing distributions is indeed important to detect drifts in the data,
+to match information across datasets, or to compensate for dataset
+biases.&lt;/p&gt;
+&lt;p&gt;Formally, we are given two cloud of points (circle and crosses in the
+figure below) and we want to develop a statistical test of whether the
+distributions differ. There is an abundant literature on this topic, that I
+cover in &lt;a class="reference external" href="http://gael-varoquaux.info/science/comparing-distributions-kernels-estimate-good-representations-l1-distances-give-good-tests.html"&gt;a more detailed post on this subject&lt;/a&gt;.
+Specifically, when the observations have a natural similarity, for
+instance when they live in a vector space, kernel methods are interesting
+because they enable to estimate a representant of the underlying
+distribution that interpolates between observations, as with &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_density_estimation"&gt;a kernel
+density estimator&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="http://papers.nips.cc/paper/9398-comparing-distributions-ell_1-geometry-improves-kernel-two-sample-testing"&gt;&lt;img alt="" src="../science/attachments/comparing_distributions_l1/optimizing_position.png" style="width: 500px;" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Two cloud of points, the corresponding distribution representants μ_P
+and μ_Q (blue and orange), the difference between these
+(black), and locations to measure this difference (red triangles).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;With Meyer Scetbon, in
+&lt;a class="reference external" href="http://papers.nips.cc/paper/9398-comparing-distributions-ell_1-geometry-improves-kernel-two-sample-testing"&gt;Scetbon &amp;amp; Varoquaux, NeurIPS&lt;/a&gt;,
+we investigate how to measure best the difference between these
+representants. We show that the best choice is to take the absolute value
+of the difference (the l1 norm), while the default choice had so far been
+the Euclidean (l2) norm. In a nutshell, the reason is that the difference
+most like is dense when the distributions differ: zero almost nowhere.&lt;/p&gt;
+&lt;p&gt;We were able to show that the &lt;a class="reference external" href="https://slideslive.com/38921490/interpretable-comparison-of-distributions-and-models"&gt;sophisticated framework&lt;/a&gt;
+for efficient and powerful tests in the
+Euclidean case carries over to the l1 case. In particular, our paper
+gives efficient testing procedures using a small number of locations to
+avoid costly computation (the red triangles in the figure above), that
+can either be sampled at random or optimized.&lt;/p&gt;
+&lt;p&gt;My hunch is that the result is quite general: the l1 geometry is better
+than the l2 one on representants of distributions. There might be more
+fundamental mathematical properties behind this. The drawback is that the
+l1 norm is non smooth which can be challenging in optimization settings.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="predictive-pipelines-on-brain-functional-connectomes"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Predictive pipelines on brain functional connectomes&lt;/a&gt;&lt;/h2&gt;
+&lt;p class="align-right"&gt;&lt;em&gt;Brain-imaging methods&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Brain functional connectivity is increasingly used to extract biomarkers
+of behavior and mental health. The long-term stakes are to ground
+assessment of psychological traits on quantitative brain
+data, rather than qualitative behavioral observations. But, to build
+biomarkers, there are many details that go in estimating functional
+connectivity from fMRI, something that I have studied for more than 10
+years. With Kamalakar Dadi, in &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S1053811919301594"&gt;Dadi et al&lt;/a&gt;,
+we ran thorough empirical benchmarks to find which methodological choices
+for the various steps of the pipeline give best prediction across
+multiple cohorts. Specifically, we studied 1) defining regions of
+interest for signal extraction, 2) building a functional-connectivity
+matrix across these regions, 3) prediction across subjects with
+supervised learning on these features.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="https://www.sciencedirect.com/science/article/abs/pii/S1053811919301594"&gt;&lt;img alt="" src="../science/attachments/2019_highlights/dadi_2019_highlights.png" style="width: 600px;" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Summarizing our benchmark results.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sidebar"&gt;
+&lt;p class="first sidebar-title"&gt;Recommendations&lt;/p&gt;
+&lt;ul class="last simple"&gt;
+&lt;li&gt;functional regions (eg from dictionary learning)&lt;/li&gt;
+&lt;li&gt;tangent-space for covariances&lt;/li&gt;
+&lt;li&gt;l2-logistic regression&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Results show the importance of defining regions from functional data,
+ideally with a linear-decomposition method that produces soft
+parcellations such as ICA or dictionary learning. To represent
+connectivity between regions, the best choice is tangent-space
+parametrization, a method to build a vector-space from covariance
+matrices (more below). Finally, for supervised learning, a simple
+l2-penalized logistic regression is the best option. With the huge popularity
+of deep learning, it may surprise that linear models are the best
+performer, but this is well explained by the amount of data at hand: a
+cohort is typically less than 1000 individuals, which is way below the
+data sizes needed to see the benefits of non-linear models.&lt;/p&gt;
+&lt;p&gt;A recent preprint, &lt;a class="reference external" href="https://www.biorxiv.org/content/10.1101/741595v2.abstract"&gt;Pervaiz et al&lt;/a&gt; from
+Oxford, overall
+confirms our findings, even though they investigated slightly
+different methodological choices. In particular, they find tangent space
+clearly useful.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;In my eyes, such benchmarking studies are important not only to improve
+prediction, but also to reduce analytic variability that opens the door
+to inflation of reported effects. Indeed, given 1000 individuals, the
+measure of prediction accuracy of a pipeline is quite imprecise
+(&lt;a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S1053811917305311"&gt;Varoquaux 2018&lt;/a&gt;).
+As a consequence, trying out a bunch a analytic choices and
+publishing the one that works best can lead to grossly optimistic
+prediction accuracies. &lt;strong&gt;If we want trust in biomarkers, we need to
+reduce the variability in the methods used to build them&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="population-shrinkage-of-covariance"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id7"&gt;Population shrinkage of covariance&lt;/a&gt;&lt;/h2&gt;
+&lt;p class="align-right"&gt;Statistics for brain signals&lt;/p&gt;
+&lt;p&gt;Estimating covariances is central for functional brain connectivity and
+in many other applications. With Mehdi Rahim, in &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S1361841518301014"&gt;Rahim et al&lt;/a&gt;
+we considered the case of a population of random processes with
+related covariances, as for instance when estimating functional
+connectivity from a group of individuals. For this, we combined two
+mathematical ideas: that of using natural operations on covariance
+matrices, and that of priors for mean-square estimation:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;Tangent space&lt;/strong&gt; Covariance matrices are positive-definite matrices,
+for which standard arithmetics are not well suited &lt;a class="footnote-reference" href="#id4" id="id3"&gt;[2]&lt;/a&gt;: subtracting
+two covariance matrices can lead to a matrix that cannot be
+the covariance of a signal. However, a group of covariance matrices can
+be transformed into points in a vector space for which standard
+distances and arithmetics respect the structure of
+covariances (for instance Euclidean distance between these points
+approximate KL divergence between covariances). This is what we call
+the &lt;em&gt;tangent space&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Technically, covariance matrices live on a Riemannian manifold:
+a curve surface inside &lt;em&gt;R^{n x n}&lt;/em&gt; that has some metric
+properties.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;James-Stein shrinkage&lt;/strong&gt; To estimate the mean of &lt;em&gt;n&lt;/em&gt; observations, it
+is actually best not to compute the average of these, but rather to
+push a bit this average toward a prior guess. The better the
+guess, the more this “push” helps. The more the number of observations,
+the more gentle this push should be. This strategy is known as
+&lt;a class="reference external" href="https://en.wikipedia.org/wiki/James%E2%80%93Stein_estimator"&gt;James-Stein shrinkage&lt;/a&gt; and it
+is in my opinion one of the most beautiful results in statistics.
+It can be seen as a Bayesian posterior, but it comes with guarantees
+that do not require the model to be true and that control estimation
+error, rather than a posterior probability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;James-Stein shrinkage is easily written for quadratic errors on vectors,
+but cannot be easily applied to covariances, as they do not live in a vector
+space and we would like to control a KL divergence rather than
+a quadratic error. Our work combined both ideas to give an excellent
+estimator of a family of related covariances that is also very
+computationally efficient. We call it PoSCE: Population Shrinkage
+Covariance Estimation.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="https://www.sciencedirect.com/science/article/abs/pii/S1361841518301014"&gt;&lt;img alt="" src="../science/attachments/2019_highlights/posce.png" style="width: 600px;" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Schema of the estimation strategy: projecting the covariances matrices
+into a tangent space, shrinkage to a group mean, but taking in account
+the anisotropy of the dispersion of the group, and projecting back to
+covariances.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;It is easy to see how accounting for group information in the estimation
+of individual covariances can help stabilizing them. However, will it be
+beneficial if we are interested in the differences between these
+covariances, for instance to ground biomarkers, as studied above? Our
+results show that it does indeed help building better biomarkers, for
+instance to predict brain age. The larger the group of covariances used,
+the larger the benefits.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="https://www.sciencedirect.com/science/article/abs/pii/S1361841518301014"&gt;&lt;img alt="" src="../science/attachments/2019_highlights/posce_age_learning_curve.png" style="width: 500px;" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Error in predicting brain aging decreases when more individuals are used
+to build the biomarker.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="deep-learning-on-non-translation-invariant-images"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id8"&gt;Deep learning on non-translation-invariant images&lt;/a&gt;&lt;/h2&gt;
+&lt;p class="align-right"&gt;Computer vision&lt;/p&gt;
+&lt;p&gt;Brain images, in particular images of brain activity, are very different
+from the natural images on which most computer-vision research focuses.
+A central difference is that detecting activity in different parts of the
+brain completely changes the meaning of this detection, while detecting a
+cat in the left or the right of a picture on Facebook makes no
+difference. This is important because many progresses of computer vision,
+such as convolutional neural networks, are built on the fact that natural
+images are statistically translational invariant. On the opposite, brain
+images are realigned to a template, before being analyzed.&lt;/p&gt;
+&lt;p&gt;Convolutional architectures have been crucial to the successes of deep
+learning on natural images because they impose a lot of structure on the
+weights of neural networks and thus help fight estimation noise. For
+predicting from brain images, the regularizations strategies that have
+been successful foster spatially continuous structures. Unfortunately,
+they have lead to costly non-smooth optimizations that cannot easily be
+used with the optimization framework of deep learning, stochastic
+gradient descent.&lt;/p&gt;
+&lt;p&gt;With Sergul Aydore, in &lt;a class="reference external" href="http://proceedings.mlr.press/v97/aydore19a.html"&gt;Aydore et al, ICML&lt;/a&gt;, we have introduced a
+spatial regularization that is compatible with the deep learning toolbox.
+During the stochastic optimization, we impose random spatial structure
+via feature groups estimated from the data. These stabilize the input
+layers of deep architecture. They also lead to iterating on smaller
+representations, which greatly speeds up the algorithm.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="http://proceedings.mlr.press/v97/aydore19a.html"&gt;&lt;img alt="" src="../science/attachments/2019_highlights/stochastic_grouping_mlp.png" style="width: 600px;" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;At each step of a stochastic gradient descent, we randomly pick a
+feature-grouping matrix (itself estimated from the data), and use it
+to reduce the data in the computations of the gradients, then invert
+this reduction to update the weights.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://proceedings.mlr.press/v97/aydore19a.html"&gt;The paper&lt;/a&gt; comes with
+extensive empirical validation, including comparison to convolutional
+neural networks. We benchmark the strategy on brain images, but also
+on realigned faces, to show that the approach is beneficial for any
+non-translational-invariant images. In particular, the approach greatly
+speeds up convergence.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="http://proceedings.mlr.press/v97/aydore19a.html"&gt;&lt;img alt="" src="../science/attachments/2019_highlights/stochastic_grouping_results.png" style="width: 600px;" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Prediction accuracy as a function of training time – left: on
+realigned faces – right: on brain images&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://proceedings.mlr.press/v97/aydore19a.html"&gt;This paper&lt;/a&gt; clearly
+shows that &lt;strong&gt;one should not use convolutional neural networks on fMRI
+data&lt;/strong&gt;: these images are not translational invariant.&lt;/p&gt;
+&lt;div class="sidebar"&gt;
+&lt;p class="first sidebar-title"&gt;&lt;strong&gt;Preprints&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="last"&gt;All papers are available as preprints, eg on &lt;a class="reference external" href="http://gael-varoquaux.info/publications.html"&gt;my site&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="open-science"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id9"&gt;Open science&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Open and reproducible science:&lt;/strong&gt; Looking at all these publications, I
+realize that every single one of them comes with code on a github
+repository and is done on open data, which means that they can all be
+easily reproduced. I’m very proud of the teams behind these papers.
+Achieving this level of reproducibility requires hard work and
+discipline. It is also a testimonial to an community investment in
+software tools and infrastructure for open science that has been going on
+for decades and gives the foundations on which these works build.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;A prize for scikit-learn:&lt;/strong&gt; On this topic, a highlight of 2019 was also
+that the work behind scikit-learn was acknowledged in &lt;a class="reference external" href="../programming/getting-a-big-scientific-prize-for-open-source-software.html"&gt;an important
+scientific prize&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Why open science:&lt;/strong&gt; Why do I care so much for open science? Because in
+a world of uncertainty, the claims of science must be trusted and hence
+built on transparent practice (think about science and global warming).
+Because it helps putting our methods in the hands of a wider public,
+society at large. And because it levels the ground, making it easier for
+newcomers –young scientists, or developing countries– to contribute,
+which in itself makes science more efficient.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="neuroimaging"></category><category term="statistics"></category></entry><entry><title>Comparing distributions: Kernels estimate good representations, l1 distances give good tests</title><link href="http://gael-varoquaux.info/science/comparing-distributions-kernels-estimate-good-representations-l1-distances-give-good-tests.html" rel="alternate"></link><published>2019-12-08T00:00:00+01:00</published><updated>2019-12-08T00:00:00+01:00</updated><author><name>Meyer Scetbon &amp; Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-12-08:/science/comparing-distributions-kernels-estimate-good-representations-l1-distances-give-good-tests.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p&gt;Given two set of observations, are they drawn from the same
 distribution? Our paper &lt;a class="reference external" href="https://papers.nips.cc/paper/9398-comparing-distributions-ell_1-geometry-improves-kernel-two-sample-testing.html"&gt;Comparing distributions: l1 geometry
