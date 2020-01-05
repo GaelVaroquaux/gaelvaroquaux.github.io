@@ -740,6 +740,7 @@ div.content a.external { /* break long URLs */
 
 div.content img {
     margin-left: 5%;
+    max-width: 100%;
 }
 
 div.content img.large {
@@ -852,8 +853,31 @@ div.content div.sidebar {
     margin-top: .5em;
 }
 
+div.content .sidebar {
+    width: 300px;
+    max-width: 40%;
+}
+
+div.content .sidebar ul {
+    padding-left: 2ex;
+    margin-bottom: 1ex;
+}
+
+@media (max-width: 767px) {
+    div.content .sidebar {
+	height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    div.content .sidebar {
+	width: 100%;
+    }
+}
+
 div.sidebar p.first {
     margin-top: .5em;
+    margin-bottom: .5em;
     font-weight: bold;
 }
 
@@ -981,6 +1005,10 @@ blockquote.highlights {
 
 div.figure p.caption {
     margin-top: 0px;
+}
+
+div.figure.align-center p.caption {
+    display: inline-block;
 }
 
 @media (max-width: 700px) {
@@ -1338,7 +1366,6 @@ span.limits span.limit {
     margin: -8px 0px;
 }
 
-vertical-align: middle;
 /*-- Include the pygment.css for browser friendliness -------------------*/
 
 .highlight .hll { background-color: #515151 }
