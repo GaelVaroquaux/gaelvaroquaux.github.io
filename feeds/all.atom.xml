@@ -491,8 +491,12 @@ embeddings: Universal kernels, &lt;em&gt;characteristic kernels and kernel
 metrics on distributions&lt;/em&gt;, &lt;a class="reference external" href="https://arxiv.org/abs/1604.0525"&gt;arXiv:1604.05251&lt;/a&gt;, 2016.&lt;/li&gt;
 &lt;li&gt;A. Gretton, K.M. Borgwardt, M.J. Rasch, B. Schölkopf, A. Smola; &lt;em&gt;A
 Kernel Two-Sample Test&lt;/em&gt;, &lt;a class="reference external" href="http://www.jmlr.org/papers/v13/gretton12a.html"&gt;JMLR, 2012&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://slideslive.com/38921490/interpretable-comparison-of-distributions-and-models"&gt;The NeurIPS 2019 tutorial&lt;/a&gt;,
+by Gretton, Sutherland, and Jitkrittum, is extremely didactic and gives
+a lot of big picture&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;p&gt;·&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="two-sample testing"></category><category term="conferences"></category><category term="statistics"></category></entry><entry><title>Getting a big scientific prize for open-source software</title><link href="http://gael-varoquaux.info/programming/getting-a-big-scientific-prize-for-open-source-software.html" rel="alternate"></link><published>2019-12-01T06:00:00+01:00</published><updated>2019-12-01T06:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-12-01:/programming/getting-a-big-scientific-prize-for-open-source-software.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
