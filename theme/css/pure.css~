@@ -1028,15 +1028,12 @@ div.figure.align-center p.caption {
 
     div.figure.center.side-caption p.caption {
 	display: flex;
+	flex-direction: row-reverse;
 	width: 0;
 	flex-grow: 1;
 	margin-top: 5%;
     }
 
-    div.figure.center.side-caption img {
-	display: flex;
-	flex-direction: row-reverse;
-    }
 }
 
 /* docutils errors */
