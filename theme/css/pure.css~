@@ -1020,9 +1020,6 @@ div.figure.align-center p.caption {
 
 /* Side-caption figures */
 @media (min-width: 900px) {
-    div.figure.side-caption {
-    }
-
     .side-caption {
 	display: flex;
 	flex-direction: row-reverse;
