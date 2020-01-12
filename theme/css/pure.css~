@@ -869,9 +869,10 @@ div.content .sidebar ul {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     div.content .sidebar {
 	width: 100%;
+	max-width: 100%;
     }
 }
 
@@ -1014,6 +1015,30 @@ div.figure.align-center p.caption {
 @media (max-width: 700px) {
     div.figure.align-right {
 	float: center;
+    }
+}
+
+/* Side-caption figures */
+@media (min-width: 900px) {
+    div.figure.side-caption {
+    }
+
+    .side-caption {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-bottom: 3%;
+    }
+
+    div.figure.center.side-caption p.caption {
+	display: flex;
+	width: 0;
+	flex-grow: 1;
+	margin-top: 5%;
+    }
+
+    div.figure.center.side-caption img {
+	display: flex;
+	flex-direction: row-reverse;
     }
 }
 
