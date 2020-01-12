@@ -1026,10 +1026,7 @@ div.figure.align-center p.caption {
 	margin-bottom: 3%;
     }
 
-    div.figure.center.side-caption p.caption {
-	display: flex;
-	flex-direction: row-reverse;
-	width: 0;
+    div.figure.align-center.side-caption p.caption {
 	flex-grow: 1;
 	margin-top: 5%;
     }
