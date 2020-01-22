@@ -1,5 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2020-01-05T00:00:00+01:00</updated><entry><title>2019: my scientific year in review</title><link href="http://gael-varoquaux.info/science/2019-my-scientific-year-in-review.html" rel="alternate"></link><published>2020-01-05T00:00:00+01:00</published><updated>2020-01-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2020-01-05:/science/2019-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;My current research spans wide: from brain sciences to core data
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2020-01-22T00:00:00+01:00</updated><entry><title>Survey of machine-learning experimental methods at NeurIPS2019 and ICLR2020</title><link href="http://gael-varoquaux.info/science/survey-of-machine-learning-experimental-methods-at-neurips2019-and-iclr2020.html" rel="alternate"></link><published>2020-01-22T00:00:00+01:00</published><updated>2020-01-22T00:00:00+01:00</updated><author><name>Xavier Bouthillier &amp; Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2020-01-22:/science/survey-of-machine-learning-experimental-methods-at-neurips2019-and-iclr2020.html</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;A simple survey asking authors of two leading machine-learning
+conferences a few quantitative questions on their experimental
+procedures.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;How do machine-learning researchers run their empirical validation? In
+the context of a push for improved reproducibility and benchmarking, this
+question is important to develop new tools for model comparison. We …&lt;/p&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;A simple survey asking authors of two leading machine-learning
+conferences a few quantitative questions on their experimental
+procedures.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;How do machine-learning researchers run their empirical validation? In
+the context of a push for improved reproducibility and benchmarking, this
+question is important to develop new tools for model comparison. We ran a
+simple survey asking to authors of two leading conferences, NeurIPS 2019
+and ICLR 2020, a few quantitative questions on their experimental
+procedures.&lt;/p&gt;
+&lt;p&gt;A &lt;a class="reference external" href="https://hal.archives-ouvertes.fr/hal-02447823"&gt;technical report on HAL&lt;/a&gt; summarizes our
+finding. It gives a simple picture of how hyper-parameters are set, how
+many baselines and datasets are included, or how seeds are used.
+Below, we give a very short summary, but please read (and &lt;a class="reference external" href="https://hal.archives-ouvertes.fr/hal-02447823v1/bibtex"&gt;cite&lt;/a&gt;)
+&lt;a class="reference external" href="https://hal.archives-ouvertes.fr/hal-02447823"&gt;the full report&lt;/a&gt; if you are interested.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Highlights&lt;/strong&gt;
+The response rates were 35.6% for NeurIPS and 48.6%
+for ICLR.
+A vast majority of empirical works optimize model hyper-parameters,
+thought almost half of these use manual tuning and most of the automatic
+hyper-parameter optimization is done with grid search. The typical number
+of hyper-parameter set is in interval 3-5, and less than 50 model fits
+are used to explore the search space. In addition, most works also
+optimized their baselines (typically, around 4 baselines).
+Finally, studies typically reported 4 results per model per task to provide a measure of variance, and around 50% of them
+used a different random seed for each experiment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sample results&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="side-caption figure align-center"&gt;
+&lt;img alt="" src="../science/attachments/survey_of_ml_experimental_methods/hyper_parameter_optimization.png" style="width: 400px;" /&gt;
+&lt;p class="caption"&gt;How many papers with experiments optimized hyperparameters.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="side-caption figure align-center"&gt;
+&lt;img alt="" src="../science/attachments/survey_of_ml_experimental_methods/tuning_methods.png" style="width: 400px;" /&gt;
+&lt;p class="caption"&gt;What hyperparameter optimization method were used.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="side-caption figure align-center"&gt;
+&lt;img alt="" src="../science/attachments/survey_of_ml_experimental_methods/number_datasets.png" style="width: 400px;" /&gt;
+&lt;p class="caption"&gt;Number of different datasets used for benchmarking.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="side-caption figure align-center"&gt;
+&lt;img alt="" src="../science/attachments/survey_of_ml_experimental_methods/number_seeds_or_trials.png" style="width: 400px;" /&gt;
+&lt;p class="caption"&gt;Number of results reported for each model (ex: for different seeds)&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;These are just samples. Read &lt;a class="reference external" href="https://hal.archives-ouvertes.fr/hal-02447823"&gt;the full report&lt;/a&gt; for
+more results.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;For reproducibility and AutoML, there is active research in benchmarking
+and hyperparameter procedures in machine learning. We hope that the
+survey results presented here can help inform this research. As this
+document is merely a research report, we purposely limited
+interpretation of the results and drawing recommendations. However, trends that stand out to our
+eyes are, &lt;cite&gt;1)&lt;/cite&gt; the simplicity of hyper-parameter tuning strategies
+(mostly manual search and grid search),  &lt;cite&gt;2)&lt;/cite&gt; the small number of
+model fits explored during this tuning (often 50 or less), which biases the
+results and &lt;cite&gt;3)&lt;/cite&gt; the small number of performances reported, which limits
+statistical power. These
+practices are most likely due to the high computational cost of fitting
+modern machine-learning models.&lt;/p&gt;
+&lt;div class="sidebar"&gt;
+&lt;p class="first sidebar-title"&gt;Code&lt;/p&gt;
+&lt;p class="last"&gt;The code used for plotting and analysis is &lt;a class="reference external" href="https://github.com/bouthilx/ml-survey-2020"&gt;on github&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Acknowledgments&lt;/strong&gt; We are deeply grateful to the participants of
+the survey who took time to answer the questions.&lt;/p&gt;
+</content><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="benchmarking"></category><category term="conferences"></category><category term="experimental methods"></category></entry><entry><title>2019: my scientific year in review</title><link href="http://gael-varoquaux.info/science/2019-my-scientific-year-in-review.html" rel="alternate"></link><published>2020-01-05T00:00:00+01:00</published><updated>2020-01-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2020-01-05:/science/2019-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;My current research spans wide: from brain sciences to core data
 science. My overall interest is to build &lt;strong&gt;methodology drawing insights from
 data&lt;/strong&gt; for questions that have often been addressed qualitatively. If I can
 highlight a few publications from 2019 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;, the common thread would be

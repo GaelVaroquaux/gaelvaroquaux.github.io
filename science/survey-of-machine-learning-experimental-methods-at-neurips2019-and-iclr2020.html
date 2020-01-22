@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / brain science">
+
+        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Survey of machine-learning experimental methods at NeurIPS2019 and ICLR2020 -- Gaël Varoquaux: computer / data / brain science</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="http://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="http://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Xavier Bouthillier & Gaël Varoquaux</h2>
+		</a>
+                <p>Wed 22 January 2020</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Survey of machine-learning experimental methods at NeurIPS2019 and ICLR2020</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="http://gael-varoquaux.info/tag/science.html">science</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/research.html">research</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/benchmarking.html">benchmarking</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/conferences.html">conferences</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/experimental-methods.html">experimental methods</a>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A simple survey asking authors of two leading machine-learning
+conferences a few quantitative questions on their experimental
+procedures.</p>
+</div>
+<p>How do machine-learning researchers run their empirical validation? In
+the context of a push for improved reproducibility and benchmarking, this
+question is important to develop new tools for model comparison. We ran a
+simple survey asking to authors of two leading conferences, NeurIPS 2019
+and ICLR 2020, a few quantitative questions on their experimental
+procedures.</p>
+<p>A <a class="reference external" href="https://hal.archives-ouvertes.fr/hal-02447823">technical report on HAL</a> summarizes our
+finding. It gives a simple picture of how hyper-parameters are set, how
+many baselines and datasets are included, or how seeds are used.
+Below, we give a very short summary, but please read (and <a class="reference external" href="https://hal.archives-ouvertes.fr/hal-02447823v1/bibtex">cite</a>)
+<a class="reference external" href="https://hal.archives-ouvertes.fr/hal-02447823">the full report</a> if you are interested.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Highlights</strong>
+The response rates were 35.6% for NeurIPS and 48.6%
+for ICLR.
+A vast majority of empirical works optimize model hyper-parameters,
+thought almost half of these use manual tuning and most of the automatic
+hyper-parameter optimization is done with grid search. The typical number
+of hyper-parameter set is in interval 3-5, and less than 50 model fits
+are used to explore the search space. In addition, most works also
+optimized their baselines (typically, around 4 baselines).
+Finally, studies typically reported 4 results per model per task to provide a measure of variance, and around 50% of them
+used a different random seed for each experiment.</p>
+<p><strong>Sample results</strong></p>
+<div class="side-caption figure align-center">
+<img alt="" src="../science/attachments/survey_of_ml_experimental_methods/hyper_parameter_optimization.png" style="width: 400px;" />
+<p class="caption">How many papers with experiments optimized hyperparameters.</p>
+</div>
+<div class="side-caption figure align-center">
+<img alt="" src="../science/attachments/survey_of_ml_experimental_methods/tuning_methods.png" style="width: 400px;" />
+<p class="caption">What hyperparameter optimization method were used.</p>
+</div>
+<div class="side-caption figure align-center">
+<img alt="" src="../science/attachments/survey_of_ml_experimental_methods/number_datasets.png" style="width: 400px;" />
+<p class="caption">Number of different datasets used for benchmarking.</p>
+</div>
+<div class="side-caption figure align-center">
+<img alt="" src="../science/attachments/survey_of_ml_experimental_methods/number_seeds_or_trials.png" style="width: 400px;" />
+<p class="caption">Number of results reported for each model (ex: for different seeds)</p>
+</div>
+<p>These are just samples. Read <a class="reference external" href="https://hal.archives-ouvertes.fr/hal-02447823">the full report</a> for
+more results.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>For reproducibility and AutoML, there is active research in benchmarking
+and hyperparameter procedures in machine learning. We hope that the
+survey results presented here can help inform this research. As this
+document is merely a research report, we purposely limited
+interpretation of the results and drawing recommendations. However, trends that stand out to our
+eyes are, <cite>1)</cite> the simplicity of hyper-parameter tuning strategies
+(mostly manual search and grid search),  <cite>2)</cite> the small number of
+model fits explored during this tuning (often 50 or less), which biases the
+results and <cite>3)</cite> the small number of performances reported, which limits
+statistical power. These
+practices are most likely due to the high computational cost of fitting
+modern machine-learning models.</p>
+<div class="sidebar">
+<p class="first sidebar-title">Code</p>
+<p class="last">The code used for plotting and analysis is <a class="reference external" href="https://github.com/bouthilx/ml-survey-2020">on github</a>.</p>
+</div>
+<p><strong>Acknowledgments</strong> We are deeply grateful to the participants of
+the survey who took time to answer the questions.</p>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script  language="JavaScript" type="text/javascript">
+    /* From http://evirtus.net/pub/eflickrstream.asp */
+    /* Global variables */
+    var bolOnLoadRun=false;
+    var bolFlickrRun=false;
+    var objFlickrOutput=null;
+    
+    /* OnLoad events */
+    window.onload = function() {
+    bolOnLoadRun=true;
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	eFlickrStream();
+    };
+    }
+    
+    /*
+    eFlickrStream - Lovely, lovely photos! :-)
+    - 02.08.2007 @ 14:33: Initial version
+    */
+    function eFlickrStream() {
+    if (!bolFlickrRun ) { return false; } else { bolFlickrRun=false; }
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var strTarget='flickrstream';// Target container for the flickr badge (must allready exist in the document)
+    /*   *** Options/end ***     */
+    
+    if (!document.getElementById(strTarget)){return false;}// Exsist if target doesn't exsist
+    
+    var objTarget=document.getElementById(strTarget);
+    objTarget.appendChild(objFlickrOutput);// Append output
+    
+    objFlickrOutput=null;// We're done, delete stored variable value
+    objFlickr=null;
+    }
+    
+    /*
+    jsonFlickrFeed - Triggered when the Flickr json "feed" is loaded, generates Flickr photos output list item (Deefer "trigger method" from Patrick Quinn-Graham's DOM Flickr Badge)
+    - 02.08.2007 @ 14:33: Initial version
+    - 23.11.2007 @ 08:24: Updated to use eSetAttr(), enables the flickr link in IE
+    - 29.11.2007 @ 05:52: Some changes for easier configuration (of both options and text-strings)
+    */
+    function jsonFlickrFeed(objFlickr) {
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var intMaxImages=10;// Maximum number of images to show (1-20)
+    var bolThumbSquare=true;// Load the square thumbnails
+    var intThumbWidth=75;// Thumbnail width (omitted if set to "0")
+    var strLightbox='flickrstream';// Lightbox "group name" (define to mark the thumbnails for lightbox usage, adds rel="lightbox[value]" to image links)
+    var strImgAlt='[title]';// Alternative title for images ("[title]" will be replaced by image title)
+    var strImgLinkTitle='View a larger version of \"[title]\"';// Link title for the image link
+    /*   *** Options/end ***     */
+    
+    var objElm,objTxt,objImg,objLnk,objTmp,strTmp;
+    var intPhotos=objFlickr.items.length;
+    var objOut=document.createElement('ul');
+    objOut.setAttribute('class','flickrlist');
+    
+    for (var iCntA=0; ( (iCntA<intPhotos) && (iCntA<intMaxImages)); iCntA++) {
+    
+	objElm=document.createElement('li');// Create item container element (<li>)
+    
+	objLnk=document.createElement('a');// Create link (to the large(r) photo)
+	objLnk.setAttribute('href',objFlickr.items[iCntA].link);
+	objLnk.setAttribute('title',strImgLinkTitle.replace('[title]',objFlickr.items[iCntA].title));
+	if (strLightbox!=''){objLnk.setAttribute('rel','lightbox['+strLightbox+']');}// Add relation value for lightbox usage
+    
+	strTmp=objFlickr.items[iCntA].media.m;// Retreive thumbnail URI
+	if (bolThumbSquare){strTmp=strTmp.replace('_m.jpg','_s.jpg');}// Swap default thumbnail for square...
+    
+	objImg=document.createElement('img');// Main thumbnail
+	eSetAttr(objImg,'class','photo');
+	objImg.setAttribute('src',strTmp);
+	objImg.setAttribute('alt',strImgAlt.replace('[title]',objFlickr.items[iCntA].title));
+	if (intThumbWidth!=0){objImg.setAttribute('width',intThumbWidth);}
+    
+	objLnk.appendChild(objImg);// Append thumbnail to link
+	objElm.appendChild(objLnk);// Append link to container (li)
+
+	objOut.appendChild(objElm);// Append container to output object
+	}
+    
+    objFlickrOutput=objOut;// Store output for later use...
+    
+    if (bolOnLoadRun) {
+	eFlickrStream();
+	}
+    else {
+	bolFlickrRun=true;
+	}
+    }
+    
+    /*
+    eSetAttr/eGetAttr - An attempt to tame IE's weird DOM model
+    - 22.11.2007 @ 12:50 - Initial version
+    */
+    function eSetAttr(objTarget,strAttr,strValue) {
+    if (typeof window.attachEvent!='undefined' && typeof window.opera=='undefined') {
+    //    //Set attributes for IE
+	switch (strAttr) {
+	    case('class'):
+		objTarget.setAttribute('className',strValue);
+		break;
+	    case('style'):
+		objTarget.style.cssText=strValue;
+		break;
+	    default:
+		objTarget.setAttribute(strAttr,strValue);
+		break;
+	    }
+	}
+    else {
+    //    //Set attributes for /Other browsers/
+	objTarget.setAttribute(strAttr,strValue);
+	}
+    //66885349@N03
+    }
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+</body>
+</html>
