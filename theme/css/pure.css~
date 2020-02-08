@@ -299,7 +299,7 @@ a.brand-main {
 
 span.social_links {
     float: right;
-    margin-top: .5em;
+    /*margin-top: .5em;*/
     margin-right: -2em;
     clear: right;
 }
@@ -851,6 +851,7 @@ div.content div.sidebar {
     margin-left: 0pt;
     padding-left: 1ex;
     margin-top: .5em;
+    color: black;
 }
 
 div.content .sidebar {
@@ -1029,6 +1030,7 @@ div.figure.align-center p.caption {
     div.figure.align-center.side-caption p.caption {
 	flex-grow: 1;
 	margin-top: 5%;
+	width: 0;
     }
 
 }
@@ -1198,6 +1200,12 @@ div.contact {
 
 .content .social a:hover {
     color: #000;
+}
+
+span.readtime {
+    text-align:right;
+    color:#888;
+    margin-left: 10%;
 }
 
 #scholarometerWidgetBottom {
