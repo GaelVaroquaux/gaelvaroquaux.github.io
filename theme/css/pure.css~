@@ -845,7 +845,9 @@ div.content div.grey {
 }
 
 div.content div.sidebar {
-    position: relative;
+    position: unset;
+    top: unset;
+    bottom: unset;
     float: right;
     background-color: #F4F4F4;
     margin-left: 0pt;
@@ -1013,7 +1015,7 @@ div.figure.align-center p.caption {
     display: inline-block;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     div.figure.align-right {
 	float: center;
     }
@@ -1134,7 +1136,7 @@ ul.columns.simple:after {
 
 /* Side hanging footnotes */
 @media (min-width: 1600px) {
-    table.footnote.side-hanging {
+    table.footnote.side-hanging, div.content div.side-hanging {
 	position: absolute;
 	right: 1ex;
 	margin-top: -10ex;
@@ -1143,7 +1145,7 @@ ul.columns.simple:after {
 }
 
 @media (min-width: 1750px) {
-    table.footnote.side-hanging {
+    table.footnote.side-hanging, div.side-hanging {
 	width: 25em;
     }
 
