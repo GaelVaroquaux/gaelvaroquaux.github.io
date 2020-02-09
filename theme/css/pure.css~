@@ -1135,7 +1135,7 @@ ul.columns.simple:after {
 }
 
 /* Side hanging footnotes */
-@media (min-width: 1650px) {
+@media (min-width: 1670px) {
     table.footnote.side-hanging, div.content div.side-hanging {
 	position: absolute;
 	right: 1ex;
@@ -1144,7 +1144,7 @@ ul.columns.simple:after {
     }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1820px) {
     table.footnote.side-hanging, div.content div.side-hanging {
 	width: 25em;
     }
