@@ -1214,7 +1214,7 @@ div.contact {
 span.readtime {
     text-align:right;
     color:#888;
-    margin-left: 10%;
+    /*margin-left: 10%;*/
     display: inline-block;
 }
 
