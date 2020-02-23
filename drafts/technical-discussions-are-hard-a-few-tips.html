@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / brain science">
+
+        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Technical discussions are hard; a few tips -- Gaël Varoquaux: computer / data / brain science</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="http://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="http://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Fri 14 February 2020</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Technical discussions are hard; a few tips</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="http://gael-varoquaux.info/tag/programming.html">programming</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/open-source.html">open source</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/people.html">people</a>
+		    <span class="readtime">
+			&nbsp Read time: 10 min.
+		    </span>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <!-- Emma, Eliz, Rashema, Ralf Gommers to read this -->
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This post discuss the difficulties of communicating while developing
+open-source projects and tries to gives some simple advice.</p>
+</div>
+<p>A large software project is above all a social exercise in which technical
+experts try to reach good decisions together, for instance on github
+pull requests. But communication is difficult, in particular between
+diverging points of view. It is easy to
+underestimate how much well-intended persons can misunderstand
+each-other and get hurt, in open source as elsewhere. Knowing why
+there are communication challenges can help, as well as applying a few
+simple rules.</p>
+<img alt="" class="align-right" src="../programming/attachments/communication.png" style="width: 300px;" />
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#maintainer-s-anxiety" id="id7">Maintainer’s anxiety</a></li>
+<li><a class="reference internal" href="#contributor-s-fatigue" id="id8">Contributor’s fatigue</a></li>
+<li><a class="reference internal" href="#communication-is-hard" id="id9">Communication is hard</a></li>
+<li><a class="reference internal" href="#little-things-that-help" id="id10">Little things that help</a></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The first challenge is to understand the other’s point of view: the
+different parties see the problem differently.</p>
+<!-- TODO: put a few things in bold -->
+<div class="section" id="maintainer-s-anxiety">
+<h2><a class="toc-backref" href="#id7">Maintainer’s anxiety</a></h2>
+<div class="section" id="open-source-can-be-anxiety-generating-for-the-maintainers">
+<h3>Open source can be anxiety-generating for the maintainers</h3>
+<p>Maintainers ensure the quality and the long-term life of an open-source
+project. As such, <strong>they feel responsible for any shortcoming in
+the product</strong>. In addition, they often do this work because they care.
+But they can quickly become a converging point of anxiety-generating
+feedback:</p>
+<ul class="simple">
+<li>Code has bugs; the more code, the more bugs. Watching a issue tracker
+fill up with a long list of bugs is frightening to people who
+feel in charge.</li>
+<li>Given that maintainers are visible and qualified, they become the
+target of constant requests for attention: from pleas to prioritize a
+specific issue to solicitations for advice.</li>
+<li>A small fraction of these interactions come as plain
+aggressions. I have been insulted many times by unsatisfied
+users. Each time, it hurts me a lot. My policy is to
+disengage from the conversation, but I am left shaking and staring at
+my computer in the evening.</li>
+</ul>
+<div class="side-hanging sidebar">
+<p class="first sidebar-title"><strong>Related writings</strong></p>
+<p>Ralf Gommers discusses <a class="reference external" href="https://rgommers.github.io/2019/06/the-cost-of-an-open-source-contribution/">the cost of an open source
+contribution</a>, from the point of view of the maintainer.</p>
+<p class="last">Ilya Grigorik suggests: <a class="reference external" href="https://www.igvita.com/2011/12/19/dont-push-your-pull-requests/">Don’t push your pull request</a>.</p>
+</div>
+<p>The more popular a project, the more weight it puts on its maintainers’
+shoulders. A consequence is that <strong>maintainers are tired</strong>, and can
+sometimes approach discussions in a defensive way. Also, we may be plain
+scared of integrating a code that we do not fully comprehend.</p>
+<p>Open-source developers may even, unconsciously, adopt a simple, but
+unfortunate, protection mechanism: being rude. The logic is flawless: if
+I am nasty to people, or I set unreasonnable expectations, people will let me alone.
+Alas, this strategy leads to toxic environments. It not only makes people
+unhappy but also harms the community dynamics that ground the excellence
+of open source.</p>
+</div>
+<div class="section" id="the-danger-abusive-gatekeeping">
+<h3>The danger abusive gatekeeping</h3>
+<!-- add a image of puppy? And a gate? -->
+<p>A maintainer quickly learns that every piece of code, no matter how cute
+it might be, will give him work in the long run, just like a puppy. This
+is unavoidable given that the complexity of code grows faster than its number of
+features <a class="footnote-reference" href="#id3" id="id1">[1]</a>, and, even for a company as rich as Google,
+project maintenance becomes intractable on huge projects <a class="footnote-reference" href="#id4" id="id2">[2]</a>.</p>
+<div class="side-hanging docutils container">
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="https://ieeexplore.ieee.org/document/1702600">An Experiment on Unit Increase in Problem Complexity, Woodfield 1979</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>To quote tensorflow developers
+<a class="reference external" href="https://github.com/tensorflow/tensorflow/pull/33460">“Every [code addition] takes around 16 CPU/GPU
+hours of [quality control]. As such, we cannot just run every
+[code addition] through the [quality control] infrastructure.”</a></td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>A maintainer’s job is to say no often</strong>, to protect the project. But,
+as any gatekeeping, it can unfurtunately become an excercise in unchecked
+power. Making objective choices for these difficult decisions is hard,
+and we all tend naturally to trust more people that we know.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Most often we are not aware of our shortcomings, let alone are we doing
+them on purpose.</p>
+</div>
+</div>
+<div class="section" id="contributor-s-fatigue">
+<h2><a class="toc-backref" href="#id8">Contributor’s fatigue</a></h2>
+<p>A new contributor starting a conversation with a group of seasoned
+project maintainers may easily <strong>feel an imposter</strong>. The
+new contributor knows less about the project. In addition, he or she is engaging
+with a group of people that know each-other well, and is not yet part of
+that <em>inner</em> group.</p>
+<p>This person does not know the code base, or the conventions, and must <strong>make
+extra efforts</strong>, compared to the seasoned developers, to propose a
+contribution suitable for the project. Often, he or she does
+not understand fully the reasons for the project guidelines, or for the
+feedback given. Request for changes can easily be seen as trifles.</p>
+<p>Integrating the contribution can often be a lengthy process –in
+particular in scikit-learn. Indeed, it will involve not only shaping up
+the contribution, but also learning the skills and discovering the
+process. These <strong>long cycles can undermine motivation</strong>: humans need
+successes to feel enthusiasm. Also, the contributor may legitimately
+worry: Will all these efforts be fruitful? Will the contribution make its
+way to the project?</p>
+<p>Note that for these reasons, it is recommended to start contributing with
+very simple features, and to seek feedback on the scope of the
+contribution before writing the code.</p>
+<p>Finally, contributors are seldom paid to work on the project, and there
+is no single line of command that makes decisions and controls incentives
+for all the people on the project. No one is responsible when things go
+astray, which means that the weight falls on the shoulder of the
+individuals.</p>
+<!-- fun pictures, to relax atmosphere, but only later, first write and
+review -->
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The danger behind the lengthy cycle of reviews and improvements needed to
+contribute is <strong>death by a thousands cuts</strong>. The contributor looses
+motivation, and no longer finds the energy to finish the work.</p>
+<div class="grey docutils container">
+<p><strong>How about users?</strong></p>
+<p>This article is focused on developers. Yet, users are also an
+important part of the discussion around open source.</p>
+<p>Often communication failures with users are due to frustration.
+Frustration of being unable to use the software, of hitting a bug, of
+seeing an important issue still not addressed. This frustration stems
+from incorrect expectations, which can often be traced to
+misunderstanding of the processes and the dynamics. Managing
+expectations is important to improve the dialogue, via the
+documentation, via notes on the issue tracker.</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="communication-is-hard">
+<h2><a class="toc-backref" href="#id9">Communication is hard</a></h2>
+<p>Communication is hard: messages are sometimes received differently than
+we would like. <strong>Overworked people discussing very technically
+challenging issues</strong> only makes the matter worse. I have seen people not
+come across well, while I know they are absolutely lovely and caring.</p>
+<p>We are human beings; we are limited; we misunderstand things, and we have
+feelings.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Emotions</strong> –
+My most vivid memory of a communication failure was when I was a sailing
+instructor. Trainees that were under my responsibility had put themselves
+at risk, causing me a lot of worry. During the debrief, I was angry. My
+failure to convey the messages without emotional loading undermined my
+leadership on the group, putting everybody at risk for the rest of the
+week.</p>
+<p>Inability to understand the others’ point of view, or to communicate
+ours, can bring in emotions. Emotions most often impedes technical
+communication.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Limited attention</strong> –
+We, in particular maintainers, are bombarded with email, notifications,
+text and code to read.
+As a consequence, it is easy to read things too fast, to stop in the
+middle, to forget.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Language barriers</strong> –
+Most discussions happen in English; but most of us are not native English
+speakers. We may hide well our difficulties, but nuances are often lost.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Clique effects</strong> –
+Most interactions in open source are done in writing, with low
+communication bandwidth. It can be much harder to convince a maintainer
+on the other side of the world than a colleague in the same room. Schools
+of thoughts naturally emerge when people work a lot together. These
+create bubbles, where we have the impression that everything we say is
+obvious and uncontroversial, and yet we fail to convince people outside
+of our bubble.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="little-things-that-help">
+<h2><a class="toc-backref" href="#id10">Little things that help</a></h2>
+<p>Communication can improved by continuously working on it <a class="footnote-reference" href="#id6" id="id5">[3]</a>.
+It may be obvious to some, but it personally took me many years to learn.</p>
+<table class="side-hanging docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[3]</a></td><td>Training materials for managers often discuss communication, and
+give tricks. I am sure that there are better references than my
+list below. But that’s the best I can do.</td></tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="hear-the-other-exchange">
+<h3>Hear the other: exchange</h3>
+<div class="side-hanging sidebar">
+<p class="first sidebar-title"><strong>Related presentation</strong></p>
+<p class="last"><a class="reference external" href="https://docs.google.com/presentation/d/1mEMjGQXErZC-mBeCt0quLz7b5ODQnehmfwwnCeggzcU/edit#slide=id.g5135b4b0eb_1_14">How can we have healthier technical discussions?</a> by Nathaniel J. Smith</p>
+</div>
+<p><strong>Enable multiway discussions</strong> – The goal of a technical discussion is to
+come up to the best solution. Better solutions emerge via confronting
+different points of view: a single brilliant individual
+probably cannot find or recognize the best solution alone.</p>
+<ul class="simple">
+<li>Integrate input from as many perspectives as possible.</li>
+<li>Make sure everyone feels heard.</li>
+</ul>
+<p><strong>Don’t seek victory</strong> – Most important to keep in mind is that giving
+up on an argument and accepting the other point of view is a perfectly
+valid option. I naturally biased to think that my view on topics dear to
+me is the right one. However, I’ve learned that adopting the view of the
+other could bring a lot to the social dynamics of a project: we are often
+debating over details and the bigger benefit comes from moving forward.</p>
+<p>In addition, if several very bright people have different conclusions
+than me about something that they’ve thought a lot, who am I to disagree?</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="convey-ideas-well-pedagogy">
+<h3>Convey ideas well: pedagogy</h3>
+<p><strong>Explain</strong> – Give the premises of your thoughts. Unroll your thought
+promises. People are not sitting in your head, and need to hear not only
+your conclusion, but how you got there.</p>
+<p><strong>Repeat things</strong> – Account for the fact that people can forget, and
+never hesitate to gently restate important points. Reformulating
+differently can also help explaining.</p>
+<p><strong>Keep it short</strong> – A typical reading speed is around 200 words a
+minute. People have limited time and attention span. The greatest help
+you can provide to your reader is to condense your ideas: let us avoid
+long threads that require several dozens of minutes to read and digest.
+There is a tension between this point and the above. My suggestion:
+remove every word that is not useful, move details to footnotes or
+postscriptums.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="cater-for-emotions-tone">
+<h3>Cater for emotions: tone</h3>
+<div class="side-hanging sidebar">
+<p class="first sidebar-title"><strong>Related</strong></p>
+<p class="last"><a class="reference external" href="https://www.mozilla.org/en-US/about/governance/policies/participation/#expected-behavior">Mozilla participation guide, expected behavior section</a>
+has good advice.</p>
+</div>
+<p><strong>Stay technical</strong> – Always try to get to the technical aspect of the
+matter, and never the human. Give specific code and wording suggestions.
+When explaining a decision, give technical arguments, even if they feel
+obvious to you.</p>
+<p><strong>Be positive</strong> – Being positive in general helps people feeling happy and
+motivated. It is well known that positive feedback leads to quicker
+progress than negative, as revealed <em>eg</em> by studies of class rooms. I am
+particularly guilty of this: I always forget to say something nice,
+although I may be super impressed by a contribution. Likewise, avoid
+negative words when giving feedback (stay technical).</p>
+<p><strong>Avoid “you”</strong> – The mere use of the pronoun “you” puts the person we are
+talking to in the center of message. But the message should not be about
+the person, it should be about the work. It’s very easy to react
+emotionally when it’s about us. The passive voice can be useful to avoid
+putting people as the topic. If the topic is indeed people, sometimes “we”
+is an adequate substitute for “you”.</p>
+<p><strong>Assume good faith</strong> – There are so many misunderstandings that can
+happen. People forget things, people make mistakes, people fail to convey
+their messages. Most often, all these failures are in good faith, and
+misunderstandings are legitimate. In the rare cases there might possibly
+be some bad faith, accounting for it will only make communication worse,
+not better. Along the same line, we should ignore when we feel assaulted
+or insulted, and avoid replying in kind.</p>
+<p><strong>Choose words wisely</strong> – The choice of words matter, because they convey
+implicit messages. In particular, avoid terms that carry judgement
+values: “good” or “bad”. For example “This is done wrong” (note that this
+sentence already avoids “you”), could be replaced by “There might be more
+numerically stable / efficient way of doing it” (note also the use of
+precise technical wording rather than the generic term “better”).</p>
+<p><strong>Use moderating words</strong> – Try to leave room for the other in the
+discussion. Statements too assertive close the door to different points
+of view: “this must be changed” (note the lack of “you”) should be
+avoided while “this should be changed” is better. For this reason, this
+article is riddled with words such as “tend”, “often”, “feel”, “may”,
+“might”.</p>
+<p><strong>Don’t blame someone else</strong> – If you feel that there is some pattern that
+you would like to change, do not point fingers, do not blame others.
+Rather, point yourself at the center of the story, find an example of
+this pattern with you, and the message should be that “it is a pattern
+that <em>we</em> should avoid. <em>“We”</em> is such a powerful term. It unites; it
+builds a team.</p>
+<p><strong>Give your understanding</strong> – If you feel that there is a misunderstanding,
+explain how you are feeling. But do it using “I”, and not “you”, and
+acknowledge the subjectivity: “I feel ignored” rather than “you are
+ignoring me”. Even better: only talk about the feeling: “I am loosing
+motivation, because this is not moving forward”, or “I think that am
+failing to convey why this numerical problem is such an important issue”
+(note the use of “I think”, which avoids casting the situation as
+necessarily true).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>I hope this can be useful. I personally try to apply these rules, because
+I want to work better with others.</p>
+<hr class="docutils" />
+<p>Thanks to many who gave me feedback: Andreas Mueller, Joel Nothman, Joris
+Van den Bossche, Nicolas Hug, Adrin Jalali.</p>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>PS: note how many times I’ve used “you” above. I can clearly get better
+at communication!</p>
+</div>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script  language="JavaScript" type="text/javascript">
+    /* From http://evirtus.net/pub/eflickrstream.asp */
+    /* Global variables */
+    var bolOnLoadRun=false;
+    var bolFlickrRun=false;
+    var objFlickrOutput=null;
+    
+    /* OnLoad events */
+    window.onload = function() {
+    bolOnLoadRun=true;
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	eFlickrStream();
+    };
+    }
+    
+    /*
+    eFlickrStream - Lovely, lovely photos! :-)
+    - 02.08.2007 @ 14:33: Initial version
+    */
+    function eFlickrStream() {
+    if (!bolFlickrRun ) { return false; } else { bolFlickrRun=false; }
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var strTarget='flickrstream';// Target container for the flickr badge (must allready exist in the document)
+    /*   *** Options/end ***     */
+    
+    if (!document.getElementById(strTarget)){return false;}// Exsist if target doesn't exsist
+    
+    var objTarget=document.getElementById(strTarget);
+    objTarget.appendChild(objFlickrOutput);// Append output
+    
+    objFlickrOutput=null;// We're done, delete stored variable value
+    objFlickr=null;
+    }
+    
+    /*
+    jsonFlickrFeed - Triggered when the Flickr json "feed" is loaded, generates Flickr photos output list item (Deefer "trigger method" from Patrick Quinn-Graham's DOM Flickr Badge)
+    - 02.08.2007 @ 14:33: Initial version
+    - 23.11.2007 @ 08:24: Updated to use eSetAttr(), enables the flickr link in IE
+    - 29.11.2007 @ 05:52: Some changes for easier configuration (of both options and text-strings)
+    */
+    function jsonFlickrFeed(objFlickr) {
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var intMaxImages=10;// Maximum number of images to show (1-20)
+    var bolThumbSquare=true;// Load the square thumbnails
+    var intThumbWidth=75;// Thumbnail width (omitted if set to "0")
+    var strLightbox='flickrstream';// Lightbox "group name" (define to mark the thumbnails for lightbox usage, adds rel="lightbox[value]" to image links)
+    var strImgAlt='[title]';// Alternative title for images ("[title]" will be replaced by image title)
+    var strImgLinkTitle='View a larger version of \"[title]\"';// Link title for the image link
+    /*   *** Options/end ***     */
+    
+    var objElm,objTxt,objImg,objLnk,objTmp,strTmp;
+    var intPhotos=objFlickr.items.length;
+    var objOut=document.createElement('ul');
+    objOut.setAttribute('class','flickrlist');
+    
+    for (var iCntA=0; ( (iCntA<intPhotos) && (iCntA<intMaxImages)); iCntA++) {
+    
+	objElm=document.createElement('li');// Create item container element (<li>)
+    
+	objLnk=document.createElement('a');// Create link (to the large(r) photo)
+	objLnk.setAttribute('href',objFlickr.items[iCntA].link);
+	objLnk.setAttribute('title',strImgLinkTitle.replace('[title]',objFlickr.items[iCntA].title));
+	if (strLightbox!=''){objLnk.setAttribute('rel','lightbox['+strLightbox+']');}// Add relation value for lightbox usage
+    
+	strTmp=objFlickr.items[iCntA].media.m;// Retreive thumbnail URI
+	if (bolThumbSquare){strTmp=strTmp.replace('_m.jpg','_s.jpg');}// Swap default thumbnail for square...
+    
+	objImg=document.createElement('img');// Main thumbnail
+	eSetAttr(objImg,'class','photo');
+	objImg.setAttribute('src',strTmp);
+	objImg.setAttribute('alt',strImgAlt.replace('[title]',objFlickr.items[iCntA].title));
+	if (intThumbWidth!=0){objImg.setAttribute('width',intThumbWidth);}
+    
+	objLnk.appendChild(objImg);// Append thumbnail to link
+	objElm.appendChild(objLnk);// Append link to container (li)
+
+	objOut.appendChild(objElm);// Append container to output object
+	}
+    
+    objFlickrOutput=objOut;// Store output for later use...
+    
+    if (bolOnLoadRun) {
+	eFlickrStream();
+	}
+    else {
+	bolFlickrRun=true;
+	}
+    }
+    
+    /*
+    eSetAttr/eGetAttr - An attempt to tame IE's weird DOM model
+    - 22.11.2007 @ 12:50 - Initial version
+    */
+    function eSetAttr(objTarget,strAttr,strValue) {
+    if (typeof window.attachEvent!='undefined' && typeof window.opera=='undefined') {
+    //    //Set attributes for IE
+	switch (strAttr) {
+	    case('class'):
+		objTarget.setAttribute('className',strValue);
+		break;
+	    case('style'):
+		objTarget.style.cssText=strValue;
+		break;
+	    default:
+		objTarget.setAttribute(strAttr,strValue);
+		break;
+	    }
+	}
+    else {
+    //    //Set attributes for /Other browsers/
+	objTarget.setAttribute(strAttr,strValue);
+	}
+    //66885349@N03
+    }
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+</body>
+</html>
