@@ -84,7 +84,7 @@ looks like standard procedural code:</p>
 </pre></div>
 <p>There are several tricks here:</p>
 <ol class="arabic simple">
-<li>I use a ‘<em>delayed</em>’ decorator that creates the argument list and
+<li>I use a ‘<em>delayed</em>‘ decorator that creates the argument list and
 keyword argument dictionary for me so that I can type something that
 really looks like a function call. Also, the decorator checks to see
 if the function and the arguments can be pickled, because if not the
@@ -92,8 +92,8 @@ parallel computing libraries will raise errors, sometimes with
 hard-to-understand messages.</li>
 <li>I use list comprehension to create the list to apply the map/reduce
 onto. List comprehension is really readable, and very powerful.</li>
-<li>The ‘<em>Parallel</em>’ object hides all the cleverness. If the
-‘<em>n_jobs</em>’ parameter is set to 1, it does not call any parallel
+<li>The ‘<em>Parallel</em>‘ object hides all the cleverness. If the
+‘<em>n_jobs</em>‘ parameter is set to 1, it does not call any parallel
 computing library. If it is set to -1, all the CPUs are used. The
 object instantiates the parallel computing context and also destroys
 it. While this is inefficient, it is great for catching errors early.
@@ -106,7 +106,7 @@ Unices implement copy on write of memory pages, you get some shared
 memory for free without worrying about race conditions).</li>
 </ol>
 <div class="topic">
-<p class="topic-title first"><strong>Update</strong></p>
+<p class="topic-title"><strong>Update</strong></p>
 <p>This pattern has actually evolved in the <a class="reference external" href="https://pythonhosted.org/joblib/">joblib project</a> ,
 which provides a lot of cleverness under the hood.</p>
 </div>

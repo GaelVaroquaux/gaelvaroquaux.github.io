@@ -1,5 +1,360 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - programming</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2019-12-01T06:00:00+01:00</updated><entry><title>Getting a big scientific prize for open-source software</title><link href="http://gael-varoquaux.info/programming/getting-a-big-scientific-prize-for-open-source-software.html" rel="alternate"></link><published>2019-12-01T06:00:00+01:00</published><updated>2019-12-01T06:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-12-01:/programming/getting-a-big-scientific-prize-for-open-source-software.html</id><summary type="html">&lt;div class="admonition note"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - programming</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2020-05-28T00:00:00+02:00</updated><entry><title>Technical discussions are hard; a few tips</title><link href="http://gael-varoquaux.info/programming/technical-discussions-are-hard-a-few-tips.html" rel="alternate"></link><published>2020-05-28T00:00:00+02:00</published><updated>2020-05-28T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2020-05-28:/programming/technical-discussions-are-hard-a-few-tips.html</id><summary type="html">&lt;!-- Emma, Eliz, Rashema, Ralf Gommers to read this --&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post discuss the difficulties of communicating while developing
+open-source projects and tries to gives some simple advice.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;A large software project is above all a social exercise in which technical
+experts try to reach good decisions together, for instance on github
+pull requests. But communication is difficult, in …&lt;/p&gt;</summary><content type="html">&lt;!-- Emma, Eliz, Rashema, Ralf Gommers to read this --&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post discuss the difficulties of communicating while developing
+open-source projects and tries to gives some simple advice.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;A large software project is above all a social exercise in which technical
+experts try to reach good decisions together, for instance on github
+pull requests. But communication is difficult, in particular between
+diverging points of view. It is easy to
+underestimate how much well-intended persons can misunderstand
+each-other and get hurt, in open source as elsewhere. Knowing why
+there are communication challenges can help, as well as applying a few
+simple rules.&lt;/p&gt;
+&lt;img alt="" class="align-right" src="../programming/attachments/communication.png" style="width: 300px;" /&gt;
+&lt;div class="contents topic" id="contents"&gt;
+&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#maintainer-s-anxiety" id="id7"&gt;Maintainer’s anxiety&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#contributor-s-fatigue" id="id8"&gt;Contributor’s fatigue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#communication-is-hard" id="id9"&gt;Communication is hard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#little-things-that-help" id="id10"&gt;Little things that help&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The first challenge is to understand the other’s point of view: the
+different parties see the problem differently.&lt;/p&gt;
+&lt;!-- TODO: put a few things in bold --&gt;
+&lt;div class="section" id="maintainer-s-anxiety"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id7"&gt;Maintainer’s anxiety&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="open-source-can-be-anxiety-generating-for-the-maintainers"&gt;
+&lt;h3&gt;Open source can be anxiety-generating for the maintainers&lt;/h3&gt;
+&lt;p&gt;Maintainers ensure the quality and the long-term life of an open-source
+project. As such, &lt;strong&gt;they feel responsible for any shortcoming in
+the product&lt;/strong&gt;. In addition, they often do this work because they care.
+But they can quickly become a converging point of anxiety-generating
+feedback:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Code has bugs; the more code, the more bugs. Watching a issue tracker
+fill up with a long list of bugs is frightening to people who
+feel in charge.&lt;/li&gt;
+&lt;li&gt;Given that maintainers are visible and qualified, they become the
+target of constant requests for attention: from pleas to prioritize a
+specific issue to solicitations for advice.&lt;/li&gt;
+&lt;li&gt;A small fraction of these interactions come as plain
+aggressions. I have been insulted many times by unsatisfied
+users. Each time, it hurts me a lot. My policy is to
+disengage from the conversation, but I am left shaking and staring at
+my computer in the evening.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="side-hanging small sidebar"&gt;
+&lt;p class="first sidebar-title"&gt;&lt;strong&gt;Related writings&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ralf Gommers discusses &lt;a class="reference external" href="https://rgommers.github.io/2019/06/the-cost-of-an-open-source-contribution/"&gt;the cost of an open source
+contribution&lt;/a&gt;, from the point of view of the maintainer.&lt;/p&gt;
+&lt;p&gt;Ilya Grigorik suggests: &lt;a class="reference external" href="https://www.igvita.com/2011/12/19/dont-push-your-pull-requests/"&gt;Don’t push your pull request&lt;/a&gt;.&lt;/p&gt;
+&lt;p class="last"&gt;Brett Cannon: &lt;a class="reference external" href="https://snarky.ca/setting-expectations-for-open-source-participation/"&gt;Setting expectations for open source participation&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The more popular a project, the more weight it puts on its maintainers’
+shoulders. A consequence is that &lt;strong&gt;maintainers are tired&lt;/strong&gt;, and can
+sometimes approach discussions in a defensive way. Also, we may be plain
+scared of integrating a code that we do not fully comprehend.&lt;/p&gt;
+&lt;p&gt;Open-source developers may even, unconsciously, adopt a simple, but
+unfortunate, protection mechanism: being rude. The logic is flawless: if
+I am nasty to people, or I set unreasonnable expectations, people will let me alone.
+Alas, this strategy leads to toxic environments. It not only makes people
+unhappy but also harms the community dynamics that ground the excellence
+of open source.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-danger-abusive-gatekeeping"&gt;
+&lt;h3&gt;The danger abusive gatekeeping&lt;/h3&gt;
+&lt;!-- add a image of puppy? And a gate? --&gt;
+&lt;p&gt;A maintainer quickly learns that every piece of code, no matter how cute
+it might be, will give him work in the long run, &lt;a class="reference external" href="https://snarky.ca/setting-expectations-for-open-source-participation/#submittingacontribution"&gt;just like a puppy&lt;/a&gt;. This
+is unavoidable given that the complexity of code grows faster than its number of
+features &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt;, and, even for a company as rich as Google,
+project maintenance becomes intractable on huge projects &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="side-hanging docutils container"&gt;
+&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://ieeexplore.ieee.org/document/1702600"&gt;An Experiment on Unit Increase in Problem Complexity, Woodfield 1979&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;To quote tensorflow developers
+&lt;a class="reference external" href="https://github.com/tensorflow/tensorflow/pull/33460"&gt;“Every [code addition] takes around 16 CPU/GPU
+hours of [quality control]. As such, we cannot just run every
+[code addition] through the [quality control] infrastructure.”&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;A maintainer’s job is to say no often&lt;/strong&gt;, to protect the project. But,
+as any gatekeeping, it can unfurtunately become an excercise in unchecked
+power. Making objective choices for these difficult decisions is hard,
+and we all tend naturally to trust more people that we know.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Most often we are not aware of our shortcomings, let alone are we doing
+them on purpose.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="contributor-s-fatigue"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id8"&gt;Contributor’s fatigue&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A new contributor starting a conversation with a group of seasoned
+project maintainers may easily &lt;strong&gt;feel an imposter&lt;/strong&gt;. The
+new contributor knows less about the project. In addition, he or she is engaging
+with a group of people that know each-other well, and is not yet part of
+that &lt;em&gt;inner&lt;/em&gt; group.&lt;/p&gt;
+&lt;p&gt;This person does not know the code base, or the conventions, and must &lt;strong&gt;make
+extra efforts&lt;/strong&gt;, compared to the seasoned developers, to propose a
+contribution suitable for the project. Often, he or she does
+not understand fully the reasons for the project guidelines, or for the
+feedback given. Request for changes can easily be seen as trifles.&lt;/p&gt;
+&lt;p&gt;Integrating the contribution can often be a lengthy process –in
+particular in scikit-learn. Indeed, it will involve not only shaping up
+the contribution, but also learning the skills and discovering the
+process. These &lt;strong&gt;long cycles can undermine motivation&lt;/strong&gt;: humans need
+successes to feel enthusiasm. Also, the contributor may legitimately
+worry: Will all these efforts be fruitful? Will the contribution make its
+way to the project?&lt;/p&gt;
+&lt;p&gt;Note that for these reasons, it is recommended to start contributing with
+very simple features, and to seek feedback on the scope of the
+contribution before writing the code.&lt;/p&gt;
+&lt;p&gt;Finally, contributors are seldom paid to work on the project, and there
+is no single line of command that makes decisions and controls incentives
+for all the people on the project. No one is responsible when things go
+astray, which means that the weight falls on the shoulder of the
+individuals.&lt;/p&gt;
+&lt;!-- fun pictures, to relax atmosphere, but only later, first write and
+review --&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The danger behind the lengthy cycle of reviews and improvements needed to
+contribute is &lt;strong&gt;death by a thousands cuts&lt;/strong&gt;. The contributor looses
+motivation, and no longer finds the energy to finish the work.&lt;/p&gt;
+&lt;div class="grey docutils container"&gt;
+&lt;p&gt;&lt;strong&gt;How about users?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This article is focused on developers. Yet, users are also an
+important part of the discussion around open source.&lt;/p&gt;
+&lt;p&gt;Often communication failures with users are due to frustration.
+Frustration of being unable to use the software, of hitting a bug, of
+seeing an important issue still not addressed. This frustration stems
+from incorrect expectations, which can often be traced to
+misunderstanding of the processes and the dynamics. Managing
+expectations is important to improve the dialogue, via the
+documentation, via notes on the issue tracker.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="communication-is-hard"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id9"&gt;Communication is hard&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Communication is hard: messages are sometimes received differently than
+we would like. &lt;strong&gt;Overworked people discussing very technically
+challenging issues&lt;/strong&gt; only makes the matter worse. I have seen people not
+come across well, while I know they are absolutely lovely and caring.&lt;/p&gt;
+&lt;p&gt;We are human beings; we are limited; we misunderstand things, and we have
+feelings.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Emotions&lt;/strong&gt; –
+My most vivid memory of a communication failure was when I was a sailing
+instructor. Trainees that were under my responsibility had put themselves
+at risk, causing me a lot of worry. During the debrief, I was angry. My
+failure to convey the messages without emotional loading undermined my
+leadership on the group, putting everybody at risk for the rest of the
+week.&lt;/p&gt;
+&lt;p&gt;Inability to understand the others’ point of view, or to communicate
+ours, can bring in emotions. Emotions most often impedes technical
+communication.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Limited attention&lt;/strong&gt; –
+We, in particular maintainers, are bombarded with email, notifications,
+text and code to read.
+As a consequence, it is easy to read things too fast, to stop in the
+middle, to forget.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Language barriers&lt;/strong&gt; –
+Most discussions happen in English; but most of us are not native English
+speakers. We may hide well our difficulties, but nuances are often lost.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Clique effects&lt;/strong&gt; –
+Most interactions in open source are done in writing, with low
+communication bandwidth. It can be much harder to convince a maintainer
+on the other side of the world than a colleague in the same room. Schools
+of thoughts naturally emerge when people work a lot together. These
+create bubbles, where we have the impression that everything we say is
+obvious and uncontroversial, and yet we fail to convince people outside
+of our bubble.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="little-things-that-help"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id10"&gt;Little things that help&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Communication can improved by continuously working on it &lt;a class="footnote-reference" href="#id6" id="id5"&gt;[3]&lt;/a&gt;.
+It may be obvious to some, but it personally took me many years to learn.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id5"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Training materials for managers often discuss communication, and
+give tricks. I am sure that there are better references than my
+list below. But that’s the best I can do.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="hear-the-other-exchange"&gt;
+&lt;h3&gt;Hear the other: exchange&lt;/h3&gt;
+&lt;div class="side-hanging small sidebar"&gt;
+&lt;p class="first sidebar-title"&gt;&lt;strong&gt;Related presentation&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="last"&gt;&lt;a class="reference external" href="https://docs.google.com/presentation/d/1mEMjGQXErZC-mBeCt0quLz7b5ODQnehmfwwnCeggzcU/edit#slide=id.g5135b4b0eb_1_14"&gt;How can we have healthier technical discussions?&lt;/a&gt; by Nathaniel J. Smith&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Foster multiway discussions&lt;/strong&gt; – The goal of a technical discussion is to
+come up to the best solution. Better solutions emerge via confronting
+different points of view: a single brilliant individual
+probably cannot find or recognize the best solution alone.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Integrate input from as many perspectives as possible.&lt;/li&gt;
+&lt;li&gt;Make sure everyone feels heard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Don’t seek victory&lt;/strong&gt; – Most important to keep in mind is that giving
+up on an argument and accepting the other point of view is a perfectly
+valid option. I naturally biased to think that my view on topics dear to
+me is the right one. However, I’ve learned that adopting the view of the
+other could bring a lot to the social dynamics of a project: we are often
+debating over details and the bigger benefit comes from moving forward.&lt;/p&gt;
+&lt;p&gt;In addition, if several very bright people have different conclusions
+than me about something that they’ve thought a lot, who am I to disagree?&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="convey-ideas-well-pedagogy"&gt;
+&lt;h3&gt;Convey ideas well: pedagogy&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Explain&lt;/strong&gt; – Give the premises of your thoughts. Unroll your thought
+processes. People are not sitting in your head, and need to hear not only
+your conclusion, but how you got there.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Repeat things&lt;/strong&gt; – Account for the fact that people can forget, and
+never hesitate to gently restate important points. Reformulating
+differently can also help explaining.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keep it short&lt;/strong&gt; – A typical reading speed is around 200 words a
+minute. People have limited time and attention span. The greatest help
+you can provide to your reader is to condense your ideas: let us avoid
+long threads that require several dozens of minutes to read and digest.
+There is a tension between this point and the above. My suggestion:
+remove every word that is not useful, move details to footnotes or
+postscriptums.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cater-for-emotions-tone"&gt;
+&lt;h3&gt;Cater for emotions: tone&lt;/h3&gt;
+&lt;div class="side-hanging small sidebar"&gt;
+&lt;p class="first sidebar-title"&gt;&lt;strong&gt;Related good advice&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="last"&gt;&lt;a class="reference external" href="https://www.mozilla.org/en-US/about/governance/policies/participation/#expected-behavior"&gt;Mozilla participation guide, expected behavior section&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Stay technical&lt;/strong&gt; – Always try to get to the technical aspect of the
+matter, and never the human. Give specific code and wording suggestions.
+When explaining a decision, give technical arguments, even if they feel
+obvious to you.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Be positive&lt;/strong&gt; – Being positive in general helps people feeling happy and
+motivated. It is well known that positive feedback leads to quicker
+progress than negative, as revealed &lt;em&gt;eg&lt;/em&gt; by studies of class rooms. I am
+particularly guilty of this: I always forget to say something nice,
+although I may be super impressed by a contribution. Likewise, avoid
+negative words when giving feedback (stay technical).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Avoid “you”&lt;/strong&gt; – The mere use of the pronoun “you” puts the person we are
+talking to in the center of message. But the message should not be about
+the person, it should be about the work. It’s very easy to react
+emotionally when it’s about us. The passive voice can be useful to avoid
+putting people as the topic. If the topic is indeed people, sometimes “we”
+is an adequate substitute for “you”.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assume good faith&lt;/strong&gt; – There are so many misunderstandings that can
+happen. People forget things, people make mistakes, people fail to convey
+their messages. Most often, all these failures are in good faith, and
+misunderstandings are legitimate. In the rare cases there might possibly
+be some bad faith, accounting for it will only make communication worse,
+not better. Along the same line, we should ignore when we feel assaulted
+or insulted, and avoid replying in kind.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Choose words wisely&lt;/strong&gt; – The choice of words matter, because they convey
+implicit messages. In particular, avoid terms that carry judgement
+values: “good” or “bad”. For example “This is done wrong” (note that this
+sentence already avoids “you”), could be replaced by “There might be more
+numerically stable / efficient way of doing it” (note also the use of
+precise technical wording rather than the generic term “better”).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use moderating words&lt;/strong&gt; – Try to leave room for the other in the
+discussion. Statements too assertive close the door to different points
+of view: “this must be changed” (note the lack of “you”) should be
+avoided while “this should be changed” is better. For this reason, this
+article is riddled with words such as “tend”, “often”, “feel”, “may”,
+“might”.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Don’t blame someone else&lt;/strong&gt; – If you feel that there is some pattern that
+you would like to change, do not point fingers, do not blame others.
+Rather, point yourself at the center of the story, find an example of
+this pattern with you, and the message should be that “it is a pattern
+that &lt;em&gt;we&lt;/em&gt; should avoid. &lt;em&gt;“We”&lt;/em&gt; is such a powerful term. It unites; it
+builds a team.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Give your understanding&lt;/strong&gt; – If you feel that there is a misunderstanding,
+explain how you are feeling. But do it using “I”, and not “you”, and
+acknowledge the subjectivity: “I feel ignored” rather than “you are
+ignoring me”. Even better: only talk about the feeling: “I am loosing
+motivation, because this is not moving forward”, or “I think that am
+failing to convey why this numerical problem is such an important issue”
+(note the use of “I think”, which avoids casting the situation as
+necessarily true).&lt;/p&gt;
+&lt;div class="side-hanging small sidebar"&gt;
+&lt;p class="first sidebar-title"&gt;&lt;strong&gt;Implicit messages&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="last"&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Four-sides_model"&gt;The four sides&lt;/a&gt;
+view of communication highlights the multiple messages present even in
+simple statements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;I hope this can be useful. I personally try to apply these rules, because
+I want to work better with others.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;Thanks&lt;/p&gt;
+&lt;p&gt;to many who gave me feedback: Adrin Jalali, Andreas Mueller,
+Elizabeth Dupres, Emmanuelle Gouillart, Guillaume
+Lemaitre, Joel Nothman, Joris Van den Bossche, Nicolas Hug.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;PS: note how many times I’ve used “you” above. I can clearly get better
+at communication!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="programming"></category><category term="open source"></category><category term="people"></category></entry><entry><title>Getting a big scientific prize for open-source software</title><link href="http://gael-varoquaux.info/programming/getting-a-big-scientific-prize-for-open-source-software.html" rel="alternate"></link><published>2019-12-01T06:00:00+01:00</published><updated>2019-12-01T06:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-12-01:/programming/getting-a-big-scientific-prize-for-open-source-software.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;An important acknowledgement for a different view of doing science:
 open, collaborative, and more than a proof of concept.&lt;/p&gt;
@@ -225,7 +580,7 @@ projects, like in the past, even all the way up to core Python &lt;a class="foot
 &lt;p&gt;I’m am very excited. A strong team of full-time contributors will allow
 us to do ambitious things with scikit-learn.&lt;/p&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Join us&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Join us&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We will be recruiting! See &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/people"&gt;our positions&lt;/a&gt;. Come work with us
 in Paris.&lt;/p&gt;
 &lt;/div&gt;
@@ -286,13 +641,13 @@ important, because it benefits all libraries.&lt;/td&gt;&lt;/tr&gt;
 </content><category term="scikit-learn"></category><category term="open-source"></category><category term="sustainabilty"></category><category term="scientific software"></category></entry><entry><title>Sprint on scikit-learn, in Paris and Austin</title><link href="http://gael-varoquaux.info/programming/sprint-on-scikit-learn-in-paris-and-austin.html" rel="alternate"></link><published>2018-08-01T00:00:00+02:00</published><updated>2018-08-01T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2018-08-01:/programming/sprint-on-scikit-learn-in-paris-and-austin.html</id><summary type="html">&lt;p&gt;Two weeks ago, we held a scikit-learn sprint in Austin and Paris. Here is
 a brief report, on progresses and challenges.&lt;/p&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;Several sprints&lt;/p&gt;
+&lt;p class="topic-title"&gt;Several sprints&lt;/p&gt;
 &lt;p&gt;We actually held two sprint in Austin: one open sprint, at the scipy
 conference sprints, which was open to new contributors, and one core
 sprint, for more …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Two weeks ago, we held a scikit-learn sprint in Austin and Paris. Here is
 a brief report, on progresses and challenges.&lt;/p&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;Several sprints&lt;/p&gt;
+&lt;p class="topic-title"&gt;Several sprints&lt;/p&gt;
 &lt;p&gt;We actually held two sprint in Austin: one open sprint, at the scipy
 conference sprints, which was open to new contributors, and one core
 sprint, for more advanced contributors. Thank you to all who joined
@@ -604,7 +959,7 @@ cite the version in
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Related posts&lt;/strong&gt;:&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Related posts&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="software-for-reproducible-science-lets-not-have-a-misunderstanding.html"&gt;Software for reproducible science: let’s not have a misunderstanding&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="mloss-2015-wising-up-to-building-open-source-machine-learning.html"&gt;MLOSS 2015: wising up to building open-source machine learning&lt;/a&gt;&lt;/li&gt;
@@ -818,7 +1173,7 @@ transparency, and truth, rather than Internet-based marketing?&lt;/p&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;References analysing the erosion of truth&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;References analysing the erosion of truth&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="http://www.economist.com/news/briefing/21706498-dishonesty-politics-nothing-new-manner-which-some-politicians-now-lie-and"&gt;Must-read article in the economist on lies in politics&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Post-truth_politics"&gt;Wikipedia page on Post-truth politics&lt;/a&gt;&lt;/li&gt;
@@ -829,7 +1184,7 @@ polarization&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Disgression: other social issues of data science&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Disgression: other social issues of data science&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;The tech industry is &lt;strong&gt;increasing inequalities&lt;/strong&gt;, making the rich richer and
 leaving the poor behind. Data-science, with its ability to automate
@@ -946,7 +1301,7 @@ new internal implementation. --&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;Backward compatibility&lt;/p&gt;
+&lt;p class="topic-title"&gt;Backward compatibility&lt;/p&gt;
 &lt;p&gt;Existing joblib users can be reassured: the new version is &lt;strong&gt;still
 compatible with pickles generated by older versions&lt;/strong&gt; (&amp;gt;= 0.8.4). You
 are encouraged to update (rebuild?) your cache if you want to take
@@ -987,7 +1342,7 @@ functions which are efficient in terms of speed and memory consumption.&lt;/p&gt
 &lt;p&gt;⚫ &lt;strong&gt;Disk used&lt;/strong&gt;: results are as expected: non compressed files have
 the same size as the in-memory data; compressed files are smaller.&lt;/p&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;Caveat Emptor: performance is data-dependent&lt;/p&gt;
+&lt;p class="topic-title"&gt;Caveat Emptor: performance is data-dependent&lt;/p&gt;
 &lt;p&gt;Different data compress more or less easily. Speed and disk used will
 vary depending on the data. Key considerations are:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -1038,7 +1393,7 @@ gzip/gunzip, bzip2, lzma, xz) can be used to compress/uncompress a pickled file
 generated with joblib. Joblib will be able to load cache compressed with those
 tools.&lt;/p&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;Toward more and faster compression&lt;/p&gt;
+&lt;p class="topic-title"&gt;Toward more and faster compression&lt;/p&gt;
 &lt;p&gt;Specific compression strategies have been developped for fast
 compression, sometimes even faster than disk reads such as &lt;a class="reference external" href="http://google.github.io/snappy/"&gt;snappy&lt;/a&gt; , &lt;a class="reference external" href="http://www.blosc.org/"&gt;blosc&lt;/a&gt;, LZO or LZ4. With a file-like interface, they should be
 readily usable with joblib.&lt;/p&gt;
@@ -1083,7 +1438,7 @@ unsure, simply use &lt;tt class="docutils literal"&gt;open&lt;/tt&gt;, joblib wi
  &lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt; &lt;span class="mf"&gt;0.47006195&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.5436392&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.1218267&lt;/span&gt; &lt;span class="p"&gt;,&lt;/span&gt;  &lt;span class="mf"&gt;0.48592789&lt;/span&gt;&lt;span class="p"&gt;]])]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;Towards dumping to elaborate stores&lt;/p&gt;
+&lt;p class="topic-title"&gt;Towards dumping to elaborate stores&lt;/p&gt;
 &lt;p&gt;Working with file handles opens the door to &lt;strong&gt;storing cache data in database blob or cloud
 storage such as Amazon S3, Amazon Glacier and Google Cloud Storage&lt;/strong&gt;
 (for instance via the Python package &lt;a class="reference external" href="https://github.com/boto/boto"&gt;boto&lt;/a&gt;).&lt;/p&gt;
@@ -1128,7 +1483,7 @@ performance reason and usability, the new joblib version uses its own file
 object &lt;tt class="docutils literal"&gt;BinaryZlibFile&lt;/tt&gt; for zlib compression. Compared to
 &lt;tt class="docutils literal"&gt;GzipFile&lt;/tt&gt;, it disables crc computation, which bring a performance gain of 15%.&lt;/p&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;Speed penalties of on-the-fly writes&lt;/p&gt;
+&lt;p class="topic-title"&gt;Speed penalties of on-the-fly writes&lt;/p&gt;
 &lt;p&gt;There’s also a small speed difference with dict/list objects between new/old
 joblib when using compression.
 The old version pickles the data inside a &lt;tt class="docutils literal"&gt;io.BytesIO&lt;/tt&gt; buffer and then
@@ -1433,7 +1788,7 @@ but high-impact journals tend to focus on the former.&lt;/p&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Related posts&lt;/strong&gt;:&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Related posts&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="software-for-reproducible-science-lets-not-have-a-misunderstanding.html"&gt;Software for reproducible science: let’s not have a misunderstanding&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="mloss-2015-wising-up-to-building-open-source-machine-learning.html"&gt;MLOSS 2015: wising up to building open-source machine learning&lt;/a&gt;&lt;/li&gt;
@@ -1497,7 +1852,7 @@ you can plot outlines for multiple maps.&lt;/p&gt;
 connectomes for classification&lt;/a&gt;.&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;Thanks&lt;/p&gt;
+&lt;p class="topic-title"&gt;Thanks&lt;/p&gt;
 &lt;p&gt;Thanks to Alexandre Abraham who lead the effort, and &lt;a class="reference external" href="http://nilearn.github.io/whats_new.html#contributors"&gt;all the
 contributors&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -1628,7 +1983,7 @@ demand […] they mostly consume sources of labor rather than produce it.
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Thanks to our sponsors&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Thanks to our sponsors&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://www.facebook.com"&gt;Facebook&lt;/a&gt; and &lt;a class="reference external" href="http://www.continuum.io"&gt;continuum&lt;/a&gt; sponsored the trip for our keynote
 speakers. Thank you very much, the keynotes were great!&lt;/p&gt;
 &lt;p&gt;The &lt;a class="reference external" href="http://www.datascience-paris-saclay.fr/"&gt;Paris-Saclay Center for Data Science (CDS)&lt;/a&gt; gave us our main operating
@@ -1649,7 +2004,7 @@ submitted.&lt;/p&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Related posts&lt;/strong&gt;:&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Related posts&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="software-for-reproducible-science-lets-not-have-a-misunderstanding.html"&gt;Software for reproducible science: let’s not have a misunderstanding&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="../science/publishing-scientific-software-matters.html"&gt;Publishing scientific software matters&lt;/a&gt;&lt;/li&gt;
@@ -2020,7 +2375,7 @@ Standing on the shoulders of giants &amp;nbsp; &amp;nbsp; —  &amp;nbsp; &amp;n
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Related posts&lt;/strong&gt;:&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Related posts&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="../science/publishing_scientific_software_matters.html"&gt;Publishing scientific software matters&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="views_on_scientific_computing.html"&gt;Personal views on scientific computing&lt;/a&gt;&lt;/li&gt;
@@ -5680,7 +6035,7 @@ looks like standard procedural code:&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;There are several tricks here:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
-&lt;li&gt;I use a ‘&lt;em&gt;delayed&lt;/em&gt;’ decorator that creates the argument list and
+&lt;li&gt;I use a ‘&lt;em&gt;delayed&lt;/em&gt;‘ decorator that creates the argument list and
 keyword argument dictionary for me so that I can type something that
 really looks like a function call. Also, the decorator checks to see
 if the function and the arguments can be pickled, because if not the
@@ -5688,8 +6043,8 @@ parallel computing libraries will raise errors, sometimes with
 hard-to-understand messages.&lt;/li&gt;
 &lt;li&gt;I use list comprehension to create the list to apply the map/reduce
 onto. List comprehension is really readable, and very powerful.&lt;/li&gt;
-&lt;li&gt;The ‘&lt;em&gt;Parallel&lt;/em&gt;’ object hides all the cleverness. If the
-‘&lt;em&gt;n_jobs&lt;/em&gt;’ parameter is set to 1, it does not call any parallel
+&lt;li&gt;The ‘&lt;em&gt;Parallel&lt;/em&gt;‘ object hides all the cleverness. If the
+‘&lt;em&gt;n_jobs&lt;/em&gt;‘ parameter is set to 1, it does not call any parallel
 computing library. If it is set to -1, all the CPUs are used. The
 object instantiates the parallel computing context and also destroys
 it. While this is inefficient, it is great for catching errors early.
@@ -5702,7 +6057,7 @@ Unices implement copy on write of memory pages, you get some shared
 memory for free without worrying about race conditions).&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Update&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Update&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This pattern has actually evolved in the &lt;a class="reference external" href="https://pythonhosted.org/joblib/"&gt;joblib project&lt;/a&gt; ,
 which provides a lot of cleverness under the hood.&lt;/p&gt;
 &lt;/div&gt;
@@ -6381,7 +6736,7 @@ Je ne sais pas si cela dénote un grand perfectionnisme, ou une grande
 inefficacité :). En tout cas, un grand merci à Philippe Biondi qui a été
 le maître d’oeuvre du project, et qui l’a tiré en avant.&lt;/p&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Le PDF de l’article&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Le PDF de l’article&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;J’ai mis le PDF de l’article &lt;a class="reference external" href="./my-article-on-scientific-computing-with-python.html"&gt;en ligne&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="python"></category><category term="scientific computing"></category><category term="publishing"></category></entry><entry><title>Mayavi image of the week</title><link href="http://gael-varoquaux.info/programming/mayavi-image-of-the-week.html" rel="alternate"></link><published>2009-01-13T00:38:00+01:00</published><updated>2009-01-13T00:38:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-01-13:/programming/mayavi-image-of-the-week.html</id><summary type="html">&lt;p&gt;The title of this post is a lure: there won’t be a Mayavi image each
@@ -6533,7 +6888,7 @@ away by the discontent of a day doing some bad refactoring. I really
 look forward to catching up when I come back. Please forgive me for the
 bad timing.&lt;/p&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Update&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Update&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Patterns that derived from this line of thoughts are now implemented
 in the &lt;a class="reference external" href="https://pythonhosted.org/joblib/"&gt;joblib&lt;/a&gt; library.&lt;/p&gt;
 &lt;/div&gt;
@@ -7073,7 +7428,7 @@ contributor. Please do not contact me to ask questions, unless it is
 to take over development.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="contents topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#requirements" id="id5"&gt;Requirements&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#installing" id="id6"&gt;Installing&lt;/a&gt;&lt;/li&gt;

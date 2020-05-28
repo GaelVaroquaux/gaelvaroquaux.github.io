@@ -95,7 +95,7 @@ give the gist of these progresses, in simple terms.&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;div class="contents topic" id="highlights"&gt;
-&lt;p class="topic-title first"&gt;Highlights&lt;/p&gt;
+&lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#comparing-distributions" id="id5"&gt;Comparing distributions&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#predictive-pipelines-on-brain-functional-connectomes" id="id6"&gt;Predictive pipelines on brain functional connectomes&lt;/a&gt;&lt;/li&gt;
@@ -390,7 +390,7 @@ waiving.&lt;/p&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="contents topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#the-context-two-sample-testing" id="id1"&gt;The context: two-sample testing&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#from-kernel-mean-embeddings-to-distances-on-distributions" id="id2"&gt;From kernel mean embeddings to distances on distributions&lt;/a&gt;&lt;/li&gt;
@@ -545,7 +545,7 @@ the measurement basis, as none of their coordinates are zero. On these
 diagonals, the l1 norm is much larger than the l1 norm of vectors with
 some zero, or nearly-zero coordinates.&lt;/p&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;For a very simple summary, the story is that: to perform tests of
 whether two distributions differs, it is useful to compute a “mean
 Kernel embedding” –similar to a Kernel density estimate, but without
@@ -559,7 +559,7 @@ must perfectly coincide in both set of observations (the total
 variation does not metrize the weak convergence).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The framework exposed here is one that was developed over a long line
 of research, which our work builds upon. &lt;a class="reference external" href="https://papers.nips.cc/paper/9398-comparing-distributions-ell_1-geometry-improves-kernel-two-sample-testing.html"&gt;Our paper&lt;/a&gt;
 gives a complete list of references, however, some useful review
@@ -594,7 +594,7 @@ imaging); And we worked a lot on &lt;strong&gt;growing scikit-learn&lt;/strong&g
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;div class="contents topic" id="highlights"&gt;
-&lt;p class="topic-title first"&gt;Highlights&lt;/p&gt;
+&lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#cognitive-brain-mapping" id="id5"&gt;Cognitive brain mapping&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#data-science-without-data-cleaning" id="id6"&gt;Data science without data cleaning&lt;/a&gt;&lt;/li&gt;
@@ -731,7 +731,7 @@ the data paper &lt;a class="reference external" href="https://www.nature.com/art
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;Data accumulation in brain imaging&lt;/p&gt;
+&lt;p class="topic-title"&gt;Data accumulation in brain imaging&lt;/p&gt;
 &lt;p&gt;We are living exciting times, as &lt;strong&gt;there are more and more large volumes
 of shared brain imaging data&lt;/strong&gt;. &lt;a class="reference external" href="https://openfmri.org/"&gt;OpenfMRI&lt;/a&gt;
 aggregates data in a consistent way across brain-imaging
@@ -1523,7 +1523,7 @@ coffee-break room the following poster (below), that I could
 clearly recognize as the official call for application for positions at
 CNRS.&lt;/p&gt;
 &lt;p&gt;Now this poster says ‘&lt;strong&gt;The CNRS recruits 3 researchers (m/w) in all
-fields of research&lt;/strong&gt;’. Of course it’s a fake poster and black humor: 3
+fields of research&lt;/strong&gt;‘. Of course it’s a fake poster and black humor: 3
 positions nationwide in all fields of research is ridiculously low. It
 is however an expression of the nightmare of thousands of young
 researchers who are applying each year and keep hearing that the
@@ -1646,7 +1646,7 @@ scientific conference.&lt;/p&gt;
 follow all the advice on this page, but should.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="attachments/poster_YAO.pdf"&gt;&lt;img alt="poster1" src="attachments/poster_YAO.jpg" style="width: 33%;" /&gt;&lt;/a&gt; &lt;a class="reference external" href="attachments/poster_hbm2011.pdf"&gt;&lt;img alt="poster2" src="attachments/poster_hbm2011.png" style="width: 33%;" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;LaTeX sources&lt;/p&gt;
+&lt;p class="topic-title"&gt;LaTeX sources&lt;/p&gt;
 &lt;p&gt;This poster is written in LaTeX. You can download the whole source of
 the posters for &lt;a class="reference external" href="attachments/poster.zip"&gt;the first poster (left)&lt;/a&gt;,
 and &lt;a class="reference external" href="attachments/poster_hbm2011.zip"&gt;the second one (right)&lt;/a&gt;. These
@@ -1730,7 +1730,7 @@ to have a simple but nice layout:&lt;/p&gt;
 &lt;li&gt;&lt;a class="reference external" href="attachments/simple.pdf"&gt;The pdf document&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Some advice&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Some advice&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Use &lt;a class="reference external" href="http://www.texniccenter.org/"&gt;texniccenter&lt;/a&gt; if you don’t have a
 favorite editor.&lt;/li&gt;
@@ -1738,12 +1738,12 @@ favorite editor.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 </content><category term="latex"></category><category term="publishing"></category><category term="science"></category></entry><entry><title>PCA and ICA: Identifying combinations of variables</title><link href="http://gael-varoquaux.info/science/ica_vs_pca.html" rel="alternate"></link><published>2010-02-05T00:00:00+01:00</published><updated>2010-02-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-02-05:/science/ica_vs_pca.html</id><summary type="html">&lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Dimension reduction and interpretability&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Dimension reduction and interpretability&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Suppose you have statistical data that too many dimensions, in other
 words too many variables of the same random process, that has been
 observed many times. You want to find out, from all these variables (or all
 these dimensions when speaking in terms of multivariate data …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;&lt;strong&gt;Dimension reduction and interpretability&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Dimension reduction and interpretability&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Suppose you have statistical data that too many dimensions, in other
 words too many variables of the same random process, that has been
 observed many times. You want to find out, from all these variables (or all
@@ -2092,7 +2092,7 @@ non commercial purposes.&lt;/p&gt;
 &lt;p&gt;Here is &lt;a class="reference external" href="attachments/baudelaire.pdf"&gt;a pdf file&lt;/a&gt; that gives an example
 of the fonts.&lt;/p&gt;
 &lt;div class="topic"&gt;
-&lt;p class="topic-title first"&gt;Questions and suggestions&lt;/p&gt;
+&lt;p class="topic-title"&gt;Questions and suggestions&lt;/p&gt;
 &lt;p&gt;I made this font in 2006. Time has passed, and I have completely
 forgotten the skills required to modify it. I cannot go anywhere
 beyond providing the file for download. Sorry, if you send me a kind
