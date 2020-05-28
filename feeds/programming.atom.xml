@@ -43,7 +43,8 @@ different parties see the problem differently.&lt;/p&gt;
 &lt;h3&gt;Open source can be anxiety-generating for the maintainers&lt;/h3&gt;
 &lt;p&gt;Maintainers ensure the quality and the long-term life of an open-source
 project. As such, &lt;strong&gt;they feel responsible for any shortcoming in
-the product&lt;/strong&gt;. In addition, they often do this work because they care.
+the product&lt;/strong&gt;. In addition, they often do this work because they care,
+even though it may not bring any financial support.
 But they can quickly become a converging point of anxiety-generating
 feedback:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -103,7 +104,7 @@ hours of [quality control]. As such, we cannot just run every
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;A maintainer’s job is to say no often&lt;/strong&gt;, to protect the project. But,
-as any gatekeeping, it can unfurtunately become an excercise in unchecked
+as any gatekeeping, it can unfortunately become an excercise in unchecked
 power. Making objective choices for these difficult decisions is hard,
 and we all tend naturally to trust more people that we know.&lt;/p&gt;
 &lt;div class="line-block"&gt;
