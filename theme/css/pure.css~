@@ -1365,10 +1365,6 @@ ul.columns li {
 
 /* Expandable information */
 .expandable {
-    margin: 6px 2em 2px 0em;
-}
-
-div.email {
     display: inline-block;
     margin: 0px 2em 0px 0px;
 }
