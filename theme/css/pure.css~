@@ -1189,6 +1189,8 @@ div.contact {
     display: inline-block;
     margin-left: .2em;
     margin-right: 4em;
+    margin-bottom: 1ex;
+    vertical-align: bottom;
 }
 
 .contact i.fa {
@@ -1292,6 +1294,10 @@ div.three-cols {
     width: 33.3%;
 }
 
+div.two-cols {
+    width: 33.3%;
+}
+
 div.three-cols h3{
     text-align: center;
 }
@@ -1299,6 +1305,10 @@ div.three-cols h3{
 /*@media ((min-width: 550px) and (max-width: 767px)) {*/
 @media (max-width: 1000px) {
     div.three-cols {
+	width: 100%;
+    }
+
+    div.two-cols {
 	width: 100%;
     }
 
@@ -1356,6 +1366,11 @@ ul.columns li {
 /* Expandable information */
 .expandable {
     margin: 6px 2em 2px 0em;
+}
+
+div.email {
+    display: inline-block;
+    margin: 0px 2em 0px 0px;
 }
 
 div.box { 
