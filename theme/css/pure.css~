@@ -1163,6 +1163,10 @@ iframe {
     border: none;
 }
 
+iframe.fullscreen {
+    height: calc(100vh - 7ex)
+}
+
 div.content h1.title {
     display: none;
 }
@@ -1295,7 +1299,7 @@ div.three-cols {
 }
 
 div.two-cols {
-    width: 33.3%;
+    width: 50%;
 }
 
 div.three-cols h3{
