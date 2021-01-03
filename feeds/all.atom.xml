@@ -2350,14 +2350,12 @@ situations and information likely to increase it&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;a class="reference external image-reference" href="https://www.flickr.com/photos/cdevers/4602805654"&gt;&lt;img alt="" class="align-center" src="https://farm2.staticflickr.com/1376/4602805654_db8b6569fb_z_d.jpg" style="width: 80%;" /&gt;&lt;/a&gt;
-</content><category term="politics"></category><category term="data science"></category><category term="software"></category><category term="machine learning"></category><category term="society"></category></entry><entry><title>Unison 2.48 binaries for ARM</title><link href="http://gael-varoquaux.info/misc/unison-248-binaries-for-arm.html" rel="alternate"></link><published>2016-07-23T00:00:00+02:00</published><updated>2016-07-23T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-07-23:/misc/unison-248-binaries-for-arm.html</id><summary type="html">&lt;p class="first last"&gt;I have built static binaries of Unision 2.48 for ARM and x86 64bits&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;I have built static binaries of Unison 2.48 for ARM &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; and x86 64bits.
+</content><category term="politics"></category><category term="data science"></category><category term="software"></category><category term="machine learning"></category><category term="society"></category></entry><entry><title>Unison 2.48 binaries for ARM</title><link href="http://gael-varoquaux.info/misc/unison-248-binaries-for-arm.html" rel="alternate"></link><published>2016-07-23T00:00:00+02:00</published><updated>2016-07-23T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-07-23:/misc/unison-248-binaries-for-arm.html</id><summary type="html">&lt;p class="first last"&gt;I have built static binaries of Unision 2.48 for ARM&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;I have built static binaries of Unison 2.48 for ARM
 Run on my NAS, the arm architecture is necessary to synchronize with the
-latest Ubuntu. The x86 is useful, eg to synchronize with older Ubuntu
-releases:&lt;/p&gt;
+recent Ubuntu.&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="../programming/attachments/unison-2.48.4-armel.zip"&gt;unison-2.48.4-armel.zip&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="../programming/attachments/unison-2.48.4-amd64.zip"&gt;unison-2.48.4-amd64.zip&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="admonition warning"&gt;
 &lt;p class="first admonition-title"&gt;Warning&lt;/p&gt;
@@ -2366,12 +2364,6 @@ releases:&lt;/p&gt;
 built them for my personal use and put them online in case it might be
 useful for others.&lt;/p&gt;
 &lt;/div&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Following instructions on &lt;a class="reference external" href="http://www.crutzi.info/unison/binary/armel"&gt;http://www.crutzi.info/unison/binary/armel&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -2384,6 +2376,83 @@ versions&lt;/strong&gt;. It breaks the trust that users have in updating the sof
 Programmers complain that users always run old versions of
 OSs/libraries/programs, but this is explained by the fear of stuff
 breaking during upgrades.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="notes-to-build-these-binaries"&gt;
+&lt;h2&gt;Notes to build these binaries&lt;/h2&gt;
+&lt;p&gt;I built this following instructions historically on
+&lt;a class="reference external" href="http://www.crutzi.info/unison/binary/armel"&gt;http://www.crutzi.info/unison/binary/armel&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I retrieved these instructions from the wayback machine, and adapted them
+to work on a more modern Debian system&lt;/p&gt;
+&lt;p&gt;To compile it, I used qemu and a Debian ARM image&lt;/p&gt;
+&lt;div class="section" id="build-a-debian-system-under-qemu"&gt;
+&lt;h3&gt;1. Build a debian system under Qemu&lt;/h3&gt;
+&lt;p&gt;Install the system (lasts a couple of hours, with some user input):&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+sudo apt install qemu-system-arm qemu-efi libguestfs-tools
+
+wget -O installer-vmlinuz http://http.us.debian.org/debian/dists/jessie/main/installer-armhf/current/images/netboot/vmlinuz
+wget -O installer-initrd.gz http://http.us.debian.org/debian/dists/jessie/main/installer-armhf/current/images/netboot/initrd.gz
+
+# Create a drive
+qemu-img create -f qcow2 hda.qcow2 5G
+
+qemu-system-arm -M virt -m 1024 \
+-kernel installer-vmlinuz \
+-initrd installer-initrd.gz \
+-drive if=none,file=hda.qcow2,format=qcow2,id=hd \
+-device virtio-blk-device,drive=hd \
+-netdev user,id=mynet \
+-device virtio-net-device,netdev=mynet \
+-nographic -no-reboot
+&lt;/pre&gt;
+&lt;p&gt;Under Ubuntu:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+sudo chmod 644 /boot/vmlinuz*
+&lt;/pre&gt;
+&lt;p&gt;List the content on the /boot dir of the VM’s disk:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+virt-ls -a hda.qcow2 /boot/
+&lt;/pre&gt;
+&lt;p&gt;Copy the initrd and vmlinux:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+virt-copy-out -a hda.qcow2 /boot/vmlinuz-3.16.0-6-armmp-lpae /boot/initrd.img-3.16.0-6-armmp-lpae .
+&lt;/pre&gt;
+&lt;p&gt;Do symlinks:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+ln -s initrd.img-3.16.0-6-armmp-lpae initrd.img
+ln -s vmlinuz-3.16.0-6-armmp-lpae vmlinuz
+&lt;/pre&gt;
+&lt;p&gt;The installed system is then booted with:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+qemu-system-arm -M virt -m 1024 \
+-kernel vmlinuz \
+-initrd initrd.img \
+-drive if=none,file=hda.qcow2,format=qcow2,id=hd \
+-device virtio-blk-device,drive=hd \
+-netdev user,id=mynet \
+-device virtio-net-device,netdev=mynet \
+-nographic -no-reboot -append &amp;quot;root=/dev/vda2&amp;quot;
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="build-unison-under-the-debian-system"&gt;
+&lt;h3&gt;2. Build unison under the debian system&lt;/h3&gt;
+&lt;p&gt;Download the unison source package from&lt;/p&gt;
+&lt;p&gt;Then compile the files within the qemu ARM environment:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+apt-get update
+apt-get upgrade
+apt-get build-dep unison
+wget https://github.com/bcpierce00/unison/archive/v2.48.15v4.tar.gz
+tar -xvzf v2.48.15v4.tar.gz
+cd unison-2.48.15v4
+make UISTYLE=text NATIVE=true STATIC=true
+&lt;/pre&gt;
+&lt;p&gt;You might need to remove the ‘-unsafe-string’ option as detailed in &lt;a class="reference external" href="https://github.com/bcpierce00/unison/issues/211"&gt;https://github.com/bcpierce00/unison/issues/211&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The binary will be in &lt;cite&gt;src/unison&lt;/cite&gt;&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </content><category term="software"></category></entry><entry><title>Better Python compressed persistence in joblib</title><link href="http://gael-varoquaux.info/programming/new_low-overhead_persistence_in_joblib_for_big_data.html" rel="alternate"></link><published>2016-05-20T00:00:00+02:00</published><updated>2016-05-20T00:00:00+02:00</updated><author><name>Alexandre Abadie &amp; Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-05-20:/programming/new_low-overhead_persistence_in_joblib_for_big_data.html</id><summary type="html">&lt;p class="first last"&gt;New persistence in joblib enables low-overhead storage of big data contained in arbitrary objects&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="problem-setting-persistence-for-big-data"&gt;

@@ -42,7 +42,7 @@
                         <p class="post-meta">
                             under                                 <a class="post-category" href="http://gael-varoquaux.info/tag/software.html">software</a>
 		    <span class="readtime">
-			&nbsp Read time: 1 min.
+			&nbsp Read time: 3 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -52,13 +52,11 @@
 </span>                        </p>
                 </header>
             </section>
-            <p>I have built static binaries of Unison 2.48 for ARM <a class="footnote-reference" href="#id2" id="id1">[1]</a> and x86 64bits.
+            <p>I have built static binaries of Unison 2.48 for ARM
 Run on my NAS, the arm architecture is necessary to synchronize with the
-latest Ubuntu. The x86 is useful, eg to synchronize with older Ubuntu
-releases:</p>
+recent Ubuntu.</p>
 <ul class="simple">
 <li><a class="reference external" href="../programming/attachments/unison-2.48.4-armel.zip">unison-2.48.4-armel.zip</a></li>
-<li><a class="reference external" href="../programming/attachments/unison-2.48.4-amd64.zip">unison-2.48.4-amd64.zip</a></li>
 </ul>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
@@ -67,12 +65,6 @@ releases:</p>
 built them for my personal use and put them online in case it might be
 useful for others.</p>
 </div>
-<table class="docutils footnote" frame="void" id="id2" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Following instructions on <a class="reference external" href="http://www.crutzi.info/unison/binary/armel">http://www.crutzi.info/unison/binary/armel</a></td></tr>
-</tbody>
-</table>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -85,6 +77,83 @@ versions</strong>. It breaks the trust that users have in updating the software.
 Programmers complain that users always run old versions of
 OSs/libraries/programs, but this is explained by the fear of stuff
 breaking during upgrades.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="notes-to-build-these-binaries">
+<h2>Notes to build these binaries</h2>
+<p>I built this following instructions historically on
+<a class="reference external" href="http://www.crutzi.info/unison/binary/armel">http://www.crutzi.info/unison/binary/armel</a></p>
+<p>I retrieved these instructions from the wayback machine, and adapted them
+to work on a more modern Debian system</p>
+<p>To compile it, I used qemu and a Debian ARM image</p>
+<div class="section" id="build-a-debian-system-under-qemu">
+<h3>1. Build a debian system under Qemu</h3>
+<p>Install the system (lasts a couple of hours, with some user input):</p>
+<pre class="literal-block">
+sudo apt install qemu-system-arm qemu-efi libguestfs-tools
+
+wget -O installer-vmlinuz http://http.us.debian.org/debian/dists/jessie/main/installer-armhf/current/images/netboot/vmlinuz
+wget -O installer-initrd.gz http://http.us.debian.org/debian/dists/jessie/main/installer-armhf/current/images/netboot/initrd.gz
+
+# Create a drive
+qemu-img create -f qcow2 hda.qcow2 5G
+
+qemu-system-arm -M virt -m 1024 \
+-kernel installer-vmlinuz \
+-initrd installer-initrd.gz \
+-drive if=none,file=hda.qcow2,format=qcow2,id=hd \
+-device virtio-blk-device,drive=hd \
+-netdev user,id=mynet \
+-device virtio-net-device,netdev=mynet \
+-nographic -no-reboot
+</pre>
+<p>Under Ubuntu:</p>
+<pre class="literal-block">
+sudo chmod 644 /boot/vmlinuz*
+</pre>
+<p>List the content on the /boot dir of the VM’s disk:</p>
+<pre class="literal-block">
+virt-ls -a hda.qcow2 /boot/
+</pre>
+<p>Copy the initrd and vmlinux:</p>
+<pre class="literal-block">
+virt-copy-out -a hda.qcow2 /boot/vmlinuz-3.16.0-6-armmp-lpae /boot/initrd.img-3.16.0-6-armmp-lpae .
+</pre>
+<p>Do symlinks:</p>
+<pre class="literal-block">
+ln -s initrd.img-3.16.0-6-armmp-lpae initrd.img
+ln -s vmlinuz-3.16.0-6-armmp-lpae vmlinuz
+</pre>
+<p>The installed system is then booted with:</p>
+<pre class="literal-block">
+qemu-system-arm -M virt -m 1024 \
+-kernel vmlinuz \
+-initrd initrd.img \
+-drive if=none,file=hda.qcow2,format=qcow2,id=hd \
+-device virtio-blk-device,drive=hd \
+-netdev user,id=mynet \
+-device virtio-net-device,netdev=mynet \
+-nographic -no-reboot -append &quot;root=/dev/vda2&quot;
+</pre>
+</div>
+<div class="section" id="build-unison-under-the-debian-system">
+<h3>2. Build unison under the debian system</h3>
+<p>Download the unison source package from</p>
+<p>Then compile the files within the qemu ARM environment:</p>
+<pre class="literal-block">
+apt-get update
+apt-get upgrade
+apt-get build-dep unison
+wget https://github.com/bcpierce00/unison/archive/v2.48.15v4.tar.gz
+tar -xvzf v2.48.15v4.tar.gz
+cd unison-2.48.15v4
+make UISTYLE=text NATIVE=true STATIC=true
+</pre>
+<p>You might need to remove the ‘-unsafe-string’ option as detailed in <a class="reference external" href="https://github.com/bcpierce00/unison/issues/211">https://github.com/bcpierce00/unison/issues/211</a></p>
+<p>The binary will be in <cite>src/unison</cite></p>
+</div>
 </div>
 
             <div class="hr" style="margin-bottom: -.5em;"></div>
