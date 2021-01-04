@@ -819,6 +819,10 @@ div.topic p.topic-title {
     border-color: #777;
 }
 
+div.contents p.topic-title {
+    margin-bottom: .5ex ;
+}
+
 div.note.align-right, div.container.align-right {
     font-weight: 800;
     font-style: oblique;
