@@ -1118,6 +1118,10 @@ div.content h1, div.content h2, div.content h3, div.content h4 {
     clear: both;
 }
 
+div.content div.line-block {
+    clear: right;
+}
+
 div.content a.toc-backref {
     color: #2E3F56;
 }
