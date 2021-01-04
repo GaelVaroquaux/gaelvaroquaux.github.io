@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2021-01-05T00:00:00+01:00</updated><entry><title>2020: my scientific year in review</title><link href="http://gael-varoquaux.info/science/2020-my-scientific-year-in-review.html" rel="alternate"></link><published>2021-01-05T00:00:00+01:00</published><updated>2021-01-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2021-01-05:/science/2020-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;The year 2020 has undoubtedly been interesting: the covid19 pandemic has
-impacted hugely our life, and our work. It stroke while I was on a work
-sabbatical in Montréal, at the &lt;a class="reference external" href="https://www.mcgill.ca/neuro/"&gt;MNI&lt;/a&gt; and
-the &lt;a class="reference external" href="https://mila.quebec/"&gt;MILA&lt;/a&gt;, and it pushed further my interest in
-machine learning for health-care. &lt;strong&gt;My highlights this year …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;The year 2020 has undoubtedly been interesting: the covid19 pandemic has
-impacted hugely our life, and our work. It stroke while I was on a work
-sabbatical in Montréal, at the &lt;a class="reference external" href="https://www.mcgill.ca/neuro/"&gt;MNI&lt;/a&gt; and
-the &lt;a class="reference external" href="https://mila.quebec/"&gt;MILA&lt;/a&gt;, and it pushed further my interest in
-machine learning for health-care. &lt;strong&gt;My highlights this year revolve around
-basic and applied data-science for health&lt;/strong&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2021-01-05T00:00:00+01:00</updated><entry><title>2020: my scientific year in review</title><link href="http://gael-varoquaux.info/science/2020-my-scientific-year-in-review.html" rel="alternate"></link><published>2021-01-05T00:00:00+01:00</published><updated>2021-01-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2021-01-05:/science/2020-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;The year 2020 has undoubtedly been interesting: the covid19 pandemic
+stroke while I was on a work sabbatical in Montréal, at the &lt;a class="reference external" href="https://www.mcgill.ca/neuro/"&gt;MNI&lt;/a&gt; and the &lt;a class="reference external" href="https://mila.quebec/"&gt;MILA&lt;/a&gt;,
+and it pushed further my interest in machine learning for health-care.
+&lt;strong&gt;My highlights this year revolve around basic and applied data-science
+for health&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="contents topic" id="highlights"&gt;
+&lt;p class="topic-title"&gt;Highlights …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;The year 2020 has undoubtedly been interesting: the covid19 pandemic
+stroke while I was on a work sabbatical in Montréal, at the &lt;a class="reference external" href="https://www.mcgill.ca/neuro/"&gt;MNI&lt;/a&gt; and the &lt;a class="reference external" href="https://mila.quebec/"&gt;MILA&lt;/a&gt;,
+and it pushed further my interest in machine learning for health-care.
+&lt;strong&gt;My highlights this year revolve around basic and applied data-science
+for health&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class="contents topic" id="highlights"&gt;
 &lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
 &lt;ul class="simple"&gt;
