@@ -477,7 +477,9 @@ p.links {
     padding-bottom: .1em;
     padding-top: .9em;
     border-bottom: 1px solid #f2f2f0;
+    margin-bottom: 3ex;
 }
+
 .post-title {
     font-size: 1.5em;
     color: #333332;
