@@ -74,14 +74,14 @@ simplified pattern for decorating:</p>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">my_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="k">print</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span>
+        <span class="nb">print</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span>
         <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">my_func</span>
 
 <span class="nd">@with_print</span>
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">print</span> <span class="s1">&#39;f called&#39;</span>
+    <span class="nb">print</span> <span class="s1">&#39;f called&#39;</span>
 </pre></div>
 <p>The nice thing about this pattern is that is it quite easy to type, and
 to read.</p>
@@ -107,18 +107,18 @@ for parallel computing).</p>
         <span class="bp">self</span><span class="o">.</span><span class="n">func</span> <span class="o">=</span> <span class="n">func</span>
 
     <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="k">print</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span>
+        <span class="nb">print</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </pre></div>
 <p>This solution is not enough: the following code won’t pickle:</p>
 <div class="highlight"><pre><span></span><span class="nd">@WithPrint</span>
 <span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">print</span> <span class="s1">&#39;g called&#39;</span>
+    <span class="nb">print</span> <span class="s1">&#39;g called&#39;</span>
 </pre></div>
 <p>The reason this won’t pickle is that we have a name collision: the code
 above expands to:</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">print</span> <span class="s1">&#39;g called&#39;</span>
+    <span class="nb">print</span> <span class="s1">&#39;g called&#39;</span>
 
 <span class="n">g</span> <span class="o">=</span> <span class="n">WithPrint</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
 </pre></div>
@@ -127,7 +127,7 @@ above expands to:</p>
 </pre></div>
 <p>If we do:</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">print</span> <span class="s1">&#39;g called&#39;</span>
+    <span class="nb">print</span> <span class="s1">&#39;g called&#39;</span>
 
 <span class="n">h</span> <span class="o">=</span> <span class="n">WithPrint</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
 </pre></div>
@@ -144,13 +144,13 @@ functools.wraps does the name unmangling.</p>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="nd">@wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">my_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="k">print</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span>
+        <span class="nb">print</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span>
         <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">my_func</span>
 
 <span class="nd">@with_print</span>
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">print</span> <span class="s1">&#39;f called&#39;</span>
+    <span class="nb">print</span> <span class="s1">&#39;f called&#39;</span>
 </pre></div>
 <div class="line-block">
 <div class="line">The pickling works simply because using functools.wraps resets the</div>

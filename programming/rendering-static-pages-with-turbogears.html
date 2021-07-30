@@ -74,7 +74,7 @@ day like I did):</p>
 <span class="kn">import</span> <span class="nn">turbogears.view</span>
 <span class="n">turbogears</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">load_engines</span><span class="p">()</span>
 
-<span class="kn">import</span> <span class="nn">turbogears.util</span> <span class="kn">as</span> <span class="nn">tg_util</span>
+<span class="kn">import</span> <span class="nn">turbogears.util</span> <span class="k">as</span> <span class="nn">tg_util</span>
 <span class="kn">from</span> <span class="nn">turbogears.widgets</span> <span class="kn">import</span> <span class="n">js_location</span>
 
 <span class="n">engine</span> <span class="o">=</span> <span class="n">turbogears</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">engines</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;kid&#39;</span><span class="p">)</span>
@@ -83,8 +83,8 @@ day like I did):</p>
     <span class="sd">&quot;&quot;&quot; Render a given template + its data dictionnary to a static html.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">data_dict</span><span class="p">[</span><span class="s1">&#39;tg_css&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">tg_util</span><span class="o">.</span><span class="n">setlike</span><span class="p">()</span>
-    <span class="n">data_dict</span><span class="p">[</span><span class="s1">&#39;tg_flash&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-    <span class="n">js</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">izip</span><span class="p">(</span><span class="n">js_location</span><span class="p">,</span> <span class="nb">iter</span><span class="p">(</span><span class="n">tg_util</span><span class="o">.</span><span class="n">setlike</span><span class="p">,</span> <span class="bp">None</span><span class="p">)))</span>
+    <span class="n">data_dict</span><span class="p">[</span><span class="s1">&#39;tg_flash&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">js</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">izip</span><span class="p">(</span><span class="n">js_location</span><span class="p">,</span> <span class="nb">iter</span><span class="p">(</span><span class="n">tg_util</span><span class="o">.</span><span class="n">setlike</span><span class="p">,</span> <span class="kc">None</span><span class="p">)))</span>
 
     <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">(</span><span class="n">js_location</span><span class="p">):</span>
         <span class="n">data_dict</span><span class="p">[</span><span class="s2">&quot;tg_js_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">)]</span> <span class="o">=</span> <span class="n">js</span><span class="p">[</span><span class="n">l</span><span class="p">]</span>

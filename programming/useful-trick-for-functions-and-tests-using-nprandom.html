@@ -71,7 +71,7 @@ not involve setting the seed of the global PRNG, as this is evil,
 because it has global effects. The idea is to pass in to your functions
 a PRNG instance (by default the global one):</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">prng</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="p">):</span>
-    <span class="k">print</span> <span class="n">pnrg</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="n">pnrg</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 <p>if you want to use your function with a controlled PRNG, you can
 instantiate one with a specific seed:</p>
