@@ -1,5 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2021-01-05T00:00:00+01:00</updated><entry><title>2020: my scientific year in review</title><link href="http://gael-varoquaux.info/science/2020-my-scientific-year-in-review.html" rel="alternate"></link><published>2021-01-05T00:00:00+01:00</published><updated>2021-01-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2021-01-05:/science/2020-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;The year 2020 has undoubtedly been interesting: the covid19 pandemic
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2021-09-14T00:00:00+02:00</updated><entry><title>Hiring someone to develop scikit-learn community and industry partners</title><link href="http://gael-varoquaux.info/programming/hiring-someone-to-develop-scikit-learn-community-and-industry-partners.html" rel="alternate"></link><published>2021-09-14T00:00:00+02:00</published><updated>2021-09-14T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2021-09-14:/programming/hiring-someone-to-develop-scikit-learn-community-and-industry-partners.html</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;With the growth of scikit-learn and the wider PyData ecosystem, we
+want to recruit in the Inria scikit-learn team for &lt;a class="reference external" href="https://recrutement.inria.fr/public/classic/en/offres/2021-04058"&gt;a new role&lt;/a&gt;.
+Departing from our usual focus on excellence in algorithms,
+statistics, or code, we want to add to the team someone with some
+technical understanding, but an …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;With the growth of scikit-learn and the wider PyData ecosystem, we
+want to recruit in the Inria scikit-learn team for &lt;a class="reference external" href="https://recrutement.inria.fr/public/classic/en/offres/2021-04058"&gt;a new role&lt;/a&gt;.
+Departing from our usual focus on excellence in algorithms,
+statistics, or code, we want to add to the team someone with some
+technical understanding, but an eye for people dynamics. Are you
+passionate about developing open-source communities for data science?
+This job is a unique opportunity.&lt;/p&gt;
+&lt;p class="last"&gt;The mandate will be on the one hand to develop the wider community
+behind scikit-learn, on the other hand to foster the foundation’s
+partnerships, as this is our funding.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="context-scikit-learn-inria-foundation"&gt;
+&lt;h2&gt;Context: Scikit-learn &amp;#64; Inria foundation&lt;/h2&gt;
+&lt;div class="section" id="the-growth-of-scikit-learn"&gt;
+&lt;h3&gt;The growth of Scikit-learn&lt;/h3&gt;
+&lt;img alt="" class="align-right" src="../programming/attachments/scikit-learn-logo.png" style="width: 200px;" /&gt;
+&lt;p&gt;Scikit-learn is used massively, from schools to major companies. It
+underpins business-intelligence analysis or automates processes. Its
+reliability is crucial for the enterprise. Its well-documented methods
+help data-scientists run to valid analyses.&lt;/p&gt;
+&lt;p&gt;Scikit-learn has hugely grown and is still growing in terms of userbase
+and expectation of quality. These days, the development team is large,
+with many grass-root volunteering and some contributors spending a
+sizeable fraction of their work time.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="../programming/attachments/sklearn_website_access.png" style="width: 450px;" /&gt;
+&lt;p class="caption"&gt;Number of monthly website access&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="scikit-learn-inria-foundation"&gt;
+&lt;h3&gt;Scikit-learn &amp;#64; Inria foundation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Birth of a foundation&lt;/strong&gt;
+To ensure reliable funding to a small core of scikit-learn developers, we
+set up a foundation &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; a few years ago. The goal was to make sure that
+we did not lose our experienced developers.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;See &lt;a class="reference external" href="http://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html"&gt;the motivating announcement&lt;/a&gt; and the &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;website&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Achieving sustainability&lt;/strong&gt;
+The resulting structure is set up to provide a career path to a few of
+our core people. As a consequence, it is a French legal entity, acting as
+an employer, funded via sponsorship agreement with a few
+of major economic users of scikit-learn (check out &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;the list of our
+sponsors&lt;/a&gt;). The priorities of
+the team are set &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/how-are-the-priorities-of-the-consortium-defined/"&gt;jointly between the sponsors and the open-source
+community&lt;/a&gt;. The setup is not without flaws, in particular it forces us to employ people &lt;a class="reference external" href="https://www.inria.fr/en/centre-inria-saclay-ile-de-france"&gt;on Campus&lt;/a&gt;, but it enables giving proper benefits to these contributors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The team&lt;/strong&gt; The &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/people/"&gt;scikit-learn team at Inria foundation&lt;/a&gt; currently comprises 4
+very experienced developers. In addition, we have other sources of
+funding –research projects, &lt;a class="reference external" href="https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/"&gt;the scikit-learn MOOC&lt;/a&gt; –
+that we use to create a larger team (currently 3 full-time positions).
+Finally, various researchers on campus are heavily invested in
+scikit-learn or related projects such as joblib. As a result, the amount
+of technical skills is staggering.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Long story short, we want to add new DNA to this awesome team: someone
+into peopleware as much as software.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mandate"&gt;
+&lt;h2&gt;Mandate&lt;/h2&gt;
+&lt;p&gt;The goal of &lt;a class="reference external" href="https://recrutement.inria.fr/public/classic/en/offres/2021-04058"&gt;the new position&lt;/a&gt; is
+to talk both to our wider open-source world and our corporate partners.
+Both are crucial to fostering growth for scikit-learn.&lt;/p&gt;
+&lt;p&gt;The &lt;a class="reference external" href="https://recrutement.inria.fr/public/classic/en/offres/2021-04058"&gt;official job posting&lt;/a&gt;
+doesn’t convey as well as I would like what is behind this position. I’m
+probably to blame :).&lt;/p&gt;
+&lt;div class="section" id="growing-our-open-source-community"&gt;
+&lt;h3&gt;Growing our open-source community&lt;/h3&gt;
+&lt;img alt="" class="align-right" src="../programming/attachments/herdingcats.jpg" style="width: 300px;" /&gt;
+&lt;p&gt;As both the scikit-learn and the PyData community have grown,
+communication becomes a bottleneck. There are so many little things to
+make an open-source community productive: facilitating on-boarding,
+dividing efficiently the workload, documenting well the decision making,
+organizing fun sprints, making sure that issue triaging is efficient…&lt;/p&gt;
+&lt;p&gt;We are looking for someone passionate about open-source
+communities and who wants to be herding such cats.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="increasing-our-corporate-visibility"&gt;
+&lt;h3&gt;Increasing our corporate visibility&lt;/h3&gt;
+&lt;p&gt;Scikit-learn is one of the most used data-science tools. However, talking
+to senior decision makers, their perception sometimes differs. Indeed, we
+are competing for visibility with many powerful actors.&lt;/p&gt;
+&lt;p&gt;We must communicate beyond the open-source world to develop
+a strong brand for scikit-learn. Good communication will help us find new
+sponsors, a key ingredient of growth and sustainability for scikit-learn.&lt;/p&gt;
+&lt;p&gt;We need to communicate on our progresses and our actions, as people are
+often surprised by the breadth of our contributions &lt;a class="footnote-reference" href="#id4" id="id3"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;for instance, the foundation team has contributed &lt;a class="reference external" href="https://youtu.be/UVL4LFy8ch0?t=1437"&gt;improvements in
+CPython itself&lt;/a&gt; , maintains
+&lt;a class="reference external" href="https://github.com/cloudpipe/cloudpickle"&gt;cloudpickle&lt;/a&gt; a central
+component of the data ecosystem).&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As a foundation, we need to be transparent and accountable, which is
+harder than it seems.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="a-good-fit"&gt;
+&lt;h2&gt;A good fit&lt;/h2&gt;
+&lt;a class="reference external image-reference" href="https://www.flickr.com/photos/randychiu/4602851011/"&gt;&lt;img alt="One Man Band, CCby2.0 from randychiu" class="align-right" src="../programming/attachments/one_man_band.jpg" style="width: 250px;" /&gt;&lt;/a&gt;
+&lt;p&gt;We are looking for someone into open source, but also who likes writing
+blog posts, social networks, organizing events, presenting scikit-learn,
+and improving processes.&lt;/p&gt;
+&lt;p&gt;We believe that such a job is best done by someone who has some technical
+interest in scikit-learn: good advocacy needs with good understanding.&lt;/p&gt;
+&lt;p&gt;Maybe this sounds daunting? Few people have all the skills, let alone the
+experience. We are actually more &lt;strong&gt;looking for a passionate and promising
+candidate&lt;/strong&gt;, whatever the length of the resume. We believe that
+&lt;strong&gt;talented people can learn&lt;/strong&gt;, when they like what they do.&lt;/p&gt;
+&lt;p&gt;This is a job about open-source, for open source! It’s not a perfect job:
+we have many administrative constraints in running the foundation, we are
+paying ourselves less than a non-open-source job.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;&lt;strong&gt;Apply now&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We are looking forward to your application. You can submit them on
+&lt;a class="reference external" href="https://recrutement.inria.fr/public/classic/en/offres/2021-04058"&gt;the official job offer&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="open source"></category><category term="growth"></category><category term="communities"></category><category term="scikit-learn"></category><category term="inria"></category><category term="foundation"></category></entry><entry><title>2020: my scientific year in review</title><link href="http://gael-varoquaux.info/science/2020-my-scientific-year-in-review.html" rel="alternate"></link><published>2021-01-05T00:00:00+01:00</published><updated>2021-01-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2021-01-05:/science/2020-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;The year 2020 has undoubtedly been interesting: the covid19 pandemic
 stroke while I was on a work sabbatical in Montréal, at the &lt;a class="reference external" href="https://www.mcgill.ca/neuro/"&gt;MNI&lt;/a&gt; and the &lt;a class="reference external" href="https://mila.quebec/"&gt;MILA&lt;/a&gt;,
 and it pushed further my interest in machine learning for health-care.
 &lt;strong&gt;My highlights this year revolve around basic and applied data-science
