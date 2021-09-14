@@ -477,6 +477,9 @@ p.links {
     padding-bottom: .1em;
     padding-top: .9em;
     border-bottom: 1px solid #f2f2f0;
+}
+
+section.post {
     margin-bottom: 3ex;
 }
 
