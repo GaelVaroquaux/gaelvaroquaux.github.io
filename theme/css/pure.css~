@@ -1021,7 +1021,8 @@ div.figure p.caption {
 }
 
 div.figure.align-center p.caption {
-    display: inline-block;
+    display: block;
+    text-align: center;
 }
 
 @media (max-width: 600px) {

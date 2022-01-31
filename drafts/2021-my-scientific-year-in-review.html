@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / brain science">
+
+        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>2021: my scientific year in review -- Gaël Varoquaux: computer / data / brain science</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="http://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="http://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Sat 01 January 2022</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>2021: my scientific year in review</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="http://gael-varoquaux.info/tag/science.html">science</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/research.html">research</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/health.html">health</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/neuroimaging.html">neuroimaging</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/statistics.html">statistics</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/yearly-report.html">yearly report</a>
+		    <span class="readtime">
+			&nbsp Read time: 5 min.
+		    </span>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <p>TODO</p>
+<div class="contents topic" id="highlights">
+<p class="topic-title">Highlights</p>
+<ul class="simple">
+<li><a class="reference internal" href="#variance-in-machine-learning-benchmarks" id="id8">Variance in machine-learning benchmarks</a></li>
+<li><a class="reference internal" href="#imputation-to-predict-with-missing-values" id="id9">Imputation to predict with missing values</a></li>
+<li><a class="reference internal" href="#mental-health-measures-with-machine-learning" id="id10">Mental-health measures with machine-learning</a></li>
+<li><a class="reference internal" href="#decoding-brain-activity-shared-across-cognitive-paradigms" id="id11">Decoding brain activity shared across cognitive paradigms</a></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="variance-in-machine-learning-benchmarks">
+<h2><a class="toc-backref" href="#id8">Variance in machine-learning benchmarks</a></h2>
+<p class="align-right"><em>Many sources of uncontroled variance in observed
+performance of machine-learning pipelines</em></p>
+<p>How reliable is a empirical benchmark of machine pipelines? Solid
+benchmarks are harder than they seem.</p>
+<p><strong>Sources of variances in machine-learning benchmarks.</strong>
+<a class="reference external" href="https://proceedings.mlsys.org/papers/2021/190">[Bouthillier et al]</a>
+systematically explore the variance of machine-learning benchmarks
+in 5 representative settings: 2 computer vision tasks, 2 natural
+language tasks, and a bioinformatics one.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="figure align-center">
+<img alt="" src="attachments/2021_highlights/bouthillier_sources_of_variance.png" style="width: 100%;" />
+<p class="caption">Different sources of variation of the measured performance: across
+different case studies, as a fraction of the variance induced by
+bootstrapping the data. Different hyperparameter optimization are
+considered.</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>While most deep-learning benchmarks only study the influence of random
+initializations <a class="footnote-reference" href="#id2" id="id1">[1]</a>, the empirical study shows that <strong>the most important
+sources of arbitrary variation in the benchmarks</strong> are:</p>
+<ol class="arabic simple">
+<li>The split between the train and the test set (or, in statistical terms,
+the data sampling);</li>
+<li>The hyper-parameter choice (even with a hyper-parameter optimizer,
+this choice is imperfect and thus has arbitrary aspects);</li>
+<li>The weights init only come after these two.</li>
+</ol>
+<div class="figure align-right">
+<img alt="" src="attachments/2021_highlights/bouthillier_data_sampling.png" style="width: 400px;" />
+<p class="caption">Comparing variance due to train-test split with theoretical
+uncertainty due the size of the test set.</p>
+</div>
+<p>The figure on the right shows that the dominant source of uncertainty
+(due to the arbitrary split between train and test set) is well explained
+by the sampling noise of the test set: as the test is of limited size, it
+can only characterize the quality of a prediction with a limited
+accuracy.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>There is a aweful trend of trying out a certain number of seeds
+and piking the best one. While such approach may select the best
+predictor for a given test set, it does not characterize well the
+learning procedure: the selected seed is still arbitrary and given new
+data there is no reason that it continues being a good seed. If
+“trying out 5 inits and selecting the best one” is part of the
+learning procedure, then this full learning procedure must be
+benchmarked, including the variation induced by the choice of 5 random
+inits rather than 5 others.</td></tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="figure align-right">
+<img alt="" src="attachments/2021_highlights/bouthillier_published_improvements.png" style="width: 400px;" />
+<p class="caption">Comparing benchmark variance to published improvements.</p>
+</div>
+<p><strong>Benchmark variance is not negligeable.</strong> Comparing this benchmarking
+variance to typical published improvements in machine-learning research
+shows that <strong>many of the improvements can be explained be uncontrolled
+fluctuations</strong>.</p>
+<p>Hence, it seems crucial that good practices account for this variance to
+decide whether or not an observed is meaningful.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Accounting for variance.</strong> Statistical control on machine-learning is
+not easy: often the computational cost of hyper-parameter selection is
+too high to repeat it multiple times, in addition cross-validations are
+not independent (don’t do a t-test on them). In addition, the number of
+repititions of the experiment is above all a function of the compute
+power: hence enough compute power can make any trivial difference
+statistically significant (a common problem of null-hypothesis testing).</p>
+<div class="figure align-right">
+<img alt="" src="attachments/2021_highlights/bouthillier_neyman_pearson.png" style="width: 400px;" />
+<p class="caption">Proposed testing on the <strong>probability of improvement</strong> (related to the
+<a class="reference external" href="https://en.wikipedia.org/wiki/Neyman%E2%80%93Pearson_lemma">Neyman-Pearson view on testing</a>).</p>
+</div>
+<p>In <a class="reference external" href="https://proceedings.mlsys.org/papers/2021/190">[Bouthillier et al]</a>, we propose a simple
+procedure to account for the variance of benchmarks:</p>
+<ol class="arabic simple">
+<li>set the hyper-parameters of all methods</li>
+<li>repeat the experiment varying all sources of uncontroled variation
+(data split, random seeds…)</li>
+<li>compute the probability that one pipeline outperforms the other</li>
+<li>accept the improvement if that probability is above 0.75 <a class="footnote-reference" href="#id5" id="id4">[2]</a></li>
+</ol>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[2]</a></td><td>Thresholding at 0.75 was chosen because on our case studies it
+accepted improvements with effect sizes that turned out to be
+historically meaningful.</td></tr>
+</tbody>
+</table>
+<p>This procedure does not account well for the variance due to the
+imperfect choice of hyper-parameters. But in <a class="reference external" href="https://proceedings.mlsys.org/papers/2021/190">[Bouthillier et al]</a>, we characterize it and
+show that it is a surprisingly relibale and yet easy approach to better
+machine learning benchmarks.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="topic">
+<p class="topic-title">Simpler variant</p>
+<p>An even simpler variant consists in reporting the standard deviation
+of the performance scores after sampling all sources of variance
+(including data splits).</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="imputation-to-predict-with-missing-values">
+<h2><a class="toc-backref" href="#id9">Imputation to predict with missing values</a></h2>
+<p class="align-right"><em>Classic (conditional expectation) imputation is not always the good
+choice for prediction</em></p>
+<p>Many data-science applications must work with incomplete data: some
+measurements are missing, for instance in medicine where different
+patients recieve different examinations, or in social science with
+skipped survey questions. Most often, this missingness is not <em>“at
+random”</em>: there is a systematic aspect to missing values –whether or not
+a patient gets an exam is related to her suspect health conditions.</p>
+<p>There is a long-running <a class="reference external" href="https://en.wikipedia.org/wiki/Missing_data">statistical framework to deal with missing
+values</a>, for parameter
+inference in probabilistic models. It leads to the notion that when the
+data are missing at random, estimates of parameters of the fully-observed
+model can be obtained by imputing missing values by values that capture
+the conditional relations between missing and observed.</p>
+<p>In <a class="reference external" href="https://openreview.net/forum?id=usxt30HpW66">Le Morvan NeurIPS 2020</a>, we consider a different
+problem: that of finding the optimal prediction of an outcome <em>y</em> given
+data <em>X</em> with missing values (or, relatedly, estimating the conditional
+dependency of <em>y</em> given <em>X</em>). We show that, provided that we consider
+flexible enough (weakly parametric) estimators, this leads to completely
+different trade off.</p>
+<div class="figure align-right">
+<img alt="" src="attachments/2021_highlights/impute_n_regress_manifolds_corrected_points.png" style="width: 350px;" />
+<p class="caption">Data with imputed missing values that form manifolds in the data
+cloud.</p>
+</div>
+<p>Namely, <a class="reference external" href="https://openreview.net/forum?id=usxt30HpW66">Le Morvan NeurIPS 2020</a> shows that given a
+flexible predictor, <em>almost all imputation functions</em> lead to optimal
+predictions asymptoticaly, <em>for all missing mechanisms</em> (even missing not
+at random). Indeed, the predictor can adapt to the manifolds of imputed
+values (the figure gives an intuition).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>However, an imputation that creates a regression function easier to learn
+can facilitate learning, a good imputation</p>
+</div>
+<div class="section" id="mental-health-measures-with-machine-learning">
+<h2><a class="toc-backref" href="#id10">Mental-health measures with machine-learning</a></h2>
+<p class="align-right"><em>Population-derived composite measures associate best with real-life
+mental-health behaviors</em></p>
+<p>The <a class="reference external" href="https://project.inria.fr/dirtydata/">Dirty Data project</a>, that we
+undertook a few years ago, is really bearing its fruits.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="decoding-brain-activity-shared-across-cognitive-paradigms">
+<h2><a class="toc-backref" href="#id11">Decoding brain activity shared across cognitive paradigms</a></h2>
+<p class="align-right"><em>Turning brain-imaging signal into insights</em></p>
+<p>Mensch</p>
+<p>The MOOC?</p>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script  language="JavaScript" type="text/javascript">
+    /* From http://evirtus.net/pub/eflickrstream.asp */
+    /* Global variables */
+    var bolOnLoadRun=false;
+    var bolFlickrRun=false;
+    var objFlickrOutput=null;
+    
+    /* OnLoad events */
+    window.onload = function() {
+    bolOnLoadRun=true;
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	eFlickrStream();
+    };
+    }
+    
+    /*
+    eFlickrStream - Lovely, lovely photos! :-)
+    - 02.08.2007 @ 14:33: Initial version
+    */
+    function eFlickrStream() {
+    if (!bolFlickrRun ) { return false; } else { bolFlickrRun=false; }
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var strTarget='flickrstream';// Target container for the flickr badge (must allready exist in the document)
+    /*   *** Options/end ***     */
+    
+    if (!document.getElementById(strTarget)){return false;}// Exsist if target doesn't exsist
+    
+    var objTarget=document.getElementById(strTarget);
+    objTarget.appendChild(objFlickrOutput);// Append output
+    
+    objFlickrOutput=null;// We're done, delete stored variable value
+    objFlickr=null;
+    }
+    
+    /*
+    jsonFlickrFeed - Triggered when the Flickr json "feed" is loaded, generates Flickr photos output list item (Deefer "trigger method" from Patrick Quinn-Graham's DOM Flickr Badge)
+    - 02.08.2007 @ 14:33: Initial version
+    - 23.11.2007 @ 08:24: Updated to use eSetAttr(), enables the flickr link in IE
+    - 29.11.2007 @ 05:52: Some changes for easier configuration (of both options and text-strings)
+    */
+    function jsonFlickrFeed(objFlickr) {
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var intMaxImages=10;// Maximum number of images to show (1-20)
+    var bolThumbSquare=true;// Load the square thumbnails
+    var intThumbWidth=75;// Thumbnail width (omitted if set to "0")
+    var strLightbox='flickrstream';// Lightbox "group name" (define to mark the thumbnails for lightbox usage, adds rel="lightbox[value]" to image links)
+    var strImgAlt='[title]';// Alternative title for images ("[title]" will be replaced by image title)
+    var strImgLinkTitle='View a larger version of \"[title]\"';// Link title for the image link
+    /*   *** Options/end ***     */
+    
+    var objElm,objTxt,objImg,objLnk,objTmp,strTmp;
+    var intPhotos=objFlickr.items.length;
+    var objOut=document.createElement('ul');
+    objOut.setAttribute('class','flickrlist');
+    
+    for (var iCntA=0; ( (iCntA<intPhotos) && (iCntA<intMaxImages)); iCntA++) {
+    
+	objElm=document.createElement('li');// Create item container element (<li>)
+    
+	objLnk=document.createElement('a');// Create link (to the large(r) photo)
+	objLnk.setAttribute('href',objFlickr.items[iCntA].link);
+	objLnk.setAttribute('title',strImgLinkTitle.replace('[title]',objFlickr.items[iCntA].title));
+	if (strLightbox!=''){objLnk.setAttribute('rel','lightbox['+strLightbox+']');}// Add relation value for lightbox usage
+    
+	strTmp=objFlickr.items[iCntA].media.m;// Retreive thumbnail URI
+	if (bolThumbSquare){strTmp=strTmp.replace('_m.jpg','_s.jpg');}// Swap default thumbnail for square...
+    
+	objImg=document.createElement('img');// Main thumbnail
+	eSetAttr(objImg,'class','photo');
+	objImg.setAttribute('src',strTmp);
+	objImg.setAttribute('alt',strImgAlt.replace('[title]',objFlickr.items[iCntA].title));
+	if (intThumbWidth!=0){objImg.setAttribute('width',intThumbWidth);}
+    
+	objLnk.appendChild(objImg);// Append thumbnail to link
+	objElm.appendChild(objLnk);// Append link to container (li)
+
+	objOut.appendChild(objElm);// Append container to output object
+	}
+    
+    objFlickrOutput=objOut;// Store output for later use...
+    
+    if (bolOnLoadRun) {
+	eFlickrStream();
+	}
+    else {
+	bolFlickrRun=true;
+	}
+    }
+    
+    /*
+    eSetAttr/eGetAttr - An attempt to tame IE's weird DOM model
+    - 22.11.2007 @ 12:50 - Initial version
+    */
+    function eSetAttr(objTarget,strAttr,strValue) {
+    if (typeof window.attachEvent!='undefined' && typeof window.opera=='undefined') {
+    //    //Set attributes for IE
+	switch (strAttr) {
+	    case('class'):
+		objTarget.setAttribute('className',strValue);
+		break;
+	    case('style'):
+		objTarget.style.cssText=strValue;
+		break;
+	    default:
+		objTarget.setAttribute(strAttr,strValue);
+		break;
+	    }
+	}
+    else {
+    //    //Set attributes for /Other browsers/
+	objTarget.setAttribute(strAttr,strValue);
+	}
+    //66885349@N03
+    }
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+</body>
+</html>
