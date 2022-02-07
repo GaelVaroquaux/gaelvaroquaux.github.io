@@ -95,7 +95,7 @@ div.sidebar div.cover-img {
 .cover-body {
     position: absolute;
     bottom: 0;
-    max-width: 100%;
+    width: 100%;
     padding-bottom: 0;
     padding-top: 100px;
     background-image: linear-gradient(to top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
@@ -1428,6 +1428,50 @@ span.limits span.limit {
     display: block;
     margin: -8px 0px;
 }
+
+/*-- The index page on very large screens: twitter goes on the side --*/
+@media (min-width: 1900px) {
+    div.indexhead {
+	position: fixed;
+	right: 3vw;
+	width: 300px;
+	top: 10pt;
+    }
+
+    div.indexhead div.two_of_two, div.indexhead div.one_of_two {
+	margin-right: 0ex;
+	margin-left: 0ex;
+	width: 100%;
+	height: 43vh;
+    }
+
+    div.indexhead div.one_of_two {
+	margin-top: 5vh;
+    }
+
+    div.indexhead div.two_of_two {
+	margin-top: 5vh;
+    }
+
+    div.main-title {
+	margin-top: 25pt;
+	margin-bottom: 15pt;
+    }
+}
+
+@media (min-width: 2100px) {
+    div.indexhead {
+	right: 5vw;
+    }
+}
+
+@media (min-width: 2400px) {
+    div.indexhead {
+	right: 7vw;
+	width: 400px;
+    }
+}
+
 
 /*-- Include the pygment.css for browser friendliness -------------------*/
 
