@@ -1430,6 +1430,12 @@ span.limits span.limit {
 }
 
 /*-- The index page on very large screens: twitter goes on the side --*/
+
+iframe.latest-papers {
+    height: 340px;
+}
+
+
 @media (min-width: 1900px) {
     div.indexhead {
 	position: fixed;
@@ -1442,7 +1448,11 @@ span.limits span.limit {
 	margin-right: 0ex;
 	margin-left: 0ex;
 	width: 100%;
-	height: 43vh;
+	height: 54vh;
+    }
+
+    iframe.latest-papers {
+	height: 40vh;
     }
 
     div.indexhead div.one_of_two {
@@ -1450,7 +1460,7 @@ span.limits span.limit {
     }
 
     div.indexhead div.two_of_two {
-	margin-top: 5vh;
+	margin-top: 0pt;
     }
 
     div.main-title {
