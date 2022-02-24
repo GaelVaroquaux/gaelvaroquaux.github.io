@@ -4,14 +4,14 @@ closely-related mental process with limited data&lt;/em&gt;&lt;/p&gt;
 &lt;div class="topic"&gt;
 &lt;p class="topic-title"&gt;TL;DR&lt;/p&gt;
 &lt;p&gt;Decoding models can help isolating which mental processes are implied
-with the activation of given brain structures. But to support a broad
+by the activation of given brain structures. But to support a broad
 conclusion, they must be trained on many studies, a difficult problem
 given …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p class="align-right"&gt;&lt;em&gt;Broad decoding models that can specialize to discriminate
 closely-related mental process with limited data&lt;/em&gt;&lt;/p&gt;
 &lt;div class="topic"&gt;
 &lt;p class="topic-title"&gt;TL;DR&lt;/p&gt;
 &lt;p&gt;Decoding models can help isolating which mental processes are implied
-with the activation of given brain structures. But to support a broad
+by the activation of given brain structures. But to support a broad
 conclusion, they must be trained on many studies, a difficult problem
 given the unclear relations between tasks of different studies. We
 contributed a method that infers these links from the data. Their
