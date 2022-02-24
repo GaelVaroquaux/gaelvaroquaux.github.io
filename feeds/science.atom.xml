@@ -1,5 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2021-01-05T00:00:00+01:00</updated><entry><title>2020: my scientific year in review</title><link href="http://gael-varoquaux.info/science/2020-my-scientific-year-in-review.html" rel="alternate"></link><published>2021-01-05T00:00:00+01:00</published><updated>2021-01-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2021-01-05:/science/2020-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;The year 2020 has undoubtedly been interesting: the covid19 pandemic
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="http://gael-varoquaux.info/" rel="alternate"></link><link href="http://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>http://gael-varoquaux.info/</id><updated>2022-02-24T00:00:00+01:00</updated><entry><title>2021 highlight: Decoding brain activity to new cognitive paradigms</title><link href="http://gael-varoquaux.info/science/2021-highlight-decoding-brain-activity-to-new-cognitive-paradigms.html" rel="alternate"></link><published>2022-02-24T00:00:00+01:00</published><updated>2022-02-24T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2022-02-24:/science/2021-highlight-decoding-brain-activity-to-new-cognitive-paradigms.html</id><summary type="html">&lt;p class="align-right"&gt;&lt;em&gt;Broad decoding models that can specialize to discriminate
+closely-related mental process with limited data&lt;/em&gt;&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;TL;DR&lt;/p&gt;
+&lt;p&gt;Decoding models can help isolating which mental processes are implied
+with the activiation of given brain structures. But to support a broad
+conclusion, they must be trained on many studies, a difficult problem
+given …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p class="align-right"&gt;&lt;em&gt;Broad decoding models that can specialize to discriminate
+closely-related mental process with limited data&lt;/em&gt;&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;TL;DR&lt;/p&gt;
+&lt;p&gt;Decoding models can help isolating which mental processes are implied
+with the activiation of given brain structures. But to support a broad
+conclusion, they must be trained on many studies, a difficult problem
+given the unclear relations between tasks of different studies. We
+contributed a method that infers these links from the data. Their
+validity is established by generalization to new tasks. Some
+cognitive neuroscientists prefer qualitative consolidation of
+knowledge, but such approach is hard to put to the test.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="context-infering-cognition-from-brain-imaging"&gt;
+&lt;h2&gt;Context: Infering cognition from brain-imaging&lt;/h2&gt;
+&lt;p&gt;Often, when interpreting functional brain images, one would like to
+conclude on the indvidual’s on-going mental processes. But this
+conclusion is not directly warranted by brain-imaging studies, as they do
+not control the brain activity, but rather engage the participant via a
+cognitive paradigm made of psychological manipulations &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;. &lt;em&gt;Brain
+decoding&lt;/em&gt; can help grounding such &lt;em&gt;reverse inferences&lt;/em&gt; &lt;a class="footnote-reference" href="#id6" id="id2"&gt;[2]&lt;/a&gt;, by using
+machine learning to predict aspects of the task.&lt;/p&gt;
+&lt;p&gt;But a brain decoding model can seldom support broad reverse-inference
+claims, as typical decoding models are trained in a given study that
+samples only a few aspects of cognition. Thus the decoding model only
+concludes on the interpretation of the brain activity in the studies’
+narrow scope.&lt;/p&gt;
+&lt;p&gt;Another challenge is that of statistical power. Most functional brain
+imaging studies comprise only a few dozen subjects, compromising
+statistical power &lt;a class="footnote-reference" href="#id7" id="id3"&gt;[3]&lt;/a&gt;, even more so when using machine learning &lt;a class="footnote-reference" href="#id8" id="id4"&gt;[4]&lt;/a&gt;.
+While there exists large acquisition efforts, these must focus on broad
+psychological manipulations that do not probe fine aspects of mental
+processes.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2006, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1364661305003360"&gt;Can cognitive processes be inferred from
+neuroimaging data?&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2011, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0896627311009895"&gt;Inferring Mental States from Neuroimaging Data:
+From Reverse Inference to Large-Scale Decoding&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2017, &lt;a class="reference external" href="https://www.nature.com/articles/nrn.2016.167"&gt;Scanning the horizon: towards transparent and
+reproducible neuroimaging research&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varoquaux 2018, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1053811917305311"&gt;Cross-validation failure: Small sample sizes lead
+to large error bars&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="contribution-informing-specialized-decoding-questions-from-broad-data-accumulation"&gt;
+&lt;h2&gt;Contribution: Informing specialized decoding questions from broad data accumulation&lt;/h2&gt;
+&lt;p&gt;In &lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008795"&gt;Mensch 2021&lt;/a&gt;,
+we designed a machine-learning method that can &lt;strong&gt;jointly analyze many
+unrelated functional imaging studies to build representations associating
+brain activity to mental processes&lt;/strong&gt;. These representations can then be
+used to &lt;strong&gt;improve brain decoding in new unrelated studies&lt;/strong&gt;, thus bringing
+statistical-power improvements even to experiments probing fine aspects
+of mental processes not studied in large cohorts.&lt;/p&gt;
+&lt;p&gt;One roadblock to accumulating information across
+cognitive neuroimaging studies is that all probe different, yet related,
+mental processes. Framing them all in the same analysis faces the lack of
+universally-adopted language to describe cognitive paradigms. Our prior
+work &lt;a class="footnote-reference" href="#id10" id="id9"&gt;[5]&lt;/a&gt; on this endeavior –the quest for universal decoding across
+studies–, relied on describing each experimental paradigm in an ontology
+of cognitive processes and psychological manipulations. However, such
+approach is not scalable. Here, rather, we infered the latent structure
+of the tasks from the data, without explicitely modeling the links
+between studies. In my eye, this was a very important ingredient of our
+work, and it is non trivial that it enables improving the decoding of
+unrelated studies.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="id10" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id9"&gt;[5]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varoquaux 2018, &lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006565"&gt;Atlases of cognition with large-scale human brain
+mapping&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Capturing &lt;em&gt;representations&lt;/em&gt; was key to transfering across study:
+representations of brain activity captured distributed brain structures
+predictive of behavior; representations of tasks across studies captured
+decompositions of behavior well explained by brain activity. Of course,
+the representations that we extracted were not as sharp as the stylized
+functional modules that have been manually compiled from decades of
+cognitive-neuroscience research.&lt;/p&gt;
+&lt;p&gt;From a computer-science standpoint, we used a deep-learning architecture.
+This is the first time that we witnessed a
+deep-learning architecture outperforming well-tuned shallow baselines on
+functional neuroimaging data &lt;a class="footnote-reference" href="#id12" id="id11"&gt;[6]&lt;/a&gt;. This success is likely due to the
+massive amount of data that we assembled: as our method can
+readily work across studies, we were able to apply it to 40000
+subject-level contrast maps.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="id12" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id11"&gt;[6]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;There have been many reports of deep architectures on functional
+brain imaging. However, in our experience, good shallow benchmarks
+are hard to beat.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="attachments/2021_highlights/mston.png" /&gt;
+&lt;p class="caption"&gt;Our deep-learning architecture&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="a-research-agenda-that-does-not-win-all-hearts"&gt;
+&lt;h2&gt;A research agenda that does not win all hearts&lt;/h2&gt;
+&lt;p&gt;Our underlying research agenda is to &lt;strong&gt;piece together
+cognitive-neuroimaging evidence on a wide variety of tasks and mental
+processes&lt;/strong&gt;. In cognitive neuroscience, such consolidation of knowledge
+is done via review articles, that assemble findings from many
+publications into a consistent picture on how tasks decompose on
+elementary mental processes implemented by brain functional modules. The
+literature review and the ensuing neuro-cognitive model are however verbal
+by nature: assembling qualitative findings. I, for one, would like to
+have quantitative tools to foster big-picture view. Of course, the
+challenge with quantitative approaches as ours is to capture all
+qualitative aspects of the question.&lt;/p&gt;
+&lt;p&gt;Over the years that I have been pushing these ideas, I find that they are
+met with resistance from some elite cognitive neuroscientists who see
+them as unexciting at best. The same people are enthusiastic about new
+data-analysis methods to dissect in fine details brain responses with a
+detailed model of a given task, despite limited statistical power and
+external validity. My feeling is that &lt;strong&gt;the question of how
+various tasks are related is perceived as belonging to the walled garden
+of cognitive neuroscientists, not to be put to the test by statistical
+methods&lt;/strong&gt; &lt;a class="footnote-reference" href="#id14" id="id13"&gt;[7]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="id14" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id13"&gt;[7]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1008795"&gt;The second round of review of our manuscript&lt;/a&gt;
+certainly felt as if the method was judged by cognitive-neuroscience
+lenses, and not the validity of the data analysis that it entailed.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Yet, as clearly exposed by Tal Yarkoni in his &lt;a class="reference external" href="https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/generalizability-crisis/AD386115BA539A759ACB3093760F4824"&gt;Generalization crisis&lt;/a&gt;,
+drawing conclusions on mental organization from a few repetitions of a
+tasks is at risk of picking up idiosyncrasies of the task or the stimuli.
+A starting point of our work (&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008795"&gt;Mensch 2021&lt;/a&gt;)
+was the fall of statistical power in cognitive neuroscience, documented
+by &lt;a class="reference external" href="https://www.nature.com/articles/nrn.2016.167"&gt;Poldrack 2017&lt;/a&gt;, but
+one reviewer censored this argument &lt;a class="footnote-reference" href="#id17" id="id16"&gt;[8]&lt;/a&gt;. This exchange felt to me as &lt;strong&gt;a
+field refusing to discuss publicly its challenges&lt;/strong&gt;, which leave no room for
+methods’ researchers such as myself to address them.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="id17" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id16"&gt;[8]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1008795"&gt;Comments in the first review&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="neuroimaging"></category><category term="statistics"></category><category term="yearly report"></category></entry><entry><title>2020: my scientific year in review</title><link href="http://gael-varoquaux.info/science/2020-my-scientific-year-in-review.html" rel="alternate"></link><published>2021-01-05T00:00:00+01:00</published><updated>2021-01-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2021-01-05:/science/2020-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;The year 2020 has undoubtedly been interesting: the covid19 pandemic
 stroke while I was on a work sabbatical in Montréal, at the &lt;a class="reference external" href="https://www.mcgill.ca/neuro/"&gt;MNI&lt;/a&gt; and the &lt;a class="reference external" href="https://mila.quebec/"&gt;MILA&lt;/a&gt;,
 and it pushed further my interest in machine learning for health-care.
 &lt;strong&gt;My highlights this year revolve around basic and applied data-science

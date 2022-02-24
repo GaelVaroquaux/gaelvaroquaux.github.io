@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>2021 highlight: Decoding brain activity to new cognitive paradigms -- Gaël Varoquaux: computer / data / health science</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="http://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="http://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Thu 24 February 2022</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>2021 highlight: Decoding brain activity to new cognitive paradigms</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="http://gael-varoquaux.info/tag/science.html">science</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/research.html">research</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/neuroimaging.html">neuroimaging</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/statistics.html">statistics</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/yearly-report.html">yearly report</a>
+		    <span class="readtime">
+			&nbsp Read time: 5 min.
+		    </span>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <p class="align-right"><em>Broad decoding models that can specialize to discriminate
+closely-related mental process with limited data</em></p>
+<div class="topic">
+<p class="topic-title">TL;DR</p>
+<p>Decoding models can help isolating which mental processes are implied
+with the activiation of given brain structures. But to support a broad
+conclusion, they must be trained on many studies, a difficult problem
+given the unclear relations between tasks of different studies. We
+contributed a method that infers these links from the data. Their
+validity is established by generalization to new tasks. Some
+cognitive neuroscientists prefer qualitative consolidation of
+knowledge, but such approach is hard to put to the test.</p>
+</div>
+<div class="section" id="context-infering-cognition-from-brain-imaging">
+<h2>Context: Infering cognition from brain-imaging</h2>
+<p>Often, when interpreting functional brain images, one would like to
+conclude on the indvidual’s on-going mental processes. But this
+conclusion is not directly warranted by brain-imaging studies, as they do
+not control the brain activity, but rather engage the participant via a
+cognitive paradigm made of psychological manipulations <a class="footnote-reference" href="#id5" id="id1">[1]</a>. <em>Brain
+decoding</em> can help grounding such <em>reverse inferences</em> <a class="footnote-reference" href="#id6" id="id2">[2]</a>, by using
+machine learning to predict aspects of the task.</p>
+<p>But a brain decoding model can seldom support broad reverse-inference
+claims, as typical decoding models are trained in a given study that
+samples only a few aspects of cognition. Thus the decoding model only
+concludes on the interpretation of the brain activity in the studies’
+narrow scope.</p>
+<p>Another challenge is that of statistical power. Most functional brain
+imaging studies comprise only a few dozen subjects, compromising
+statistical power <a class="footnote-reference" href="#id7" id="id3">[3]</a>, even more so when using machine learning <a class="footnote-reference" href="#id8" id="id4">[4]</a>.
+While there exists large acquisition efforts, these must focus on broad
+psychological manipulations that do not probe fine aspects of mental
+processes.</p>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Poldrack 2006, <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1364661305003360">Can cognitive processes be inferred from
+neuroimaging data?</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Poldrack 2011, <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0896627311009895">Inferring Mental States from Neuroimaging Data:
+From Reverse Inference to Large-Scale Decoding</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td>Poldrack 2017, <a class="reference external" href="https://www.nature.com/articles/nrn.2016.167">Scanning the horizon: towards transparent and
+reproducible neuroimaging research</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[4]</a></td><td>Varoquaux 2018, <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1053811917305311">Cross-validation failure: Small sample sizes lead
+to large error bars</a></td></tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="contribution-informing-specialized-decoding-questions-from-broad-data-accumulation">
+<h2>Contribution: Informing specialized decoding questions from broad data accumulation</h2>
+<p>In <a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008795">Mensch 2021</a>,
+we designed a machine-learning method that can <strong>jointly analyze many
+unrelated functional imaging studies to build representations associating
+brain activity to mental processes</strong>. These representations can then be
+used to <strong>improve brain decoding in new unrelated studies</strong>, thus bringing
+statistical-power improvements even to experiments probing fine aspects
+of mental processes not studied in large cohorts.</p>
+<p>One roadblock to accumulating information across
+cognitive neuroimaging studies is that all probe different, yet related,
+mental processes. Framing them all in the same analysis faces the lack of
+universally-adopted language to describe cognitive paradigms. Our prior
+work <a class="footnote-reference" href="#id10" id="id9">[5]</a> on this endeavior –the quest for universal decoding across
+studies–, relied on describing each experimental paradigm in an ontology
+of cognitive processes and psychological manipulations. However, such
+approach is not scalable. Here, rather, we infered the latent structure
+of the tasks from the data, without explicitely modeling the links
+between studies. In my eye, this was a very important ingredient of our
+work, and it is non trivial that it enables improving the decoding of
+unrelated studies.</p>
+<table class="side-hanging docutils footnote" frame="void" id="id10" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id9">[5]</a></td><td>Varoquaux 2018, <a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006565">Atlases of cognition with large-scale human brain
+mapping</a></td></tr>
+</tbody>
+</table>
+<p>Capturing <em>representations</em> was key to transfering across study:
+representations of brain activity captured distributed brain structures
+predictive of behavior; representations of tasks across studies captured
+decompositions of behavior well explained by brain activity. Of course,
+the representations that we extracted were not as sharp as the stylized
+functional modules that have been manually compiled from decades of
+cognitive-neuroscience research.</p>
+<p>From a computer-science standpoint, we used a deep-learning architecture.
+This is the first time that we witnessed a
+deep-learning architecture outperforming well-tuned shallow baselines on
+functional neuroimaging data <a class="footnote-reference" href="#id12" id="id11">[6]</a>. This success is likely due to the
+massive amount of data that we assembled: as our method can
+readily work across studies, we were able to apply it to 40000
+subject-level contrast maps.</p>
+<table class="side-hanging docutils footnote" frame="void" id="id12" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id11">[6]</a></td><td>There have been many reports of deep architectures on functional
+brain imaging. However, in our experience, good shallow benchmarks
+are hard to beat.</td></tr>
+</tbody>
+</table>
+<div class="figure align-center">
+<img alt="" src="attachments/2021_highlights/mston.png" />
+<p class="caption">Our deep-learning architecture</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="a-research-agenda-that-does-not-win-all-hearts">
+<h2>A research agenda that does not win all hearts</h2>
+<p>Our underlying research agenda is to <strong>piece together
+cognitive-neuroimaging evidence on a wide variety of tasks and mental
+processes</strong>. In cognitive neuroscience, such consolidation of knowledge
+is done via review articles, that assemble findings from many
+publications into a consistent picture on how tasks decompose on
+elementary mental processes implemented by brain functional modules. The
+literature review and the ensuing neuro-cognitive model are however verbal
+by nature: assembling qualitative findings. I, for one, would like to
+have quantitative tools to foster big-picture view. Of course, the
+challenge with quantitative approaches as ours is to capture all
+qualitative aspects of the question.</p>
+<p>Over the years that I have been pushing these ideas, I find that they are
+met with resistance from some elite cognitive neuroscientists who see
+them as unexciting at best. The same people are enthusiastic about new
+data-analysis methods to dissect in fine details brain responses with a
+detailed model of a given task, despite limited statistical power and
+external validity. My feeling is that <strong>the question of how
+various tasks are related is perceived as belonging to the walled garden
+of cognitive neuroscientists, not to be put to the test by statistical
+methods</strong> <a class="footnote-reference" href="#id14" id="id13">[7]</a>.</p>
+<table class="side-hanging docutils footnote" frame="void" id="id14" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id13">[7]</a></td><td><a class="reference external" href="https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1008795">The second round of review of our manuscript</a>
+certainly felt as if the method was judged by cognitive-neuroscience
+lenses, and not the validity of the data analysis that it entailed.</td></tr>
+</tbody>
+</table>
+<p>Yet, as clearly exposed by Tal Yarkoni in his <a class="reference external" href="https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/generalizability-crisis/AD386115BA539A759ACB3093760F4824">Generalization crisis</a>,
+drawing conclusions on mental organization from a few repetitions of a
+tasks is at risk of picking up idiosyncrasies of the task or the stimuli.
+A starting point of our work (<a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008795">Mensch 2021</a>)
+was the fall of statistical power in cognitive neuroscience, documented
+by <a class="reference external" href="https://www.nature.com/articles/nrn.2016.167">Poldrack 2017</a>, but
+one reviewer censored this argument <a class="footnote-reference" href="#id17" id="id16">[8]</a>. This exchange felt to me as <strong>a
+field refusing to discuss publicly its challenges</strong>, which leave no room for
+methods’ researchers such as myself to address them.</p>
+<table class="side-hanging docutils footnote" frame="void" id="id17" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id16">[8]</a></td><td><a class="reference external" href="https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1008795">Comments in the first review</a></td></tr>
+</tbody>
+</table>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script  language="JavaScript" type="text/javascript">
+    /* From http://evirtus.net/pub/eflickrstream.asp */
+    /* Global variables */
+    var bolOnLoadRun=false;
+    var bolFlickrRun=false;
+    var objFlickrOutput=null;
+    
+    /* OnLoad events */
+    window.onload = function() {
+    bolOnLoadRun=true;
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	eFlickrStream();
+    };
+    }
+    
+    /*
+    eFlickrStream - Lovely, lovely photos! :-)
+    - 02.08.2007 @ 14:33: Initial version
+    */
+    function eFlickrStream() {
+    if (!bolFlickrRun ) { return false; } else { bolFlickrRun=false; }
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var strTarget='flickrstream';// Target container for the flickr badge (must allready exist in the document)
+    /*   *** Options/end ***     */
+    
+    if (!document.getElementById(strTarget)){return false;}// Exsist if target doesn't exsist
+    
+    var objTarget=document.getElementById(strTarget);
+    objTarget.appendChild(objFlickrOutput);// Append output
+    
+    objFlickrOutput=null;// We're done, delete stored variable value
+    objFlickr=null;
+    }
+    
+    /*
+    jsonFlickrFeed - Triggered when the Flickr json "feed" is loaded, generates Flickr photos output list item (Deefer "trigger method" from Patrick Quinn-Graham's DOM Flickr Badge)
+    - 02.08.2007 @ 14:33: Initial version
+    - 23.11.2007 @ 08:24: Updated to use eSetAttr(), enables the flickr link in IE
+    - 29.11.2007 @ 05:52: Some changes for easier configuration (of both options and text-strings)
+    */
+    function jsonFlickrFeed(objFlickr) {
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var intMaxImages=10;// Maximum number of images to show (1-20)
+    var bolThumbSquare=true;// Load the square thumbnails
+    var intThumbWidth=75;// Thumbnail width (omitted if set to "0")
+    var strLightbox='flickrstream';// Lightbox "group name" (define to mark the thumbnails for lightbox usage, adds rel="lightbox[value]" to image links)
+    var strImgAlt='[title]';// Alternative title for images ("[title]" will be replaced by image title)
+    var strImgLinkTitle='View a larger version of \"[title]\"';// Link title for the image link
+    /*   *** Options/end ***     */
+    
+    var objElm,objTxt,objImg,objLnk,objTmp,strTmp;
+    var intPhotos=objFlickr.items.length;
+    var objOut=document.createElement('ul');
+    objOut.setAttribute('class','flickrlist');
+    
+    for (var iCntA=0; ( (iCntA<intPhotos) && (iCntA<intMaxImages)); iCntA++) {
+    
+	objElm=document.createElement('li');// Create item container element (<li>)
+    
+	objLnk=document.createElement('a');// Create link (to the large(r) photo)
+	objLnk.setAttribute('href',objFlickr.items[iCntA].link);
+	objLnk.setAttribute('title',strImgLinkTitle.replace('[title]',objFlickr.items[iCntA].title));
+	if (strLightbox!=''){objLnk.setAttribute('rel','lightbox['+strLightbox+']');}// Add relation value for lightbox usage
+    
+	strTmp=objFlickr.items[iCntA].media.m;// Retreive thumbnail URI
+	if (bolThumbSquare){strTmp=strTmp.replace('_m.jpg','_s.jpg');}// Swap default thumbnail for square...
+    
+	objImg=document.createElement('img');// Main thumbnail
+	eSetAttr(objImg,'class','photo');
+	objImg.setAttribute('src',strTmp);
+	objImg.setAttribute('alt',strImgAlt.replace('[title]',objFlickr.items[iCntA].title));
+	if (intThumbWidth!=0){objImg.setAttribute('width',intThumbWidth);}
+    
+	objLnk.appendChild(objImg);// Append thumbnail to link
+	objElm.appendChild(objLnk);// Append link to container (li)
+
+	objOut.appendChild(objElm);// Append container to output object
+	}
+    
+    objFlickrOutput=objOut;// Store output for later use...
+    
+    if (bolOnLoadRun) {
+	eFlickrStream();
+	}
+    else {
+	bolFlickrRun=true;
+	}
+    }
+    
+    /*
+    eSetAttr/eGetAttr - An attempt to tame IE's weird DOM model
+    - 22.11.2007 @ 12:50 - Initial version
+    */
+    function eSetAttr(objTarget,strAttr,strValue) {
+    if (typeof window.attachEvent!='undefined' && typeof window.opera=='undefined') {
+    //    //Set attributes for IE
+	switch (strAttr) {
+	    case('class'):
+		objTarget.setAttribute('className',strValue);
+		break;
+	    case('style'):
+		objTarget.style.cssText=strValue;
+		break;
+	    default:
+		objTarget.setAttribute(strAttr,strValue);
+		break;
+	    }
+	}
+    else {
+    //    //Set attributes for /Other browsers/
+	objTarget.setAttribute(strAttr,strValue);
+	}
+    //66885349@N03
+    }
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+</body>
+</html>

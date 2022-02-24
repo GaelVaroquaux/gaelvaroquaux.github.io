@@ -1456,7 +1456,7 @@ iframe.latest-papers {
     }
 
     iframe#twitter-widget-0 {
-	height: 38vh!important ;
+	height: 38vh !important;
     }
 
     div.indexhead div.one_of_two {
