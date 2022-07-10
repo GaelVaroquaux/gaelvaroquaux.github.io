@@ -161,7 +161,7 @@ bringing in more problems than it solves.</p>
 for parameters would be to decorate the <em>__init__</em>, giving the
 possible parameters to be tested during the model selection:</p>
 <div class="highlight"><pre><span></span><span class="nd">@cv_params</span><span class="p">(</span><span class="n">l1</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mf">1e-4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
-<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">l1</span><span class="o">=.</span><span class="mi">5</span><span class="p">,</span> <span class="n">fit_intercept</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">l1</span><span class="o">=</span><span class="mf">.5</span><span class="p">,</span> <span class="n">fit_intercept</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="c1"># ...</span>
 </pre></div>
 <p>All the decorator has to do is to store the information in an attribute

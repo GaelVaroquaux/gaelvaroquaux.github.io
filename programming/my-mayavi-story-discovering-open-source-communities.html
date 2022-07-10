@@ -7,7 +7,7 @@
 
         <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
 
-        <title>Scikit-learn sprint on April 1st -- Gaël Varoquaux: computer / data / health science</title>
+        <title>My Mayavi story: discovering open source communities -- Gaël Varoquaux: computer / data / health science</title>
 
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
@@ -29,7 +29,7 @@
                 <a href="http://gael-varoquaux.info" class="article-info">
 		    <h2 class="article-info">Gaël Varoquaux</h2>
 		</a>
-                <p>Sat 26 March 2011</p>
+                <p>Sun 10 July 2022</p>
                 <a href="/">&larr;Home</a>
             </hgroup>
         </header>
@@ -38,16 +38,14 @@
         <div class="content">
             <section class="post">
                 <header class="post-header">
-                    <h1>Scikit-learn sprint on April 1st</h1>
+                    <h1>My Mayavi story: discovering open source communities</h1>
                         <p class="post-meta">
-                            under                                 <a class="post-category" href="http://gael-varoquaux.info/tag/sprint.html">sprint</a>
-                                <a class="post-category" href="http://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
+                            under                                 <a class="post-category" href="http://gael-varoquaux.info/tag/mayavi.html">mayavi</a>
                                 <a class="post-category" href="http://gael-varoquaux.info/tag/python.html">python</a>
                                 <a class="post-category" href="http://gael-varoquaux.info/tag/science.html">science</a>
-                                <a class="post-category" href="http://gael-varoquaux.info/tag/scientific-computing.html">scientific computing</a>
-                                <a class="post-category" href="http://gael-varoquaux.info/tag/scikit-learn.html">scikit-learn</a>
+                                <a class="post-category" href="http://gael-varoquaux.info/tag/conferences.html">conferences</a>
 		    <span class="readtime">
-			&nbsp Read time: 1 min.
+			&nbsp Read time: 3 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -57,31 +55,93 @@
 </span>                        </p>
                 </header>
             </section>
-            <a class="reference external image-reference" href="http://scikit-learn.sourceforge.net/"><img alt="" src="http://scikit-learn.sourceforge.net/stable/_static/scikit-learn-logo-small.png" /></a>
-<p>The <a class="reference external" href="http://scikit-learn.sourceforge.net/">scikit-learn</a> team is organizing a sprint on April 1st (that next
-Friday). Join us in <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/wiki/Upcoming-events">Paris, Boston, or on IRC</a>!</p>
-<p>With the rise of the data sciences, the scikit-learn, a <strong>BSD-licensed
-Python package for machine learning</strong>, is becoming an asset for more and
-more endeavors. Machine learning has traditionally been considered as
-very technical and inaccessible to the non mathematician. We are aiming
-to break this barrier.</p>
-<p>The sprint will be focused on pragmatic down-to-earth improvements in
-the scikit. Our goal is to make it easy for people to contribute. A list
-of tasks and organization details can be found on the <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/wiki/Upcoming-events">sprint planning</a>
-wiki page. Amongst other things, we’ll be working on:</p>
-<ul class="simple">
-<li><strong>integrating new learning algorithms</strong>, in particular merging in the
-many excellent pull requests that we have: <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/103">hierarchical
-clustering</a>, <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/103">data transforming using linear discriminant
-analysis</a>, <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/107">multinomial naive bayes classifier</a> …</li>
-<li><strong>testing and logging framework</strong>,</li>
-<li><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/94">**better parallel computing support**</a>,</li>
-<li>and many other itches to scratch, as it is a community-driven event.</li>
-</ul>
-<p>Come and join us. It will be fun, and it’s an occasion to learn new
-tricks.</p>
-<hr class="docutils" />
-<p><a class="reference external image-reference" href="http://farm5.static.flickr.com/4067/4405351641_5675ba000c.jpg"><img alt="image1" src="http://farm5.static.flickr.com/4067/4405351641_5675ba000c.jpg" style="width: 20%;" /></a> <a class="reference external image-reference" href="http://farm6.static.flickr.com/5249/5265835075_ea0b41019c.jpg"><img alt="image2" src="http://farm6.static.flickr.com/5249/5265835075_ea0b41019c.jpg" style="width: 20%;" /></a> <a class="reference external image-reference" href="http://farm5.static.flickr.com/4135/4974339970_566424185f.jpg"><img alt="image3" src="http://farm5.static.flickr.com/4135/4974339970_566424185f.jpg" style="width: 20%;" /></a> <a class="reference external image-reference" href="http://farm6.static.flickr.com/5294/5425114531_6eec316967.jpg"><img alt="image4" src="http://farm6.static.flickr.com/5294/5425114531_6eec316967.jpg" style="width: 20%;" /></a></p>
+            <p class="align-right"><em>The Mayavi Python software, and my personal history: A thread on
+Python and scipy ecosystems, building open source codebase, and
+meeting really cool and friendly people</em></p>
+<img alt="" class="align-right" src="attachments/mayavi/mayavi_ets.png" />
+<p>I am writing today as a goodbye to the project: I used to be one of the
+core contributors and maintainers but have been inactive for a while for
+lack of time. Out of common agreement, we recently removed my commit
+rights to limit security risks.</p>
+<p>Mayavi brought my so much!</p>
+<div class="section" id="the-start-of-my-adventure-with-mayavi">
+<h2>The start of my adventure with Mayavi</h2>
+<img alt="" class="align-right" src="attachments/mayavi/example_magnetic_field_lines.jpg" />
+<p>I got involved around 2007: I needed 3D visualization of magnetic fields as I was designing coils for my PhD <a class="footnote-reference" href="#id2" id="id1">[1]</a>.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>This led to an example in the Mayavi docs <a class="reference external" href="http://docs.enthought.com/mayavi/mayavi/auto/example_magnetic_field_lines.html">http://docs.enthought.com/mayavi/mayavi/auto/example_magnetic_field_lines.html</a></td></tr>
+</tbody>
+</table>
+<p>I started as an early user of Mayavi2, a rewrite of Mayavi, and
+eventually joined Prabhu Ramachandran and Enthought as a contributor.</p>
+</div>
+<div class="section" id="what-is-mayavi">
+<h2>What is Mayavi?</h2>
+<p>Mayavi is a scientific 3D visualization library in Python.</p>
+<p>It enables interactive visualization to understand complex information in
+3D, such as multi-physics fields, combined with <a class="reference external" href="https://docs.enthought.com/mayavi/mayavi/mlab.html">simple scripting</a> to integrate in a
+broader scientific computing flow.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Mayavi was designed and founded around 2000 by Prabhu Ramachandran, a
+researcher in computational fluid dynamics at IIT Bombay and long-time
+open-source and Python figure.</p>
+<p>The key idea was to make VTK, a powerful C++ visualization library,
+easily useful with a Python interface.</p>
+<p>Mayavi bridged the gap between the C++ data structures, and efficient Python data structures, exposing without copies to numpy arrays.</p>
+<p>It uses tools from Enthought (namely the entought tool suite) for an
+interactive GUI built on a Python object model: fully scriptable (the
+vision in explained in <a class="reference external" href="https://hal.archives-ouvertes.fr/hal-00502548">an article Prabhu and I wrote</a> )</p>
+<div class="figure align-right">
+<img alt="" src="attachments/mayavi/mayavi_application.png" />
+<p class="caption">Mayavi is a full-blown interactive application</p>
+</div>
+<div class="figure align-right">
+<img alt="" src="attachments/mayavi/mayavi_mlab.jpg" />
+<p class="caption">Mayavi is also a Python library, for full scripting</p>
+</div>
+</div>
+<div class="section" id="working-on-mayavi-taught-me-code-and-communities">
+<h2>Working on Mayavi taught me code and communities</h2>
+<div class="figure align-right">
+<img alt="" src="attachments/mayavi/mayavi_ipython.png" />
+<p class="caption">Mayavi used within an interactive IPython – an image from the
+<a class="reference external" href="https://ieeexplore.ieee.org/abstract/document/5725237">Mayavi paper</a></p>
+</div>
+<p>I joined to help with the “mlab” interface, for even simpler Python
+scripting built upon functions. My goal was to make Mayavi natural to
+matlab and matplotlib users, a product vision which was probably
+important to push popularity even further.</p>
+<p>I was an isolated PhD student in a physics lab, emboldened by a
+discussion with Fernando Perez, I started contributing and discussing
+with Prabhu Ramanchandran. I remember my first skype discussion with
+Prabhu, I was very intimidated.</p>
+<p>Understanding this large codebase was hard! And yet, slowly but surely, I
+started making more and more meaningful contribution: on mlab, than on
+the broader codbase, fixing bugs, a lot of work on documentation and
+examples…</p>
+<div class="figure align-right">
+<img alt="" src="attachments/mayavi/scipy_conf.jpg" />
+<p class="caption">Prabhu and myself are in this scipy conference group picture! From <a class="reference external" href="https://slideshare.net/enthought/scientific-computing-with-python-webinar-august-28-2009">https://slideshare.net/enthought/scientific-computing-with-python-webinar-august-28-2009</a></p>
+</div>
+<p>Then Enthought funded my overseas travel to the scipy conference: a big
+deal for me, as I was a peniless PhD student.</p>
+<p>My Mayavi story is that of meeting amazing people in the Python, scipy,
+and pydata world; people who believe in building a tool stack to
+democratize scientific computing; people from all over the world,
+friendly, welcoming, passionate.</p>
+<p>It founded my belief in communities.</p>
+<p>This adventure led me to learn software engineering (<a class="reference external" href="https://software-carpentry.org/">Software carpentry</a> really helped getting started) to
+work at Enthought (a software startup central to scientific computing in
+Python), to change career from physics to computing, join Inria (French
+national research in maths and computing), and I do other open source
+projects…</p>
+<p>Mayavi was crucial to my personal adventure. Thank you Prabhu! Thank you
+Enthought! Thank you the Scipy community!!</p>
+</div>
 
             <div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
