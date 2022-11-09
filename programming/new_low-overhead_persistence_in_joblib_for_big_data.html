@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Gaël Varoquaux, computer / data / health science">
 
-        <link rel="alternate"  href="http://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
 
         <title>Better Python compressed persistence in joblib -- Gaël Varoquaux: computer / data / health science</title>
 
@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="http://gael-varoquaux.info/theme/css/pure.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 </head>
@@ -23,11 +23,11 @@
     <div class="sidebar sidebar-article pure-u">
         <header class="header-article">
             <hgroup>
-                <a href="http://gael-varoquaux.info">
+                <a href="https://gael-varoquaux.info">
 		    <img class="avatar" alt="Gaël Varoquaux" 
                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png">
                 </a>
-                <a href="http://gael-varoquaux.info" class="article-info">
+                <a href="https://gael-varoquaux.info" class="article-info">
 		    <h2 class="article-info">Alexandre Abadie & Gaël Varoquaux</h2>
 		</a>
                 <p>Fri 20 May 2016</p>
@@ -41,9 +41,9 @@
                 <header class="post-header">
                     <h1>Better Python compressed persistence in joblib</h1>
                         <p class="post-meta">
-                            under                                 <a class="post-category" href="http://gael-varoquaux.info/tag/joblib.html">joblib</a>
-                                <a class="post-category" href="http://gael-varoquaux.info/tag/persistence.html">persistence</a>
-                                <a class="post-category" href="http://gael-varoquaux.info/tag/big-data.html">big data</a>
+                            under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/joblib.html">joblib</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/persistence.html">persistence</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/big-data.html">big data</a>
 		    <span class="readtime">
 			&nbsp Read time: 9 min.
 		    </span>
@@ -78,7 +78,7 @@ reduce vastly the memory overhead of data persistence.</p>
 <p>❶ Dumping/loading persisted data <strong>with compression</strong> was a memory hog,
 because of internal copies of data, limiting the maximum size
 of usable data with compressed persistence:</p>
-<img alt="" class="large" src="http://gael-varoquaux.info/programming/attachments/old_pickle_mem_profile.png" />
+<img alt="" class="large" src="https://gael-varoquaux.info/programming/attachments/old_pickle_mem_profile.png" />
 <p>We see the increased memory usage during the calls to <tt class="docutils literal">dump</tt> and
 <tt class="docutils literal">load</tt> functions, profiled using the <a class="reference external" href="https://pypi.python.org/pypi/memory_profiler">memory_profiler package</a> with this <a class="reference external" href="https://gist.github.com/aabadie/7cba3385406d1cec7d3dd4407ba3f164">gist</a></p>
 <div class="line-block">
@@ -112,7 +112,7 @@ new internal implementation. -->
 <div class="section" id="what-s-new-compression-low-memory">
 <h2>What’s new: compression, low memory…</h2>
 <p>❶ <strong>Memory usage is now stable</strong>:</p>
-<img alt="" src="http://gael-varoquaux.info/programming/attachments/new_pickle_mem_profile.png" />
+<img alt="" src="https://gael-varoquaux.info/programming/attachments/new_pickle_mem_profile.png" />
 <p>❷ <strong>All numpy arrays are persisted in a single file</strong>:</p>
 <div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">joblib</span> <span class="c1"># joblib version: 0.10.0 (dev)</span>
@@ -153,7 +153,7 @@ with different libraries:</p>
 <li>Pickle</li>
 <li>Numpy</li>
 </ul>
-<img alt="" class="large" src="http://gael-varoquaux.info/programming/attachments/persistence_lfw_bench.png" />
+<img alt="" class="large" src="https://gael-varoquaux.info/programming/attachments/persistence_lfw_bench.png" />
 <p>The four first lines use non compressed persistence strategies, the last
 four use persistence with zlib/gzip <a class="footnote-reference" href="#id5" id="id2">[2]</a> strategies. Code to reproduce the
 benchmarks is available on this <a class="reference external" href="https://gist.github.com/aabadie/2ba94d28d68f19f87eb8916a2238a97c">gist</a>.</p>
