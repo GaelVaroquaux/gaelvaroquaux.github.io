@@ -1,5 +1,363 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2022-07-10T00:00:00+02:00</updated><entry><title>My Mayavi story: discovering open source communities</title><link href="https://gael-varoquaux.info/programming/my-mayavi-story-discovering-open-source-communities.html" rel="alternate"></link><published>2022-07-10T00:00:00+02:00</published><updated>2022-07-10T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2022-07-10:/programming/my-mayavi-story-discovering-open-source-communities.html</id><summary type="html">&lt;p class="align-right"&gt;&lt;em&gt;The Mayavi Python software, and my personal history: A thread on
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2023-01-31T00:00:00+01:00</updated><entry><title>2022, a new scientific adventure: machine learning for health and social sciences</title><link href="https://gael-varoquaux.info/science/2022-a-new-scientific-adventure-machine-learning-for-health-and-social-sciences.html" rel="alternate"></link><published>2023-01-31T00:00:00+01:00</published><updated>2023-01-31T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2023-01-31:/science/2022-a-new-scientific-adventure-machine-learning-for-health-and-social-sciences.html</id><summary type="html">&lt;p&gt;A retrospective on last year (2022): I embarked on a new scientific
+adventure, assembling &lt;a class="reference external" href="https://team.inria.fr/soda/"&gt;a team&lt;/a&gt; focused on
+developing machine learning for health and social science. The team has
+existed for almost a year, and the vision is nice shaping up. Let me
+share with you illustration of where we …&lt;/p&gt;</summary><content type="html">&lt;p&gt;A retrospective on last year (2022): I embarked on a new scientific
+adventure, assembling &lt;a class="reference external" href="https://team.inria.fr/soda/"&gt;a team&lt;/a&gt; focused on
+developing machine learning for health and social science. The team has
+existed for almost a year, and the vision is nice shaping up. Let me
+share with you illustration of where we are at. This is extracted from
+our yearly report which will be public later, but I have sometimes edited
+it a bit to add personnal context.&lt;/p&gt;
+&lt;div class="contents topic" id="highlights"&gt;
+&lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#a-new-team-soda" id="id1"&gt;A new team: Soda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-scientific-vision" id="id2"&gt;The scientific vision&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#application-context-richer-data-in-health-and-social-sciences" id="id3"&gt;Application context: richer data in health and social sciences&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#applications-raise-specific-data-science-challenges" id="id4"&gt;Applications raise specific data-science challenges&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#our-research-axes" id="id5"&gt;Our research axes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#some-notable-results-of-2022" id="id6"&gt;Some notable results of 2022&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#learning-on-relational-data-aggregating-across-many-tables" id="id7"&gt;Learning on relational data: aggregating across many tables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#validating-probabilistic-classifiers-beyond-calibration" id="id8"&gt;Validating probabilistic classifiers: beyond calibration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#reweighting-randomized-trials-for-generalization-finite-sample-error-and-variable-selection" id="id9"&gt;Reweighting randomized trials for generalization: finite sample error and variable selection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#challenges-to-clinical-impact-of-ai-in-medical-imaging" id="id10"&gt;Challenges to clinical impact of AI in medical imaging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#privacy-preserving-synthetic-educational-data-generation" id="id11"&gt;Privacy-preserving synthetic educational data generation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="a-new-team-soda"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;A new team: Soda&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="attachments/2022/team_2022.jpg" style="width: 400px;" /&gt;
+&lt;p class="caption"&gt;The team in early 2022 (it has grown a lot since)&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;At &lt;a class="reference external" href="https://www.inria.fr/en"&gt;Inria&lt;/a&gt;, we have teams assembling multiple
+tenured researchers around a scientific project. Last year, we assembled
+a new team called &lt;a class="reference external" href="https://team.inria.fr/soda/"&gt;Soda&lt;/a&gt;, which stands for
+“social data”, but above all is a fun name.&lt;/p&gt;
+&lt;p&gt;In a year, the team grew like crazy (to be honest, this had been baking
+for a little while). We are now around 25 people.
+There are 4 PIs (Marine le Morvan, Judith Abécassis, Jill-Jênn Vie, and
+myself), and the engineers working on scikit-learn at Inria are also part
+of the team.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-scientific-vision"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;The scientific vision&lt;/a&gt;&lt;/h2&gt;
+&lt;p class="align-right"&gt;&lt;em&gt;Machine learning to leverage richer, more complex, data for
+social-sciences and health&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="application-context-richer-data-in-health-and-social-sciences"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id3"&gt;Application context: richer data in health and social sciences&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Opportunistic data accumulations, often observational, bare great
+promises for social and health sciences. But the data are too big and
+complex for standard statistical methodologies in these sciences.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Health databases&lt;/strong&gt; Increasingly rich health data is accumulated
+during routine clinical practice as well as for research. Its large
+coverage brings new promises for public health and personalized medicine,
+but it does not fit easily in standard biostatistical practice because it
+is not acquired and formatted for a specific medical question.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Social, educational, and behavioral sciences&lt;/strong&gt; Better data sheds new
+light on human behavior and psychology, for instance with on-line
+learning platforms. Machine learning can be used both as a model for
+human intelligence and as a tool to leverage these data, for instance
+improving education.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="applications-raise-specific-data-science-challenges"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id4"&gt;Applications raise specific data-science challenges&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Data management: preparing dirty data for analytics&lt;/strong&gt; Assembling,
+curating, and transforming data for data analysis is very labor
+intensive. These data-preparation steps are often considered the number
+one bottleneck to data-science. They mostly rely on data-management
+techniques. A typical problem is to establishing correspondences between
+entries that denote the same entities but appear in different forms
+(entity linking, including deduplication and record linkage). Another
+time-consuming process is to join and aggregate data across multiple
+tables with repetitions at different levels (as with panel data in
+econometrics and epidemiology) to form a unique set of “features” to
+describe each individual.&lt;/p&gt;
+&lt;div class="sidebar"&gt;
+The &lt;a class="reference external" href="https://project.inria.fr/dirtydata/"&gt;Dirty Data project&lt;/a&gt; paved the way.&lt;/div&gt;
+&lt;p&gt;Progress in machine learning increasingly helps automating data
+preparation and processing data with less curation.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Data science with statistical machine learning&lt;/strong&gt; Machine learning can
+be a tool to answer complex domain questions by providing non-parametric
+estimators. Yet, it still requires much work, eg to go beyond point
+estimators, to derive non-parametric procedures that account for a
+variety of bias (censoring, sampling biases, non-causal associations), or
+to provide theoretical and practical tools to assess validity of
+estimates and conclusion in weakly-parametric settings.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="our-research-axes"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id5"&gt;Our research axes&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="section" id="representation-learning-for-relational-data"&gt;
+&lt;h4&gt;Representation learning for relational data&lt;/h4&gt;
+&lt;p&gt;I dream of deep-learning methodology for relational databases, from
+tabular datasets to full relational databases. The stakes are &lt;em&gt;i)&lt;/em&gt; to
+build machine-learning models that apply readily to the raw data so as to
+minimize manual cleaning, data formatting and integration, and &lt;em&gt;ii)&lt;/em&gt; to
+extract reusable representations that reduce sample complexity on new
+databases by transforming the data in well-distributed vectors.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="mathematical-aspects-of-statistical-learning-for-data-science"&gt;
+&lt;h4&gt;Mathematical aspects of statistical learning for data science&lt;/h4&gt;
+&lt;p&gt;I want to use machine learning models as non-parametric estimators, as I
+worry about the impact of mismodeling on conclusion. However, for a given
+statistical task, the statistical procedures and validity criterion need
+to be reinvented. Soda contributes statistical tools and results for a
+variety of problems important to data science in health and social
+science (epidemiology, econometrics, education). These fields lead to
+various statistical topics:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Missing values&lt;/li&gt;
+&lt;li&gt;Causal inference&lt;/li&gt;
+&lt;li&gt;Model validation&lt;/li&gt;
+&lt;li&gt;Uncertainty quantification&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="machine-learning-for-health-and-social-sciences"&gt;
+&lt;h4&gt;Machine learning for health and social sciences&lt;/h4&gt;
+&lt;p&gt;Soda targets applications in health and social sciences, as these can
+markedly benefit from advanced processing of richer datasets, can have a
+large societal impact, but fall out of mainstream machine-learning
+research, which focus on processing natural images, language, and voice.
+Rather, data surveying humans needs another focus: it is most of the time
+tabular, sparse, with a time dimension, and missing values. In term of
+application fields, we focus on the social sciences that rely on
+quantitative predictions or analysis across individuals, such as policy
+evaluation. Indeed, the same formal problems, addressed in the two
+research axes above, arise across various social sciences:
+&lt;strong&gt;epidemiology, education research, and economics&lt;/strong&gt;.
+The challenge is to develop efficient and trustworthy machine learning
+methodology for these high-stakes applications.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="high-quality-data-science-software"&gt;
+&lt;h4&gt;High-quality data-science software&lt;/h4&gt;
+&lt;p&gt;Societal and economical impact of machine learning requires easy-to-use
+practical tools that can be leveraged in non-specialized organizations
+such as hospitals or policy-making institutions.&lt;/p&gt;
+&lt;p&gt;Soda incorporates the core team working at Inria on &lt;strong&gt;scikit-learn&lt;/strong&gt;, one
+of the most popular machine-learning tool world-wide. One of the missions
+of soda is to improve scikit-learn and its documentation, transfering the
+understanding of machine learning and data science accumulated by the
+various research efforts.&lt;/p&gt;
+&lt;p&gt;Soda works on other important software tools to foster growth and health
+of the Python data ecosystem in which scikit-learn is embedded.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="some-notable-results-of-2022"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Some notable results of 2022&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I am listing here a small number of the achievements of the team, because
+I find them inspiring.&lt;/p&gt;
+&lt;div class="section" id="learning-on-relational-data-aggregating-across-many-tables"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id7"&gt;Learning on relational data: aggregating across many tables&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;For many machine-learning tasks, augmenting the data table at hand with
+features built from external sources is key to improving performance. For
+instance, estimating housing prices benefits from background information
+on the location, such as the population density or the average income.&lt;/p&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="attachments/2022/aggregating.png" style="width: 300px;" /&gt;
+&lt;p class="caption"&gt;Often, data must be assembled across multiple tables into a single
+table for analysis. Challenges arise due to one-to-many relations,
+irregularity of the information, and the number of tables that may be
+involved.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Most often, a major bottleneck is to &lt;strong&gt;assemble this information across
+many tables&lt;/strong&gt;, requiring time and expertise from the data scientist. We
+propose &lt;strong&gt;vectorial representations of entities (e.g. cities) that capture
+the corresponding information&lt;/strong&gt; and thus can replace human-crafted
+features. In &lt;a class="reference external" href="https://link.springer.com/article/10.1007/s10994-022-06277-7"&gt;Cvetkov-Iliev 2023&lt;/a&gt;, we
+represent the relational data on the entities as a graph and adapt
+graph-embedding methods to create feature vectors for each entity. We
+show that two technical ingredients are crucial: modeling well the
+different relationships between entities, and capturing numerical
+attributes. We adapt knowledge graph embedding methods that were
+primarily designed for graph completion. Yet, they model only discrete
+entities, while creating good feature vectors from relational data also
+requires capturing numerical attributes. For this, we introduce KEN:
+Knowledge Embedding with Numbers. We thoroughly evaluate approaches to
+enrich features with background information on 7 prediction tasks. We
+show that a good embedding model coupled with KEN can perform better than
+manually handcrafted features, while requiring much less human effort. It
+is also competitive with combinatorial feature engineering methods, but
+much more scalable. Our approach can be applied to huge databases, for
+instance on general knowledge graphs as in YAGO, creating &lt;strong&gt;general-purpose
+feature vectors reusable in various downstream tasks&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="attachments/2022/entity_types_with_names.png" style="width: 100%;" /&gt;
+&lt;p class="caption"&gt;&lt;strong&gt;Entity embeddings of YAGO (wikipedia)&lt;/strong&gt; (2D-representation using
+UMAP). The vectors are downloadable from
+&lt;a class="reference external" href="https://soda-inria.github.io/ken_embeddings"&gt;https://soda-inria.github.io/ken_embeddings&lt;/a&gt;} to readily augment
+data-science projects.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="validating-probabilistic-classifiers-beyond-calibration"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id8"&gt;Validating probabilistic classifiers: beyond calibration&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="attachments/2022/grouping_loss.png" style="width: 360px;" /&gt;
+&lt;p class="caption"&gt;Validating probabilistic predictions of classifiers must go account
+not only for the average error given an predicted score, but also for
+the dispersion of errors.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Ensuring that a classifier gives reliable confidence scores is essential
+for informed decision-making, in particular in high-stakes areas such as
+health. For instance, before using a clinical prognostic model, we want
+to establish that for a given individual is attributes probabilities of
+different clinical outcomes that can be indeed trusted. To this end,
+recent work has focused on miscalibration, &lt;em&gt;i.e.&lt;/em&gt;, the over or under
+confidence of model scores.&lt;/p&gt;
+&lt;p&gt;Yet calibration is not enough: even a perfectly calibrated classifier
+with the best possible accuracy can have confidence scores that are far
+from the true posterior probabilities, if it is over-confident for some
+samples and under-confident for others. This is captured by the grouping
+loss, created by samples with &lt;strong&gt;the same confidence scores but different
+true posterior probabilities&lt;/strong&gt;. Proper scoring rule theory shows that given
+the calibration loss, the missing piece to characterize individual errors
+is the grouping loss. While there are many estimators of the calibration
+loss, none exists for the grouping loss in standard settings. In
+&lt;a class="reference external" href="https://arxiv.org/abs/2210.16315"&gt;Perez-Level 2023&lt;/a&gt;, we propose an
+estimator to approximate the grouping loss. We show that modern neural
+network architectures in vision and NLP exhibit grouping loss, notably in
+distribution shifts settings, which highlights the importance of
+pre-production validation.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="reweighting-randomized-trials-for-generalization-finite-sample-error-and-variable-selection"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id9"&gt;Reweighting randomized trials for generalization: finite sample error and variable selection&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="attachments/2022/reweighting_trial.png" style="width: 360px;" /&gt;
+&lt;p class="caption"&gt;There may be a sampling bias between a randomized trial and the
+target population.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Randomized Controlled Trials (RCTs) are ideal experiments to establish
+causal statement. However, they may suffer from limited scope, in
+particular, because they may have been run on non-representative samples:
+some RCTs over- or under- sample individuals with certain characteristics
+compared to the target population, for which one wants conclusions on
+treatment effectiveness. Re-weighting trial individuals to match the
+target population can improve the treatment effect estimation.&lt;/p&gt;
+&lt;p&gt;In &lt;a class="reference external" href="https://hal.science/hal-03822662"&gt;Colnet 2022&lt;/a&gt;, we establish the
+exact expressions of the bias and variance of such reweighting procedures
+- also called Inverse Propensity of Sampling Weighting (IPSW) - in
+presence of categorical covariates for any sample size. Such results
+allow us to compare the theoretical performance of different versions of
+IPSW estimates. Besides, our results show how the performance (bias,
+variance, and quadratic risk) of IPSW estimates depends on the two sample
+sizes (RCT and target population). A by-product of our work is the proof
+of consistency of IPSW estimates. Results also reveal that IPSW
+performances are improved when the trial probability to be treated is
+estimated (rather than using its oracle counterpart). In addition, we
+study &lt;strong&gt;choice of variables&lt;/strong&gt;: how including covariates that are not
+necessary for identifiability of the causal effect may impact the
+asymptotic variance. Including covariates that are shifted between the
+two samples but not treatment effect modifiers increases the variance
+while non-shifted but treatment effect modifiers do not.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="challenges-to-clinical-impact-of-ai-in-medical-imaging"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id10"&gt;Challenges to clinical impact of AI in medical imaging&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I have worked for many years on research in computer analysis of medical
+images. In particular, I am convinced that machine learning bears many
+promises to improve patients’ health. However, I cannot be blind to the
+fact that a number of systematic challenges are slowing down the progress
+of the field.&lt;/p&gt;
+&lt;p&gt;In &lt;a class="reference external" href="https://www.nature.com/articles/s41746-022-00592-y"&gt;Varoquaux &amp;amp; Cheplygina&lt;/a&gt;, we tried to take
+a step back on these challenges, from limitations of the data, such as
+biases, to research incentives, such as optimizing for publication. We
+reviewed roadblocks to developing and assessing methods. Building our
+analysis on evidence from the literature and data challenges, we showed
+that at every step, potential biases can creep.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;First, larger datasets do not bring increased prediction accuracy and
+may suffer from biases.&lt;/li&gt;
+&lt;li&gt;Second, evaluations often miss the target, with evaluation error larger
+than algorithmic improvements, improper evaluation procedures and
+leakage, metrics that do not reflect the application, incorrectly chosen
+baselines, and improper statistics.&lt;/li&gt;
+&lt;li&gt;Finally, we show how publishing too often leads to distorted incentives.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On a positive note, we also discuss on-going efforts to counteract these
+problems and provide recommendations on how to further address these
+problems in the future.&lt;/p&gt;
+&lt;p&gt;This was a fun exercise. I realize that I still need to still it and
+introspect how it has shaped my research agenda, because I think it has
+pushed me to choose specific emphases (such as model evaluation, or
+focusing on rich data sources).&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="privacy-preserving-synthetic-educational-data-generation"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id11"&gt;Privacy-preserving synthetic educational data generation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Soda also works on other applications than health, for instance
+education. In this direction, I would like to highlight work in which I
+did not participate, by Jill-Jenn Vie, another PI of the team.&lt;/p&gt;
+&lt;p&gt;Institutions collect massive learning traces but they may not disclose it
+for privacy issues. Synthetic data generation opens new opportunities for
+research in education. &lt;a class="reference external" href="https://hal.inria.fr/hal-03715416"&gt;Vie 2022&lt;/a&gt;
+presented a generative model for educational data that can preserve the
+privacy of participants, and an evaluation framework for comparing
+synthetic data generators. We show how naive pseudonymization can lead to
+re-identification threats and suggest techniques to guarantee privacy. We
+evaluate our method on existing massive educational open datasets.&lt;/p&gt;
+&lt;p&gt;The tension between privacy of individuals and the need for datasets for
+open science is a real and important one.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;This was just a quick glance of what we do at soda, and we are just
+warming up. I am super excited about this research. I hope that it will
+matter.&lt;/p&gt;
+&lt;p&gt;I truely believe that more and better machine learning can help health
+and social science to draw new insight from new datasets.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="health"></category><category term="statistics"></category><category term="yearly report"></category></entry><entry><title>My Mayavi story: discovering open source communities</title><link href="https://gael-varoquaux.info/programming/my-mayavi-story-discovering-open-source-communities.html" rel="alternate"></link><published>2022-07-10T00:00:00+02:00</published><updated>2022-07-10T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2022-07-10:/programming/my-mayavi-story-discovering-open-source-communities.html</id><summary type="html">&lt;p class="align-right"&gt;&lt;em&gt;The Mayavi Python software, and my personal history: A thread on
 Python and scipy ecosystems, building open source codebase, and
 meeting really cool and friendly people&lt;/em&gt;&lt;/p&gt;
 &lt;img alt="" class="align-right" src="attachments/mayavi/mayavi_ets.png" /&gt;
