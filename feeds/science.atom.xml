@@ -183,6 +183,9 @@ of the Python data ecosystem in which scikit-learn is embedded.&lt;/p&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Some notable results of 2022&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I am listing here a small number of the achievements of the team, because
 I find them inspiring.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="section" id="learning-on-relational-data-aggregating-across-many-tables"&gt;
 &lt;h3&gt;&lt;a class="toc-backref" href="#id7"&gt;Learning on relational data: aggregating across many tables&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;For many machine-learning tasks, augmenting the data table at hand with
@@ -320,7 +323,7 @@ baselines, and improper statistics.&lt;/li&gt;
 &lt;p&gt;On a positive note, we also discuss on-going efforts to counteract these
 problems and provide recommendations on how to further address these
 problems in the future.&lt;/p&gt;
-&lt;p&gt;This was a fun exercise. I realize that I still need to still it and
+&lt;p&gt;This was a fun exercise. I realize that I still need to sit on it and
 introspect how it has shaped my research agenda, because I think it has
 pushed me to choose specific emphases (such as model evaluation, or
 focusing on rich data sources).&lt;/p&gt;
