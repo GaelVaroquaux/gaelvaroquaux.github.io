@@ -63,17 +63,17 @@
 <div class="contents topic" id="highlights">
 <p class="topic-title">Highlights</p>
 <ul class="simple">
-<li><a class="reference internal" href="#variance-in-machine-learning-benchmarks" id="id8">Variance in machine-learning benchmarks</a></li>
-<li><a class="reference internal" href="#imputation-to-predict-with-missing-values" id="id9">Imputation to predict with missing values</a></li>
-<li><a class="reference internal" href="#mental-health-measures-with-machine-learning" id="id10">Mental-health measures with machine-learning</a></li>
-<li><a class="reference internal" href="#decoding-brain-activity-shared-across-cognitive-paradigms" id="id11">Decoding brain activity shared across cognitive paradigms</a></li>
+<li><a class="reference internal" href="#variance-in-machine-learning-benchmarks" id="toc-entry-1">Variance in machine-learning benchmarks</a></li>
+<li><a class="reference internal" href="#imputation-to-predict-with-missing-values" id="toc-entry-2">Imputation to predict with missing values</a></li>
+<li><a class="reference internal" href="#mental-health-measures-with-machine-learning" id="toc-entry-3">Mental-health measures with machine-learning</a></li>
+<li><a class="reference internal" href="#decoding-brain-activity-shared-across-cognitive-paradigms" id="toc-entry-4">Decoding brain activity shared across cognitive paradigms</a></li>
 </ul>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <div class="section" id="variance-in-machine-learning-benchmarks">
-<h2><a class="toc-backref" href="#id8">Variance in machine-learning benchmarks</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-1">Variance in machine-learning benchmarks</a></h2>
 <p class="align-right"><em>Many sources of uncontroled variance in observed
 performance of machine-learning pipelines</em></p>
 <p>How reliable is a empirical benchmark of machine pipelines? Solid
@@ -97,7 +97,7 @@ considered.</p>
 <div class="line"><br /></div>
 </div>
 <p>While most deep-learning benchmarks only study the influence of random
-initializations <a class="footnote-reference" href="#id2" id="id1">[1]</a>, the empirical study shows that <strong>the most important
+initializations <a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">[1]</a>, the empirical study shows that <strong>the most important
 sources of arbitrary variation in the benchmarks</strong> are:</p>
 <ol class="arabic simple">
 <li>The split between the train and the test set (or, in statistical terms,
@@ -116,10 +116,10 @@ uncertainty due the size of the test set.</p>
 by the sampling noise of the test set: as the test is of limited size, it
 can only characterize the quality of a prediction with a limited
 accuracy.</p>
-<table class="docutils footnote" frame="void" id="id2" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-1" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>There is a aweful trend of trying out a certain number of seeds
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[1]</a></td><td>There is a aweful trend of trying out a certain number of seeds
 and piking the best one. While such approach may select the best
 predictor for a given test set, it does not characterize well the
 learning procedure: the selected seed is still arbitrary and given new
@@ -165,12 +165,12 @@ procedure to account for the variance of benchmarks:</p>
 <li>repeat the experiment varying all sources of uncontroled variation
 (data split, random seeds…)</li>
 <li>compute the probability that one pipeline outperforms the other</li>
-<li>accept the improvement if that probability is above 0.75 <a class="footnote-reference" href="#id5" id="id4">[2]</a></li>
+<li>accept the improvement if that probability is above 0.75 <a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">[2]</a></li>
 </ol>
-<table class="docutils footnote" frame="void" id="id5" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-2" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id4">[2]</a></td><td>Thresholding at 0.75 was chosen because on our case studies it
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-2">[2]</a></td><td>Thresholding at 0.75 was chosen because on our case studies it
 accepted improvements with effect sizes that turned out to be
 historically meaningful.</td></tr>
 </tbody>
@@ -196,7 +196,7 @@ of the performance scores after sampling all sources of variance
 </div>
 </div>
 <div class="section" id="imputation-to-predict-with-missing-values">
-<h2><a class="toc-backref" href="#id9">Imputation to predict with missing values</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-2">Imputation to predict with missing values</a></h2>
 <p class="align-right"><em>Classic (conditional expectation) imputation is not always the good
 choice for prediction</em></p>
 <p>Many data-science applications must work with incomplete data: some
@@ -234,7 +234,7 @@ values (the figure gives an intuition).</p>
 can facilitate learning, a good imputation</p>
 </div>
 <div class="section" id="mental-health-measures-with-machine-learning">
-<h2><a class="toc-backref" href="#id10">Mental-health measures with machine-learning</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-3">Mental-health measures with machine-learning</a></h2>
 <p class="align-right"><em>Population-derived composite measures associate best with real-life
 mental-health behaviors</em></p>
 <p>The <a class="reference external" href="https://project.inria.fr/dirtydata/">Dirty Data project</a>, that we
@@ -244,7 +244,7 @@ undertook a few years ago, is really bearing its fruits.</p>
 </div>
 </div>
 <div class="section" id="decoding-brain-activity-shared-across-cognitive-paradigms">
-<h2><a class="toc-backref" href="#id11">Decoding brain activity shared across cognitive paradigms</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-4">Decoding brain activity shared across cognitive paradigms</a></h2>
 <p class="align-right"><em>Turning brain-imaging signal into insights</em></p>
 <p>Mensch</p>
 <p>The MOOC?</p>

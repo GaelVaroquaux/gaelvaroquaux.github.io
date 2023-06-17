@@ -74,15 +74,15 @@ waiving.</p>
 <div class="contents topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#the-context-two-sample-testing" id="id1">The context: two-sample testing</a></li>
-<li><a class="reference internal" href="#from-kernel-mean-embeddings-to-distances-on-distributions" id="id2">From kernel mean embeddings to distances on distributions</a></li>
-<li><a class="reference internal" href="#controlling-the-weak-convergence-of-probability-measures" id="id3">Controlling the weak convergence of probability measures</a></li>
-<li><a class="reference internal" href="#two-sample-testing-procedures" id="id4">Two-sample testing procedures</a></li>
-<li><a class="reference internal" href="#the-l1-metric-provides-best-testing-power" id="id5">The L1 metric provides best testing power</a></li>
+<li><a class="reference internal" href="#the-context-two-sample-testing" id="toc-entry-1">The context: two-sample testing</a></li>
+<li><a class="reference internal" href="#from-kernel-mean-embeddings-to-distances-on-distributions" id="toc-entry-2">From kernel mean embeddings to distances on distributions</a></li>
+<li><a class="reference internal" href="#controlling-the-weak-convergence-of-probability-measures" id="toc-entry-3">Controlling the weak convergence of probability measures</a></li>
+<li><a class="reference internal" href="#two-sample-testing-procedures" id="toc-entry-4">Two-sample testing procedures</a></li>
+<li><a class="reference internal" href="#the-l1-metric-provides-best-testing-power" id="toc-entry-5">The L1 metric provides best testing power</a></li>
 </ul>
 </div>
 <div class="section" id="the-context-two-sample-testing">
-<h2><a class="toc-backref" href="#id1">The context: two-sample testing</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-1">The context: two-sample testing</a></h2>
 <p>Given two samples from two unknown populations, the goal of two-sample tests is
 to determine whether the underlying populations differ with a statistical
 significance. For instance, we may care to know whether the
@@ -93,7 +93,7 @@ marketing strategies.</p>
 <img alt="" class="align-center" src="attachments/comparing_distributions_l1/map_KFC_McDo_simple.png" style="width: 70%;" />
 </div>
 <div class="section" id="from-kernel-mean-embeddings-to-distances-on-distributions">
-<h2><a class="toc-backref" href="#id2">From kernel mean embeddings to distances on distributions</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-2">From kernel mean embeddings to distances on distributions</a></h2>
 <p>In the example of spatial distributions restaurants,
 there is <strong>a lot of information in how close observed data
 points lie in the original measurement space (here geographic coordinates)</strong>.
@@ -102,7 +102,7 @@ applied to distributions, building representatives of distributions:
 <a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_embedding_of_distributions">Kernel embeddings of distributions</a>. The
 mean embedding of a distribution P with a kernel k is written:</p>
 <div class="formula">
-<i>μ</i><sub><i>P</i></sub>(<i>t</i>) :  = <span class="limits"><span class="limit">⌠</span><span class="limit">⌡</span></span><sub>ℝ<sup><i>d</i></sup></sub><i>k</i>(<i>x</i>, <i>t</i>)<i>dP</i>(<i>x</i>)
+<i>μ</i><sub><i>P</i></sub>(<i>t</i>) :  = <span class="limits"><span class="limit"><span class="bigoperator integral">∫</span></span></span><sub>ℝ<sup><i>d</i></sup></sub><i>k</i>(<i>x</i>, <i>t</i>)<i>dP</i>(<i>x</i>)
 </div>
 <p>Intuitively, it is related to <a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_density_estimation">Kernel Density Estimates (KDEs)</a> which
 estimate a density in continuous space by smoothing the observed data
@@ -117,7 +117,7 @@ measures. Metrics between probability measures can be defined via the
 notion of Integral Probability Metric (IPM): as a difference of
 expectations:</p>
 <div class="formula">
-<span class="text">IPM</span>[<i>F</i>, <i>P</i>, <i>Q</i>] :  = sup<sub><i>f</i> ∈ <i>F</i></sub>(𝔼<sub><i>x</i> ~ <i>P</i></sub><span class="symbol">[</span><i>f</i>(<i>x</i>)<span class="symbol">]</span> − 𝔼<sub><i>y</i> ~ <i>Q</i></sub><span class="symbol">[</span><i>f</i>(<i>y</i>)<span class="symbol">]</span>)
+<span class="text">IPM</span>[<i>F</i>, <i>P</i>, <i>Q</i>] :  = <span class="limits"><sup class="limit"> </sup><span class="limit">sup</span><sub class="limit"><i>f</i> ∈ <i>F</i></sub></span>(𝔼<sub><i>x</i> ∼ <i>P</i></sub><span class="stretchy">[</span><i>f</i>(<i>x</i>)<span class="stretchy">]</span> − 𝔼<sub><i>y</i> ∼ <i>Q</i></sub><span class="stretchy">[</span><i>f</i>(<i>y</i>)<span class="stretchy">]</span>)
 </div>
 <p>where F is a class of functions. This definition is appealing because it
 <strong>characterizes the difference between P and Q by the function for which
@@ -130,7 +130,7 @@ ball in such an RKHS, is known as the Maximum Mean Discrepancy (MMD). It
 can be shown that, rather than computing the maximum, the MMD has a more
 convenient expression, the RKHS distance between the mean embeddings:</p>
 <div class="formula">
-<span class="text">MMD</span>[<i>P</i>, <i>Q</i>] = ∥<i>μ</i><sub><i>P</i></sub> − <i>μ</i><sub><i>Q</i></sub>∥<sub><i>H</i><sub><i>k</i></sub></sub>
+<span class="text">MMD</span>[<i>P</i>, <i>Q</i>] = ‖<i>μ</i><sub><i>P</i></sub> − <i>μ</i><sub><i>Q</i></sub>‖<sub><i>H</i><sub><i>k</i></sub></sub>
 </div>
 <p>For good choices of kernels, the MMD has appealing mathematical
 properties to compare distributions. With kernels said to be
@@ -147,12 +147,12 @@ other representatives, namely the smooth characteristic function, SCF).
 We consider a wider family of metrics based on the Lp distances between
 mean emdeddings (p=2 recovers the classic framework):</p>
 <div class="formula">
-<i>d</i><sub><i>L</i><sup><i>p</i></sup>, <i>μ</i></sub>(<i>P</i>, <i>Q</i>) :  = <span class="symbol">(</span><span class="limits"><sup class="limit"> </sup><span class="limit">⌠</span><span class="limit">⌡</span><sub class="limit"><i>t</i> ∈ ℝ<sup><i>d</i></sup></sub></span>|<i>μ</i><sub><i>P</i></sub>(<i>t</i>) − <i>μ</i><sub><i>Q</i></sub>(<i>t</i>)|<sup><i>p</i></sup><i>d</i>Γ(<i>t</i>)<span class="symbol">)</span><sup>1 ⁄ <i>p</i></sup>
+<i>d</i><sub><i>L</i><sup><i>p</i></sup>, <i>μ</i></sub>(<i>P</i>, <i>Q</i>) :  = <span class="stretchy">(</span><span class="limits"><sup class="limit"> </sup><span class="limit"><span class="bigoperator integral">∫</span></span><sub class="limit"><i>t</i> ∈ ℝ<sup><i>d</i></sup></sub></span>|<i>μ</i><sub><i>P</i></sub>(<i>t</i>) − <i>μ</i><sub><i>Q</i></sub>(<i>t</i>)|<sup><i>p</i></sup><i>d</i>Γ(<i>t</i>)<span class="stretchy">)</span><sup>1 ⁄ <i>p</i></sup>
 </div>
 <p>where Γ is a Borel probability measure absolutely continuous.</p>
 </div>
 <div class="section" id="controlling-the-weak-convergence-of-probability-measures">
-<h2><a class="toc-backref" href="#id3">Controlling the weak convergence of probability measures</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-3">Controlling the weak convergence of probability measures</a></h2>
 <p>We show that these metrics have good properties. Specifically, for p ≥ 1,
 as soon as the kernel is bounded continuous and characteristic, these
 metrics metrize the weak convergence. What this means is that these
@@ -181,14 +181,14 @@ fitting GANs to generate images: the goal is not to only capture that
 images are exactly the same, but also that they maybe be “close”.</p>
 </div>
 <div class="section" id="two-sample-testing-procedures">
-<h2><a class="toc-backref" href="#id4">Two-sample testing procedures</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-4">Two-sample testing procedures</a></h2>
 <p>Now that we have built metrics, we can derive two-sample test statistics.
 A straightforward way of doing it would involve large sums on all the
 observations, which would be costly. Hence, we resort to a good
 approximation by sampling a set of {Tj} locations from the distribution
 Γ:</p>
 <div class="formula">
-<i>d̂</i><span class="scripts"><sub class="script">ℓ<sub><i>p</i></sub>, <i>μ</i>, <i>J</i></sub><sup class="script"><i>p</i></sup></span>[<i>X</i>, <i>Y</i>] :  = <i>n</i><sup><i>p</i> ⁄ 2</sup><span class="limits"><sup class="limit"> </sup><span class="limit">⎲</span><span class="limit">⎳</span><sub class="limit"><i>j</i> = 1..<i>J</i></sub></span>|<i>μ</i><sub><i>X</i></sub>(<i>T</i><sub><i>j</i></sub>) − <i>μ</i><sub><i>Y</i></sub>(<i>T</i><sub><i>j</i></sub>)|<sup><i>p</i></sup>
+<i>d̂</i><span class="scripts"><sup class="script"><i>p</i></sup><sub class="script"><i>ℓ</i><sub><i>p</i></sub>, <i>μ</i>, <i>J</i></sub></span>[<i>X</i>, <i>Y</i>] :  = <i>n</i><sup><i>p</i> ⁄ 2</sup><span class="limits"><sup class="limit"> </sup><span class="limit"><span class="bigoperator">∑</span></span><sub class="limit"><i>j</i> = 1..<i>J</i></sub></span>|<i>μ</i><sub><i>X</i></sub>(<i>T</i><sub><i>j</i></sub>) − <i>μ</i><sub><i>Y</i></sub>(<i>T</i><sub><i>j</i></sub>)|<sup><i>p</i></sup>
 </div>
 <p>We show that this approximation maintains (almost surely) the appealing
 metric properties, generalizing the results that were established by
@@ -208,7 +208,7 @@ distribution of the test statistic can be derived, leading to tests that
 can control errors without permutations.</p>
 </div>
 <div class="section" id="the-l1-metric-provides-best-testing-power">
-<h2><a class="toc-backref" href="#id5">The L1 metric provides best testing power</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-5">The L1 metric provides best testing power</a></h2>
 <p>Going back to our question of which norm on the difference of
 distribution representative is best suited to detect, we show that when
 using analytics kernels, such as the Gaussian kernel, the L1 metric

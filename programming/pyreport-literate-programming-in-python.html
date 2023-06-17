@@ -68,7 +68,7 @@ output, compiling it to a pretty report in a pdf or an html file. It can
 display the output embedded in the code that produced it and can process
 special comments (literate comments) according to markup languages (
 <a class="reference external" href="http://docutils.sourceforge.net/rst.html">rst</a> or <a class="reference external" href="http://www.latex-project.org/">LaTeX</a> ) to compile a very readable document.</p>
-<p>This allows for extensive literate progamming <a class="footnote-reference" href="#id3" id="id1">[1]</a> in python, for generating
+<p>This allows for extensive literate progamming <a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">[1]</a> in python, for generating
 reports out of calculations written in python, and for making nice
 tutorials.</p>
 <p><strong>License</strong> pyreport is free software released under a BSD-like
@@ -84,20 +84,20 @@ to take over development.</p>
 <div class="contents topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#requirements" id="id5">Requirements</a></li>
-<li><a class="reference internal" href="#installing" id="id6">Installing</a></li>
-<li><a class="reference internal" href="#examples-and-use-cases" id="id7">Examples and use cases</a><ul>
-<li><a class="reference internal" href="#initial-goals" id="id8">Initial goals</a></li>
-<li><a class="reference internal" href="#other-possible-uses" id="id9">Other possible uses</a></li>
-<li><a class="reference internal" href="#examples" id="id10">Examples</a></li>
-<li><a class="reference internal" href="#limitations" id="id11">Limitations</a></li>
+<li><a class="reference internal" href="#requirements" id="toc-entry-1">Requirements</a></li>
+<li><a class="reference internal" href="#installing" id="toc-entry-2">Installing</a></li>
+<li><a class="reference internal" href="#examples-and-use-cases" id="toc-entry-3">Examples and use cases</a><ul>
+<li><a class="reference internal" href="#initial-goals" id="toc-entry-4">Initial goals</a></li>
+<li><a class="reference internal" href="#other-possible-uses" id="toc-entry-5">Other possible uses</a></li>
+<li><a class="reference internal" href="#examples" id="toc-entry-6">Examples</a></li>
+<li><a class="reference internal" href="#limitations" id="toc-entry-7">Limitations</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#command-line-switches" id="id12">Command line switches</a></li>
+<li><a class="reference internal" href="#command-line-switches" id="toc-entry-8">Command line switches</a></li>
 </ul>
 </div>
 <div class="section" id="requirements">
-<h2><a class="toc-backref" href="#id5">Requirements</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-1">Requirements</a></h2>
 <p><cite>pyreport</cite> is Python, and needs the Python interpreter to run. It should
 work on any operating system where Python and the other requirements are
 available.</p>
@@ -124,7 +124,7 @@ needed.</li>
 </ul>
 </div>
 <div class="section" id="installing">
-<h2><a class="toc-backref" href="#id6">Installing</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-2">Installing</a></h2>
 <p>The easiest way to install pyreport is using pip:</p>
 <pre class="literal-block">
 pip install pyreport
@@ -135,11 +135,11 @@ pip install --user pyreport
 </pre>
 </div>
 <div class="section" id="examples-and-use-cases">
-<h2><a class="toc-backref" href="#id7">Examples and use cases</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-3">Examples and use cases</a></h2>
 <div class="section" id="initial-goals">
-<h3><a class="toc-backref" href="#id8">Initial goals</a></h3>
+<h3><a class="toc-backref" href="#toc-entry-4">Initial goals</a></h3>
 <p>I use python to write small scripts that can do, for instance, numerical
-calculations, or simple operations <a class="footnote-reference" href="#id4" id="id2">[2]</a> and I want to have nice
+calculations, or simple operations <a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">[2]</a> and I want to have nice
 print-outs of these scripts to study off-screen or to hand out to
 colleagues. Having the code with its relevant output is great for code
 reviewing. This also allows something similar to mathematica’s notebook
@@ -185,7 +185,7 @@ print c
 </blockquote>
 </div>
 <div class="section" id="other-possible-uses">
-<h3><a class="toc-backref" href="#id9">Other possible uses</a></h3>
+<h3><a class="toc-backref" href="#toc-entry-5">Other possible uses</a></h3>
 <blockquote>
 <ul class="simple">
 <li>Hidding the source code allows to generate nice reports from
@@ -203,7 +203,7 @@ version.</li>
 </blockquote>
 </div>
 <div class="section" id="examples">
-<h3><a class="toc-backref" href="#id10">Examples</a></h3>
+<h3><a class="toc-backref" href="#toc-entry-6">Examples</a></h3>
 <p>Here are two examples showing what you can do with <cite>pyreport</cite> :</p>
 <blockquote>
 <ul>
@@ -222,7 +222,7 @@ generated</a></p>
 </blockquote>
 </div>
 <div class="section" id="limitations">
-<h3><a class="toc-backref" href="#id11">Limitations</a></h3>
+<h3><a class="toc-backref" href="#toc-entry-7">Limitations</a></h3>
 <p>The “sys” module is imported in your code, whether you want it or not. As
 a general rule, beware of the namespace when running your scripts with
 <cite>pyreport</cite>, <cite>pyreport</cite> injects a few variables in your namespace.</p>
@@ -236,7 +236,7 @@ matplotlib. WXAgg has played me a few tricks.</p>
 </div>
 </div>
 <div class="section" id="command-line-switches">
-<h2><a class="toc-backref" href="#id12">Command line switches</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-8">Command line switches</a></h2>
 <p>This is not as useful as a well written documentation, but it is better
 than nothing:</p>
 <pre class="literal-block">
@@ -280,10 +280,10 @@ options:
                         pass the arguments &quot;ARGS&quot; to the script
 </pre>
 <hr class="docutils" />
-<table class="docutils footnote" frame="void" id="id3" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-1" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Literate_programming">literate programming</a> is a programming style
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[1]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Literate_programming">literate programming</a> is a programming style
 that embeds the documentation of a program in its source code. The
 documentation is generated in the same time that the program is
 built. I am using the term in a very loose way, as <cite>pyreport</cite> is
@@ -292,10 +292,10 @@ the documentation, but also weaves the output of the script in the
 documentation.</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id4" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-2" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td><a class="reference external" href="http://scipy.org/">scipy</a>  provides a very powerful math package to python, and
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-2">[2]</a></td><td><a class="reference external" href="http://scipy.org/">scipy</a>  provides a very powerful math package to python, and
 <a class="reference external" href="http://matplotlib.sourceforge.net/">matplotlib</a> is a great plotting interface.</td></tr>
 </tbody>
 </table>

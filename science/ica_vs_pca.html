@@ -96,44 +96,44 @@ it was mostly 2D:</p>
 <p>Let <cite>x</cite> and <cite>y</cite> be two normal-distributed variables, describing the
 processes we are observing:</p>
 <div class="formula">
-<i>x</i> = <span class="scriptfont">N</span>(0, 1)
+<i>x</i> = <span class="scriptfont">N</span>(0, 1)
 </div>
 <p>and</p>
 <div class="formula">
-<i>y</i> = <span class="scriptfont">N</span>(0, 1)
+<i>y</i> = <span class="scriptfont">N</span>(0, 1)
 </div>
 <p>Let <cite>a</cite> and <cite>b</cite> be two observation variables, linear combinations of <cite>x</cite>
 and <cite>y</cite>:</p>
 <div class="formula">
-<i>a</i> = <i>x</i> + <i>y</i>
+<i>a</i> = <i>x</i> + <i>y</i>
 </div>
 <p>and</p>
 <div class="formula">
-<i>b</i> = 2 <i>y</i>
+<i>b</i> = 2 <i>y</i>
 </div>
 <p>PCA is performed by applying an SVD (singular value decomposition) on the
 observed data matrix:</p>
 <div class="formula">
-<i>Y</i> = [<i>a</i><sub>1</sub><i>a</i><sub>2</sub><i>a</i><sub>3</sub>...; <i>b</i><sub>1</sub><i>b</i><sub>2</sub><i>b</i><sub>3</sub>...]
+<i>Y</i> = [<i>a</i><sub>1</sub><i>a</i><sub>2</sub><i>a</i><sub>3</sub>...; <i>b</i><sub>1</sub><i>b</i><sub>2</sub><i>b</i><sub>3</sub>...]
 </div>
 <p>This is equivalent to find the eigenvalues and eigenvectors of
-<span class="formula"><i>Y</i><sup> <i>T</i></sup><i>Y</i></span>, the correlation matrix of the observed data. The
+<span class="formula"><i>Y</i><sup> <i>T</i></sup><i>Y</i></span>, the correlation matrix of the observed data. The
 multidimensional (or multivariate, in statistical jargon) probability
 density function of Y is written:</p>
 <div class="formula">
-<i>p</i>(<i>Y</i>) ~ <i>exp</i>( − <i>r</i><sup> <i>T</i></sup><i>M</i> <i>r</i>)
+<i>p</i>(<i>Y</i>) ∼ <i>exp</i>( − <i>r</i><sup> <i>T</i></sup><i>M</i> <i>r</i>)
 </div>
 <p>where <cite>r</cite> is the position is the <cite>(a,b)</cite> observation space, and <cite>M</cite> the
 correlation matrix. Diagonalizing the matrix <cite>M</cite> corresponds to finding
 a rotation matrix <cite>U</cite> such that:</p>
 <div class="formula">
-<i>p</i>(<i>Y</i>) ~ <i>exp</i>( − <i>r</i><sup> <i>T</i></sup><i>U</i><sup> <i>T</i></sup><i>S</i> <i>U</i> <i>r</i>)
+<i>p</i>(<i>Y</i>) ∼ <i>exp</i>( − <i>r</i><sup> <i>T</i></sup><i>U</i><sup> <i>T</i></sup><i>S</i> <i>U</i> <i>r</i>)
 </div>
 <p>With <cite>S</cite> a diagonal matrix. In other words, <cite>U</cite> is a rotation of the
 observation space to change to a basis where the probability density
 function is written:</p>
 <div class="formula">
-<i>p</i>(<i>Y</i>) ~ <i>exp</i>( − <span class="limits"><sup class="limit"> </sup><span class="limit">⎲</span><span class="limit">⎳</span><sub class="limit"><i>i</i></sub></span> <i>σ</i><sub><i>i</i></sub> <i>r</i><span class="scripts"><sup class="script">2</sup><sub class="script"><i>i</i></sub></span>) = <span class="limits"><sup class="limit"> </sup><span class="limit">∏</span><sub class="limit"><i>i</i></sub></span> <i>exp</i>( − <i>σ</i><sub><i>i</i></sub> <i>r</i><span class="scripts"><sup class="script">2</sup><sub class="script"><i>i</i></sub></span>)
+<i>p</i>(<i>Y</i>) ∼ <i>exp</i>( − <span class="limits"><sup class="limit"> </sup><span class="limit"><span class="bigoperator">∑</span></span><sub class="limit"><i>i</i></sub></span> <i>σ</i><sub><i>i</i></sub> <i>r</i><span class="scripts"><sup class="script">2</sup><sub class="script"><i>i</i></sub></span>) = <span class="limits"><sup class="limit"> </sup><span class="limit"><span class="bigoperator">∏</span></span><sub class="limit"><i>i</i></sub></span> <i>exp</i>( − <i>σ</i><sub><i>i</i></sub> <i>r</i><span class="scripts"><sup class="script">2</sup><sub class="script"><i>i</i></sub></span>)
 </div>
 <p>In this new basis, <cite>Y</cite> can thus be interpreted as a sum of independent
 normal processes of different variance.</p>

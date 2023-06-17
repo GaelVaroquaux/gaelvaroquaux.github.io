@@ -73,7 +73,7 @@ between a large number of tasks. Your process does not control completely
 the computer, and it has to ask for time to the operating system. The
 operating system shares time between different processes, but it also has
 some internal tasks to do (like allocating memory). All these
-operations may not perform in a predictable time-lapse <a class="footnote-reference" href="#id5" id="id1">[2]</a>, and make it
+operations may not perform in a predictable time-lapse <a class="footnote-reference" href="#footnote-2" id="footnote-reference-1">[2]</a>, and make it
 harder for a process to produce an event (eg a hardware output signal) at
 a precise instant.</p>
 <p>One solution to avoid problems is to run the program with a single task
@@ -90,7 +90,7 @@ the performance one can expect.</p>
 <div class="section" id="real-time-clock-interrupt-latency">
 <h2>Real-time clock interrupt latency</h2>
 <p>The right tool to control timing under linux is the “real time clock”
-<a class="footnote-reference" href="#id6" id="id2">[3]</a>. It can be used to generate interrupts at a given frequency or
+<a class="footnote-reference" href="#footnote-3" id="footnote-reference-2">[3]</a>. It can be used to generate interrupts at a given frequency or
 instant.</p>
 <p>To quote Wikipedia: “in computing, an interrupt is an asynchronous signal
 from hardware indicating the need for attention or a synchronous event in
@@ -106,7 +106,7 @@ CPU, as it corresponds to the time needed for the OS to hand over control
 to the program.</p>
 <div class="section" id="the-experiment-and-the-results">
 <h3>The experiment and the results</h3>
-<p>I used a test program to measure interrupt latency <a class="footnote-reference" href="#id7" id="id3">[4]</a> on linux. The test
+<p>I used a test program to measure interrupt latency <a class="footnote-reference" href="#footnote-4" id="footnote-reference-3">[4]</a> on linux. The test
 code first sets the highest scheduling priority it can, then asks to be
 waken up at a given frequency <em>f</em> by the real-time clock. It checks the
 real-time clock to see if it was really waken-up when it asked for. It
@@ -213,13 +213,13 @@ histogram file.</p>
 kernel actually schedules other tasks. I did not put tremendous stress
 on the CPU, as I want to simulate standard use cases. This is the way I
 did it:</p>
-<div class="highlight"><pre><span></span><span class="k">for</span> <span class="o">((</span>  <span class="nv">i</span> <span class="o">=</span> <span class="m">0</span> <span class="p">;</span>  i &lt;<span class="o">=</span> <span class="m">10</span><span class="p">;</span>  i++  <span class="o">))</span>
+<div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="o">((</span><span class="w">  </span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="p">;</span><span class="w">  </span>i<span class="w"> </span>&lt;<span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">;</span><span class="w">  </span>i++<span class="w">  </span><span class="o">))</span>
 <span class="k">do</span>
-    ping -c <span class="m">10</span> www.google.com <span class="p">&amp;</span>
-    dd <span class="k">if</span><span class="o">=</span>/dev/urandom <span class="nv">bs</span><span class="o">=</span>1M <span class="nv">count</span><span class="o">=</span><span class="m">40</span> <span class="p">|</span> md5sum - <span class="p">&amp;</span>
-    dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>/tmp/foo <span class="nv">bs</span><span class="o">=</span>1M <span class="nv">count</span><span class="o">=</span><span class="m">500</span>
-    sync
-rm /tmp/foo
+<span class="w">    </span>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">10</span><span class="w"> </span>www.google.com<span class="w"> </span><span class="p">&amp;</span>
+<span class="w">    </span>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/dev/urandom<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>1M<span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="m">40</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>md5sum<span class="w"> </span>-<span class="w"> </span><span class="p">&amp;</span>
+<span class="w">    </span>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/dev/zero<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/tmp/foo<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>1M<span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="m">500</span>
+<span class="w">    </span>sync
+rm<span class="w"> </span>/tmp/foo
 <span class="k">done</span>
 </pre></div>
 <p>Three tasks running in parallel: pinging google, calculation the md5 hash
@@ -234,7 +234,7 @@ first task finish before the last one. This is done on purpose.</p>
 “stresstest.sh” script given be the <a class="reference external" href="attachments/real_time_stress_test.zip">following archive</a> . The plots can be obtained by
 running the “process.py” python scripts (requires scipy and matplotlib).
 You may have to increase the real-time clock frequency user limit. You
-can do this by running (as root) ” echo 1024 &gt;
+can do this by running (as root) “ echo 1024 &gt;
 /proc/sys/dev/rtc/max-user-freq”</p>
 <p>Send me the results dir created by the “stresstest.sh” script on your
 box, I am very interested to gather more statistics.</p>
@@ -258,43 +258,43 @@ would also like to thank David Cournapeau for pointing me to interesting
 references and to the Linux Audio Developer mailing list for more
 information.</p>
 <p><strong>References</strong></p>
-<table class="docutils footnote" frame="void" id="id4" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-1" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label">[1]</td><td>Wikipedia article on real-time computing:
 <a class="reference external" href="http://en.wikipedia.org/wiki/Real-time_computing">http://en.wikipedia.org/wiki/Real-time_computing</a></td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id5" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-2" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[2]</a></td><td>A very clear article about fighting latency in the linux kernel:
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[2]</a></td><td>A very clear article about fighting latency in the linux kernel:
 <a class="reference external" href="http://lac.zkm.de/2006/papers/lac2006_lee_revell.pdf">http://lac.zkm.de/2006/papers/lac2006_lee_revell.pdf</a></td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id6" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-3" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[3]</a></td><td>About the RTC: <a class="reference external" href="http://www.die.net/doc/linux/man/man4/rtc.4.html">http://www.die.net/doc/linux/man/man4/rtc.4.html</a></td></tr>
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-2">[3]</a></td><td>About the RTC: <a class="reference external" href="http://www.die.net/doc/linux/man/man4/rtc.4.html">http://www.die.net/doc/linux/man/man4/rtc.4.html</a></td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id7" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-4" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id3">[4]</a></td><td>What this code is actually measuring is, in technical terms, the
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-3">[4]</a></td><td>What this code is actually measuring is, in technical terms, the
 interrupt latency, that is the time it takes for the kernel to catch
 the interrupt, and the rescheduling latency, that is the time it take
 for the kernel to reschedule from one process to another.</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id8" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-5" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label">[5]</td><td>A different benchmark, that probably studies more directly the
 intrinsic kernel limits than my code: <a class="reference external" href="http://lwn.net/Articles/139403/">http://lwn.net/Articles/139403/</a></td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id9" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-6" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label">[6]</td><td>Another benchmark, that also benchmarks the RT-preempt patch and
@@ -302,7 +302,7 @@ shows the impressive improvements achieved with this patch:
 <a class="reference external" href="http://kerneltrap.org/node/5466">http://kerneltrap.org/node/5466</a></td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id10" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-7" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label">[7]</td><td>A course on real-time computing, with the lecture notes.

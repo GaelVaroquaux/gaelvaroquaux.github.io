@@ -13,19 +13,19 @@ it a bit to add personal context.&lt;/p&gt;
 &lt;div class="contents topic" id="highlights"&gt;
 &lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#a-new-team-soda" id="id1"&gt;A new team: Soda&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#the-scientific-vision" id="id2"&gt;The scientific vision&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#application-context-richer-data-in-health-and-social-sciences" id="id3"&gt;Application context: richer data in health and social sciences&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#applications-raise-specific-data-science-challenges" id="id4"&gt;Applications raise specific data-science challenges&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#our-research-axes" id="id5"&gt;Our research axes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#a-new-team-soda" id="toc-entry-1"&gt;A new team: Soda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-scientific-vision" id="toc-entry-2"&gt;The scientific vision&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#application-context-richer-data-in-health-and-social-sciences" id="toc-entry-3"&gt;Application context: richer data in health and social sciences&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#applications-raise-specific-data-science-challenges" id="toc-entry-4"&gt;Applications raise specific data-science challenges&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#our-research-axes" id="toc-entry-5"&gt;Our research axes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#some-notable-results-of-2022" id="id6"&gt;Some notable results of 2022&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#learning-on-relational-data-aggregating-across-many-tables" id="id7"&gt;Learning on relational data: aggregating across many tables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#validating-probabilistic-classifiers-beyond-calibration" id="id8"&gt;Validating probabilistic classifiers: beyond calibration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#reweighting-randomized-trials-for-generalization-finite-sample-error-and-variable-selection" id="id9"&gt;Reweighting randomized trials for generalization: finite sample error and variable selection&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#challenges-to-clinical-impact-of-ai-in-medical-imaging" id="id10"&gt;Challenges to clinical impact of AI in medical imaging&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#privacy-preserving-synthetic-educational-data-generation" id="id11"&gt;Privacy-preserving synthetic educational data generation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#some-notable-results-of-2022" id="toc-entry-6"&gt;Some notable results of 2022&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#learning-on-relational-data-aggregating-across-many-tables" id="toc-entry-7"&gt;Learning on relational data: aggregating across many tables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#validating-probabilistic-classifiers-beyond-calibration" id="toc-entry-8"&gt;Validating probabilistic classifiers: beyond calibration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#reweighting-randomized-trials-for-generalization-finite-sample-error-and-variable-selection" id="toc-entry-9"&gt;Reweighting randomized trials for generalization: finite sample error and variable selection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#challenges-to-clinical-impact-of-ai-in-medical-imaging" id="toc-entry-10"&gt;Challenges to clinical impact of AI in medical imaging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#privacy-preserving-synthetic-educational-data-generation" id="toc-entry-11"&gt;Privacy-preserving synthetic educational data generation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -34,7 +34,7 @@ it a bit to add personal context.&lt;/p&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="a-new-team-soda"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;A new team: Soda&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;A new team: Soda&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="figure align-right"&gt;
 &lt;img alt="" src="attachments/2022/team_2022.jpg" style="width: 400px;" /&gt;
 &lt;p class="caption"&gt;The team in early 2022 (it has grown a lot since)&lt;/p&gt;
@@ -53,11 +53,11 @@ of the team.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="the-scientific-vision"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;The scientific vision&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;The scientific vision&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Machine learning to leverage richer, more complex, data for
 social-sciences and health&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="application-context-richer-data-in-health-and-social-sciences"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id3"&gt;Application context: richer data in health and social sciences&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Application context: richer data in health and social sciences&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Opportunistic data accumulations, often observational, bare great
 promises for social and health sciences. But the data are too big and
 complex for standard statistical methodologies in these sciences.&lt;/p&gt;
@@ -79,7 +79,7 @@ improving education.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="applications-raise-specific-data-science-challenges"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id4"&gt;Applications raise specific data-science challenges&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Applications raise specific data-science challenges&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Data management: preparing dirty data for analytics&lt;/strong&gt; Assembling,
 curating, and transforming data for data analysis is very labor
 intensive. These data-preparation steps are often considered the number
@@ -110,7 +110,7 @@ estimates and conclusion in weakly-parametric settings.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="our-research-axes"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id5"&gt;Our research axes&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;Our research axes&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="section" id="representation-learning-for-relational-data"&gt;
 &lt;h4&gt;Representation learning for relational data&lt;/h4&gt;
 &lt;p&gt;I dream of deep-learning methodology for relational databases, from
@@ -180,14 +180,14 @@ of the Python data ecosystem in which scikit-learn is embedded.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="some-notable-results-of-2022"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Some notable results of 2022&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;Some notable results of 2022&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I am listing here a small number of the achievements of the team, because
 I find them inspiring.&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="learning-on-relational-data-aggregating-across-many-tables"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id7"&gt;Learning on relational data: aggregating across many tables&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-7"&gt;Learning on relational data: aggregating across many tables&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;For many machine-learning tasks, augmenting the data table at hand with
 features built from external sources is key to improving performance. For
 instance, estimating housing prices benefits from background information
@@ -232,7 +232,7 @@ data-science projects.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="validating-probabilistic-classifiers-beyond-calibration"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id8"&gt;Validating probabilistic classifiers: beyond calibration&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-8"&gt;Validating probabilistic classifiers: beyond calibration&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="figure align-right"&gt;
 &lt;img alt="" src="attachments/2022/grouping_loss.png" style="width: 360px;" /&gt;
 &lt;p class="caption"&gt;Validating probabilistic predictions of classifiers must go account
@@ -265,7 +265,7 @@ pre-production validation.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="reweighting-randomized-trials-for-generalization-finite-sample-error-and-variable-selection"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id9"&gt;Reweighting randomized trials for generalization: finite sample error and variable selection&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-9"&gt;Reweighting randomized trials for generalization: finite sample error and variable selection&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="figure align-right"&gt;
 &lt;img alt="" src="attachments/2022/reweighting_trial.png" style="width: 360px;" /&gt;
 &lt;p class="caption"&gt;There may be a sampling bias between a randomized trial and the
@@ -299,7 +299,7 @@ while non-shifted but treatment effect modifiers do not.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="challenges-to-clinical-impact-of-ai-in-medical-imaging"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id10"&gt;Challenges to clinical impact of AI in medical imaging&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-10"&gt;Challenges to clinical impact of AI in medical imaging&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I have worked for many years on research in computer analysis of medical
 images. In particular, I am convinced that machine learning bears many
 promises to improve patients’ health. However, I cannot be blind to the
@@ -332,7 +332,7 @@ focusing on rich data sources).&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="privacy-preserving-synthetic-educational-data-generation"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id11"&gt;Privacy-preserving synthetic educational data generation&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-11"&gt;Privacy-preserving synthetic educational data generation&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Soda also works on other applications than health, for instance
 education. In this direction, I would like to highlight work in which I
 did not participate, by Jill-Jenn Vie, another PI of the team.&lt;/p&gt;
@@ -377,11 +377,11 @@ rights to limit security risks.&lt;/p&gt;
 &lt;div class="section" id="the-start-of-my-adventure-with-mayavi"&gt;
 &lt;h2&gt;The start of my adventure with Mayavi&lt;/h2&gt;
 &lt;img alt="" class="align-right" src="attachments/mayavi/example_magnetic_field_lines.jpg" /&gt;
-&lt;p&gt;I got involved around 2007: I needed 3D visualization of magnetic fields as I was designing coils for my PhD &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;p&gt;I got involved around 2007: I needed 3D visualization of magnetic fields as I was designing coils for my PhD &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;This led to an example in the Mayavi docs &lt;a class="reference external" href="http://docs.enthought.com/mayavi/mayavi/auto/example_magnetic_field_lines.html"&gt;http://docs.enthought.com/mayavi/mayavi/auto/example_magnetic_field_lines.html&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;This led to an example in the Mayavi docs &lt;a class="reference external" href="http://docs.enthought.com/mayavi/mayavi/auto/example_magnetic_field_lines.html"&gt;http://docs.enthought.com/mayavi/mayavi/auto/example_magnetic_field_lines.html&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;I started as an early user of Mayavi2, a rewrite of Mayavi, and
@@ -478,8 +478,8 @@ knowledge, but such approach is hard to put to the test.&lt;/p&gt;
 conclude on the indvidual’s on-going mental processes. But this
 conclusion is not directly warranted by brain-imaging studies, as they do
 not control the brain activity, but rather engage the participant via a
-cognitive paradigm made of psychological manipulations &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;. &lt;em&gt;Brain
-decoding&lt;/em&gt; can help grounding such &lt;em&gt;reverse inferences&lt;/em&gt; &lt;a class="footnote-reference" href="#id6" id="id2"&gt;[2]&lt;/a&gt;, by using
+cognitive paradigm made of psychological manipulations &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;. &lt;em&gt;Brain
+decoding&lt;/em&gt; can help grounding such &lt;em&gt;reverse inferences&lt;/em&gt; &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;, by using
 machine learning to predict aspects of the task.&lt;/p&gt;
 &lt;p&gt;But a brain decoding model can seldom support broad reverse-inference
 claims, as typical decoding models are trained in a given study that
@@ -488,35 +488,35 @@ concludes on the interpretation of the brain activity in the studies’
 narrow scope.&lt;/p&gt;
 &lt;p&gt;Another challenge is that of statistical power. Most functional brain
 imaging studies comprise only a few dozen subjects, compromising
-statistical power &lt;a class="footnote-reference" href="#id7" id="id3"&gt;[3]&lt;/a&gt;, even more so when using machine learning &lt;a class="footnote-reference" href="#id8" id="id4"&gt;[4]&lt;/a&gt;.
+statistical power &lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;, even more so when using machine learning &lt;a class="footnote-reference" href="#footnote-4" id="footnote-reference-4"&gt;[4]&lt;/a&gt;.
 While there exists large acquisition efforts, these must focus on broad
 psychological manipulations that do not probe fine aspects of mental
 processes.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2006, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1364661305003360"&gt;Can cognitive processes be inferred from
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2006, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1364661305003360"&gt;Can cognitive processes be inferred from
 neuroimaging data?&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2011, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0896627311009895"&gt;Inferring Mental States from Neuroimaging Data:
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2011, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0896627311009895"&gt;Inferring Mental States from Neuroimaging Data:
 From Reverse Inference to Large-Scale Decoding&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2017, &lt;a class="reference external" href="https://www.nature.com/articles/nrn.2016.167"&gt;Scanning the horizon: towards transparent and
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2017, &lt;a class="reference external" href="https://www.nature.com/articles/nrn.2016.167"&gt;Scanning the horizon: towards transparent and
 reproducible neuroimaging research&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-4" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varoquaux 2018, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1053811917305311"&gt;Cross-validation failure: Small sample sizes lead
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varoquaux 2018, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1053811917305311"&gt;Cross-validation failure: Small sample sizes lead
 to large error bars&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -537,7 +537,7 @@ of mental processes not studied in large cohorts.&lt;/p&gt;
 cognitive neuroimaging studies is that all probe different, yet related,
 mental processes. Framing them all in the same analysis faces the lack of
 universally-adopted language to describe cognitive paradigms. Our prior
-work &lt;a class="footnote-reference" href="#id10" id="id9"&gt;[5]&lt;/a&gt; on this endeavior –the quest for universal decoding across
+work &lt;a class="footnote-reference" href="#footnote-5" id="footnote-reference-5"&gt;[5]&lt;/a&gt; on this endeavior –the quest for universal decoding across
 studies–, relied on describing each experimental paradigm in an ontology
 of cognitive processes and psychological manipulations. However, such
 approach is not scalable. Here, rather, we infered the latent structure
@@ -545,10 +545,10 @@ of the tasks from the data, without explicitely modeling the links
 between studies. In my eye, this was a very important ingredient of our
 work, and it is non trivial that it enables improving the decoding of
 unrelated studies.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id10" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-5" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id9"&gt;[5]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varoquaux 2018, &lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006565"&gt;Atlases of cognition with large-scale human brain
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-5"&gt;[5]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varoquaux 2018, &lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006565"&gt;Atlases of cognition with large-scale human brain
 mapping&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -562,14 +562,14 @@ cognitive-neuroscience research.&lt;/p&gt;
 &lt;p&gt;From a computer-science standpoint, we used a deep-learning architecture.
 This is the first time that we witnessed a
 deep-learning architecture outperforming well-tuned shallow baselines on
-functional neuroimaging data &lt;a class="footnote-reference" href="#id12" id="id11"&gt;[6]&lt;/a&gt;. This success is likely due to the
+functional neuroimaging data &lt;a class="footnote-reference" href="#footnote-6" id="footnote-reference-6"&gt;[6]&lt;/a&gt;. This success is likely due to the
 massive amount of data that we assembled: as our method can
 readily work across studies, we were able to apply it to 40000
 subject-level contrast maps.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id12" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-6" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id11"&gt;[6]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;There have been many reports of deep architectures on functional
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-6"&gt;[6]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;There have been many reports of deep architectures on functional
 brain imaging. However, in our experience, good shallow benchmarks
 are hard to beat.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
@@ -603,11 +603,11 @@ detailed model of a given task, despite limited statistical power and
 external validity. My feeling is that &lt;strong&gt;the question of how
 various tasks are related is perceived as belonging to the walled garden
 of cognitive neuroscientists, not to be put to the test by statistical
-methods&lt;/strong&gt; &lt;a class="footnote-reference" href="#id14" id="id13"&gt;[7]&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id14" rules="none"&gt;
+methods&lt;/strong&gt; &lt;a class="footnote-reference" href="#footnote-7" id="footnote-reference-7"&gt;[7]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-7" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id13"&gt;[7]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1008795"&gt;The second round of review of our manuscript&lt;/a&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-7"&gt;[7]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1008795"&gt;The second round of review of our manuscript&lt;/a&gt;
 certainly felt as if the method was judged by cognitive-neuroscience
 lenses, and not the validity of the data analysis that it entailed.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
@@ -618,13 +618,13 @@ tasks is at risk of picking up idiosyncrasies of the task or the stimuli.
 A starting point of our work (&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008795"&gt;Mensch 2021&lt;/a&gt;)
 was the fall of statistical power in cognitive neuroscience, documented
 by &lt;a class="reference external" href="https://www.nature.com/articles/nrn.2016.167"&gt;Poldrack 2017&lt;/a&gt;, but
-one reviewer censored this argument &lt;a class="footnote-reference" href="#id17" id="id16"&gt;[8]&lt;/a&gt;. This exchange felt to me as &lt;strong&gt;a
+one reviewer censored this argument &lt;a class="footnote-reference" href="#footnote-8" id="footnote-reference-8"&gt;[8]&lt;/a&gt;. This exchange felt to me as &lt;strong&gt;a
 field refusing to discuss publicly its challenges&lt;/strong&gt;, which leaves no room for
 methods’ researchers such as myself to address them.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id17" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-8" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id16"&gt;[8]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1008795"&gt;Comments in the first review&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-8"&gt;[8]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1008795"&gt;Comments in the first review&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
@@ -659,14 +659,14 @@ across statistical and database topics.&lt;/p&gt;
 inferential statistics (because it can rely on more powerful model). For
 instance, we now have a good understanding of the case of missing values:
 in &lt;a class="reference external" href="https://arxiv.org/abs/2106.00311"&gt;Le Morvan et al&lt;/a&gt;, we showed that
-with traditional methods, ignorable missingness &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; and “good”
+with traditional methods, ignorable missingness &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt; and “good”
 imputation are important, but it turns out for prediction, flexible
 predictors are what matters and they can work on any missingness
 mechanism.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;“Missing at Random”, where missingness is independent of the
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;“Missing at Random”, where missingness is independent of the
 hidden values&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -769,12 +769,12 @@ sizeable fraction of their work time.&lt;/p&gt;
 &lt;h3&gt;Scikit-learn &amp;#64; Inria foundation&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Birth of a foundation&lt;/strong&gt;
 To ensure reliable funding to a small core of scikit-learn developers, we
-set up a foundation &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; a few years ago. The goal was to make sure that
+set up a foundation &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt; a few years ago. The goal was to make sure that
 we did not lose our experienced developers.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;See &lt;a class="reference external" href="http://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html"&gt;the motivating announcement&lt;/a&gt; and the &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;website&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;See &lt;a class="reference external" href="http://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html"&gt;the motivating announcement&lt;/a&gt; and the &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;website&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;Achieving sustainability&lt;/strong&gt;
@@ -830,11 +830,11 @@ are competing for visibility with many powerful actors.&lt;/p&gt;
 a strong brand for scikit-learn. Good communication will help us find new
 sponsors, a key ingredient of growth and sustainability for scikit-learn.&lt;/p&gt;
 &lt;p&gt;We need to communicate on our progresses and our actions, as people are
-often surprised by the breadth of our contributions &lt;a class="footnote-reference" href="#id4" id="id3"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+often surprised by the breadth of our contributions &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;for instance, the foundation team has contributed &lt;a class="reference external" href="https://youtu.be/UVL4LFy8ch0?t=1437"&gt;improvements in
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;for instance, the foundation team has contributed &lt;a class="reference external" href="https://youtu.be/UVL4LFy8ch0?t=1437"&gt;improvements in
 CPython itself&lt;/a&gt; , maintains
 &lt;a class="reference external" href="https://github.com/cloudpipe/cloudpickle"&gt;cloudpickle&lt;/a&gt; a central
 component of the data ecosystem).&lt;/td&gt;&lt;/tr&gt;
@@ -882,15 +882,15 @@ for health&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class="contents topic" id="highlights"&gt;
 &lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#mining-electronic-health-records-for-covid-19" id="id1"&gt;Mining electronic health records for covid-19&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#machine-learning-for-dirty-data" id="id2"&gt;Machine learning for dirty data&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#supervised-learning-with-missing-values-beyond-imputation" id="id3"&gt;Supervised learning with Missing values: beyond imputation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#machine-learning-without-normalizing-entries" id="id4"&gt;Machine-learning without normalizing entries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#mining-electronic-health-records-for-covid-19" id="toc-entry-1"&gt;Mining electronic health records for covid-19&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#machine-learning-for-dirty-data" id="toc-entry-2"&gt;Machine learning for dirty data&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#supervised-learning-with-missing-values-beyond-imputation" id="toc-entry-3"&gt;Supervised learning with Missing values: beyond imputation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#machine-learning-without-normalizing-entries" id="toc-entry-4"&gt;Machine-learning without normalizing entries&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#making-sense-of-brain-functional-signals" id="id5"&gt;Making sense of brain functional signals&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#neuroquery-brain-mapping-any-neuroscience-query" id="id6"&gt;NeuroQuery: brain mapping any neuroscience query&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#a-high-resolution-brain-functional-atlas" id="id7"&gt;A high-resolution brain functional atlas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#making-sense-of-brain-functional-signals" id="toc-entry-5"&gt;Making sense of brain functional signals&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#neuroquery-brain-mapping-any-neuroscience-query" id="toc-entry-6"&gt;NeuroQuery: brain mapping any neuroscience query&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#a-high-resolution-brain-functional-atlas" id="toc-entry-7"&gt;A high-resolution brain functional atlas&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -899,7 +899,7 @@ for health&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="mining-electronic-health-records-for-covid-19"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;Mining electronic health records for covid-19&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Mining electronic health records for covid-19&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Hospital databases are rich and messy&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Hospital databases&lt;/strong&gt;
 In March, we &lt;a class="reference external" href="https://www.inria.fr/en/scikiteds-visualization-tool-monitoring-flow-sick-patients"&gt;teamed up with the hospital around Paris&lt;/a&gt; that were suffering from a severe overload due to a new pathology,
@@ -978,7 +978,7 @@ approaches.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="machine-learning-for-dirty-data"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;Machine learning for dirty data&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Machine learning for dirty data&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Machine learning methods that can robustly ingest non-curated data.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;a class="reference external" href="https://project.inria.fr/dirtydata/"&gt;Dirty Data project&lt;/a&gt;, that we
 undertook a few years ago, is really bearing its fruits.&lt;/p&gt;
@@ -986,7 +986,7 @@ undertook a few years ago, is really bearing its fruits.&lt;/p&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="supervised-learning-with-missing-values-beyond-imputation"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id3"&gt;Supervised learning with Missing values: beyond imputation&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Supervised learning with Missing values: beyond imputation&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The classic view on processing data with missing values is to try and
 &lt;em&gt;impute&lt;/em&gt; the missing values: replace them by probable values (or better,
 compute the distribution of the unobserved values given the observed
@@ -1046,7 +1046,7 @@ on limited data size.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="machine-learning-without-normalizing-entries"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id4"&gt;Machine-learning without normalizing entries&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Machine-learning without normalizing entries&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;A challenge of data management is that the same information may be
 represented in different ways, typically with different strings denoting
 the same, or related entities. For instance, in the following table, the
@@ -1144,7 +1144,7 @@ rapid progress.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="making-sense-of-brain-functional-signals"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;Making sense of brain functional signals&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;Making sense of brain functional signals&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Turning brain-imaging signal into insights&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Brain imaging, and in particular functional brain imaging, is amazing,
 because it gives a window on brain function, whether it is to understand
@@ -1152,7 +1152,7 @@ cognition, behavior, or pathologies. One challenge that I have been
 interested in, across the years, is how to give systematic sense to these
 signals, in a broader perspective than a given study.&lt;/p&gt;
 &lt;div class="section" id="neuroquery-brain-mapping-any-neuroscience-query"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id6"&gt;NeuroQuery: brain mapping any neuroscience query&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;NeuroQuery: brain mapping any neuroscience query&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Systematically linking mental processes and disorders to brain structures
 is a very difficult task because of the huge diversity of behavior.&lt;/p&gt;
 &lt;p&gt;In &lt;a class="reference external" href="https://elifesciences.org/articles/53385"&gt;Dockes et al, elife 2020&lt;/a&gt; we used text mining on a
@@ -1167,7 +1167,7 @@ report findings.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="a-high-resolution-brain-functional-atlas"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id7"&gt;A high-resolution brain functional atlas&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-7"&gt;A high-resolution brain functional atlas&lt;/a&gt;&lt;/h3&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Regions to summarize the fMRI signal&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Atlases of brain regions are convenient to summarize the information of
 brain images, turning them into information easy to analyse. We have long
@@ -1218,10 +1218,10 @@ simple rules.&lt;/p&gt;
 &lt;div class="contents topic" id="contents"&gt;
 &lt;p class="topic-title"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#maintainer-s-anxiety" id="id7"&gt;Maintainer’s anxiety&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#contributor-s-fatigue" id="id8"&gt;Contributor’s fatigue&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#communication-is-hard" id="id9"&gt;Communication is hard&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#little-things-that-help" id="id10"&gt;Little things that help&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#maintainer-s-anxiety" id="toc-entry-1"&gt;Maintainer’s anxiety&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#contributor-s-fatigue" id="toc-entry-2"&gt;Contributor’s fatigue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#communication-is-hard" id="toc-entry-3"&gt;Communication is hard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#little-things-that-help" id="toc-entry-4"&gt;Little things that help&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="line-block"&gt;
@@ -1231,7 +1231,7 @@ simple rules.&lt;/p&gt;
 different parties see the problem differently.&lt;/p&gt;
 &lt;!-- TODO: put a few things in bold --&gt;
 &lt;div class="section" id="maintainer-s-anxiety"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id7"&gt;Maintainer’s anxiety&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Maintainer’s anxiety&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="open-source-can-be-anxiety-generating-for-the-maintainers"&gt;
 &lt;h3&gt;Open source can be anxiety-generating for the maintainers&lt;/h3&gt;
 &lt;p&gt;Maintainers ensure the quality and the long-term life of an open-source
@@ -1277,19 +1277,19 @@ of open source.&lt;/p&gt;
 &lt;p&gt;A maintainer quickly learns that every piece of code, no matter how cute
 it might be, will give him or her work in the long run, &lt;a class="reference external" href="https://snarky.ca/setting-expectations-for-open-source-participation/#submittingacontribution"&gt;just like a puppy&lt;/a&gt;. This
 is unavoidable given that the complexity of code grows faster than its number of
-features &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt;, and, even for a company as rich as Google,
-project maintenance becomes intractable on huge projects &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+features &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;, and, even for a company as rich as Google,
+project maintenance becomes intractable on huge projects &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="side-hanging docutils container"&gt;
-&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://ieeexplore.ieee.org/document/1702600"&gt;An Experiment on Unit Increase in Problem Complexity, Woodfield 1979&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://ieeexplore.ieee.org/document/1702600"&gt;An Experiment on Unit Increase in Problem Complexity, Woodfield 1979&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;To quote tensorflow developers
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;To quote tensorflow developers
 &lt;a class="reference external" href="https://github.com/tensorflow/tensorflow/pull/33460"&gt;“Every [code addition] takes around 16 CPU/GPU
 hours of [quality control]. As such, we cannot just run every
 [code addition] through the [quality control] infrastructure.”&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
@@ -1308,7 +1308,7 @@ them on purpose.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="contributor-s-fatigue"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id8"&gt;Contributor’s fatigue&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Contributor’s fatigue&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;A new contributor starting a conversation with a group of seasoned
 project maintainers may easily &lt;strong&gt;feel an imposter&lt;/strong&gt;. The
 new contributor knows less about the project. In addition, he or she is engaging
@@ -1359,7 +1359,7 @@ documentation, via notes on the issue tracker.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="communication-is-hard"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id9"&gt;Communication is hard&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Communication is hard&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Communication is hard: messages are sometimes received differently than
 we would like. &lt;strong&gt;Overworked people discussing very technically
 challenging issues&lt;/strong&gt; only makes the matter worse. I have seen people not
@@ -1409,13 +1409,13 @@ of our bubble.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="little-things-that-help"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id10"&gt;Little things that help&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Communication can improved by continuously working on it &lt;a class="footnote-reference" href="#id6" id="id5"&gt;[3]&lt;/a&gt;.
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Little things that help&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Communication can improved by continuously working on it &lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;.
 It may be obvious to some, but it personally took me many years to learn.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id5"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Training materials for managers often discuss communication, and
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Training materials for managers often discuss communication, and
 give tricks. I am sure that there are better references than my
 list below. But that’s the best I can do.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1676,34 +1676,34 @@ the survey who took time to answer the questions.&lt;/p&gt;
 </content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="benchmarking"></category><category term="conferences"></category><category term="experimental methods"></category></entry><entry><title>2019: my scientific year in review</title><link href="https://gael-varoquaux.info/science/2019-my-scientific-year-in-review.html" rel="alternate"></link><published>2020-01-05T00:00:00+01:00</published><updated>2020-01-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2020-01-05:/science/2019-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;My current research spans wide: from brain sciences to core data
 science. My overall interest is to build &lt;strong&gt;methodology drawing insights from
 data&lt;/strong&gt; for questions that have often been addressed qualitatively. If I can
-highlight a few publications from 2019 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;, the common thread would be
+highlight a few publications from 2019 &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;, the common thread would be
 computational statistics, from dirty …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My current research spans wide: from brain sciences to core data
 science. My overall interest is to build &lt;strong&gt;methodology drawing insights from
 data&lt;/strong&gt; for questions that have often been addressed qualitatively. If I can
-highlight a few publications from 2019 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;, the common thread would be
+highlight a few publications from 2019 &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;, the common thread would be
 computational statistics, from dirty data to brain images. Let me try to
 give the gist of these progresses, in simple terms.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It’s already 2020, I’m always late.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It’s already 2020, I’m always late.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;div class="contents topic" id="highlights"&gt;
 &lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#comparing-distributions" id="id5"&gt;Comparing distributions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#predictive-pipelines-on-brain-functional-connectomes" id="id6"&gt;Predictive pipelines on brain functional connectomes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#population-shrinkage-of-covariance" id="id7"&gt;Population shrinkage of covariance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#deep-learning-on-non-translation-invariant-images" id="id8"&gt;Deep learning on non-translation-invariant images&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#open-science" id="id9"&gt;Open science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#comparing-distributions" id="toc-entry-1"&gt;Comparing distributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#predictive-pipelines-on-brain-functional-connectomes" id="toc-entry-2"&gt;Predictive pipelines on brain functional connectomes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#population-shrinkage-of-covariance" id="toc-entry-3"&gt;Population shrinkage of covariance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#deep-learning-on-non-translation-invariant-images" id="toc-entry-4"&gt;Deep learning on non-translation-invariant images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#open-science" id="toc-entry-5"&gt;Open science&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="comparing-distributions"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;Comparing distributions&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Comparing distributions&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Fundamental computational-statistics work&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;What if you are given two set of observations and need to conclude on
 whether they are drawn from the same distribution? We are interested in
@@ -1752,7 +1752,7 @@ l1 norm is non smooth which can be challenging in optimization settings.&lt;/p&g
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="predictive-pipelines-on-brain-functional-connectomes"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Predictive pipelines on brain functional connectomes&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Predictive pipelines on brain functional connectomes&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Brain-imaging methods&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Brain functional connectivity is increasingly used to extract biomarkers
 of behavior and mental health. The long-term stakes are to ground
@@ -1812,7 +1812,7 @@ reduce the variability in the methods used to build them&lt;/strong&gt;.&lt;/p&g
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="population-shrinkage-of-covariance"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id7"&gt;Population shrinkage of covariance&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Population shrinkage of covariance&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;Statistics for brain signals&lt;/p&gt;
 &lt;p&gt;Estimating covariances is central for functional brain connectivity and
 in many other applications. With Mehdi Rahim, in &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S1361841518301014"&gt;Rahim et al&lt;/a&gt;
@@ -1823,7 +1823,7 @@ mathematical ideas: that of using natural operations on covariance
 matrices, and that of priors for mean-square estimation:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;strong&gt;Tangent space&lt;/strong&gt; Covariance matrices are positive-definite matrices,
-for which standard arithmetics are not well suited &lt;a class="footnote-reference" href="#id4" id="id3"&gt;[2]&lt;/a&gt;: subtracting
+for which standard arithmetics are not well suited &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;: subtracting
 two covariance matrices can lead to a matrix that cannot be
 the covariance of a signal. However, a group of covariance matrices can
 be transformed into points in a vector space for which standard
@@ -1832,10 +1832,10 @@ covariances (for instance Euclidean distance between these points
 approximate KL divergence between covariances). This is what we call
 the &lt;em&gt;tangent space&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Technically, covariance matrices live on a Riemannian manifold:
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Technically, covariance matrices live on a Riemannian manifold:
 a curve surface inside &lt;em&gt;R^{n x n}&lt;/em&gt; that has some metric
 properties.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1883,7 +1883,7 @@ to build the biomarker.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="deep-learning-on-non-translation-invariant-images"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id8"&gt;Deep learning on non-translation-invariant images&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Deep learning on non-translation-invariant images&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;Computer vision&lt;/p&gt;
 &lt;p&gt;Brain images, in particular images of brain activity, are very different
 from the natural images on which most computer-vision research focuses.
@@ -1938,7 +1938,7 @@ data&lt;/strong&gt;: these images are not translational invariant.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="open-science"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id9"&gt;Open science&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;Open science&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Open and reproducible science:&lt;/strong&gt; Looking at all these publications, I
 realize that every single one of them comes with code on a github
 repository and is done on open data, which means that they can all be
@@ -1987,15 +1987,15 @@ waiving.&lt;/p&gt;
 &lt;div class="contents topic" id="contents"&gt;
 &lt;p class="topic-title"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#the-context-two-sample-testing" id="id1"&gt;The context: two-sample testing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#from-kernel-mean-embeddings-to-distances-on-distributions" id="id2"&gt;From kernel mean embeddings to distances on distributions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#controlling-the-weak-convergence-of-probability-measures" id="id3"&gt;Controlling the weak convergence of probability measures&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#two-sample-testing-procedures" id="id4"&gt;Two-sample testing procedures&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#the-l1-metric-provides-best-testing-power" id="id5"&gt;The L1 metric provides best testing power&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-context-two-sample-testing" id="toc-entry-1"&gt;The context: two-sample testing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#from-kernel-mean-embeddings-to-distances-on-distributions" id="toc-entry-2"&gt;From kernel mean embeddings to distances on distributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#controlling-the-weak-convergence-of-probability-measures" id="toc-entry-3"&gt;Controlling the weak convergence of probability measures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#two-sample-testing-procedures" id="toc-entry-4"&gt;Two-sample testing procedures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-l1-metric-provides-best-testing-power" id="toc-entry-5"&gt;The L1 metric provides best testing power&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="the-context-two-sample-testing"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;The context: two-sample testing&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;The context: two-sample testing&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Given two samples from two unknown populations, the goal of two-sample tests is
 to determine whether the underlying populations differ with a statistical
 significance. For instance, we may care to know whether the
@@ -2006,7 +2006,7 @@ marketing strategies.&lt;/p&gt;
 &lt;img alt="" class="align-center" src="attachments/comparing_distributions_l1/map_KFC_McDo_simple.png" style="width: 70%;" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="from-kernel-mean-embeddings-to-distances-on-distributions"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;From kernel mean embeddings to distances on distributions&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;From kernel mean embeddings to distances on distributions&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In the example of spatial distributions restaurants,
 there is &lt;strong&gt;a lot of information in how close observed data
 points lie in the original measurement space (here geographic coordinates)&lt;/strong&gt;.
@@ -2015,7 +2015,7 @@ applied to distributions, building representatives of distributions:
 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_embedding_of_distributions"&gt;Kernel embeddings of distributions&lt;/a&gt;. The
 mean embedding of a distribution P with a kernel k is written:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) :  = &lt;span class="limits"&gt;&lt;span class="limit"&gt;⌠&lt;/span&gt;&lt;span class="limit"&gt;⌡&lt;/span&gt;&lt;/span&gt;&lt;sub&gt;ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;i&gt;k&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;, &lt;i&gt;t&lt;/i&gt;)&lt;i&gt;dP&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)
+&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) :  = &lt;span class="limits"&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator integral"&gt;∫&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;sub&gt;ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;i&gt;k&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;, &lt;i&gt;t&lt;/i&gt;)&lt;i&gt;dP&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)
 &lt;/div&gt;
 &lt;p&gt;Intuitively, it is related to &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_density_estimation"&gt;Kernel Density Estimates (KDEs)&lt;/a&gt; which
 estimate a density in continuous space by smoothing the observed data
@@ -2030,7 +2030,7 @@ measures. Metrics between probability measures can be defined via the
 notion of Integral Probability Metric (IPM): as a difference of
 expectations:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;span class="text"&gt;IPM&lt;/span&gt;[&lt;i&gt;F&lt;/i&gt;, &lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] :  = sup&lt;sub&gt;&lt;i&gt;f&lt;/i&gt; ∈ &lt;i&gt;F&lt;/i&gt;&lt;/sub&gt;(𝔼&lt;sub&gt;&lt;i&gt;x&lt;/i&gt; ~ &lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;&lt;span class="symbol"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)&lt;span class="symbol"&gt;]&lt;/span&gt; − 𝔼&lt;sub&gt;&lt;i&gt;y&lt;/i&gt; ~ &lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;&lt;span class="symbol"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;y&lt;/i&gt;)&lt;span class="symbol"&gt;]&lt;/span&gt;)
+&lt;span class="text"&gt;IPM&lt;/span&gt;[&lt;i&gt;F&lt;/i&gt;, &lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] :  = &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;sup&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;f&lt;/i&gt; ∈ &lt;i&gt;F&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;(𝔼&lt;sub&gt;&lt;i&gt;x&lt;/i&gt; ∼ &lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;&lt;span class="stretchy"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)&lt;span class="stretchy"&gt;]&lt;/span&gt; − 𝔼&lt;sub&gt;&lt;i&gt;y&lt;/i&gt; ∼ &lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;&lt;span class="stretchy"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;y&lt;/i&gt;)&lt;span class="stretchy"&gt;]&lt;/span&gt;)
 &lt;/div&gt;
 &lt;p&gt;where F is a class of functions. This definition is appealing because it
 &lt;strong&gt;characterizes the difference between P and Q by the function for which
@@ -2043,7 +2043,7 @@ ball in such an RKHS, is known as the Maximum Mean Discrepancy (MMD). It
 can be shown that, rather than computing the maximum, the MMD has a more
 convenient expression, the RKHS distance between the mean embeddings:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;span class="text"&gt;MMD&lt;/span&gt;[&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] = ∥&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt; − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;∥&lt;sub&gt;&lt;i&gt;H&lt;/i&gt;&lt;sub&gt;&lt;i&gt;k&lt;/i&gt;&lt;/sub&gt;&lt;/sub&gt;
+&lt;span class="text"&gt;MMD&lt;/span&gt;[&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] = ‖&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt; − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;‖&lt;sub&gt;&lt;i&gt;H&lt;/i&gt;&lt;sub&gt;&lt;i&gt;k&lt;/i&gt;&lt;/sub&gt;&lt;/sub&gt;
 &lt;/div&gt;
 &lt;p&gt;For good choices of kernels, the MMD has appealing mathematical
 properties to compare distributions. With kernels said to be
@@ -2060,12 +2060,12 @@ other representatives, namely the smooth characteristic function, SCF).
 We consider a wider family of metrics based on the Lp distances between
 mean emdeddings (p=2 recovers the classic framework):&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;d&lt;/i&gt;&lt;sub&gt;&lt;i&gt;L&lt;/i&gt;&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;, &lt;i&gt;μ&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;) :  = &lt;span class="symbol"&gt;(&lt;/span&gt;&lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;⌠&lt;/span&gt;&lt;span class="limit"&gt;⌡&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;t&lt;/i&gt; ∈ ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/span&gt;|&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;)|&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;d&lt;/i&gt;Γ(&lt;i&gt;t&lt;/i&gt;)&lt;span class="symbol"&gt;)&lt;/span&gt;&lt;sup&gt;1 ⁄ &lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;
+&lt;i&gt;d&lt;/i&gt;&lt;sub&gt;&lt;i&gt;L&lt;/i&gt;&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;, &lt;i&gt;μ&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;) :  = &lt;span class="stretchy"&gt;(&lt;/span&gt;&lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator integral"&gt;∫&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;t&lt;/i&gt; ∈ ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/span&gt;|&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;)|&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;d&lt;/i&gt;Γ(&lt;i&gt;t&lt;/i&gt;)&lt;span class="stretchy"&gt;)&lt;/span&gt;&lt;sup&gt;1 ⁄ &lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;
 &lt;/div&gt;
 &lt;p&gt;where Γ is a Borel probability measure absolutely continuous.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="controlling-the-weak-convergence-of-probability-measures"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id3"&gt;Controlling the weak convergence of probability measures&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Controlling the weak convergence of probability measures&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;We show that these metrics have good properties. Specifically, for p ≥ 1,
 as soon as the kernel is bounded continuous and characteristic, these
 metrics metrize the weak convergence. What this means is that these
@@ -2094,14 +2094,14 @@ fitting GANs to generate images: the goal is not to only capture that
 images are exactly the same, but also that they maybe be “close”.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="two-sample-testing-procedures"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id4"&gt;Two-sample testing procedures&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Two-sample testing procedures&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Now that we have built metrics, we can derive two-sample test statistics.
 A straightforward way of doing it would involve large sums on all the
 observations, which would be costly. Hence, we resort to a good
 approximation by sampling a set of {Tj} locations from the distribution
 Γ:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;d̂&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sub class="script"&gt;ℓ&lt;sub&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sub&gt;, &lt;i&gt;μ&lt;/i&gt;, &lt;i&gt;J&lt;/i&gt;&lt;/sub&gt;&lt;sup class="script"&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;&lt;/span&gt;[&lt;i&gt;X&lt;/i&gt;, &lt;i&gt;Y&lt;/i&gt;] :  = &lt;i&gt;n&lt;/i&gt;&lt;sup&gt;&lt;i&gt;p&lt;/i&gt; ⁄ 2&lt;/sup&gt;&lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;⎲&lt;/span&gt;&lt;span class="limit"&gt;⎳&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;j&lt;/i&gt; = 1..&lt;i&gt;J&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;|&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;X&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;T&lt;/i&gt;&lt;sub&gt;&lt;i&gt;j&lt;/i&gt;&lt;/sub&gt;) − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;T&lt;/i&gt;&lt;sub&gt;&lt;i&gt;j&lt;/i&gt;&lt;/sub&gt;)|&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;
+&lt;i&gt;d̂&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;ℓ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sub&gt;, &lt;i&gt;μ&lt;/i&gt;, &lt;i&gt;J&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;[&lt;i&gt;X&lt;/i&gt;, &lt;i&gt;Y&lt;/i&gt;] :  = &lt;i&gt;n&lt;/i&gt;&lt;sup&gt;&lt;i&gt;p&lt;/i&gt; ⁄ 2&lt;/sup&gt;&lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator"&gt;∑&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;j&lt;/i&gt; = 1..&lt;i&gt;J&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;|&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;X&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;T&lt;/i&gt;&lt;sub&gt;&lt;i&gt;j&lt;/i&gt;&lt;/sub&gt;) − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;T&lt;/i&gt;&lt;sub&gt;&lt;i&gt;j&lt;/i&gt;&lt;/sub&gt;)|&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;
 &lt;/div&gt;
 &lt;p&gt;We show that this approximation maintains (almost surely) the appealing
 metric properties, generalizing the results that were established by
@@ -2121,7 +2121,7 @@ distribution of the test statistic can be derived, leading to tests that
 can control errors without permutations.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="the-l1-metric-provides-best-testing-power"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;The L1 metric provides best testing power&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;The L1 metric provides best testing power&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Going back to our question of which norm on the difference of
 distribution representative is best suited to detect, we show that when
 using analytics kernels, such as the Gaussian kernel, the L1 metric
@@ -2231,10 +2231,10 @@ consequence of this quality is that
 we were progressively used in more and more places: industrial
 data-science labs, startups, research in applied or fundamental
 statistical learning, teaching. Ironically, the institutional world did
-not notice. It got hard, next to impossible, to get funding &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt;. A few years
+not notice. It got hard, next to impossible, to get funding &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;. A few years
 ago, I was told by a central governmental agency that we, open-source
 zealots, were destroying an incredible amount of value by giving away
-for free the production of research &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt;. The French report on AI, lead by a
+for free the production of research &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;. The French report on AI, lead by a
 Fields medal, cited tensorflow and theano –a discontinued software–, but
 ignored scikit-learn; maybe because we were doing “boring science”?&lt;/p&gt;
 &lt;p&gt;But, scikit-learn’s amazing community continued plowing forward. We grew
@@ -2275,18 +2275,18 @@ by everybody. These projects are like &lt;a class="reference external" href="htt
 they are needed for growth thought no one wants to pay for maintaining
 them. I hope that I can use the podium that the prize will give us to
 stress the importance of the battle that we are fighting.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Getting funding from the government implied too much politics and
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Getting funding from the government implied too much politics and
 risks. For these reasons, I turned to private donors, in a
 &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/"&gt;foundation&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inria &lt;em&gt;always&lt;/em&gt; supported us, and often paid developers in my team
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inria &lt;em&gt;always&lt;/em&gt; supported us, and often paid developers in my team
 out of its own pockets.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2295,35 +2295,35 @@ out of its own pockets.&lt;/td&gt;&lt;/tr&gt;
 science, it was announced during the ceremony that the &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Comptes_rendus_de_l%27Acad%C3%A9mie_des_Sciences"&gt;“Compte Rendu de
 l’Académie des Sciences”&lt;/a&gt; is becoming open access, without publication
 charges!&lt;/p&gt;
-</content><category term="programming"></category><category term="scikit-learn"></category><category term="science"></category><category term="scientific computing"></category><category term="open source"></category><category term="software"></category></entry><entry><title>2018: my scientific year in review</title><link href="https://gael-varoquaux.info/science/2018-my-scientific-year-in-review.html" rel="alternate"></link><published>2019-01-03T00:00:00+01:00</published><updated>2019-01-03T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-01-03:/science/2018-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; was once again extremely exciting
+</content><category term="programming"></category><category term="scikit-learn"></category><category term="science"></category><category term="scientific computing"></category><category term="open source"></category><category term="software"></category></entry><entry><title>2018: my scientific year in review</title><link href="https://gael-varoquaux.info/science/2018-my-scientific-year-in-review.html" rel="alternate"></link><published>2019-01-03T00:00:00+01:00</published><updated>2019-01-03T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-01-03:/science/2018-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt; was once again extremely exciting
 thank to awesome collaborators (at &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;Inria&lt;/a&gt;, with &lt;a class="reference external" href="https://project.inria.fr/dirtydata/"&gt;DirtyData&lt;/a&gt;, and our &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/"&gt;local scikit-learn team&lt;/a&gt;).
 Rather than going over everything that we did in 2018, I would like to
-give a few highlights: We published major work using &lt;strong&gt;machine learning to …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; was once again extremely exciting
+give a few highlights: We published major work using &lt;strong&gt;machine learning to …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt; was once again extremely exciting
 thank to awesome collaborators (at &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;Inria&lt;/a&gt;, with &lt;a class="reference external" href="https://project.inria.fr/dirtydata/"&gt;DirtyData&lt;/a&gt;, and our &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/"&gt;local scikit-learn team&lt;/a&gt;).
 Rather than going over everything that we did in 2018, I would like to
 give a few highlights: We published major work using &lt;strong&gt;machine learning to
 map cognition in the brain&lt;/strong&gt;, We started a new research project on &lt;strong&gt;analysis
 of non-curated data&lt;/strong&gt; (addressing all of data science, beyond brain
 imaging); And we worked a lot on &lt;strong&gt;growing scikit-learn&lt;/strong&gt;.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It’s already 2019, I am indeed late in posting this summary.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It’s already 2019, I am indeed late in posting this summary.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;div class="contents topic" id="highlights"&gt;
 &lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#cognitive-brain-mapping" id="id5"&gt;Cognitive brain mapping&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#data-science-without-data-cleaning" id="id6"&gt;Data science without data cleaning&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#scikit-learn-growth-and-consolidation" id="id7"&gt;Scikit-learn: growth and consolidation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#cognitive-brain-mapping" id="toc-entry-1"&gt;Cognitive brain mapping&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#data-science-without-data-cleaning" id="toc-entry-2"&gt;Data science without data cleaning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#scikit-learn-growth-and-consolidation" id="toc-entry-3"&gt;Scikit-learn: growth and consolidation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="cognitive-brain-mapping"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;Cognitive brain mapping&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Cognitive brain mapping&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;We have been exploring &lt;strong&gt;how predictive models can help mapping cognition
 in the human brain&lt;/strong&gt;. In 2018, these long-running efforts led to important
 publications.&lt;/p&gt;
@@ -2356,14 +2356,14 @@ attention than listening.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These challenges are related on the one hand to the problem of &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1364661305003360"&gt;reverse
 inference&lt;/a&gt;
-&lt;a class="footnote-reference" href="#id4" id="id3"&gt;[2]&lt;/a&gt;, and on the other hand to that of mental-process decomposition, or
+&lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;, and on the other hand to that of mental-process decomposition, or
 cognitive subtraction, both central to cognitive neuroimaging. They also
 call for formal knowledge representation, &lt;em&gt;eg&lt;/em&gt; by building ontologies,
 which is a task harder than it might seem at first glance.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;In essence, the reverse inference problem arises because in a
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;In essence, the reverse inference problem arises because in a
 cognitive brain imaging the observed brain activity is a consequence
 of the behavior, and not a cause. While a conclusion that activity in
 a brain structure causes a certain behavior is desirable, it is not
@@ -2476,7 +2476,7 @@ forward, I have started working on data intergration per se.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="data-science-without-data-cleaning"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Data science without data cleaning&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Data science without data cleaning&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="a-new-personal-research-agenda-dirtydata"&gt;
 &lt;h3&gt;A new personal research agenda: DirtyData&lt;/h3&gt;
 &lt;p&gt;Challenges to integrating data in a statistical analysis are ubiquitous,
@@ -2545,7 +2545,7 @@ is under way.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="scikit-learn-growth-and-consolidation"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id7"&gt;Scikit-learn: growth and consolidation&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Scikit-learn: growth and consolidation&lt;/a&gt;&lt;/h2&gt;
 &lt;img alt="" class="align-right" src="attachments/2018_highlights/scikit-learn-logo-notext.png" style="width: 150px;" /&gt;
 &lt;p&gt;In 2018, a lot of my energy went to consolidating scikit-learn as a
 project. Describing the work in detail is for another post. However, my
@@ -2582,13 +2582,13 @@ exciting! I hope that we will have much to say about population analysis
 with brain imaging, which is a amazingly interesting subject.&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="neuroimaging"></category><category term="brain science"></category><category term="yearly report"></category></entry><entry><title>A foundation for scikit-learn at Inria</title><link href="https://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html" rel="alternate"></link><published>2018-09-17T00:00:00+02:00</published><updated>2018-09-17T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2018-09-17:/programming/a-foundation-for-scikit-learn-at-inria.html</id><summary type="html">&lt;p&gt;We have just announced that a foundation will be supporting scikit-learn
-at Inria &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;: &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;scikit-learn.fondation-inria.fr&lt;/a&gt;&lt;/p&gt;
+at Inria &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;: &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;scikit-learn.fondation-inria.fr&lt;/a&gt;&lt;/p&gt;
 &lt;div class="align-right docutils container"&gt;
 Growth and sustainability&lt;/div&gt;
 &lt;p&gt;This is an exciting turn for us, because it enables us to receive private
 funding. As a result, we will be able to have secure employment for some
 existing core …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We have just announced that a foundation will be supporting scikit-learn
-at Inria &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;: &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;scikit-learn.fondation-inria.fr&lt;/a&gt;&lt;/p&gt;
+at Inria &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;: &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;scikit-learn.fondation-inria.fr&lt;/a&gt;&lt;/p&gt;
 &lt;div class="align-right docutils container"&gt;
 Growth and sustainability&lt;/div&gt;
 &lt;p&gt;This is an exciting turn for us, because it enables us to receive private
@@ -2618,7 +2618,7 @@ to the library, such as improving the parallel computing engine, need
 long efforts. For many years, we have always had people with dedicated
 time to support the community. In France, we were going through hoops to
 find public money to found them. As someone who has done this effort, I
-can tell you that is a complicated one &lt;a class="footnote-reference" href="#id6" id="id2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+can tell you that is a complicated one &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The ability to receive money from sponsors will enable us to scale up our
 operations. I was initially worried that we would have difficulties
 finding partners that accepted to give us money without asking for
@@ -2634,7 +2634,7 @@ should not prime over interests of the user base.&lt;/p&gt;
 &lt;p&gt;We will make sure that the money that the foundation receives is invested
 for the interest of the community. We have a technical committee that
 supervises the activity of the foundation. Its decisions will be informed
-by the community &lt;a class="footnote-reference" href="#id7" id="id3"&gt;[3]&lt;/a&gt;. For this, we have an advisory board composed of
+by the community &lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;. For this, we have an advisory board composed of
 core contributors of scikit-learn. Beside the advisory board, the
 technical committee also comprises a delegate from each sponsor. I am
 excited about the input that our partners will provide us on
@@ -2678,7 +2678,7 @@ the foundation is embedded at Inria, leaving room for other initiatives.&lt;/p&g
 &lt;p&gt;The scope of our work is everything scikit-learn related. It is not the
 whole pydata or scipy ecosystem: it is focused on scikit-learn. But we
 will not hesitate contribute fixes and enhancements to neighboring
-projects, like in the past, even all the way up to core Python &lt;a class="footnote-reference" href="#id8" id="id4"&gt;[4]&lt;/a&gt;.&lt;/p&gt;
+projects, like in the past, even all the way up to core Python &lt;a class="footnote-reference" href="#footnote-4" id="footnote-reference-4"&gt;[4]&lt;/a&gt;.&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
 &lt;p&gt;I’m am very excited. A strong team of full-time contributors will allow
 us to do ambitious things with scikit-learn.&lt;/p&gt;
@@ -2695,10 +2695,10 @@ are launching this effort thank to you, and to empower you even more.&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I am quite proud that over the years, my group has employed
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I am quite proud that over the years, my group has employed
 &lt;a class="reference external" href="https://github.com/ogrisel"&gt;Olivier Grisel&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/jorisvandenbossche"&gt;Joris van den Bossche&lt;/a&gt; (working on pandas in
 addition to scikit-learn), &lt;a class="reference external" href="https://github.com/glemaitre"&gt;Guillaume Lemaître&lt;/a&gt; (working on imbalanced-learn in
 addition to scikit-learn), &lt;a class="reference external" href="https://github.com/jeremiedbb"&gt;Jérémie du Boisberranger&lt;/a&gt;,
@@ -2713,24 +2713,24 @@ of the constraints of research funding in France, public money
 forced my to hire them with short-term contracts.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Technically, it is a tax-deductible scikit-learn consortium inside
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Technically, it is a tax-deductible scikit-learn consortium inside
 the Inria foundation, which is an non-profit entity related to Inria.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Details on the goverance of the foundation can be found at
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Details on the goverance of the foundation can be found at
 &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/en/mission-and-governance"&gt;https://scikit-learn.fondation-inria.fr/en/mission-and-governance&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-4" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;For instance Olivier and Tom have been making parallelism more
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;For instance Olivier and Tom have been making parallelism more
 robust in Python 3.7 (amongst various issues
 &lt;a class="reference external" href="https://bugs.python.org/issue33056"&gt;https://bugs.python.org/issue33056&lt;/a&gt; and
 &lt;a class="reference external" href="https://bugs.python.org/issue31699"&gt;https://bugs.python.org/issue31699&lt;/a&gt;). Olivier helped defining the
@@ -2876,7 +2876,7 @@ us to develop faster a better toolkit.&lt;/p&gt;
 &lt;p class="first sidebar-title"&gt;Women contributors&lt;/p&gt;
 &lt;p class="last"&gt;We deeply regret having only one woman in this long list of
 contributors. We care about diversity and welcome contributors from
-under-represented groups &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[*]&lt;/a&gt;.&lt;/p&gt;
+under-represented groups &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[*]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;In Paris&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="columns simple"&gt;
@@ -2935,10 +2935,10 @@ online testing&lt;/li&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Also thanks to Andy Mueller and Olivier Grisel for feedback on this blog post.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[*]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;We aspire to treat everybody excatly the same way. However,
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[*]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;We aspire to treat everybody excatly the same way. However,
 acknowledging the fact that there is currently a lack of diversity, we
 are happy to do some outreach and give extra help onboarding
 newcomers.&lt;/td&gt;&lt;/tr&gt;
@@ -3436,14 +3436,14 @@ data scientist, I want to talk about the factors created by data science.&lt;/p&
 recommend content is based on its popularity, on readership statistics.
 In no way is it based in the truthfulness of the content. As a
 result, Facebook, Twitter, Medium, and the like amplify rumors and
-sensational news, with no reality check &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+sensational news, with no reality check &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This is nothing new: clickbait and tabloids build upon it. However, social networking and
 active recommendation makes things significantly worst. Indeed, birds of
 a feather flock together, reinforcing their own biases. &lt;strong&gt;We receive
 filtered information&lt;/strong&gt;: have you noticed that every single argument you
 heard was overwhelmingly against (or in favor of) Brexit? To make matters
 even worse, our brain loves it: to resolve cognitive dissonance we avoid
-information that contradicts our biases &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+information that contradicts our biases &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="admonition align-right note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;We all believe more information when it confirms our biases&lt;/p&gt;
@@ -3524,17 +3524,17 @@ control them. --&gt;
 &lt;p class="align-right"&gt;In memory of &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Aaron_Swartz"&gt;Aaron Schwartz&lt;/a&gt;
 who fought centralized power on Internet.&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
-&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Facebook was until recently using human curators, &lt;a class="reference external" href="http://arstechnica.com/business/2016/08/facebook-fires-human-editors-algorithm-immediately-posts-fake-news/"&gt;but fired them,
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Facebook was until recently using human curators, &lt;a class="reference external" href="http://arstechnica.com/business/2016/08/facebook-fires-human-editors-algorithm-immediately-posts-fake-news/"&gt;but fired them,
 leading to a loss of control on veracity&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It is a well-known and well-studied cognitive bias that
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It is a well-known and well-studied cognitive bias that
 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Cognitive_dissonance"&gt;individuals strive to reduce cognitive dissonace and actively avoid
 situations and information likely to increase it&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
@@ -3676,7 +3676,7 @@ of usable data with compressed persistence:&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;❷ Another drawback was that large numpy arrays (&amp;gt;10MB) contained in an
 arbitrary Python object were dumped in separate &lt;tt class="docutils literal"&gt;.npy&lt;/tt&gt; file, increasing
-the load on the file system &lt;a class="footnote-reference" href="#id4" id="id1"&gt;[1]&lt;/a&gt;:&lt;/p&gt;
+the load on the file system &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;joblib&lt;/span&gt; &lt;span class="c1"&gt;# joblib version: 0.9.4&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;obj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ones&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;))]&lt;/span&gt;
@@ -3745,7 +3745,7 @@ with different libraries:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;img alt="" class="large" src="https://gael-varoquaux.info/programming/attachments/persistence_lfw_bench.png" /&gt;
 &lt;p&gt;The four first lines use non compressed persistence strategies, the last
-four use persistence with zlib/gzip &lt;a class="footnote-reference" href="#id5" id="id2"&gt;[2]&lt;/a&gt; strategies. Code to reproduce the
+four use persistence with zlib/gzip &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt; strategies. Code to reproduce the
 benchmarks is available on this &lt;a class="reference external" href="https://gist.github.com/aabadie/2ba94d28d68f19f87eb8916a2238a97c"&gt;gist&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;⚫ &lt;strong&gt;Speed&lt;/strong&gt;: the results between joblib 0.9.4 and 0.10.0 (dev) are
 similar whereas &lt;strong&gt;numpy and pickle are clearly slower than joblib&lt;/strong&gt; in both
@@ -3868,7 +3868,7 @@ storage such as Amazon S3, Amazon Glacier and Google Cloud Storage&lt;/strong&gt
 &lt;div class="section" id="implementation"&gt;
 &lt;h2&gt;Implementation&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;A Pickle Subclass&lt;/strong&gt;: joblib relies on subclassing the Python Pickler/Unpickler
-&lt;a class="footnote-reference" href="#id6" id="id3"&gt;[3]&lt;/a&gt;. These are state machines that walk the graph of nested objects (a
+&lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;. These are state machines that walk the graph of nested objects (a
 dict may contain a list, that may contain…), creating a string
 representation of each object encountered. The new implementation
 proceeds as follows:&lt;/p&gt;
@@ -3940,25 +3940,25 @@ help, reviews and support.&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The load created by multiple files on the filesystem is
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The load created by multiple files on the filesystem is
 particularly detrimental for network filesystems, as it triggers
 multiple requests and isn’t cache friendly.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;gzip is based on zlib with additional crc checks and a default
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;gzip is based on zlib with additional crc checks and a default
 compression level of 3.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A drawback of subclassing the Python Pickler/Unpickler is that it
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A drawback of subclassing the Python Pickler/Unpickler is that it
 is done for the pure-Python version, and not the “cPickle” version.
 The latter is much faster when dealing with a large number of Python
 objects. Once again, joblib is efficient when most of the data is
@@ -4063,11 +4063,11 @@ reproducibility. Data sharing requirements are becoming common –from
 funding agencies, or journals. However, privacy concerns, or confidential
 information get in the way of making data public, for instance in medical
 research or micro-economy. Often, these concerns serve as a pretext
-to people who actually do not want to relinquish &lt;em&gt;control&lt;/em&gt; &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+to people who actually do not want to relinquish &lt;em&gt;control&lt;/em&gt; &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A related post by Deevy Bishop: &lt;a class="reference external" href="http://deevybee.blogspot.co.uk/2015/11/whos-afraid-of-open-data.html?m=1"&gt;Who’s afraid of open data&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A related post by Deevy Bishop: &lt;a class="reference external" href="http://deevybee.blogspot.co.uk/2015/11/whos-afraid-of-open-data.html?m=1"&gt;Who’s afraid of open data&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
@@ -4075,7 +4075,7 @@ to people who actually do not want to relinquish &lt;em&gt;control&lt;/em&gt; &l
 &lt;h3&gt;Incentives problem&lt;/h3&gt;
 &lt;p&gt;Fancy new results are what matters for success in academia. “High impact”
 journals such as Nature or Science accept papers that amaze and impress,
-often with subpar inspection of the materials and methods &lt;a class="footnote-reference" href="#id4" id="id3"&gt;[2]&lt;/a&gt;. The rate of
+often with subpar inspection of the materials and methods &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;. The rate of
 publication in many leading groups is incompatible with consolidation
 efforts required for strong reproducibility.&lt;/p&gt;
 &lt;p&gt;On the other hand, it is hard to tell beforehand if a new idea is a good
@@ -4085,10 +4085,10 @@ are: What are the best community rules for the advancement of knowledge?
 What do we want from the way science moves forward? Rapid publication of
 many incremental ideas, &lt;em&gt;eg&lt;/em&gt; at a conference, gives food for thoughts,
 possibly at the sake of reproducibility.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;“Science, Nature and Cell, had a higher rate of retractions” –
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;“Science, Nature and Cell, had a higher rate of retractions” –
 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Invalid_science"&gt;Wikipedia: Invalid science&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -4115,13 +4115,13 @@ or new data. If these other tools live in a different virtual machine,
 the combination will be challenging.&lt;/p&gt;
 &lt;p&gt;In addition, people are using containers as an excuse to avoid tackling
 the need for proper documentation of requirements, and the process to set
-them up. They sometimes even try justify binary blobs &lt;a class="footnote-reference" href="#id6" id="id5"&gt;[3]&lt;/a&gt;. This is
+them up. They sometimes even try justify binary blobs &lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;. This is
 wrong. An analysis should be runnable without requiring the stars to
 align, and it should be understandable.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id5"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;See also Titus Brown’s post: &lt;a class="reference external" href="http://ivory.idyll.org/blog/2014-containers.html"&gt;The post-apocalyptic world of binary
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;See also Titus Brown’s post: &lt;a class="reference external" href="http://ivory.idyll.org/blog/2014-containers.html"&gt;The post-apocalyptic world of binary
 containers&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -4755,7 +4755,7 @@ its feasibility. Common sense in software engineering says that
 is fragile. It’s untested, probably buggy for certain usage. Releasing
 prototypes amounts to distributing semi-functioning code. This is the
 case for most code accompanying a publication, and it is to be expected
-given the very nature of research: exploration and prototyping &lt;a class="footnote-reference" href="#id6" id="id3"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+given the very nature of research: exploration and prototyping &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
 &lt;!-- Quality scientific software require making choices --&gt;
 &lt;!-- Doing less, better --&gt;
 &lt;!-- Quality scientific software, only for a happy few --&gt;
@@ -4776,7 +4776,7 @@ tests. There exists plenty of more sophisticated machine-learning
 methods, including some that I have developed specifically for my data.
 Yet, I find myself advising my co-workers to use the methods in
 scikit-learn, because I know that the implementation is reliable and that
-they will be able to use them &lt;a class="footnote-reference" href="#id7" id="id4"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+they will be able to use them &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This quality is indeed central to doing science with code. What good is a
 data analysis pipeline if it crashes when I fiddle with the data? How can
 I draw conclusions from simulations if I cannot change their parameters?
@@ -4808,7 +4808,7 @@ http://en.wikipedia.org/wiki/Jean-Pierre_Claris_de_Florian --&gt;
 &lt;/div&gt;
 &lt;p&gt;Achieving quality requires making choices. Not only because time
 is limited, but also because the difficulty to maintain and improve a
-codebase increases much quicker than the numbers of features &lt;a class="footnote-reference" href="#id8" id="id5"&gt;[3]&lt;/a&gt;. This
+codebase increases much quicker than the numbers of features &lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;. This
 phenomena is actually frightening to watch: adding a feature in
 scikit-learn these days is much much harder than what it used to be in
 the early days. Interactions between features is a killer: when you
@@ -4894,19 +4894,19 @@ above with Poldrack) --&gt;
 
 * don't publish method work on non open data (very restrictive, I have
   been criticized for working on 'old', 'uninteresting' data). --&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;To make my point very clear, releasing buggy untested code is not
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;To make my point very clear, releasing buggy untested code is not
 a good thing. However, it is not possible to ask for all research
 papers to come with industial-quality code. I am trying here to push
 for a collective, reasoned, undertaking of consolidation.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id4"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Theory tells us that there is there is no universal machine
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Theory tells us that there is there is no universal machine
 learning algorithm. Given a specific machine-learning application, it
 is always possible to devise a custom strategy that out-performs a
 generic one. However, &lt;a class="reference external" href="http://jmlr.org/papers/volume15/delgado14a/delgado14a.pdf"&gt;do we need hundreds of classifiers to solve
@@ -4917,10 +4917,10 @@ strategies. Is it desirable and sustainable to distribute and keep
 alive the code of every machine learning paper?&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id5"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Empirical studies on the workload for programmers to achieve a
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Empirical studies on the workload for programmers to achieve a
 given task showed that 25 percent increase in problem complexity results in
 a 100 percent increase in programming complexity: &lt;a class="reference external" href="http://ieeexplore.ieee.org/Xplore/login.jsp?url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F32%2F35909%2F01702600.pdf%3Farnumber%3D1702600&amp;amp;authDecision=-203"&gt;An Experiment on
 Unit increase in Problem Complexity, Woodfield 1979&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
@@ -8933,44 +8933,44 @@ it was mostly 2D:&lt;/p&gt;
 &lt;p&gt;Let &lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt; be two normal-distributed variables, describing the
 processes we are observing:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;x&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
+&lt;i&gt;x&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
 &lt;/div&gt;
 &lt;p&gt;and&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;y&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
+&lt;i&gt;y&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
 &lt;/div&gt;
 &lt;p&gt;Let &lt;cite&gt;a&lt;/cite&gt; and &lt;cite&gt;b&lt;/cite&gt; be two observation variables, linear combinations of &lt;cite&gt;x&lt;/cite&gt;
 and &lt;cite&gt;y&lt;/cite&gt;:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;a&lt;/i&gt; = &lt;i&gt;x&lt;/i&gt; + &lt;i&gt;y&lt;/i&gt;
+&lt;i&gt;a&lt;/i&gt; = &lt;i&gt;x&lt;/i&gt; + &lt;i&gt;y&lt;/i&gt;
 &lt;/div&gt;
 &lt;p&gt;and&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;b&lt;/i&gt; = 2 &lt;i&gt;y&lt;/i&gt;
+&lt;i&gt;b&lt;/i&gt; = 2 &lt;i&gt;y&lt;/i&gt;
 &lt;/div&gt;
 &lt;p&gt;PCA is performed by applying an SVD (singular value decomposition) on the
 observed data matrix:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;Y&lt;/i&gt; = [&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...; &lt;i&gt;b&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...]
+&lt;i&gt;Y&lt;/i&gt; = [&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...; &lt;i&gt;b&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...]
 &lt;/div&gt;
 &lt;p&gt;This is equivalent to find the eigenvalues and eigenvectors of
-&lt;span class="formula"&gt;&lt;i&gt;Y&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/span&gt;, the correlation matrix of the observed data. The
+&lt;span class="formula"&gt;&lt;i&gt;Y&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/span&gt;, the correlation matrix of the observed data. The
 multidimensional (or multivariate, in statistical jargon) probability
 density function of Y is written:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ~ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;M&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
+&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ∼ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;M&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
 &lt;/div&gt;
 &lt;p&gt;where &lt;cite&gt;r&lt;/cite&gt; is the position is the &lt;cite&gt;(a,b)&lt;/cite&gt; observation space, and &lt;cite&gt;M&lt;/cite&gt; the
 correlation matrix. Diagonalizing the matrix &lt;cite&gt;M&lt;/cite&gt; corresponds to finding
 a rotation matrix &lt;cite&gt;U&lt;/cite&gt; such that:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ~ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;U&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;S&lt;/i&gt; &lt;i&gt;U&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
+&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ∼ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;U&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;S&lt;/i&gt; &lt;i&gt;U&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
 &lt;/div&gt;
 &lt;p&gt;With &lt;cite&gt;S&lt;/cite&gt; a diagonal matrix. In other words, &lt;cite&gt;U&lt;/cite&gt; is a rotation of the
 observation space to change to a basis where the probability density
 function is written:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ~ &lt;i&gt;exp&lt;/i&gt;( − &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;⎲&lt;/span&gt;&lt;span class="limit"&gt;⎳&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;) = &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;∏&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;)
+&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ∼ &lt;i&gt;exp&lt;/i&gt;( − &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator"&gt;∑&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;) = &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator"&gt;∏&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;)
 &lt;/div&gt;
 &lt;p&gt;In this new basis, &lt;cite&gt;Y&lt;/cite&gt; can thus be interpreted as a sum of independent
 normal processes of different variance.&lt;/p&gt;
@@ -9211,7 +9211,7 @@ decorating a function.&lt;/p&gt;
 mistake I had been doing, and it was partly due to the heavy use of a
 simplified pattern for decorating:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;with_print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
 &lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
 
     &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;my_func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -9281,7 +9281,7 @@ functools.wraps does the name unmangling.&lt;/p&gt;
 &lt;p&gt;Thus the following code produces a pickleable f:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;functools&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;wraps&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;with_print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
 &lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="nd"&gt;@wraps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;my_func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -9983,7 +9983,7 @@ your sys.path. These directories are ‘stat-ed’ one after the other on
 each module import. Thus if you have a long sys.path, there are a large
 amount of system calls to read directories. To check this out, simply
 try:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;strace python -c &lt;span class="s2"&gt;&amp;quot;import foobar&amp;quot;&lt;/span&gt; &lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; less
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;strace&lt;span class="w"&gt; &lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;-c&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;import foobar&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;less
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;You can see the amount of noise created by a simple (failing) import
 statement. On a system with high latency (such as an NFS, as we use at
@@ -10000,10 +10000,10 @@ unless you understand well what you are doing (which defeats the name
 easy_install).&lt;/p&gt;
 &lt;p&gt;The way I install packages when I want good control via easy_install is
 in a virtual environment to discovered the dependencies, and then:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;easy_install -Zeab . package_name
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;easy_install&lt;span class="w"&gt; &lt;/span&gt;-Zeab&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;package_name
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;to download the package for each required package, and&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python setup.py install --single-version-externally-managed --record ./foobar
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;setup.py&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;--single-version-externally-managed&lt;span class="w"&gt; &lt;/span&gt;--record&lt;span class="w"&gt; &lt;/span&gt;./foobar
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;if the package itself is using setuptools.&lt;/p&gt;
 &lt;p&gt;As you can see, setuptools make it really hard to do a clean install.
@@ -10459,7 +10459,7 @@ open Mayavi and enter the following code in the Python shell:&lt;/p&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;V&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; A 3D sinusoidal lattice with a parabolic confinement. &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; A 3D sinusoidal lattice with a parabolic confinement. &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mgrid&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contour3d&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;V&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -10536,7 +10536,7 @@ confinement is there to limit the excursions of the particle:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;V&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; A 3D sinusoidal lattice with a parabolic confinement. &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; A 3D sinusoidal lattice with a parabolic confinement. &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now that we have defined the potential, we would like to see what it
@@ -10585,7 +10585,7 @@ colorbar. We can do this by typing:&lt;/p&gt;
 need to derive the corresponding force, given by the gradient of the
 potential. We create a gradient function:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;gradient&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.01&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Return the gradient of f in (x, y, z). &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Return the gradient of f in (x, y, z). &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="n"&gt;fx&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="n"&gt;fx_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="n"&gt;fy&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -10613,7 +10613,7 @@ in the three direction, as well as a damping force. The damping
 coefficient and the amount and frequency of shaking have been tuned to
 give an interesting dynamic.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;flow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; The dynamical flow of the system &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; The dynamical flow of the system &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vz&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;
     &lt;span class="n"&gt;fx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fz&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;gradient&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;V&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;.2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;.2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;.2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vz&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fx&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fy&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fz&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;vz&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
@@ -10862,7 +10862,7 @@ day like I did):&lt;/p&gt;
 &lt;span class="n"&gt;engine&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;turbogears&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;view&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;engines&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;kid&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;render_static&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data_dict&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;template&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Render a given template + its data dictionnary to a static html.&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Render a given template + its data dictionnary to a static html.&lt;/span&gt;
 &lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="n"&gt;data_dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tg_css&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tg_util&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setlike&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
     &lt;span class="n"&gt;data_dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tg_flash&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;False&lt;/span&gt;
@@ -10898,7 +10898,7 @@ output, compiling it to a pretty report in a pdf or an html file. It can
 display the output embedded in the code that produced it and can process
 special comments (literate comments) according to markup languages (
 &lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;rst&lt;/a&gt; or &lt;a class="reference external" href="http://www.latex-project.org/"&gt;LaTeX&lt;/a&gt; ) to compile a very readable document.&lt;/p&gt;
-&lt;p&gt;This allows for extensive literate progamming &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt; in python, for generating
+&lt;p&gt;This allows for extensive literate progamming &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt; in python, for generating
 reports out of calculations written in python, and for making nice
 tutorials.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;License&lt;/strong&gt; pyreport is free software released under a BSD-like
@@ -10914,20 +10914,20 @@ to take over development.&lt;/p&gt;
 &lt;div class="contents topic" id="contents"&gt;
 &lt;p class="topic-title"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#requirements" id="id5"&gt;Requirements&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#installing" id="id6"&gt;Installing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#examples-and-use-cases" id="id7"&gt;Examples and use cases&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#initial-goals" id="id8"&gt;Initial goals&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#other-possible-uses" id="id9"&gt;Other possible uses&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#examples" id="id10"&gt;Examples&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#limitations" id="id11"&gt;Limitations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#requirements" id="toc-entry-1"&gt;Requirements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#installing" id="toc-entry-2"&gt;Installing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#examples-and-use-cases" id="toc-entry-3"&gt;Examples and use cases&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#initial-goals" id="toc-entry-4"&gt;Initial goals&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#other-possible-uses" id="toc-entry-5"&gt;Other possible uses&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#examples" id="toc-entry-6"&gt;Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#limitations" id="toc-entry-7"&gt;Limitations&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#command-line-switches" id="id12"&gt;Command line switches&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#command-line-switches" id="toc-entry-8"&gt;Command line switches&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="requirements"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;Requirements&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Requirements&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;cite&gt;pyreport&lt;/cite&gt; is Python, and needs the Python interpreter to run. It should
 work on any operating system where Python and the other requirements are
 available.&lt;/p&gt;
@@ -10954,7 +10954,7 @@ needed.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="installing"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Installing&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Installing&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The easiest way to install pyreport is using pip:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 pip install pyreport
@@ -10965,11 +10965,11 @@ pip install --user pyreport
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="examples-and-use-cases"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id7"&gt;Examples and use cases&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Examples and use cases&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="initial-goals"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id8"&gt;Initial goals&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Initial goals&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I use python to write small scripts that can do, for instance, numerical
-calculations, or simple operations &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt; and I want to have nice
+calculations, or simple operations &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt; and I want to have nice
 print-outs of these scripts to study off-screen or to hand out to
 colleagues. Having the code with its relevant output is great for code
 reviewing. This also allows something similar to mathematica’s notebook
@@ -11015,7 +11015,7 @@ print c
 &lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class="section" id="other-possible-uses"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id9"&gt;Other possible uses&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;Other possible uses&lt;/a&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Hidding the source code allows to generate nice reports from
@@ -11033,7 +11033,7 @@ version.&lt;/li&gt;
 &lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class="section" id="examples"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id10"&gt;Examples&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;Examples&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Here are two examples showing what you can do with &lt;cite&gt;pyreport&lt;/cite&gt; :&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
@@ -11052,7 +11052,7 @@ generated&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class="section" id="limitations"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id11"&gt;Limitations&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-7"&gt;Limitations&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The “sys” module is imported in your code, whether you want it or not. As
 a general rule, beware of the namespace when running your scripts with
 &lt;cite&gt;pyreport&lt;/cite&gt;, &lt;cite&gt;pyreport&lt;/cite&gt; injects a few variables in your namespace.&lt;/p&gt;
@@ -11066,7 +11066,7 @@ matplotlib. WXAgg has played me a few tricks.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="command-line-switches"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id12"&gt;Command line switches&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-8"&gt;Command line switches&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This is not as useful as a well written documentation, but it is better
 than nothing:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -11110,10 +11110,10 @@ options:
                         pass the arguments &amp;quot;ARGS&amp;quot; to the script
 &lt;/pre&gt;
 &lt;hr class="docutils" /&gt;
-&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Literate_programming"&gt;literate programming&lt;/a&gt; is a programming style
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Literate_programming"&gt;literate programming&lt;/a&gt; is a programming style
 that embeds the documentation of a program in its source code. The
 documentation is generated in the same time that the program is
 built. I am using the term in a very loose way, as &lt;cite&gt;pyreport&lt;/cite&gt; is
@@ -11122,10 +11122,10 @@ the documentation, but also weaves the output of the script in the
 documentation.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://scipy.org/"&gt;scipy&lt;/a&gt;  provides a very powerful math package to python, and
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://scipy.org/"&gt;scipy&lt;/a&gt;  provides a very powerful math package to python, and
 &lt;a class="reference external" href="http://matplotlib.sourceforge.net/"&gt;matplotlib&lt;/a&gt; is a great plotting interface.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -11242,9 +11242,9 @@ l’Ouzbekhistan.&lt;/a&gt;&lt;/p&gt;
 &lt;div class="contents topic" id="table-des-matieres"&gt;
 &lt;p class="topic-title"&gt;Table des matières&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#vendredi-23-mai-tashkent-bishkek" id="id1"&gt;Vendredi 23 mai : Tashkent -&amp;gt; Bishkek&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#samedi-24-mai-bishkek-karakol" id="id2"&gt;Samedi 24 mai : Bishkek -&amp;gt; Karakol&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#dimanche-25-mai-vallee-de-la-karaka" id="id3"&gt;Dimanche 25 mai …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Deuxième partie du voyage: au Kirghizstan.&lt;/p&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#vendredi-23-mai-tashkent-bishkek" id="toc-entry-1"&gt;Vendredi 23 mai : Tashkent -&amp;gt; Bishkek&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#samedi-24-mai-bishkek-karakol" id="toc-entry-2"&gt;Samedi 24 mai : Bishkek -&amp;gt; Karakol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#dimanche-25-mai-vallee-de-la-karaka" id="toc-entry-3"&gt;Dimanche 25 mai …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Deuxième partie du voyage: au Kirghizstan.&lt;/p&gt;
 &lt;p&gt;Photos et panoramas : Gaël | Récit, mise en page et retouches photos :
 Emmanuelle&lt;/p&gt;
 &lt;div class="admonition note"&gt;
@@ -11256,23 +11256,23 @@ l’Ouzbekhistan.&lt;/a&gt;&lt;/p&gt;
 &lt;div class="contents topic" id="table-des-matieres"&gt;
 &lt;p class="topic-title"&gt;Table des matières&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#vendredi-23-mai-tashkent-bishkek" id="id1"&gt;Vendredi 23 mai : Tashkent -&amp;gt; Bishkek&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#samedi-24-mai-bishkek-karakol" id="id2"&gt;Samedi 24 mai : Bishkek -&amp;gt; Karakol&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#dimanche-25-mai-vallee-de-la-karaka" id="id3"&gt;Dimanche 25 mai : vallée de la Karaka&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#lundi-26-mai-aller-retour-au-lac-ala-kul" id="id4"&gt;Lundi 26 mai : aller-retour au lac Ala-Kul&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#mardi-27-mai-passage-du-col-tileti" id="id5"&gt;Mardi 27 mai : passage du col Tileti&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#mercredi-28-mai-sortie-dans-la-vallee-de-djeti-oguz" id="id6"&gt;Mercredi 28 mai : sortie dans la vallée de Djeti-Oguz&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#jeudi-29-mai-karakol-bar-skoon" id="id7"&gt;Jeudi 29 mai : Karakol -&amp;gt; Bar-Skoon&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#vendredi-30-mai-vers-la-jokuu" id="id8"&gt;Vendredi 30 mai : vers la Jokuu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#samedi-31-mai-vallee-de-la-joku" id="id9"&gt;Samedi 31 mai : vallée de la Joku&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#dimanche-1er-juin-sortie-de-la-vallee-de-la-joku" id="id10"&gt;Dimanche 1er juin : sortie de la vallée de la Joku&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#lundi-2-juin-kizil-suu-bakonbaiev" id="id11"&gt;Lundi 2 juin : Kizil-Suu -&amp;gt; Bakonbaiev&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#mardi-3-juin-bakonbaiev-kotchkor" id="id12"&gt;Mardi 3 juin : Bakonbaiev -&amp;gt; Kotchkor -&amp;gt; ??&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#mercredi-4-juin-remontee-dans-la-vallee" id="id13"&gt;Mercredi 4 juin : remontée dans la vallée&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#jeudi-5-juin-passage-du-col" id="id14"&gt;Jeudi 5 juin : passage du col&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#vendredi-6-juin-parc-ala-archa" id="id15"&gt;Vendredi 6 juin : parc Ala-Archa&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#samedi-7-juin-retour-a-bishkek" id="id16"&gt;Samedi 7 juin : retour à Bishkek&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#dimanche-8-juin-retour-a-paris" id="id17"&gt;Dimanche 8 juin : retour à Paris&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#vendredi-23-mai-tashkent-bishkek" id="toc-entry-1"&gt;Vendredi 23 mai : Tashkent -&amp;gt; Bishkek&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#samedi-24-mai-bishkek-karakol" id="toc-entry-2"&gt;Samedi 24 mai : Bishkek -&amp;gt; Karakol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#dimanche-25-mai-vallee-de-la-karaka" id="toc-entry-3"&gt;Dimanche 25 mai : vallée de la Karaka&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#lundi-26-mai-aller-retour-au-lac-ala-kul" id="toc-entry-4"&gt;Lundi 26 mai : aller-retour au lac Ala-Kul&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#mardi-27-mai-passage-du-col-tileti" id="toc-entry-5"&gt;Mardi 27 mai : passage du col Tileti&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#mercredi-28-mai-sortie-dans-la-vallee-de-djeti-oguz" id="toc-entry-6"&gt;Mercredi 28 mai : sortie dans la vallée de Djeti-Oguz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#jeudi-29-mai-karakol-bar-skoon" id="toc-entry-7"&gt;Jeudi 29 mai : Karakol -&amp;gt; Bar-Skoon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#vendredi-30-mai-vers-la-jokuu" id="toc-entry-8"&gt;Vendredi 30 mai : vers la Jokuu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#samedi-31-mai-vallee-de-la-joku" id="toc-entry-9"&gt;Samedi 31 mai : vallée de la Joku&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#dimanche-1er-juin-sortie-de-la-vallee-de-la-joku" id="toc-entry-10"&gt;Dimanche 1er juin : sortie de la vallée de la Joku&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#lundi-2-juin-kizil-suu-bakonbaiev" id="toc-entry-11"&gt;Lundi 2 juin : Kizil-Suu -&amp;gt; Bakonbaiev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#mardi-3-juin-bakonbaiev-kotchkor" id="toc-entry-12"&gt;Mardi 3 juin : Bakonbaiev -&amp;gt; Kotchkor -&amp;gt; ??&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#mercredi-4-juin-remontee-dans-la-vallee" id="toc-entry-13"&gt;Mercredi 4 juin : remontée dans la vallée&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#jeudi-5-juin-passage-du-col" id="toc-entry-14"&gt;Jeudi 5 juin : passage du col&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#vendredi-6-juin-parc-ala-archa" id="toc-entry-15"&gt;Vendredi 6 juin : parc Ala-Archa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#samedi-7-juin-retour-a-bishkek" id="toc-entry-16"&gt;Samedi 7 juin : retour à Bishkek&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#dimanche-8-juin-retour-a-paris" id="toc-entry-17"&gt;Dimanche 8 juin : retour à Paris&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;hr class="docutils" /&gt;
@@ -11302,7 +11302,7 @@ jsFlickrBadge(document.getElementById('kyrgyzstan'), {
     animationPause: 20
     });
 &lt;/script&gt;&lt;div class="section" id="vendredi-23-mai-tashkent-bishkek"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;Vendredi 23 mai : Tashkent -&amp;gt; Bishkek&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Vendredi 23 mai : Tashkent -&amp;gt; Bishkek&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Aujourd’hui, nous quittons l’Ouzbékistan pour le Kirghistan. Nous avons
 un vol à 8h30 pour Bishkek, la capitale kirhize. Nous partons de l’hôtel
 à 6h, il fait déjà jour. Nous n’avons aucun problème à trouver juste
@@ -11376,7 +11376,7 @@ préparer, les cartes à regarder, donc nous partons. Mais nous serions
 bien restés un peu plus danser avec les Bishkekois !&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="samedi-24-mai-bishkek-karakol"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;Samedi 24 mai : Bishkek -&amp;gt; Karakol&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Samedi 24 mai : Bishkek -&amp;gt; Karakol&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Aujourd’hui nous partons à Karakol, une ville dans le sud est du pays, au
 pied des montagnes du Tien Shan. Pour les touristes, Karakol est un camp
 de base pour de nombreuses randonnées.&lt;/p&gt;
@@ -11472,7 +11472,7 @@ Il finit par se décourager et partir, mais on se sent vraiment bêtes et
 impuissants…&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="dimanche-25-mai-vallee-de-la-karaka"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id3"&gt;Dimanche 25 mai : vallée de la Karaka&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Dimanche 25 mai : vallée de la Karaka&lt;/a&gt;&lt;/h2&gt;
 &lt;a class="reference external image-reference" href="https://www.flickr.com/photos/gaelvaroquaux/15435634555/in/set-72157648345589451"&gt;&lt;img alt="La vallée" class="align-center" src="https://farm3.staticflickr.com/2950/15435634555_66f8c1f89a_b_d.jpg" style="width: 100%;" /&gt;&lt;/a&gt;
 &lt;p&gt;Notre premier jour de rando ! Nous commençons par prendre des forces au
 petit déjeuner, puisque nous avons choisi l’option chambre+petit déjeuner
@@ -11555,7 +11555,7 @@ car les sacs sont lourds (entre 18 et 22 kg je dirais).&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="lundi-26-mai-aller-retour-au-lac-ala-kul"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id4"&gt;Lundi 26 mai : aller-retour au lac Ala-Kul&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Lundi 26 mai : aller-retour au lac Ala-Kul&lt;/a&gt;&lt;/h2&gt;
 &lt;a class="reference external image-reference" href="https://www.flickr.com/photos/gaelvaroquaux/15249079507/in/set-72157648345589451"&gt;&lt;img alt="Lac Ala-Kul" class="align-center" src="https://farm4.staticflickr.com/3930/15249079507_7ee6522e64_b_d.jpg" style="width: 100%;" /&gt;&lt;/a&gt;
 &lt;p&gt;Aujourd’hui on laisse la tente au camp pour faire une balade à la
 journée, ça fera moins à porter. Avant de partir nous montons le sac de
@@ -11606,7 +11606,7 @@ pleuvoir pas mal. Nous mangeons une grande gamelle de semoule bien
 bourrative.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="mardi-27-mai-passage-du-col-tileti"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;Mardi 27 mai : passage du col Tileti&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;Mardi 27 mai : passage du col Tileti&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Il a plu une bonne partie de la nuit, mais nous avons une très bonne
 tente et j’ai très bien dormi. Au réveil tout est trempé, y compris la
 tente ou le sac de Gaël qui a passé la nuit sous une branche. De longues
@@ -11681,7 +11681,7 @@ nous rejoignent silencieusement dans le crépuscule.&lt;/p&gt;
 &lt;p&gt;Quelle journée ! On se couche vite fait après avoir fini de manger.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="mercredi-28-mai-sortie-dans-la-vallee-de-djeti-oguz"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Mercredi 28 mai : sortie dans la vallée de Djeti-Oguz&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;Mercredi 28 mai : sortie dans la vallée de Djeti-Oguz&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Après les émotions d’hier, on s’octroie une petite grasse mat’ et on ne
 se lève qu’à 7h30. On se lève tout doucement, en profitant du beau temps,
 des marmottes. L’eau de la rivière a un très bon goût ici.&lt;/p&gt;
@@ -11788,7 +11788,7 @@ s’agit d’un gros chat. Je lui fais faire un joli vol plané et il s’enfuit
 sans demander son reste.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="jeudi-29-mai-karakol-bar-skoon"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id7"&gt;Jeudi 29 mai : Karakol -&amp;gt; Bar-Skoon&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-7"&gt;Jeudi 29 mai : Karakol -&amp;gt; Bar-Skoon&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Aujourd’hui nous repartons de Karakol pour aller vers notre deuxième
 rando. Nous voulons nous faire déposer dans les montagnes, sur la route
 de Kumtor, une mine d’or franco-canadienne, et de là rejoindre la vallée
@@ -11942,7 +11942,7 @@ jusqu’à la frontière chinoise nous font rêver… Puis on va se coucher :
 Gaël est un peu malade et fiévreux, il est temps de se reposer.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="vendredi-30-mai-vers-la-jokuu"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id8"&gt;Vendredi 30 mai : vers la Jokuu&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-8"&gt;Vendredi 30 mai : vers la Jokuu&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Rash a donc accepté de nous conduire au pied de notre randonnée sur la
 route de Kumtor, au prix standard de 15 soms le kilomètre. Il a une
 lada niva, ce qui est un peu la Rolls Royce de la région (malgré toutes
@@ -11991,7 +11991,7 @@ la nuit n’est pas trop fraîche (avec une bonne tente et des vêtements
 chauds…).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="samedi-31-mai-vallee-de-la-joku"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id9"&gt;Samedi 31 mai : vallée de la Joku&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-9"&gt;Samedi 31 mai : vallée de la Joku&lt;/a&gt;&lt;/h2&gt;
 &lt;a class="reference external image-reference" href="https://www.flickr.com/photos/gaelvaroquaux/15435331302/in/set-72157648345589451"&gt;&lt;img alt="Djuku" class="align-right" src="https://farm6.staticflickr.com/5599/15435331302_5577d5d165_z_d.jpg" style="width: 40%;" /&gt;&lt;/a&gt;
 &lt;p&gt;Je me réveille avec de la fièvre, mal à la gorge et aux articulations,
 comme Gaël il y a deux jours. Bon, on va y aller doucement. Pour
@@ -12044,7 +12044,7 @@ juste un peu de semoule (pendant que je suis à l’abri dans la tente !),
 que nous mangeons dans la tente.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="dimanche-1er-juin-sortie-de-la-vallee-de-la-joku"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id10"&gt;Dimanche 1er juin : sortie de la vallée de la Joku&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-10"&gt;Dimanche 1er juin : sortie de la vallée de la Joku&lt;/a&gt;&lt;/h2&gt;
 &lt;a class="reference external image-reference" href="https://www.flickr.com/photos/gaelvaroquaux/15248924029/in/set-72157648345589451"&gt;&lt;img alt="Une famille Kyrgyz" class="align-left" src="https://farm4.staticflickr.com/3931/15248924029_7bbc09d6b8_z_d.jpg" style="width: 40%;" /&gt;&lt;/a&gt;
 &lt;a class="reference external image-reference" href="https://www.flickr.com/photos/gaelvaroquaux/15432489241/in/set-72157648345589451"&gt;&lt;img alt="Un bébé Kyrgyz" class="align-right" src="https://farm3.staticflickr.com/2945/15432489241_7ede645f38_z_d.jpg" style="width: 40%;" /&gt;&lt;/a&gt;
 &lt;div style="clear: both;"&gt;&lt;/div&gt;&lt;p&gt;Ce matin ma fièvre est passée et je vais beaucoup mieux. Malgré la pluie
@@ -12175,7 +12175,7 @@ pour aller me serrer contre Gaël qui me rassure et me réchauffe, et je ne
 tarde pas à me réendormir.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="lundi-2-juin-kizil-suu-bakonbaiev"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id11"&gt;Lundi 2 juin : Kizil-Suu -&amp;gt; Bakonbaiev&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-11"&gt;Lundi 2 juin : Kizil-Suu -&amp;gt; Bakonbaiev&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Je me réveille complètement dans le coton, c’est l’allergie qui m’a
 épuisée. On s’attendait à devoir se lever tôt pour que la dame puisse
 aller au bazaar, mais en fait il ne se passe rien avant 9h au bazaar. Les
@@ -12306,7 +12306,7 @@ qu’on prend de lui et ses enfants : un polaroid doit faire beaucoup
 d’heureux dans ce pays !&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="mardi-3-juin-bakonbaiev-kotchkor"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id12"&gt;Mardi 3 juin : Bakonbaiev -&amp;gt; Kotchkor -&amp;gt; ??&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-12"&gt;Mardi 3 juin : Bakonbaiev -&amp;gt; Kotchkor -&amp;gt; ??&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Ce matin on reprend la marshrutka pour Baliki, et on peut même s’asseoir
 ! Notre voyage jusqu’au pied de la rando se fera en au moins trois
 étapes, on croise les doigts pour que tout s’enchaîne bien et que le
@@ -12402,7 +12402,7 @@ a plein d’oiseaux jaunes et rouges avec des aigrettes colorées et une
 grande queue, nous n’en avions jamais vu de tels auparavant.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="mercredi-4-juin-remontee-dans-la-vallee"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id13"&gt;Mercredi 4 juin : remontée dans la vallée&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-13"&gt;Mercredi 4 juin : remontée dans la vallée&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Nous avons posé notre camp du côté gauche (ouest) de la rivière, en
 suivant le chemin indiqué par la carte. D’ailleurs le chemin est très bon
 et large, ce qui est bon signe. Cependant, on voit que le chemin
@@ -12456,7 +12456,7 @@ milanese et un instant pudding que nous avons fait prendre dans la neige : un
 vrai festin ! Mais on en a besoin, demain c’est le col…&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="jeudi-5-juin-passage-du-col"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id14"&gt;Jeudi 5 juin : passage du col&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-14"&gt;Jeudi 5 juin : passage du col&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;C’est le grand jour et les loups ne nous ont pas mangés. On part vite
 pour en découdre avec le col. Le temps est encore superbe : une bonne
 météo pour un passage de col ! On peut encore suivre la grande route qui
@@ -12548,7 +12548,7 @@ repas car je suis crevée : la journée a été rude et je recommence à avoir
 de la fièvre.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="vendredi-6-juin-parc-ala-archa"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id15"&gt;Vendredi 6 juin : parc Ala-Archa&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-15"&gt;Vendredi 6 juin : parc Ala-Archa&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Il a plu toute la nuit et on ne se presse pas de partir. Les Russes
 partent faire une balade à la journée. On décide d’aller faire une petite
 balade dans une petite vallée pour débuter la journée, mais mal nous en
@@ -12666,7 +12666,7 @@ qu’il s’agissait probablement d’une espèce de corbeau, mais sur le coup
 ça n’était pas très rassurant.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="samedi-7-juin-retour-a-bishkek"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id16"&gt;Samedi 7 juin : retour à Bishkek&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-16"&gt;Samedi 7 juin : retour à Bishkek&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;C’était la dernière nuit sous la tente, il nous faut maintenant rejoindre
 Kashka-Suu puis aller à Bishkek. Il reste quelques kilomètres à faire, on
 essaye encore le stop avec les voitures qui passent mais elles sont
@@ -12716,7 +12716,7 @@ grâce à la générosité de nos hôtes.&lt;/p&gt;
 &lt;a class="reference external image-reference" href="https://www.flickr.com/photos/gaelvaroquaux/15435346432/in/set-72157648345589451"&gt;&lt;img alt="Bishkek bazaar" class="align-right" src="https://farm4.staticflickr.com/3932/15435346432_bc07d87363_z_d.jpg" style="width: 30%;" /&gt;&lt;/a&gt;
 &lt;div style="clear: both;"&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;div class="section" id="dimanche-8-juin-retour-a-paris"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id17"&gt;Dimanche 8 juin : retour à Paris&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-17"&gt;Dimanche 8 juin : retour à Paris&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Notre vol est très tôt le matin, donc on va en taxi à l’aéroport de
 Manas. C’est la fin de ces trois superbes semaines de vacances en Asie
 Centrale. Il faudra y retourner, peut-être en ayant appris un peu plus de
@@ -12732,10 +12732,10 @@ Emmanuelle&lt;/p&gt;
 &lt;div class="contents topic" id="table-des-matieres"&gt;
 &lt;p class="topic-title"&gt;Table des matières&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#samedi-17-mai-dimanche-18-mai-bourg-la-reine-bukhara" id="id1"&gt;Samedi 17 mai - dimanche 18 mai : Bourg-la-Reine -&amp;gt; Bukhara&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#lundi-19-mai-bukhara" id="id2"&gt;Lundi 19 mai : Bukhara&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#mardi-20-mai-bukhara-samarcande" id="id3"&gt;Mardi 20 mai : Bukhara -&amp;gt; Samarcande&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#mercredi-21-mai-samarcande" id="id4"&gt;Mercredi 21 …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;a class="reference external image-reference" href="vignettes.jpg"&gt;&lt;img alt="vignettes" class="align-center" src="https://gael-varoquaux.info/personnal/attachments/central_asia/vignettes.jpg" style="width: 100%;" /&gt;&lt;/a&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#samedi-17-mai-dimanche-18-mai-bourg-la-reine-bukhara" id="toc-entry-1"&gt;Samedi 17 mai - dimanche 18 mai : Bourg-la-Reine -&amp;gt; Bukhara&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#lundi-19-mai-bukhara" id="toc-entry-2"&gt;Lundi 19 mai : Bukhara&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#mardi-20-mai-bukhara-samarcande" id="toc-entry-3"&gt;Mardi 20 mai : Bukhara -&amp;gt; Samarcande&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#mercredi-21-mai-samarcande" id="toc-entry-4"&gt;Mercredi 21 …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;a class="reference external image-reference" href="vignettes.jpg"&gt;&lt;img alt="vignettes" class="align-center" src="https://gael-varoquaux.info/personnal/attachments/central_asia/vignettes.jpg" style="width: 100%;" /&gt;&lt;/a&gt;
 &lt;p&gt;Trois semaines en Ouzbékistan, puis au Kirghizstan… en train, bus,
 marshrutka, cheval, et beaucoup à pied !&lt;/p&gt;
 &lt;p&gt;Photos et panoramas : Gaël | Récit, mise en page et retouches photos :
@@ -12744,11 +12744,11 @@ Emmanuelle&lt;/p&gt;
 &lt;div class="contents topic" id="table-des-matieres"&gt;
 &lt;p class="topic-title"&gt;Table des matières&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#samedi-17-mai-dimanche-18-mai-bourg-la-reine-bukhara" id="id1"&gt;Samedi 17 mai - dimanche 18 mai : Bourg-la-Reine -&amp;gt; Bukhara&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#lundi-19-mai-bukhara" id="id2"&gt;Lundi 19 mai : Bukhara&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#mardi-20-mai-bukhara-samarcande" id="id3"&gt;Mardi 20 mai : Bukhara -&amp;gt; Samarcande&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#mercredi-21-mai-samarcande" id="id4"&gt;Mercredi 21 mai : Samarcande&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#jeudi-22-mai-samarcande-tashkent" id="id5"&gt;Jeudi 22 mai : Samarcande -&amp;gt; Tashkent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#samedi-17-mai-dimanche-18-mai-bourg-la-reine-bukhara" id="toc-entry-1"&gt;Samedi 17 mai - dimanche 18 mai : Bourg-la-Reine -&amp;gt; Bukhara&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#lundi-19-mai-bukhara" id="toc-entry-2"&gt;Lundi 19 mai : Bukhara&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#mardi-20-mai-bukhara-samarcande" id="toc-entry-3"&gt;Mardi 20 mai : Bukhara -&amp;gt; Samarcande&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#mercredi-21-mai-samarcande" id="toc-entry-4"&gt;Mercredi 21 mai : Samarcande&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#jeudi-22-mai-samarcande-tashkent" id="toc-entry-5"&gt;Jeudi 22 mai : Samarcande -&amp;gt; Tashkent&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;hr class="docutils" /&gt;
@@ -12777,7 +12777,7 @@ jsFlickrBadge(document.getElementById('Uzbekistan'), {
     animationPause: 20
     });
 &lt;/script&gt;&lt;div class="section" id="samedi-17-mai-dimanche-18-mai-bourg-la-reine-bukhara"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;Samedi 17 mai - dimanche 18 mai : Bourg-la-Reine -&amp;gt; Bukhara&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Samedi 17 mai - dimanche 18 mai : Bourg-la-Reine -&amp;gt; Bukhara&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;C’est le premier jour de nos vacances, et nous pouvons même faire une
 petite grasse matinée, notre vol ne partant qu’à qu’à 14h.
 Notre vol Paris -&amp;gt; Tashkent passe par Moscou, et nous volons avec la
@@ -12927,7 +12927,7 @@ est bien tard, et nous laissons ces joyeux voyageurs refaire le monde
 sans nous, pour aller nous coucher.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="lundi-19-mai-bukhara"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;Lundi 19 mai : Bukhara&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Lundi 19 mai : Bukhara&lt;/a&gt;&lt;/h2&gt;
 &lt;a class="reference external image-reference" href="https://www.flickr.com/photos/gaelvaroquaux/15432376031/in/set-72157648344396852"&gt;&lt;img alt="La mosquée de Kalon" class="align-center" src="https://farm6.staticflickr.com/5601/15432376031_9e182e28fb_b_d.jpg" style="width: 100%;" /&gt;&lt;/a&gt;
 &lt;a class="reference external image-reference" href="https://www.flickr.com/photos/gaelvaroquaux/15435579155/in/set-72157648344396852"&gt;&lt;img alt="La mosquée de Kalon" class="align-right" src="https://farm4.staticflickr.com/3929/15435579155_da45243f4e_z_d.jpg" style="width: 40%;" /&gt;&lt;/a&gt;
 &lt;p&gt;Après une longue nuit de sommeil, nous somme complètement reposés. La
@@ -13021,7 +13021,7 @@ espiègle,  qui l’envoie faire les commandes pendant que lui reste
 discuter avec nous !&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="mardi-20-mai-bukhara-samarcande"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id3"&gt;Mardi 20 mai : Bukhara -&amp;gt; Samarcande&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Mardi 20 mai : Bukhara -&amp;gt; Samarcande&lt;/a&gt;&lt;/h2&gt;
 &lt;a class="reference external image-reference" href="https://www.flickr.com/photos/gaelvaroquaux/15248815699/in/set-72157648344396852"&gt;&lt;img alt="Le mausolée de Timur" class="align-center" src="https://farm4.staticflickr.com/3931/15248815699_58bd86f14f_b_d.jpg" style="width: 100%;" /&gt;&lt;/a&gt;
 &lt;p&gt;La journée commence à nouveau par un somptueux petit déjeuner, avec cette
 fois-ci des oeufs sur le plat à la coriandre et à la ciboulette, qui sont
@@ -13132,7 +13132,7 @@ système universitaire français, et les moyens d’avoir une bourse pour y
 de détails à lui donner !&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="mercredi-21-mai-samarcande"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id4"&gt;Mercredi 21 mai : Samarcande&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Mercredi 21 mai : Samarcande&lt;/a&gt;&lt;/h2&gt;
 &lt;a class="reference external image-reference" href="https://www.flickr.com/photos/gaelvaroquaux/15432380001/in/set-72157648344396852"&gt;&lt;img alt="Le Registan" class="align-center" src="https://farm6.staticflickr.com/5598/15432380001_ce7214544e_b_d.jpg" style="width: 100%;" /&gt;&lt;/a&gt;
 &lt;p&gt;Encore un petit déjeuner somptueux : yaourt épais, confiture de roses,
 pancakes, galettes de pommes de terre… Puis on reprend la visite de
@@ -13223,7 +13223,7 @@ tous les touristes échouent, mais la nourriture est bonne et il y a
 beaucoup plus de locaux que de touristes qui y mangent.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="jeudi-22-mai-samarcande-tashkent"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;Jeudi 22 mai : Samarcande -&amp;gt; Tashkent&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;Jeudi 22 mai : Samarcande -&amp;gt; Tashkent&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Nous n’avons pas pu avoir de billets pour le train express reliant
 Samarcande à Tashkent, nous allons donc prendre le train plus lent qui
 part à 7h. Nous nous levons à 6h, notre hôtesse a insisté pour nous
@@ -14145,7 +14145,7 @@ between a large number of tasks. Your process does not control completely
 the computer, and it has to ask for time to the operating system. The
 operating system shares time between different processes, but it also has
 some internal tasks to do (like allocating memory). All these
-operations may not perform in a predictable time-lapse &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[2]&lt;/a&gt;, and make it
+operations may not perform in a predictable time-lapse &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-1"&gt;[2]&lt;/a&gt;, and make it
 harder for a process to produce an event (eg a hardware output signal) at
 a precise instant.&lt;/p&gt;
 &lt;p&gt;One solution to avoid problems is to run the program with a single task
@@ -14162,7 +14162,7 @@ the performance one can expect.&lt;/p&gt;
 &lt;div class="section" id="real-time-clock-interrupt-latency"&gt;
 &lt;h2&gt;Real-time clock interrupt latency&lt;/h2&gt;
 &lt;p&gt;The right tool to control timing under linux is the “real time clock”
-&lt;a class="footnote-reference" href="#id6" id="id2"&gt;[3]&lt;/a&gt;. It can be used to generate interrupts at a given frequency or
+&lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-2"&gt;[3]&lt;/a&gt;. It can be used to generate interrupts at a given frequency or
 instant.&lt;/p&gt;
 &lt;p&gt;To quote Wikipedia: “in computing, an interrupt is an asynchronous signal
 from hardware indicating the need for attention or a synchronous event in
@@ -14178,7 +14178,7 @@ CPU, as it corresponds to the time needed for the OS to hand over control
 to the program.&lt;/p&gt;
 &lt;div class="section" id="the-experiment-and-the-results"&gt;
 &lt;h3&gt;The experiment and the results&lt;/h3&gt;
-&lt;p&gt;I used a test program to measure interrupt latency &lt;a class="footnote-reference" href="#id7" id="id3"&gt;[4]&lt;/a&gt; on linux. The test
+&lt;p&gt;I used a test program to measure interrupt latency &lt;a class="footnote-reference" href="#footnote-4" id="footnote-reference-3"&gt;[4]&lt;/a&gt; on linux. The test
 code first sets the highest scheduling priority it can, then asks to be
 waken up at a given frequency &lt;em&gt;f&lt;/em&gt; by the real-time clock. It checks the
 real-time clock to see if it was really waken-up when it asked for. It
@@ -14285,13 +14285,13 @@ histogram file.&lt;/p&gt;
 kernel actually schedules other tasks. I did not put tremendous stress
 on the CPU, as I want to simulate standard use cases. This is the way I
 did it:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="o"&gt;((&lt;/span&gt;  &lt;span class="nv"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt;  i &amp;lt;&lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;  i++  &lt;span class="o"&gt;))&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;((&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nv"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;i&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;i++&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
 &lt;span class="k"&gt;do&lt;/span&gt;
-    ping -c &lt;span class="m"&gt;10&lt;/span&gt; www.google.com &lt;span class="p"&gt;&amp;amp;&lt;/span&gt;
-    dd &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/urandom &lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1M &lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;40&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; md5sum - &lt;span class="p"&gt;&amp;amp;&lt;/span&gt;
-    dd &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/zero &lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/tmp/foo &lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1M &lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;500&lt;/span&gt;
-    sync
-rm /tmp/foo
+&lt;span class="w"&gt;    &lt;/span&gt;ping&lt;span class="w"&gt; &lt;/span&gt;-c&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;www.google.com&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;dd&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/urandom&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1M&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;40&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;md5sum&lt;span class="w"&gt; &lt;/span&gt;-&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;dd&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/zero&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/tmp/foo&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1M&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;500&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;sync
+rm&lt;span class="w"&gt; &lt;/span&gt;/tmp/foo
 &lt;span class="k"&gt;done&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Three tasks running in parallel: pinging google, calculation the md5 hash
@@ -14306,7 +14306,7 @@ first task finish before the last one. This is done on purpose.&lt;/p&gt;
 “stresstest.sh” script given be the &lt;a class="reference external" href="attachments/real_time_stress_test.zip"&gt;following archive&lt;/a&gt; . The plots can be obtained by
 running the “process.py” python scripts (requires scipy and matplotlib).
 You may have to increase the real-time clock frequency user limit. You
-can do this by running (as root) ” echo 1024 &amp;gt;
+can do this by running (as root) “ echo 1024 &amp;gt;
 /proc/sys/dev/rtc/max-user-freq”&lt;/p&gt;
 &lt;p&gt;Send me the results dir created by the “stresstest.sh” script on your
 box, I am very interested to gather more statistics.&lt;/p&gt;
@@ -14330,43 +14330,43 @@ would also like to thank David Cournapeau for pointing me to interesting
 references and to the Linux Audio Developer mailing list for more
 information.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td class="label"&gt;[1]&lt;/td&gt;&lt;td&gt;Wikipedia article on real-time computing:
 &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Real-time_computing"&gt;http://en.wikipedia.org/wiki/Real-time_computing&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A very clear article about fighting latency in the linux kernel:
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A very clear article about fighting latency in the linux kernel:
 &lt;a class="reference external" href="http://lac.zkm.de/2006/papers/lac2006_lee_revell.pdf"&gt;http://lac.zkm.de/2006/papers/lac2006_lee_revell.pdf&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;About the RTC: &lt;a class="reference external" href="http://www.die.net/doc/linux/man/man4/rtc.4.html"&gt;http://www.die.net/doc/linux/man/man4/rtc.4.html&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;About the RTC: &lt;a class="reference external" href="http://www.die.net/doc/linux/man/man4/rtc.4.html"&gt;http://www.die.net/doc/linux/man/man4/rtc.4.html&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-4" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;What this code is actually measuring is, in technical terms, the
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;What this code is actually measuring is, in technical terms, the
 interrupt latency, that is the time it takes for the kernel to catch
 the interrupt, and the rescheduling latency, that is the time it take
 for the kernel to reschedule from one process to another.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-5" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td class="label"&gt;[5]&lt;/td&gt;&lt;td&gt;A different benchmark, that probably studies more directly the
 intrinsic kernel limits than my code: &lt;a class="reference external" href="http://lwn.net/Articles/139403/"&gt;http://lwn.net/Articles/139403/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id9" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-6" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td class="label"&gt;[6]&lt;/td&gt;&lt;td&gt;Another benchmark, that also benchmarks the RT-preempt patch and
@@ -14374,7 +14374,7 @@ shows the impressive improvements achieved with this patch:
 &lt;a class="reference external" href="http://kerneltrap.org/node/5466"&gt;http://kerneltrap.org/node/5466&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id10" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-7" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td class="label"&gt;[7]&lt;/td&gt;&lt;td&gt;A course on real-time computing, with the lecture notes.
@@ -17185,7 +17185,7 @@ favorite des post-docs, qui traine si souvent dans la salle commune du
 département de physique était au rendez-vous, mais Dieu merci mes
 colocataires avaient une bonne provision de vin. J’ai reçu une carte avec
 sur le devant “Happy birthday to a person who has that certain ‘Je ne
-sais quoi’ ” et derrière “That’s french for ‘a card with no money in it’
+sais quoi’ “ et derrière “That’s french for ‘a card with no money in it’
 “. Avec la carte venait un gigantesque oeuf de Pâque que nous avons
 partagé, et dedans il y avait des pastilles de chocolat, choisies parce
 que je pouvais les enmener avec moi dans la brousse.&lt;/p&gt;
@@ -19500,7 +19500,7 @@ Taiaora”, je crois) où en centre d’ “éco-tourisme” permet pour 40 doll
 question de claquer 40 pour cela et en marchant le long d’une plage nous
 avons pu voir les superbes oiseaux :&lt;/p&gt;
 &lt;blockquote class="epigraph"&gt;
-” A peine les ont-ils déposés sur les planches,
+“ A peine les ont-ils déposés sur les planches,
 Que ces rois de l’azur, maladroits et honteux,
 Laissent piteusement leurs grandes ailes blanches
 Comme des avirons traîner à côté d’eux.”&lt;/blockquote&gt;

@@ -13,19 +13,19 @@ it a bit to add personal context.&lt;/p&gt;
 &lt;div class="contents topic" id="highlights"&gt;
 &lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#a-new-team-soda" id="id1"&gt;A new team: Soda&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#the-scientific-vision" id="id2"&gt;The scientific vision&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#application-context-richer-data-in-health-and-social-sciences" id="id3"&gt;Application context: richer data in health and social sciences&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#applications-raise-specific-data-science-challenges" id="id4"&gt;Applications raise specific data-science challenges&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#our-research-axes" id="id5"&gt;Our research axes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#a-new-team-soda" id="toc-entry-1"&gt;A new team: Soda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-scientific-vision" id="toc-entry-2"&gt;The scientific vision&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#application-context-richer-data-in-health-and-social-sciences" id="toc-entry-3"&gt;Application context: richer data in health and social sciences&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#applications-raise-specific-data-science-challenges" id="toc-entry-4"&gt;Applications raise specific data-science challenges&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#our-research-axes" id="toc-entry-5"&gt;Our research axes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#some-notable-results-of-2022" id="id6"&gt;Some notable results of 2022&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#learning-on-relational-data-aggregating-across-many-tables" id="id7"&gt;Learning on relational data: aggregating across many tables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#validating-probabilistic-classifiers-beyond-calibration" id="id8"&gt;Validating probabilistic classifiers: beyond calibration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#reweighting-randomized-trials-for-generalization-finite-sample-error-and-variable-selection" id="id9"&gt;Reweighting randomized trials for generalization: finite sample error and variable selection&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#challenges-to-clinical-impact-of-ai-in-medical-imaging" id="id10"&gt;Challenges to clinical impact of AI in medical imaging&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#privacy-preserving-synthetic-educational-data-generation" id="id11"&gt;Privacy-preserving synthetic educational data generation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#some-notable-results-of-2022" id="toc-entry-6"&gt;Some notable results of 2022&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#learning-on-relational-data-aggregating-across-many-tables" id="toc-entry-7"&gt;Learning on relational data: aggregating across many tables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#validating-probabilistic-classifiers-beyond-calibration" id="toc-entry-8"&gt;Validating probabilistic classifiers: beyond calibration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#reweighting-randomized-trials-for-generalization-finite-sample-error-and-variable-selection" id="toc-entry-9"&gt;Reweighting randomized trials for generalization: finite sample error and variable selection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#challenges-to-clinical-impact-of-ai-in-medical-imaging" id="toc-entry-10"&gt;Challenges to clinical impact of AI in medical imaging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#privacy-preserving-synthetic-educational-data-generation" id="toc-entry-11"&gt;Privacy-preserving synthetic educational data generation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -34,7 +34,7 @@ it a bit to add personal context.&lt;/p&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="a-new-team-soda"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;A new team: Soda&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;A new team: Soda&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="figure align-right"&gt;
 &lt;img alt="" src="attachments/2022/team_2022.jpg" style="width: 400px;" /&gt;
 &lt;p class="caption"&gt;The team in early 2022 (it has grown a lot since)&lt;/p&gt;
@@ -53,11 +53,11 @@ of the team.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="the-scientific-vision"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;The scientific vision&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;The scientific vision&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Machine learning to leverage richer, more complex, data for
 social-sciences and health&lt;/em&gt;&lt;/p&gt;
 &lt;div class="section" id="application-context-richer-data-in-health-and-social-sciences"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id3"&gt;Application context: richer data in health and social sciences&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Application context: richer data in health and social sciences&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Opportunistic data accumulations, often observational, bare great
 promises for social and health sciences. But the data are too big and
 complex for standard statistical methodologies in these sciences.&lt;/p&gt;
@@ -79,7 +79,7 @@ improving education.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="applications-raise-specific-data-science-challenges"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id4"&gt;Applications raise specific data-science challenges&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Applications raise specific data-science challenges&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Data management: preparing dirty data for analytics&lt;/strong&gt; Assembling,
 curating, and transforming data for data analysis is very labor
 intensive. These data-preparation steps are often considered the number
@@ -110,7 +110,7 @@ estimates and conclusion in weakly-parametric settings.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="our-research-axes"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id5"&gt;Our research axes&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;Our research axes&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="section" id="representation-learning-for-relational-data"&gt;
 &lt;h4&gt;Representation learning for relational data&lt;/h4&gt;
 &lt;p&gt;I dream of deep-learning methodology for relational databases, from
@@ -180,14 +180,14 @@ of the Python data ecosystem in which scikit-learn is embedded.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="some-notable-results-of-2022"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Some notable results of 2022&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;Some notable results of 2022&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I am listing here a small number of the achievements of the team, because
 I find them inspiring.&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="learning-on-relational-data-aggregating-across-many-tables"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id7"&gt;Learning on relational data: aggregating across many tables&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-7"&gt;Learning on relational data: aggregating across many tables&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;For many machine-learning tasks, augmenting the data table at hand with
 features built from external sources is key to improving performance. For
 instance, estimating housing prices benefits from background information
@@ -232,7 +232,7 @@ data-science projects.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="validating-probabilistic-classifiers-beyond-calibration"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id8"&gt;Validating probabilistic classifiers: beyond calibration&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-8"&gt;Validating probabilistic classifiers: beyond calibration&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="figure align-right"&gt;
 &lt;img alt="" src="attachments/2022/grouping_loss.png" style="width: 360px;" /&gt;
 &lt;p class="caption"&gt;Validating probabilistic predictions of classifiers must go account
@@ -265,7 +265,7 @@ pre-production validation.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="reweighting-randomized-trials-for-generalization-finite-sample-error-and-variable-selection"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id9"&gt;Reweighting randomized trials for generalization: finite sample error and variable selection&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-9"&gt;Reweighting randomized trials for generalization: finite sample error and variable selection&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="figure align-right"&gt;
 &lt;img alt="" src="attachments/2022/reweighting_trial.png" style="width: 360px;" /&gt;
 &lt;p class="caption"&gt;There may be a sampling bias between a randomized trial and the
@@ -299,7 +299,7 @@ while non-shifted but treatment effect modifiers do not.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="challenges-to-clinical-impact-of-ai-in-medical-imaging"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id10"&gt;Challenges to clinical impact of AI in medical imaging&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-10"&gt;Challenges to clinical impact of AI in medical imaging&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I have worked for many years on research in computer analysis of medical
 images. In particular, I am convinced that machine learning bears many
 promises to improve patients’ health. However, I cannot be blind to the
@@ -332,7 +332,7 @@ focusing on rich data sources).&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="privacy-preserving-synthetic-educational-data-generation"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id11"&gt;Privacy-preserving synthetic educational data generation&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-11"&gt;Privacy-preserving synthetic educational data generation&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Soda also works on other applications than health, for instance
 education. In this direction, I would like to highlight work in which I
 did not participate, by Jill-Jenn Vie, another PI of the team.&lt;/p&gt;
@@ -386,8 +386,8 @@ knowledge, but such approach is hard to put to the test.&lt;/p&gt;
 conclude on the indvidual’s on-going mental processes. But this
 conclusion is not directly warranted by brain-imaging studies, as they do
 not control the brain activity, but rather engage the participant via a
-cognitive paradigm made of psychological manipulations &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;. &lt;em&gt;Brain
-decoding&lt;/em&gt; can help grounding such &lt;em&gt;reverse inferences&lt;/em&gt; &lt;a class="footnote-reference" href="#id6" id="id2"&gt;[2]&lt;/a&gt;, by using
+cognitive paradigm made of psychological manipulations &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;. &lt;em&gt;Brain
+decoding&lt;/em&gt; can help grounding such &lt;em&gt;reverse inferences&lt;/em&gt; &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;, by using
 machine learning to predict aspects of the task.&lt;/p&gt;
 &lt;p&gt;But a brain decoding model can seldom support broad reverse-inference
 claims, as typical decoding models are trained in a given study that
@@ -396,35 +396,35 @@ concludes on the interpretation of the brain activity in the studies’
 narrow scope.&lt;/p&gt;
 &lt;p&gt;Another challenge is that of statistical power. Most functional brain
 imaging studies comprise only a few dozen subjects, compromising
-statistical power &lt;a class="footnote-reference" href="#id7" id="id3"&gt;[3]&lt;/a&gt;, even more so when using machine learning &lt;a class="footnote-reference" href="#id8" id="id4"&gt;[4]&lt;/a&gt;.
+statistical power &lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;, even more so when using machine learning &lt;a class="footnote-reference" href="#footnote-4" id="footnote-reference-4"&gt;[4]&lt;/a&gt;.
 While there exists large acquisition efforts, these must focus on broad
 psychological manipulations that do not probe fine aspects of mental
 processes.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2006, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1364661305003360"&gt;Can cognitive processes be inferred from
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2006, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1364661305003360"&gt;Can cognitive processes be inferred from
 neuroimaging data?&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2011, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0896627311009895"&gt;Inferring Mental States from Neuroimaging Data:
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2011, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0896627311009895"&gt;Inferring Mental States from Neuroimaging Data:
 From Reverse Inference to Large-Scale Decoding&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2017, &lt;a class="reference external" href="https://www.nature.com/articles/nrn.2016.167"&gt;Scanning the horizon: towards transparent and
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Poldrack 2017, &lt;a class="reference external" href="https://www.nature.com/articles/nrn.2016.167"&gt;Scanning the horizon: towards transparent and
 reproducible neuroimaging research&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-4" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varoquaux 2018, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1053811917305311"&gt;Cross-validation failure: Small sample sizes lead
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varoquaux 2018, &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1053811917305311"&gt;Cross-validation failure: Small sample sizes lead
 to large error bars&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -445,7 +445,7 @@ of mental processes not studied in large cohorts.&lt;/p&gt;
 cognitive neuroimaging studies is that all probe different, yet related,
 mental processes. Framing them all in the same analysis faces the lack of
 universally-adopted language to describe cognitive paradigms. Our prior
-work &lt;a class="footnote-reference" href="#id10" id="id9"&gt;[5]&lt;/a&gt; on this endeavior –the quest for universal decoding across
+work &lt;a class="footnote-reference" href="#footnote-5" id="footnote-reference-5"&gt;[5]&lt;/a&gt; on this endeavior –the quest for universal decoding across
 studies–, relied on describing each experimental paradigm in an ontology
 of cognitive processes and psychological manipulations. However, such
 approach is not scalable. Here, rather, we infered the latent structure
@@ -453,10 +453,10 @@ of the tasks from the data, without explicitely modeling the links
 between studies. In my eye, this was a very important ingredient of our
 work, and it is non trivial that it enables improving the decoding of
 unrelated studies.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id10" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-5" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id9"&gt;[5]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varoquaux 2018, &lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006565"&gt;Atlases of cognition with large-scale human brain
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-5"&gt;[5]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varoquaux 2018, &lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006565"&gt;Atlases of cognition with large-scale human brain
 mapping&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -470,14 +470,14 @@ cognitive-neuroscience research.&lt;/p&gt;
 &lt;p&gt;From a computer-science standpoint, we used a deep-learning architecture.
 This is the first time that we witnessed a
 deep-learning architecture outperforming well-tuned shallow baselines on
-functional neuroimaging data &lt;a class="footnote-reference" href="#id12" id="id11"&gt;[6]&lt;/a&gt;. This success is likely due to the
+functional neuroimaging data &lt;a class="footnote-reference" href="#footnote-6" id="footnote-reference-6"&gt;[6]&lt;/a&gt;. This success is likely due to the
 massive amount of data that we assembled: as our method can
 readily work across studies, we were able to apply it to 40000
 subject-level contrast maps.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id12" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-6" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id11"&gt;[6]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;There have been many reports of deep architectures on functional
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-6"&gt;[6]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;There have been many reports of deep architectures on functional
 brain imaging. However, in our experience, good shallow benchmarks
 are hard to beat.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
@@ -511,11 +511,11 @@ detailed model of a given task, despite limited statistical power and
 external validity. My feeling is that &lt;strong&gt;the question of how
 various tasks are related is perceived as belonging to the walled garden
 of cognitive neuroscientists, not to be put to the test by statistical
-methods&lt;/strong&gt; &lt;a class="footnote-reference" href="#id14" id="id13"&gt;[7]&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id14" rules="none"&gt;
+methods&lt;/strong&gt; &lt;a class="footnote-reference" href="#footnote-7" id="footnote-reference-7"&gt;[7]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-7" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id13"&gt;[7]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1008795"&gt;The second round of review of our manuscript&lt;/a&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-7"&gt;[7]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1008795"&gt;The second round of review of our manuscript&lt;/a&gt;
 certainly felt as if the method was judged by cognitive-neuroscience
 lenses, and not the validity of the data analysis that it entailed.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
@@ -526,13 +526,13 @@ tasks is at risk of picking up idiosyncrasies of the task or the stimuli.
 A starting point of our work (&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008795"&gt;Mensch 2021&lt;/a&gt;)
 was the fall of statistical power in cognitive neuroscience, documented
 by &lt;a class="reference external" href="https://www.nature.com/articles/nrn.2016.167"&gt;Poldrack 2017&lt;/a&gt;, but
-one reviewer censored this argument &lt;a class="footnote-reference" href="#id17" id="id16"&gt;[8]&lt;/a&gt;. This exchange felt to me as &lt;strong&gt;a
+one reviewer censored this argument &lt;a class="footnote-reference" href="#footnote-8" id="footnote-reference-8"&gt;[8]&lt;/a&gt;. This exchange felt to me as &lt;strong&gt;a
 field refusing to discuss publicly its challenges&lt;/strong&gt;, which leaves no room for
 methods’ researchers such as myself to address them.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id17" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-8" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id16"&gt;[8]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1008795"&gt;Comments in the first review&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-8"&gt;[8]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1008795"&gt;Comments in the first review&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
@@ -550,15 +550,15 @@ for health&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class="contents topic" id="highlights"&gt;
 &lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#mining-electronic-health-records-for-covid-19" id="id1"&gt;Mining electronic health records for covid-19&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#machine-learning-for-dirty-data" id="id2"&gt;Machine learning for dirty data&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#supervised-learning-with-missing-values-beyond-imputation" id="id3"&gt;Supervised learning with Missing values: beyond imputation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#machine-learning-without-normalizing-entries" id="id4"&gt;Machine-learning without normalizing entries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#mining-electronic-health-records-for-covid-19" id="toc-entry-1"&gt;Mining electronic health records for covid-19&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#machine-learning-for-dirty-data" id="toc-entry-2"&gt;Machine learning for dirty data&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#supervised-learning-with-missing-values-beyond-imputation" id="toc-entry-3"&gt;Supervised learning with Missing values: beyond imputation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#machine-learning-without-normalizing-entries" id="toc-entry-4"&gt;Machine-learning without normalizing entries&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#making-sense-of-brain-functional-signals" id="id5"&gt;Making sense of brain functional signals&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#neuroquery-brain-mapping-any-neuroscience-query" id="id6"&gt;NeuroQuery: brain mapping any neuroscience query&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#a-high-resolution-brain-functional-atlas" id="id7"&gt;A high-resolution brain functional atlas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#making-sense-of-brain-functional-signals" id="toc-entry-5"&gt;Making sense of brain functional signals&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#neuroquery-brain-mapping-any-neuroscience-query" id="toc-entry-6"&gt;NeuroQuery: brain mapping any neuroscience query&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#a-high-resolution-brain-functional-atlas" id="toc-entry-7"&gt;A high-resolution brain functional atlas&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -567,7 +567,7 @@ for health&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="mining-electronic-health-records-for-covid-19"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;Mining electronic health records for covid-19&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Mining electronic health records for covid-19&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Hospital databases are rich and messy&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Hospital databases&lt;/strong&gt;
 In March, we &lt;a class="reference external" href="https://www.inria.fr/en/scikiteds-visualization-tool-monitoring-flow-sick-patients"&gt;teamed up with the hospital around Paris&lt;/a&gt; that were suffering from a severe overload due to a new pathology,
@@ -646,7 +646,7 @@ approaches.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="machine-learning-for-dirty-data"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;Machine learning for dirty data&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Machine learning for dirty data&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Machine learning methods that can robustly ingest non-curated data.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;a class="reference external" href="https://project.inria.fr/dirtydata/"&gt;Dirty Data project&lt;/a&gt;, that we
 undertook a few years ago, is really bearing its fruits.&lt;/p&gt;
@@ -654,7 +654,7 @@ undertook a few years ago, is really bearing its fruits.&lt;/p&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="supervised-learning-with-missing-values-beyond-imputation"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id3"&gt;Supervised learning with Missing values: beyond imputation&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Supervised learning with Missing values: beyond imputation&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The classic view on processing data with missing values is to try and
 &lt;em&gt;impute&lt;/em&gt; the missing values: replace them by probable values (or better,
 compute the distribution of the unobserved values given the observed
@@ -714,7 +714,7 @@ on limited data size.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="machine-learning-without-normalizing-entries"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id4"&gt;Machine-learning without normalizing entries&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Machine-learning without normalizing entries&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;A challenge of data management is that the same information may be
 represented in different ways, typically with different strings denoting
 the same, or related entities. For instance, in the following table, the
@@ -812,7 +812,7 @@ rapid progress.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="making-sense-of-brain-functional-signals"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;Making sense of brain functional signals&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;Making sense of brain functional signals&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Turning brain-imaging signal into insights&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Brain imaging, and in particular functional brain imaging, is amazing,
 because it gives a window on brain function, whether it is to understand
@@ -820,7 +820,7 @@ cognition, behavior, or pathologies. One challenge that I have been
 interested in, across the years, is how to give systematic sense to these
 signals, in a broader perspective than a given study.&lt;/p&gt;
 &lt;div class="section" id="neuroquery-brain-mapping-any-neuroscience-query"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id6"&gt;NeuroQuery: brain mapping any neuroscience query&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;NeuroQuery: brain mapping any neuroscience query&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Systematically linking mental processes and disorders to brain structures
 is a very difficult task because of the huge diversity of behavior.&lt;/p&gt;
 &lt;p&gt;In &lt;a class="reference external" href="https://elifesciences.org/articles/53385"&gt;Dockes et al, elife 2020&lt;/a&gt; we used text mining on a
@@ -835,7 +835,7 @@ report findings.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="a-high-resolution-brain-functional-atlas"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id7"&gt;A high-resolution brain functional atlas&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-7"&gt;A high-resolution brain functional atlas&lt;/a&gt;&lt;/h3&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Regions to summarize the fMRI signal&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Atlases of brain regions are convenient to summarize the information of
 brain images, turning them into information easy to analyse. We have long
@@ -942,34 +942,34 @@ the survey who took time to answer the questions.&lt;/p&gt;
 </content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="benchmarking"></category><category term="conferences"></category><category term="experimental methods"></category></entry><entry><title>2019: my scientific year in review</title><link href="https://gael-varoquaux.info/science/2019-my-scientific-year-in-review.html" rel="alternate"></link><published>2020-01-05T00:00:00+01:00</published><updated>2020-01-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2020-01-05:/science/2019-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;My current research spans wide: from brain sciences to core data
 science. My overall interest is to build &lt;strong&gt;methodology drawing insights from
 data&lt;/strong&gt; for questions that have often been addressed qualitatively. If I can
-highlight a few publications from 2019 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;, the common thread would be
+highlight a few publications from 2019 &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;, the common thread would be
 computational statistics, from dirty …&lt;/p&gt;</summary><content type="html">&lt;p&gt;My current research spans wide: from brain sciences to core data
 science. My overall interest is to build &lt;strong&gt;methodology drawing insights from
 data&lt;/strong&gt; for questions that have often been addressed qualitatively. If I can
-highlight a few publications from 2019 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;, the common thread would be
+highlight a few publications from 2019 &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;, the common thread would be
 computational statistics, from dirty data to brain images. Let me try to
 give the gist of these progresses, in simple terms.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It’s already 2020, I’m always late.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It’s already 2020, I’m always late.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;div class="contents topic" id="highlights"&gt;
 &lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#comparing-distributions" id="id5"&gt;Comparing distributions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#predictive-pipelines-on-brain-functional-connectomes" id="id6"&gt;Predictive pipelines on brain functional connectomes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#population-shrinkage-of-covariance" id="id7"&gt;Population shrinkage of covariance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#deep-learning-on-non-translation-invariant-images" id="id8"&gt;Deep learning on non-translation-invariant images&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#open-science" id="id9"&gt;Open science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#comparing-distributions" id="toc-entry-1"&gt;Comparing distributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#predictive-pipelines-on-brain-functional-connectomes" id="toc-entry-2"&gt;Predictive pipelines on brain functional connectomes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#population-shrinkage-of-covariance" id="toc-entry-3"&gt;Population shrinkage of covariance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#deep-learning-on-non-translation-invariant-images" id="toc-entry-4"&gt;Deep learning on non-translation-invariant images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#open-science" id="toc-entry-5"&gt;Open science&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="comparing-distributions"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;Comparing distributions&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Comparing distributions&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Fundamental computational-statistics work&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;What if you are given two set of observations and need to conclude on
 whether they are drawn from the same distribution? We are interested in
@@ -1018,7 +1018,7 @@ l1 norm is non smooth which can be challenging in optimization settings.&lt;/p&g
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="predictive-pipelines-on-brain-functional-connectomes"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Predictive pipelines on brain functional connectomes&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Predictive pipelines on brain functional connectomes&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;&lt;em&gt;Brain-imaging methods&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Brain functional connectivity is increasingly used to extract biomarkers
 of behavior and mental health. The long-term stakes are to ground
@@ -1078,7 +1078,7 @@ reduce the variability in the methods used to build them&lt;/strong&gt;.&lt;/p&g
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="population-shrinkage-of-covariance"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id7"&gt;Population shrinkage of covariance&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Population shrinkage of covariance&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;Statistics for brain signals&lt;/p&gt;
 &lt;p&gt;Estimating covariances is central for functional brain connectivity and
 in many other applications. With Mehdi Rahim, in &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S1361841518301014"&gt;Rahim et al&lt;/a&gt;
@@ -1089,7 +1089,7 @@ mathematical ideas: that of using natural operations on covariance
 matrices, and that of priors for mean-square estimation:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;strong&gt;Tangent space&lt;/strong&gt; Covariance matrices are positive-definite matrices,
-for which standard arithmetics are not well suited &lt;a class="footnote-reference" href="#id4" id="id3"&gt;[2]&lt;/a&gt;: subtracting
+for which standard arithmetics are not well suited &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;: subtracting
 two covariance matrices can lead to a matrix that cannot be
 the covariance of a signal. However, a group of covariance matrices can
 be transformed into points in a vector space for which standard
@@ -1098,10 +1098,10 @@ covariances (for instance Euclidean distance between these points
 approximate KL divergence between covariances). This is what we call
 the &lt;em&gt;tangent space&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Technically, covariance matrices live on a Riemannian manifold:
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Technically, covariance matrices live on a Riemannian manifold:
 a curve surface inside &lt;em&gt;R^{n x n}&lt;/em&gt; that has some metric
 properties.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1149,7 +1149,7 @@ to build the biomarker.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="deep-learning-on-non-translation-invariant-images"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id8"&gt;Deep learning on non-translation-invariant images&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Deep learning on non-translation-invariant images&lt;/a&gt;&lt;/h2&gt;
 &lt;p class="align-right"&gt;Computer vision&lt;/p&gt;
 &lt;p&gt;Brain images, in particular images of brain activity, are very different
 from the natural images on which most computer-vision research focuses.
@@ -1204,7 +1204,7 @@ data&lt;/strong&gt;: these images are not translational invariant.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="open-science"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id9"&gt;Open science&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;Open science&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Open and reproducible science:&lt;/strong&gt; Looking at all these publications, I
 realize that every single one of them comes with code on a github
 repository and is done on open data, which means that they can all be
@@ -1253,15 +1253,15 @@ waiving.&lt;/p&gt;
 &lt;div class="contents topic" id="contents"&gt;
 &lt;p class="topic-title"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#the-context-two-sample-testing" id="id1"&gt;The context: two-sample testing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#from-kernel-mean-embeddings-to-distances-on-distributions" id="id2"&gt;From kernel mean embeddings to distances on distributions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#controlling-the-weak-convergence-of-probability-measures" id="id3"&gt;Controlling the weak convergence of probability measures&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#two-sample-testing-procedures" id="id4"&gt;Two-sample testing procedures&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#the-l1-metric-provides-best-testing-power" id="id5"&gt;The L1 metric provides best testing power&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-context-two-sample-testing" id="toc-entry-1"&gt;The context: two-sample testing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#from-kernel-mean-embeddings-to-distances-on-distributions" id="toc-entry-2"&gt;From kernel mean embeddings to distances on distributions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#controlling-the-weak-convergence-of-probability-measures" id="toc-entry-3"&gt;Controlling the weak convergence of probability measures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#two-sample-testing-procedures" id="toc-entry-4"&gt;Two-sample testing procedures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-l1-metric-provides-best-testing-power" id="toc-entry-5"&gt;The L1 metric provides best testing power&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="the-context-two-sample-testing"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;The context: two-sample testing&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;The context: two-sample testing&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Given two samples from two unknown populations, the goal of two-sample tests is
 to determine whether the underlying populations differ with a statistical
 significance. For instance, we may care to know whether the
@@ -1272,7 +1272,7 @@ marketing strategies.&lt;/p&gt;
 &lt;img alt="" class="align-center" src="attachments/comparing_distributions_l1/map_KFC_McDo_simple.png" style="width: 70%;" /&gt;
 &lt;/div&gt;
 &lt;div class="section" id="from-kernel-mean-embeddings-to-distances-on-distributions"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;From kernel mean embeddings to distances on distributions&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;From kernel mean embeddings to distances on distributions&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In the example of spatial distributions restaurants,
 there is &lt;strong&gt;a lot of information in how close observed data
 points lie in the original measurement space (here geographic coordinates)&lt;/strong&gt;.
@@ -1281,7 +1281,7 @@ applied to distributions, building representatives of distributions:
 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_embedding_of_distributions"&gt;Kernel embeddings of distributions&lt;/a&gt;. The
 mean embedding of a distribution P with a kernel k is written:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) :  = &lt;span class="limits"&gt;&lt;span class="limit"&gt;⌠&lt;/span&gt;&lt;span class="limit"&gt;⌡&lt;/span&gt;&lt;/span&gt;&lt;sub&gt;ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;i&gt;k&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;, &lt;i&gt;t&lt;/i&gt;)&lt;i&gt;dP&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)
+&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) :  = &lt;span class="limits"&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator integral"&gt;∫&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;sub&gt;ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;i&gt;k&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;, &lt;i&gt;t&lt;/i&gt;)&lt;i&gt;dP&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)
 &lt;/div&gt;
 &lt;p&gt;Intuitively, it is related to &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_density_estimation"&gt;Kernel Density Estimates (KDEs)&lt;/a&gt; which
 estimate a density in continuous space by smoothing the observed data
@@ -1296,7 +1296,7 @@ measures. Metrics between probability measures can be defined via the
 notion of Integral Probability Metric (IPM): as a difference of
 expectations:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;span class="text"&gt;IPM&lt;/span&gt;[&lt;i&gt;F&lt;/i&gt;, &lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] :  = sup&lt;sub&gt;&lt;i&gt;f&lt;/i&gt; ∈ &lt;i&gt;F&lt;/i&gt;&lt;/sub&gt;(𝔼&lt;sub&gt;&lt;i&gt;x&lt;/i&gt; ~ &lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;&lt;span class="symbol"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)&lt;span class="symbol"&gt;]&lt;/span&gt; − 𝔼&lt;sub&gt;&lt;i&gt;y&lt;/i&gt; ~ &lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;&lt;span class="symbol"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;y&lt;/i&gt;)&lt;span class="symbol"&gt;]&lt;/span&gt;)
+&lt;span class="text"&gt;IPM&lt;/span&gt;[&lt;i&gt;F&lt;/i&gt;, &lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] :  = &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;sup&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;f&lt;/i&gt; ∈ &lt;i&gt;F&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;(𝔼&lt;sub&gt;&lt;i&gt;x&lt;/i&gt; ∼ &lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;&lt;span class="stretchy"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;x&lt;/i&gt;)&lt;span class="stretchy"&gt;]&lt;/span&gt; − 𝔼&lt;sub&gt;&lt;i&gt;y&lt;/i&gt; ∼ &lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;&lt;span class="stretchy"&gt;[&lt;/span&gt;&lt;i&gt;f&lt;/i&gt;(&lt;i&gt;y&lt;/i&gt;)&lt;span class="stretchy"&gt;]&lt;/span&gt;)
 &lt;/div&gt;
 &lt;p&gt;where F is a class of functions. This definition is appealing because it
 &lt;strong&gt;characterizes the difference between P and Q by the function for which
@@ -1309,7 +1309,7 @@ ball in such an RKHS, is known as the Maximum Mean Discrepancy (MMD). It
 can be shown that, rather than computing the maximum, the MMD has a more
 convenient expression, the RKHS distance between the mean embeddings:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;span class="text"&gt;MMD&lt;/span&gt;[&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] = ∥&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt; − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;∥&lt;sub&gt;&lt;i&gt;H&lt;/i&gt;&lt;sub&gt;&lt;i&gt;k&lt;/i&gt;&lt;/sub&gt;&lt;/sub&gt;
+&lt;span class="text"&gt;MMD&lt;/span&gt;[&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;] = ‖&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt; − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;‖&lt;sub&gt;&lt;i&gt;H&lt;/i&gt;&lt;sub&gt;&lt;i&gt;k&lt;/i&gt;&lt;/sub&gt;&lt;/sub&gt;
 &lt;/div&gt;
 &lt;p&gt;For good choices of kernels, the MMD has appealing mathematical
 properties to compare distributions. With kernels said to be
@@ -1326,12 +1326,12 @@ other representatives, namely the smooth characteristic function, SCF).
 We consider a wider family of metrics based on the Lp distances between
 mean emdeddings (p=2 recovers the classic framework):&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;d&lt;/i&gt;&lt;sub&gt;&lt;i&gt;L&lt;/i&gt;&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;, &lt;i&gt;μ&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;) :  = &lt;span class="symbol"&gt;(&lt;/span&gt;&lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;⌠&lt;/span&gt;&lt;span class="limit"&gt;⌡&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;t&lt;/i&gt; ∈ ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/span&gt;|&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;)|&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;d&lt;/i&gt;Γ(&lt;i&gt;t&lt;/i&gt;)&lt;span class="symbol"&gt;)&lt;/span&gt;&lt;sup&gt;1 ⁄ &lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;
+&lt;i&gt;d&lt;/i&gt;&lt;sub&gt;&lt;i&gt;L&lt;/i&gt;&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;, &lt;i&gt;μ&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;P&lt;/i&gt;, &lt;i&gt;Q&lt;/i&gt;) :  = &lt;span class="stretchy"&gt;(&lt;/span&gt;&lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator integral"&gt;∫&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;t&lt;/i&gt; ∈ ℝ&lt;sup&gt;&lt;i&gt;d&lt;/i&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/span&gt;|&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;P&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;) − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Q&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;t&lt;/i&gt;)|&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;d&lt;/i&gt;Γ(&lt;i&gt;t&lt;/i&gt;)&lt;span class="stretchy"&gt;)&lt;/span&gt;&lt;sup&gt;1 ⁄ &lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;
 &lt;/div&gt;
 &lt;p&gt;where Γ is a Borel probability measure absolutely continuous.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="controlling-the-weak-convergence-of-probability-measures"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id3"&gt;Controlling the weak convergence of probability measures&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Controlling the weak convergence of probability measures&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;We show that these metrics have good properties. Specifically, for p ≥ 1,
 as soon as the kernel is bounded continuous and characteristic, these
 metrics metrize the weak convergence. What this means is that these
@@ -1360,14 +1360,14 @@ fitting GANs to generate images: the goal is not to only capture that
 images are exactly the same, but also that they maybe be “close”.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="two-sample-testing-procedures"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id4"&gt;Two-sample testing procedures&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Two-sample testing procedures&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Now that we have built metrics, we can derive two-sample test statistics.
 A straightforward way of doing it would involve large sums on all the
 observations, which would be costly. Hence, we resort to a good
 approximation by sampling a set of {Tj} locations from the distribution
 Γ:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;d̂&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sub class="script"&gt;ℓ&lt;sub&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sub&gt;, &lt;i&gt;μ&lt;/i&gt;, &lt;i&gt;J&lt;/i&gt;&lt;/sub&gt;&lt;sup class="script"&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;&lt;/span&gt;[&lt;i&gt;X&lt;/i&gt;, &lt;i&gt;Y&lt;/i&gt;] :  = &lt;i&gt;n&lt;/i&gt;&lt;sup&gt;&lt;i&gt;p&lt;/i&gt; ⁄ 2&lt;/sup&gt;&lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;⎲&lt;/span&gt;&lt;span class="limit"&gt;⎳&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;j&lt;/i&gt; = 1..&lt;i&gt;J&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;|&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;X&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;T&lt;/i&gt;&lt;sub&gt;&lt;i&gt;j&lt;/i&gt;&lt;/sub&gt;) − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;T&lt;/i&gt;&lt;sub&gt;&lt;i&gt;j&lt;/i&gt;&lt;/sub&gt;)|&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;
+&lt;i&gt;d̂&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;ℓ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sub&gt;, &lt;i&gt;μ&lt;/i&gt;, &lt;i&gt;J&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;[&lt;i&gt;X&lt;/i&gt;, &lt;i&gt;Y&lt;/i&gt;] :  = &lt;i&gt;n&lt;/i&gt;&lt;sup&gt;&lt;i&gt;p&lt;/i&gt; ⁄ 2&lt;/sup&gt;&lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator"&gt;∑&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;j&lt;/i&gt; = 1..&lt;i&gt;J&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;|&lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;X&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;T&lt;/i&gt;&lt;sub&gt;&lt;i&gt;j&lt;/i&gt;&lt;/sub&gt;) − &lt;i&gt;μ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/sub&gt;(&lt;i&gt;T&lt;/i&gt;&lt;sub&gt;&lt;i&gt;j&lt;/i&gt;&lt;/sub&gt;)|&lt;sup&gt;&lt;i&gt;p&lt;/i&gt;&lt;/sup&gt;
 &lt;/div&gt;
 &lt;p&gt;We show that this approximation maintains (almost surely) the appealing
 metric properties, generalizing the results that were established by
@@ -1387,7 +1387,7 @@ distribution of the test statistic can be derived, leading to tests that
 can control errors without permutations.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="the-l1-metric-provides-best-testing-power"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;The L1 metric provides best testing power&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;The L1 metric provides best testing power&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Going back to our question of which norm on the difference of
 distribution representative is best suited to detect, we show that when
 using analytics kernels, such as the Gaussian kernel, the L1 metric
@@ -1438,35 +1438,35 @@ a lot of big picture&lt;/li&gt;
 &lt;/div&gt;
 &lt;p&gt;·&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="two-sample testing"></category><category term="conferences"></category><category term="statistics"></category></entry><entry><title>2018: my scientific year in review</title><link href="https://gael-varoquaux.info/science/2018-my-scientific-year-in-review.html" rel="alternate"></link><published>2019-01-03T00:00:00+01:00</published><updated>2019-01-03T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-01-03:/science/2018-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; was once again extremely exciting
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="two-sample testing"></category><category term="conferences"></category><category term="statistics"></category></entry><entry><title>2018: my scientific year in review</title><link href="https://gael-varoquaux.info/science/2018-my-scientific-year-in-review.html" rel="alternate"></link><published>2019-01-03T00:00:00+01:00</published><updated>2019-01-03T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2019-01-03:/science/2018-my-scientific-year-in-review.html</id><summary type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt; was once again extremely exciting
 thank to awesome collaborators (at &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;Inria&lt;/a&gt;, with &lt;a class="reference external" href="https://project.inria.fr/dirtydata/"&gt;DirtyData&lt;/a&gt;, and our &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/"&gt;local scikit-learn team&lt;/a&gt;).
 Rather than going over everything that we did in 2018, I would like to
-give a few highlights: We published major work using &lt;strong&gt;machine learning to …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; was once again extremely exciting
+give a few highlights: We published major work using &lt;strong&gt;machine learning to …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;From a scientific perspective, 2018 &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt; was once again extremely exciting
 thank to awesome collaborators (at &lt;a class="reference external" href="https://team.inria.fr/parietal/"&gt;Inria&lt;/a&gt;, with &lt;a class="reference external" href="https://project.inria.fr/dirtydata/"&gt;DirtyData&lt;/a&gt;, and our &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/"&gt;local scikit-learn team&lt;/a&gt;).
 Rather than going over everything that we did in 2018, I would like to
 give a few highlights: We published major work using &lt;strong&gt;machine learning to
 map cognition in the brain&lt;/strong&gt;, We started a new research project on &lt;strong&gt;analysis
 of non-curated data&lt;/strong&gt; (addressing all of data science, beyond brain
 imaging); And we worked a lot on &lt;strong&gt;growing scikit-learn&lt;/strong&gt;.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It’s already 2019, I am indeed late in posting this summary.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It’s already 2019, I am indeed late in posting this summary.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;div class="contents topic" id="highlights"&gt;
 &lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#cognitive-brain-mapping" id="id5"&gt;Cognitive brain mapping&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#data-science-without-data-cleaning" id="id6"&gt;Data science without data cleaning&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#scikit-learn-growth-and-consolidation" id="id7"&gt;Scikit-learn: growth and consolidation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#cognitive-brain-mapping" id="toc-entry-1"&gt;Cognitive brain mapping&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#data-science-without-data-cleaning" id="toc-entry-2"&gt;Data science without data cleaning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#scikit-learn-growth-and-consolidation" id="toc-entry-3"&gt;Scikit-learn: growth and consolidation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="cognitive-brain-mapping"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;Cognitive brain mapping&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Cognitive brain mapping&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;We have been exploring &lt;strong&gt;how predictive models can help mapping cognition
 in the human brain&lt;/strong&gt;. In 2018, these long-running efforts led to important
 publications.&lt;/p&gt;
@@ -1499,14 +1499,14 @@ attention than listening.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These challenges are related on the one hand to the problem of &lt;a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1364661305003360"&gt;reverse
 inference&lt;/a&gt;
-&lt;a class="footnote-reference" href="#id4" id="id3"&gt;[2]&lt;/a&gt;, and on the other hand to that of mental-process decomposition, or
+&lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;, and on the other hand to that of mental-process decomposition, or
 cognitive subtraction, both central to cognitive neuroimaging. They also
 call for formal knowledge representation, &lt;em&gt;eg&lt;/em&gt; by building ontologies,
 which is a task harder than it might seem at first glance.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;In essence, the reverse inference problem arises because in a
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;In essence, the reverse inference problem arises because in a
 cognitive brain imaging the observed brain activity is a consequence
 of the behavior, and not a cause. While a conclusion that activity in
 a brain structure causes a certain behavior is desirable, it is not
@@ -1619,7 +1619,7 @@ forward, I have started working on data intergration per se.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="data-science-without-data-cleaning"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Data science without data cleaning&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Data science without data cleaning&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="a-new-personal-research-agenda-dirtydata"&gt;
 &lt;h3&gt;A new personal research agenda: DirtyData&lt;/h3&gt;
 &lt;p&gt;Challenges to integrating data in a statistical analysis are ubiquitous,
@@ -1688,7 +1688,7 @@ is under way.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="scikit-learn-growth-and-consolidation"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id7"&gt;Scikit-learn: growth and consolidation&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Scikit-learn: growth and consolidation&lt;/a&gt;&lt;/h2&gt;
 &lt;img alt="" class="align-right" src="attachments/2018_highlights/scikit-learn-logo-notext.png" style="width: 150px;" /&gt;
 &lt;p&gt;In 2018, a lot of my energy went to consolidating scikit-learn as a
 project. Describing the work in detail is for another post. However, my
@@ -2644,44 +2644,44 @@ it was mostly 2D:&lt;/p&gt;
 &lt;p&gt;Let &lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt; be two normal-distributed variables, describing the
 processes we are observing:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;x&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
+&lt;i&gt;x&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
 &lt;/div&gt;
 &lt;p&gt;and&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;y&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
+&lt;i&gt;y&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
 &lt;/div&gt;
 &lt;p&gt;Let &lt;cite&gt;a&lt;/cite&gt; and &lt;cite&gt;b&lt;/cite&gt; be two observation variables, linear combinations of &lt;cite&gt;x&lt;/cite&gt;
 and &lt;cite&gt;y&lt;/cite&gt;:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;a&lt;/i&gt; = &lt;i&gt;x&lt;/i&gt; + &lt;i&gt;y&lt;/i&gt;
+&lt;i&gt;a&lt;/i&gt; = &lt;i&gt;x&lt;/i&gt; + &lt;i&gt;y&lt;/i&gt;
 &lt;/div&gt;
 &lt;p&gt;and&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;b&lt;/i&gt; = 2 &lt;i&gt;y&lt;/i&gt;
+&lt;i&gt;b&lt;/i&gt; = 2 &lt;i&gt;y&lt;/i&gt;
 &lt;/div&gt;
 &lt;p&gt;PCA is performed by applying an SVD (singular value decomposition) on the
 observed data matrix:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;Y&lt;/i&gt; = [&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...; &lt;i&gt;b&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...]
+&lt;i&gt;Y&lt;/i&gt; = [&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...; &lt;i&gt;b&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...]
 &lt;/div&gt;
 &lt;p&gt;This is equivalent to find the eigenvalues and eigenvectors of
-&lt;span class="formula"&gt;&lt;i&gt;Y&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/span&gt;, the correlation matrix of the observed data. The
+&lt;span class="formula"&gt;&lt;i&gt;Y&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/span&gt;, the correlation matrix of the observed data. The
 multidimensional (or multivariate, in statistical jargon) probability
 density function of Y is written:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ~ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;M&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
+&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ∼ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;M&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
 &lt;/div&gt;
 &lt;p&gt;where &lt;cite&gt;r&lt;/cite&gt; is the position is the &lt;cite&gt;(a,b)&lt;/cite&gt; observation space, and &lt;cite&gt;M&lt;/cite&gt; the
 correlation matrix. Diagonalizing the matrix &lt;cite&gt;M&lt;/cite&gt; corresponds to finding
 a rotation matrix &lt;cite&gt;U&lt;/cite&gt; such that:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ~ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;U&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;S&lt;/i&gt; &lt;i&gt;U&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
+&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ∼ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;U&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;S&lt;/i&gt; &lt;i&gt;U&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
 &lt;/div&gt;
 &lt;p&gt;With &lt;cite&gt;S&lt;/cite&gt; a diagonal matrix. In other words, &lt;cite&gt;U&lt;/cite&gt; is a rotation of the
 observation space to change to a basis where the probability density
 function is written:&lt;/p&gt;
 &lt;div class="formula"&gt;
-&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ~ &lt;i&gt;exp&lt;/i&gt;( − &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;⎲&lt;/span&gt;&lt;span class="limit"&gt;⎳&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;) = &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;∏&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;)
+&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ∼ &lt;i&gt;exp&lt;/i&gt;( − &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator"&gt;∑&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;) = &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator"&gt;∏&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;)
 &lt;/div&gt;
 &lt;p&gt;In this new basis, &lt;cite&gt;Y&lt;/cite&gt; can thus be interpreted as a sum of independent
 normal processes of different variance.&lt;/p&gt;
@@ -3034,7 +3034,7 @@ between a large number of tasks. Your process does not control completely
 the computer, and it has to ask for time to the operating system. The
 operating system shares time between different processes, but it also has
 some internal tasks to do (like allocating memory). All these
-operations may not perform in a predictable time-lapse &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[2]&lt;/a&gt;, and make it
+operations may not perform in a predictable time-lapse &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-1"&gt;[2]&lt;/a&gt;, and make it
 harder for a process to produce an event (eg a hardware output signal) at
 a precise instant.&lt;/p&gt;
 &lt;p&gt;One solution to avoid problems is to run the program with a single task
@@ -3051,7 +3051,7 @@ the performance one can expect.&lt;/p&gt;
 &lt;div class="section" id="real-time-clock-interrupt-latency"&gt;
 &lt;h2&gt;Real-time clock interrupt latency&lt;/h2&gt;
 &lt;p&gt;The right tool to control timing under linux is the “real time clock”
-&lt;a class="footnote-reference" href="#id6" id="id2"&gt;[3]&lt;/a&gt;. It can be used to generate interrupts at a given frequency or
+&lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-2"&gt;[3]&lt;/a&gt;. It can be used to generate interrupts at a given frequency or
 instant.&lt;/p&gt;
 &lt;p&gt;To quote Wikipedia: “in computing, an interrupt is an asynchronous signal
 from hardware indicating the need for attention or a synchronous event in
@@ -3067,7 +3067,7 @@ CPU, as it corresponds to the time needed for the OS to hand over control
 to the program.&lt;/p&gt;
 &lt;div class="section" id="the-experiment-and-the-results"&gt;
 &lt;h3&gt;The experiment and the results&lt;/h3&gt;
-&lt;p&gt;I used a test program to measure interrupt latency &lt;a class="footnote-reference" href="#id7" id="id3"&gt;[4]&lt;/a&gt; on linux. The test
+&lt;p&gt;I used a test program to measure interrupt latency &lt;a class="footnote-reference" href="#footnote-4" id="footnote-reference-3"&gt;[4]&lt;/a&gt; on linux. The test
 code first sets the highest scheduling priority it can, then asks to be
 waken up at a given frequency &lt;em&gt;f&lt;/em&gt; by the real-time clock. It checks the
 real-time clock to see if it was really waken-up when it asked for. It
@@ -3174,13 +3174,13 @@ histogram file.&lt;/p&gt;
 kernel actually schedules other tasks. I did not put tremendous stress
 on the CPU, as I want to simulate standard use cases. This is the way I
 did it:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="o"&gt;((&lt;/span&gt;  &lt;span class="nv"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt;  i &amp;lt;&lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;  i++  &lt;span class="o"&gt;))&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;((&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nv"&gt;i&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;i&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;i++&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;
 &lt;span class="k"&gt;do&lt;/span&gt;
-    ping -c &lt;span class="m"&gt;10&lt;/span&gt; www.google.com &lt;span class="p"&gt;&amp;amp;&lt;/span&gt;
-    dd &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/urandom &lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1M &lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;40&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; md5sum - &lt;span class="p"&gt;&amp;amp;&lt;/span&gt;
-    dd &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/zero &lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/tmp/foo &lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1M &lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;500&lt;/span&gt;
-    sync
-rm /tmp/foo
+&lt;span class="w"&gt;    &lt;/span&gt;ping&lt;span class="w"&gt; &lt;/span&gt;-c&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;10&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;www.google.com&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;dd&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/urandom&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1M&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;40&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;md5sum&lt;span class="w"&gt; &lt;/span&gt;-&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;dd&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/dev/zero&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/tmp/foo&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1M&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;500&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;sync
+rm&lt;span class="w"&gt; &lt;/span&gt;/tmp/foo
 &lt;span class="k"&gt;done&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Three tasks running in parallel: pinging google, calculation the md5 hash
@@ -3195,7 +3195,7 @@ first task finish before the last one. This is done on purpose.&lt;/p&gt;
 “stresstest.sh” script given be the &lt;a class="reference external" href="attachments/real_time_stress_test.zip"&gt;following archive&lt;/a&gt; . The plots can be obtained by
 running the “process.py” python scripts (requires scipy and matplotlib).
 You may have to increase the real-time clock frequency user limit. You
-can do this by running (as root) ” echo 1024 &amp;gt;
+can do this by running (as root) “ echo 1024 &amp;gt;
 /proc/sys/dev/rtc/max-user-freq”&lt;/p&gt;
 &lt;p&gt;Send me the results dir created by the “stresstest.sh” script on your
 box, I am very interested to gather more statistics.&lt;/p&gt;
@@ -3219,43 +3219,43 @@ would also like to thank David Cournapeau for pointing me to interesting
 references and to the Linux Audio Developer mailing list for more
 information.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td class="label"&gt;[1]&lt;/td&gt;&lt;td&gt;Wikipedia article on real-time computing:
 &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Real-time_computing"&gt;http://en.wikipedia.org/wiki/Real-time_computing&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A very clear article about fighting latency in the linux kernel:
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A very clear article about fighting latency in the linux kernel:
 &lt;a class="reference external" href="http://lac.zkm.de/2006/papers/lac2006_lee_revell.pdf"&gt;http://lac.zkm.de/2006/papers/lac2006_lee_revell.pdf&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;About the RTC: &lt;a class="reference external" href="http://www.die.net/doc/linux/man/man4/rtc.4.html"&gt;http://www.die.net/doc/linux/man/man4/rtc.4.html&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;About the RTC: &lt;a class="reference external" href="http://www.die.net/doc/linux/man/man4/rtc.4.html"&gt;http://www.die.net/doc/linux/man/man4/rtc.4.html&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-4" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;What this code is actually measuring is, in technical terms, the
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;What this code is actually measuring is, in technical terms, the
 interrupt latency, that is the time it takes for the kernel to catch
 the interrupt, and the rescheduling latency, that is the time it take
 for the kernel to reschedule from one process to another.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-5" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td class="label"&gt;[5]&lt;/td&gt;&lt;td&gt;A different benchmark, that probably studies more directly the
 intrinsic kernel limits than my code: &lt;a class="reference external" href="http://lwn.net/Articles/139403/"&gt;http://lwn.net/Articles/139403/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id9" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-6" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td class="label"&gt;[6]&lt;/td&gt;&lt;td&gt;Another benchmark, that also benchmarks the RT-preempt patch and
@@ -3263,7 +3263,7 @@ shows the impressive improvements achieved with this patch:
 &lt;a class="reference external" href="http://kerneltrap.org/node/5466"&gt;http://kerneltrap.org/node/5466&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id10" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-7" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td class="label"&gt;[7]&lt;/td&gt;&lt;td&gt;A course on real-time computing, with the lecture notes.

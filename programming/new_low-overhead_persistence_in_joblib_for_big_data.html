@@ -86,7 +86,7 @@ of usable data with compressed persistence:</p>
 </div>
 <p>❷ Another drawback was that large numpy arrays (&gt;10MB) contained in an
 arbitrary Python object were dumped in separate <tt class="docutils literal">.npy</tt> file, increasing
-the load on the file system <a class="footnote-reference" href="#id4" id="id1">[1]</a>:</p>
+the load on the file system <a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">[1]</a>:</p>
 <div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">joblib</span> <span class="c1"># joblib version: 0.9.4</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">obj</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">5000</span><span class="p">,</span> <span class="mi">5000</span><span class="p">)),</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">5000</span><span class="p">,</span> <span class="mi">5000</span><span class="p">))]</span>
@@ -155,7 +155,7 @@ with different libraries:</p>
 </ul>
 <img alt="" class="large" src="https://gael-varoquaux.info/programming/attachments/persistence_lfw_bench.png" />
 <p>The four first lines use non compressed persistence strategies, the last
-four use persistence with zlib/gzip <a class="footnote-reference" href="#id5" id="id2">[2]</a> strategies. Code to reproduce the
+four use persistence with zlib/gzip <a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">[2]</a> strategies. Code to reproduce the
 benchmarks is available on this <a class="reference external" href="https://gist.github.com/aabadie/2ba94d28d68f19f87eb8916a2238a97c">gist</a>.</p>
 <p>⚫ <strong>Speed</strong>: the results between joblib 0.9.4 and 0.10.0 (dev) are
 similar whereas <strong>numpy and pickle are clearly slower than joblib</strong> in both
@@ -278,7 +278,7 @@ storage such as Amazon S3, Amazon Glacier and Google Cloud Storage</strong>
 <div class="section" id="implementation">
 <h2>Implementation</h2>
 <p><strong>A Pickle Subclass</strong>: joblib relies on subclassing the Python Pickler/Unpickler
-<a class="footnote-reference" href="#id6" id="id3">[3]</a>. These are state machines that walk the graph of nested objects (a
+<a class="footnote-reference" href="#footnote-3" id="footnote-reference-3">[3]</a>. These are state machines that walk the graph of nested objects (a
 dict may contain a list, that may contain…), creating a string
 representation of each object encountered. The new implementation
 proceeds as follows:</p>
@@ -350,25 +350,25 @@ help, reviews and support.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<table class="docutils footnote" frame="void" id="id4" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-1" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>The load created by multiple files on the filesystem is
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[1]</a></td><td>The load created by multiple files on the filesystem is
 particularly detrimental for network filesystems, as it triggers
 multiple requests and isn’t cache friendly.</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id5" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-2" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>gzip is based on zlib with additional crc checks and a default
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-2">[2]</a></td><td>gzip is based on zlib with additional crc checks and a default
 compression level of 3.</td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id6" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-3" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td>A drawback of subclassing the Python Pickler/Unpickler is that it
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-3">[3]</a></td><td>A drawback of subclassing the Python Pickler/Unpickler is that it
 is done for the pure-Python version, and not the “cPickle” version.
 The latter is much faster when dealing with a large number of Python
 objects. Once again, joblib is efficient when most of the data is

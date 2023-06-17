@@ -16,11 +16,11 @@ rights to limit security risks.&lt;/p&gt;
 &lt;div class="section" id="the-start-of-my-adventure-with-mayavi"&gt;
 &lt;h2&gt;The start of my adventure with Mayavi&lt;/h2&gt;
 &lt;img alt="" class="align-right" src="attachments/mayavi/example_magnetic_field_lines.jpg" /&gt;
-&lt;p&gt;I got involved around 2007: I needed 3D visualization of magnetic fields as I was designing coils for my PhD &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;p&gt;I got involved around 2007: I needed 3D visualization of magnetic fields as I was designing coils for my PhD &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;This led to an example in the Mayavi docs &lt;a class="reference external" href="http://docs.enthought.com/mayavi/mayavi/auto/example_magnetic_field_lines.html"&gt;http://docs.enthought.com/mayavi/mayavi/auto/example_magnetic_field_lines.html&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;This led to an example in the Mayavi docs &lt;a class="reference external" href="http://docs.enthought.com/mayavi/mayavi/auto/example_magnetic_field_lines.html"&gt;http://docs.enthought.com/mayavi/mayavi/auto/example_magnetic_field_lines.html&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;I started as an early user of Mayavi2, a rewrite of Mayavi, and
@@ -122,14 +122,14 @@ across statistical and database topics.&lt;/p&gt;
 inferential statistics (because it can rely on more powerful model). For
 instance, we now have a good understanding of the case of missing values:
 in &lt;a class="reference external" href="https://arxiv.org/abs/2106.00311"&gt;Le Morvan et al&lt;/a&gt;, we showed that
-with traditional methods, ignorable missingness &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; and “good”
+with traditional methods, ignorable missingness &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt; and “good”
 imputation are important, but it turns out for prediction, flexible
 predictors are what matters and they can work on any missingness
 mechanism.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;“Missing at Random”, where missingness is independent of the
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;“Missing at Random”, where missingness is independent of the
 hidden values&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -232,12 +232,12 @@ sizeable fraction of their work time.&lt;/p&gt;
 &lt;h3&gt;Scikit-learn &amp;#64; Inria foundation&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Birth of a foundation&lt;/strong&gt;
 To ensure reliable funding to a small core of scikit-learn developers, we
-set up a foundation &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt; a few years ago. The goal was to make sure that
+set up a foundation &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt; a few years ago. The goal was to make sure that
 we did not lose our experienced developers.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;See &lt;a class="reference external" href="http://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html"&gt;the motivating announcement&lt;/a&gt; and the &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;website&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;See &lt;a class="reference external" href="http://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html"&gt;the motivating announcement&lt;/a&gt; and the &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;website&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;strong&gt;Achieving sustainability&lt;/strong&gt;
@@ -293,11 +293,11 @@ are competing for visibility with many powerful actors.&lt;/p&gt;
 a strong brand for scikit-learn. Good communication will help us find new
 sponsors, a key ingredient of growth and sustainability for scikit-learn.&lt;/p&gt;
 &lt;p&gt;We need to communicate on our progresses and our actions, as people are
-often surprised by the breadth of our contributions &lt;a class="footnote-reference" href="#id4" id="id3"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+often surprised by the breadth of our contributions &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;for instance, the foundation team has contributed &lt;a class="reference external" href="https://youtu.be/UVL4LFy8ch0?t=1437"&gt;improvements in
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;for instance, the foundation team has contributed &lt;a class="reference external" href="https://youtu.be/UVL4LFy8ch0?t=1437"&gt;improvements in
 CPython itself&lt;/a&gt; , maintains
 &lt;a class="reference external" href="https://github.com/cloudpipe/cloudpickle"&gt;cloudpickle&lt;/a&gt; a central
 component of the data ecosystem).&lt;/td&gt;&lt;/tr&gt;
@@ -357,10 +357,10 @@ simple rules.&lt;/p&gt;
 &lt;div class="contents topic" id="contents"&gt;
 &lt;p class="topic-title"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#maintainer-s-anxiety" id="id7"&gt;Maintainer’s anxiety&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#contributor-s-fatigue" id="id8"&gt;Contributor’s fatigue&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#communication-is-hard" id="id9"&gt;Communication is hard&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#little-things-that-help" id="id10"&gt;Little things that help&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#maintainer-s-anxiety" id="toc-entry-1"&gt;Maintainer’s anxiety&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#contributor-s-fatigue" id="toc-entry-2"&gt;Contributor’s fatigue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#communication-is-hard" id="toc-entry-3"&gt;Communication is hard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#little-things-that-help" id="toc-entry-4"&gt;Little things that help&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="line-block"&gt;
@@ -370,7 +370,7 @@ simple rules.&lt;/p&gt;
 different parties see the problem differently.&lt;/p&gt;
 &lt;!-- TODO: put a few things in bold --&gt;
 &lt;div class="section" id="maintainer-s-anxiety"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id7"&gt;Maintainer’s anxiety&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Maintainer’s anxiety&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="open-source-can-be-anxiety-generating-for-the-maintainers"&gt;
 &lt;h3&gt;Open source can be anxiety-generating for the maintainers&lt;/h3&gt;
 &lt;p&gt;Maintainers ensure the quality and the long-term life of an open-source
@@ -416,19 +416,19 @@ of open source.&lt;/p&gt;
 &lt;p&gt;A maintainer quickly learns that every piece of code, no matter how cute
 it might be, will give him or her work in the long run, &lt;a class="reference external" href="https://snarky.ca/setting-expectations-for-open-source-participation/#submittingacontribution"&gt;just like a puppy&lt;/a&gt;. This
 is unavoidable given that the complexity of code grows faster than its number of
-features &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt;, and, even for a company as rich as Google,
-project maintenance becomes intractable on huge projects &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+features &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;, and, even for a company as rich as Google,
+project maintenance becomes intractable on huge projects &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="side-hanging docutils container"&gt;
-&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://ieeexplore.ieee.org/document/1702600"&gt;An Experiment on Unit Increase in Problem Complexity, Woodfield 1979&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://ieeexplore.ieee.org/document/1702600"&gt;An Experiment on Unit Increase in Problem Complexity, Woodfield 1979&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;To quote tensorflow developers
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;To quote tensorflow developers
 &lt;a class="reference external" href="https://github.com/tensorflow/tensorflow/pull/33460"&gt;“Every [code addition] takes around 16 CPU/GPU
 hours of [quality control]. As such, we cannot just run every
 [code addition] through the [quality control] infrastructure.”&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
@@ -447,7 +447,7 @@ them on purpose.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="contributor-s-fatigue"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id8"&gt;Contributor’s fatigue&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Contributor’s fatigue&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;A new contributor starting a conversation with a group of seasoned
 project maintainers may easily &lt;strong&gt;feel an imposter&lt;/strong&gt;. The
 new contributor knows less about the project. In addition, he or she is engaging
@@ -498,7 +498,7 @@ documentation, via notes on the issue tracker.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="communication-is-hard"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id9"&gt;Communication is hard&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Communication is hard&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Communication is hard: messages are sometimes received differently than
 we would like. &lt;strong&gt;Overworked people discussing very technically
 challenging issues&lt;/strong&gt; only makes the matter worse. I have seen people not
@@ -548,13 +548,13 @@ of our bubble.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="little-things-that-help"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id10"&gt;Little things that help&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Communication can improved by continuously working on it &lt;a class="footnote-reference" href="#id6" id="id5"&gt;[3]&lt;/a&gt;.
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Little things that help&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Communication can improved by continuously working on it &lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;.
 It may be obvious to some, but it personally took me many years to learn.&lt;/p&gt;
-&lt;table class="side-hanging docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id5"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Training materials for managers often discuss communication, and
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Training materials for managers often discuss communication, and
 give tricks. I am sure that there are better references than my
 list below. But that’s the best I can do.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
@@ -746,10 +746,10 @@ consequence of this quality is that
 we were progressively used in more and more places: industrial
 data-science labs, startups, research in applied or fundamental
 statistical learning, teaching. Ironically, the institutional world did
-not notice. It got hard, next to impossible, to get funding &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt;. A few years
+not notice. It got hard, next to impossible, to get funding &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;. A few years
 ago, I was told by a central governmental agency that we, open-source
 zealots, were destroying an incredible amount of value by giving away
-for free the production of research &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt;. The French report on AI, lead by a
+for free the production of research &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;. The French report on AI, lead by a
 Fields medal, cited tensorflow and theano –a discontinued software–, but
 ignored scikit-learn; maybe because we were doing “boring science”?&lt;/p&gt;
 &lt;p&gt;But, scikit-learn’s amazing community continued plowing forward. We grew
@@ -790,18 +790,18 @@ by everybody. These projects are like &lt;a class="reference external" href="htt
 they are needed for growth thought no one wants to pay for maintaining
 them. I hope that I can use the podium that the prize will give us to
 stress the importance of the battle that we are fighting.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Getting funding from the government implied too much politics and
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Getting funding from the government implied too much politics and
 risks. For these reasons, I turned to private donors, in a
 &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/"&gt;foundation&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inria &lt;em&gt;always&lt;/em&gt; supported us, and often paid developers in my team
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Inria &lt;em&gt;always&lt;/em&gt; supported us, and often paid developers in my team
 out of its own pockets.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -811,13 +811,13 @@ science, it was announced during the ceremony that the &lt;a class="reference ex
 l’Académie des Sciences”&lt;/a&gt; is becoming open access, without publication
 charges!&lt;/p&gt;
 </content><category term="programming"></category><category term="scikit-learn"></category><category term="science"></category><category term="scientific computing"></category><category term="open source"></category><category term="software"></category></entry><entry><title>A foundation for scikit-learn at Inria</title><link href="https://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html" rel="alternate"></link><published>2018-09-17T00:00:00+02:00</published><updated>2018-09-17T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2018-09-17:/programming/a-foundation-for-scikit-learn-at-inria.html</id><summary type="html">&lt;p&gt;We have just announced that a foundation will be supporting scikit-learn
-at Inria &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;: &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;scikit-learn.fondation-inria.fr&lt;/a&gt;&lt;/p&gt;
+at Inria &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;: &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;scikit-learn.fondation-inria.fr&lt;/a&gt;&lt;/p&gt;
 &lt;div class="align-right docutils container"&gt;
 Growth and sustainability&lt;/div&gt;
 &lt;p&gt;This is an exciting turn for us, because it enables us to receive private
 funding. As a result, we will be able to have secure employment for some
 existing core …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We have just announced that a foundation will be supporting scikit-learn
-at Inria &lt;a class="footnote-reference" href="#id5" id="id1"&gt;[1]&lt;/a&gt;: &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;scikit-learn.fondation-inria.fr&lt;/a&gt;&lt;/p&gt;
+at Inria &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;: &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr"&gt;scikit-learn.fondation-inria.fr&lt;/a&gt;&lt;/p&gt;
 &lt;div class="align-right docutils container"&gt;
 Growth and sustainability&lt;/div&gt;
 &lt;p&gt;This is an exciting turn for us, because it enables us to receive private
@@ -847,7 +847,7 @@ to the library, such as improving the parallel computing engine, need
 long efforts. For many years, we have always had people with dedicated
 time to support the community. In France, we were going through hoops to
 find public money to found them. As someone who has done this effort, I
-can tell you that is a complicated one &lt;a class="footnote-reference" href="#id6" id="id2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+can tell you that is a complicated one &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The ability to receive money from sponsors will enable us to scale up our
 operations. I was initially worried that we would have difficulties
 finding partners that accepted to give us money without asking for
@@ -863,7 +863,7 @@ should not prime over interests of the user base.&lt;/p&gt;
 &lt;p&gt;We will make sure that the money that the foundation receives is invested
 for the interest of the community. We have a technical committee that
 supervises the activity of the foundation. Its decisions will be informed
-by the community &lt;a class="footnote-reference" href="#id7" id="id3"&gt;[3]&lt;/a&gt;. For this, we have an advisory board composed of
+by the community &lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;. For this, we have an advisory board composed of
 core contributors of scikit-learn. Beside the advisory board, the
 technical committee also comprises a delegate from each sponsor. I am
 excited about the input that our partners will provide us on
@@ -907,7 +907,7 @@ the foundation is embedded at Inria, leaving room for other initiatives.&lt;/p&g
 &lt;p&gt;The scope of our work is everything scikit-learn related. It is not the
 whole pydata or scipy ecosystem: it is focused on scikit-learn. But we
 will not hesitate contribute fixes and enhancements to neighboring
-projects, like in the past, even all the way up to core Python &lt;a class="footnote-reference" href="#id8" id="id4"&gt;[4]&lt;/a&gt;.&lt;/p&gt;
+projects, like in the past, even all the way up to core Python &lt;a class="footnote-reference" href="#footnote-4" id="footnote-reference-4"&gt;[4]&lt;/a&gt;.&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
 &lt;p&gt;I’m am very excited. A strong team of full-time contributors will allow
 us to do ambitious things with scikit-learn.&lt;/p&gt;
@@ -924,10 +924,10 @@ are launching this effort thank to you, and to empower you even more.&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I am quite proud that over the years, my group has employed
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I am quite proud that over the years, my group has employed
 &lt;a class="reference external" href="https://github.com/ogrisel"&gt;Olivier Grisel&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/jorisvandenbossche"&gt;Joris van den Bossche&lt;/a&gt; (working on pandas in
 addition to scikit-learn), &lt;a class="reference external" href="https://github.com/glemaitre"&gt;Guillaume Lemaître&lt;/a&gt; (working on imbalanced-learn in
 addition to scikit-learn), &lt;a class="reference external" href="https://github.com/jeremiedbb"&gt;Jérémie du Boisberranger&lt;/a&gt;,
@@ -942,24 +942,24 @@ of the constraints of research funding in France, public money
 forced my to hire them with short-term contracts.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Technically, it is a tax-deductible scikit-learn consortium inside
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Technically, it is a tax-deductible scikit-learn consortium inside
 the Inria foundation, which is an non-profit entity related to Inria.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Details on the goverance of the foundation can be found at
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Details on the goverance of the foundation can be found at
 &lt;a class="reference external" href="https://scikit-learn.fondation-inria.fr/en/mission-and-governance"&gt;https://scikit-learn.fondation-inria.fr/en/mission-and-governance&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-4" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;For instance Olivier and Tom have been making parallelism more
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;For instance Olivier and Tom have been making parallelism more
 robust in Python 3.7 (amongst various issues
 &lt;a class="reference external" href="https://bugs.python.org/issue33056"&gt;https://bugs.python.org/issue33056&lt;/a&gt; and
 &lt;a class="reference external" href="https://bugs.python.org/issue31699"&gt;https://bugs.python.org/issue31699&lt;/a&gt;). Olivier helped defining the
@@ -1105,7 +1105,7 @@ us to develop faster a better toolkit.&lt;/p&gt;
 &lt;p class="first sidebar-title"&gt;Women contributors&lt;/p&gt;
 &lt;p class="last"&gt;We deeply regret having only one woman in this long list of
 contributors. We care about diversity and welcome contributors from
-under-represented groups &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[*]&lt;/a&gt;.&lt;/p&gt;
+under-represented groups &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[*]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;In Paris&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="columns simple"&gt;
@@ -1164,10 +1164,10 @@ online testing&lt;/li&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Also thanks to Andy Mueller and Olivier Grisel for feedback on this blog post.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[*]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;We aspire to treat everybody excatly the same way. However,
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[*]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;We aspire to treat everybody excatly the same way. However,
 acknowledging the fact that there is currently a lack of diversity, we
 are happy to do some outreach and give extra help onboarding
 newcomers.&lt;/td&gt;&lt;/tr&gt;
@@ -1450,14 +1450,14 @@ data scientist, I want to talk about the factors created by data science.&lt;/p&
 recommend content is based on its popularity, on readership statistics.
 In no way is it based in the truthfulness of the content. As a
 result, Facebook, Twitter, Medium, and the like amplify rumors and
-sensational news, with no reality check &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+sensational news, with no reality check &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This is nothing new: clickbait and tabloids build upon it. However, social networking and
 active recommendation makes things significantly worst. Indeed, birds of
 a feather flock together, reinforcing their own biases. &lt;strong&gt;We receive
 filtered information&lt;/strong&gt;: have you noticed that every single argument you
 heard was overwhelmingly against (or in favor of) Brexit? To make matters
 even worse, our brain loves it: to resolve cognitive dissonance we avoid
-information that contradicts our biases &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+information that contradicts our biases &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="admonition align-right note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;We all believe more information when it confirms our biases&lt;/p&gt;
@@ -1538,17 +1538,17 @@ control them. --&gt;
 &lt;p class="align-right"&gt;In memory of &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Aaron_Swartz"&gt;Aaron Schwartz&lt;/a&gt;
 who fought centralized power on Internet.&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
-&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Facebook was until recently using human curators, &lt;a class="reference external" href="http://arstechnica.com/business/2016/08/facebook-fires-human-editors-algorithm-immediately-posts-fake-news/"&gt;but fired them,
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Facebook was until recently using human curators, &lt;a class="reference external" href="http://arstechnica.com/business/2016/08/facebook-fires-human-editors-algorithm-immediately-posts-fake-news/"&gt;but fired them,
 leading to a loss of control on veracity&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It is a well-known and well-studied cognitive bias that
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;It is a well-known and well-studied cognitive bias that
 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Cognitive_dissonance"&gt;individuals strive to reduce cognitive dissonace and actively avoid
 situations and information likely to increase it&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1586,7 +1586,7 @@ of usable data with compressed persistence:&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;❷ Another drawback was that large numpy arrays (&amp;gt;10MB) contained in an
 arbitrary Python object were dumped in separate &lt;tt class="docutils literal"&gt;.npy&lt;/tt&gt; file, increasing
-the load on the file system &lt;a class="footnote-reference" href="#id4" id="id1"&gt;[1]&lt;/a&gt;:&lt;/p&gt;
+the load on the file system &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;joblib&lt;/span&gt; &lt;span class="c1"&gt;# joblib version: 0.9.4&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;obj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ones&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;))]&lt;/span&gt;
@@ -1655,7 +1655,7 @@ with different libraries:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;img alt="" class="large" src="https://gael-varoquaux.info/programming/attachments/persistence_lfw_bench.png" /&gt;
 &lt;p&gt;The four first lines use non compressed persistence strategies, the last
-four use persistence with zlib/gzip &lt;a class="footnote-reference" href="#id5" id="id2"&gt;[2]&lt;/a&gt; strategies. Code to reproduce the
+four use persistence with zlib/gzip &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt; strategies. Code to reproduce the
 benchmarks is available on this &lt;a class="reference external" href="https://gist.github.com/aabadie/2ba94d28d68f19f87eb8916a2238a97c"&gt;gist&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;⚫ &lt;strong&gt;Speed&lt;/strong&gt;: the results between joblib 0.9.4 and 0.10.0 (dev) are
 similar whereas &lt;strong&gt;numpy and pickle are clearly slower than joblib&lt;/strong&gt; in both
@@ -1778,7 +1778,7 @@ storage such as Amazon S3, Amazon Glacier and Google Cloud Storage&lt;/strong&gt
 &lt;div class="section" id="implementation"&gt;
 &lt;h2&gt;Implementation&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;A Pickle Subclass&lt;/strong&gt;: joblib relies on subclassing the Python Pickler/Unpickler
-&lt;a class="footnote-reference" href="#id6" id="id3"&gt;[3]&lt;/a&gt;. These are state machines that walk the graph of nested objects (a
+&lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;. These are state machines that walk the graph of nested objects (a
 dict may contain a list, that may contain…), creating a string
 representation of each object encountered. The new implementation
 proceeds as follows:&lt;/p&gt;
@@ -1850,25 +1850,25 @@ help, reviews and support.&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The load created by multiple files on the filesystem is
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The load created by multiple files on the filesystem is
 particularly detrimental for network filesystems, as it triggers
 multiple requests and isn’t cache friendly.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;gzip is based on zlib with additional crc checks and a default
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;gzip is based on zlib with additional crc checks and a default
 compression level of 3.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A drawback of subclassing the Python Pickler/Unpickler is that it
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A drawback of subclassing the Python Pickler/Unpickler is that it
 is done for the pure-Python version, and not the “cPickle” version.
 The latter is much faster when dealing with a large number of Python
 objects. Once again, joblib is efficient when most of the data is
@@ -1973,11 +1973,11 @@ reproducibility. Data sharing requirements are becoming common –from
 funding agencies, or journals. However, privacy concerns, or confidential
 information get in the way of making data public, for instance in medical
 research or micro-economy. Often, these concerns serve as a pretext
-to people who actually do not want to relinquish &lt;em&gt;control&lt;/em&gt; &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+to people who actually do not want to relinquish &lt;em&gt;control&lt;/em&gt; &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A related post by Deevy Bishop: &lt;a class="reference external" href="http://deevybee.blogspot.co.uk/2015/11/whos-afraid-of-open-data.html?m=1"&gt;Who’s afraid of open data&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;A related post by Deevy Bishop: &lt;a class="reference external" href="http://deevybee.blogspot.co.uk/2015/11/whos-afraid-of-open-data.html?m=1"&gt;Who’s afraid of open data&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
@@ -1985,7 +1985,7 @@ to people who actually do not want to relinquish &lt;em&gt;control&lt;/em&gt; &l
 &lt;h3&gt;Incentives problem&lt;/h3&gt;
 &lt;p&gt;Fancy new results are what matters for success in academia. “High impact”
 journals such as Nature or Science accept papers that amaze and impress,
-often with subpar inspection of the materials and methods &lt;a class="footnote-reference" href="#id4" id="id3"&gt;[2]&lt;/a&gt;. The rate of
+often with subpar inspection of the materials and methods &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;. The rate of
 publication in many leading groups is incompatible with consolidation
 efforts required for strong reproducibility.&lt;/p&gt;
 &lt;p&gt;On the other hand, it is hard to tell beforehand if a new idea is a good
@@ -1995,10 +1995,10 @@ are: What are the best community rules for the advancement of knowledge?
 What do we want from the way science moves forward? Rapid publication of
 many incremental ideas, &lt;em&gt;eg&lt;/em&gt; at a conference, gives food for thoughts,
 possibly at the sake of reproducibility.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;“Science, Nature and Cell, had a higher rate of retractions” –
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;“Science, Nature and Cell, had a higher rate of retractions” –
 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Invalid_science"&gt;Wikipedia: Invalid science&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2025,13 +2025,13 @@ or new data. If these other tools live in a different virtual machine,
 the combination will be challenging.&lt;/p&gt;
 &lt;p&gt;In addition, people are using containers as an excuse to avoid tackling
 the need for proper documentation of requirements, and the process to set
-them up. They sometimes even try justify binary blobs &lt;a class="footnote-reference" href="#id6" id="id5"&gt;[3]&lt;/a&gt;. This is
+them up. They sometimes even try justify binary blobs &lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;. This is
 wrong. An analysis should be runnable without requiring the stars to
 align, and it should be understandable.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id5"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;See also Titus Brown’s post: &lt;a class="reference external" href="http://ivory.idyll.org/blog/2014-containers.html"&gt;The post-apocalyptic world of binary
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;See also Titus Brown’s post: &lt;a class="reference external" href="http://ivory.idyll.org/blog/2014-containers.html"&gt;The post-apocalyptic world of binary
 containers&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2589,7 +2589,7 @@ its feasibility. Common sense in software engineering says that
 is fragile. It’s untested, probably buggy for certain usage. Releasing
 prototypes amounts to distributing semi-functioning code. This is the
 case for most code accompanying a publication, and it is to be expected
-given the very nature of research: exploration and prototyping &lt;a class="footnote-reference" href="#id6" id="id3"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+given the very nature of research: exploration and prototyping &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
 &lt;!-- Quality scientific software require making choices --&gt;
 &lt;!-- Doing less, better --&gt;
 &lt;!-- Quality scientific software, only for a happy few --&gt;
@@ -2610,7 +2610,7 @@ tests. There exists plenty of more sophisticated machine-learning
 methods, including some that I have developed specifically for my data.
 Yet, I find myself advising my co-workers to use the methods in
 scikit-learn, because I know that the implementation is reliable and that
-they will be able to use them &lt;a class="footnote-reference" href="#id7" id="id4"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
+they will be able to use them &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This quality is indeed central to doing science with code. What good is a
 data analysis pipeline if it crashes when I fiddle with the data? How can
 I draw conclusions from simulations if I cannot change their parameters?
@@ -2642,7 +2642,7 @@ http://en.wikipedia.org/wiki/Jean-Pierre_Claris_de_Florian --&gt;
 &lt;/div&gt;
 &lt;p&gt;Achieving quality requires making choices. Not only because time
 is limited, but also because the difficulty to maintain and improve a
-codebase increases much quicker than the numbers of features &lt;a class="footnote-reference" href="#id8" id="id5"&gt;[3]&lt;/a&gt;. This
+codebase increases much quicker than the numbers of features &lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;. This
 phenomena is actually frightening to watch: adding a feature in
 scikit-learn these days is much much harder than what it used to be in
 the early days. Interactions between features is a killer: when you
@@ -2728,19 +2728,19 @@ above with Poldrack) --&gt;
 
 * don't publish method work on non open data (very restrictive, I have
   been criticized for working on 'old', 'uninteresting' data). --&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;To make my point very clear, releasing buggy untested code is not
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;To make my point very clear, releasing buggy untested code is not
 a good thing. However, it is not possible to ask for all research
 papers to come with industial-quality code. I am trying here to push
 for a collective, reasoned, undertaking of consolidation.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id4"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Theory tells us that there is there is no universal machine
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Theory tells us that there is there is no universal machine
 learning algorithm. Given a specific machine-learning application, it
 is always possible to devise a custom strategy that out-performs a
 generic one. However, &lt;a class="reference external" href="http://jmlr.org/papers/volume15/delgado14a/delgado14a.pdf"&gt;do we need hundreds of classifiers to solve
@@ -2751,10 +2751,10 @@ strategies. Is it desirable and sustainable to distribute and keep
 alive the code of every machine learning paper?&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id5"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Empirical studies on the workload for programmers to achieve a
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Empirical studies on the workload for programmers to achieve a
 given task showed that 25 percent increase in problem complexity results in
 a 100 percent increase in programming complexity: &lt;a class="reference external" href="http://ieeexplore.ieee.org/Xplore/login.jsp?url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel5%2F32%2F35909%2F01702600.pdf%3Farnumber%3D1702600&amp;amp;authDecision=-203"&gt;An Experiment on
 Unit increase in Problem Complexity, Woodfield 1979&lt;/a&gt;.&lt;/td&gt;&lt;/tr&gt;
@@ -6199,7 +6199,7 @@ decorating a function.&lt;/p&gt;
 mistake I had been doing, and it was partly due to the heavy use of a
 simplified pattern for decorating:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;with_print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
 &lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
 
     &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;my_func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -6269,7 +6269,7 @@ functools.wraps does the name unmangling.&lt;/p&gt;
 &lt;p&gt;Thus the following code produces a pickleable f:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;functools&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;wraps&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;with_print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
 &lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="nd"&gt;@wraps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;my_func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -6890,7 +6890,7 @@ your sys.path. These directories are ‘stat-ed’ one after the other on
 each module import. Thus if you have a long sys.path, there are a large
 amount of system calls to read directories. To check this out, simply
 try:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;strace python -c &lt;span class="s2"&gt;&amp;quot;import foobar&amp;quot;&lt;/span&gt; &lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; less
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;strace&lt;span class="w"&gt; &lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;-c&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;import foobar&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;less
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;You can see the amount of noise created by a simple (failing) import
 statement. On a system with high latency (such as an NFS, as we use at
@@ -6907,10 +6907,10 @@ unless you understand well what you are doing (which defeats the name
 easy_install).&lt;/p&gt;
 &lt;p&gt;The way I install packages when I want good control via easy_install is
 in a virtual environment to discovered the dependencies, and then:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;easy_install -Zeab . package_name
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;easy_install&lt;span class="w"&gt; &lt;/span&gt;-Zeab&lt;span class="w"&gt; &lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;package_name
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;to download the package for each required package, and&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python setup.py install --single-version-externally-managed --record ./foobar
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;setup.py&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;--single-version-externally-managed&lt;span class="w"&gt; &lt;/span&gt;--record&lt;span class="w"&gt; &lt;/span&gt;./foobar
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;if the package itself is using setuptools.&lt;/p&gt;
 &lt;p&gt;As you can see, setuptools make it really hard to do a clean install.
@@ -7326,7 +7326,7 @@ open Mayavi and enter the following code in the Python shell:&lt;/p&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;V&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; A 3D sinusoidal lattice with a parabolic confinement. &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; A 3D sinusoidal lattice with a parabolic confinement. &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mgrid&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contour3d&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;V&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -7403,7 +7403,7 @@ confinement is there to limit the excursions of the particle:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;V&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; A 3D sinusoidal lattice with a parabolic confinement. &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; A 3D sinusoidal lattice with a parabolic confinement. &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now that we have defined the potential, we would like to see what it
@@ -7452,7 +7452,7 @@ colorbar. We can do this by typing:&lt;/p&gt;
 need to derive the corresponding force, given by the gradient of the
 potential. We create a gradient function:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;gradient&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.01&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Return the gradient of f in (x, y, z). &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Return the gradient of f in (x, y, z). &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="n"&gt;fx&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="n"&gt;fx_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="n"&gt;fy&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -7480,7 +7480,7 @@ in the three direction, as well as a damping force. The damping
 coefficient and the amount and frequency of shaking have been tuned to
 give an interesting dynamic.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;flow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; The dynamical flow of the system &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; The dynamical flow of the system &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vz&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;
     &lt;span class="n"&gt;fx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fz&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;gradient&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;V&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;.2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;.2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;.2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vz&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fx&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fy&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fz&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;vz&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
@@ -7694,7 +7694,7 @@ day like I did):&lt;/p&gt;
 &lt;span class="n"&gt;engine&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;turbogears&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;view&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;engines&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;kid&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;render_static&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data_dict&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;template&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Render a given template + its data dictionnary to a static html.&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Render a given template + its data dictionnary to a static html.&lt;/span&gt;
 &lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="n"&gt;data_dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tg_css&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tg_util&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setlike&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
     &lt;span class="n"&gt;data_dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;tg_flash&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;False&lt;/span&gt;
@@ -7730,7 +7730,7 @@ output, compiling it to a pretty report in a pdf or an html file. It can
 display the output embedded in the code that produced it and can process
 special comments (literate comments) according to markup languages (
 &lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;rst&lt;/a&gt; or &lt;a class="reference external" href="http://www.latex-project.org/"&gt;LaTeX&lt;/a&gt; ) to compile a very readable document.&lt;/p&gt;
-&lt;p&gt;This allows for extensive literate progamming &lt;a class="footnote-reference" href="#id3" id="id1"&gt;[1]&lt;/a&gt; in python, for generating
+&lt;p&gt;This allows for extensive literate progamming &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt; in python, for generating
 reports out of calculations written in python, and for making nice
 tutorials.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;License&lt;/strong&gt; pyreport is free software released under a BSD-like
@@ -7746,20 +7746,20 @@ to take over development.&lt;/p&gt;
 &lt;div class="contents topic" id="contents"&gt;
 &lt;p class="topic-title"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#requirements" id="id5"&gt;Requirements&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#installing" id="id6"&gt;Installing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#examples-and-use-cases" id="id7"&gt;Examples and use cases&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#initial-goals" id="id8"&gt;Initial goals&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#other-possible-uses" id="id9"&gt;Other possible uses&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#examples" id="id10"&gt;Examples&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#limitations" id="id11"&gt;Limitations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#requirements" id="toc-entry-1"&gt;Requirements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#installing" id="toc-entry-2"&gt;Installing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#examples-and-use-cases" id="toc-entry-3"&gt;Examples and use cases&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#initial-goals" id="toc-entry-4"&gt;Initial goals&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#other-possible-uses" id="toc-entry-5"&gt;Other possible uses&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#examples" id="toc-entry-6"&gt;Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#limitations" id="toc-entry-7"&gt;Limitations&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#command-line-switches" id="id12"&gt;Command line switches&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#command-line-switches" id="toc-entry-8"&gt;Command line switches&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="requirements"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id5"&gt;Requirements&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Requirements&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;cite&gt;pyreport&lt;/cite&gt; is Python, and needs the Python interpreter to run. It should
 work on any operating system where Python and the other requirements are
 available.&lt;/p&gt;
@@ -7786,7 +7786,7 @@ needed.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="installing"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id6"&gt;Installing&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Installing&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The easiest way to install pyreport is using pip:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 pip install pyreport
@@ -7797,11 +7797,11 @@ pip install --user pyreport
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="section" id="examples-and-use-cases"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id7"&gt;Examples and use cases&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Examples and use cases&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="section" id="initial-goals"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id8"&gt;Initial goals&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Initial goals&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I use python to write small scripts that can do, for instance, numerical
-calculations, or simple operations &lt;a class="footnote-reference" href="#id4" id="id2"&gt;[2]&lt;/a&gt; and I want to have nice
+calculations, or simple operations &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt; and I want to have nice
 print-outs of these scripts to study off-screen or to hand out to
 colleagues. Having the code with its relevant output is great for code
 reviewing. This also allows something similar to mathematica’s notebook
@@ -7847,7 +7847,7 @@ print c
 &lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class="section" id="other-possible-uses"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id9"&gt;Other possible uses&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;Other possible uses&lt;/a&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Hidding the source code allows to generate nice reports from
@@ -7865,7 +7865,7 @@ version.&lt;/li&gt;
 &lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class="section" id="examples"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id10"&gt;Examples&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;Examples&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Here are two examples showing what you can do with &lt;cite&gt;pyreport&lt;/cite&gt; :&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
@@ -7884,7 +7884,7 @@ generated&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class="section" id="limitations"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id11"&gt;Limitations&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-7"&gt;Limitations&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The “sys” module is imported in your code, whether you want it or not. As
 a general rule, beware of the namespace when running your scripts with
 &lt;cite&gt;pyreport&lt;/cite&gt;, &lt;cite&gt;pyreport&lt;/cite&gt; injects a few variables in your namespace.&lt;/p&gt;
@@ -7898,7 +7898,7 @@ matplotlib. WXAgg has played me a few tricks.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="command-line-switches"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id12"&gt;Command line switches&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-8"&gt;Command line switches&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This is not as useful as a well written documentation, but it is better
 than nothing:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -7942,10 +7942,10 @@ options:
                         pass the arguments &amp;quot;ARGS&amp;quot; to the script
 &lt;/pre&gt;
 &lt;hr class="docutils" /&gt;
-&lt;table class="docutils footnote" frame="void" id="id3" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Literate_programming"&gt;literate programming&lt;/a&gt; is a programming style
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Literate_programming"&gt;literate programming&lt;/a&gt; is a programming style
 that embeds the documentation of a program in its source code. The
 documentation is generated in the same time that the program is
 built. I am using the term in a very loose way, as &lt;cite&gt;pyreport&lt;/cite&gt; is
@@ -7954,10 +7954,10 @@ the documentation, but also weaves the output of the script in the
 documentation.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://scipy.org/"&gt;scipy&lt;/a&gt;  provides a very powerful math package to python, and
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://scipy.org/"&gt;scipy&lt;/a&gt;  provides a very powerful math package to python, and
 &lt;a class="reference external" href="http://matplotlib.sourceforge.net/"&gt;matplotlib&lt;/a&gt; is a great plotting interface.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

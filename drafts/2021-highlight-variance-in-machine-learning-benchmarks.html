@@ -84,7 +84,7 @@ considered.</p>
 <div class="line"><br /></div>
 </div>
 <p>While most deep-learning benchmarks only study the influence of random
-initializations <a class="footnote-reference" href="#id2" id="id1">[1]</a>, the empirical study shows that <strong>the most important
+initializations <a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">[1]</a>, the empirical study shows that <strong>the most important
 sources of arbitrary variation in the benchmarks</strong> are:</p>
 <ol class="arabic simple">
 <li>The split between the train and the test set (or, in statistical terms,
@@ -103,10 +103,10 @@ uncertainty due the size of the test set.</p>
 by the sampling noise of the test set: as the test is of limited size, it
 can only characterize the quality of a prediction with a limited
 accuracy.</p>
-<table class="docutils footnote" frame="void" id="id2" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-1" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>There is a aweful trend of trying out a certain number of seeds
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[1]</a></td><td>There is a aweful trend of trying out a certain number of seeds
 and piking the best one. While such approach may select the best
 predictor for a given test set, it does not characterize well the
 learning procedure: the selected seed is still arbitrary and given new
@@ -152,12 +152,12 @@ procedure to account for the variance of benchmarks:</p>
 <li>repeat the experiment varying all sources of uncontroled variation
 (data split, random seeds…)</li>
 <li>compute the probability that one pipeline outperforms the other</li>
-<li>accept the improvement if that probability is above 0.75 <a class="footnote-reference" href="#id5" id="id4">[2]</a></li>
+<li>accept the improvement if that probability is above 0.75 <a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">[2]</a></li>
 </ol>
-<table class="docutils footnote" frame="void" id="id5" rules="none">
+<table class="docutils footnote" frame="void" id="footnote-2" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id4">[2]</a></td><td>Thresholding at 0.75 was chosen because on our case studies it
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-2">[2]</a></td><td>Thresholding at 0.75 was chosen because on our case studies it
 accepted improvements with effect sizes that turned out to be
 historically meaningful.</td></tr>
 </tbody>

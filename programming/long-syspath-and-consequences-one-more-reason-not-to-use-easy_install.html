@@ -68,7 +68,7 @@ your sys.path. These directories are ‘stat-ed’ one after the other on
 each module import. Thus if you have a long sys.path, there are a large
 amount of system calls to read directories. To check this out, simply
 try:</p>
-<div class="highlight"><pre><span></span>strace python -c <span class="s2">&quot;import foobar&quot;</span> <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> less
+<div class="highlight"><pre><span></span>strace<span class="w"> </span>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import foobar&quot;</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>less
 </pre></div>
 <p>You can see the amount of noise created by a simple (failing) import
 statement. On a system with high latency (such as an NFS, as we use at
@@ -85,10 +85,10 @@ unless you understand well what you are doing (which defeats the name
 easy_install).</p>
 <p>The way I install packages when I want good control via easy_install is
 in a virtual environment to discovered the dependencies, and then:</p>
-<div class="highlight"><pre><span></span>easy_install -Zeab . package_name
+<div class="highlight"><pre><span></span>easy_install<span class="w"> </span>-Zeab<span class="w"> </span>.<span class="w"> </span>package_name
 </pre></div>
 <p>to download the package for each required package, and</p>
-<div class="highlight"><pre><span></span>python setup.py install --single-version-externally-managed --record ./foobar
+<div class="highlight"><pre><span></span>python<span class="w"> </span>setup.py<span class="w"> </span>install<span class="w"> </span>--single-version-externally-managed<span class="w"> </span>--record<span class="w"> </span>./foobar
 </pre></div>
 <p>if the package itself is using setuptools.</p>
 <p>As you can see, setuptools make it really hard to do a clean install.
