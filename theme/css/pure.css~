@@ -143,7 +143,7 @@ div.main-title {
 }
 
 @media (max-width: 767px) {
-    div.main-title span.main-title-text, div.main-title span.main-subtitle {
+    div.main-title span.main-title, div.main-title span.main-subtitle {
 	display: none;
     }
 }
@@ -151,10 +151,10 @@ div.main-title {
 span.main-title {
     font-size: 125%;
     font-weight: bold;
+    padding-bottom: 1ex;
 }
 
 span.main-title-text {
-    padding-top: 1ex;
     display: inline-block;
 }
 
