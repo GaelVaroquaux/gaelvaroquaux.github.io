@@ -143,8 +143,12 @@ div.main-title {
 }
 
 @media (max-width: 767px) {
-    div.main-title span.main-title, div.main-title span.main-subtitle {
+    div.main-title span.main-title, div.main-title span.main-subtitle div.main-title br {
 	display: none;
+    }
+
+    div.main-title:hover:after {
+	display: none
     }
 }
 
@@ -1107,7 +1111,7 @@ p.small {
     font-size: large;
 }
 
-header.post-header h3 {
+section.post header.post-header h3 {
     font-size: 100%;
 }
 
