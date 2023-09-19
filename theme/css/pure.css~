@@ -153,11 +153,16 @@ span.main-title {
     font-weight: bold;
 }
 
+span.main-title-text {
+    padding-top: 1ex;
+    display: inline-block;
+}
+
 div.main-title a {
     color: #555;
-    padding: .5em;
     border-radius: 5px;
     transition-duration: .5s;
+    display: inline-block;
 }
 
 div.main-title a:hover {
@@ -180,6 +185,7 @@ div.main-title:hover:after{
     margin-bottom: -10px; 
     margin-left: 4px;
     position: relative;
+    bottom: 1.5ex;
 }
 
 @media (max-width: 1200px) {
@@ -1440,6 +1446,9 @@ iframe.feed {
     height: 400px;
 }
 
+div.indexhead {
+    padding-bottom: 1em;
+}
 
 @media (min-width: 1900px) {
     div.indexhead {
