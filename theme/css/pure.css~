@@ -1336,6 +1336,7 @@ div.three-cols h3{
 
     div.one_of_two {
 	width: 100%;
+	overflow-x: hidden;
     }
 
     div.two_of_two {
@@ -1433,6 +1434,10 @@ span.limits span.limit {
 
 iframe.latest-papers {
     height: 340px;
+}
+
+iframe.feed {
+    height: 400px;
 }
 
 
