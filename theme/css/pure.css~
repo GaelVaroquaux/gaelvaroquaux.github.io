@@ -147,12 +147,12 @@ div.main-title {
 	display: none;
     }
 
-    div.main-title:hover:after {
-	display: none
+    div.main-title: {
+	margin: 0px;
     }
 
-    div.main-title: {
-	margin: 0px
+    div.main-title:hover:after {
+	display: none !important;
     }
 }
 
