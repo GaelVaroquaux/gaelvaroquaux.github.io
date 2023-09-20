@@ -967,6 +967,12 @@ div.sidebar p.first {
     }
 }
 
+@media (min-width: 1560px) {
+    div.content {
+    margin-left: calc(2vw + 3em);
+    }
+}
+
 p.admonition-title {
     border-width : 0 0 1px 0 ;
     border-style: solid;
@@ -1467,6 +1473,7 @@ iframe.feed {
 
 div.indexhead {
     padding-bottom: 1em;
+    margin-bottom: 3vh;
 }
 
 @media (min-width: 1900px) {
