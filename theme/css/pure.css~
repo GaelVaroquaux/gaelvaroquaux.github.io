@@ -193,6 +193,10 @@ div.main-title:hover:after{
     bottom: 1.5ex;
 }
 
+div.min-title br {
+    margin-bottom: 1ex;
+}
+
 @media (max-width: 1200px) {
     div.main-title:hover:after{
 	content: "\2B95\0020 About me";
