@@ -1116,7 +1116,6 @@ p.small {
     max-height: 150px ;
     float: right ;
     display: none;
-    margin-bottom: 2vh;
 }
 
 .post-header img:first-of-type {
