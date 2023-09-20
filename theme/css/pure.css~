@@ -968,8 +968,8 @@ div.sidebar p.first {
 }
 
 @media (min-width: 1560px) {
-    div.content {
-    margin-left: calc(2vw + 3em);
+    div.layout div.content {
+	margin-left: calc(6vw - 1em);
     }
 }
 
@@ -1116,6 +1116,7 @@ p.small {
     max-height: 150px ;
     float: right ;
     display: none;
+    margin-bottom: 2vh;
 }
 
 .post-header img:first-of-type {
@@ -1132,6 +1133,7 @@ section.post header.post-header h3 {
 
 header.post-header {
     clear: both;
+    margin-bottom: 3vh;
 }
 
 
@@ -1495,7 +1497,7 @@ div.indexhead {
 	height: 39vh;
     }
 
-    iframe#twitter-widget-0 {
+    iframe.feed {
 	height: 38vh !important;
     }
 
@@ -1509,7 +1511,7 @@ div.indexhead {
 
     div.main-title {
 	margin-top: 25pt;
-	margin-bottom: 15pt;
+	margin-bottom: calc(10pt + 2vh);
     }
 }
 
