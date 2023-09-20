@@ -143,12 +143,16 @@ div.main-title {
 }
 
 @media (max-width: 767px) {
-    div.main-title span.main-title, div.main-title span.main-subtitle div.main-title br {
+    div.main-title span.main-title, div.main-title span.main-subtitle, div.main-title br {
 	display: none;
     }
 
     div.main-title:hover:after {
 	display: none
+    }
+
+    div.main-title: {
+	margin: 0px
     }
 }
 
