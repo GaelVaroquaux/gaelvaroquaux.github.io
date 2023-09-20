@@ -139,7 +139,8 @@ h1.brand-main {
 
 
 div.main-title {
-    margin: 8pt 0pt -17pt 2.5em;
+    margin: 8pt 0pt 0pt 2.5em;
+    margin: calc(4pt + 1vh) 0pt calc(2vh - 17pt) 2.5em;
 }
 
 @media (max-width: 767px) {
@@ -197,7 +198,7 @@ div.main-title:hover:after{
     bottom: 1.5ex;
 }
 
-div.min-title br {
+div.main-title br {
     margin-bottom: 1ex;
 }
 
