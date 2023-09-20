@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2023-01-31T00:00:00+01:00</updated><entry><title>2022, a new scientific adventure: machine learning for health and social sciences</title><link href="https://gael-varoquaux.info/science/2022-a-new-scientific-adventure-machine-learning-for-health-and-social-sciences.html" rel="alternate"></link><published>2023-01-31T00:00:00+01:00</published><updated>2023-01-31T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2023-01-31:/science/2022-a-new-scientific-adventure-machine-learning-for-health-and-social-sciences.html</id><summary type="html">&lt;p&gt;A retrospective on last year (2022): I embarked on a new scientific
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2023-09-20T00:00:00+02:00</updated><entry><title>Comité de l’intelligence artificielle: vision et stratégie nationale</title><link href="https://gael-varoquaux.info/science/comite-de-lintelligence-artificielle-vision-et-strategie-nationale.html" rel="alternate"></link><published>2023-09-20T00:00:00+02:00</published><updated>2023-09-20T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2023-09-20:/science/comite-de-lintelligence-artificielle-vision-et-strategie-nationale.html</id><summary type="html">&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;English summary&lt;/p&gt;
+&lt;p&gt;I have been appointed to the government-level panel of experts on AI,
+to set the national vision and strategy in France.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;J’ai l’honneur d’être &lt;a class="reference external" href="https://www.gouvernement.fr/communique/comite-de-lintelligence-artificielle"&gt;nomé par au comité de l’intelligence artificielle du gouvernement Français&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Notre mission est d’aider à éclairer l’action publique …&lt;/p&gt;</summary><content type="html">&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;English summary&lt;/p&gt;
+&lt;p&gt;I have been appointed to the government-level panel of experts on AI,
+to set the national vision and strategy in France.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;J’ai l’honneur d’être &lt;a class="reference external" href="https://www.gouvernement.fr/communique/comite-de-lintelligence-artificielle"&gt;nomé par au comité de l’intelligence artificielle du gouvernement Français&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Notre mission est d’aider à éclairer l’action publique autour de
+l’intelligence artificielle, qui peut impacter beaucoup d’aspects de la
+société.&lt;/p&gt;
+&lt;p&gt;Le comité comprend des experts de profils très variés, allant du
+jeune entrepreneur à l’économiste connu mondialement. La difficulté va être de considérer
+tous les liens entre progrès technologique et société. Nous allons
+chercher à dégager de la vision, écouter beaucoup d’experts sur différent
+sujet, appuyer nos projections sur l’état actuel des connaissances
+scientifiques.&lt;/p&gt;
+&lt;p&gt;Je ne partagerai pas les travaux du comité en avance de phase: il y aura
+un travail nécessaire d’établir du consensus, travail qui prend du temps.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Ce travail dépasse mon cadre habituel, celui de la recherche académique
+ou de la création de logiciel. Je fais cela parce que je crois que pour
+que la technologie ait le meilleur impact sur la société, il doit y avoir
+un va-et-vient entre la création technologique et les changements
+sociaux. Si nous, scientifiques, décidons de nous concentrer uniquement
+sur notre travail académique et technique, nous perdons le contrôle de la
+façon dont la société adopte notre technologie; nous laissons ce contrôle
+aux personnes qui décident d’utiliser leur énergie pour agir, influencer,
+profiter. En tant que chercheur en sciences informatiques, travaillant à
+la fois sur l’IA fondamentale et sur les applications dans le domaine de
+la santé, je dispose d’une expertise qu’il est important d’apporter à la
+table. En tant que fonctionnaire, je pense que je peux et que je dois
+éclairer le débat : je suis moins exposé au risque de conflits
+d’intérêts, je suis payé par l’argent public pour être utile au public.&lt;/p&gt;
+</content><category term="science"></category><category term="artificial intelligence"></category><category term="society"></category><category term="science"></category><category term="government"></category></entry><entry><title>2022, a new scientific adventure: machine learning for health and social sciences</title><link href="https://gael-varoquaux.info/science/2022-a-new-scientific-adventure-machine-learning-for-health-and-social-sciences.html" rel="alternate"></link><published>2023-01-31T00:00:00+01:00</published><updated>2023-01-31T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2023-01-31:/science/2022-a-new-scientific-adventure-machine-learning-for-health-and-social-sciences.html</id><summary type="html">&lt;p&gt;A retrospective on last year (2022): I embarked on a new scientific
 adventure, assembling &lt;a class="reference external" href="https://team.inria.fr/soda/"&gt;a team&lt;/a&gt; focused on
 developing machine learning for health and social science. The team has
 existed for almost a year, and the vision is nice shaping up. Let me
