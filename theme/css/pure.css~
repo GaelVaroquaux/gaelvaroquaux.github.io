@@ -1375,7 +1375,7 @@ div.three-cols h3{
 	display: none;
     }
 
-    iframe.latest-papers {
+    div.content iframe.latest-papers {
 	height: min(max(15ex, 40vh), 40ex);
     }
 }
