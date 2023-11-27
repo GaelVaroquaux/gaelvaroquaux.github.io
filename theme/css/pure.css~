@@ -793,6 +793,10 @@ div.content img.align-left {
     margin-left: 0%;
 }
 
+div.content table.noborder {
+    border: none;
+}
+
 div.align-right {
     float: right;
 }
@@ -1314,6 +1318,10 @@ iframe impact scholarometer_perentile {
 .light-gray a {
     color: #666;
     font-weight: 700;
+}
+
+.light-gray.not-bold a {
+    font-weight: 500;
 }
 
 .light {
