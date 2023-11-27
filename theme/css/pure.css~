@@ -793,7 +793,7 @@ div.content img.align-left {
     margin-left: 0%;
 }
 
-div.content table.noborder tbody {
+div.content table.noborder, div.content table.noborder tbody, div.content table.noborder tbody tr {
     border: none;
 }
 
