@@ -793,7 +793,7 @@ div.content img.align-left {
     margin-left: 0%;
 }
 
-div.content table.noborder, div.content table.noborder tbody, div.content table.noborder tbody tr {
+div.content table.noborder, div.content table.noborder tbody, div.content table.noborder tbody tr, div.content table.noborder tbody td  {
     border: none;
 }
 
@@ -1197,6 +1197,7 @@ ul.columns.simple:after {
 @media (min-width: 1750px) {
     table.footnote.side-hanging, div.content div.side-hanging {
 	width: 20em;
+	right: 2ex;
     }
 
 }
@@ -1204,6 +1205,7 @@ ul.columns.simple:after {
 @media (min-width: 1850px) {
     table.footnote.side-hanging, div.content div.side-hanging {
 	width: 25em;
+	right: calc(40vw - 80ex);
     }
 
 }
