@@ -863,6 +863,9 @@ div.note.align-right, div.container.align-right {
     font-size: larger ;
 }
 
+div.note.align-right, div.container.align-right {
+    max-width: 50%;
+}
 div.note.align-right p.first.admonition-title {
     display: none;
 }
@@ -1205,7 +1208,7 @@ ul.columns.simple:after {
 @media (min-width: 1850px) {
     table.footnote.side-hanging, div.content div.side-hanging {
 	width: 25em;
-	right: calc(40vw - 80ex);
+	right: calc(41vw - 90ex);
     }
 
 }
