@@ -1,5 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - programming</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2023-11-27T00:00:00+01:00</updated><entry><title>People underestimate how impactful Scikit-learn continues to be</title><link href="https://gael-varoquaux.info/programming/people-underestimate-how-impactful-scikit-learn-continues-to-be.html" rel="alternate"></link><published>2023-11-27T00:00:00+01:00</published><updated>2023-11-27T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2023-11-27:/programming/people-underestimate-how-impactful-scikit-learn-continues-to-be.html</id><summary type="html">&lt;div class="admonition note"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - programming</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-06-09T00:00:00+02:00</updated><entry><title>Promoting open-source, from inria to :probabl.</title><link href="https://gael-varoquaux.info/programming/promoting-open-source-from-inria-to-probabl.html" rel="alternate"></link><published>2024-06-09T00:00:00+02:00</published><updated>2024-06-09T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-06-09:/programming/promoting-open-source-from-inria-to-probabl.html</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;img alt="" class="align-right" src="../programming/attachments/scikit-learn_at_probabl.png" style="width: 300px;" /&gt;
+&lt;p class="last"&gt;Open-source efforts around scikit-learn at Inria are spinning off to a
+new enterprise, &lt;a class="reference external" href="https://probabl.ai"&gt;Probabl&lt;/a&gt;, in charge of
+sustainable development of a data-science commons.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="contents topic" id="contents"&gt;
+&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#prelude-funding-scikit-learn-is-hard" id="toc-entry-1"&gt;Prelude: funding scikit-learn is hard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-birth-of-a-new-ambition" id="toc-entry-2"&gt;The birth of a new ambition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#probabl-a-mission-driven-enterprise" id="toc-entry-3"&gt;Probabl, a mission-driven enterprise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#probabl-is-already-having-an-impact" id="toc-entry-4"&gt;Probabl is already having an impact&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#my-position-within-probabl-my-vested-interests" id="toc-entry-5"&gt;My position within Probabl …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;img alt="" class="align-right" src="../programming/attachments/scikit-learn_at_probabl.png" style="width: 300px;" /&gt;
+&lt;p class="last"&gt;Open-source efforts around scikit-learn at Inria are spinning off to a
+new enterprise, &lt;a class="reference external" href="https://probabl.ai"&gt;Probabl&lt;/a&gt;, in charge of
+sustainable development of a data-science commons.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="contents topic" id="contents"&gt;
+&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#prelude-funding-scikit-learn-is-hard" id="toc-entry-1"&gt;Prelude: funding scikit-learn is hard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-birth-of-a-new-ambition" id="toc-entry-2"&gt;The birth of a new ambition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#probabl-a-mission-driven-enterprise" id="toc-entry-3"&gt;Probabl, a mission-driven enterprise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#probabl-is-already-having-an-impact" id="toc-entry-4"&gt;Probabl is already having an impact&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#my-position-within-probabl-my-vested-interests" id="toc-entry-5"&gt;My position within Probabl, my vested interests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#more-to-come" id="toc-entry-6"&gt;More to come&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="prelude-funding-scikit-learn-is-hard"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Prelude: funding scikit-learn is hard&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Scikit-learn is a &lt;a class="reference external" href="../programming/people-underestimate-how-impactful-scikit-learn-continues-to-be.html"&gt;central software component in today’s machine learning
+landscape&lt;/a&gt;,
+and it is open source, governed by a community, easy to install, and well
+documented. It started many years ago as a project that we did on the
+side, and we were joined by many volunteers, which was key to the success
+of the project. We soon decided to ensure that scikit-learn was not
+&lt;em&gt;only&lt;/em&gt; a volunteer-based effort. Over more than a decade, I’ve dedicated
+a lot of energy to this, using a variety of funding mechanisms: first
+grants (as an academic), then sponsoring and related contracts with
+various actors.&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+&lt;em&gt;Digital commons eliminate scarcity and exclusivity&lt;/em&gt;&lt;/div&gt;
+&lt;p&gt;Funding digital commons is really hard. People build fortunes by
+leveraging competitive advantages, by creating lock-ins, or selling
+access to data. What makes a great open-source library, as scikit-learn,
+is exactly what prevents these tricks: we are committed to being
+independent, easy to use and install, lightweight…&lt;/p&gt;
+&lt;img src="../programming/attachments/probabl_rocket.svg" class="align-right" width="150px"&gt;&lt;/div&gt;
+&lt;div class="section" id="the-birth-of-a-new-ambition"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;The birth of a new ambition&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Scikit-learn is very successful, but it could be more. For instance, it
+does not facilitate pushing to production as much as tensorflow, which
+can be served, deployed to android… And scikit-learn is not very
+visible to top decision makers: it’s not a line on their budget, a brand
+that they know. As a consequence, it is not reaping the benefit of its
+success &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Many commercial tools are sitting on top of open source software
+like scikit-learn (splunk, sagemaker, to name only a few), making
+profits, and not helping in any way the open source world that they
+build upon.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="align-right docutils container"&gt;
+&lt;em&gt;The French government is backing us to push the envelope&lt;/em&gt;&lt;/div&gt;
+&lt;p&gt;3 years ago, the French government challenged us to go further, to consolidate
+the ecosystem into a consistent data-science commons. The strategic
+interest of France is to preserve some technological autonomy on data, eg
+sensitive data. Thus, the government offered us, at Inria, a funding
+opportunity to go further.&lt;/p&gt;
+&lt;p&gt;They promised us a lot of money (dozens of millions of Euros), but with a
+specific mission to develop a sustainable “data-science commons” &lt;a class="footnote-reference" href="#footnote-2" id="footnote-reference-2"&gt;[2]&lt;/a&gt;
+ecosystem around scikit-learn. I’ll spare you the details of the amount
+of meetings we had, documents that we wrote, to sketch the outline of the
+project. I pushed forward a vision of technical components that fit in
+the broader open-source ecosystem, complementing it.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The letter that we received from the French government
+specifically defines the objective in these words: “data-science
+common” (“Communs numériques pour la Science des Données”)&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As I moved forward, I faced a difficulty: the French government wanted a
+&lt;strong&gt;sustainability plan&lt;/strong&gt;, and private investment to back it. To be honest,
+this is not what I’m good at. François Goupil, the COO of the
+scikit-learn consortium, was helping me, but we needed more for our
+ambitions. And this is when we started talking to &lt;a class="reference external" href="https://www.linkedin.com/in/ylechelle/"&gt;Yann Lechelle&lt;/a&gt;, a tech entrepreneur with an
+impressive track record interested in the impact of France on the global
+tech world.&lt;/p&gt;
+&lt;img alt="" class="align-right" src="../programming/attachments/probabl_logo.jpeg" style="width: 100px;" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="probabl-a-mission-driven-enterprise"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Probabl, a mission-driven enterprise&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;With Yann, we built a new vision. Our challenge is to be long-term
+sustainable and virtuous for scikit-learn, its broader ecosystem, and its
+community. Yann brought in a business point of view, and I tried to bring
+that of open-source communities beyond probabl &lt;a class="footnote-reference" href="#footnote-3" id="footnote-reference-3"&gt;[3]&lt;/a&gt;, for instance
+avoiding to getting in the way of others building businesses that
+contribute to scikit-learn. Indeed, we are convinced that having a broad
+and diverse community around scikit-learn is central to its future.&lt;/p&gt;
+&lt;table class="side-hanging docutils footnote" frame="void" id="footnote-3" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;One of the first things that Probabl did (Guillaume Lemaître, to
+be specific), was submit a grant application (to the Chang-Zuckenberg
+Institute), to fund, via NumFocus, a developer employed by
+QuantSight, with no money transiting via Probabl (one reason being
+that we have no operations outside of Europe so far).&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Our sustainability model is still being finetuned. What I can tell is
+that it will involve a mix of professional service, support &amp;amp; sponsorship
+agreement, as well as a product-based offer, where we supplement
+scikit-learn with enterprise features. Our focus will be on features that
+are typically not the focus of open-source developers: integration in
+large structures, such as access control, LDAP connection, regulatory
+compliance. We will not shoehorn scikit-learn in open core or dual
+licensing approaches: we want our incentives to be aligned with
+scikit-learn, and its ecosystem, being as complete as possible.&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+Foster growth and adoption of our open-source stack&lt;/div&gt;
+&lt;p&gt;In a sense, our inspiration is that of RedHat, where the growth of the
+company fosters the growth and adoption of the software (Linux in the case
+of RedHat), beyond the company, in an ecosystem, and for a wide variety
+of applications.&lt;/p&gt;
+&lt;p&gt;Strong growth will mean external capital. To ensure that we do not lose
+the focus on our mission, building data-science commons, Yann penciled
+down a specific governance of the company (and then validated it with
+many people, as we are a spin-off from a governmental organization). The
+ultimate share structure, and the board, are divided in three electoral
+colleges: one for outside investors, one for founders and employees, and
+one for public institutions. This ensures a balance of power that
+hopefully will keep us aligned to our mission. I think that this
+structure sends a strong signal that we are not just another for-profit
+that will go from creating useful tech to dark money-generating patterns.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="probabl-is-already-having-an-impact"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Probabl is already having an impact&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;A strong open-source team&lt;/strong&gt; In February, the whole team developing
+scikit-learn at Inria moved to Probabl, joined by Adrin Jalali, a
+Berlin-based core developer of scikit-learn and fairlearn. We’ve been
+hiring excellent people, and we now have &lt;strong&gt;9 people on open-source&lt;/strong&gt; (see
+the &lt;a class="reference external" href="https://probabl.ai/about"&gt;Probabl team&lt;/a&gt;), spending their time
+contributing to open source (Jérémie, for instance, has been doing the
+last releases for scikit-learn).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fostering an ecosystem&lt;/strong&gt; Probabl is not only about scikit-learn. We are
+prioritizing &lt;a class="reference external" href="https://probabl.ai/open-source"&gt;8 libraries&lt;/a&gt;, central to
+the machine-learning and data science ecosystem: joblib, fairlearn,
+imbalanced-learn… In general, as we have always done, we will not
+hesitate contributing to upstream or related projects. Our goal is to
+have a healthy open-source ecosystem around data-science.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Not only software&lt;/strong&gt; Not everybody sees the important lines of code.
+I’ve become increasingly aware of the need to do outreach and
+communication, to coders, but also to decision makers. At Probabl we
+dedicate energy to be in business meetings, to participate in the tech
+narrative, to teach how to best do data science, &lt;em&gt;eg&lt;/em&gt; with didactic
+videos. We’re starting a mentioning program, we’ll be organizing
+sprints… I am convinced that all this is a useful long-term investment.&lt;/p&gt;
+&lt;img alt="" class="align-center" src="../programming/attachments/probabl_robot_dog.jpeg" style="width: 360px;" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="my-position-within-probabl-my-vested-interests"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;My position within Probabl, my vested interests&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I am a French civil servant (a researcher at Inria, one of our national
+research institute). Such a position comes with strong responsibilities
+to control conflicts of interest. The creation of Probabl underwent
+strict scrutiny (that took a long long time). I have been recently
+cleared to take an active role: 10% of my time is allocated to be a
+&lt;strong&gt;scientific and open-source advisor for Probabl&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I am not paid by Probabl&lt;/strong&gt;. 100% of my salary comes from Inria (and I was
+not given a raise because of my involvement in Probabl). I do have financial
+interests as a founder, but given that I have a small active part, I have
+one of the smallest amount of shares among founders.&lt;/p&gt;
+&lt;p&gt;My main interest in Probabl is really the success of its mission: the
+long-term growth of an open-source data-science ecosystem. Spinning-off
+from Inria actually continues my efforts in this direction, but with more
+agility and breadth. And having on top of open source a variety of
+complementary commercial activities makes it stronger, by answering
+better the needs of some actors.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="more-to-come"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;More to come&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There are many things that we are still ironing. Clearing out
+specific details takes time (for instance, clearing my role took a
+while). We are still to announce the future of the sponsorship program
+that we had set up at the Inria foundation. Its mission has been
+transferred to Probabl. Currently, Probabl’s open
+source team is ensuring continuity of our work with the existing sponsors.
+But we will set up broader
+partnership opportunities, with a similar governance, that enable
+third-parties to invest in open source on a roadmap decided jointly with
+the open-source community.&lt;/p&gt;
+&lt;p&gt;I believe that we need a lot of &lt;strong&gt;transparency&lt;/strong&gt; in how we decide upon priorities
+in our open source team. Our 2024 priorities for scikit-learn are visible
+&lt;a class="reference external" href="https://papers.probabl.ai/scikit-learns-priorities-at-probabl"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I look forward to when Probabl will start adding value to scikit-learn
+for enterprises with an offer enriching scikit-learn and the broader
+open-source ecosystem.&lt;/p&gt;
+&lt;p&gt;I am acutely aware that good &lt;strong&gt;open source is made of communities&lt;/strong&gt;, and that
+communities need trust and understanding of big players such as Probabl
+(well, so far we are not that big). I hope that with time our actions
+will become easy to read and speak of themselves.&lt;/p&gt;
+&lt;img src="../programming/attachments/probabl_machine_heart.svg" class="align-center" width="400px"&gt;&lt;/div&gt;
+</content><category term="programming"></category><category term="open source"></category><category term="growth"></category><category term="communities"></category><category term="scikit-learn"></category><category term="inria"></category><category term="probabl"></category></entry><entry><title>People underestimate how impactful Scikit-learn continues to be</title><link href="https://gael-varoquaux.info/programming/people-underestimate-how-impactful-scikit-learn-continues-to-be.html" rel="alternate"></link><published>2023-11-27T00:00:00+01:00</published><updated>2023-11-27T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2023-11-27:/programming/people-underestimate-how-impactful-scikit-learn-continues-to-be.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;François Chollet rightfully said that people often underestimate the
 impact of scikit-learn. I give here a few illustrations to back his
