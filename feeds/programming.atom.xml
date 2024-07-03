@@ -1,5 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - programming</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-06-09T00:00:00+02:00</updated><entry><title>Promoting open-source, from inria to :probabl.</title><link href="https://gael-varoquaux.info/programming/promoting-open-source-from-inria-to-probabl.html" rel="alternate"></link><published>2024-06-09T00:00:00+02:00</published><updated>2024-06-09T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-06-09:/programming/promoting-open-source-from-inria-to-probabl.html</id><summary type="html">&lt;div class="admonition note"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - programming</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-07-03T00:00:00+02:00</updated><entry><title>Skrub 0.2.0: tabular learning made easy</title><link href="https://gael-varoquaux.info/programming/skrub-020-tabular-learning-made-easy.html" rel="alternate"></link><published>2024-07-03T00:00:00+02:00</published><updated>2024-07-03T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-03:/programming/skrub-020-tabular-learning-made-easy.html</id><summary type="html">&lt;img alt="" class="align-center" src="attachments/skrub_schematic.png" style="width: 500px;" /&gt;
+&lt;p&gt;We just released &lt;a class="reference external" href="https://skrub-data.org"&gt;skrub 0.2.0&lt;/a&gt;. This release
+markedly simplifies learning on complex dataframes.&lt;/p&gt;
+&lt;div class="section" id="model-tabular-learner-classifier"&gt;
+&lt;h2&gt;&lt;cite&gt;model = tabular_learner(‘classifier’)&lt;/cite&gt;&lt;/h2&gt;
+&lt;div class="align-right docutils container"&gt;
+Simple, yet solid default baseline&lt;/div&gt;
+&lt;p&gt;The highlight of the release is the &lt;a class="reference external" href="https://skrub-data.org/stable/generated/skrub.tabular_learner.html"&gt;tabular_learner&lt;/a&gt;
+function, which facilitates creating pipelines that readily perform
+machine learning on dataframes, adding preprocessing to a scikit-learn
+compatible learner …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;img alt="" class="align-center" src="attachments/skrub_schematic.png" style="width: 500px;" /&gt;
+&lt;p&gt;We just released &lt;a class="reference external" href="https://skrub-data.org"&gt;skrub 0.2.0&lt;/a&gt;. This release
+markedly simplifies learning on complex dataframes.&lt;/p&gt;
+&lt;div class="section" id="model-tabular-learner-classifier"&gt;
+&lt;h2&gt;&lt;cite&gt;model = tabular_learner(‘classifier’)&lt;/cite&gt;&lt;/h2&gt;
+&lt;div class="align-right docutils container"&gt;
+Simple, yet solid default baseline&lt;/div&gt;
+&lt;p&gt;The highlight of the release is the &lt;a class="reference external" href="https://skrub-data.org/stable/generated/skrub.tabular_learner.html"&gt;tabular_learner&lt;/a&gt;
+function, which facilitates creating pipelines that readily perform
+machine learning on dataframes, adding preprocessing to a scikit-learn
+compatible learner. The function packs defaults and heuristics
+to transform all forms of dataframes to a representation that is well
+suited to a learner, and it can adapt these transformation:
+&lt;cite&gt;tabular_learner(HistGradientBoostingClassifier())&lt;/cite&gt; encodes categories
+differently than &lt;cite&gt;tabular_learner(LogisticRegression())&lt;/cite&gt;.&lt;/p&gt;
+&lt;p&gt;The heuristics are tuned based on much benchmarking and experience shows
+that they give good tradeoffs. The default
+&lt;cite&gt;tabular_learner(‘classifier’)&lt;/cite&gt; is often a strong baseline.&lt;/p&gt;
+&lt;p&gt;The benefit are visible in a really simple example:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;gt;&amp;gt;&amp;gt; # First retrieve data
+&amp;gt;&amp;gt;&amp;gt; from skrub.datasets import fetch_employee_salaries
+&amp;gt;&amp;gt;&amp;gt; dataset = fetch_employee_salaries()
+&amp;gt;&amp;gt;&amp;gt; df = dataset.X
+&amp;gt;&amp;gt;&amp;gt; y = dataset.y
+&amp;gt;&amp;gt;&amp;gt; # The dataframe is a quite rich and complex dataframe, with various columns
+&amp;gt;&amp;gt;&amp;gt; df
+&lt;/pre&gt;
+&lt;img alt="" src="attachments/employee_salaries_df.png" /&gt;
+&lt;p&gt;We can then easily build a learner that applies readily to this
+dataframe, without any transformation:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;gt;&amp;gt;&amp;gt; from skrub import tabular_learner
+&amp;gt;&amp;gt;&amp;gt; learner = tabular_learner('regressor')
+&amp;gt;&amp;gt;&amp;gt; # The resulting learner can apply all the machine-learning conveniences (eg cross-validation) directly on the dataframe
+&amp;gt;&amp;gt;&amp;gt; from sklearn.model_selection import cross_val_score
+&amp;gt;&amp;gt;&amp;gt; cross_val_score(learner, df, y)
+array([0.89370447, 0.89279068, 0.92282557, 0.92319094, 0.92162666])
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="transformer-tablevectorizer"&gt;
+&lt;h2&gt;&lt;cite&gt;transformer = TableVectorizer()&lt;/cite&gt;&lt;/h2&gt;
+&lt;div class="align-right docutils container"&gt;
+Making encoding complex dataframes easy&lt;/div&gt;
+&lt;p&gt;Behind the hood, the work is done by the &lt;a class="reference external" href="https://skrub-data.org/stable/generated/skrub.TableVectorizer.html"&gt;skrub.TableVectorizer()&lt;/a&gt;, a
+scikit-learn compatible transformer that facilitates combining multiple
+transformations on the different columns of a dataframe. The
+TableVectorizer is not new in the 0.2.0 release, but we have completely
+revamped its internals to cover really well edge cases. Indeed, one
+challenge is to make sure that nothing different or strange happens at
+test time. Actually, enforcing consistency between train-time and
+test-time transformation is the real value of skrub compared to using
+pandas or polars to do transformation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="increasing-support-of-polars"&gt;
+&lt;h2&gt;Increasing support of polars&lt;/h2&gt;
+&lt;div class="align-right docutils container"&gt;
+Short-term goal of optimized support for pandas and polars&lt;/div&gt;
+&lt;p&gt;We have implemented a new mechanism for supporting both pandas and
+polars. It has not been applied on all the codebase, hence the support is
+still imperfect. However, we are seeing increasing support for polars in
+skrub, and our goal in the short term is to provide rock-solid polar
+support.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;img alt="" class="align-right" src="attachments/skrub_logo.png" style="width: 200px;" /&gt;
+&lt;p&gt;Try skrub out! It’s still young, but in mind opinion, it provides a lot
+of value to tabular learning.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="programming"></category><category term="skrub"></category><category term="scikit-learn"></category><category term="tabular"></category><category term="machine learning"></category><category term="open source"></category><category term="software"></category></entry><entry><title>Promoting open-source, from inria to :probabl.</title><link href="https://gael-varoquaux.info/programming/promoting-open-source-from-inria-to-probabl.html" rel="alternate"></link><published>2024-06-09T00:00:00+02:00</published><updated>2024-06-09T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-06-09:/programming/promoting-open-source-from-inria-to-probabl.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;img alt="" class="align-right" src="../programming/attachments/scikit-learn_at_probabl.png" style="width: 300px;" /&gt;
 &lt;p class="last"&gt;Open-source efforts around scikit-learn at Inria are spinning off to a
@@ -7962,19 +8042,4 @@ paramount and takes a lot of time… And we need coding.&lt;/p&gt;
 &lt;a class="reference external image-reference" href="attachments/s_p10105732-225x300.jpg"&gt;&lt;img alt="" src="attachments/s_p10105732-225x300.jpg" /&gt;&lt;/a&gt;
 &lt;a class="reference external image-reference" href="attachments/s_p10105831.jpg"&gt;&lt;img alt="" src="attachments/s_p10105831.jpg" /&gt;&lt;/a&gt;
 &lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="scipy"></category><category term="mayavi"></category><category term="personnal"></category><category term="scientific computing"></category><category term="travels"></category></entry><entry><title>SciPy Conference proceedings</title><link href="https://gael-varoquaux.info/programming/scipy-conference-proceedings.html" rel="alternate"></link><published>2008-09-22T14:54:00+02:00</published><updated>2008-09-22T14:54:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-09-22:/programming/scipy-conference-proceedings.html</id><summary type="html">&lt;p&gt;The SciPy conference proceedings are finally available online:
-&lt;a class="reference external" href="http://conference.scipy.org/proceedings/SciPy2008"&gt;http://conference.scipy.org/proceedings/SciPy2008&lt;/a&gt; .&lt;/p&gt;
-&lt;p&gt;I hope you enjoy them. I find it great to have this set of excellent
-articles talking about works done with, or for, Python in science. For
-me, it is a reference to remember what was …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The SciPy conference proceedings are finally available online:
-&lt;a class="reference external" href="http://conference.scipy.org/proceedings/SciPy2008"&gt;http://conference.scipy.org/proceedings/SciPy2008&lt;/a&gt; .&lt;/p&gt;
-&lt;p&gt;I hope you enjoy them. I find it great to have this set of excellent
-articles talking about works done with, or for, Python in science. For
-me, it is a reference to remember what was said at the conference. I
-hope it can also be interesting for people who were not present at the
-conference.&lt;/p&gt;
-&lt;p&gt;I apologize for being so slow at publishing them. In addition to the
-round trip between authors and editors taking a while, I have been
-travelling back home and spent way too much time last week finishing off
-administrative duties in the US.&lt;/p&gt;
-</content><category term="programming"></category><category term="scipy"></category><category term="conferences"></category><category term="publishing"></category></entry></feed>
+</content><category term="programming"></category><category term="python"></category><category term="scipy"></category><category term="mayavi"></category><category term="personnal"></category><category term="scientific computing"></category><category term="travels"></category></entry></feed>

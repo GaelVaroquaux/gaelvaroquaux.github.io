@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Skrub 0.2.0: tabular learning made easy -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Wed 03 July 2024</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Skrub 0.2.0: tabular learning made easy</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/skrub.html">skrub</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/scikit-learn.html">scikit-learn</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/tabular.html">tabular</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/open-source.html">open source</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/software.html">software</a>
+		    <span class="readtime">
+			&nbsp Read time: 2 min.
+		    </span>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <img alt="" class="align-center" src="attachments/skrub_schematic.png" style="width: 500px;" />
+<p>We just released <a class="reference external" href="https://skrub-data.org">skrub 0.2.0</a>. This release
+markedly simplifies learning on complex dataframes.</p>
+<div class="section" id="model-tabular-learner-classifier">
+<h2><cite>model = tabular_learner(‘classifier’)</cite></h2>
+<div class="align-right docutils container">
+Simple, yet solid default baseline</div>
+<p>The highlight of the release is the <a class="reference external" href="https://skrub-data.org/stable/generated/skrub.tabular_learner.html">tabular_learner</a>
+function, which facilitates creating pipelines that readily perform
+machine learning on dataframes, adding preprocessing to a scikit-learn
+compatible learner. The function packs defaults and heuristics
+to transform all forms of dataframes to a representation that is well
+suited to a learner, and it can adapt these transformation:
+<cite>tabular_learner(HistGradientBoostingClassifier())</cite> encodes categories
+differently than <cite>tabular_learner(LogisticRegression())</cite>.</p>
+<p>The heuristics are tuned based on much benchmarking and experience shows
+that they give good tradeoffs. The default
+<cite>tabular_learner(‘classifier’)</cite> is often a strong baseline.</p>
+<p>The benefit are visible in a really simple example:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; # First retrieve data
+&gt;&gt;&gt; from skrub.datasets import fetch_employee_salaries
+&gt;&gt;&gt; dataset = fetch_employee_salaries()
+&gt;&gt;&gt; df = dataset.X
+&gt;&gt;&gt; y = dataset.y
+&gt;&gt;&gt; # The dataframe is a quite rich and complex dataframe, with various columns
+&gt;&gt;&gt; df
+</pre>
+<img alt="" src="attachments/employee_salaries_df.png" />
+<p>We can then easily build a learner that applies readily to this
+dataframe, without any transformation:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; from skrub import tabular_learner
+&gt;&gt;&gt; learner = tabular_learner('regressor')
+&gt;&gt;&gt; # The resulting learner can apply all the machine-learning conveniences (eg cross-validation) directly on the dataframe
+&gt;&gt;&gt; from sklearn.model_selection import cross_val_score
+&gt;&gt;&gt; cross_val_score(learner, df, y)
+array([0.89370447, 0.89279068, 0.92282557, 0.92319094, 0.92162666])
+</pre>
+</div>
+<div class="section" id="transformer-tablevectorizer">
+<h2><cite>transformer = TableVectorizer()</cite></h2>
+<div class="align-right docutils container">
+Making encoding complex dataframes easy</div>
+<p>Behind the hood, the work is done by the <a class="reference external" href="https://skrub-data.org/stable/generated/skrub.TableVectorizer.html">skrub.TableVectorizer()</a>, a
+scikit-learn compatible transformer that facilitates combining multiple
+transformations on the different columns of a dataframe. The
+TableVectorizer is not new in the 0.2.0 release, but we have completely
+revamped its internals to cover really well edge cases. Indeed, one
+challenge is to make sure that nothing different or strange happens at
+test time. Actually, enforcing consistency between train-time and
+test-time transformation is the real value of skrub compared to using
+pandas or polars to do transformation.</p>
+</div>
+<div class="section" id="increasing-support-of-polars">
+<h2>Increasing support of polars</h2>
+<div class="align-right docutils container">
+Short-term goal of optimized support for pandas and polars</div>
+<p>We have implemented a new mechanism for supporting both pandas and
+polars. It has not been applied on all the codebase, hence the support is
+still imperfect. However, we are seeing increasing support for polars in
+skrub, and our goal in the short term is to provide rock-solid polar
+support.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="" class="align-right" src="attachments/skrub_logo.png" style="width: 200px;" />
+<p>Try skrub out! It’s still young, but in mind opinion, it provides a lot
+of value to tabular learning.</p>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script  language="JavaScript" type="text/javascript">
+    /* From http://evirtus.net/pub/eflickrstream.asp */
+    /* Global variables */
+    var bolOnLoadRun=false;
+    var bolFlickrRun=false;
+    var objFlickrOutput=null;
+    
+    /* OnLoad events */
+    window.onload = function() {
+    bolOnLoadRun=true;
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	eFlickrStream();
+    };
+    }
+    
+    /*
+    eFlickrStream - Lovely, lovely photos! :-)
+    - 02.08.2007 @ 14:33: Initial version
+    */
+    function eFlickrStream() {
+    if (!bolFlickrRun ) { return false; } else { bolFlickrRun=false; }
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var strTarget='flickrstream';// Target container for the flickr badge (must allready exist in the document)
+    /*   *** Options/end ***     */
+    
+    if (!document.getElementById(strTarget)){return false;}// Exsist if target doesn't exsist
+    
+    var objTarget=document.getElementById(strTarget);
+    objTarget.appendChild(objFlickrOutput);// Append output
+    
+    objFlickrOutput=null;// We're done, delete stored variable value
+    objFlickr=null;
+    }
+    
+    /*
+    jsonFlickrFeed - Triggered when the Flickr json "feed" is loaded, generates Flickr photos output list item (Deefer "trigger method" from Patrick Quinn-Graham's DOM Flickr Badge)
+    - 02.08.2007 @ 14:33: Initial version
+    - 23.11.2007 @ 08:24: Updated to use eSetAttr(), enables the flickr link in IE
+    - 29.11.2007 @ 05:52: Some changes for easier configuration (of both options and text-strings)
+    */
+    function jsonFlickrFeed(objFlickr) {
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var intMaxImages=10;// Maximum number of images to show (1-20)
+    var bolThumbSquare=true;// Load the square thumbnails
+    var intThumbWidth=75;// Thumbnail width (omitted if set to "0")
+    var strLightbox='flickrstream';// Lightbox "group name" (define to mark the thumbnails for lightbox usage, adds rel="lightbox[value]" to image links)
+    var strImgAlt='[title]';// Alternative title for images ("[title]" will be replaced by image title)
+    var strImgLinkTitle='View a larger version of \"[title]\"';// Link title for the image link
+    /*   *** Options/end ***     */
+    
+    var objElm,objTxt,objImg,objLnk,objTmp,strTmp;
+    var intPhotos=objFlickr.items.length;
+    var objOut=document.createElement('ul');
+    objOut.setAttribute('class','flickrlist');
+    
+    for (var iCntA=0; ( (iCntA<intPhotos) && (iCntA<intMaxImages)); iCntA++) {
+    
+	objElm=document.createElement('li');// Create item container element (<li>)
+    
+	objLnk=document.createElement('a');// Create link (to the large(r) photo)
+	objLnk.setAttribute('href',objFlickr.items[iCntA].link);
+	objLnk.setAttribute('title',strImgLinkTitle.replace('[title]',objFlickr.items[iCntA].title));
+	if (strLightbox!=''){objLnk.setAttribute('rel','lightbox['+strLightbox+']');}// Add relation value for lightbox usage
+    
+	strTmp=objFlickr.items[iCntA].media.m;// Retreive thumbnail URI
+	if (bolThumbSquare){strTmp=strTmp.replace('_m.jpg','_s.jpg');}// Swap default thumbnail for square...
+    
+	objImg=document.createElement('img');// Main thumbnail
+	eSetAttr(objImg,'class','photo');
+	objImg.setAttribute('src',strTmp);
+	objImg.setAttribute('alt',strImgAlt.replace('[title]',objFlickr.items[iCntA].title));
+	if (intThumbWidth!=0){objImg.setAttribute('width',intThumbWidth);}
+    
+	objLnk.appendChild(objImg);// Append thumbnail to link
+	objElm.appendChild(objLnk);// Append link to container (li)
+
+	objOut.appendChild(objElm);// Append container to output object
+	}
+    
+    objFlickrOutput=objOut;// Store output for later use...
+    
+    if (bolOnLoadRun) {
+	eFlickrStream();
+	}
+    else {
+	bolFlickrRun=true;
+	}
+    }
+    
+    /*
+    eSetAttr/eGetAttr - An attempt to tame IE's weird DOM model
+    - 22.11.2007 @ 12:50 - Initial version
+    */
+    function eSetAttr(objTarget,strAttr,strValue) {
+    if (typeof window.attachEvent!='undefined' && typeof window.opera=='undefined') {
+    //    //Set attributes for IE
+	switch (strAttr) {
+	    case('class'):
+		objTarget.setAttribute('className',strValue);
+		break;
+	    case('style'):
+		objTarget.style.cssText=strValue;
+		break;
+	    default:
+		objTarget.setAttribute(strAttr,strValue);
+		break;
+	    }
+	}
+    else {
+    //    //Set attributes for /Other browsers/
+	objTarget.setAttribute(strAttr,strValue);
+	}
+    //66885349@N03
+    }
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+</body>
+</html>
