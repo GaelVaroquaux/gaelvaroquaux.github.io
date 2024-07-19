@@ -48,7 +48,7 @@ measurements tables related to a specific source of data.&lt;/p&gt;
 benchmarks&lt;/a&gt;
 showed that tree-based models outperformed even deep-learning
 architectures specially crafted for data tables.&lt;/p&gt;
-&lt;p&gt;One challenge is that typically tables that not that big and thus the
+&lt;p&gt;One challenge is that typically tables are not that big and thus the
 high flexibility of deep learning is a weakness rather than a benefit.
 This shortcoming was solved by pretrained models, for data modalities
 where deep learning has been vastly successful: &lt;strong&gt;most people do not
@@ -167,12 +167,15 @@ denoting the same thing, for instance “Diabetes” and “Diabetes melitus”&
 &lt;p&gt;These challenges of data integration are central to building pretrained
 or foundation models for tables. Indeed, such models must apply to all
 tables, and thus must bridge these gaps across tables.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="carte-a-table-foundation-model-breakthrough"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;CARTE: a table foundation model breakthrough&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Our recent &lt;a class="reference external" href="https://arxiv.org/abs/2402.16785"&gt;CARTE paper&lt;/a&gt; builds upon
-the above insights, and demonstrates that pretraining can idea give
+the above insights, and demonstrates that pretraining can give
 models that markedly improve performance.&lt;/p&gt;
 &lt;div class="section" id="an-architecture-to-learn-across-tables"&gt;
 &lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;An architecture to learn across tables&lt;/a&gt;&lt;/h3&gt;
