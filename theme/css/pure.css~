@@ -793,8 +793,31 @@ div.content img.align-left {
     margin-left: 0%;
 }
 
-div.content table.noborder, div.content table.noborder tbody, div.content table.noborder tbody tr, div.content table.noborder tbody td  {
+div.content table.noborder, div.content table.noborder tbody, div.content table.noborder tbody tr, div.content table.noborder tbody td {
     border: none;
+}
+
+div.content table.docutils tr:nth-child(even) td{
+    background-color: #EEE;
+}
+
+div.content table.docutils tbody, div.content table.docutils, div.content table.docutils colgroup, div.content table.docutils td {
+    border: none;
+}
+
+div.content table.docutils thead {
+    background-color: #dfecf7;
+    border: none;
+}
+
+div.content table.docutils {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+div.content table.docutils colgroup col {
+    border: white 2px solid;
 }
 
 div.align-right {
@@ -863,9 +886,12 @@ div.note.align-right, div.container.align-right {
     font-size: larger ;
 }
 
-div.note.align-right, div.container.align-right {
-    max-width: 50%;
+@media (min-width: 400px) {
+    div.note.align-right, div.container.align-right {
+	max-width: 50%;
+    }
 }
+
 div.note.align-right p.first.admonition-title {
     display: none;
 }

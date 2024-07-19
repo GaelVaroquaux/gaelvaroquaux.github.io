@@ -1,5 +1,338 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-07-03T00:00:00+02:00</updated><entry><title>Skrub 0.2.0: tabular learning made easy</title><link href="https://gael-varoquaux.info/programming/skrub-020-tabular-learning-made-easy.html" rel="alternate"></link><published>2024-07-03T00:00:00+02:00</published><updated>2024-07-03T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-03:/programming/skrub-020-tabular-learning-made-easy.html</id><summary type="html">&lt;img alt="" class="align-center" src="attachments/skrub_schematic.png" style="width: 500px;" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-07-19T00:00:00+02:00</updated><entry><title>CARTE: toward table foundation models</title><link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="alternate"></link><published>2024-07-19T00:00:00+02:00</published><updated>2024-07-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-19:/science/carte-toward-table-foundation-models.html</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;Foundation models, pretrained and readily used for many downstream
+tasks, have changed the way we process text, images, and sound. Can we
+achieve similar breakthroughs for tables? Here I explain why with
+&lt;a class="reference external" href="https://arxiv.org/abs/2402.16785"&gt;“CARTE”&lt;/a&gt;, we’ve made significant headway.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="contents topic" id="contents"&gt;
+&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#pre-training-for-data-tables-hopes-and-challenges" id="toc-entry-1"&gt;Pre-training for data tables: hopes and challenges&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#pre-training-is-a-necessity" id="toc-entry-2"&gt;Pre-training is a …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;Foundation models, pretrained and readily used for many downstream
+tasks, have changed the way we process text, images, and sound. Can we
+achieve similar breakthroughs for tables? Here I explain why with
+&lt;a class="reference external" href="https://arxiv.org/abs/2402.16785"&gt;“CARTE”&lt;/a&gt;, we’ve made significant headway.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="contents topic" id="contents"&gt;
+&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#pre-training-for-data-tables-hopes-and-challenges" id="toc-entry-1"&gt;Pre-training for data tables: hopes and challenges&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#pre-training-is-a-necessity" id="toc-entry-2"&gt;Pre-training is a necessity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#pretraining-for-data-tables" id="toc-entry-3"&gt;Pretraining for data tables?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#carte-a-table-foundation-model-breakthrough" id="toc-entry-4"&gt;CARTE: a table foundation model breakthrough&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#an-architecture-to-learn-across-tables" id="toc-entry-5"&gt;An architecture to learn across tables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#pretraining-on-knowledge-graphs" id="toc-entry-6"&gt;Pretraining on knowledge graphs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#empirical-results" id="toc-entry-7"&gt;Empirical results&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#lessons-learned" id="toc-entry-8"&gt;Lessons learned&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pre-training-for-data-tables-hopes-and-challenges"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Pre-training for data tables: hopes and challenges&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="pre-training-is-a-necessity"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Pre-training is a necessity&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Foundation models have brought breakthroughs to text and image processing
+because they embark a great deal of knowledge on these data, knowledge
+that can then be reused to simplify processing. But their promises have
+not come true for tables, which hold much of an organization’s specific
+data, &lt;em&gt;eg&lt;/em&gt; relational databases capturing day-to-day operations, or
+measurements tables related to a specific source of data.&lt;/p&gt;
+&lt;p&gt;Rather, for tabular learning, a couple of years ago &lt;a class="reference external" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html"&gt;our extensive
+benchmarks&lt;/a&gt;
+showed that tree-based models outperformed even deep-learning
+architectures specially crafted for data tables.&lt;/p&gt;
+&lt;p&gt;One challenge is that typically tables that not that big and thus the
+high flexibility of deep learning is a weakness rather than a benefit.
+This shortcoming was solved by pretrained models, for data modalities
+where deep learning has been vastly successful: &lt;strong&gt;most people do not
+train a deep-learning model from scratch, but download a pre-trained one
+from model hubs&lt;/strong&gt;. Such universal pre-training is also at the root of
+foundation models.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pretraining-for-data-tables"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Pretraining for data tables?&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;But what does pretraining mean for data tables? If I give you a table of
+numbers, what can prior information can you use to process it better?
+Images and text have a lot of regularity that repeat across datasets:
+I can recognize a car on pictures coming from all kinds of camera
+(including old black and white photographs). I use my knowledge of the
+meaning of words to understand a text. But given a table of number as
+below, what sense can I make of it?&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+&lt;em&gt;The tabular learning challenge: every table is a special snowflake&lt;/em&gt;&lt;/div&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="29%" /&gt;
+&lt;col width="29%" /&gt;
+&lt;col width="29%" /&gt;
+&lt;col width="14%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;72&lt;/td&gt;
+&lt;td&gt;68&lt;/td&gt;
+&lt;td&gt;174&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;64&lt;/td&gt;
+&lt;td&gt;79&lt;/td&gt;
+&lt;td&gt;181&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;56&lt;/td&gt;
+&lt;td&gt;59&lt;/td&gt;
+&lt;td&gt;166&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;81&lt;/td&gt;
+&lt;td&gt;62&lt;/td&gt;
+&lt;td&gt;161&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The reason a data analyst can understand this data and use this
+understanding to build a better data-processing pipeline is because the
+data comes with context: meaningful strings sprinkled around these
+numbers. For instance, a table with the same numbers as above but a bit
+of column names and string entries makes completely sense:&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;caption&gt;Cardiovascular cohort&lt;/caption&gt;
+&lt;colgroup&gt;
+&lt;col width="18%" /&gt;
+&lt;col width="18%" /&gt;
+&lt;col width="18%" /&gt;
+&lt;col width="36%" /&gt;
+&lt;col width="9%" /&gt;
+&lt;/colgroup&gt;
+&lt;thead valign="bottom"&gt;
+&lt;tr&gt;&lt;th class="head"&gt;Age&lt;/th&gt;
+&lt;th class="head"&gt;Weight&lt;/th&gt;
+&lt;th class="head"&gt;Height&lt;/th&gt;
+&lt;th class="head"&gt;Commorbidity&lt;/th&gt;
+&lt;th class="head"&gt;Cardiovascular event&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;72&lt;/td&gt;
+&lt;td&gt;68&lt;/td&gt;
+&lt;td&gt;174&lt;/td&gt;
+&lt;td&gt;Diabetes&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;64&lt;/td&gt;
+&lt;td&gt;79&lt;/td&gt;
+&lt;td&gt;181&lt;/td&gt;
+&lt;td&gt;Cardiac arrhythmia&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;56&lt;/td&gt;
+&lt;td&gt;59&lt;/td&gt;
+&lt;td&gt;166&lt;/td&gt;
+&lt;td&gt;NA&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;81&lt;/td&gt;
+&lt;td&gt;62&lt;/td&gt;
+&lt;td&gt;161&lt;/td&gt;
+&lt;td&gt;Asthma&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In such a setting, it becomes clear what background knowledge, what
+pre-training can bring to analyzing data tables: &lt;strong&gt;string entries and
+column names bring meaning to the numbers in data tables&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Another way to seeing the challenge is that of &lt;strong&gt;data integration&lt;/strong&gt;: as
+studied by the knowledge representation and database communities, putting
+multiple sources of data in a consistent representation requires:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;strong&gt;schema matching&lt;/strong&gt;, which to a first order is about finding column
+correspondences across tables&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;entity matching&lt;/strong&gt;, finding correspondences across table entries
+denoting the same thing, for instance “Diabetes” and “Diabetes melitus”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These challenges of data integration are central to building pretrained
+or foundation models for tables. Indeed, such models must apply to all
+tables, and thus must bridge these gaps across tables.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="carte-a-table-foundation-model-breakthrough"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;CARTE: a table foundation model breakthrough&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Our recent &lt;a class="reference external" href="https://arxiv.org/abs/2402.16785"&gt;CARTE paper&lt;/a&gt; builds upon
+the above insights, and demonstrates that pretraining can idea give
+models that markedly improve performance.&lt;/p&gt;
+&lt;div class="section" id="an-architecture-to-learn-across-tables"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;An architecture to learn across tables&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Graphlets&lt;/strong&gt;
+The key ingredient of CARTE is how we represent the inputs. CARTE’s goal
+is to build predictors on rows of tables, for instance associating
+features of an individuals to a risk of developing adverse cardiovascular
+events. To pretrain across tables, we use a universal representation of
+the data (rows of tables), as small graphs.&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="attachments/carte/carte_graphlet.png" /&gt;
+&lt;p class="caption"&gt;Turning table rows into graphlets. Each column leads to an edge and
+the column name is turned into the corresponding edge feature. It’s a
+“multirelational graph”. The entry associated with the given column
+is turned into the corresponding node feature, and the row is
+represented as a special row token in the center of the graphlet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Thus, tables with different number of columns can be turned into a
+consistent representation. But an additional benefit of this
+representation is that it can represent data across multiple tables with
+shared keys (for instance all the visits of a patient to a hospital).&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+&lt;em&gt;A representation that can bridge tables without schema or entity
+matching&lt;/em&gt;&lt;/div&gt;
+&lt;br/&gt;
+&lt;br/&gt;&lt;p&gt;&lt;strong&gt;String embeddings&lt;/strong&gt;
+The second ingredient is to represent all strings and embeddings, using a
+pretrained language model, whether it is for column names or string
+entries. With good language model will embed close by different string
+with similar meaning, for instance a column named “commorbidity” and
+another one named “medical conditions”. Such representation helps
+learning without entity or schema matching.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Graph transformer&lt;/strong&gt; CARTE then uses a form of graph transformer on top
+of this representation. Key to this graph transformer is an attention
+mechanism that accounts for the relation information –the edge type,
+&lt;em&gt;ie&lt;/em&gt; the column name. Thus &lt;em&gt;(born in, Paris)&lt;/em&gt; is represented in a
+different way as &lt;em&gt;(living in, Paris)&lt;/em&gt;.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Numbers treated as such&lt;/strong&gt; Columns with numerical entries are often
+important information in a data table. Unlike typical large language
+models, we do not represent numbers via string tokenization, but use a
+vector representation where the numerical value is multiplied with the
+embedding of the column name (a vector output by the language model).
+That way a value of 126 in a column named “Systolic mm Hg” is represented
+close to 1.5 times a value of 84 in a column named “Blood pressure”.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pretraining-on-knowledge-graphs"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;Pretraining on knowledge graphs&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;We pretrain the above architecture on a large general-knowledge knowledge
+graph. The goal is to distill the corresponding information in the
+pretrained model, which can then implicitly use it when analyzing new
+tables. Indeed, a large knowledge graph (we use &lt;a class="reference external" href="https://yago-knowledge.org"&gt;YAGO&lt;/a&gt;) represents a huge amount of facts on the
+world, and the representation, as a multirelational graph, is close to
+the one that we use to model data tables.&lt;/p&gt;
+&lt;p&gt;Given an analytic task, on a data table of interest, the pretrained model
+can be fine tuned. We found that this was a tricky part as those tables
+are often small.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="empirical-results"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-7"&gt;Empirical results&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Excellent performance on extensive benchmarks&lt;/strong&gt;
+We compared CARTE to a variety of baselines across 51 datasets (mostly
+downloaded from kaggle), as a function of the number of samlpes (number
+of rows):&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="attachments/carte/carte_learning_curve.png" /&gt;
+&lt;p class="caption"&gt;Prediction performance as a function of sample size for classification
+and regression tasks&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="align-right docutils container"&gt;
+CARTE outperforms all baselines, including very strong ones&lt;/div&gt;
+&lt;p&gt;CARTE appears as a very strong performer, outperforming all baselines
+when there are less than 2000 samples. For larger tables, the prior
+information is less crucial, and more flexible learners are beneficial.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strong contenders&lt;/strong&gt; We see that powerful tree-based learner, such as
+CatBoost of XGBoost also work very well. We investigated in details many
+baselines. Here, we consider not only learners, but also a variety of
+methods to encode strings, and these really help predicting:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="attachments/carte/carte_cd_plots.png" /&gt;
+&lt;p class="caption"&gt;Detailed comparison (critical difference plots, giving the average
+ranking of methods) across all 42 baselines that we investigated&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Catboost is an excellent predictor because it encodes with categories
+with great care. &lt;em&gt;S-LLM-CN-XGB&lt;/em&gt; is a baseline that we contributed that
+encodes strings with an LLM, concats numerical numbers and used XGBoost
+on the resulting representation. &lt;em&gt;TabVec&lt;/em&gt; is the &lt;a class="reference external" href="https://skrub-data.org/stable/generated/skrub.TableVectorizer.html#skrub.TableVectorizer"&gt;TableVectorizer&lt;/a&gt;
+from &lt;a class="reference external" href="https://skrub-data.org"&gt;skrub&lt;/a&gt;. Combined with standard learners
+it gives really strong baselines.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Learning across tables&lt;/strong&gt; As CARTE can model jointly different tables with
+different conventions, we show that I can use large source tables, to
+boost prediction on the smaller target table.&lt;/p&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="attachments/carte/carte_joint_learning.png" style="width: 600px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Ranking of various methods used across tables with imperfect
+correspondances, where “matched” means manual column matching, and “not
+matched” means no manual column matching&lt;/em&gt;&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+Transfer learning across sources with different columns / schemas&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="lessons-learned"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-8"&gt;Lessons learned&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The extensive empirical results have many teachings.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tabular foundation models are possible&lt;/strong&gt; The first teaching is that
+using strings to bring meaning to the numbers enables foundation models
+for tables: pretrained models that facilitate a variety of downstream
+tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LLMs are not enough&lt;/strong&gt; Many approaches to table foundation models adapt
+large language models pretrained on huge text corpora. The argument is
+that with the amount of high-quality texts on Internet, the corresponding
+LLM can acquire more background knowledge. The seminal example is that of
+&lt;a class="reference external" href="https://proceedings.mlr.press/v206/hegselmann23a.html"&gt;TabLLM&lt;/a&gt;, which
+makes sentences out of table rows and feeds them to LLMs. Yet, by itself
+it does not perform well on tables with numbers.&lt;/p&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="attachments/carte/tabllm_comparison.png" style="width: 350px;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Ranking of models on data from the TabLLM paper, data that differs from
+our benchmark above as it does not have string entries.&lt;/em&gt;&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="align-right docutils container"&gt;
+A table foundation model must model strings and numbers&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Modeling numbers is crucial&lt;/strong&gt; TabPFN, CARTE, and XGBoost all outperform
+TabPFN on tables without strings, likely because they readily model
+numbers, while an LLM sees them as strings. Likewise, our variant
+&lt;em&gt;S-LLM-XGB-CN&lt;/em&gt; that combines LLMs with a model suitable for numbers
+performs very well.&lt;/p&gt;
+&lt;p&gt;As the strings are crucial to give context to numbers, we believe that
+the future of table foundation models is to model well both strings and
+numbers.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;CARTE is only a first step in the world of table foundation models. I
+am convinved that the ideas will be pushed much much further.&lt;/p&gt;
+&lt;p class="last"&gt;But we have learned a lot in this study. I have only skimmed the
+surface of our work. If you want more details, read the &lt;a class="reference external" href="https://arxiv.org/abs/2402.16785"&gt;CARTE paper&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="machine learning"></category><category term="tabular learning"></category><category term="foundation models"></category></entry><entry><title>Skrub 0.2.0: tabular learning made easy</title><link href="https://gael-varoquaux.info/programming/skrub-020-tabular-learning-made-easy.html" rel="alternate"></link><published>2024-07-03T00:00:00+02:00</published><updated>2024-07-03T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-03:/programming/skrub-020-tabular-learning-made-easy.html</id><summary type="html">&lt;img alt="" class="align-center" src="attachments/skrub_schematic.png" style="width: 500px;" /&gt;
 &lt;p&gt;We just released &lt;a class="reference external" href="https://skrub-data.org"&gt;skrub 0.2.0&lt;/a&gt;. This release
 markedly simplifies learning on complex dataframes.&lt;/p&gt;
 &lt;div class="section" id="model-tabular-learner-classifier"&gt;
@@ -10101,20 +10434,4 @@ always wearing a T-shirt of the conference, rather than a shirt, but I
 guess that there is a point at which trying to dodge etiquette with a
 T-shirt and a pony tail is just another cliché[*] and formalism.&lt;/p&gt;
 &lt;p&gt;[*] &lt;em&gt;cliché&lt;/em&gt; is a French word for cliché.&lt;/p&gt;
-</content><category term="programming"></category></entry><entry><title>Mayavi: 2 videos of tutorial-like presentation</title><link href="https://gael-varoquaux.info/programming/mayavi-2-videos-of-tutorial-like-presentation.html" rel="alternate"></link><published>2009-07-16T23:35:00+02:00</published><updated>2009-07-16T23:35:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-07-16:/programming/mayavi-2-videos-of-tutorial-like-presentation.html</id><summary type="html">&lt;p&gt;I gave a presentation on Mayavi in the Python for science seminar
-organised by Fernando Perez at Berkeley. I was loudmouth and obnoxious
-as usual, and unfortunately for me, I was recorded.&lt;/p&gt;
-&lt;p&gt;More seriously, Jeff Teeters has filmed the presentation and recorded
-the sound was a microphone I was wearing …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I gave a presentation on Mayavi in the Python for science seminar
-organised by Fernando Perez at Berkeley. I was loudmouth and obnoxious
-as usual, and unfortunately for me, I was recorded.&lt;/p&gt;
-&lt;p&gt;More seriously, Jeff Teeters has filmed the presentation and recorded
-the sound was a microphone I was wearing. I find that he did a really
-excellent job. Getting a good recording is &lt;strong&gt;hard&lt;/strong&gt;, and he really got
-good audio and good framing. I am amazed and I don’t know how to thank
-him enough.&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://www.archive.org/details/ucb_py4science_2009_07_14_Gael_Varoquaux"&gt;http://www.archive.org/details/ucb_py4science_2009_07_14_Gael_Varoquaux&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Also, Stefan van der Waalt gave a talk in Souft Africa on Mayavi that
-was recorded. Another very useful resource for learning Mayavi:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://www.archive.org/details/ctpug-2008-09-mayavi"&gt;http://www.archive.org/details/ctpug-2008-09-mayavi&lt;/a&gt;&lt;/p&gt;
-</content><category term="programming"></category><category term="python"></category><category term="scipy"></category><category term="science"></category><category term="mayavi"></category></entry></feed>
+</content><category term="programming"></category></entry></feed>

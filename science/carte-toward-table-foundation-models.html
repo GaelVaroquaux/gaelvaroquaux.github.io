@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>CARTE: toward table foundation models -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Fri 19 July 2024</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>CARTE: toward table foundation models</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/tabular-learning.html">tabular learning</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/foundation-models.html">foundation models</a>
+		    <span class="readtime">
+			&nbsp Read time: 8 min.
+		    </span>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Foundation models, pretrained and readily used for many downstream
+tasks, have changed the way we process text, images, and sound. Can we
+achieve similar breakthroughs for tables? Here I explain why with
+<a class="reference external" href="https://arxiv.org/abs/2402.16785">“CARTE”</a>, we’ve made significant headway.</p>
+</div>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#pre-training-for-data-tables-hopes-and-challenges" id="toc-entry-1">Pre-training for data tables: hopes and challenges</a><ul>
+<li><a class="reference internal" href="#pre-training-is-a-necessity" id="toc-entry-2">Pre-training is a necessity</a></li>
+<li><a class="reference internal" href="#pretraining-for-data-tables" id="toc-entry-3">Pretraining for data tables?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#carte-a-table-foundation-model-breakthrough" id="toc-entry-4">CARTE: a table foundation model breakthrough</a><ul>
+<li><a class="reference internal" href="#an-architecture-to-learn-across-tables" id="toc-entry-5">An architecture to learn across tables</a></li>
+<li><a class="reference internal" href="#pretraining-on-knowledge-graphs" id="toc-entry-6">Pretraining on knowledge graphs</a></li>
+<li><a class="reference internal" href="#empirical-results" id="toc-entry-7">Empirical results</a></li>
+<li><a class="reference internal" href="#lessons-learned" id="toc-entry-8">Lessons learned</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="pre-training-for-data-tables-hopes-and-challenges">
+<h2><a class="toc-backref" href="#toc-entry-1">Pre-training for data tables: hopes and challenges</a></h2>
+<div class="section" id="pre-training-is-a-necessity">
+<h3><a class="toc-backref" href="#toc-entry-2">Pre-training is a necessity</a></h3>
+<p>Foundation models have brought breakthroughs to text and image processing
+because they embark a great deal of knowledge on these data, knowledge
+that can then be reused to simplify processing. But their promises have
+not come true for tables, which hold much of an organization’s specific
+data, <em>eg</em> relational databases capturing day-to-day operations, or
+measurements tables related to a specific source of data.</p>
+<p>Rather, for tabular learning, a couple of years ago <a class="reference external" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html">our extensive
+benchmarks</a>
+showed that tree-based models outperformed even deep-learning
+architectures specially crafted for data tables.</p>
+<p>One challenge is that typically tables that not that big and thus the
+high flexibility of deep learning is a weakness rather than a benefit.
+This shortcoming was solved by pretrained models, for data modalities
+where deep learning has been vastly successful: <strong>most people do not
+train a deep-learning model from scratch, but download a pre-trained one
+from model hubs</strong>. Such universal pre-training is also at the root of
+foundation models.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="pretraining-for-data-tables">
+<h3><a class="toc-backref" href="#toc-entry-3">Pretraining for data tables?</a></h3>
+<p>But what does pretraining mean for data tables? If I give you a table of
+numbers, what can prior information can you use to process it better?
+Images and text have a lot of regularity that repeat across datasets:
+I can recognize a car on pictures coming from all kinds of camera
+(including old black and white photographs). I use my knowledge of the
+meaning of words to understand a text. But given a table of number as
+below, what sense can I make of it?</p>
+<div class="align-right docutils container">
+<em>The tabular learning challenge: every table is a special snowflake</em></div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="29%" />
+<col width="29%" />
+<col width="14%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>72</td>
+<td>68</td>
+<td>174</td>
+<td>1</td>
+</tr>
+<tr><td>64</td>
+<td>79</td>
+<td>181</td>
+<td>1</td>
+</tr>
+<tr><td>56</td>
+<td>59</td>
+<td>166</td>
+<td>0</td>
+</tr>
+<tr><td>81</td>
+<td>62</td>
+<td>161</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>The reason a data analyst can understand this data and use this
+understanding to build a better data-processing pipeline is because the
+data comes with context: meaningful strings sprinkled around these
+numbers. For instance, a table with the same numbers as above but a bit
+of column names and string entries makes completely sense:</p>
+<table border="1" class="docutils">
+<caption>Cardiovascular cohort</caption>
+<colgroup>
+<col width="18%" />
+<col width="18%" />
+<col width="18%" />
+<col width="36%" />
+<col width="9%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Age</th>
+<th class="head">Weight</th>
+<th class="head">Height</th>
+<th class="head">Commorbidity</th>
+<th class="head">Cardiovascular event</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>72</td>
+<td>68</td>
+<td>174</td>
+<td>Diabetes</td>
+<td>1</td>
+</tr>
+<tr><td>64</td>
+<td>79</td>
+<td>181</td>
+<td>Cardiac arrhythmia</td>
+<td>1</td>
+</tr>
+<tr><td>56</td>
+<td>59</td>
+<td>166</td>
+<td>NA</td>
+<td>0</td>
+</tr>
+<tr><td>81</td>
+<td>62</td>
+<td>161</td>
+<td>Asthma</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>In such a setting, it becomes clear what background knowledge, what
+pre-training can bring to analyzing data tables: <strong>string entries and
+column names bring meaning to the numbers in data tables</strong>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Another way to seeing the challenge is that of <strong>data integration</strong>: as
+studied by the knowledge representation and database communities, putting
+multiple sources of data in a consistent representation requires:</p>
+<ul class="simple">
+<li><strong>schema matching</strong>, which to a first order is about finding column
+correspondences across tables</li>
+<li><strong>entity matching</strong>, finding correspondences across table entries
+denoting the same thing, for instance “Diabetes” and “Diabetes melitus”</li>
+</ul>
+<p>These challenges of data integration are central to building pretrained
+or foundation models for tables. Indeed, such models must apply to all
+tables, and thus must bridge these gaps across tables.</p>
+</div>
+</div>
+<div class="section" id="carte-a-table-foundation-model-breakthrough">
+<h2><a class="toc-backref" href="#toc-entry-4">CARTE: a table foundation model breakthrough</a></h2>
+<p>Our recent <a class="reference external" href="https://arxiv.org/abs/2402.16785">CARTE paper</a> builds upon
+the above insights, and demonstrates that pretraining can idea give
+models that markedly improve performance.</p>
+<div class="section" id="an-architecture-to-learn-across-tables">
+<h3><a class="toc-backref" href="#toc-entry-5">An architecture to learn across tables</a></h3>
+<p><strong>Graphlets</strong>
+The key ingredient of CARTE is how we represent the inputs. CARTE’s goal
+is to build predictors on rows of tables, for instance associating
+features of an individuals to a risk of developing adverse cardiovascular
+events. To pretrain across tables, we use a universal representation of
+the data (rows of tables), as small graphs.</p>
+<div class="figure">
+<img alt="" src="attachments/carte/carte_graphlet.png" />
+<p class="caption">Turning table rows into graphlets. Each column leads to an edge and
+the column name is turned into the corresponding edge feature. It’s a
+“multirelational graph”. The entry associated with the given column
+is turned into the corresponding node feature, and the row is
+represented as a special row token in the center of the graphlet.</p>
+</div>
+<p>Thus, tables with different number of columns can be turned into a
+consistent representation. But an additional benefit of this
+representation is that it can represent data across multiple tables with
+shared keys (for instance all the visits of a patient to a hospital).</p>
+<div class="align-right docutils container">
+<em>A representation that can bridge tables without schema or entity
+matching</em></div>
+<br/>
+<br/><p><strong>String embeddings</strong>
+The second ingredient is to represent all strings and embeddings, using a
+pretrained language model, whether it is for column names or string
+entries. With good language model will embed close by different string
+with similar meaning, for instance a column named “commorbidity” and
+another one named “medical conditions”. Such representation helps
+learning without entity or schema matching.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Graph transformer</strong> CARTE then uses a form of graph transformer on top
+of this representation. Key to this graph transformer is an attention
+mechanism that accounts for the relation information –the edge type,
+<em>ie</em> the column name. Thus <em>(born in, Paris)</em> is represented in a
+different way as <em>(living in, Paris)</em>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Numbers treated as such</strong> Columns with numerical entries are often
+important information in a data table. Unlike typical large language
+models, we do not represent numbers via string tokenization, but use a
+vector representation where the numerical value is multiplied with the
+embedding of the column name (a vector output by the language model).
+That way a value of 126 in a column named “Systolic mm Hg” is represented
+close to 1.5 times a value of 84 in a column named “Blood pressure”.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="pretraining-on-knowledge-graphs">
+<h3><a class="toc-backref" href="#toc-entry-6">Pretraining on knowledge graphs</a></h3>
+<p>We pretrain the above architecture on a large general-knowledge knowledge
+graph. The goal is to distill the corresponding information in the
+pretrained model, which can then implicitly use it when analyzing new
+tables. Indeed, a large knowledge graph (we use <a class="reference external" href="https://yago-knowledge.org">YAGO</a>) represents a huge amount of facts on the
+world, and the representation, as a multirelational graph, is close to
+the one that we use to model data tables.</p>
+<p>Given an analytic task, on a data table of interest, the pretrained model
+can be fine tuned. We found that this was a tricky part as those tables
+are often small.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="empirical-results">
+<h3><a class="toc-backref" href="#toc-entry-7">Empirical results</a></h3>
+<p><strong>Excellent performance on extensive benchmarks</strong>
+We compared CARTE to a variety of baselines across 51 datasets (mostly
+downloaded from kaggle), as a function of the number of samlpes (number
+of rows):</p>
+<div class="figure">
+<img alt="" src="attachments/carte/carte_learning_curve.png" />
+<p class="caption">Prediction performance as a function of sample size for classification
+and regression tasks</p>
+</div>
+<div class="align-right docutils container">
+CARTE outperforms all baselines, including very strong ones</div>
+<p>CARTE appears as a very strong performer, outperforming all baselines
+when there are less than 2000 samples. For larger tables, the prior
+information is less crucial, and more flexible learners are beneficial.</p>
+<p><strong>Strong contenders</strong> We see that powerful tree-based learner, such as
+CatBoost of XGBoost also work very well. We investigated in details many
+baselines. Here, we consider not only learners, but also a variety of
+methods to encode strings, and these really help predicting:</p>
+<div class="figure">
+<img alt="" src="attachments/carte/carte_cd_plots.png" />
+<p class="caption">Detailed comparison (critical difference plots, giving the average
+ranking of methods) across all 42 baselines that we investigated</p>
+</div>
+<p>Catboost is an excellent predictor because it encodes with categories
+with great care. <em>S-LLM-CN-XGB</em> is a baseline that we contributed that
+encodes strings with an LLM, concats numerical numbers and used XGBoost
+on the resulting representation. <em>TabVec</em> is the <a class="reference external" href="https://skrub-data.org/stable/generated/skrub.TableVectorizer.html#skrub.TableVectorizer">TableVectorizer</a>
+from <a class="reference external" href="https://skrub-data.org">skrub</a>. Combined with standard learners
+it gives really strong baselines.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Learning across tables</strong> As CARTE can model jointly different tables with
+different conventions, we show that I can use large source tables, to
+boost prediction on the smaller target table.</p>
+<div class="figure align-right">
+<img alt="" src="attachments/carte/carte_joint_learning.png" style="width: 600px;" />
+</div>
+<p><em>Ranking of various methods used across tables with imperfect
+correspondances, where “matched” means manual column matching, and “not
+matched” means no manual column matching</em></p>
+<div class="align-right docutils container">
+Transfer learning across sources with different columns / schemas</div>
+</div>
+<div class="section" id="lessons-learned">
+<h3><a class="toc-backref" href="#toc-entry-8">Lessons learned</a></h3>
+<p>The extensive empirical results have many teachings.</p>
+<p><strong>Tabular foundation models are possible</strong> The first teaching is that
+using strings to bring meaning to the numbers enables foundation models
+for tables: pretrained models that facilitate a variety of downstream
+tasks.</p>
+<p><strong>LLMs are not enough</strong> Many approaches to table foundation models adapt
+large language models pretrained on huge text corpora. The argument is
+that with the amount of high-quality texts on Internet, the corresponding
+LLM can acquire more background knowledge. The seminal example is that of
+<a class="reference external" href="https://proceedings.mlr.press/v206/hegselmann23a.html">TabLLM</a>, which
+makes sentences out of table rows and feeds them to LLMs. Yet, by itself
+it does not perform well on tables with numbers.</p>
+<div class="figure align-right">
+<img alt="" src="attachments/carte/tabllm_comparison.png" style="width: 350px;" />
+</div>
+<p><em>Ranking of models on data from the TabLLM paper, data that differs from
+our benchmark above as it does not have string entries.</em></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="align-right docutils container">
+A table foundation model must model strings and numbers</div>
+<p><strong>Modeling numbers is crucial</strong> TabPFN, CARTE, and XGBoost all outperform
+TabPFN on tables without strings, likely because they readily model
+numbers, while an LLM sees them as strings. Likewise, our variant
+<em>S-LLM-XGB-CN</em> that combines LLMs with a model suitable for numbers
+performs very well.</p>
+<p>As the strings are crucial to give context to numbers, we believe that
+the future of table foundation models is to model well both strings and
+numbers.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>CARTE is only a first step in the world of table foundation models. I
+am convinved that the ideas will be pushed much much further.</p>
+<p class="last">But we have learned a lot in this study. I have only skimmed the
+surface of our work. If you want more details, read the <a class="reference external" href="https://arxiv.org/abs/2402.16785">CARTE paper</a>.</p>
+</div>
+</div>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script  language="JavaScript" type="text/javascript">
+    /* From http://evirtus.net/pub/eflickrstream.asp */
+    /* Global variables */
+    var bolOnLoadRun=false;
+    var bolFlickrRun=false;
+    var objFlickrOutput=null;
+    
+    /* OnLoad events */
+    window.onload = function() {
+    bolOnLoadRun=true;
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	eFlickrStream();
+    };
+    }
+    
+    /*
+    eFlickrStream - Lovely, lovely photos! :-)
+    - 02.08.2007 @ 14:33: Initial version
+    */
+    function eFlickrStream() {
+    if (!bolFlickrRun ) { return false; } else { bolFlickrRun=false; }
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var strTarget='flickrstream';// Target container for the flickr badge (must allready exist in the document)
+    /*   *** Options/end ***     */
+    
+    if (!document.getElementById(strTarget)){return false;}// Exsist if target doesn't exsist
+    
+    var objTarget=document.getElementById(strTarget);
+    objTarget.appendChild(objFlickrOutput);// Append output
+    
+    objFlickrOutput=null;// We're done, delete stored variable value
+    objFlickr=null;
+    }
+    
+    /*
+    jsonFlickrFeed - Triggered when the Flickr json "feed" is loaded, generates Flickr photos output list item (Deefer "trigger method" from Patrick Quinn-Graham's DOM Flickr Badge)
+    - 02.08.2007 @ 14:33: Initial version
+    - 23.11.2007 @ 08:24: Updated to use eSetAttr(), enables the flickr link in IE
+    - 29.11.2007 @ 05:52: Some changes for easier configuration (of both options and text-strings)
+    */
+    function jsonFlickrFeed(objFlickr) {
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var intMaxImages=10;// Maximum number of images to show (1-20)
+    var bolThumbSquare=true;// Load the square thumbnails
+    var intThumbWidth=75;// Thumbnail width (omitted if set to "0")
+    var strLightbox='flickrstream';// Lightbox "group name" (define to mark the thumbnails for lightbox usage, adds rel="lightbox[value]" to image links)
+    var strImgAlt='[title]';// Alternative title for images ("[title]" will be replaced by image title)
+    var strImgLinkTitle='View a larger version of \"[title]\"';// Link title for the image link
+    /*   *** Options/end ***     */
+    
+    var objElm,objTxt,objImg,objLnk,objTmp,strTmp;
+    var intPhotos=objFlickr.items.length;
+    var objOut=document.createElement('ul');
+    objOut.setAttribute('class','flickrlist');
+    
+    for (var iCntA=0; ( (iCntA<intPhotos) && (iCntA<intMaxImages)); iCntA++) {
+    
+	objElm=document.createElement('li');// Create item container element (<li>)
+    
+	objLnk=document.createElement('a');// Create link (to the large(r) photo)
+	objLnk.setAttribute('href',objFlickr.items[iCntA].link);
+	objLnk.setAttribute('title',strImgLinkTitle.replace('[title]',objFlickr.items[iCntA].title));
+	if (strLightbox!=''){objLnk.setAttribute('rel','lightbox['+strLightbox+']');}// Add relation value for lightbox usage
+    
+	strTmp=objFlickr.items[iCntA].media.m;// Retreive thumbnail URI
+	if (bolThumbSquare){strTmp=strTmp.replace('_m.jpg','_s.jpg');}// Swap default thumbnail for square...
+    
+	objImg=document.createElement('img');// Main thumbnail
+	eSetAttr(objImg,'class','photo');
+	objImg.setAttribute('src',strTmp);
+	objImg.setAttribute('alt',strImgAlt.replace('[title]',objFlickr.items[iCntA].title));
+	if (intThumbWidth!=0){objImg.setAttribute('width',intThumbWidth);}
+    
+	objLnk.appendChild(objImg);// Append thumbnail to link
+	objElm.appendChild(objLnk);// Append link to container (li)
+
+	objOut.appendChild(objElm);// Append container to output object
+	}
+    
+    objFlickrOutput=objOut;// Store output for later use...
+    
+    if (bolOnLoadRun) {
+	eFlickrStream();
+	}
+    else {
+	bolFlickrRun=true;
+	}
+    }
+    
+    /*
+    eSetAttr/eGetAttr - An attempt to tame IE's weird DOM model
+    - 22.11.2007 @ 12:50 - Initial version
+    */
+    function eSetAttr(objTarget,strAttr,strValue) {
+    if (typeof window.attachEvent!='undefined' && typeof window.opera=='undefined') {
+    //    //Set attributes for IE
+	switch (strAttr) {
+	    case('class'):
+		objTarget.setAttribute('className',strValue);
+		break;
+	    case('style'):
+		objTarget.style.cssText=strValue;
+		break;
+	    default:
+		objTarget.setAttribute(strAttr,strValue);
+		break;
+	    }
+	}
+    else {
+    //    //Set attributes for /Other browsers/
+	objTarget.setAttribute(strAttr,strValue);
+	}
+    //66885349@N03
+    }
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+</body>
+</html>
