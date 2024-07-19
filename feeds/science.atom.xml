@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-07-19T00:00:00+02:00</updated><entry><title>CARTE: toward table foundation models</title><link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="alternate"></link><published>2024-07-19T00:00:00+02:00</published><updated>2024-07-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-19:/science/carte-toward-table-foundation-models.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;Foundation models, pretrained and readily used for many downstream
+&lt;p class="last"&gt;Foundation models, pretrained and readily usable for many downstream
 tasks, have changed the way we process text, images, and sound. Can we
 achieve similar breakthroughs for tables? Here I explain why with
 &lt;a class="reference external" href="https://arxiv.org/abs/2402.16785"&gt;“CARTE”&lt;/a&gt;, we’ve made significant headway.&lt;/p&gt;
@@ -12,7 +12,7 @@ achieve similar breakthroughs for tables? Here I explain why with
 &lt;li&gt;&lt;a class="reference internal" href="#pre-training-for-data-tables-hopes-and-challenges" id="toc-entry-1"&gt;Pre-training for data tables: hopes and challenges&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#pre-training-is-a-necessity" id="toc-entry-2"&gt;Pre-training is a …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;Foundation models, pretrained and readily used for many downstream
+&lt;p class="last"&gt;Foundation models, pretrained and readily usable for many downstream
 tasks, have changed the way we process text, images, and sound. Can we
 achieve similar breakthroughs for tables? Here I explain why with
 &lt;a class="reference external" href="https://arxiv.org/abs/2402.16785"&gt;“CARTE”&lt;/a&gt;, we’ve made significant headway.&lt;/p&gt;
