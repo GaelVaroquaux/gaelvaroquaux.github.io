@@ -316,7 +316,7 @@ our benchmark above as it does not have string entries.&lt;/em&gt;&lt;/p&gt;
 &lt;div class="align-right docutils container"&gt;
 A table foundation model must model strings and numbers&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Modeling numbers is crucial&lt;/strong&gt; TabPFN, CARTE, and XGBoost all outperform
-TabPFN on tables without strings, likely because they readily model
+TabLLM on tables without strings, likely because they readily model
 numbers, while an LLM sees them as strings. Likewise, our variant
 &lt;em&gt;S-LLM-XGB-CN&lt;/em&gt; that combines LLMs with a model suitable for numbers
 performs very well.&lt;/p&gt;
