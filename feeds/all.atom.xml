@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-07-19T00:00:00+02:00</updated><entry><title>CARTE: toward table foundation models</title><link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="alternate"></link><published>2024-07-19T00:00:00+02:00</published><updated>2024-07-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-19:/science/carte-toward-table-foundation-models.html</id><summary type="html">&lt;div class="admonition note"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-10-19T00:00:00+02:00</updated><entry><title>Do AIs reason or recite?</title><link href="https://gael-varoquaux.info/science/do-ais-reason-or-recite.html" rel="alternate"></link><published>2024-10-19T00:00:00+02:00</published><updated>2024-10-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-10-19:/science/do-ais-reason-or-recite.html</id><summary type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-raisonnent-elles-ou-recitent-elles-2103079"&gt;Les Echos&lt;/a&gt;. I updated it with new …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-raisonnent-elles-ou-recitent-elles-2103079"&gt;Les Echos&lt;/a&gt;. I updated it with new references.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Conversational AI, or large language models, are sometimes seen as the
+gateway to general artificial intelligence. ChatGPT, for example, can
+answer questions asked at the International Mathematical Olympiad. And
+yet, on other, seemingly much simpler questions, ChatGPT makes surprising
+mistakes. What aspects of conversational AI intelligence explain its
+ability to solve some problems and not others?&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://arxiv.org/abs/2309.13638"&gt;Thomas McCoy and co-authors&lt;/a&gt;
+conjecture that it has to do with their underlying model of
+autoregression: technically, these AIs are trained to complete texts
+found on the Internet. If an AI is very good at calculating (9/5) x + 32,
+but not (7/5) x + 31, it is because the first formula corresponds to the
+conversion of degrees Celsius to Fahrenheit, a very frequent conversion
+on the Internet, while the second does not correspond to any particular
+formula. Conversational AIs would therefore be good at reproducing what
+they’ve already seen. Indeed, numerous studies have shown that they have
+a certain tendency to reproduce snippets of known text. So, if an AI can
+solve problems from the International Mathematical Olympiad, is it simply
+because it has memorized the answer?&lt;/p&gt;
+&lt;div class="section" id="something-new"&gt;
+&lt;h2&gt;Something new?&lt;/h2&gt;
+&lt;p&gt;In terms of intelligence, inventing a new mathematical demonstration
+requires mastering abstractions and the ability to string together
+complicated logical reasoning with an imposed start and finish. This
+seems much more difficult than memorizing a demonstration. This is one of
+the traditional oppositions in machine learning, the line of research
+that gave rise to today’s AIs: memorizing is one thing, knowing how to
+generalize is another. For example, if I memorize all the additions
+between two numbers smaller than ten, I cannot extrapolate beyond that. To
+go further, I need to master the logic of addition… or memorize more.&lt;/p&gt;
+&lt;p&gt;And precisely, conversational AIs have an enormous capacity for
+memorization, and have been trained on almost the entire Internet. Given
+a question, they can often dip into their memory to find answers. So, are
+they intelligent or just have a great memory? Scientists are still
+debating the importance of memory to their abilities. Some argue that
+their storage capacity is ultimately limited by the size of the Internet.
+Others wonder to what extent the impressive successes highlighted are not
+on tasks already solved on the Internet, questioning their ability to do
+anything new.&lt;/p&gt;
+&lt;p&gt;But could memorization be an aspect of intelligence? In 1987, Lenat and
+Feigenbaum conjectured that, for a cognitive agent, accumulating
+knowledge enables it to solve new tasks with less learning. Perhaps the
+intelligence of conversational AI lies in knowing how to pick up the
+right bits of information, and combine them.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;Related academic work:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;a class="reference external" href="https://www.pnas.org/doi/10.1073/pnas.2322420121"&gt;Embers of autoregression show how large language models are shaped
+by the problem they are trained to solve&lt;/a&gt;, R. Thomas McCoy,
+Shunyu Yao, Dan Friedman, Mathew D. Hardy, and Thomas L. Griffiths,
+PNAS 2024 (&lt;a class="reference external" href="https://arxiv.org/abs/2309.13638"&gt;ArXiv&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Princeton researchers show that properties of large language models
+(LLMs) are governed by the data that they are trained on, including
+for they arithmetics abilities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;a class="reference external" href="https://arxiv.org/abs/2410.05229"&gt;GSM-Symbolic: Understanding the Limitations of Mathematical
+Reasoning in Large Language Models&lt;/a&gt;, Iman Mirzadeh, Keivan Alizadeh
+Hooman Shahrokhi, Oncel Tuzel, Samy Bengio, Mehrdad Farajtabar&lt;/p&gt;
+&lt;p&gt;Apple researchers show that LLMs solve mathematical challenge via
+probabilistic &lt;strong&gt;pattern matching&lt;/strong&gt; on previously seen examples, rather
+than logical reasonning.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category></entry><entry><title>CARTE: toward table foundation models</title><link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="alternate"></link><published>2024-07-19T00:00:00+02:00</published><updated>2024-07-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-19:/science/carte-toward-table-foundation-models.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;Foundation models, pretrained and readily usable for many downstream
 tasks, have changed the way we process text, images, and sound. Can we
@@ -415,63 +489,7 @@ support.&lt;/p&gt;
 &lt;p&gt;Try skrub out! It’s still young, but in my opinion, it provides a lot
 of value to tabular learning.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category><category term="skrub"></category><category term="scikit-learn"></category><category term="tabular"></category><category term="machine learning"></category><category term="open source"></category><category term="software"></category></entry><entry><title>Do AIs reason or recite?</title><link href="https://gael-varoquaux.info/science/do-ais-reason-or-recite.html" rel="alternate"></link><published>2024-06-25T00:00:00+02:00</published><updated>2024-06-25T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-06-25:/science/do-ais-reason-or-recite.html</id><summary type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
-&lt;div class="admonition note"&gt;
-&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;This post was originally published in French as part of my scientific
-chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-raisonnent-elles-ou-recitent-elles-2103079"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Conversational AI, or large language …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
-&lt;div class="admonition note"&gt;
-&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;This post was originally published in French as part of my scientific
-chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-raisonnent-elles-ou-recitent-elles-2103079"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Conversational AI, or large language models, are sometimes seen as the
-gateway to general artificial intelligence. ChatGPT, for example, can
-answer questions asked at the International Mathematical Olympiad. And
-yet, on other, seemingly much simpler questions, ChatGPT makes surprising
-mistakes. What aspects of conversational AI intelligence explain its
-ability to solve some problems and not others?&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://arxiv.org/abs/2309.13638"&gt;Thomas McCoy and co-authors&lt;/a&gt;
-conjecture that it has to do with their underlying model of
-autoregression: technically, these AIs are trained to complete texts
-found on the Internet. If an AI is very good at calculating (9/5) x + 32,
-but not (7/5) x + 31, it is because the first formula corresponds to the
-conversion of degrees Celsius to Fahrenheit, a very frequent conversion
-on the Internet, while the second does not correspond to any particular
-formula. Conversational AIs would therefore be good at reproducing what
-they’ve already seen. Indeed, numerous studies have shown that they have
-a certain tendency to reproduce snippets of known text. So, if an AI can
-solve problems from the International Mathematical Olympiad, is it simply
-because it has memorized the answer?&lt;/p&gt;
-&lt;div class="section" id="something-new"&gt;
-&lt;h2&gt;Something new?&lt;/h2&gt;
-&lt;p&gt;In terms of intelligence, inventing a new mathematical demonstration
-requires mastering abstractions and the ability to string together
-complicated logical reasoning with an imposed start and finish. This
-seems much more difficult than memorizing a demonstration. This is one of
-the traditional oppositions in machine learning, the line of research
-that gave rise to today’s AIs: memorizing is one thing, knowing how to
-generalize is another. For example, if I memorize all the additions
-between two numbers smaller than ten, I cannot extrapolate beyond that. To
-go further, I need to master the logic of addition… or memorize more.&lt;/p&gt;
-&lt;p&gt;And precisely, conversational AIs have an enormous capacity for
-memorization, and have been trained on almost the entire Internet. Given
-a question, they can often dip into their memory to find answers. So, are
-they intelligent or just have a great memory? Scientists are still
-debating the importance of memory to their abilities. Some argue that
-their storage capacity is ultimately limited by the size of the Internet.
-Others wonder to what extent the impressive successes highlighted are not
-on tasks already solved on the Internet, questioning their ability to do
-anything new.&lt;/p&gt;
-&lt;p&gt;But could memorization be an aspect of intelligence? In 1987, Lenat and
-Feigenbaum conjectured that, for a cognitive agent, accumulating
-knowledge enables it to solve new tasks with less learning. Perhaps the
-intelligence of conversational AI lies in knowing how to pick up the
-right bits of information, and combine them.&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category></entry><entry><title>Promoting open-source, from inria to :probabl.</title><link href="https://gael-varoquaux.info/programming/promoting-open-source-from-inria-to-probabl.html" rel="alternate"></link><published>2024-06-09T00:00:00+02:00</published><updated>2024-06-09T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-06-09:/programming/promoting-open-source-from-inria-to-probabl.html</id><summary type="html">&lt;div class="admonition note"&gt;
+</content><category term="programming"></category><category term="skrub"></category><category term="scikit-learn"></category><category term="tabular"></category><category term="machine learning"></category><category term="open source"></category><category term="software"></category></entry><entry><title>Promoting open-source, from inria to :probabl.</title><link href="https://gael-varoquaux.info/programming/promoting-open-source-from-inria-to-probabl.html" rel="alternate"></link><published>2024-06-09T00:00:00+02:00</published><updated>2024-06-09T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-06-09:/programming/promoting-open-source-from-inria-to-probabl.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;img alt="" class="align-right" src="../programming/attachments/scikit-learn_at_probabl.png" style="width: 300px;" /&gt;
 &lt;p class="last"&gt;Open-source efforts around scikit-learn at Inria are spinning off to a
