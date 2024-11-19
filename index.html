@@ -121,11 +121,16 @@ style="transform: scale(.9);transform-origin: 0 0;margin-bottom: -8%;-webkit-tra
      </div>
      <div class="pure-u-1-2 two_of_two">
 	<h1 class="content-subhead" style="margin-bottom: 0pt;">Feed</h1>
-	<div style="overflow: hidden;">
-	<div style="margin-top: -18px;">
-	    <iframe  class="feed"
-src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.social%2Fusers%2FGaelVaroquaux&theme=light&size=100&header=false&replies=false&boosts=true" style="transform: scale(.9);transform-origin: 0 0;margin-bottom: -8%;-webkit-transform: scale(.9); -webkit-transform-origin: 0 0;" width="110%"></iframe>
+	<div class="feed" >
+	<div style="margin-top: -10px;">
 	</div>
+	    <!-- Bluesky embedding, https://www.reddit.com/r/BlueskySocial/comments/1b0duvf/embed_your_bluesky_profile_on_your_website/ -->
+	    <script src="https://cdn.jsdelivr.net/npm/bsky-embed@0.0.5/dist/bsky-embed.es.js" async></script>
+	    <bsky-embed  
+	    username="gaelvaroquaux.bsky.social"  
+	    limit="5"  
+	    >  
+	    </bsky-embed>
 	</div>
      </div>
     </div>
