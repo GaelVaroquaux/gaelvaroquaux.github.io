@@ -1506,24 +1506,44 @@ span.limits span.limit {
     margin: -8px 0px;
 }
 
-/*-- The index page on very large screens: twitter goes on the side --*/
-
 iframe.latest-papers {
     height: 340px;
 }
 
 div.feed {
     height: 400px;
+    height: min(max(18ex, 50vh), 50ex);
     overflow: scroll;
     transform-origin: top left;
     transform: scale(.8);
-    width: 530px;
+    /*max-width: 570px;*/
+    width: 125%;
+}
+
+div.two_of_two {
+    height: min(max(18ex, 50vh), 50ex);
+}
+
+
+@media ((min-width: 1000px) and (max-width: 1600px)) {
+    iframe.latest-papers {
+	max-width: 470px;
+    }
+}
+
+@media (min-width: 1400px) {
+    div.feed {
+	margin-left: -10px;
+	width: 580px;
+    }
 }
 
 div.indexhead {
     padding-bottom: 1em;
     margin-bottom: 3vh;
 }
+
+/*-- The index page on very large screens: feeds go on the side --*/
 
 @media (min-width: 1900px) {
     div.indexhead {
@@ -1545,7 +1565,7 @@ div.indexhead {
     }
 
     div.feed {
-	height: 39vh !important;
+	height: 40vh !important;
 	margin-left: -30px;
 	width: 500px;
     }
