@@ -102,7 +102,7 @@ div.sidebar div.cover-img {
 }
 
 .cover-profile {
-    margin-left: 30%;
+    margin-left: calc(49% - 50px);
     margin-right: auto;
     margin-top: 10%;
     background-image: none;
@@ -1511,8 +1511,7 @@ iframe.latest-papers {
 }
 
 div.feed {
-    height: 400px;
-    height: min(max(18ex, 50vh), 50ex);
+    height: 430px;
     overflow: scroll;
     transform-origin: top left;
     transform: scale(.8);
