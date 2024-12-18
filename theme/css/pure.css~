@@ -113,8 +113,8 @@ div.sidebar div.cover-img {
     border: 2px solid #2e3f56;
     border-radius: 50%;
     overflow: hidden;
-    width: 100px;
-    height: 100px;
+    width: calc(max(100px, 4vw));
+    height: calc(max(100px, 4vw));
     background: #FFF;
 }
 
@@ -1533,7 +1533,6 @@ div.two_of_two {
 @media (min-width: 1400px) {
     div.feed {
 	margin-left: -10px;
-	width: 580px;
     }
 }
 
@@ -1548,7 +1547,7 @@ div.indexhead {
     div.indexhead {
 	position: fixed;
 	right: 3vw;
-	width: 300px;
+	width: calc(max(300px, 13vw));
 	top: 10pt;
     }
 
@@ -1566,7 +1565,6 @@ div.indexhead {
     div.feed {
 	height: 40vh !important;
 	margin-left: -30px;
-	width: 500px;
     }
 
     div.indexhead div.one_of_two {
@@ -1592,7 +1590,7 @@ div.indexhead {
 @media (min-width: 2400px) {
     div.indexhead {
 	right: 7vw;
-	width: 400px;
+	/*width: 400px;*/
     }
 }
 
