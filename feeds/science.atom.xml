@@ -1,5 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-10-19T00:00:00+02:00</updated><entry><title>Do AIs reason or recite?</title><link href="https://gael-varoquaux.info/science/do-ais-reason-or-recite.html" rel="alternate"></link><published>2024-10-19T00:00:00+02:00</published><updated>2024-10-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-10-19:/science/do-ais-reason-or-recite.html</id><summary type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-12-22T00:00:00+01:00</updated><entry><title>When AIs must overcome the data</title><link href="https://gael-varoquaux.info/science/when-ais-must-overcome-the-data.html" rel="alternate"></link><published>2024-12-22T00:00:00+01:00</published><updated>2024-12-22T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-12-22:/science/when-ais-must-overcome-the-data.html</id><summary type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/quand-lia-doit-depasser-les-donnees-2126369"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/quand-lia-doit-depasser-les-donnees-2126369"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In 2003, Microsoft’s conversational AI insulted users.
+Salary-recommendation engines ignore women’s degrees to underpay them. At
+the start of the Covid-19 pandemic, predictions of hospital stays
+consistently underestimated the duration. These three issues all stem
+from the same failure: predictive engines, artificial intelligences, that
+have learned from biases. The rude conversational AI replicated its
+training texts, some of which came from internet forums where politeness
+is sometimes overlooked. The medical AI only considered finished
+hospitalizations, and, as the epidemic had just begun, only patients
+with mild forms had already been discharged, while the more seriously ill
+remained hospitalized.&lt;/p&gt;
+&lt;p&gt;To obtain an AI that doesn’t say nonsense, the biases must be
+“corrected.” The problem of too-short observation windows is a classic
+issue in medical statistics: more importance must be placed on the few
+individuals who have been sick for a long time. A similar solution is
+used to improve conversational AIs: weighting the training text sources
+based on the deviation from the desired behavior.&lt;/p&gt;
+&lt;div class="section" id="aligning-on-which-values"&gt;
+&lt;h2&gt;Aligning on which values?&lt;/h2&gt;
+&lt;p&gt;The problem of bias is universal in statistics. And modern AIs are
+statistical because they learn from data. The notion of bias is very
+relative. It should be understood as a gap between the available data and
+the desired behavior. Therefore, &lt;strong&gt;there is no such thing as unbiased data,
+or a universal bias correction&lt;/strong&gt;. Much of the effort to improve AIs focuses
+on reducing this gap between training and the desired behavior.&lt;/p&gt;
+&lt;p&gt;For example, when training AIs for autonomous vehicles, one difficulty is
+that the data contains very few traffic accidents. Simulators are
+sometimes used to fill this gap. They are inherently less rich than
+reality and are mixed with real-world driving. There is a well-controled
+gap between the resulting mixture and typical driving, this gap is there
+to put emphasis on safety requirements in unfavorable scenarios. This is
+another form of data correction.&lt;/p&gt;
+&lt;p&gt;Just as the notion of data bias depends on how well the data match a
+targeted use, an AI does not produce absolute or objective truth. Without
+corrections, it simply replicates its behavior based on what it has
+observed. And when corrections are made, the whole question is how to
+correct it. For powerful AIs, we then talk about “alignment” towards
+goals and values. As AI incorporates the values of its designers, one
+might wonder whether the same AI can be socially acceptable in all
+cultures.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>Do AIs reason or recite?</title><link href="https://gael-varoquaux.info/science/do-ais-reason-or-recite.html" rel="alternate"></link><published>2024-10-19T00:00:00+02:00</published><updated>2024-10-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-10-19:/science/do-ais-reason-or-recite.html</id><summary type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;This post was originally published in French as part of my scientific
@@ -72,8 +132,12 @@ than logical reasonning.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category></entry><entry><title>CARTE: toward table foundation models</title><link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="alternate"></link><published>2024-07-19T00:00:00+02:00</published><updated>2024-07-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-19:/science/carte-toward-table-foundation-models.html</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>CARTE: toward table foundation models</title><link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="alternate"></link><published>2024-07-19T00:00:00+02:00</published><updated>2024-07-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-19:/science/carte-toward-table-foundation-models.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;Foundation models, pretrained and readily usable for many downstream
 tasks, have changed the way we process text, images, and sound. Can we

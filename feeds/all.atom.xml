@@ -1,5 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-10-19T00:00:00+02:00</updated><entry><title>Do AIs reason or recite?</title><link href="https://gael-varoquaux.info/science/do-ais-reason-or-recite.html" rel="alternate"></link><published>2024-10-19T00:00:00+02:00</published><updated>2024-10-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-10-19:/science/do-ais-reason-or-recite.html</id><summary type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-12-22T00:00:00+01:00</updated><entry><title>When AIs must overcome the data</title><link href="https://gael-varoquaux.info/science/when-ais-must-overcome-the-data.html" rel="alternate"></link><published>2024-12-22T00:00:00+01:00</published><updated>2024-12-22T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-12-22:/science/when-ais-must-overcome-the-data.html</id><summary type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/quand-lia-doit-depasser-les-donnees-2126369"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/quand-lia-doit-depasser-les-donnees-2126369"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In 2003, Microsoft’s conversational AI insulted users.
+Salary-recommendation engines ignore women’s degrees to underpay them. At
+the start of the Covid-19 pandemic, predictions of hospital stays
+consistently underestimated the duration. These three issues all stem
+from the same failure: predictive engines, artificial intelligences, that
+have learned from biases. The rude conversational AI replicated its
+training texts, some of which came from internet forums where politeness
+is sometimes overlooked. The medical AI only considered finished
+hospitalizations, and, as the epidemic had just begun, only patients
+with mild forms had already been discharged, while the more seriously ill
+remained hospitalized.&lt;/p&gt;
+&lt;p&gt;To obtain an AI that doesn’t say nonsense, the biases must be
+“corrected.” The problem of too-short observation windows is a classic
+issue in medical statistics: more importance must be placed on the few
+individuals who have been sick for a long time. A similar solution is
+used to improve conversational AIs: weighting the training text sources
+based on the deviation from the desired behavior.&lt;/p&gt;
+&lt;div class="section" id="aligning-on-which-values"&gt;
+&lt;h2&gt;Aligning on which values?&lt;/h2&gt;
+&lt;p&gt;The problem of bias is universal in statistics. And modern AIs are
+statistical because they learn from data. The notion of bias is very
+relative. It should be understood as a gap between the available data and
+the desired behavior. Therefore, &lt;strong&gt;there is no such thing as unbiased data,
+or a universal bias correction&lt;/strong&gt;. Much of the effort to improve AIs focuses
+on reducing this gap between training and the desired behavior.&lt;/p&gt;
+&lt;p&gt;For example, when training AIs for autonomous vehicles, one difficulty is
+that the data contains very few traffic accidents. Simulators are
+sometimes used to fill this gap. They are inherently less rich than
+reality and are mixed with real-world driving. There is a well-controled
+gap between the resulting mixture and typical driving, this gap is there
+to put emphasis on safety requirements in unfavorable scenarios. This is
+another form of data correction.&lt;/p&gt;
+&lt;p&gt;Just as the notion of data bias depends on how well the data match a
+targeted use, an AI does not produce absolute or objective truth. Without
+corrections, it simply replicates its behavior based on what it has
+observed. And when corrections are made, the whole question is how to
+correct it. For powerful AIs, we then talk about “alignment” towards
+goals and values. As AI incorporates the values of its designers, one
+might wonder whether the same AI can be socially acceptable in all
+cultures.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>Do AIs reason or recite?</title><link href="https://gael-varoquaux.info/science/do-ais-reason-or-recite.html" rel="alternate"></link><published>2024-10-19T00:00:00+02:00</published><updated>2024-10-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-10-19:/science/do-ais-reason-or-recite.html</id><summary type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;This post was originally published in French as part of my scientific
@@ -72,8 +132,12 @@ than logical reasonning.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category></entry><entry><title>CARTE: toward table foundation models</title><link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="alternate"></link><published>2024-07-19T00:00:00+02:00</published><updated>2024-07-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-19:/science/carte-toward-table-foundation-models.html</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>CARTE: toward table foundation models</title><link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="alternate"></link><published>2024-07-19T00:00:00+02:00</published><updated>2024-07-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-19:/science/carte-toward-table-foundation-models.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;Foundation models, pretrained and readily usable for many downstream
 tasks, have changed the way we process text, images, and sound. Can we
@@ -10387,81 +10451,4 @@ instantiate one with a specific seed:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;prng&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;RandomState&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;seed&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;and pass it to your function.&lt;/p&gt;
-</content><category term="programming"></category><category term="python"></category><category term="scientific computing"></category><category term="software engineering"></category><category term="design patterns"></category><category term="selected"></category></entry><entry><title>SciPy 2009 is over!</title><link href="https://gael-varoquaux.info/programming/scipy-2009-is-over.html" rel="alternate"></link><published>2009-08-29T12:21:00+02:00</published><updated>2009-08-29T12:21:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-08-29:/programming/scipy-2009-is-over.html</id><summary type="html">&lt;p&gt;The week is over, and I am finally catching up with things, back here in
-France.&lt;/p&gt;
-&lt;p&gt;The SciPy conference was exciting and fun as usual. It was great to meet
-old friends and put faces on names on the mailing list.&lt;/p&gt;
-&lt;p&gt;The turn out was very good: we had 150 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The week is over, and I am finally catching up with things, back here in
-France.&lt;/p&gt;
-&lt;p&gt;The SciPy conference was exciting and fun as usual. It was great to meet
-old friends and put faces on names on the mailing list.&lt;/p&gt;
-&lt;p&gt;The turn out was very good: we had 150 people total. This is more than
-last year (125), which shows that there is high interest, given that
-most institutions have travel restrictions due to this year’s low
-budget.&lt;/p&gt;
-&lt;p&gt;The year, the conference was very international. I was really happy
-that, partly thanks to the &lt;a class="reference external" href="http://conference.scipy.org/student-funding"&gt;PSF contribution&lt;/a&gt;, we had the visit of
-young contributors coming from far away, such as David Cournapeau
-(Japan), Dag Sverre Seljebotn (Norway), Pauli Virtanen (Finland), and
-Stéfan van der Walt (South Africa). For me, living in France, it was
-also great to have people from major European institutions, such as the
-&lt;a class="reference external" href="http://conference.scipy.org/abstract?id=7"&gt;ESRF&lt;/a&gt; (European Synchrotron Radiation Facility), the &lt;a class="reference external" href="http://conference.scipy.org/abstract?id=14"&gt;Fraunhofer
-institute&lt;/a&gt;,&amp;nbsp; the &lt;a class="reference external" href="http://conference.scipy.org/abstract?id=14"&gt;Max Planck Institute&lt;/a&gt;. These people not only
-committed important projects to the scientific Python tools, but made
-the effort of coming all the way to California to talk about it, which
-is non negligible given the cost of the trip all the way from Europe. To
-me this is important because it means that we are getting more
-interaction wordwide, and thus the tools are more likely to converge to
-something of generaluse. Also, for the first time ever, one of my bosses
-came to the conference. It is fantastic to be working with great
-scientists who actually understand that technology is important to do
-good science, and that programming is actually hard, and a matter of
-interest per se.&lt;/p&gt;
-&lt;p&gt;On the other hand, I was disappointed that we had no presentations from
-the industry. There were a lot of industry people in the audience, and
-it is always fun to here what they use Python for.&lt;/p&gt;
-&lt;p&gt;I really enjoyed the keynote by Peter Norvig because Peter talked about
-the importance of having a clear language to expose and formulate
-scientific ideas. This is something that is very dear to me, and I must
-say that the code snippets he presented were crystal clear, and
-involving non-trivial maths explained in a way that made them look
-simple, similar to his famous blog post on &lt;a class="reference external" href="http://norvig.com/spell-correct.html"&gt;spell checking&lt;/a&gt;. It was
-really inspiring for me, and driving me into trying to write even
-cleared and simpler code.&lt;/p&gt;
-&lt;p&gt;The technical keynote by Jon Guyer also hit a soft spot for me, not only
-because the physics presented was very beautiful, but also because my
-partner is doing research in similar fields (with Python, of course),
-and Jon made an excellent argument for using Python, which is not always
-easy when you are discussing heavily computational problems.&lt;/p&gt;
-&lt;p&gt;For my personal work, SciPy was very exciting, because I had so many
-discussions with different people on how we could share efforts, by
-tweaking a data structure in an existing package, or simply having a
-look at a package I wasn’t aware of. The machine learning BoF was
-extremely enthusiastic, and I am really looking forward to October, when
-we will be able to start working on that. If only half of the things was
-talked about ever get done, I will be thrilled.&lt;/p&gt;
-&lt;p&gt;I should point out that, thanks to hard work by Jeff Teeters and Kilian
-Koepsell from Berkeley, the videos of every talk are on the &lt;a class="reference external" href="http://www.archive.org/search.php?query="&gt;web&lt;/a&gt; for
-the first time.&lt;/p&gt;
-&lt;p&gt;Also, we have a nice &lt;a class="reference external" href="http://www.flickr.com/photos/irees/sets/72157622006161097/"&gt;photo gallery&lt;/a&gt; with a group picture.&lt;/p&gt;
-&lt;p&gt;We have so many people to thank. I think special thanks go to Leah
-Jones, at Enthought, and Julie Ponce, at CACR, Caltech. They made sure
-that the organization committee didn’t forget anything important and did
-a lot of the grunt work. Thanks also to Enthought and CACR, and many of
-their staff, for the support in the organization. PSF founded students,
-and that is a big deal. We should thank all the tutorial presenters, it
-takes a lot of work to put together the material. We were very grateful
-to the &lt;a class="reference external" href="http://conference.scipy.org/organizers"&gt;program committee&lt;/a&gt; for reviewing the papers. Also thanks to all
-the speakers, and to all the attendees. The SciPy conference is a bit
-special to me, because it is very laid back, and I can trust that it
-will be great almost by self-organization, as you put together nice and
-clever people, and they find ways of discussing of interested things
-with enthusiasm.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; That blog post feels way too ‘political’. I dislike sale
-pitches, and it does feel like one. But, how to sum up some important
-contributions and thanks the people who helped out? I made a point of
-always wearing a T-shirt of the conference, rather than a shirt, but I
-guess that there is a point at which trying to dodge etiquette with a
-T-shirt and a pony tail is just another cliché[*] and formalism.&lt;/p&gt;
-&lt;p&gt;[*] &lt;em&gt;cliché&lt;/em&gt; is a French word for cliché.&lt;/p&gt;
-</content><category term="programming"></category></entry></feed>
+</content><category term="programming"></category><category term="python"></category><category term="scientific computing"></category><category term="software engineering"></category><category term="design patterns"></category><category term="selected"></category></entry></feed>
