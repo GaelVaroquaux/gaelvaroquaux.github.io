@@ -816,7 +816,7 @@ div.content table.docutils {
     width: fit-content;
 }
 
-div.content table.foonote {
+div.content table.docutils.footnote {
     margin-left: 10px;
 }
 
@@ -1004,6 +1004,11 @@ div.sidebar p.first {
 	position: relative;
 	top: inherit;
     }
+
+    div.contents.topic a.selected {
+	font-weight: bold;
+    }
+
 }
 
 @media (min-width: 1560px) {
@@ -1221,26 +1226,50 @@ ul.columns.simple:after {
 
 /* Side hanging footnotes */
 @media (min-width: 1670px) {
-    table.footnote.side-hanging, div.content div.side-hanging {
+    table.footnote.side-hanging {
 	position: absolute;
 	right: 1ex;
 	margin-top: -10ex;
-	width: 17em;
+	width: 17em!important;
+    }
+
+    div.content div.side-hanging {
+	margin-right: -2ex;
     }
 }
 
 @media (min-width: 1750px) {
-    table.footnote.side-hanging, div.content div.side-hanging {
-	width: 20em;
+    table.footnote.side-hanging {
+	width: 20em!important;
 	right: 2ex;
     }
 
+    div.content div.side-hanging {
+	margin-right: -6ex;
+    }
+}
+@media (min-width: 1900px) {
+    table.footnote.side-hanging {
+	width: 23em!important;
+    }
+
+    div.content div.side-hanging {
+	position: absolute;
+	width: 23em!important;
+	right: calc(49vw - 100ex);
+	margin-right: 0ex;
+    }
 }
 
-@media (min-width: 1850px) {
-    table.footnote.side-hanging, div.content div.side-hanging {
-	width: 25em;
-	right: calc(41vw - 90ex);
+@media (min-width: 2220px) {
+    table.footnote.side-hanging {
+	width: 25em!important;
+	right: calc(35vw - 90ex);
+    }
+
+    div.content div.side-hanging {
+	width: 23em!important;
+	right: calc(49vw - 90ex);
     }
 
 }
