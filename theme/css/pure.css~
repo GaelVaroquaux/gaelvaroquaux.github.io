@@ -816,6 +816,10 @@ div.content table.docutils {
     width: fit-content;
 }
 
+div.content table.foonote {
+    margin-left: 10px;
+}
+
 div.content table.docutils colgroup col {
     border: white 2px solid;
     min-width: 4ex;
@@ -987,6 +991,7 @@ div.sidebar p.first {
 
     div.contents p.topic-title {
 	border-width: 0px;
+	margin-bottom: 10px;
     }
 
     div.contents a {
@@ -1508,6 +1513,7 @@ span.limits span.limit {
 
 iframe.latest-papers {
     height: 340px;
+    max-height: 30em;
 }
 
 div.feed {

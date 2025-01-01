@@ -1,5 +1,319 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-12-22T00:00:00+01:00</updated><entry><title>When AIs must overcome the data</title><link href="https://gael-varoquaux.info/science/when-ais-must-overcome-the-data.html" rel="alternate"></link><published>2024-12-22T00:00:00+01:00</published><updated>2024-12-22T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-12-22:/science/when-ais-must-overcome-the-data.html</id><summary type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-01-01T00:00:00+01:00</updated><entry><title>2024 highlights: of computer science and society</title><link href="https://gael-varoquaux.info/science/2024-highlights-of-computer-science-and-society.html" rel="alternate"></link><published>2025-01-01T00:00:00+01:00</published><updated>2025-01-01T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-01-01:/science/2024-highlights-of-computer-science-and-society.html</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;For me, 2024 was full of back and forth between research,
+software, and connecting these to society. Here, I lay out some
+highlight on AI and society, as well as research and software, around
+tabular AI and language models.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;As 2025 starts, I’m looking back on 2024. It …&lt;/p&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;For me, 2024 was full of back and forth between research,
+software, and connecting these to society. Here, I lay out some
+highlight on AI and society, as well as research and software, around
+tabular AI and language models.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;As 2025 starts, I’m looking back on 2024. It was an interesting
+professional year, as the research in the &lt;a class="reference external" href="https://team.inria.fr/soda/"&gt;soda team&lt;/a&gt; on machine learning for health and
+social science nourished reflection on society.&lt;/p&gt;
+&lt;div class="contents topic" id="highlights"&gt;
+&lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#thoughts-from-the-national-ai-committee" id="toc-entry-1"&gt;Thoughts from the national AI committee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#adventures-in-software-land" id="toc-entry-2"&gt;Adventures in software land&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#probabl-to-supercharge-scikit-learn" id="toc-entry-3"&gt;probabl to supercharge scikit-learn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#skrub-machine-learning-on-tables-made-easy" id="toc-entry-4"&gt;Skrub: machine learning on tables made easy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#research-better-ai-tools-more-understanding" id="toc-entry-5"&gt;Research: better AI tools, more understanding&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#table-foundation-models" id="toc-entry-6"&gt;Table foundation models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#disparities-of-confidence-of-large-language-models" id="toc-entry-7"&gt;Disparities of confidence of large language models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#a-straggler-consistency-of-supervised-learning-with-missing-values" id="toc-entry-8"&gt;A straggler: Consistency of supervised learning with missing values&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="thoughts-from-the-national-ai-committee"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Thoughts from the national AI committee&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Early 2024, I was serving in the French national AI committee. Our final write up can be found
+&lt;a class="reference external" href="https://www.info.gouv.fr/actualite/25-recommandations-pour-lia-en-france"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It was a ton of work, a very interesting experience, and I learned a lot
+on many aspects of the interfaces between technology, policy, and
+society. A few things that stood out for me, some partly
+obvious but worth saying:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Digital services are a growing economy.&lt;/strong&gt; The share of the economy
+that is digital keeps growing, whether we like it or not (IMHO, most of
+us spent too much time on our phones…). For France, or Europe, there
+is no question: we must produce our share of digital services and
+innovation, else our economic balance suffers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Privacy is erroding.&lt;/strong&gt; Whether it is social network, information
+leaking into search engines or training of large language models,
+or people uploading private information to chatGPT, private information
+is more and more available. History has shown us the dangers behind
+loss of privacy, which the powerful (governing or economical elites)
+typically leverage to assert more power. Europe has had a long stance
+of trying to mitigate this loss of privacy via regulation (GDPR). But
+regulating services that we don’t control is hard, and it ends up being
+a geo-political and economical battle.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Big AI is huge.&lt;/strong&gt; The size of investments in AI is huge (dozens of
+billions yearly, comparable to a sizeable fraction of the state
+expenditures of a rich country like Switzerland). Data centers are
+having significant impacts on the electric grid of modern countries,
+running in competition with other usage. The cost of large models have
+ballooned (training a large language model is in the hundreds of
+millions of cost, which is comparable to a sizeable fraction of the
+budget of the national research institute that I work in (&lt;a class="reference external" href="https://inria.fr/fr"&gt;inria&lt;/a&gt;). Training costs are just the visible part
+of the iceberg, operational costs are huge and are everywhere.&lt;/p&gt;
+&lt;p&gt;Not all in tech are worried about rising costs. Indeed, they go hand in
+hand with more money in tech, making us, tech bros, richer, as long as
+investments keep pouring in. But &lt;a class="reference external" href="https://www.goldmansachs.com/images/migrated/insights/pages/gs-research/gen-ai--too-much-spend%2C-too-little-benefit-/TOM_AI%202.0_ForRedaction.pdf"&gt;bubble dynamics are at play&lt;/a&gt;,
+and explain part of the conversation around AI.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;Concentration of power.&lt;/strong&gt; Many factors in today’s AI lead to
+concentration into the hands of large actors. Training and operation
+costs, of course. But also limited access to the correspond skills,
+platform effect on the data and the users. The most striking bottleneck
+is the compute hardware. Only one company makes the chips that we all
+need. Few actors can afford buying them; and as a result most of the
+world lives from renting out to big landlords.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;strong&gt;AI neither good nor bad, but what we do of it.&lt;/strong&gt; The above may
+paint a gloomy picture. But this is not how I see it. AI does have a
+lot of potential for good, as all general purpose technology. It all
+depends how society uses it. And here the future is open: we, as actors
+of democratic societies, as innovators, in tech but in every aspects of
+society, we can determine what the future of AI is. I look forward to
+technology that empowers each and everybody, to act for their own
+benefit. Key to this future is enabling and bringing in every stakeholder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="adventures-in-software-land"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Adventures in software land&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;With the growing importance of data and artificial intelligence in
+shaping society, I believe more than ever in the importance of open
+source and commons for data science, making tools accessible to as many
+as possible.&lt;/p&gt;
+&lt;div class="section" id="probabl-to-supercharge-scikit-learn"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;probabl to supercharge scikit-learn&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Early 2024, Inria span off the scikit-learn development to a new structure, &lt;a class="reference external" href="https://probabl.ai"&gt;probabl&lt;/a&gt;, to supercharge the development of the broader
+ecosystem. I detailed the motivation and the goals in &lt;a class="reference external" href="../programming/promoting-open-source-from-inria-to-probabl.html"&gt;a previous article&lt;/a&gt;. In a
+nutshell:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Scikit-learn is &lt;a class="reference external" href="programming/people-underestimate-how-impactful-scikit-learn-continues-to-be.html"&gt;a key component of the machine-learning
+ecosystem&lt;/a&gt;,
+but its development require funding.&lt;/li&gt;
+&lt;li&gt;Probabl is there to foster a broader open data-science ecosystem, as
+scikit-learn can be sustainable only when used in such ecosystem.
+Probabl focus on delivering value to enterprises, and thus makes sure
+that there is a seamless solution to their needs.&lt;/li&gt;
+&lt;li&gt;I have 10% of my time allocated from Inria to Probabl.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some of our successes are already publicly visible:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The open-source team at probabl is maintaining and improving &lt;a class="reference external" href="https://probabl.ai/open-source"&gt;a range
+of software libraries&lt;/a&gt;: scikit-learn,
+joblib, imbalanced-learn, fairlearn, skops, skrub… Our priorities are
+openly discussed &lt;a class="reference external" href="https://papers.probabl.ai/open-source-priorities-chapter-2"&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;We have launched &lt;a class="reference external" href="https://papers.probabl.ai/official-scikit-learn-certification-launch"&gt;an official certification program for scikit-learn&lt;/a&gt;. I’m very excited about these certifications (there are three levels), to grow recognition in the scikit-learn skills, and thus make sure that it is a dependable stack for the industry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="skrub-machine-learning-on-tables-made-easy"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Skrub: machine learning on tables made easy&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://skrub-data.org/"&gt;skrub&lt;/a&gt; is a software project that I am very
+excited about. Many crucial applications of machine learning are on
+tables. Skrub facilitates the corresponding patterns. We are designing it
+with the insights of years of research and practice on the topic. It does
+not always look impressive, but it’s little things that add up for
+productivity.&lt;/p&gt;
+&lt;p&gt;A typical dataset is the employees one:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;gt;&amp;gt;&amp;gt; from skrub.datasets import fetch_employee_salaries
+&amp;gt;&amp;gt;&amp;gt; dataset = fetch_employee_salaries()
+&amp;gt;&amp;gt;&amp;gt; employees_df, y = dataset.X, dataset.y
+&lt;/pre&gt;
+&lt;p&gt;Skrub’s &lt;a class="reference external" href="https://skrub-data.org/stable/reference/generated/skrub.TableReport.html"&gt;TableReport&lt;/a&gt; makes it really easy to interactively visualize and
+explore such table:&lt;/p&gt;
+&lt;img alt="" src="attachments/2024_highlights/table_report_vscode.png" style="width: 700px;" /&gt;
+&lt;p&gt;The dataframe &lt;cite&gt;employees_df&lt;/cite&gt; has plenty of non numerical columns, as visible above.
+Skrub’s &lt;a class="reference external" href="https://skrub-data.org/stable/reference/generated/skrub.TableVectorizer.html"&gt;TableVectorizer&lt;/a&gt; turns it into a numerical array suitable for
+machine learning, taking care of dates, categories, strings…&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;gt;&amp;gt;&amp;gt; from skrub import TableVectorizer
+&amp;gt;&amp;gt;&amp;gt; X = TableVectorizer().fit_transform(employees_df)
+&lt;/pre&gt;
+&lt;p&gt;If you want to use deep-learning language models for the string
+categories, skrub’s &lt;a class="reference external" href="https://skrub-data.org/stable/reference/generated/skrub.TextEncoder.html"&gt;TextEncoder&lt;/a&gt;
+can download pre-trained models from hugginface:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+&amp;gt;&amp;gt;&amp;gt; from skrub import TextEncoder
+&amp;gt;&amp;gt;&amp;gt; text_encoder = TextEncoder(
+        &amp;quot;sentence-transformers/paraphrase-albert-small-v2&amp;quot;,
+        device=&amp;quot;cpu&amp;quot;,
+    )
+&amp;gt;&amp;gt;&amp;gt; tab_vec = TableVectorizer(high_cardinality=text_encoder)
+&amp;gt;&amp;gt;&amp;gt; X = tab_vec.fit_transform(employees_df)
+&lt;/pre&gt;
+&lt;p&gt;With this, the latest artificial intelligent developments are easily
+brought to drive decisions on the data that matters.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="research-better-ai-tools-more-understanding"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;Research: better AI tools, more understanding&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Software or thoughts on AI and society, are best built on solid
+understanding of AI, which calls for research.&lt;/p&gt;
+&lt;div class="section" id="table-foundation-models"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;Table foundation models&lt;/a&gt;&lt;/h3&gt;
+&lt;p class="align-right"&gt;&lt;em&gt;Modeling data semantics enable pretaining for tables&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I have been working on machine-learning for tables for more than a
+decade. These data are crucial for many applications, but they have so
+far not witnessed the breakthroughs of deep learning seen &lt;em&gt;eg&lt;/em&gt; in vision
+or text. Much of these success of &lt;strong&gt;deep learning as been driven by the
+ability to reused pretrained models&lt;/strong&gt;, fitted on very large datasets.
+Foundation models pushed this idea very far with models that provide
+background information useful for a wide variety of downstream tasks. But
+pretraining is challenging for tables.&lt;/p&gt;
+&lt;p&gt;A crucial part of foundation models for text and images is the attention
+mechanism, stacked in a transformer architecture, that bring associative
+memory to the inputs by contextualizing them. We had a breakthough with
+the &lt;a class="reference external" href="https://openreview.net/forum?id=9kArQnKLDp"&gt;CARTE model&lt;/a&gt;: we
+managed to adapt these ideas to tables. The strings –tables
+entries and column names– give the information that enables transfer from
+one table to another: data semantics. Here, key is to have an
+architecture that 1) models both strings and numerical values 2) applies
+to any set of tables while using the column names to route the
+information. For this purpose, CARTE uses a new dedicated attention
+mechanism that accounts for column names. It is pre-trained on a very
+large knowledge base. As a result, it outperform the best models
+(including tree-based models) in small sample settings (up to n=2000).&lt;/p&gt;
+&lt;p&gt;The pretrained CARTE model is available for download as &lt;a class="reference external" href="https://pypi.org/project/carte-ai"&gt;a Python package&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This result is very significant as it opens the door to &lt;strong&gt;foundation models
+for tables&lt;/strong&gt;: models that embark much background knowledge and can be
+specialized to many tabular-learning tasks.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;a class="reference external image-reference" href="https://openreview.net/forum?id=9kArQnKLDp"&gt;&lt;img alt="" src="attachments/2024_highlights/carte_comparisons.png" style="width: 100%;" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Extensive empirical results show that CARTE brings benefits to very
+broad set of baselines. The relative performance of baselines also
+contains interesting results.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;See also&lt;/p&gt;
+&lt;p&gt;I wrote a longer &lt;a class="reference external" href="./carte-toward-table-foundation-models.html"&gt;high-level post on CARTE&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="disparities-of-confidence-of-large-language-models"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-7"&gt;Disparities of confidence of large language models&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="figure align-right"&gt;
+&lt;a class="reference external image-reference" href="https://hal.science/hal-04750567"&gt;&lt;img alt="" src="attachments/2024_highlights/hallucination_probability.png" style="width: 400px;" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;A good confidence assessment on replies of an LLM would separate out
+correct from incorrect statements: Einstein was not born on Jan 14th
+1879 (close call, it was March 14th); his PhD was in Zurich.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Large language models (LLMs), such as chatGPT, may produce answers that
+are plausible but not factually correct, the so-called “hallucinations”.
+A variety of approach try to assess how likely a statement is to be true,
+for instance by sampling multiple responses from the language model.
+Ideally, we would like to use these confidence assessments to flag the
+wrong statements in an LLM’s answer. For this, a challenge is to
+threshold them, or assign a probability of correctness.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="figure align-right"&gt;
+&lt;a class="reference external image-reference" href="https://hal.science/hal-04750567"&gt;&lt;img alt="" src="attachments/2024_highlights/llm_confidence_nationality.png" style="width: 400px;" /&gt;&lt;/a&gt;
+&lt;p class="caption"&gt;Observed error rate and a function predicted probability of
+correctness For the birth date, when a large language model (here Mistral
+7B) gives information on a given notable individual. The different
+curves give the corresponding calibration for different nationalities of
+the individuals, revealing that &lt;strong&gt;the probability is much more trustworthy
+for a citizen of the United States than for other countries&lt;/strong&gt;, and
+particularly poor for people that originate from South-East Asia.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In &lt;a class="reference external" href="https://hal.science/hal-04750567/"&gt;Chen et al&lt;/a&gt;, we investigate the
+confidence of LLMs in their answers. We show that the
+probabilities computed are not only overconfident, but also that there is
+heterogeneity (grouping loss): on some groups of queries the
+overconfidence is more pronounced than on others. For instance, for an
+answer on a notable individual, the LLMs’ confidence is reasonably
+calibrated if the individual is from the United States, but severely
+overconfident for individuals from South East Asia
+(fig:llmconfidencenationality). Characterizing the corresponding groups
+opens the door to correcting the corresponding bias, a “reconfidencing”
+procedure.&lt;/p&gt;
+&lt;p&gt;This study is an application of our earlier, more theoretical, &lt;a class="reference external" href="https://openreview.net/forum?id=6w1k-IixnL8"&gt;work&lt;/a&gt; that contributed the
+first estimator grouping loss, a mathematically-solid concept behind
+hidden heterogeneity in classifier calibration. I am very happy to see
+that these fairly abstract ideas are useful to probe very concrete
+problems such as the disparity in LLM confidence across nationalities.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="a-straggler-consistency-of-supervised-learning-with-missing-values"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-8"&gt;A straggler: Consistency of supervised learning with missing values&lt;/a&gt;&lt;/h3&gt;
+&lt;p class="align-right"&gt;&lt;em&gt;A&lt;/em&gt; &lt;a class="reference external" href="https://link.springer.com/article/10.1007/s00362-024-01550-4"&gt;paper&lt;/a&gt;
+&lt;em&gt;on the fundamentals of machine-learning with missing values&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In 2018, &lt;a class="reference external" href="https://juliejosse.com"&gt;Julie Josse&lt;/a&gt;, &lt;a class="reference external" href="https://erwanscornet.github.io"&gt;Erwan Scornet&lt;/a&gt;, and myself started working on the
+theory of how supervised learning works with missing values (learning
+theory). Working an intern, Nicolas Prost, we quickly realized that there
+was a gap between the statistical thinking around missing values, which
+was focused on enabling inference in parametric models as if their were
+no missing values, and the needs for prediction with missing values.&lt;/p&gt;
+&lt;p&gt;We wrote  &lt;a class="reference external" href="https://link.springer.com/article/10.1007/s00362-024-01550-4"&gt;a paper&lt;/a&gt; to
+lay out the theory cleanly, summarizing both elements of learning theory
+and the fundamentals of statistics with missing values. Beyond this
+didactic aspects, the paper gives a series of formal results, such as the
+need for multiple imputations to be able to use the &lt;em&gt;complete case&lt;/em&gt;
+predictor (the optimal predictor without missing values), the optimal way
+to model missing values in trees (which was already used in XGBoost :) ),
+and the fact that asymptotically, constant imputation of missing values
+could work well for predictor.&lt;/p&gt;
+&lt;p class="align-right"&gt;&lt;em&gt;Frustrations of the academic game&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://hal.science/hal-02024202"&gt;The preprint&lt;/a&gt; got a lot of success
+(more than a hundred citations), probably because it laid out
+fundamentals. But it took 5 years to publish it. The machine learning
+community did not like the absence of new methods (we only gave
+theoretical results on existing practice, such as imputation). The
+statistics literature really did not like our messages that imputation
+was not always important. In one journal, a reviewer rejected the paper on
+the basis that it was giving bad messages to the community, but not
+arguing that anything was wrong in our proofs or our experiments. Of
+course, there is a lot to say about the difficulties of doing data
+analysis with missing values, but the conversation did not go in these
+details. This is a good illustration that &lt;strong&gt;progress in science is
+social&lt;/strong&gt;, and is as much about shifting norms than accumulating knowledge
+(actually, knowledge is social too, as put forward by &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Social_epistemology"&gt;social
+epistemology&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;As time went by, my colleague &lt;a class="reference external" href="https://marinelm.github.io"&gt;Marine Le Morvan&lt;/a&gt; has published &lt;a class="reference external" href="https://proceedings.mlr.press/v108/morvan20a.html"&gt;more&lt;/a&gt; &lt;a class="reference external" href="https://proceedings.neurips.cc/paper/2021/hash/5fe8fdc79ce292c39c5f209d734b7206-Abstract.html"&gt;and&lt;/a&gt;
+&lt;a class="reference external" href="https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giac013/6568998"&gt;more&lt;/a&gt;
+&lt;a class="reference external" href="https://arxiv.org/abs/2407.19804"&gt;results&lt;/a&gt; that push deeper
+understanding of prediction with missing values. But I still see value in
+our original paper, as it lays the foundations.&lt;/p&gt;
+&lt;p&gt;The paper is now out, thanks to my coauthors who kept replying to
+reviewers, improving the manuscripts, and resubmitting. Read &lt;a class="reference external" href="https://link.springer.com/article/10.1007/s00362-024-01550-4"&gt;it&lt;/a&gt;, I think
+that it is a good read.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;Well, this article ended up longer than I had expected. Thanks for
+reading. Taking a step back to figure out what is important is always a
+good exercise for me.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="statistics"></category><category term="yearly report"></category></entry><entry><title>When AIs must overcome the data</title><link href="https://gael-varoquaux.info/science/when-ais-must-overcome-the-data.html" rel="alternate"></link><published>2024-12-22T00:00:00+01:00</published><updated>2024-12-22T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-12-22:/science/when-ais-must-overcome-the-data.html</id><summary type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;This post was originally published in French as part of my scientific

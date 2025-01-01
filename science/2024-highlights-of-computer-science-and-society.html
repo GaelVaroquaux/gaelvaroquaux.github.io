@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>2024 highlights: of computer science and society -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Wed 01 January 2025</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>2024 highlights: of computer science and society</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/science.html">science</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/research.html">research</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/statistics.html">statistics</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/yearly-report.html">yearly report</a>
+		    <span class="readtime">
+			&nbsp Read time: 10 min.
+		    </span>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For me, 2024 was full of back and forth between research,
+software, and connecting these to society. Here, I lay out some
+highlight on AI and society, as well as research and software, around
+tabular AI and language models.</p>
+</div>
+<p>As 2025 starts, I’m looking back on 2024. It was an interesting
+professional year, as the research in the <a class="reference external" href="https://team.inria.fr/soda/">soda team</a> on machine learning for health and
+social science nourished reflection on society.</p>
+<div class="contents topic" id="highlights">
+<p class="topic-title">Highlights</p>
+<ul class="simple">
+<li><a class="reference internal" href="#thoughts-from-the-national-ai-committee" id="toc-entry-1">Thoughts from the national AI committee</a></li>
+<li><a class="reference internal" href="#adventures-in-software-land" id="toc-entry-2">Adventures in software land</a><ul>
+<li><a class="reference internal" href="#probabl-to-supercharge-scikit-learn" id="toc-entry-3">probabl to supercharge scikit-learn</a></li>
+<li><a class="reference internal" href="#skrub-machine-learning-on-tables-made-easy" id="toc-entry-4">Skrub: machine learning on tables made easy</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#research-better-ai-tools-more-understanding" id="toc-entry-5">Research: better AI tools, more understanding</a><ul>
+<li><a class="reference internal" href="#table-foundation-models" id="toc-entry-6">Table foundation models</a></li>
+<li><a class="reference internal" href="#disparities-of-confidence-of-large-language-models" id="toc-entry-7">Disparities of confidence of large language models</a></li>
+<li><a class="reference internal" href="#a-straggler-consistency-of-supervised-learning-with-missing-values" id="toc-entry-8">A straggler: Consistency of supervised learning with missing values</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="thoughts-from-the-national-ai-committee">
+<h2><a class="toc-backref" href="#toc-entry-1">Thoughts from the national AI committee</a></h2>
+<p>Early 2024, I was serving in the French national AI committee. Our final write up can be found
+<a class="reference external" href="https://www.info.gouv.fr/actualite/25-recommandations-pour-lia-en-france">here</a>.</p>
+<p>It was a ton of work, a very interesting experience, and I learned a lot
+on many aspects of the interfaces between technology, policy, and
+society. A few things that stood out for me, some partly
+obvious but worth saying:</p>
+<ul>
+<li><p class="first"><strong>Digital services are a growing economy.</strong> The share of the economy
+that is digital keeps growing, whether we like it or not (IMHO, most of
+us spent too much time on our phones…). For France, or Europe, there
+is no question: we must produce our share of digital services and
+innovation, else our economic balance suffers.</p>
+</li>
+<li><p class="first"><strong>Privacy is erroding.</strong> Whether it is social network, information
+leaking into search engines or training of large language models,
+or people uploading private information to chatGPT, private information
+is more and more available. History has shown us the dangers behind
+loss of privacy, which the powerful (governing or economical elites)
+typically leverage to assert more power. Europe has had a long stance
+of trying to mitigate this loss of privacy via regulation (GDPR). But
+regulating services that we don’t control is hard, and it ends up being
+a geo-political and economical battle.</p>
+</li>
+<li><p class="first"><strong>Big AI is huge.</strong> The size of investments in AI is huge (dozens of
+billions yearly, comparable to a sizeable fraction of the state
+expenditures of a rich country like Switzerland). Data centers are
+having significant impacts on the electric grid of modern countries,
+running in competition with other usage. The cost of large models have
+ballooned (training a large language model is in the hundreds of
+millions of cost, which is comparable to a sizeable fraction of the
+budget of the national research institute that I work in (<a class="reference external" href="https://inria.fr/fr">inria</a>). Training costs are just the visible part
+of the iceberg, operational costs are huge and are everywhere.</p>
+<p>Not all in tech are worried about rising costs. Indeed, they go hand in
+hand with more money in tech, making us, tech bros, richer, as long as
+investments keep pouring in. But <a class="reference external" href="https://www.goldmansachs.com/images/migrated/insights/pages/gs-research/gen-ai--too-much-spend%2C-too-little-benefit-/TOM_AI%202.0_ForRedaction.pdf">bubble dynamics are at play</a>,
+and explain part of the conversation around AI.</p>
+</li>
+<li><p class="first"><strong>Concentration of power.</strong> Many factors in today’s AI lead to
+concentration into the hands of large actors. Training and operation
+costs, of course. But also limited access to the correspond skills,
+platform effect on the data and the users. The most striking bottleneck
+is the compute hardware. Only one company makes the chips that we all
+need. Few actors can afford buying them; and as a result most of the
+world lives from renting out to big landlords.</p>
+</li>
+<li><p class="first"><strong>AI neither good nor bad, but what we do of it.</strong> The above may
+paint a gloomy picture. But this is not how I see it. AI does have a
+lot of potential for good, as all general purpose technology. It all
+depends how society uses it. And here the future is open: we, as actors
+of democratic societies, as innovators, in tech but in every aspects of
+society, we can determine what the future of AI is. I look forward to
+technology that empowers each and everybody, to act for their own
+benefit. Key to this future is enabling and bringing in every stakeholder.</p>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="adventures-in-software-land">
+<h2><a class="toc-backref" href="#toc-entry-2">Adventures in software land</a></h2>
+<p>With the growing importance of data and artificial intelligence in
+shaping society, I believe more than ever in the importance of open
+source and commons for data science, making tools accessible to as many
+as possible.</p>
+<div class="section" id="probabl-to-supercharge-scikit-learn">
+<h3><a class="toc-backref" href="#toc-entry-3">probabl to supercharge scikit-learn</a></h3>
+<p>Early 2024, Inria span off the scikit-learn development to a new structure, <a class="reference external" href="https://probabl.ai">probabl</a>, to supercharge the development of the broader
+ecosystem. I detailed the motivation and the goals in <a class="reference external" href="../programming/promoting-open-source-from-inria-to-probabl.html">a previous article</a>. In a
+nutshell:</p>
+<ul class="simple">
+<li>Scikit-learn is <a class="reference external" href="programming/people-underestimate-how-impactful-scikit-learn-continues-to-be.html">a key component of the machine-learning
+ecosystem</a>,
+but its development require funding.</li>
+<li>Probabl is there to foster a broader open data-science ecosystem, as
+scikit-learn can be sustainable only when used in such ecosystem.
+Probabl focus on delivering value to enterprises, and thus makes sure
+that there is a seamless solution to their needs.</li>
+<li>I have 10% of my time allocated from Inria to Probabl.</li>
+</ul>
+<p>Some of our successes are already publicly visible:</p>
+<ul class="simple">
+<li>The open-source team at probabl is maintaining and improving <a class="reference external" href="https://probabl.ai/open-source">a range
+of software libraries</a>: scikit-learn,
+joblib, imbalanced-learn, fairlearn, skops, skrub… Our priorities are
+openly discussed <a class="reference external" href="https://papers.probabl.ai/open-source-priorities-chapter-2">here</a>.</li>
+<li>We have launched <a class="reference external" href="https://papers.probabl.ai/official-scikit-learn-certification-launch">an official certification program for scikit-learn</a>. I’m very excited about these certifications (there are three levels), to grow recognition in the scikit-learn skills, and thus make sure that it is a dependable stack for the industry.</li>
+</ul>
+</div>
+<div class="section" id="skrub-machine-learning-on-tables-made-easy">
+<h3><a class="toc-backref" href="#toc-entry-4">Skrub: machine learning on tables made easy</a></h3>
+<p><a class="reference external" href="https://skrub-data.org/">skrub</a> is a software project that I am very
+excited about. Many crucial applications of machine learning are on
+tables. Skrub facilitates the corresponding patterns. We are designing it
+with the insights of years of research and practice on the topic. It does
+not always look impressive, but it’s little things that add up for
+productivity.</p>
+<p>A typical dataset is the employees one:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; from skrub.datasets import fetch_employee_salaries
+&gt;&gt;&gt; dataset = fetch_employee_salaries()
+&gt;&gt;&gt; employees_df, y = dataset.X, dataset.y
+</pre>
+<p>Skrub’s <a class="reference external" href="https://skrub-data.org/stable/reference/generated/skrub.TableReport.html">TableReport</a> makes it really easy to interactively visualize and
+explore such table:</p>
+<img alt="" src="attachments/2024_highlights/table_report_vscode.png" style="width: 700px;" />
+<p>The dataframe <cite>employees_df</cite> has plenty of non numerical columns, as visible above.
+Skrub’s <a class="reference external" href="https://skrub-data.org/stable/reference/generated/skrub.TableVectorizer.html">TableVectorizer</a> turns it into a numerical array suitable for
+machine learning, taking care of dates, categories, strings…</p>
+<pre class="literal-block">
+&gt;&gt;&gt; from skrub import TableVectorizer
+&gt;&gt;&gt; X = TableVectorizer().fit_transform(employees_df)
+</pre>
+<p>If you want to use deep-learning language models for the string
+categories, skrub’s <a class="reference external" href="https://skrub-data.org/stable/reference/generated/skrub.TextEncoder.html">TextEncoder</a>
+can download pre-trained models from hugginface:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; from skrub import TextEncoder
+&gt;&gt;&gt; text_encoder = TextEncoder(
+        &quot;sentence-transformers/paraphrase-albert-small-v2&quot;,
+        device=&quot;cpu&quot;,
+    )
+&gt;&gt;&gt; tab_vec = TableVectorizer(high_cardinality=text_encoder)
+&gt;&gt;&gt; X = tab_vec.fit_transform(employees_df)
+</pre>
+<p>With this, the latest artificial intelligent developments are easily
+brought to drive decisions on the data that matters.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="research-better-ai-tools-more-understanding">
+<h2><a class="toc-backref" href="#toc-entry-5">Research: better AI tools, more understanding</a></h2>
+<p>Software or thoughts on AI and society, are best built on solid
+understanding of AI, which calls for research.</p>
+<div class="section" id="table-foundation-models">
+<h3><a class="toc-backref" href="#toc-entry-6">Table foundation models</a></h3>
+<p class="align-right"><em>Modeling data semantics enable pretaining for tables</em></p>
+<p>I have been working on machine-learning for tables for more than a
+decade. These data are crucial for many applications, but they have so
+far not witnessed the breakthroughs of deep learning seen <em>eg</em> in vision
+or text. Much of these success of <strong>deep learning as been driven by the
+ability to reused pretrained models</strong>, fitted on very large datasets.
+Foundation models pushed this idea very far with models that provide
+background information useful for a wide variety of downstream tasks. But
+pretraining is challenging for tables.</p>
+<p>A crucial part of foundation models for text and images is the attention
+mechanism, stacked in a transformer architecture, that bring associative
+memory to the inputs by contextualizing them. We had a breakthough with
+the <a class="reference external" href="https://openreview.net/forum?id=9kArQnKLDp">CARTE model</a>: we
+managed to adapt these ideas to tables. The strings –tables
+entries and column names– give the information that enables transfer from
+one table to another: data semantics. Here, key is to have an
+architecture that 1) models both strings and numerical values 2) applies
+to any set of tables while using the column names to route the
+information. For this purpose, CARTE uses a new dedicated attention
+mechanism that accounts for column names. It is pre-trained on a very
+large knowledge base. As a result, it outperform the best models
+(including tree-based models) in small sample settings (up to n=2000).</p>
+<p>The pretrained CARTE model is available for download as <a class="reference external" href="https://pypi.org/project/carte-ai">a Python package</a>.</p>
+<p>This result is very significant as it opens the door to <strong>foundation models
+for tables</strong>: models that embark much background knowledge and can be
+specialized to many tabular-learning tasks.</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="https://openreview.net/forum?id=9kArQnKLDp"><img alt="" src="attachments/2024_highlights/carte_comparisons.png" style="width: 100%;" /></a>
+<p class="caption">Extensive empirical results show that CARTE brings benefits to very
+broad set of baselines. The relative performance of baselines also
+contains interesting results.</p>
+</div>
+<div class="topic">
+<p class="topic-title">See also</p>
+<p>I wrote a longer <a class="reference external" href="./carte-toward-table-foundation-models.html">high-level post on CARTE</a>.</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="disparities-of-confidence-of-large-language-models">
+<h3><a class="toc-backref" href="#toc-entry-7">Disparities of confidence of large language models</a></h3>
+<div class="figure align-right">
+<a class="reference external image-reference" href="https://hal.science/hal-04750567"><img alt="" src="attachments/2024_highlights/hallucination_probability.png" style="width: 400px;" /></a>
+<p class="caption">A good confidence assessment on replies of an LLM would separate out
+correct from incorrect statements: Einstein was not born on Jan 14th
+1879 (close call, it was March 14th); his PhD was in Zurich.</p>
+</div>
+<p>Large language models (LLMs), such as chatGPT, may produce answers that
+are plausible but not factually correct, the so-called “hallucinations”.
+A variety of approach try to assess how likely a statement is to be true,
+for instance by sampling multiple responses from the language model.
+Ideally, we would like to use these confidence assessments to flag the
+wrong statements in an LLM’s answer. For this, a challenge is to
+threshold them, or assign a probability of correctness.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="figure align-right">
+<a class="reference external image-reference" href="https://hal.science/hal-04750567"><img alt="" src="attachments/2024_highlights/llm_confidence_nationality.png" style="width: 400px;" /></a>
+<p class="caption">Observed error rate and a function predicted probability of
+correctness For the birth date, when a large language model (here Mistral
+7B) gives information on a given notable individual. The different
+curves give the corresponding calibration for different nationalities of
+the individuals, revealing that <strong>the probability is much more trustworthy
+for a citizen of the United States than for other countries</strong>, and
+particularly poor for people that originate from South-East Asia.</p>
+</div>
+<p>In <a class="reference external" href="https://hal.science/hal-04750567/">Chen et al</a>, we investigate the
+confidence of LLMs in their answers. We show that the
+probabilities computed are not only overconfident, but also that there is
+heterogeneity (grouping loss): on some groups of queries the
+overconfidence is more pronounced than on others. For instance, for an
+answer on a notable individual, the LLMs’ confidence is reasonably
+calibrated if the individual is from the United States, but severely
+overconfident for individuals from South East Asia
+(fig:llmconfidencenationality). Characterizing the corresponding groups
+opens the door to correcting the corresponding bias, a “reconfidencing”
+procedure.</p>
+<p>This study is an application of our earlier, more theoretical, <a class="reference external" href="https://openreview.net/forum?id=6w1k-IixnL8">work</a> that contributed the
+first estimator grouping loss, a mathematically-solid concept behind
+hidden heterogeneity in classifier calibration. I am very happy to see
+that these fairly abstract ideas are useful to probe very concrete
+problems such as the disparity in LLM confidence across nationalities.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="a-straggler-consistency-of-supervised-learning-with-missing-values">
+<h3><a class="toc-backref" href="#toc-entry-8">A straggler: Consistency of supervised learning with missing values</a></h3>
+<p class="align-right"><em>A</em> <a class="reference external" href="https://link.springer.com/article/10.1007/s00362-024-01550-4">paper</a>
+<em>on the fundamentals of machine-learning with missing values</em></p>
+<p>In 2018, <a class="reference external" href="https://juliejosse.com">Julie Josse</a>, <a class="reference external" href="https://erwanscornet.github.io">Erwan Scornet</a>, and myself started working on the
+theory of how supervised learning works with missing values (learning
+theory). Working an intern, Nicolas Prost, we quickly realized that there
+was a gap between the statistical thinking around missing values, which
+was focused on enabling inference in parametric models as if their were
+no missing values, and the needs for prediction with missing values.</p>
+<p>We wrote  <a class="reference external" href="https://link.springer.com/article/10.1007/s00362-024-01550-4">a paper</a> to
+lay out the theory cleanly, summarizing both elements of learning theory
+and the fundamentals of statistics with missing values. Beyond this
+didactic aspects, the paper gives a series of formal results, such as the
+need for multiple imputations to be able to use the <em>complete case</em>
+predictor (the optimal predictor without missing values), the optimal way
+to model missing values in trees (which was already used in XGBoost :) ),
+and the fact that asymptotically, constant imputation of missing values
+could work well for predictor.</p>
+<p class="align-right"><em>Frustrations of the academic game</em></p>
+<p><a class="reference external" href="https://hal.science/hal-02024202">The preprint</a> got a lot of success
+(more than a hundred citations), probably because it laid out
+fundamentals. But it took 5 years to publish it. The machine learning
+community did not like the absence of new methods (we only gave
+theoretical results on existing practice, such as imputation). The
+statistics literature really did not like our messages that imputation
+was not always important. In one journal, a reviewer rejected the paper on
+the basis that it was giving bad messages to the community, but not
+arguing that anything was wrong in our proofs or our experiments. Of
+course, there is a lot to say about the difficulties of doing data
+analysis with missing values, but the conversation did not go in these
+details. This is a good illustration that <strong>progress in science is
+social</strong>, and is as much about shifting norms than accumulating knowledge
+(actually, knowledge is social too, as put forward by <a class="reference external" href="https://en.wikipedia.org/wiki/Social_epistemology">social
+epistemology</a>).</p>
+<p>As time went by, my colleague <a class="reference external" href="https://marinelm.github.io">Marine Le Morvan</a> has published <a class="reference external" href="https://proceedings.mlr.press/v108/morvan20a.html">more</a> <a class="reference external" href="https://proceedings.neurips.cc/paper/2021/hash/5fe8fdc79ce292c39c5f209d734b7206-Abstract.html">and</a>
+<a class="reference external" href="https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giac013/6568998">more</a>
+<a class="reference external" href="https://arxiv.org/abs/2407.19804">results</a> that push deeper
+understanding of prediction with missing values. But I still see value in
+our original paper, as it lays the foundations.</p>
+<p>The paper is now out, thanks to my coauthors who kept replying to
+reviewers, improving the manuscripts, and resubmitting. Read <a class="reference external" href="https://link.springer.com/article/10.1007/s00362-024-01550-4">it</a>, I think
+that it is a good read.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<hr class="docutils" />
+<p>Well, this article ended up longer than I had expected. Thanks for
+reading. Taking a step back to figure out what is important is always a
+good exercise for me.</p>
+</div>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script  language="JavaScript" type="text/javascript">
+    /* From http://evirtus.net/pub/eflickrstream.asp */
+    /* Global variables */
+    var bolOnLoadRun=false;
+    var bolFlickrRun=false;
+    var objFlickrOutput=null;
+    
+    /* OnLoad events */
+    window.onload = function() {
+    bolOnLoadRun=true;
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	eFlickrStream();
+    };
+    }
+    
+    /*
+    eFlickrStream - Lovely, lovely photos! :-)
+    - 02.08.2007 @ 14:33: Initial version
+    */
+    function eFlickrStream() {
+    if (!bolFlickrRun ) { return false; } else { bolFlickrRun=false; }
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var strTarget='flickrstream';// Target container for the flickr badge (must allready exist in the document)
+    /*   *** Options/end ***     */
+    
+    if (!document.getElementById(strTarget)){return false;}// Exsist if target doesn't exsist
+    
+    var objTarget=document.getElementById(strTarget);
+    objTarget.appendChild(objFlickrOutput);// Append output
+    
+    objFlickrOutput=null;// We're done, delete stored variable value
+    objFlickr=null;
+    }
+    
+    /*
+    jsonFlickrFeed - Triggered when the Flickr json "feed" is loaded, generates Flickr photos output list item (Deefer "trigger method" from Patrick Quinn-Graham's DOM Flickr Badge)
+    - 02.08.2007 @ 14:33: Initial version
+    - 23.11.2007 @ 08:24: Updated to use eSetAttr(), enables the flickr link in IE
+    - 29.11.2007 @ 05:52: Some changes for easier configuration (of both options and text-strings)
+    */
+    function jsonFlickrFeed(objFlickr) {
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var intMaxImages=10;// Maximum number of images to show (1-20)
+    var bolThumbSquare=true;// Load the square thumbnails
+    var intThumbWidth=75;// Thumbnail width (omitted if set to "0")
+    var strLightbox='flickrstream';// Lightbox "group name" (define to mark the thumbnails for lightbox usage, adds rel="lightbox[value]" to image links)
+    var strImgAlt='[title]';// Alternative title for images ("[title]" will be replaced by image title)
+    var strImgLinkTitle='View a larger version of \"[title]\"';// Link title for the image link
+    /*   *** Options/end ***     */
+    
+    var objElm,objTxt,objImg,objLnk,objTmp,strTmp;
+    var intPhotos=objFlickr.items.length;
+    var objOut=document.createElement('ul');
+    objOut.setAttribute('class','flickrlist');
+    
+    for (var iCntA=0; ( (iCntA<intPhotos) && (iCntA<intMaxImages)); iCntA++) {
+    
+	objElm=document.createElement('li');// Create item container element (<li>)
+    
+	objLnk=document.createElement('a');// Create link (to the large(r) photo)
+	objLnk.setAttribute('href',objFlickr.items[iCntA].link);
+	objLnk.setAttribute('title',strImgLinkTitle.replace('[title]',objFlickr.items[iCntA].title));
+	if (strLightbox!=''){objLnk.setAttribute('rel','lightbox['+strLightbox+']');}// Add relation value for lightbox usage
+    
+	strTmp=objFlickr.items[iCntA].media.m;// Retreive thumbnail URI
+	if (bolThumbSquare){strTmp=strTmp.replace('_m.jpg','_s.jpg');}// Swap default thumbnail for square...
+    
+	objImg=document.createElement('img');// Main thumbnail
+	eSetAttr(objImg,'class','photo');
+	objImg.setAttribute('src',strTmp);
+	objImg.setAttribute('alt',strImgAlt.replace('[title]',objFlickr.items[iCntA].title));
+	if (intThumbWidth!=0){objImg.setAttribute('width',intThumbWidth);}
+    
+	objLnk.appendChild(objImg);// Append thumbnail to link
+	objElm.appendChild(objLnk);// Append link to container (li)
+
+	objOut.appendChild(objElm);// Append container to output object
+	}
+    
+    objFlickrOutput=objOut;// Store output for later use...
+    
+    if (bolOnLoadRun) {
+	eFlickrStream();
+	}
+    else {
+	bolFlickrRun=true;
+	}
+    }
+    
+    /*
+    eSetAttr/eGetAttr - An attempt to tame IE's weird DOM model
+    - 22.11.2007 @ 12:50 - Initial version
+    */
+    function eSetAttr(objTarget,strAttr,strValue) {
+    if (typeof window.attachEvent!='undefined' && typeof window.opera=='undefined') {
+    //    //Set attributes for IE
+	switch (strAttr) {
+	    case('class'):
+		objTarget.setAttribute('className',strValue);
+		break;
+	    case('style'):
+		objTarget.style.cssText=strValue;
+		break;
+	    default:
+		objTarget.setAttribute(strAttr,strValue);
+		break;
+	    }
+	}
+    else {
+    //    //Set attributes for /Other browsers/
+	objTarget.setAttribute(strAttr,strValue);
+	}
+    //66885349@N03
+    }
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+</body>
+</html>
