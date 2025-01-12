@@ -118,12 +118,13 @@
 		margin-right: auto;
 		display: block;
 		margin-bottom: 1ex;
+		border: solid #aaa 1px;
 	    }
 
-	    @media (max-width: 1000px) {
-		div.content div.pure-u-2-3.bio {
-		    width: 100%;
-		}
+	    div.gallery {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
 	    }
 
 	    div.gallery a {
@@ -132,48 +133,64 @@
 		color: #111;
 		padding-bottom: 15px;
 		text-align: center;
+		max-width: 400px;
+		vertical-align: middle;
+		flex-grow: 4;
+		flex-wrap: wrap;
+		align-self: center;
 	    }
 	</style> 
 	<h2>Photos of Gaël Varoquaux</h2>
 	<p>
 	Here are a few photos of me that can be used for portraits.
+	<br />
+	Please use these rather than some found via a web search.
 	</p>
 	<hr />
 	<div class="gallery">
 	    <a href="pages/attachments/gael_varoquaux.jpg">
 	    <img src="pages/attachments/gael_varoquaux.jpg" class="portrait">
+	    Gaël Varoquaux, portrait 2022,<br />
 	    Image credit: &copy; G. Varoquaux
 	    </a>
 	    <a href="pages/attachments/gael_varoquaux_2.jpg">
 	    <img src="pages/attachments/gael_varoquaux_2.jpg" class="portrait">
+	    Gaël Varoquaux, portrait 2022,<br />
 	    Image credit: &copy; Inria / B. Fourrier
 	    </a>
 	    <a href="pages/attachments/gael_varoquaux_green.jpg">
 	    <img src="pages/attachments/gael_varoquaux_green.jpg" class="portrait">
+	    Gaël Varoquaux, portrait 2022,<br />
 	    Image credit: &copy; Inria / B. Fourrier
 	    </a>
 	    <a href="pages/attachments/gael_varoquaux_yellow.jpg">
 	    <img src="pages/attachments/gael_varoquaux_yellow.jpg" class="portrait">
+	    Gaël Varoquaux, speaking in 2024,<br />
 	    Image credit: &copy; Inria / B. Fourrier
 	    </a>
 	    <a href="pages/attachments/gael_varoquaux_blue.jpg">
 	    <img src="pages/attachments/gael_varoquaux_blue.jpg" class="portrait">
+	    Gaël Varoquaux, panel in 2023,<br />
 	    Image credit: &copy; Inria / C. Morel
 	    </a>
 	    <a href="pages/attachments/gael_varoquaux_purple.jpg">
 	    <img src="pages/attachments/gael_varoquaux_purple.jpg" class="portrait">
+	    Gaël Varoquaux, speaking in 2024,<br />
 	    Image credit: &copy; Concordia AI
 	    </a>
 	    <a href="pages/attachments/gael_varoquaux_talking.jpg">
 	    <img src="pages/attachments/gael_varoquaux_talking.jpg" class="portrait">
+	    Gaël Varoquaux, working in 2024,<br />
 	    Image credit: &copy; Inria / B. Fourrier
 	    </a>
 	    <a href="pages/attachments/gael_varoquaux_computer.jpg">
 	    <img src="pages/attachments/gael_varoquaux_computer.jpg" class="portrait">
+	    Gaël Varoquaux, working in 2024,<br />
 	    Image credit: &copy; Inria / B. Fourrier
 	    </a>
 	    <a href="pages/attachments/varoquaux_bureau.jpg">
 	    <img src="pages/attachments/varoquaux_bureau.jpg" class="portrait">
+	    Gaël Varoquaux, working in 2018,<br />
 	    Image credit: &copy; Jean-François Dars et Anne Papillault
 	    </a>
 	</div>
