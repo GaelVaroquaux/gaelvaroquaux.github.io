@@ -897,6 +897,13 @@ div.note.align-right, div.container.align-right {
     }
 }
 
+@media (min-width: 1560px) {
+    div.note.align-right, div.container.align-right {
+	margin-right: -3em;
+    }
+
+}
+
 div.note.align-right p.first.admonition-title {
     display: none;
 }
@@ -1248,7 +1255,7 @@ ul.columns.simple:after {
 	margin-right: -6ex;
     }
 }
-@media (min-width: 1900px) {
+@media (min-width: 1920px) {
     table.footnote.side-hanging {
 	width: 23em!important;
     }

@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-01-01T00:00:00+01:00</updated><entry><title>2024 highlights: of computer science and society</title><link href="https://gael-varoquaux.info/science/2024-highlights-of-computer-science-and-society.html" rel="alternate"></link><published>2025-01-01T00:00:00+01:00</published><updated>2025-01-01T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-01-01:/science/2024-highlights-of-computer-science-and-society.html</id><summary type="html">&lt;div class="admonition note"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-02-13T00:00:00+01:00</updated><entry><title>AI for health: the impossible necessity of unbiased data</title><link href="https://gael-varoquaux.info/science/ai-for-health-the-impossible-necessity-of-unbiased-data.html" rel="alternate"></link><published>2025-02-13T00:00:00+01:00</published><updated>2025-02-13T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-13:/science/ai-for-health-the-impossible-necessity-of-unbiased-data.html</id><summary type="html">&lt;!-- To control max-width, rather than width, so that image renders
+well in the post summary --&gt;
+&lt;style&gt;
+    div.content img.align-right {
+        max-width: 300px;
+    }
+&lt;/style&gt;&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate a fairly abstract image of biased data. The image is about data. It should have numbers, streams of numbers. It should express the notion of bias, showing a black woman in the middle of the stream of numbers.&amp;quot;" class="align-right" src="../science/attachments/biased_data.jpg" /&gt;
+&lt;p&gt;Is unbiased data important to build health AI? Yes!&lt;/p&gt;
+&lt;p&gt;Can there be unbiased data? No!&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+&lt;em&gt;Building health on biased data discriminates&lt;/em&gt;&lt;/div&gt;
+&lt;p&gt;The notion of bias depends on the intended use.&lt;/p&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;In medicine, we have seen the importance of tuning devices and decisions
+for the …&lt;/p&gt;</summary><content type="html">&lt;!-- To control max-width, rather than width, so that image renders
+well in the post summary --&gt;
+&lt;style&gt;
+    div.content img.align-right {
+        max-width: 300px;
+    }
+&lt;/style&gt;&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate a fairly abstract image of biased data. The image is about data. It should have numbers, streams of numbers. It should express the notion of bias, showing a black woman in the middle of the stream of numbers.&amp;quot;" class="align-right" src="../science/attachments/biased_data.jpg" /&gt;
+&lt;p&gt;Is unbiased data important to build health AI? Yes!&lt;/p&gt;
+&lt;p&gt;Can there be unbiased data? No!&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+&lt;em&gt;Building health on biased data discriminates&lt;/em&gt;&lt;/div&gt;
+&lt;p&gt;The notion of bias depends on the intended use.&lt;/p&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;In medicine, we have seen the importance of tuning devices and decisions
+for the target population. The problem is not limited to AI: pulse
+oximeters, that measure oxygen saturation, do not work well on dark
+skins; cardiac procedures were adjusted to symptoms and anatomy of men,
+while those of women differ. These issues arose because the corresponding
+groups were underrepresented in the clinical studies.&lt;/p&gt;
+&lt;p&gt;So when we build AI, we need to make sure that they are not trained on
+biased data.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="align-right docutils container"&gt;
+&lt;em&gt;Beyond population sampling, historical choices also bias&lt;/em&gt;&lt;/div&gt;
+&lt;p&gt;But unbiased data is hard, as it goes beyond sampling the right
+population of individuals. Indeed, the data we have is the result of a
+historical set of choices: Who do we measure? Which measurements? And
+what led to their condition? Beyond health, consider for instance
+salaries: we can train a model from historical data to tell us what
+should be the right compensation for a given individual. But it is just
+going to capture and repeat historical biases, such as paying less women
+that are as qualified as their male counterparts.&lt;/p&gt;
+&lt;div class="align-right docutils container"&gt;
+&lt;em&gt;The notion of being unbiased embeds societal and ethical values&lt;/em&gt;&lt;/div&gt;
+&lt;p&gt;Here we see that the notion of being unbiased embeds societal and ethical
+values: Should Olympic-level gymnasts and football players be paid the
+same thing? How about men and women with the same job description?&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;And now to go back to medicine, there is another critical aspect, which
+is that of cause and effects, which is central to taking decisions. To
+take a simple example, if we were to compare the health outcome of
+individuals after two days at the hospital to those who did not go to the
+hospital, we would conclude, incorrectly, that a hospital is a very
+dangerous place, as individuals there are in a worse shape. The problem
+is, of course, that we are comparing individuals that are not comparable
+as they have a different baseline health. A health intervention is given
+for a reason, so it is given to a specific population: insulin is given
+to diabetics. Building a model, an AI, that can decide on health
+intervention requires compensating for the difference between the treated
+and non-treated individuals.&lt;/p&gt;
+&lt;div class="side-hanging small sidebar"&gt;
+&lt;p class="first sidebar-title"&gt;&lt;strong&gt;Reference: causality&lt;/strong&gt;&lt;/p&gt;
+&lt;p class="last"&gt;&lt;a class="reference external" href="https://hal.science/hal-04774700/"&gt;A 15-page introduction to causal inference with machine
+learning&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="align-right docutils container"&gt;
+&lt;em&gt;AIs can make good decisions only from adequate data&lt;/em&gt;&lt;/div&gt;
+&lt;p&gt;Here also we have a case of bias. The bias is with regards to the data
+required to answer the question on the effect of the intervention, where
+both populations are comparable. More generally, we are seeing once again
+that the data are always the result of a historical set of choices, and
+these choices condition the statistical relationships in the data. And
+AIs build on the statistical relationships.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="align-right docutils container"&gt;
+&lt;em&gt;The notion of bias depends on the intended use&lt;/em&gt;&lt;/div&gt;
+&lt;p&gt;What we see here is that the notion of bias depends on the intended use: it depends on the target population, but also on the target intervention. So there really is no absolute notion of unbiased data. There is just the notion of data that are well suited to a particular goal.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;img alt="" class="align-right" src="../science/attachments/lady_justice_robot.png" /&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;This post was consolidated from notes of a panel on health AI at the
+AI Action Summit, but it is link to my &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;AI chronicles&lt;/a&gt;, big-picture
+didactic pieces on AI and related topics.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="society"></category><category term="health"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>2024 highlights: of computer science and society</title><link href="https://gael-varoquaux.info/science/2024-highlights-of-computer-science-and-society.html" rel="alternate"></link><published>2025-01-01T00:00:00+01:00</published><updated>2025-01-01T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-01-01:/science/2024-highlights-of-computer-science-and-society.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;For me, 2024 was full of back and forth between research,
 software, and connecting these to society. Here, I lay out some
