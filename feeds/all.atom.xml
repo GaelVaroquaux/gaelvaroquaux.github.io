@@ -490,18 +490,29 @@ good exercise for me.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="statistics"></category><category term="yearly report"></category></entry><entry><title>When AIs must overcome the data</title><link href="https://gael-varoquaux.info/science/when-ais-must-overcome-the-data.html" rel="alternate"></link><published>2024-12-22T00:00:00+01:00</published><updated>2024-12-22T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-12-22:/science/when-ais-must-overcome-the-data.html</id><summary type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
+&lt;!-- To control max-width, rather than width, so that image renders
+well in the post summary --&gt;
+&lt;style&gt;
+    div.content img.align-right {
+        max-width: 300px;
+    }
+&lt;/style&gt;&lt;img alt="Image generated with &amp;quot;ChatGPT&amp;quot;, with the prompt &amp;quot;Please generate an image of a robot arm wrestling a figure made of numbers. This figure does not look like a robot, but more like a human, however it is made of numbers.&amp;quot;" class="align-right" src="../science/attachments/robot_wresting_numbers.jpg" /&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
+&lt;!-- To control max-width, rather than width, so that image renders
+well in the post summary --&gt;
+&lt;style&gt;
+    div.content img.align-right {
+        max-width: 300px;
+    }
+&lt;/style&gt;&lt;img alt="Image generated with &amp;quot;ChatGPT&amp;quot;, with the prompt &amp;quot;Please generate an image of a robot arm wrestling a figure made of numbers. This figure does not look like a robot, but more like a human, however it is made of numbers.&amp;quot;" class="align-right" src="../science/attachments/robot_wresting_numbers.jpg" /&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;This post was originally published in French as part of my scientific
 chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/quand-lia-doit-depasser-les-donnees-2126369"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;In …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
-&lt;div class="admonition note"&gt;
-&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;This post was originally published in French as part of my scientific
-chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/quand-lia-doit-depasser-les-donnees-2126369"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;In 2003, Microsoft’s conversational AI insulted users.
+&lt;p&gt;In 2023, Microsoft’s conversational AI insulted users.
 Salary-recommendation engines ignore women’s degrees to underpay them. At
 the start of the Covid-19 pandemic, predictions of hospital stays
 consistently underestimated the duration. These three issues all stem
@@ -550,10 +561,24 @@ cultures.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>Do AIs reason or recite?</title><link href="https://gael-varoquaux.info/science/do-ais-reason-or-recite.html" rel="alternate"></link><published>2024-10-19T00:00:00+02:00</published><updated>2024-10-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-10-19:/science/do-ais-reason-or-recite.html</id><summary type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
+&lt;!-- To control max-width, rather than width, so that image renders
+well in the post summary --&gt;
+&lt;style&gt;
+    div.content img.align-right {
+        max-width: 300px;
+    }
+&lt;/style&gt;&lt;img alt="Image generated with &amp;quot;ChatGPT&amp;quot;, with the prompt &amp;quot;Please generate an image of a robot with a stream of numbers coming out of his mouth. The robot is on the left, facing right, and the numbers flow, as if they were sound.&amp;quot;" class="align-right" src="../science/attachments/robot_numbers_flow_mouth.jpg" /&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;This post was originally published in French as part of my scientific
-chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-raisonnent-elles-ou-recitent-elles-2103079"&gt;Les Echos&lt;/a&gt;. I updated it with new …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-raisonnent-elles-ou-recitent-elles-2103079"&gt;Les …&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
+&lt;!-- To control max-width, rather than width, so that image renders
+well in the post summary --&gt;
+&lt;style&gt;
+    div.content img.align-right {
+        max-width: 300px;
+    }
+&lt;/style&gt;&lt;img alt="Image generated with &amp;quot;ChatGPT&amp;quot;, with the prompt &amp;quot;Please generate an image of a robot with a stream of numbers coming out of his mouth. The robot is on the left, facing right, and the numbers flow, as if they were sound.&amp;quot;" class="align-right" src="../science/attachments/robot_numbers_flow_mouth.jpg" /&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;This post was originally published in French as part of my scientific
