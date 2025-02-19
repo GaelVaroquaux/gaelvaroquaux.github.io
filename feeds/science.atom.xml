@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-02-19T00:00:00+01:00</updated><entry><title>IA super-intelligent to play Go, and math?</title><link href="https://gael-varoquaux.info/science/ia-super-intelligent-to-play-go-and-math.html" rel="alternate"></link><published>2025-02-19T00:00:00+01:00</published><updated>2025-02-19T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-19:/science/ia-super-intelligent-to-play-go-and-math.html</id><summary type="html">&lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-02-19T00:00:00+01:00</updated><entry><title>IA super-intelligent to play Go, and math?</title><link href="https://gael-varoquaux.info/science/ia-super-intelligent-to-play-go-and-math.html" rel="alternate"></link><published>2025-02-19T00:00:00+01:00</published><updated>2025-02-19T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-19:/science/ia-super-intelligent-to-play-go-and-math.html</id><summary type="html">&lt;!-- To control max-width, rather than width, so that image renders
+well in the post summary --&gt;
+&lt;style&gt;
+    div.content img.align-right {
+        max-width: 300px;
+    }
+&lt;/style&gt;&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an artificial intelligences playing go, with mathematical formula flying in the background. The mathematical formula are flying in all directions, and the image is futuristic.&amp;quot;" class="align-right" src="../science/attachments/robots_playing_go.jpg" /&gt;
+&lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;This post was originally published in French as part of my scientific
-chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/lia-le-go-et-les-maths-2140332"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="immitation-is-not-creation"&gt;
-&lt;h2&gt;Immitation is not …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
+chronicle …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;!-- To control max-width, rather than width, so that image renders
+well in the post summary --&gt;
+&lt;style&gt;
+    div.content img.align-right {
+        max-width: 300px;
+    }
+&lt;/style&gt;&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an artificial intelligences playing go, with mathematical formula flying in the background. The mathematical formula are flying in all directions, and the image is futuristic.&amp;quot;" class="align-right" src="../science/attachments/robots_playing_go.jpg" /&gt;
+&lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;This post was originally published in French as part of my scientific
