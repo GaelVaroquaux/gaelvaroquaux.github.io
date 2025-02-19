@@ -1,5 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-02-13T00:00:00+01:00</updated><entry><title>AI for health: the impossible necessity of unbiased data</title><link href="https://gael-varoquaux.info/science/ai-for-health-the-impossible-necessity-of-unbiased-data.html" rel="alternate"></link><published>2025-02-13T00:00:00+01:00</published><updated>2025-02-13T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-13:/science/ai-for-health-the-impossible-necessity-of-unbiased-data.html</id><summary type="html">&lt;!-- To control max-width, rather than width, so that image renders
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-02-19T00:00:00+01:00</updated><entry><title>IA super-intelligent to play Go, and math?</title><link href="https://gael-varoquaux.info/science/ia-super-intelligent-to-play-go-and-math.html" rel="alternate"></link><published>2025-02-19T00:00:00+01:00</published><updated>2025-02-19T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-19:/science/ia-super-intelligent-to-play-go-and-math.html</id><summary type="html">&lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/lia-le-go-et-les-maths-2140332"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="immitation-is-not-creation"&gt;
+&lt;h2&gt;Immitation is not …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/lia-le-go-et-les-maths-2140332"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="immitation-is-not-creation"&gt;
+&lt;h2&gt;Immitation is not creation&lt;/h2&gt;
+&lt;p&gt;For several decades, calculators have been better than humans in an
+intellectual task: mental arithmetic. Yet, we do not call this
+“super-intelligence.” Probably because it is humans who specified all the
+rules for these calculations to the machine. Similarly, a computer has a
+superhuman ability to memorize information exactly, such as numbers, but
+we do not consider it super-intelligent for that reason. Perhaps this is
+because it does not teach us anything new. However, in 2017, an AI
+started teaching the best Go players moves and strategies that no one had
+ever known. How is this possible? Will AI surpass its creator and become
+super-intelligent in all fields?&lt;/p&gt;
+&lt;p&gt;Most recent breakthroughs in AI rely on learning methods where the
+computer imitates humans. For example, to create computer-vision systems,
+we provide the computer with many annotated images describing what they
+represent. Likewise, conversational AIs learn by training to complete
+examples of text. Under these conditions, it is difficult for AI to
+surpass its creator.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="when-ais-invent"&gt;
+&lt;h2&gt;When AIs invent&lt;/h2&gt;
+&lt;p&gt;But AlphaZero, the AI champion in Go, operates on a different principle:
+reinforcement learning. Here, the AI takes actions –moves in the game of
+Go– and receives a “reward” if it wins the game. Through countless games,
+it optimizes its strategies to maximize rewards, including exploring new
+strategies. AlphaZero trained by playing tens of millions of games
+against itself. This is how the AI was able to create new strategies,
+unrestricted by human knowledge.&lt;/p&gt;
+&lt;p&gt;Such learning, based on millions of trial-and-error attempts, does not
+apply to all problems –it requires the ability to perform rapid
+experiments, like in a computer game, which remains the only domain where
+a true super-intelligence has been achieved. However, there is hope in
+mathematics, another intellectual game.&lt;/p&gt;
+&lt;p&gt;Indeed, progress in generative AI for language –that power tools such as
+ChatGPT– can be applied to mathematical proofs, which consist of
+sequences of symbols. Trained on numerous proofs, an AI can learn to
+complete partial proofs. However, such a generative AI will produce
+sequences without guarantees of mathematical validity. Another tool,
+using proof-verification techniques based on symbolic AI, can then filter
+out only the correct sequences, giving a “reward” signal. Reinforcement
+learning finally comes in, using its exploration schemes to maximize this
+reward and discover new valid proof steps.&lt;/p&gt;
+&lt;p&gt;This is how, in July 2024, the AlphaProof AI won a silver medal at the
+International Mathematical Olympiad. Further progress may eventually lead
+to “super-intelligence” in mathematics. However, we are still far from
+general super-intelligence, as, both in Go and mathematics, progress is
+made possible by the ease of verifying whether one has “won” or not.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>AI for health: the impossible necessity of unbiased data</title><link href="https://gael-varoquaux.info/science/ai-for-health-the-impossible-necessity-of-unbiased-data.html" rel="alternate"></link><published>2025-02-13T00:00:00+01:00</published><updated>2025-02-13T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-13:/science/ai-for-health-the-impossible-necessity-of-unbiased-data.html</id><summary type="html">&lt;!-- To control max-width, rather than width, so that image renders
 well in the post summary --&gt;
 &lt;style&gt;
     div.content img.align-right {
@@ -10743,85 +10811,4 @@ memory for free without worrying about race conditions).&lt;/li&gt;
 &lt;p&gt;This pattern has actually evolved in the &lt;a class="reference external" href="https://pythonhosted.org/joblib/"&gt;joblib project&lt;/a&gt; ,
 which provides a lot of cleverness under the hood.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="scientific computing"></category><category term="scipy"></category><category term="software engineering"></category><category term="joblib"></category></entry><entry><title>Acceleration estimation in atom-interferometric tests of the Einstein equivalence principle</title><link href="https://gael-varoquaux.info/science/acceleration-estimation-in-atom-interferometric-tests-of-the-einstein-equivalence-principle.html" rel="alternate"></link><published>2009-11-07T15:24:00+01:00</published><updated>2009-11-07T15:24:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-11-07:/science/acceleration-estimation-in-atom-interferometric-tests-of-the-einstein-equivalence-principle.html</id><summary type="html">&lt;p&gt;Hurray! The pivot article that marks my transition from physics to
-statistic modeling is finally out:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;a class="reference external" href="http://www.iop.org/EJ/article/1367-2630/11/11/113010/njp9_11_113010.pdf"&gt;How to estimate the differential acceleration in a two-species atom interferometer to test the equivalence principle&lt;/a&gt;
-&lt;em&gt;G Varoquaux, R A Nyman, R Geiger, P Cheinet, A Landragin and P Bouyer&lt;/em&gt;&lt;/blockquote&gt;
-&lt;p&gt;To put things in …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hurray! The pivot article that marks my transition from physics to
-statistic modeling is finally out:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;a class="reference external" href="http://www.iop.org/EJ/article/1367-2630/11/11/113010/njp9_11_113010.pdf"&gt;How to estimate the differential acceleration in a two-species atom interferometer to test the equivalence principle&lt;/a&gt;
-&lt;em&gt;G Varoquaux, R A Nyman, R Geiger, P Cheinet, A Landragin and P Bouyer&lt;/em&gt;&lt;/blockquote&gt;
-&lt;p&gt;To put things in context, at the end of my PhD, we had been building an
-atom interferometer to test the Einstein equivalence principle and my
-reflections on the limits of atom interferometry shifted from worrying
-about the underlying physics, to worrying about the estimation: the
-inverse problem of going from the experimental signal, to the underlying
-quantities that we are measuring, confounded by all the horrible
-experimental noise.&lt;/p&gt;
-&lt;div class="section" id="atoms-light-gravity-fields-and-free-fall-planes"&gt;
-&lt;h2&gt;Atoms, light, gravity fields and free-fall planes&lt;/h2&gt;
-&lt;p&gt;The problem is: we want to do high precision metrologic tests in a
-free-falling plane. We use interferometry to measure gravity fields. But
-rather than doing interferometry with light, we use atoms, that are much
-more coupled to gravity. When probing gravity fields with light, the
-trick is to use huge highly-sensitive interferometers. For instance the
-&lt;a class="reference external" href="http://www.ligo.caltech.edu/"&gt;ligo&lt;/a&gt; and &lt;a class="reference external" href="http://www.virgo.infn.it/"&gt;virgo&lt;/a&gt; projects are kilometer-long light interferometers
-listening for gravitational waves, and the &lt;a class="reference external" href="http://www.ringlaser.org.nz/content/facilities.php"&gt;giant ring lasers&lt;/a&gt; can test
-for tiny modifications in the Earth rotation and gravity field.
-Gravimetric coupling with matter waves and light waves describes the
-&lt;a class="reference external" href="http://www.turpion.org/php/paper.phtml?journal_id=pu&amp;amp;paper_id=6425"&gt;very exact same underlying physics&lt;/a&gt;. However, matter waves, atoms in
-the case of PhD, fall in gravity fields. While this is the expression of
-the very exact phenomena we are trying to measure, it also means that to
-build a very large atom interferometer, you have to let the atoms fall
-for a large distance. And I can attest that even laboratory-sized
-versions of atom-interferometric experiments are fairly nasty to
-run:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="attachments/P1010619.jpg" style="width: 55%;" /&gt;
-&lt;p&gt;This is why we simply decided to build an experiment in a
-&lt;a class="reference external" href="http://arxiv.org/pdf/0705.2922"&gt;freely-falling plane&lt;/a&gt;: let’s fall with the atoms for 6
-kilometers (30 seconds).&lt;/p&gt;
-&lt;img alt="" src="http://gael-varoquaux.info/physics/ICELog/07/0328/DSCF0662.jpg" style="width: 40%;" /&gt;
-&lt;img alt="" src="http://gael-varoquaux.info/physics/ICELog/07/0327/100_6838.jpg" style="width: 40%;" /&gt;
-&lt;/div&gt;
-&lt;div class="section" id="measuring-free-fall-while-in-free-fall"&gt;
-&lt;h2&gt;Measuring free fall, while in free fall?&lt;/h2&gt;
-&lt;img alt="" class="align-right" src="attachments/coyote.png" /&gt;
-&lt;p&gt;Of course, the plane is not really in free fall. The pilots try as hard
-as possible to compensate for drag and atmospheric turbulence but there
-is a limit to what they can achieve with an Airbus. The atoms are a
-vacuum apparatus, so they are indeed in free fall (before they crash in
-the side of the apparatus). However, making sens of measure of fall-free
-made relative to an unstable, and unpredictable platform is not trivial.
-This is where the statistical modeling kicked in. After reading a bit
-about noise in interferometers, I realized that we had a well-known
-problem in statistics: estimation of hidden variables from noisy
-observations. I learned about &lt;a class="reference external" href="http://www.google.fr/url?sa=t&amp;amp;source=web&amp;amp;ct=res&amp;amp;cd=1&amp;amp;ved=0CAcQFjAA&amp;amp;url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRecursive_Bayesian_estimation&amp;amp;ei=S331StLdCof34Ab117i4BA&amp;amp;usg=AFQjCNFeQT7-ruBii_IfqL5C7smW9jBL3Q&amp;amp;sig2=fYSw1ieKbBFPLqnoBEsdEQ"&gt;recursive Bayesian estimation&lt;/a&gt;, coded a
-proof-of-principle algorithm for our problem (in Python, of course), and
-was sold. The rest of the story is about noise simulations, and trying
-to convince a metrology community that you could perform good
-measurements in a noisy environment.&lt;/p&gt;
-&lt;p&gt;It took us a lot of time (2 years) to write an article that was
-acceptable to the target scientific community, while keeping the core
-estimation and statistics message. Publishing new ideas is hard, because
-you are not answering questions that people already have in mind. This
-is why the fact that &lt;a class="reference external" href="http://www.iop.org/EJ/abstract/1367-2630/11/11/113010"&gt;this article&lt;/a&gt; is out is a huge deal for me. It
-marks a turning point in my reflection: I switched from worrying only
-about forward models, with which try to describe as well as possible the
-system at hand, to inverse problems, in which you worry about estimating
-the parameters from the data.&lt;/p&gt;
-&lt;p&gt;I was startled to see that people are ready to spend a huge amount of
-money and efforts in improving complicated experiments involving quantum
-physics and very sophisticated technology, but can be weary of
-processing the output signal to increase statistical power. Scientific
-communities have their own goals that they pitch (e.g. reducing the
-phase noise in lasers) and there can be huge divides between different
-scientific interests. Realizing this played an important role in &lt;a class="reference external" href="http://gael-varoquaux.info/personnal/update-on-my-life.html"&gt;my
-career shift&lt;/a&gt;. I wanted to know more about the power of statistical
-modeling and machine learning applied to real-life system. I decided
-that to learn more, I had to work with people that had a different
-culture from mine. It’s been a huge amount of fun so far… More about
-that later.&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="science"></category><category term="personnal"></category><category term="science"></category><category term="physics"></category><category term="scientific computing"></category></entry></feed>
+</content><category term="programming"></category><category term="python"></category><category term="scientific computing"></category><category term="scipy"></category><category term="software engineering"></category><category term="joblib"></category></entry></feed>

@@ -885,7 +885,7 @@ div.note.align-right, div.container.align-right {
     font-style: oblique;
     padding: .1ex .1ex 0.5ex 5ex;
     margin: 2px 1ex 2px 1ex;
-    background-color: white;
+    background-color: transparent;
     border: none;
     width: 300px;
     font-size: larger ;
@@ -957,6 +957,11 @@ div.sidebar p.first {
     margin-top: .5em;
     margin-bottom: .5em;
     font-weight: bold;
+}
+
+
+header.post-header:hover {
+    background-color: #FAFAFA;
 }
 
 @media (max-width: 900px) {

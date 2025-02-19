@@ -1,5 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-02-13T00:00:00+01:00</updated><entry><title>AI for health: the impossible necessity of unbiased data</title><link href="https://gael-varoquaux.info/science/ai-for-health-the-impossible-necessity-of-unbiased-data.html" rel="alternate"></link><published>2025-02-13T00:00:00+01:00</published><updated>2025-02-13T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-13:/science/ai-for-health-the-impossible-necessity-of-unbiased-data.html</id><summary type="html">&lt;!-- To control max-width, rather than width, so that image renders
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-02-19T00:00:00+01:00</updated><entry><title>IA super-intelligent to play Go, and math?</title><link href="https://gael-varoquaux.info/science/ia-super-intelligent-to-play-go-and-math.html" rel="alternate"></link><published>2025-02-19T00:00:00+01:00</published><updated>2025-02-19T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-19:/science/ia-super-intelligent-to-play-go-and-math.html</id><summary type="html">&lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/lia-le-go-et-les-maths-2140332"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="immitation-is-not-creation"&gt;
+&lt;h2&gt;Immitation is not …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/lia-le-go-et-les-maths-2140332"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="immitation-is-not-creation"&gt;
+&lt;h2&gt;Immitation is not creation&lt;/h2&gt;
+&lt;p&gt;For several decades, calculators have been better than humans in an
+intellectual task: mental arithmetic. Yet, we do not call this
+“super-intelligence.” Probably because it is humans who specified all the
+rules for these calculations to the machine. Similarly, a computer has a
+superhuman ability to memorize information exactly, such as numbers, but
+we do not consider it super-intelligent for that reason. Perhaps this is
+because it does not teach us anything new. However, in 2017, an AI
+started teaching the best Go players moves and strategies that no one had
+ever known. How is this possible? Will AI surpass its creator and become
+super-intelligent in all fields?&lt;/p&gt;
+&lt;p&gt;Most recent breakthroughs in AI rely on learning methods where the
+computer imitates humans. For example, to create computer-vision systems,
+we provide the computer with many annotated images describing what they
+represent. Likewise, conversational AIs learn by training to complete
+examples of text. Under these conditions, it is difficult for AI to
+surpass its creator.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="when-ais-invent"&gt;
+&lt;h2&gt;When AIs invent&lt;/h2&gt;
+&lt;p&gt;But AlphaZero, the AI champion in Go, operates on a different principle:
+reinforcement learning. Here, the AI takes actions –moves in the game of
+Go– and receives a “reward” if it wins the game. Through countless games,
+it optimizes its strategies to maximize rewards, including exploring new
+strategies. AlphaZero trained by playing tens of millions of games
+against itself. This is how the AI was able to create new strategies,
+unrestricted by human knowledge.&lt;/p&gt;
+&lt;p&gt;Such learning, based on millions of trial-and-error attempts, does not
+apply to all problems –it requires the ability to perform rapid
+experiments, like in a computer game, which remains the only domain where
+a true super-intelligence has been achieved. However, there is hope in
+mathematics, another intellectual game.&lt;/p&gt;
+&lt;p&gt;Indeed, progress in generative AI for language –that power tools such as
+ChatGPT– can be applied to mathematical proofs, which consist of
+sequences of symbols. Trained on numerous proofs, an AI can learn to
+complete partial proofs. However, such a generative AI will produce
+sequences without guarantees of mathematical validity. Another tool,
+using proof-verification techniques based on symbolic AI, can then filter
+out only the correct sequences, giving a “reward” signal. Reinforcement
+learning finally comes in, using its exploration schemes to maximize this
+reward and discover new valid proof steps.&lt;/p&gt;
+&lt;p&gt;This is how, in July 2024, the AlphaProof AI won a silver medal at the
+International Mathematical Olympiad. Further progress may eventually lead
+to “super-intelligence” in mathematics. However, we are still far from
+general super-intelligence, as, both in Go and mathematics, progress is
+made possible by the ease of verifying whether one has “won” or not.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>AI for health: the impossible necessity of unbiased data</title><link href="https://gael-varoquaux.info/science/ai-for-health-the-impossible-necessity-of-unbiased-data.html" rel="alternate"></link><published>2025-02-13T00:00:00+01:00</published><updated>2025-02-13T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-13:/science/ai-for-health-the-impossible-necessity-of-unbiased-data.html</id><summary type="html">&lt;!-- To control max-width, rather than width, so that image renders
 well in the post summary --&gt;
 &lt;style&gt;
     div.content img.align-right {
