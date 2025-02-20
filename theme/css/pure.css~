@@ -525,9 +525,13 @@ a.post-title {
 }
 
 a.post-summary {
-    display: block;
     text-decoration: unset;
     color: unset;
+}
+
+/* The links of the post summaries, that have been transformed to span */
+span.reference {
+    color: #2d4262;
 }
 
 .post-meta {
