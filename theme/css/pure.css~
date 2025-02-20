@@ -499,15 +499,37 @@ p.links {
     border-bottom: 1px solid #f2f2f0;
 }
 
+div.posts header.post-header {
+    border-radius: 7px;
+    padding-left: 1em;
+    padding-right: 1em;
+    cursor: pointer;
+}
+
+div.posts header.post-header:hover {
+    box-shadow: 0px 0px 7px #333;
+}
+
 section.post {
     margin-bottom: 3ex;
 }
 
-.post-title {
+header.post-header a.post-title, header.post-header h3.post-title {
     font-size: 1.5em;
     color: #333332;
     letter-spacing: -1px;
 }
+
+a.post-title {
+    display: block;
+}
+
+a.post-summary {
+    display: block;
+    text-decoration: unset;
+    color: unset;
+}
+
 .post-meta {
     color: #999;
     font-size: 80%;
@@ -793,6 +815,7 @@ div.content img.align-right {
 	float: none;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
     }
 }
 
