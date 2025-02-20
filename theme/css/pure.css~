@@ -514,7 +514,7 @@ section.post {
     margin-bottom: 3ex;
 }
 
-header.post-header a.post-title, header.post-header h3.post-title {
+section.post header.post-header .post-title {
     font-size: 1.5em;
     color: #333332;
     letter-spacing: -1px;
