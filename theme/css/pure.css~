@@ -494,6 +494,7 @@ p.links {
 }
 
 @media (max-width: 600px) {
+    /* Less whitespace on the side of very narrow screens */
     div.content {
 	padding-left: 1em;
 	padding-right: 1em;
