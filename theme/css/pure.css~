@@ -506,6 +506,13 @@ div.posts header.post-header {
     cursor: pointer;
 }
 
+@media (max-width: 600px) {
+    div.posts header.post-header {
+	padding-left: .1em;
+	padding-right: .1em;
+    }
+}
+
 div.posts header.post-header:hover {
     box-shadow: 0px 0px 7px #333;
 }
@@ -826,6 +833,16 @@ div.content img.align-right {
 div.content img.align-left {
     float: left;
     margin-left: 0%;
+}
+
+div.content img.small {
+    max-width: 300px;
+}
+
+section.post header.post-header img.small {
+    max-width: calc(min(300px, 33vw));
+    float: right;
+    display: inline;
 }
 
 div.content table.noborder, div.content table.noborder tbody, div.content table.noborder tbody tr, div.content table.noborder tbody td {
