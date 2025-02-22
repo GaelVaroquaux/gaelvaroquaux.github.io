@@ -494,8 +494,16 @@ p.links {
 }
 
 @media (max-width: 600px) {
-    padding-left: 1em;
-    padding-right: 1em;
+    div.content {
+	padding-left: 1em;
+	padding-right: 1em;
+    }
+
+    /* For articles (not pages) a tiny bit more padding */
+    div.content > p, div.content > div.section > p {
+	padding-left: .2em;
+	padding-right: .2em;
+    }
 }
 
 .post {
