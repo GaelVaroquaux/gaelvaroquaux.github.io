@@ -712,7 +712,7 @@ a.post-category:hover {
 
     .content {
         padding: 1em 1.5em 0;
-        font-size: 85%;
+        font-size: 90%;
     }
 
     div.sidebar div.cover-img {
