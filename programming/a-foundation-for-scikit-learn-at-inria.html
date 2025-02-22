@@ -1,52 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
-
-        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
-
-        <title>A foundation for scikit-learn at Inria -- Gaël Varoquaux: computer / data / health science</title>
-
-    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
-    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
+<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
+<title>A foundation for scikit-learn at Inria -- Gaël Varoquaux: computer / data / health science</title>
+<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<link href="https://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Programming", "item": "https://gael-varoquaux.info/programming"}, {"@type": "ListItem", "position": 3, "name": "A foundation for scikit learn at inria", "item": "https://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux", "logo": {"@type": "ImageObject", "url": "https://gael-varoquaux.info/images/gael.png"}}, "headline": "A foundation for scikit-learn at Inria", "about": "programming", "datePublished": "2018-09-17 00:00"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/programming/a-foundation-for-scikit-learn-at-inria.html" property="og:url"/><meta content="article" property="og:type"/><meta content="A foundation for scikit-learn at Inria" property="og:title"/><meta content="en_US" property="og:locale"/></head>
 <body>
 <div class="pure-g-r" id="layout">
-    <div class="sidebar sidebar-article pure-u">
-        <header class="header-article">
-            <hgroup>
-                <a href="https://gael-varoquaux.info">
-		    <img class="avatar" alt="Gaël Varoquaux" 
-                     src="https://gael-varoquaux.info/images/gael.png">
-                </a>
-                <a href="https://gael-varoquaux.info" class="article-info">
-		    <h2 class="article-info">Gaël Varoquaux</h2>
-		</a>
-                <p>Mon 17 September 2018</p>
-                <a href="/">&larr;Home</a>
-            </hgroup>
-        </header>
-    </div>
-    <div class="pure-u">
-        <div class="content">
-            <section class="post">
-                <header class="post-header">
-                    <h1>A foundation for scikit-learn at Inria</h1>
-                        <p class="post-meta">
+<div class="sidebar sidebar-article pure-u">
+<header class="header-article">
+<hgroup>
+<a href="https://gael-varoquaux.info">
+<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
+</a>
+<a class="article-info" href="https://gael-varoquaux.info">
+<h2 class="article-info">Gaël Varoquaux</h2>
+</a>
+<p>Mon 17 September 2018</p>
+<a href="/">←Home</a>
+</hgroup>
+</header>
+</div>
+<div class="pure-u">
+<div class="content">
+<section class="post">
+<header class="post-header">
+<h1>A foundation for scikit-learn at Inria</h1>
+<p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/scikit-learn.html">scikit-learn</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/open-source.html">open-source</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/sustainabilty.html">sustainabilty</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/scientific-software.html">scientific software</a>
-		    <span class="readtime">
-			&nbsp Read time: 6 min.
+<a class="post-category" href="https://gael-varoquaux.info/tag/open-source.html">open-source</a>
+<a class="post-category" href="https://gael-varoquaux.info/tag/sustainabilty.html">sustainabilty</a>
+<a class="post-category" href="https://gael-varoquaux.info/tag/scientific-software.html">scientific software</a>
+<span class="readtime">
+			  Read time: 6 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -54,10 +48,10 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span>                        </p>
-                </header>
-            </section>
-            <p>We have just announced that a foundation will be supporting scikit-learn
+</span> </p>
+</header>
+</section>
+<p>We have just announced that a foundation will be supporting scikit-learn
 at Inria <a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">[1]</a>: <a class="reference external" href="https://scikit-learn.fondation-inria.fr">scikit-learn.fondation-inria.fr</a></p>
 <div class="align-right docutils container">
 Growth and sustainability</div>
@@ -149,7 +143,7 @@ the foundation is embedded at Inria, leaving room for other initiatives.</p>
 whole pydata or scipy ecosystem: it is focused on scikit-learn. But we
 will not hesitate contribute fixes and enhancements to neighboring
 projects, like in the past, even all the way up to core Python <a class="footnote-reference" href="#footnote-4" id="footnote-reference-4">[4]</a>.</p>
-<hr class="docutils" />
+<hr class="docutils"/>
 <p>I’m am very excited. A strong team of full-time contributors will allow
 us to do ambitious things with scikit-learn.</p>
 <div class="topic">
@@ -161,12 +155,12 @@ in Paris.</p>
 contributing to scikit-learn, and are with us in this fantastic
 adventure! The energy that is in this project is incredible. We are
 are launching this effort thank to you, and to empower you even more.</p>
-<img alt="" class="align-center" src="attachments/code_sklearn_crop.jpg" style="width: 90%;" />
+<img alt="" class="align-center" src="attachments/code_sklearn_crop.jpg" style="width: 90%;">
 <div class="line-block">
-<div class="line"><br /></div>
+<div class="line"><br/></div>
 </div>
 <table class="docutils footnote" frame="void" id="footnote-1" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
+<colgroup><col class="label"/><col/></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[1]</a></td><td>I am quite proud that over the years, my group has employed
 <a class="reference external" href="https://github.com/ogrisel">Olivier Grisel</a>, <a class="reference external" href="https://github.com/jorisvandenbossche">Joris van den Bossche</a> (working on pandas in
@@ -184,21 +178,21 @@ forced my to hire them with short-term contracts.</td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="footnote-2" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
+<colgroup><col class="label"/><col/></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#footnote-reference-2">[2]</a></td><td>Technically, it is a tax-deductible scikit-learn consortium inside
 the Inria foundation, which is an non-profit entity related to Inria.</td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="footnote-3" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
+<colgroup><col class="label"/><col/></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#footnote-reference-3">[3]</a></td><td>Details on the goverance of the foundation can be found at
 <a class="reference external" href="https://scikit-learn.fondation-inria.fr/en/mission-and-governance">https://scikit-learn.fondation-inria.fr/en/mission-and-governance</a></td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="footnote-4" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
+<colgroup><col class="label"/><col/></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#footnote-reference-4">[4]</a></td><td>For instance Olivier and Tom have been making parallelism more
 robust in Python 3.7 (amongst various issues
@@ -210,32 +204,30 @@ This is hard work. Yet it is
 important, because it benefits all libraries.</td></tr>
 </tbody>
 </table>
-</div>
-
-            <div class="hr" style="margin-bottom: -.5em;"></div>
+</img></div>
+<div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span>            <a href="#" class="go-top">Go Top</a>
+</span> <a class="go-top" href="#">Go Top</a>
 <footer class="footer">
-    <p>&copy; Gaël Varoquaux &ndash;
+<p>© Gaël Varoquaux –
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-    </p>
-</footer>        </div>
-    </div>
+</p>
+</footer> </div>
 </div>
-    <script
-src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-    <script>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+<script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-    <script>
+<script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -372,7 +364,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
     SectionScroller.init();
 })();
 </script>
-    <script>
+<script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -396,7 +388,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
             event.preventDefault();
         });
     </script>
-    <script  language="JavaScript" type="text/javascript">
+<script language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -515,6 +507,6 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
     //66885349@N03
     }
     </script>
-    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
 </body>
 </html>

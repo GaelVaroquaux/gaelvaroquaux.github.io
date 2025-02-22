@@ -1,51 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
-
-        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
-
-        <title>CARTE: toward table foundation models -- Gaël Varoquaux: computer / data / health science</title>
-
-    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
-    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
+<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
+<title>CARTE: toward table foundation models -- Gaël Varoquaux: computer / data / health science</title>
+<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Science", "item": "https://gael-varoquaux.info/science"}, {"@type": "ListItem", "position": 3, "name": "Carte toward table foundation models", "item": "https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux", "logo": {"@type": "ImageObject", "url": "https://gael-varoquaux.info/images/gael.png"}}, "headline": "CARTE: toward table foundation models", "about": "science", "datePublished": "2024-07-19 00:00"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" property="og:url"/><meta content="article" property="og:type"/><meta content="CARTE: toward table foundation models" property="og:title"/><meta content="en_US" property="og:locale"/></head>
 <body>
 <div class="pure-g-r" id="layout">
-    <div class="sidebar sidebar-article pure-u">
-        <header class="header-article">
-            <hgroup>
-                <a href="https://gael-varoquaux.info">
-		    <img class="avatar" alt="Gaël Varoquaux" 
-                     src="https://gael-varoquaux.info/images/gael.png">
-                </a>
-                <a href="https://gael-varoquaux.info" class="article-info">
-		    <h2 class="article-info">Gaël Varoquaux</h2>
-		</a>
-                <p>Fri 19 July 2024</p>
-                <a href="/">&larr;Home</a>
-            </hgroup>
-        </header>
-    </div>
-    <div class="pure-u">
-        <div class="content">
-            <section class="post">
-                <header class="post-header">
-                    <h1>CARTE: toward table foundation models</h1>
-                        <p class="post-meta">
+<div class="sidebar sidebar-article pure-u">
+<header class="header-article">
+<hgroup>
+<a href="https://gael-varoquaux.info">
+<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
+</a>
+<a class="article-info" href="https://gael-varoquaux.info">
+<h2 class="article-info">Gaël Varoquaux</h2>
+</a>
+<p>Fri 19 July 2024</p>
+<a href="/">←Home</a>
+</hgroup>
+</header>
+</div>
+<div class="pure-u">
+<div class="content">
+<section class="post">
+<header class="post-header">
+<h1>CARTE: toward table foundation models</h1>
+<p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/tabular-learning.html">tabular learning</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/foundation-models.html">foundation models</a>
-		    <span class="readtime">
-			&nbsp Read time: 8 min.
+<a class="post-category" href="https://gael-varoquaux.info/tag/tabular-learning.html">tabular learning</a>
+<a class="post-category" href="https://gael-varoquaux.info/tag/foundation-models.html">foundation models</a>
+<span class="readtime">
+			  Read time: 8 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -53,10 +47,10 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span>                        </p>
-                </header>
-            </section>
-            <div class="admonition note">
+</span> </p>
+</header>
+</section>
+<div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Foundation models, pretrained and readily usable for many downstream
 tasks, have changed the way we process text, images, and sound. Can we
@@ -102,7 +96,7 @@ train a deep-learning model from scratch, but download a pre-trained one
 from model hubs</strong>. Such universal pre-training is also at the root of
 foundation models.</p>
 <div class="line-block">
-<div class="line"><br /></div>
+<div class="line"><br/></div>
 </div>
 </div>
 <div class="section" id="pretraining-for-data-tables">
@@ -118,10 +112,10 @@ below, what sense can I make of it?</p>
 <em>The tabular learning challenge: every table is a special snowflake</em></div>
 <table border="1" class="docutils">
 <colgroup>
-<col width="29%" />
-<col width="29%" />
-<col width="29%" />
-<col width="14%" />
+<col width="29%"/>
+<col width="29%"/>
+<col width="29%"/>
+<col width="14%"/>
 </colgroup>
 <tbody valign="top">
 <tr><td>72</td>
@@ -154,11 +148,11 @@ of column names and string entries makes completely sense:</p>
 <table border="1" class="docutils">
 <caption>Cardiovascular cohort</caption>
 <colgroup>
-<col width="18%" />
-<col width="18%" />
-<col width="18%" />
-<col width="36%" />
-<col width="9%" />
+<col width="18%"/>
+<col width="18%"/>
+<col width="18%"/>
+<col width="36%"/>
+<col width="9%"/>
 </colgroup>
 <thead valign="bottom">
 <tr><th class="head">Age</th>
@@ -199,7 +193,7 @@ of column names and string entries makes completely sense:</p>
 pre-training can bring to analyzing data tables: <strong>string entries and
 column names bring meaning to the numbers in data tables</strong>.</p>
 <div class="line-block">
-<div class="line"><br /></div>
+<div class="line"><br/></div>
 </div>
 <p>Another way to seeing the challenge is that of <strong>data integration</strong>: as
 studied by the knowledge representation and database communities, putting
@@ -214,7 +208,7 @@ denoting the same thing, for instance “Diabetes” and “Diabetes melitus”<
 or foundation models for tables. Indeed, such models must apply to all
 tables, and thus must bridge these gaps across tables.</p>
 <div class="line-block">
-<div class="line"><br /></div>
+<div class="line"><br/></div>
 </div>
 </div>
 </div>
@@ -232,13 +226,13 @@ features of an individuals to a risk of developing adverse cardiovascular
 events. To pretrain across tables, we use a universal representation of
 the data (rows of tables), as small graphs.</p>
 <div class="figure">
-<img alt="" src="attachments/carte/carte_graphlet.png" />
+<img alt="" src="attachments/carte/carte_graphlet.png">
 <p class="caption">Turning table rows into graphlets. Each column leads to an edge and
 the column name is turned into the corresponding edge feature. It’s a
 “multirelational graph”. The entry associated with the given column
 is turned into the corresponding node feature, and the row is
 represented as a special row token in the center of the graphlet.</p>
-</div>
+</img></div>
 <p>Thus, tables with different number of columns can be turned into a
 consistent representation. But an additional benefit of this
 representation is that it can represent data across multiple tables with
@@ -255,7 +249,7 @@ with similar meaning, for instance a column named “commorbidity” and
 another one named “medical conditions”. Such representation helps
 learning without entity or schema matching.</p>
 <div class="line-block">
-<div class="line"><br /></div>
+<div class="line"><br/></div>
 </div>
 <p><strong>Graph transformer</strong> CARTE then uses a form of graph transformer on top
 of this representation. Key to this graph transformer is an attention
@@ -263,7 +257,7 @@ mechanism that accounts for the relation information –the edge type,
 <em>ie</em> the column name. Thus <em>(born in, Paris)</em> is represented in a
 different way as <em>(living in, Paris)</em>.</p>
 <div class="line-block">
-<div class="line"><br /></div>
+<div class="line"><br/></div>
 </div>
 <p><strong>Numbers treated as such</strong> Columns with numerical entries are often
 important information in a data table. Unlike typical large language
@@ -273,7 +267,7 @@ embedding of the column name (a vector output by the language model).
 That way a value of 126 in a column named “Systolic mm Hg” is represented
 close to 1.5 times a value of 84 in a column named “Blood pressure”.</p>
 <div class="line-block">
-<div class="line"><br /></div>
+<div class="line"><br/></div>
 </div>
 </div>
 <div class="section" id="pretraining-on-knowledge-graphs">
@@ -288,7 +282,7 @@ the one that we use to model data tables.</p>
 can be fine tuned. We found that this was a tricky part as those tables
 are often small.</p>
 <div class="line-block">
-<div class="line"><br /></div>
+<div class="line"><br/></div>
 </div>
 </div>
 <div class="section" id="empirical-results">
@@ -298,7 +292,7 @@ We compared CARTE to a variety of baselines across 51 datasets (mostly
 downloaded from kaggle), as a function of the number of samlpes (number
 of rows):</p>
 <div class="figure">
-<img alt="" src="attachments/carte/carte_learning_curve.png" />
+<img alt="" src="attachments/carte/carte_learning_curve.png"/>
 <p class="caption">Prediction performance as a function of sample size for classification
 and regression tasks</p>
 </div>
@@ -312,7 +306,7 @@ CatBoost of XGBoost also work very well. We investigated in details many
 baselines. Here, we consider not only learners, but also a variety of
 methods to encode strings, and these really help predicting:</p>
 <div class="figure">
-<img alt="" src="attachments/carte/carte_cd_plots.png" />
+<img alt="" src="attachments/carte/carte_cd_plots.png"/>
 <p class="caption">Detailed comparison (critical difference plots, giving the average
 ranking of methods) across all 42 baselines that we investigated</p>
 </div>
@@ -323,13 +317,13 @@ on the resulting representation. <em>TabVec</em> is the <a class="reference exte
 from <a class="reference external" href="https://skrub-data.org">skrub</a>. Combined with standard learners
 it gives really strong baselines.</p>
 <div class="line-block">
-<div class="line"><br /></div>
+<div class="line"><br/></div>
 </div>
 <p><strong>Learning across tables</strong> As CARTE can model jointly different tables with
 different conventions, we show that I can use large source tables, to
 boost prediction on the smaller target table.</p>
 <div class="figure align-right">
-<img alt="" src="attachments/carte/carte_joint_learning.png" style="width: 600px;" />
+<img alt="" src="attachments/carte/carte_joint_learning.png" style="width: 600px;"/>
 </div>
 <p><em>Ranking of various methods used across tables with imperfect
 correspondances, where “matched” means manual column matching, and “not
@@ -352,12 +346,12 @@ LLM can acquire more background knowledge. The seminal example is that of
 makes sentences out of table rows and feeds them to LLMs. Yet, by itself
 it does not perform well on tables with numbers.</p>
 <div class="figure align-right">
-<img alt="" src="attachments/carte/tabllm_comparison.png" style="width: 350px;" />
+<img alt="" src="attachments/carte/tabllm_comparison.png" style="width: 350px;"/>
 </div>
 <p><em>Ranking of models on data from the TabLLM paper, data that differs from
 our benchmark above as it does not have string entries.</em></p>
 <div class="line-block">
-<div class="line"><br /></div>
+<div class="line"><br/></div>
 </div>
 <div class="align-right docutils container">
 A table foundation model must model strings and numbers</div>
@@ -370,7 +364,7 @@ performs very well.</p>
 the future of table foundation models is to model well both strings and
 numbers.</p>
 <div class="line-block">
-<div class="line"><br /></div>
+<div class="line"><br/></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -381,31 +375,29 @@ surface of our work. If you want more details, read the <a class="reference exte
 </div>
 </div>
 </div>
-
-            <div class="hr" style="margin-bottom: -.5em;"></div>
+<div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span>            <a href="#" class="go-top">Go Top</a>
+</span> <a class="go-top" href="#">Go Top</a>
 <footer class="footer">
-    <p>&copy; Gaël Varoquaux &ndash;
+<p>© Gaël Varoquaux –
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-    </p>
-</footer>        </div>
-    </div>
+</p>
+</footer> </div>
 </div>
-    <script
-src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-    <script>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+<script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-    <script>
+<script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -542,7 +534,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
     SectionScroller.init();
 })();
 </script>
-    <script>
+<script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -566,7 +558,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
             event.preventDefault();
         });
     </script>
-    <script  language="JavaScript" type="text/javascript">
+<script language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -685,6 +677,6 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
     //66885349@N03
     }
     </script>
-    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
 </body>
 </html>

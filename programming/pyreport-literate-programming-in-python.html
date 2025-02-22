@@ -1,52 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
-
-        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
-
-        <title>pyreport: literate programming in python -- Gaël Varoquaux: computer / data / health science</title>
-
-    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
-    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
+<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
+<title>pyreport: literate programming in python -- Gaël Varoquaux: computer / data / health science</title>
+<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<link href="https://gael-varoquaux.info/programming/pyreport-literate-programming-in-python.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Programming", "item": "https://gael-varoquaux.info/programming"}, {"@type": "ListItem", "position": 3, "name": "Pyreport literate programming in python", "item": "https://gael-varoquaux.info/programming/pyreport-literate-programming-in-python.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux", "logo": {"@type": "ImageObject", "url": "https://gael-varoquaux.info/images/gael.png"}}, "headline": "<cite>pyreport</cite>: literate programming in python", "about": "programming", "datePublished": "2008-07-23 00:00"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/programming/pyreport-literate-programming-in-python.html" property="og:url"/><meta content="article" property="og:type"/><meta content="&lt;cite&gt;pyreport&lt;/cite&gt;: literate programming in python" property="og:title"/><meta content="en_US" property="og:locale"/></head>
 <body>
 <div class="pure-g-r" id="layout">
-    <div class="sidebar sidebar-article pure-u">
-        <header class="header-article">
-            <hgroup>
-                <a href="https://gael-varoquaux.info">
-		    <img class="avatar" alt="Gaël Varoquaux" 
-                     src="https://gael-varoquaux.info/images/gael.png">
-                </a>
-                <a href="https://gael-varoquaux.info" class="article-info">
-		    <h2 class="article-info">Gaël Varoquaux</h2>
-		</a>
-                <p>Wed 23 July 2008</p>
-                <a href="/">&larr;Home</a>
-            </hgroup>
-        </header>
-    </div>
-    <div class="pure-u">
-        <div class="content">
-            <section class="post">
-                <header class="post-header">
-                    <h1><cite>pyreport</cite>: literate programming in python</h1>
-                        <p class="post-meta">
+<div class="sidebar sidebar-article pure-u">
+<header class="header-article">
+<hgroup>
+<a href="https://gael-varoquaux.info">
+<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
+</a>
+<a class="article-info" href="https://gael-varoquaux.info">
+<h2 class="article-info">Gaël Varoquaux</h2>
+</a>
+<p>Wed 23 July 2008</p>
+<a href="/">←Home</a>
+</hgroup>
+</header>
+</div>
+<div class="pure-u">
+<div class="content">
+<section class="post">
+<header class="post-header">
+<h1><cite>pyreport</cite>: literate programming in python</h1>
+<p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/python.html">python</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/scipy.html">scipy</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/scientific-computing.html">scientific computing</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/documentation.html">documentation</a>
-		    <span class="readtime">
-			&nbsp Read time: 6 min.
+<a class="post-category" href="https://gael-varoquaux.info/tag/scipy.html">scipy</a>
+<a class="post-category" href="https://gael-varoquaux.info/tag/scientific-computing.html">scientific computing</a>
+<a class="post-category" href="https://gael-varoquaux.info/tag/documentation.html">documentation</a>
+<span class="readtime">
+			  Read time: 6 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -54,10 +48,10 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span>                        </p>
-                </header>
-            </section>
-            <div class="sidebar">
+</span> </p>
+</header>
+</section>
+<div class="sidebar">
 <p class="first sidebar-title">Downloads :</p>
 <p>pyreport is hosted on
 <a class="reference external" href="https://pypi.python.org/pypi/pyreport">pypi</a></p>
@@ -149,20 +143,20 @@ in python without having to use a special IDE.</p>
 <ul>
 <li><p class="first">First I want to be able to have a print-out of these calculations
 where I can see the code ran, and the results produced:</p>
-<a class="reference external image-reference" href="attachments/pyreport/simple.png"><img alt="The ouput of a session." class="align-center" src="attachments/pyreport/simple.png" /></a>
+<a class="reference external image-reference" href="attachments/pyreport/simple.png"><img alt="The ouput of a session." class="align-center" src="attachments/pyreport/simple.png"/></a>
 </li>
 </ul>
 </blockquote>
-<hr class="docutils" />
+<hr class="docutils"/>
 <blockquote>
 <ul>
 <li><p class="first">Second I would like all the plots produced by <a class="reference external" href="http://matplotlib.sourceforge.net/">matplotlib</a> to be
 captured and displayed too.</p>
-<a class="reference external image-reference" href="attachments/pyreport/pylab.png"><img alt="The &quot;show()&quot; command gets overloaded." class="align-center" src="attachments/pyreport/pylab.png" /></a>
+<a class="reference external image-reference" href="attachments/pyreport/pylab.png"><img alt='The "show()" command gets overloaded.' class="align-center" src="attachments/pyreport/pylab.png"/></a>
 </li>
 </ul>
 </blockquote>
-<hr class="docutils" />
+<hr class="docutils"/>
 <blockquote>
 <ul>
 <li><p class="first">Last I would be able to comment these reports, give them titles,
@@ -173,14 +167,14 @@ python files, and to be able to run them with the python interpreter.</p>
 <pre class="literal-block">
 #! Just a title
 #!---------------
-a = &quot;a&quot;
+a = "a"
 #! *ooo oo
-b = &quot;b&quot;
+b = "b"
 #$ This is \LaTeX : $c = 2\cdot(a+b)$
 c = 2*(a+b)
 print c
 </pre>
-<a class="reference external image-reference" href="attachments/pyreport/latex.png"><img alt="A python report with a title and a LaTeX formula." class="align-center" src="attachments/pyreport/latex.png" /></a>
+<a class="reference external image-reference" href="attachments/pyreport/latex.png"><img alt="A python report with a title and a LaTeX formula." class="align-center" src="attachments/pyreport/latex.png"/></a>
 </li>
 </ul>
 </blockquote>
@@ -244,9 +238,9 @@ than nothing:</p>
 usage: pyreport [options] pythonfile
 
 Processes a python script and pretty prints the results using LateX. If
-the script uses &quot;show()&quot; commands (from pylab) they are caught by
+the script uses "show()" commands (from pylab) they are caught by
 pyreport and the resulting graphs are inserted in the output pdf.
-Comments lines starting with &quot;#!&quot; are interprated as rst lines
+Comments lines starting with "#!" are interprated as rst lines
 and pretty printed accordingly in the pdf.
     By Gael Varoquaux
 
@@ -266,8 +260,8 @@ options:
                         output figure type TYPE  (TYPE can be of pdf, jpg,
                         eps, png, ps depending on report output type)
   -c CHAR, --commentchar=CHAR
-                        literate comments start with &quot;#CHAR&quot;
-  -l, --latexliterals   allow LaTeX literal comment lines starting with &quot;#$&quot;
+                        literate comments start with "#CHAR"
+  -l, --latexliterals   allow LaTeX literal comment lines starting with "#$"
   -e, --latexescapes    allow LaTeX math mode escape in code wih dollar signs
   -p, --nopyreport      disallow the use of #pyreport lines in the processed
                         file to specify options
@@ -278,11 +272,11 @@ options:
   --noecho              Turns off the echoing of the output of the script on
                         the standard out
   -a ARGS, --arguments=ARGS
-                        pass the arguments &quot;ARGS&quot; to the script
+                        pass the arguments "ARGS" to the script
 </pre>
-<hr class="docutils" />
+<hr class="docutils"/>
 <table class="docutils footnote" frame="void" id="footnote-1" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
+<colgroup><col class="label"/><col/></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[1]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Literate_programming">literate programming</a> is a programming style
 that embeds the documentation of a program in its source code. The
@@ -294,38 +288,36 @@ documentation.</td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="footnote-2" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
+<colgroup><col class="label"/><col/></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#footnote-reference-2">[2]</a></td><td><a class="reference external" href="http://scipy.org/">scipy</a>  provides a very powerful math package to python, and
 <a class="reference external" href="http://matplotlib.sourceforge.net/">matplotlib</a> is a great plotting interface.</td></tr>
 </tbody>
 </table>
 </div>
-
-            <div class="hr" style="margin-bottom: -.5em;"></div>
+<div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span>            <a href="#" class="go-top">Go Top</a>
+</span> <a class="go-top" href="#">Go Top</a>
 <footer class="footer">
-    <p>&copy; Gaël Varoquaux &ndash;
+<p>© Gaël Varoquaux –
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-    </p>
-</footer>        </div>
-    </div>
+</p>
+</footer> </div>
 </div>
-    <script
-src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-    <script>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+<script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-    <script>
+<script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -462,7 +454,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
     SectionScroller.init();
 })();
 </script>
-    <script>
+<script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -486,7 +478,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
             event.preventDefault();
         });
     </script>
-    <script  language="JavaScript" type="text/javascript">
+<script language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -605,6 +597,6 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
     //66885349@N03
     }
     </script>
-    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
 </body>
 </html>
