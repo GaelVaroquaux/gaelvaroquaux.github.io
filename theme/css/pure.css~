@@ -493,6 +493,11 @@ p.links {
     color: #333332;
 }
 
+@media (max-width: 600px) {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 .post {
     padding-bottom: .1em;
     padding-top: .9em;
@@ -508,8 +513,8 @@ div.posts header.post-header {
 
 @media (max-width: 600px) {
     div.posts header.post-header {
-	padding-left: .1em;
-	padding-right: .1em;
+	padding-left: .4em;
+	padding-right: .4em;
     }
 }
 
@@ -843,6 +848,8 @@ section.post header.post-header img.small {
     max-width: calc(min(300px, 33vw));
     float: right;
     display: inline;
+    margin-right: -3px;
+    margin-left: 3px;
 }
 
 div.content table.noborder, div.content table.noborder tbody, div.content table.noborder tbody tr, div.content table.noborder tbody td {
