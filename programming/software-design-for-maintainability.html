@@ -1,46 +1,58 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
-<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
-<title>Software design for maintainability -- Gaël Varoquaux: computer / data / health science</title>
-<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<link href="https://gael-varoquaux.info/programming/software-design-for-maintainability.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Programming", "item": "https://gael-varoquaux.info/programming"}, {"@type": "ListItem", "position": 3, "name": "Software design for maintainability", "item": "https://gael-varoquaux.info/programming/software-design-for-maintainability.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux", "logo": {"@type": "ImageObject", "url": "https://gael-varoquaux.info/images/gael.png"}}, "headline": "Software design for maintainability", "about": "programming", "datePublished": "2010-08-01 23:47"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/programming/software-design-for-maintainability.html" property="og:url"/><meta content="article" property="og:type"/><meta content="Software design for maintainability" property="og:title"/><meta content="en_US" property="og:locale"/></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Software design for maintainability -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<!-- OpenGraph -->
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://gael-varoquaux.info/programming/software-design-for-maintainability.html" />
+	<meta property="og:title" content="Software design for maintainability" />
+	<meta property="og:description" content="I have just spent the best part of my Sunday fixing a bug that turned out being a seemingly-trivial two-liner. Such unpleasant experiences are all too frequent, and weight a lot on my view of..." />
+	<meta property="og:image" content="https://gael-varoquaux.info/images/gael.png" />
+</head>
+
 <body>
 <div class="pure-g-r" id="layout">
-<div class="sidebar sidebar-article pure-u">
-<header class="header-article">
-<hgroup>
-<a href="https://gael-varoquaux.info">
-<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
-</a>
-<a class="article-info" href="https://gael-varoquaux.info">
-<h2 class="article-info">Gaël Varoquaux</h2>
-</a>
-<p>Sun 01 August 2010</p>
-<a href="/">←Home</a>
-</hgroup>
-</header>
-</div>
-<div class="pure-u">
-<div class="content">
-<section class="post">
-<header class="post-header">
-<h1>Software design for maintainability</h1>
-<p class="post-meta">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Sun 01 August 2010</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Software design for maintainability</h1>
+                        <p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/software-engineering.html">software engineering</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/software-architecture.html">software architecture</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/python.html">python</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/selected.html">selected</a>
-<span class="readtime">
-			  Read time: 4 min.
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/software-architecture.html">software architecture</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/python.html">python</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/selected.html">selected</a>
+		    <span class="readtime">
+			&nbsp Read time: 4 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -48,15 +60,15 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> </p>
-</header>
-</section>
-<p>I have just spent the best part of my Sunday fixing a bug that turned
+</span>                        </p>
+                </header>
+            </section>
+            <p>I have just spent the best part of my Sunday fixing a bug that turned
 out being a <a class="reference external" href="https://svn.enthought.com/enthought/changeset/25699/">seemingly-trivial two-liner</a>. Such unpleasant experiences
 are all too frequent, and weight a lot on my view of code design.</p>
 <div class="section" id="my-stance-on-code-design">
 <h2>My stance on code design</h2>
-<img alt="" class="align-right" src="https://gael-varoquaux.info/programming/attachments/software_design_for_maintainability/cool-car-drawing-5.jpg" style="width: 30%;">
+<img alt="" class="align-right" src="https://gael-varoquaux.info/programming/attachments/software_design_for_maintainability/cool-car-drawing-5.jpg" style="width: 30%;" />
 <p>I call <em>code design</em> the process of designing the architecture of a
 piece of software: what are the objects it uses? how do they interact?
 how is the information passed around?…</p>
@@ -65,7 +77,7 @@ evolved to favor <strong>extreme simplicity</strong> over sophistication. I beli
 that a good programmer should know <a class="reference external" href="http://en.wikipedia.org/wiki/Design_pattern_%28computer_science%29">design patterns</a>, <a class="reference external" href="http://gael-varoquaux.info/computers/python_advanced/index.html">powerful
 language features</a>, <a class="reference external" href="http://scipy2010.blogspot.com/2010/06/tutorials-day-1-advanced-numpy.html">libraries dark corners</a>, and <em>not use them unless
 absolutely necessary</em>.</p>
-</img></div>
+</div>
 <div class="section" id="some-rules-of-thumb">
 <h2>Some rules of thumb</h2>
 <p>Here are some rules that I apply nowadays when writing code that I would
@@ -91,7 +103,7 @@ chances are that you’ll add complexity that you do not use. Design
 simple, design cleanly and refactor as you go, based on concrete
 problems. This is known as the <a class="reference external" href="http://en.wikipedia.org/wiki/You_aren't_gonna_need_it">“YAGNI principle”</a>.</li>
 </ul>
-<img alt="" class="align-center" src="https://gael-varoquaux.info/programming/attachments/software_design_for_maintainability/howtobuildmvp.gif" style="width: 60%;"/>
+<img alt="" class="align-center" src="https://gael-varoquaux.info/programming/attachments/software_design_for_maintainability/howtobuildmvp.gif" style="width: 60%;" />
 <ul class="simple">
 <li><strong>Don’t be clever.</strong> Each time you do a clever trick, whoever has to
 read and maintain this code will have to understand it (that person
@@ -124,14 +136,14 @@ are that all the black boxes will first have to be opened.</li>
 “Debugging is twice as hard as writing the code in the first place.
 Therefore, if you write the code as cleverly as possible, you are,
 by definition, not smart enough to debug it.” - Brian W. Kernighan</blockquote>
-<img alt="" class="align-right" src="https://gael-varoquaux.info/programming/attachments/software_design_for_maintainability/auto-graveyard-1.jpg" style="width: 40%;"/>
+<img alt="" class="align-right" src="https://gael-varoquaux.info/programming/attachments/software_design_for_maintainability/auto-graveyard-1.jpg" style="width: 40%;" />
 <p>You may think that I am overemphasizing simplicity at the cost of
 functionality. Well, think about the future of your code. The net is
 full of unmaintained and abandoned code. If you want your project to
 grow and have a future, you will probably need people to help you. For a
 given purpose, the easiest the code is to read and debug, the more
 chances you will have to pick momentum.</p>
-<hr class="docutils"/>
+<hr class="docutils" />
 <p>Some external references I like (about software engineering, rather than
 debugging):</p>
 <ul class="simple">
@@ -144,29 +156,31 @@ Software Maintenance</a></li>
 <li>Greg Wilson: <a class="reference external" href="http://software-carpentry.org/">Software carpentry: a course in software engineering</a></li>
 </ul>
 </div>
-<div class="hr" style="margin-bottom: -.5em;"></div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> <a class="go-top" href="#">Go Top</a>
+</span>            <a href="#" class="go-top">Go Top</a>
 <footer class="footer">
-<p>© Gaël Varoquaux –
+    <p>&copy; Gaël Varoquaux &ndash;
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-</p>
-</footer> </div>
+    </p>
+</footer>        </div>
+    </div>
 </div>
-</div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-<script>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-<script>
+    <script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -303,7 +317,7 @@ Software Maintenance</a></li>
     SectionScroller.init();
 })();
 </script>
-<script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -327,7 +341,7 @@ Software Maintenance</a></li>
             event.preventDefault();
         });
     </script>
-<script language="JavaScript" type="text/javascript">
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -446,6 +460,6 @@ Software Maintenance</a></li>
     //66885349@N03
     }
     </script>
-<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
 </body>
 </html>

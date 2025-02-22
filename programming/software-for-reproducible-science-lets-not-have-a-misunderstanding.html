@@ -1,46 +1,58 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
-<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
-<title>Software for reproducible science: let’s not have a misunderstanding -- Gaël Varoquaux: computer / data / health science</title>
-<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<link href="https://gael-varoquaux.info/programming/software-for-reproducible-science-lets-not-have-a-misunderstanding.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Programming", "item": "https://gael-varoquaux.info/programming"}, {"@type": "ListItem", "position": 3, "name": "Software for reproducible science lets not have a misunderstanding", "item": "https://gael-varoquaux.info/programming/software-for-reproducible-science-lets-not-have-a-misunderstanding.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux", "logo": {"@type": "ImageObject", "url": "https://gael-varoquaux.info/images/gael.png"}}, "headline": "Software for reproducible science: let’s not have a misunderstanding", "about": "programming", "datePublished": "2015-05-18 00:00"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/programming/software-for-reproducible-science-lets-not-have-a-misunderstanding.html" property="og:url"/><meta content="article" property="og:type"/><meta content="Software for reproducible science: let’s not have a misunderstanding" property="og:title"/><meta content="en_US" property="og:locale"/></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Software for reproducible science: let’s not have a misunderstanding -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<!-- OpenGraph -->
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://gael-varoquaux.info/programming/software-for-reproducible-science-lets-not-have-a-misunderstanding.html" />
+	<meta property="og:title" content="Software for reproducible science: let’s not have a misunderstanding" />
+	<meta property="og:description" content="Note tl;dr:   Reproducibilty is a noble cause and scientific software a promising vessel. But excess of reproducibility can be at odds with the housekeeping required for good software..." />
+	<meta property="og:image" content="https://gael-varoquaux.info/images/gael.png" />
+</head>
+
 <body>
 <div class="pure-g-r" id="layout">
-<div class="sidebar sidebar-article pure-u">
-<header class="header-article">
-<hgroup>
-<a href="https://gael-varoquaux.info">
-<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
-</a>
-<a class="article-info" href="https://gael-varoquaux.info">
-<h2 class="article-info">Gaël Varoquaux</h2>
-</a>
-<p>Mon 18 May 2015</p>
-<a href="/">←Home</a>
-</hgroup>
-</header>
-</div>
-<div class="pure-u">
-<div class="content">
-<section class="post">
-<header class="post-header">
-<h1>Software for reproducible science: let’s not have a misunderstanding</h1>
-<p class="post-meta">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Mon 18 May 2015</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Software for reproducible science: let’s not have a misunderstanding</h1>
+                        <p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/science.html">science</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/software.html">software</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/reproducible-research.html">reproducible research</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/scientific-software.html">scientific software</a>
-<span class="readtime">
-			  Read time: 9 min.
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/software.html">software</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/reproducible-research.html">reproducible research</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/scientific-software.html">scientific software</a>
+		    <span class="readtime">
+			&nbsp Read time: 9 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -48,12 +60,12 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> </p>
-</header>
-</section>
-<div class="admonition note">
+</span>                        </p>
+                </header>
+            </section>
+            <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p><strong>tl;dr:</strong>   <em>Reproducibilty is a noble cause and scientific
+<p><strong>tl;dr:</strong> &nbsp; <em>Reproducibilty is a noble cause and scientific
 software a promising vessel. But excess of reproducibility can be at
 odds with the housekeeping required for good software engineering.
 Code that “just works” should not be taken for granted.</em></p>
@@ -172,8 +184,8 @@ Nobody said it was easy
 
 Living up to the promise? -->
 <blockquote class="epigraph">
-Thinking is easy, acting is difficult      
-—         <em>Goethe</em></blockquote>
+Thinking is easy, acting is difficult &nbsp; &nbsp; &nbsp;
+—  &nbsp; &nbsp; &nbsp;  <em>Goethe</em></blockquote>
 <div class="admonition align-right note">
 <p class="first admonition-title">Note</p>
 <p class="last">Keeping a physics apparatus running for replication years later?</p>
@@ -233,7 +245,7 @@ finding, I find myself tinkering with its input, and often breaking it.
 Good scientific code is code that can be reused, that can lead to
 large-scale experiments validating its underlying assumptions.</p>
 <div class="figure align-right">
-<a class="reference external image-reference" href="https://twitter.com/divineomega/status/576165762911608833"><img alt="" src="../programming/attachments/sqlite_code.png"/></a>
+<a class="reference external image-reference" href="https://twitter.com/divineomega/status/576165762911608833"><img alt="" src="../programming/attachments/sqlite_code.png" /></a>
 <p class="caption">Sqlite is so much used that its developers have been woken up at
 night by users.</p>
 </div>
@@ -310,13 +322,13 @@ it to back his cosmological theories. Today, Galileo’s measurements are
 easy to reproduce because telescopes are readily-available as consumer
 products.</p>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <blockquote class="epigraph">
-Standing on the shoulders of giants     —     
+Standing on the shoulders of giants &nbsp; &nbsp; —  &nbsp; &nbsp;
 <em>Isaac Newton, on software libraries</em></blockquote>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <div class="topic">
 <p class="topic-title"><strong>Related posts</strong>:</p>
@@ -343,7 +355,7 @@ above with Poldrack) -->
 * don't publish method work on non open data (very restrictive, I have
   been criticized for working on 'old', 'uninteresting' data). -->
 <table class="docutils footnote" frame="void" id="footnote-1" rules="none">
-<colgroup><col class="label"/><col/></colgroup>
+<colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[1]</a></td><td>To make my point very clear, releasing buggy untested code is not
 a good thing. However, it is not possible to ask for all research
@@ -352,7 +364,7 @@ for a collective, reasoned, undertaking of consolidation.</td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="footnote-2" rules="none">
-<colgroup><col class="label"/><col/></colgroup>
+<colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#footnote-reference-2">[2]</a></td><td>Theory tells us that there is there is no universal machine
 learning algorithm. Given a specific machine-learning application, it
@@ -366,7 +378,7 @@ alive the code of every machine learning paper?</td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="footnote-3" rules="none">
-<colgroup><col class="label"/><col/></colgroup>
+<colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#footnote-reference-3">[3]</a></td><td>Empirical studies on the workload for programmers to achieve a
 given task showed that 25 percent increase in problem complexity results in
@@ -378,29 +390,31 @@ Unit increase in Problem Complexity, Woodfield 1979</a>.</td></tr>
 Varoquaux</a> for their
 feedback on this note.</p>
 </div>
-<div class="hr" style="margin-bottom: -.5em;"></div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> <a class="go-top" href="#">Go Top</a>
+</span>            <a href="#" class="go-top">Go Top</a>
 <footer class="footer">
-<p>© Gaël Varoquaux –
+    <p>&copy; Gaël Varoquaux &ndash;
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-</p>
-</footer> </div>
+    </p>
+</footer>        </div>
+    </div>
 </div>
-</div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-<script>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-<script>
+    <script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -537,7 +551,7 @@ feedback on this note.</p>
     SectionScroller.init();
 })();
 </script>
-<script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -561,7 +575,7 @@ feedback on this note.</p>
             event.preventDefault();
         });
     </script>
-<script language="JavaScript" type="text/javascript">
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -680,6 +694,6 @@ feedback on this note.</p>
     //66885349@N03
     }
     </script>
-<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
 </body>
 </html>

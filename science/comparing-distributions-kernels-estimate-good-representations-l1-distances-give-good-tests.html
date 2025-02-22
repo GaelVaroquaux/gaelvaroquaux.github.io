@@ -1,48 +1,60 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
-<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
-<title>Comparing distributions: Kernels estimate good representations, l1 distances give good tests -- Gaël Varoquaux: computer / data / health science</title>
-<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<link href="https://gael-varoquaux.info/science/comparing-distributions-kernels-estimate-good-representations-l1-distances-give-good-tests.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Science", "item": "https://gael-varoquaux.info/science"}, {"@type": "ListItem", "position": 3, "name": "Comparing distributions kernels estimate good representations l1 distances give good tests", "item": "https://gael-varoquaux.info/science/comparing-distributions-kernels-estimate-good-representations-l1-distances-give-good-tests.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Meyer Scetbon & Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux", "logo": {"@type": "ImageObject", "url": "https://gael-varoquaux.info/images/gael.png"}}, "headline": "Comparing distributions: Kernels estimate good representations, l1 distances give good tests", "about": "science", "datePublished": "2019-12-08 00:00"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/science/comparing-distributions-kernels-estimate-good-representations-l1-distances-give-good-tests.html" property="og:url"/><meta content="article" property="og:type"/><meta content="Comparing distributions: Kernels estimate good representations, l1 distances give good tests" property="og:title"/><meta content="en_US" property="og:locale"/></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Comparing distributions: Kernels estimate good representations, l1 distances give good tests -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<!-- OpenGraph -->
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://gael-varoquaux.info/science/comparing-distributions-kernels-estimate-good-representations-l1-distances-give-good-tests.html" />
+	<meta property="og:title" content="Comparing distributions: Kernels estimate good representations, l1 distances give good tests" />
+	<meta property="og:description" content="Note Given two set of observations, are they drawn from the same distribution? Our paper Comparing distributions: l1 geometry improves kernel two-sample testing at the NeurIPS 2019 conference..." />
+	<meta property="og:image" content="https://gael-varoquaux.info/images/gael.png" />
+</head>
+
 <body>
 <div class="pure-g-r" id="layout">
-<div class="sidebar sidebar-article pure-u">
-<header class="header-article">
-<hgroup>
-<a href="https://gael-varoquaux.info">
-<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
-</a>
-<a class="article-info" href="https://gael-varoquaux.info">
-<h2 class="article-info">Meyer Scetbon &amp; Gaël Varoquaux</h2>
-</a>
-<p>Sun 08 December 2019</p>
-<a href="/">←Home</a>
-</hgroup>
-</header>
-</div>
-<div class="pure-u">
-<div class="content">
-<section class="post">
-<header class="post-header">
-<h1>Comparing distributions: Kernels estimate good representations, l1 distances give good tests</h1>
-<p class="post-meta">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Meyer Scetbon & Gaël Varoquaux</h2>
+		</a>
+                <p>Sun 08 December 2019</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Comparing distributions: Kernels estimate good representations, l1 distances give good tests</h1>
+                        <p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/science.html">science</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/research.html">research</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/two-sample-testing.html">two-sample testing</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/conferences.html">conferences</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/statistics.html">statistics</a>
-<span class="readtime">
-			  Read time: 7 min.
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/research.html">research</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/two-sample-testing.html">two-sample testing</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/conferences.html">conferences</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/statistics.html">statistics</a>
+		    <span class="readtime">
+			&nbsp Read time: 7 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -50,10 +62,10 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> </p>
-</header>
-</section>
-<div class="admonition note">
+</span>                        </p>
+                </header>
+            </section>
+            <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>Given two set of observations, are they drawn from the same
 distribution? Our paper <a class="reference external" href="https://papers.nips.cc/paper/9398-comparing-distributions-ell_1-geometry-improves-kernel-two-sample-testing.html">Comparing distributions: l1 geometry
@@ -64,7 +76,7 @@ problem known as “two-sample testing”.</p>
 waiving.</p>
 </div>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <div class="contents topic" id="contents">
 <p class="topic-title">Contents</p>
@@ -85,8 +97,8 @@ McDonald’s and KFC use different logic to chose locations of restaurants
 across the US. This is a difficult question: we have access to data points,
 but not the underlying generative mechanism, that is probably governed by
 marketing strategies.</p>
-<img alt="" class="align-center" src="attachments/comparing_distributions_l1/map_KFC_McDo_simple.png" style="width: 70%;">
-</img></div>
+<img alt="" class="align-center" src="attachments/comparing_distributions_l1/map_KFC_McDo_simple.png" style="width: 70%;" />
+</div>
 <div class="section" id="from-kernel-mean-embeddings-to-distances-on-distributions">
 <h2><a class="toc-backref" href="#toc-entry-2">From kernel mean embeddings to distances on distributions</a></h2>
 <p>In the example of spatial distributions restaurants,
@@ -103,7 +115,7 @@ mean embedding of a distribution P with a kernel k is written:</p>
 estimate a density in continuous space by smoothing the observed data
 points with a kernel.</p>
 <div class="figure align-right">
-<img alt="" src="attachments/comparing_distributions_l1/kde.jpg"/>
+<img alt="" src="attachments/comparing_distributions_l1/kde.jpg" />
 <p class="caption">Kernel mean embeddings for two distributions of points</p>
 </div>
 <p>For two-sample testing, kernel embeddings can be used to compute distances
@@ -169,7 +181,7 @@ overlap.</p>
 <p>Using kernel embeddings of distributions enables to capture the aspects
 of convergence in the spatial domain because the kernels used give a
 spatial smoothness to the representatives:</p>
-<img alt="" class="align-center" src="attachments/comparing_distributions_l1/converging_diracs.png" style="width: 70%;"/>
+<img alt="" class="align-center" src="attachments/comparing_distributions_l1/converging_diracs.png" style="width: 70%;" />
 <p>Having a metric on probability distributions that captures the topology
 of the observations is important for many applications, for instance when
 fitting GANs to generate images: the goal is not to only capture that
@@ -190,7 +202,7 @@ metric properties, generalizing the results that were established by
 <a class="reference external" href="http://papers.nips.cc/paper/5685-fast-two-sample-testing-with-analytic-representations-of-probability-measures">Chwialkowski et al 2015</a>
 for the special case of the L2 metric.</p>
 <div class="figure align-center">
-<img alt="" src="attachments/comparing_distributions_l1/optimizing_position.png" style="width: 70%;"/>
+<img alt="" src="attachments/comparing_distributions_l1/optimizing_position.png" style="width: 70%;" />
 <p class="caption">Sampling at different positions</p>
 </div>
 <p>We further develop the testing procedures by showing that other tricks
@@ -216,7 +228,7 @@ that we use to build our tests (for instance the values at the locations
 that we use to build the tests above). l1 norms capture better dense
 differences than l2 norms –this is the reason why, used as penalties,
 they induce sparsity.</p>
-<img alt="" class="align-right" src="attachments/comparing_distributions_l1/l1_vs_l2.png" style="width: 150px;"/>
+<img alt="" class="align-right" src="attachments/comparing_distributions_l1/l1_vs_l2.png" style="width: 150px;" />
 <p>A simple intuition is that dense vectors tend to lie in the diagonals of
 the measurement basis, as none of their coordinates are zero. On these
 diagonals, the l1 norm is much larger than the l1 norm of vectors with
@@ -254,29 +266,31 @@ a lot of big picture</li>
 </div>
 <p>·</p>
 </div>
-<div class="hr" style="margin-bottom: -.5em;"></div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> <a class="go-top" href="#">Go Top</a>
+</span>            <a href="#" class="go-top">Go Top</a>
 <footer class="footer">
-<p>© Gaël Varoquaux –
+    <p>&copy; Gaël Varoquaux &ndash;
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-</p>
-</footer> </div>
+    </p>
+</footer>        </div>
+    </div>
 </div>
-</div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-<script>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-<script>
+    <script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -413,7 +427,7 @@ a lot of big picture</li>
     SectionScroller.init();
 })();
 </script>
-<script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -437,7 +451,7 @@ a lot of big picture</li>
             event.preventDefault();
         });
     </script>
-<script language="JavaScript" type="text/javascript">
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -556,6 +570,6 @@ a lot of big picture</li>
     //66885349@N03
     }
     </script>
-<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
 </body>
 </html>
