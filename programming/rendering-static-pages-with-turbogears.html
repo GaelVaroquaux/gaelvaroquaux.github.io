@@ -1,45 +1,51 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
-<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
-<title>Rendering static pages with Turbogears -- Gaël Varoquaux: computer / data / health science</title>
-<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<link href="https://gael-varoquaux.info/programming/rendering-static-pages-with-turbogears.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Programming", "item": "https://gael-varoquaux.info/programming"}, {"@type": "ListItem", "position": 3, "name": "Rendering static pages with turbogears", "item": "https://gael-varoquaux.info/programming/rendering-static-pages-with-turbogears.html"}]}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/programming/rendering-static-pages-with-turbogears.html" property="og:url"/><meta content="article" property="og:type"/><meta content="Rendering static pages with Turbogears" property="og:title"/><meta content="en_US" property="og:locale"/></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Rendering static pages with Turbogears -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
 <body>
 <div class="pure-g-r" id="layout">
-<div class="sidebar sidebar-article pure-u">
-<header class="header-article">
-<hgroup>
-<a href="https://gael-varoquaux.info">
-<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
-</a>
-<a class="article-info" href="https://gael-varoquaux.info">
-<h2 class="article-info">Gaël Varoquaux</h2>
-</a>
-<p>Sun 07 September 2008</p>
-<a href="/">←Home</a>
-</hgroup>
-</header>
-</div>
-<div class="pure-u">
-<div class="content">
-<section class="post">
-<header class="post-header">
-<h1>Rendering static pages with Turbogears</h1>
-<p class="post-meta">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Sun 07 September 2008</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Rendering static pages with Turbogears</h1>
+                        <p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/python.html">python</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/publishing.html">publishing</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/web.html">web</a>
-<span class="readtime">
-			  Read time: 2 min.
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/publishing.html">publishing</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/web.html">web</a>
+		    <span class="readtime">
+			&nbsp Read time: 2 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -47,10 +53,10 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> </p>
-</header>
-</section>
-<div class="section" id="turbogears-hack">
+</span>                        </p>
+                </header>
+            </section>
+            <div class="section" id="turbogears-hack">
 <h2>Turbogears hack</h2>
 <p>Suppose you have a dynamic website using turbogears, and you want to
 publish part of the content of this dynamic site to a static website,
@@ -63,8 +69,8 @@ Google picks this up, hopefuly to help somebody not to loose a
 day like I did):</p>
 <div class="highlight"><pre><span></span><span class="c1"># First set up the environment you need for your webapp:</span>
 <span class="kn">import</span> <span class="nn">turbogears</span>
-<span class="n">turbogears</span><span class="o">.</span><span class="n">update_config</span><span class="p">(</span><span class="n">configfile</span><span class="o">=</span><span class="s2">"dev.cfg"</span><span class="p">,</span>
-                         <span class="n">modulename</span><span class="o">=</span><span class="s2">"sanum.config"</span><span class="p">)</span>
+<span class="n">turbogears</span><span class="o">.</span><span class="n">update_config</span><span class="p">(</span><span class="n">configfile</span><span class="o">=</span><span class="s2">&quot;dev.cfg&quot;</span><span class="p">,</span>
+                         <span class="n">modulename</span><span class="o">=</span><span class="s2">&quot;sanum.config&quot;</span><span class="p">)</span>
 
 <span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">izip</span>
 <span class="kn">import</span> <span class="nn">turbogears.view</span>
@@ -73,17 +79,17 @@ day like I did):</p>
 <span class="kn">import</span> <span class="nn">turbogears.util</span> <span class="k">as</span> <span class="nn">tg_util</span>
 <span class="kn">from</span> <span class="nn">turbogears.widgets</span> <span class="kn">import</span> <span class="n">js_location</span>
 
-<span class="n">engine</span> <span class="o">=</span> <span class="n">turbogears</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">engines</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'kid'</span><span class="p">)</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">turbogears</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">engines</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;kid&#39;</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">render_static</span><span class="p">(</span><span class="n">data_dict</span><span class="p">,</span> <span class="n">template</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">""" Render a given template + its data dictionnary to a static html.</span>
-<span class="sd">    """</span>
-    <span class="n">data_dict</span><span class="p">[</span><span class="s1">'tg_css'</span><span class="p">]</span> <span class="o">=</span> <span class="n">tg_util</span><span class="o">.</span><span class="n">setlike</span><span class="p">()</span>
-    <span class="n">data_dict</span><span class="p">[</span><span class="s1">'tg_flash'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; Render a given template + its data dictionnary to a static html.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">data_dict</span><span class="p">[</span><span class="s1">&#39;tg_css&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">tg_util</span><span class="o">.</span><span class="n">setlike</span><span class="p">()</span>
+    <span class="n">data_dict</span><span class="p">[</span><span class="s1">&#39;tg_flash&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="n">js</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">izip</span><span class="p">(</span><span class="n">js_location</span><span class="p">,</span> <span class="nb">iter</span><span class="p">(</span><span class="n">tg_util</span><span class="o">.</span><span class="n">setlike</span><span class="p">,</span> <span class="kc">None</span><span class="p">)))</span>
 
     <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">(</span><span class="n">js_location</span><span class="p">):</span>
-        <span class="n">data_dict</span><span class="p">[</span><span class="s2">"tg_js_</span><span class="si">%s</span><span class="s2">"</span> <span class="o">%</span> <span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">)]</span> <span class="o">=</span> <span class="n">js</span><span class="p">[</span><span class="n">l</span><span class="p">]</span>
+        <span class="n">data_dict</span><span class="p">[</span><span class="s2">&quot;tg_js_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">)]</span> <span class="o">=</span> <span class="n">js</span><span class="p">[</span><span class="n">l</span><span class="p">]</span>
 
     <span class="k">return</span> <span class="n">engine</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">data_dict</span><span class="p">,</span> <span class="n">template</span><span class="o">=</span><span class="n">template</span><span class="p">)</span>
 </pre></div>
@@ -91,29 +97,31 @@ day like I did):</p>
 returned by your controller methods, and template the path to your
 template, as in the expose decorator.</p>
 </div>
-<div class="hr" style="margin-bottom: -.5em;"></div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> <a class="go-top" href="#">Go Top</a>
+</span>            <a href="#" class="go-top">Go Top</a>
 <footer class="footer">
-<p>© Gaël Varoquaux –
+    <p>&copy; Gaël Varoquaux &ndash;
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-</p>
-</footer> </div>
+    </p>
+</footer>        </div>
+    </div>
 </div>
-</div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-<script>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-<script>
+    <script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -250,7 +258,7 @@ template, as in the expose decorator.</p>
     SectionScroller.init();
 })();
 </script>
-<script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -274,7 +282,7 @@ template, as in the expose decorator.</p>
             event.preventDefault();
         });
     </script>
-<script language="JavaScript" type="text/javascript">
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -393,6 +401,6 @@ template, as in the expose decorator.</p>
     //66885349@N03
     }
     </script>
-<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
 </body>
 </html>

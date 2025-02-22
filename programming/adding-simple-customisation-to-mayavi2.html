@@ -1,45 +1,51 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
-<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
-<title>Adding simple customisation to Mayavi2 -- Gaël Varoquaux: computer / data / health science</title>
-<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<link href="https://gael-varoquaux.info/programming/adding-simple-customisation-to-mayavi2.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Programming", "item": "https://gael-varoquaux.info/programming"}, {"@type": "ListItem", "position": 3, "name": "Adding simple customisation to mayavi2", "item": "https://gael-varoquaux.info/programming/adding-simple-customisation-to-mayavi2.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux"}, "headline": "Adding simple customisation to Mayavi2", "about": "programming", "datePublished": "2008-02-05 02:37"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/programming/adding-simple-customisation-to-mayavi2.html" property="og:url"/><meta content="article" property="og:type"/><meta content="Adding simple customisation to Mayavi2" property="og:title"/><meta content="en_US" property="og:locale"/></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Adding simple customisation to Mayavi2 -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
 <body>
 <div class="pure-g-r" id="layout">
-<div class="sidebar sidebar-article pure-u">
-<header class="header-article">
-<hgroup>
-<a href="https://gael-varoquaux.info">
-<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
-</a>
-<a class="article-info" href="https://gael-varoquaux.info">
-<h2 class="article-info">Gaël Varoquaux</h2>
-</a>
-<p>Tue 05 February 2008</p>
-<a href="/">←Home</a>
-</hgroup>
-</header>
-</div>
-<div class="pure-u">
-<div class="content">
-<section class="post">
-<header class="post-header">
-<h1>Adding simple customisation to Mayavi2</h1>
-<p class="post-meta">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Tue 05 February 2008</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Adding simple customisation to Mayavi2</h1>
+                        <p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/python.html">python</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/mayavi.html">mayavi</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/scientific-computing.html">scientific computing</a>
-<span class="readtime">
-			  Read time: 3 min.
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/mayavi.html">mayavi</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/scientific-computing.html">scientific computing</a>
+		    <span class="readtime">
+			&nbsp Read time: 3 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -47,10 +53,10 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> </p>
-</header>
-</section>
-<p>Mayavi2 is a rewrite of the original Mayavi application to make it
+</span>                        </p>
+                </header>
+            </section>
+            <p>Mayavi2 is a rewrite of the original Mayavi application to make it
 easier to adapt and customize.</p>
 <p>Mayavi2 uses, for its full-blown application, the <a class="reference external" href="http://code.enthought.com/envisage">Envisage</a> framework.
 As a result it can both use envisage plugins (such as the logger and the
@@ -88,7 +94,7 @@ visualization:</p>
     <span class="k">def</span> <span class="nf">_anytrait_changed</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">pi</span> <span class="o">=</span> <span class="n">N</span><span class="o">.</span><span class="n">pi</span>
         <span class="n">dphi</span> <span class="o">=</span> <span class="n">pi</span><span class="o">/</span><span class="mf">1000.</span>
-        <span class="n">phi</span> <span class="o">=</span> <span class="n">N</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">pi</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">dphi</span><span class="p">,</span> <span class="n">dphi</span><span class="p">,</span> <span class="s1">'d'</span><span class="p">)</span>
+        <span class="n">phi</span> <span class="o">=</span> <span class="n">N</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">pi</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">dphi</span><span class="p">,</span> <span class="n">dphi</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">)</span>
         <span class="n">mu</span> <span class="o">=</span> <span class="n">phi</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">n_mer</span>
         <span class="n">x</span> <span class="o">=</span> <span class="n">N</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">mu</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">N</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_long</span><span class="o">*</span><span class="n">mu</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">n_mer</span><span class="p">)</span><span class="o">*</span><span class="mf">0.5</span><span class="p">)</span>
         <span class="n">y</span> <span class="o">=</span> <span class="n">N</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">mu</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">N</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_long</span><span class="o">*</span><span class="n">mu</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">n_mer</span><span class="p">)</span><span class="o">*</span><span class="mf">0.5</span><span class="p">)</span>
@@ -98,9 +104,9 @@ visualization:</p>
         <span class="c1"># visualization</span>
         <span class="n">clf</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">plot</span> <span class="o">=</span> <span class="n">plot3d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span>
-                            <span class="n">tube_radius</span><span class="o">=</span><span class="mf">0.025</span><span class="p">,</span> <span class="n">colormap</span><span class="o">=</span><span class="s1">'Spectral'</span><span class="p">)</span>
+                            <span class="n">tube_radius</span><span class="o">=</span><span class="mf">0.025</span><span class="p">,</span> <span class="n">colormap</span><span class="o">=</span><span class="s1">&#39;Spectral&#39;</span><span class="p">)</span>
 
-    <span class="n">view</span> <span class="o">=</span> <span class="n">View</span><span class="p">(</span><span class="s1">'n_mer'</span><span class="p">,</span> <span class="s1">'n_long'</span><span class="p">)</span>
+    <span class="n">view</span> <span class="o">=</span> <span class="n">View</span><span class="p">(</span><span class="s1">&#39;n_mer&#39;</span><span class="p">,</span> <span class="s1">&#39;n_long&#39;</span><span class="p">)</span>
 
 <span class="n">my_model</span> <span class="o">=</span> <span class="n">MyModel</span><span class="p">()</span>
 <span class="n">my_model</span><span class="o">.</span><span class="n">_anytrait_changed</span><span class="p">()</span>
@@ -114,36 +120,38 @@ the dialog that allows the user to interact with the visualization. This
 is very crude, but is a simple example. If you run this code using
 “mayavi2 -x”, the Mayavi2 application window appears with our
 visualization, and in addition the dialog to interact with it.</p>
-<p><a class="reference external image-reference" href="attachments/mayayi2-customui.png"><img alt="mayayi2-customui.png" src="attachments/mayayi2-customui.png"/></a></p>
+<p><a class="reference external image-reference" href="attachments/mayayi2-customui.png"><img alt="mayayi2-customui.png" src="attachments/mayayi2-customui.png" /></a></p>
 <p>With the development version of Mayavi2, you can simply change the last
 line from ‘model.edit_traits()’ to ‘model.configure_traits()’ and the
 file can be run as a normal Python file: there is no need for the
 Envisage framework. As a result the UI is a bit simpler, which can be
 seen as a pro, or as a con, depending on what you want to do:</p>
-<p><a class="reference external image-reference" href="attachments/mayayi2-noui.png"><img alt="mayavi2-noui.png" src="attachments/mayayi2-noui.png"/></a></p>
-<div class="hr" style="margin-bottom: -.5em;"></div>
+<p><a class="reference external image-reference" href="attachments/mayayi2-noui.png"><img alt="mayavi2-noui.png" src="attachments/mayayi2-noui.png" /></a></p>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> <a class="go-top" href="#">Go Top</a>
+</span>            <a href="#" class="go-top">Go Top</a>
 <footer class="footer">
-<p>© Gaël Varoquaux –
+    <p>&copy; Gaël Varoquaux &ndash;
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-</p>
-</footer> </div>
+    </p>
+</footer>        </div>
+    </div>
 </div>
-</div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-<script>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-<script>
+    <script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -280,7 +288,7 @@ seen as a pro, or as a con, depending on what you want to do:</p>
     SectionScroller.init();
 })();
 </script>
-<script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -304,7 +312,7 @@ seen as a pro, or as a con, depending on what you want to do:</p>
             event.preventDefault();
         });
     </script>
-<script language="JavaScript" type="text/javascript">
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -423,6 +431,6 @@ seen as a pro, or as a con, depending on what you want to do:</p>
     //66885349@N03
     }
     </script>
-<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
 </body>
 </html>

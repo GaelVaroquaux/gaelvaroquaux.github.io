@@ -1,49 +1,55 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
-<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
-<title>2021: my scientific year in review -- Gaël Varoquaux: computer / data / health science</title>
-<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<link href="https://gael-varoquaux.info/drafts/2021-my-scientific-year-in-review.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Drafts", "item": "https://gael-varoquaux.info/drafts"}, {"@type": "ListItem", "position": 3, "name": "2021 my scientific year in review", "item": "https://gael-varoquaux.info/drafts/2021-my-scientific-year-in-review.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux"}, "headline": "2021: my scientific year in review", "about": "science", "datePublished": "2022-01-01 00:00"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/drafts/2021-my-scientific-year-in-review.html" property="og:url"/><meta content="article" property="og:type"/><meta content="2021: my scientific year in review" property="og:title"/><meta content="en_US" property="og:locale"/></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>2021: my scientific year in review -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
 <body>
 <div class="pure-g-r" id="layout">
-<div class="sidebar sidebar-article pure-u">
-<header class="header-article">
-<hgroup>
-<a href="https://gael-varoquaux.info">
-<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
-</a>
-<a class="article-info" href="https://gael-varoquaux.info">
-<h2 class="article-info">Gaël Varoquaux</h2>
-</a>
-<p>Sat 01 January 2022</p>
-<a href="/">←Home</a>
-</hgroup>
-</header>
-</div>
-<div class="pure-u">
-<div class="content">
-<section class="post">
-<header class="post-header">
-<h1>2021: my scientific year in review</h1>
-<p class="post-meta">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Sat 01 January 2022</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>2021: my scientific year in review</h1>
+                        <p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/science.html">science</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/research.html">research</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/health.html">health</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/neuroimaging.html">neuroimaging</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/statistics.html">statistics</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/yearly-report.html">yearly report</a>
-<span class="readtime">
-			  Read time: 5 min.
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/research.html">research</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/health.html">health</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/neuroimaging.html">neuroimaging</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/statistics.html">statistics</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/yearly-report.html">yearly report</a>
+		    <span class="readtime">
+			&nbsp Read time: 5 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -51,10 +57,10 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> </p>
-</header>
-</section>
-<p>TODO</p>
+</span>                        </p>
+                </header>
+            </section>
+            <p>TODO</p>
 <div class="contents topic" id="highlights">
 <p class="topic-title">Highlights</p>
 <ul class="simple">
@@ -65,7 +71,7 @@
 </ul>
 </div>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <div class="section" id="variance-in-machine-learning-benchmarks">
 <h2><a class="toc-backref" href="#toc-entry-1">Variance in machine-learning benchmarks</a></h2>
@@ -79,17 +85,17 @@ systematically explore the variance of machine-learning benchmarks
 in 5 representative settings: 2 computer vision tasks, 2 natural
 language tasks, and a bioinformatics one.</p>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <div class="figure align-center">
-<img alt="" src="attachments/2021_highlights/bouthillier_sources_of_variance.png" style="width: 100%;">
+<img alt="" src="attachments/2021_highlights/bouthillier_sources_of_variance.png" style="width: 100%;" />
 <p class="caption">Different sources of variation of the measured performance: across
 different case studies, as a fraction of the variance induced by
 bootstrapping the data. Different hyperparameter optimization are
 considered.</p>
-</img></div>
+</div>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <p>While most deep-learning benchmarks only study the influence of random
 initializations <a class="footnote-reference" href="#footnote-1" id="footnote-reference-1">[1]</a>, the empirical study shows that <strong>the most important
@@ -102,7 +108,7 @@ this choice is imperfect and thus has arbitrary aspects);</li>
 <li>The weights init only come after these two.</li>
 </ol>
 <div class="figure align-right">
-<img alt="" src="attachments/2021_highlights/bouthillier_data_sampling.png" style="width: 400px;"/>
+<img alt="" src="attachments/2021_highlights/bouthillier_data_sampling.png" style="width: 400px;" />
 <p class="caption">Comparing variance due to train-test split with theoretical
 uncertainty due the size of the test set.</p>
 </div>
@@ -112,7 +118,7 @@ by the sampling noise of the test set: as the test is of limited size, it
 can only characterize the quality of a prediction with a limited
 accuracy.</p>
 <table class="docutils footnote" frame="void" id="footnote-1" rules="none">
-<colgroup><col class="label"/><col/></colgroup>
+<colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[1]</a></td><td>There is a aweful trend of trying out a certain number of seeds
 and piking the best one. While such approach may select the best
@@ -126,10 +132,10 @@ inits rather than 5 others.</td></tr>
 </tbody>
 </table>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <div class="figure align-right">
-<img alt="" src="attachments/2021_highlights/bouthillier_published_improvements.png" style="width: 400px;"/>
+<img alt="" src="attachments/2021_highlights/bouthillier_published_improvements.png" style="width: 400px;" />
 <p class="caption">Comparing benchmark variance to published improvements.</p>
 </div>
 <p><strong>Benchmark variance is not negligeable.</strong> Comparing this benchmarking
@@ -139,7 +145,7 @@ fluctuations</strong>.</p>
 <p>Hence, it seems crucial that good practices account for this variance to
 decide whether or not an observed is meaningful.</p>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <p><strong>Accounting for variance.</strong> Statistical control on machine-learning is
 not easy: often the computational cost of hyper-parameter selection is
@@ -149,7 +155,7 @@ repititions of the experiment is above all a function of the compute
 power: hence enough compute power can make any trivial difference
 statistically significant (a common problem of null-hypothesis testing).</p>
 <div class="figure align-right">
-<img alt="" src="attachments/2021_highlights/bouthillier_neyman_pearson.png" style="width: 400px;"/>
+<img alt="" src="attachments/2021_highlights/bouthillier_neyman_pearson.png" style="width: 400px;" />
 <p class="caption">Proposed testing on the <strong>probability of improvement</strong> (related to the
 <a class="reference external" href="https://en.wikipedia.org/wiki/Neyman%E2%80%93Pearson_lemma">Neyman-Pearson view on testing</a>).</p>
 </div>
@@ -163,7 +169,7 @@ procedure to account for the variance of benchmarks:</p>
 <li>accept the improvement if that probability is above 0.75 <a class="footnote-reference" href="#footnote-2" id="footnote-reference-2">[2]</a></li>
 </ol>
 <table class="docutils footnote" frame="void" id="footnote-2" rules="none">
-<colgroup><col class="label"/><col/></colgroup>
+<colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#footnote-reference-2">[2]</a></td><td>Thresholding at 0.75 was chosen because on our case studies it
 accepted improvements with effect sizes that turned out to be
@@ -175,7 +181,7 @@ imperfect choice of hyper-parameters. But in <a class="reference external" href=
 show that it is a surprisingly relibale and yet easy approach to better
 machine learning benchmarks.</p>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <div class="topic">
 <p class="topic-title">Simpler variant</p>
@@ -184,10 +190,10 @@ of the performance scores after sampling all sources of variance
 (including data splits).</p>
 </div>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="imputation-to-predict-with-missing-values">
@@ -213,7 +219,7 @@ dependency of <em>y</em> given <em>X</em>). We show that, provided that we consi
 flexible enough (weakly parametric) estimators, this leads to completely
 different trade off.</p>
 <div class="figure align-right">
-<img alt="" src="attachments/2021_highlights/impute_n_regress_manifolds_corrected_points.png" style="width: 350px;"/>
+<img alt="" src="attachments/2021_highlights/impute_n_regress_manifolds_corrected_points.png" style="width: 350px;" />
 <p class="caption">Data with imputed missing values that form manifolds in the data
 cloud.</p>
 </div>
@@ -223,7 +229,7 @@ predictions asymptoticaly, <em>for all missing mechanisms</em> (even missing not
 at random). Indeed, the predictor can adapt to the manifolds of imputed
 values (the figure gives an intuition).</p>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <p>However, an imputation that creates a regression function easier to learn
 can facilitate learning, a good imputation</p>
@@ -235,7 +241,7 @@ mental-health behaviors</em></p>
 <p>The <a class="reference external" href="https://project.inria.fr/dirtydata/">Dirty Data project</a>, that we
 undertook a few years ago, is really bearing its fruits.</p>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="decoding-brain-activity-shared-across-cognitive-paradigms">
@@ -244,29 +250,31 @@ undertook a few years ago, is really bearing its fruits.</p>
 <p>Mensch</p>
 <p>The MOOC?</p>
 </div>
-<div class="hr" style="margin-bottom: -.5em;"></div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> <a class="go-top" href="#">Go Top</a>
+</span>            <a href="#" class="go-top">Go Top</a>
 <footer class="footer">
-<p>© Gaël Varoquaux –
+    <p>&copy; Gaël Varoquaux &ndash;
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-</p>
-</footer> </div>
+    </p>
+</footer>        </div>
+    </div>
 </div>
-</div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-<script>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-<script>
+    <script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -403,7 +411,7 @@ undertook a few years ago, is really bearing its fruits.</p>
     SectionScroller.init();
 })();
 </script>
-<script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -427,7 +435,7 @@ undertook a few years ago, is really bearing its fruits.</p>
             event.preventDefault();
         });
     </script>
-<script language="JavaScript" type="text/javascript">
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -546,6 +554,6 @@ undertook a few years ago, is really bearing its fruits.</p>
     //66885349@N03
     }
     </script>
-<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
 </body>
 </html>

@@ -1,46 +1,52 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
-<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
-<title>Nilearn 0.2: more powerful machine learning for neuroimaging -- Gaël Varoquaux: computer / data / health science</title>
-<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<link href="https://gael-varoquaux.info/programming/nilearn-02-more-powerful-machine-learning-for-neuroimaging.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Programming", "item": "https://gael-varoquaux.info/programming"}, {"@type": "ListItem", "position": 3, "name": "Nilearn 02 more powerful machine learning for neuroimaging", "item": "https://gael-varoquaux.info/programming/nilearn-02-more-powerful-machine-learning-for-neuroimaging.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux"}, "headline": "Nilearn 0.2: more powerful machine learning for neuroimaging", "about": "programming", "datePublished": "2015-12-13 00:00"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/programming/nilearn-02-more-powerful-machine-learning-for-neuroimaging.html" property="og:url"/><meta content="article" property="og:type"/><meta content="Nilearn 0.2: more powerful machine learning for neuroimaging" property="og:title"/><meta content="en_US" property="og:locale"/></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Nilearn 0.2: more powerful machine learning for neuroimaging -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
 <body>
 <div class="pure-g-r" id="layout">
-<div class="sidebar sidebar-article pure-u">
-<header class="header-article">
-<hgroup>
-<a href="https://gael-varoquaux.info">
-<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
-</a>
-<a class="article-info" href="https://gael-varoquaux.info">
-<h2 class="article-info">Gaël Varoquaux</h2>
-</a>
-<p>Sun 13 December 2015</p>
-<a href="/">←Home</a>
-</hgroup>
-</header>
-</div>
-<div class="pure-u">
-<div class="content">
-<section class="post">
-<header class="post-header">
-<h1>Nilearn 0.2: more powerful machine learning for neuroimaging</h1>
-<p class="post-meta">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Sun 13 December 2015</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Nilearn 0.2: more powerful machine learning for neuroimaging</h1>
+                        <p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/neuroimaging.html">neuroimaging</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/python.html">python</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/scientific-computing.html">scientific computing</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/scipy.html">scipy</a>
-<span class="readtime">
-			  Read time: 1 min.
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/python.html">python</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/scientific-computing.html">scientific computing</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/scipy.html">scipy</a>
+		    <span class="readtime">
+			&nbsp Read time: 1 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -48,10 +54,10 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> </p>
-</header>
-</section>
-<div class="small sidebar">
+</span>                        </p>
+                </header>
+            </section>
+            <div class="small sidebar">
 <p class="first sidebar-title">Nilearn’s goals</p>
 <p class="last">Make advanced machine learning techniques easy for neuroimaging
 research.</p>
@@ -64,67 +70,69 @@ neuroimaging easier and more powerful</strong>.</p>
 <p><strong>Better documentation with narrative examples</strong></p>
 <p>The example can now be broken down into blocks (as <a class="reference external" href="http://nilearn.github.io/auto_examples/connectivity/plot_signal_extraction.html#sphx-glr-auto-examples-connectivity-plot-signal-extraction-py">here</a>)
 for a better narration (thanks to <a class="reference external" href="http://sphinx-gallery.readthedocs.org/en/latest/">sphinx-gallery</a>).</p>
-<hr class="docutils"/>
+<hr class="docutils" />
 <div class="figure align-right">
-<a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/decoding/plot_mixed_gambles_space_net.html"><img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_mixed_gambles_space_net_001.png"/></a>
+<a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/decoding/plot_mixed_gambles_space_net.html"><img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_mixed_gambles_space_net_001.png" /></a>
 </div>
 <p><strong>Space net: spatial regularizations in decoding</strong></p>
 <p>The <a class="reference external" href="http://nilearn.github.io/decoding/space_net.html">“SpaceNet” decoder</a> does spatial
 regularizations such as TV-l1 or Graph-Net to identify predictive regions
 in decoding.</p>
-<hr class="docutils"/>
+<hr class="docutils" />
 <div class="figure align-right">
-<a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/connectivity/plot_compare_resting_state_decomposition.html"><img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_compare_resting_state_decomposition_002.png"/></a>
+<a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/connectivity/plot_compare_resting_state_decomposition.html"><img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_compare_resting_state_decomposition_002.png" /></a>
 </div>
 <p><strong>Dictionnary learning for resting-state parcellations</strong></p>
 <p>Dictionnary learning is a <a class="reference external" href="http://nilearn.github.io/connectivity/resting_state_networks.html#beyond-ica-dictionary-learning">promising alternative to ICA to learn networks</a>.</p>
-<hr class="docutils"/>
+<hr class="docutils" />
 <div class="figure align-right">
-<a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/manipulating_visualizing/plot_prob_atlas.html#sphx-glr-auto-examples-manipulating-visualizing-plot-prob-atlas-py"><img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_prob_atlas_003.png"/></a>
+<a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/manipulating_visualizing/plot_prob_atlas.html#sphx-glr-auto-examples-manipulating-visualizing-plot-prob-atlas-py"><img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_prob_atlas_003.png" /></a>
 </div>
 <p><strong>Plotting sets of probabilistic maps</strong></p>
 <p>With <a class="reference external" href="http://nilearn.github.io/manipulating_visualizing/plotting.html#different-plotting-functions">a simple function</a>,
 you can plot outlines for multiple maps.</p>
-<hr class="docutils"/>
+<hr class="docutils" />
 <div class="figure align-right">
-<a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/manipulating_visualizing/plot_extract_rois_statistical_maps.html"><img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_extract_rois_statistical_maps_003.png"/></a>
+<a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/manipulating_visualizing/plot_extract_rois_statistical_maps.html"><img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_extract_rois_statistical_maps_003.png" /></a>
 </div>
 <p><strong>Separating regions out of maps</strong></p>
 <p>We have a set of functions to <a class="reference external" href="http://nilearn.github.io/auto_examples/manipulating_visualizing/plot_extract_rois_statistical_maps.html">separate regions on maps</a> or <a class="reference external" href="http://nilearn.github.io/auto_examples/connectivity/plot_extract_regions_canica_maps.html">turn networks into a probabilistic parcellation</a>.</p>
-<hr class="docutils"/>
+<hr class="docutils" />
 <p><strong>Classification on connectomes</strong></p>
 <p>We now have advanced connectivity measures to do <a class="reference external" href="http://nilearn.github.io/auto_examples/connectivity/plot_connectivity_measures.html">comparisons across
 connectomes for classification</a>.</p>
-<hr class="docutils"/>
+<hr class="docutils" />
 <div class="topic">
 <p class="topic-title">Thanks</p>
 <p>Thanks to Alexandre Abraham who lead the effort, and <a class="reference external" href="http://nilearn.github.io/whats_new.html#contributors">all the
 contributors</a>.</p>
 </div>
 </div>
-<div class="hr" style="margin-bottom: -.5em;"></div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> <a class="go-top" href="#">Go Top</a>
+</span>            <a href="#" class="go-top">Go Top</a>
 <footer class="footer">
-<p>© Gaël Varoquaux –
+    <p>&copy; Gaël Varoquaux &ndash;
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-</p>
-</footer> </div>
+    </p>
+</footer>        </div>
+    </div>
 </div>
-</div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-<script>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-<script>
+    <script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -261,7 +269,7 @@ contributors</a>.</p>
     SectionScroller.init();
 })();
 </script>
-<script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -285,7 +293,7 @@ contributors</a>.</p>
             event.preventDefault();
         });
     </script>
-<script language="JavaScript" type="text/javascript">
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -404,6 +412,6 @@ contributors</a>.</p>
     //66885349@N03
     }
     </script>
-<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
 </body>
 </html>

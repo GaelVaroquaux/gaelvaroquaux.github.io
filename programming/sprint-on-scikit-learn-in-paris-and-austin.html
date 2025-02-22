@@ -1,46 +1,52 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
-<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
-<title>Sprint on scikit-learn, in Paris and Austin -- Gaël Varoquaux: computer / data / health science</title>
-<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<link href="https://gael-varoquaux.info/programming/sprint-on-scikit-learn-in-paris-and-austin.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Programming", "item": "https://gael-varoquaux.info/programming"}, {"@type": "ListItem", "position": 3, "name": "Sprint on scikit learn in paris and austin", "item": "https://gael-varoquaux.info/programming/sprint-on-scikit-learn-in-paris-and-austin.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux"}, "headline": "Sprint on scikit-learn, in Paris and Austin", "about": "programming", "datePublished": "2018-08-01 00:00"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/programming/sprint-on-scikit-learn-in-paris-and-austin.html" property="og:url"/><meta content="article" property="og:type"/><meta content="Sprint on scikit-learn, in Paris and Austin" property="og:title"/><meta content="en_US" property="og:locale"/></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Sprint on scikit-learn, in Paris and Austin -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
 <body>
 <div class="pure-g-r" id="layout">
-<div class="sidebar sidebar-article pure-u">
-<header class="header-article">
-<hgroup>
-<a href="https://gael-varoquaux.info">
-<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
-</a>
-<a class="article-info" href="https://gael-varoquaux.info">
-<h2 class="article-info">Gaël Varoquaux</h2>
-</a>
-<p>Wed 01 August 2018</p>
-<a href="/">←Home</a>
-</hgroup>
-</header>
-</div>
-<div class="pure-u">
-<div class="content">
-<section class="post">
-<header class="post-header">
-<h1>Sprint on scikit-learn, in Paris and Austin</h1>
-<p class="post-meta">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Wed 01 August 2018</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Sprint on scikit-learn, in Paris and Austin</h1>
+                        <p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/scikit-learn.html">scikit-learn</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/open-source.html">open-source</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/reproducible-research.html">reproducible research</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/scientific-software.html">scientific software</a>
-<span class="readtime">
-			  Read time: 5 min.
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/open-source.html">open-source</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/reproducible-research.html">reproducible research</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/scientific-software.html">scientific software</a>
+		    <span class="readtime">
+			&nbsp Read time: 5 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -48,10 +54,10 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> </p>
-</header>
-</section>
-<p>Two weeks ago, we held a scikit-learn sprint in Austin and Paris. Here is
+</span>                        </p>
+                </header>
+            </section>
+            <p>Two weeks ago, we held a scikit-learn sprint in Austin and Paris. Here is
 a brief report, on progresses and challenges.</p>
 <div class="topic">
 <p class="topic-title">Several sprints</p>
@@ -101,14 +107,14 @@ improvements
 <div class="section" id="scikit-learn-is-hard-work">
 <h2>Scikit-learn is hard work</h2>
 <div class="figure align-right">
-<img alt="" src="attachments/dev_scikit-learn.png" style="width: 300px;">
-<p class="caption">Even for the almighty @amueller</p>
-</img></div>
+<img alt="" src="attachments/dev_scikit-learn.png" style="width: 300px;" />
+<p class="caption">Even for the almighty &#64;amueller</p>
+</div>
 <p>Two days of intense group work on scikit-learn reminded me how much it is
 hard work. I thought that it was maybe a good idea to try to illustrate
 why.</p>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <ul class="simple">
 <li><strong>Mathematical errors</strong>: maintaining the library requires mathematical
@@ -154,7 +160,7 @@ where different parts of a project want different version numbers of a
 dependency.</li>
 </ul>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
@@ -169,7 +175,7 @@ the future releases of scikit-learn (0.21 and later). scikit-learn
 us to develop faster a better toolkit.</p>
 </div>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="credits-and-acknowledgments">
@@ -217,7 +223,7 @@ under-represented groups <a class="footnote-reference" href="#footnote-1" id="fo
 <li>Joel Nothman, University of Sydney</li>
 </ul>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="sponsors">
@@ -236,11 +242,11 @@ online testing</li>
 </ul>
 <p>Thank you all for the support</p>
 <div class="line-block">
-<div class="line"><br/></div>
+<div class="line"><br /></div>
 </div>
 <p>Also thanks to Andy Mueller and Olivier Grisel for feedback on this blog post.</p>
 <table class="docutils footnote" frame="void" id="footnote-1" rules="none">
-<colgroup><col class="label"/><col/></colgroup>
+<colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[*]</a></td><td>We aspire to treat everybody excatly the same way. However,
 acknowledging the fact that there is currently a lack of diversity, we
@@ -250,29 +256,31 @@ newcomers.</td></tr>
 </table>
 </div>
 </div>
-<div class="hr" style="margin-bottom: -.5em;"></div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> <a class="go-top" href="#">Go Top</a>
+</span>            <a href="#" class="go-top">Go Top</a>
 <footer class="footer">
-<p>© Gaël Varoquaux –
+    <p>&copy; Gaël Varoquaux &ndash;
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-</p>
-</footer> </div>
+    </p>
+</footer>        </div>
+    </div>
 </div>
-</div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-<script>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-<script>
+    <script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -409,7 +417,7 @@ newcomers.</td></tr>
     SectionScroller.init();
 })();
 </script>
-<script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -433,7 +441,7 @@ newcomers.</td></tr>
             event.preventDefault();
         });
     </script>
-<script language="JavaScript" type="text/javascript">
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -552,6 +560,6 @@ newcomers.</td></tr>
     //66885349@N03
     }
     </script>
-<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
 </body>
 </html>

@@ -1,48 +1,54 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
-<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
-<title>Scikit-learn sprint on April 1st -- Gaël Varoquaux: computer / data / health science</title>
-<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
-<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<link href="https://gael-varoquaux.info/programming/scikit-learn-sprint-on-april-1st.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Programming", "item": "https://gael-varoquaux.info/programming"}, {"@type": "ListItem", "position": 3, "name": "Scikit learn sprint on april 1st", "item": "https://gael-varoquaux.info/programming/scikit-learn-sprint-on-april-1st.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux"}, "headline": "Scikit-learn sprint on April 1st", "about": "programming", "datePublished": "2011-03-26 13:27"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/programming/scikit-learn-sprint-on-april-1st.html" property="og:url"/><meta content="article" property="og:type"/><meta content="Scikit-learn sprint on April 1st" property="og:title"/><meta content="en_US" property="og:locale"/></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>Scikit-learn sprint on April 1st -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
 <body>
 <div class="pure-g-r" id="layout">
-<div class="sidebar sidebar-article pure-u">
-<header class="header-article">
-<hgroup>
-<a href="https://gael-varoquaux.info">
-<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
-</a>
-<a class="article-info" href="https://gael-varoquaux.info">
-<h2 class="article-info">Gaël Varoquaux</h2>
-</a>
-<p>Sat 26 March 2011</p>
-<a href="/">←Home</a>
-</hgroup>
-</header>
-</div>
-<div class="pure-u">
-<div class="content">
-<section class="post">
-<header class="post-header">
-<h1>Scikit-learn sprint on April 1st</h1>
-<p class="post-meta">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Sat 26 March 2011</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Scikit-learn sprint on April 1st</h1>
+                        <p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/sprint.html">sprint</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/python.html">python</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/science.html">science</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/scientific-computing.html">scientific computing</a>
-<a class="post-category" href="https://gael-varoquaux.info/tag/scikit-learn.html">scikit-learn</a>
-<span class="readtime">
-			  Read time: 1 min.
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/python.html">python</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/science.html">science</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/scientific-computing.html">scientific computing</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/scikit-learn.html">scikit-learn</a>
+		    <span class="readtime">
+			&nbsp Read time: 1 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -50,10 +56,10 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> </p>
-</header>
-</section>
-<a class="reference external image-reference" href="http://scikit-learn.sourceforge.net/"><img alt="" src="http://scikit-learn.sourceforge.net/stable/_static/scikit-learn-logo-small.png"/></a>
+</span>                        </p>
+                </header>
+            </section>
+            <a class="reference external image-reference" href="http://scikit-learn.sourceforge.net/"><img alt="" src="http://scikit-learn.sourceforge.net/stable/_static/scikit-learn-logo-small.png" /></a>
 <p>The <a class="reference external" href="http://scikit-learn.sourceforge.net/">scikit-learn</a> team is organizing a sprint on April 1st (that next
 Friday). Join us in <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/wiki/Upcoming-events">Paris, Boston, or on IRC</a>!</p>
 <p>With the rise of the data sciences, the scikit-learn, a <strong>BSD-licensed
@@ -76,31 +82,33 @@ analysis</a>, <a class="reference external" href="https://github.com/scikit-lear
 </ul>
 <p>Come and join us. It will be fun, and it’s an occasion to learn new
 tricks.</p>
-<hr class="docutils"/>
-<p><a class="reference external image-reference" href="http://farm5.static.flickr.com/4067/4405351641_5675ba000c.jpg"><img alt="image1" src="http://farm5.static.flickr.com/4067/4405351641_5675ba000c.jpg" style="width: 20%;"/></a> <a class="reference external image-reference" href="http://farm6.static.flickr.com/5249/5265835075_ea0b41019c.jpg"><img alt="image2" src="http://farm6.static.flickr.com/5249/5265835075_ea0b41019c.jpg" style="width: 20%;"/></a> <a class="reference external image-reference" href="http://farm5.static.flickr.com/4135/4974339970_566424185f.jpg"><img alt="image3" src="http://farm5.static.flickr.com/4135/4974339970_566424185f.jpg" style="width: 20%;"/></a> <a class="reference external image-reference" href="http://farm6.static.flickr.com/5294/5425114531_6eec316967.jpg"><img alt="image4" src="http://farm6.static.flickr.com/5294/5425114531_6eec316967.jpg" style="width: 20%;"/></a></p>
-<div class="hr" style="margin-bottom: -.5em;"></div>
+<hr class="docutils" />
+<p><a class="reference external image-reference" href="http://farm5.static.flickr.com/4067/4405351641_5675ba000c.jpg"><img alt="image1" src="http://farm5.static.flickr.com/4067/4405351641_5675ba000c.jpg" style="width: 20%;" /></a> <a class="reference external image-reference" href="http://farm6.static.flickr.com/5249/5265835075_ea0b41019c.jpg"><img alt="image2" src="http://farm6.static.flickr.com/5249/5265835075_ea0b41019c.jpg" style="width: 20%;" /></a> <a class="reference external image-reference" href="http://farm5.static.flickr.com/4135/4974339970_566424185f.jpg"><img alt="image3" src="http://farm5.static.flickr.com/4135/4974339970_566424185f.jpg" style="width: 20%;" /></a> <a class="reference external image-reference" href="http://farm6.static.flickr.com/5294/5425114531_6eec316967.jpg"><img alt="image4" src="http://farm6.static.flickr.com/5294/5425114531_6eec316967.jpg" style="width: 20%;" /></a></p>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span> <a class="go-top" href="#">Go Top</a>
+</span>            <a href="#" class="go-top">Go Top</a>
 <footer class="footer">
-<p>© Gaël Varoquaux –
+    <p>&copy; Gaël Varoquaux &ndash;
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-</p>
-</footer> </div>
+    </p>
+</footer>        </div>
+    </div>
 </div>
-</div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-<script>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-<script>
+    <script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -237,7 +245,7 @@ tricks.</p>
     SectionScroller.init();
 })();
 </script>
-<script>
+    <script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -261,7 +269,7 @@ tricks.</p>
             event.preventDefault();
         });
     </script>
-<script language="JavaScript" type="text/javascript">
+    <script  language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -380,6 +388,6 @@ tricks.</p>
     //66885349@N03
     }
     </script>
-<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
 </body>
 </html>
