@@ -1,51 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
-
-        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
-
-        <title>PCA and ICA: Identifying combinations of variables -- Gaël Varoquaux: computer / data / health science</title>
-
-    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
-    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
+<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
+<title>PCA and ICA: Identifying combinations of variables -- Gaël Varoquaux: computer / data / health science</title>
+<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<link href="https://gael-varoquaux.info/science/ica_vs_pca.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Science", "item": "https://gael-varoquaux.info/science"}, {"@type": "ListItem", "position": 3, "name": "Ica_vs_pca", "item": "https://gael-varoquaux.info/science/ica_vs_pca.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux"}, "headline": "PCA and ICA: Identifying combinations of variables", "about": "science", "datePublished": "2010-02-05 00:00"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/science/ica_vs_pca.html" property="og:url"/><meta content="article" property="og:type"/><meta content="PCA and ICA: Identifying combinations of variables" property="og:title"/><meta content="en_US" property="og:locale"/></head>
 <body>
 <div class="pure-g-r" id="layout">
-    <div class="sidebar sidebar-article pure-u">
-        <header class="header-article">
-            <hgroup>
-                <a href="https://gael-varoquaux.info">
-		    <img class="avatar" alt="Gaël Varoquaux" 
-                     src="https://gael-varoquaux.info/images/gael.png">
-                </a>
-                <a href="https://gael-varoquaux.info" class="article-info">
-		    <h2 class="article-info">Gaël Varoquaux</h2>
-		</a>
-                <p>Fri 05 February 2010</p>
-                <a href="/">&larr;Home</a>
-            </hgroup>
-        </header>
-    </div>
-    <div class="pure-u">
-        <div class="content">
-            <section class="post">
-                <header class="post-header">
-                    <h1>PCA and ICA: Identifying combinations of variables</h1>
-                        <p class="post-meta">
+<div class="sidebar sidebar-article pure-u">
+<header class="header-article">
+<hgroup>
+<a href="https://gael-varoquaux.info">
+<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
+</a>
+<a class="article-info" href="https://gael-varoquaux.info">
+<h2 class="article-info">Gaël Varoquaux</h2>
+</a>
+<p>Fri 05 February 2010</p>
+<a href="/">←Home</a>
+</hgroup>
+</header>
+</div>
+<div class="pure-u">
+<div class="content">
+<section class="post">
+<header class="post-header">
+<h1>PCA and ICA: Identifying combinations of variables</h1>
+<p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/scientific-computing.html">scientific computing</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/selected.html">selected</a>
-		    <span class="readtime">
-			&nbsp Read time: 6 min.
+<a class="post-category" href="https://gael-varoquaux.info/tag/scientific-computing.html">scientific computing</a>
+<a class="post-category" href="https://gael-varoquaux.info/tag/selected.html">selected</a>
+<span class="readtime">
+			  Read time: 6 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -53,10 +47,10 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span>                        </p>
-                </header>
-            </section>
-            <div class="topic">
+</span> </p>
+</header>
+</section>
+<div class="topic">
 <p class="topic-title"><strong>Dimension reduction and interpretability</strong></p>
 <p>Suppose you have statistical data that too many dimensions, in other
 words too many variables of the same random process, that has been
@@ -69,7 +63,7 @@ what are the relevant combinations, or directions.</p>
 <p>If we have three-dimensional data, for instance simultaneous measurements
 made by three thermometers positioned at different locations in a room.
 The data forms a cluster of points in a 3D space:</p>
-<img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/3d_data.jpg" style="width: 50%;" />
+<img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/3d_data.jpg" style="width: 50%;">
 <p>If the temperature in that room is conditioned by only two parameters,
 the setting of a heater and the outside temperature, we probably have
 too much data: the three sets of measurements can be expressed as a
@@ -84,14 +78,14 @@ of data mainly residing on a 2D plane, the variance is much greater along
 the two first vectors, which define our plane of interest, than along the
 third one:</p>
 <div class="figure align-center">
-<img alt="" src="https://gael-varoquaux.info/science/attachments/ica_pca/3d_data_pca_axis.jpg" style="width: 50%;" />
+<img alt="" src="https://gael-varoquaux.info/science/attachments/ica_pca/3d_data_pca_axis.jpg" style="width: 50%;"/>
 <p class="caption">The covariance eigenvectors identified by PCA are shown in red. The
 plane defined by the 2 largest eigenvectors is shown in light red.</p>
 </div>
 <p>If we look at the data in the plane identified by PCA, it is clear that
 it was mostly 2D:</p>
-<img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/3d_data_pca.jpg" style="width: 50%;" />
-</div>
+<img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/3d_data_pca.jpg" style="width: 50%;"/>
+</img></div>
 <div class="section" id="understanding-pca-with-a-gaussian-model">
 <h2>Understanding PCA with a Gaussian model</h2>
 <p>Let <cite>x</cite> and <cite>y</cite> be two normal-distributed variables, describing the
@@ -142,7 +136,7 @@ normal processes of different variance.</p>
 processes. The different steps of the argument exposed above can be
 pictured in the following figure:</p>
 <div class="figure align-center">
-<img alt="" src="https://gael-varoquaux.info/science/attachments/ica_pca/pca_on_gaussian_data.png" style="width: 80%;" />
+<img alt="" src="https://gael-varoquaux.info/science/attachments/ica_pca/pca_on_gaussian_data.png" style="width: 80%;"/>
 <p class="caption">First we represent samples drawn from
 <cite>x</cite> and <cite>y</cite> in their original space, the basis of the independent
 variables. Then we represent the (<cite>a</cite>, <cite>b</cite>) samples, and we apply PCA on
@@ -177,11 +171,11 @@ quantity of interest.</p>
 <p>Let us consider the same model as above, with two independent variables
 <cite>x</cite> and <cite>y</cite> thought with strongly non-Gaussian distributions. Here we
 use a mixture of a narrow Gaussian, and wide one, to populate the tails:</p>
-<img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/non_gaussian_pdf.png" style="width: 40%;" />
+<img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/non_gaussian_pdf.png" style="width: 40%;"/>
 <p>We can apply the same operations on these random variables: change of
 basis to an observation basis made of <cite>a</cite> and <cite>b</cite>, and PCA on the
 resulting sample:</p>
-<img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/pca_on_non_gaussian_data.png" style="width: 80%;" />
+<img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/pca_on_non_gaussian_data.png" style="width: 80%;"/>
 <p>We can see that the PCA did not properly identify the original
 independent variables. The variance criteria is not good-enough when the
 principle axis of the observed distribution are not orthogonal, as the
@@ -216,7 +210,7 @@ contains.</p>
 direction with the least-Gaussian PDF, removes the data explained by this
 variable from the signal, and iterates.</p>
 <p>Applying ICA to the previous model yields the following:</p>
-<img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/ica_on_non_gaussian_data.png" style="width: 80%;" />
+<img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/ica_on_non_gaussian_data.png" style="width: 80%;"/>
 <p>We can see that ICA has well identified the original independent data
 variables. Its use of the tails of the distribution was paramount for
 this task. In addition, ICA relaxes the constraint that all identified
@@ -230,31 +224,29 @@ Thus you can replicate the figure using the code in the scikit.</p>
 <!-- vim:set spell:
 vim:set autoindent: -->
 </div>
-
-            <div class="hr" style="margin-bottom: -.5em;"></div>
+<div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span>            <a href="#" class="go-top">Go Top</a>
+</span> <a class="go-top" href="#">Go Top</a>
 <footer class="footer">
-    <p>&copy; Gaël Varoquaux &ndash;
+<p>© Gaël Varoquaux –
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-    </p>
-</footer>        </div>
-    </div>
+</p>
+</footer> </div>
 </div>
-    <script
-src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-    <script>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+<script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-    <script>
+<script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -391,7 +383,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
     SectionScroller.init();
 })();
 </script>
-    <script>
+<script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -415,7 +407,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
             event.preventDefault();
         });
     </script>
-    <script  language="JavaScript" type="text/javascript">
+<script language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -534,6 +526,6 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
     //66885349@N03
     }
     </script>
-    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
 </body>
 </html>

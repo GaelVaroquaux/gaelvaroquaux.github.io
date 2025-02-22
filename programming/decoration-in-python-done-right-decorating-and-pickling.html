@@ -1,52 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
-
-        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
-
-        <title>Decoration in Python done right: Decorating and pickling -- Gaël Varoquaux: computer / data / health science</title>
-
-    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
-    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Gaël Varoquaux, computer / data / health science" name="description"/>
+<link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="alternate" title="Gaël Varoquaux Full Atom Feed" type="application/atom+xml"/>
+<title>Decoration in Python done right: Decorating and pickling -- Gaël Varoquaux: computer / data / health science</title>
+<link href="https://mastodon.social/@GaelVaroquaux" rel="me"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css" rel="stylesheet"/>
+<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://gael-varoquaux.info/theme/css/pure.css" rel="stylesheet"/>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<link href="https://gael-varoquaux.info/programming/decoration-in-python-done-right-decorating-and-pickling.html" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gaël Varoquaux", "item": "https://gael-varoquaux.info"}, {"@type": "ListItem", "position": 2, "name": "Programming", "item": "https://gael-varoquaux.info/programming"}, {"@type": "ListItem", "position": 3, "name": "Decoration in python done right decorating and pickling", "item": "https://gael-varoquaux.info/programming/decoration-in-python-done-right-decorating-and-pickling.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "Gaël Varoquaux"}, "publisher": {"@type": "Organization", "name": "Gaël Varoquaux"}, "headline": "Decoration in Python done right: Decorating and pickling", "about": "programming", "datePublished": "2009-11-13 00:14"}</script><meta content="summary" name="twitter:card"/><meta content="https://gael-varoquaux.info/programming/decoration-in-python-done-right-decorating-and-pickling.html" property="og:url"/><meta content="article" property="og:type"/><meta content="Decoration in Python done right: Decorating and pickling" property="og:title"/><meta content="en_US" property="og:locale"/></head>
 <body>
 <div class="pure-g-r" id="layout">
-    <div class="sidebar sidebar-article pure-u">
-        <header class="header-article">
-            <hgroup>
-                <a href="https://gael-varoquaux.info">
-		    <img class="avatar" alt="Gaël Varoquaux" 
-                     src="https://gael-varoquaux.info/images/gael.png">
-                </a>
-                <a href="https://gael-varoquaux.info" class="article-info">
-		    <h2 class="article-info">Gaël Varoquaux</h2>
-		</a>
-                <p>Fri 13 November 2009</p>
-                <a href="/">&larr;Home</a>
-            </hgroup>
-        </header>
-    </div>
-    <div class="pure-u">
-        <div class="content">
-            <section class="post">
-                <header class="post-header">
-                    <h1>Decoration in Python done right: Decorating and pickling</h1>
-                        <p class="post-meta">
+<div class="sidebar sidebar-article pure-u">
+<header class="header-article">
+<hgroup>
+<a href="https://gael-varoquaux.info">
+<img alt="Gaël Varoquaux" class="avatar" src="https://gael-varoquaux.info/images/gael.png"/>
+</a>
+<a class="article-info" href="https://gael-varoquaux.info">
+<h2 class="article-info">Gaël Varoquaux</h2>
+</a>
+<p>Fri 13 November 2009</p>
+<a href="/">←Home</a>
+</hgroup>
+</header>
+</div>
+<div class="pure-u">
+<div class="content">
+<section class="post">
+<header class="post-header">
+<h1>Decoration in Python done right: Decorating and pickling</h1>
+<p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/python.html">python</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/design-patterns.html">design patterns</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/software-architecture.html">software architecture</a>
-                                <a class="post-category" href="https://gael-varoquaux.info/tag/selected.html">selected</a>
-		    <span class="readtime">
-			&nbsp Read time: 4 min.
+<a class="post-category" href="https://gael-varoquaux.info/tag/design-patterns.html">design patterns</a>
+<a class="post-category" href="https://gael-varoquaux.info/tag/software-architecture.html">software architecture</a>
+<a class="post-category" href="https://gael-varoquaux.info/tag/selected.html">selected</a>
+<span class="readtime">
+			  Read time: 4 min.
 		    </span>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
@@ -54,10 +48,10 @@
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span>                        </p>
-                </header>
-            </section>
-            <p>Decoration is a fantastic pattern in Python that allows for very
+</span> </p>
+</header>
+</section>
+<p>Decoration is a fantastic pattern in Python that allows for very
 light-weight metaprograming with functions rather than objects (see
 <a class="reference external" href="http://www.ibm.com/developerworks/linux/library/l-cpdecor.html">this article</a> for an in-depth discussion). However, when decorating,
 it is very easy to break another great feature of the language: its
@@ -72,8 +66,8 @@ decorating a function.</p>
 mistake I had been doing, and it was partly due to the heavy use of a
 simplified pattern for decorating:</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">with_print</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Decorate a function to print its arguments.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Decorate a function to print its arguments.</span>
+<span class="sd">    """</span>
 
     <span class="k">def</span> <span class="nf">my_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="nb">print</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span>
@@ -83,7 +77,7 @@ simplified pattern for decorating:</p>
 
 <span class="nd">@with_print</span>
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="nb">print</span> <span class="s1">&#39;f called&#39;</span>
+    <span class="nb">print</span> <span class="s1">'f called'</span>
 </pre></div>
 <p>The nice thing about this pattern is that is it quite easy to type, and
 to read.</p>
@@ -115,21 +109,21 @@ for parallel computing).</p>
 <p>This solution is not enough: the following code won’t pickle:</p>
 <div class="highlight"><pre><span></span><span class="nd">@WithPrint</span>
 <span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="nb">print</span> <span class="s1">&#39;g called&#39;</span>
+    <span class="nb">print</span> <span class="s1">'g called'</span>
 </pre></div>
 <p>The reason this won’t pickle is that we have a name collision: the code
 above expands to:</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="nb">print</span> <span class="s1">&#39;g called&#39;</span>
+    <span class="nb">print</span> <span class="s1">'g called'</span>
 
 <span class="n">g</span> <span class="o">=</span> <span class="n">WithPrint</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
 </pre></div>
 <p>and trying to pickle raises the following PicklingError:</p>
-<div class="highlight"><pre><span></span><span class="n">Can</span><span class="s1">&#39;t pickle &lt;function g at 0x6ed2a8&gt;: it&#39;</span><span class="n">s</span> <span class="ow">not</span> <span class="n">the</span> <span class="n">same</span> <span class="nb">object</span> <span class="k">as</span> <span class="n">__main__</span><span class="o">.</span><span class="n">g</span>
+<div class="highlight"><pre><span></span><span class="n">Can</span><span class="s1">'t pickle &lt;function g at 0x6ed2a8&gt;: it'</span><span class="n">s</span> <span class="ow">not</span> <span class="n">the</span> <span class="n">same</span> <span class="nb">object</span> <span class="k">as</span> <span class="n">__main__</span><span class="o">.</span><span class="n">g</span>
 </pre></div>
 <p>If we do:</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="nb">print</span> <span class="s1">&#39;g called&#39;</span>
+    <span class="nb">print</span> <span class="s1">'g called'</span>
 
 <span class="n">h</span> <span class="o">=</span> <span class="n">WithPrint</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
 </pre></div>
@@ -142,8 +136,8 @@ functools.wraps does the name unmangling.</p>
 <p>Thus the following code produces a pickleable f:</p>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
 <span class="k">def</span> <span class="nf">with_print</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Decorate a function to print its arguments.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Decorate a function to print its arguments.</span>
+<span class="sd">    """</span>
     <span class="nd">@wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">my_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="nb">print</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span>
@@ -152,7 +146,7 @@ functools.wraps does the name unmangling.</p>
 
 <span class="nd">@with_print</span>
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="nb">print</span> <span class="s1">&#39;f called&#39;</span>
+    <span class="nb">print</span> <span class="s1">'f called'</span>
 </pre></div>
 <div class="line-block">
 <div class="line">The pickling works simply because using functools.wraps resets the</div>
@@ -184,7 +178,7 @@ instance when doing parallel computing).</li>
 <p>To jump on the band-wagon behind <a class="reference external" href="http://blog.enthought.com/?p=223">Travis</a>, I believe that this
 discussion teaches us a bit about object-oriented programming. When
 decorating, we are really taking a callable object, and redefining how
-the call is handled.&nbsp; If we do this the naive way, we loose
+the call is handled.  If we do this the naive way, we loose
 introspection (there is no way to access the original callable from
 Python), and as a result pickling, and many of the nice feature going
 with reflexivity in Python. This is because we trapped information in a
@@ -205,31 +199,29 @@ surprising interface. You don’t really have to care what is going on,
 you can still use the resulting ‘proxied’ function as the original
 function: a simple function.</p>
 </div>
-
-            <div class="hr" style="margin-bottom: -.5em;"></div>
+<div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
 <span class="social_links">
 <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
 -->
 <!-- Place this tag where you want the +1 button to render. -->
 <span class="g-plusone" data-size="medium"></span>
-</span>            <a href="#" class="go-top">Go Top</a>
+</span> <a class="go-top" href="#">Go Top</a>
 <footer class="footer">
-    <p>&copy; Gaël Varoquaux &ndash;
+<p>© Gaël Varoquaux –
         Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
         for <a href="http://blog.getpelican.com/">Pelican</a>
-    </p>
-</footer>        </div>
-    </div>
+</p>
+</footer> </div>
 </div>
-    <script
-src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
-    <script>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+<script>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
-    <script>
+<script>
     // Highlight the current section in the TOC
 (function () {
     'use strict';
@@ -366,7 +358,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
     SectionScroller.init();
 })();
 </script>
-    <script>
+<script>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -390,7 +382,7 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
             event.preventDefault();
         });
     </script>
-    <script  language="JavaScript" type="text/javascript">
+<script language="JavaScript" type="text/javascript">
     /* From http://evirtus.net/pub/eflickrstream.asp */
     /* Global variables */
     var bolOnLoadRun=false;
@@ -509,6 +501,6 @@ src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></scr
     //66885349@N03
     }
     </script>
-    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+<script defer="defer" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" type="text/javascript"></script>
 </body>
 </html>
