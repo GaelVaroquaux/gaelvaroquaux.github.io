@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-02-19T00:00:00+01:00</updated><entry><title>AI super-intelligent to play Go, and math?</title><link href="https://gael-varoquaux.info/science/ai-super-intelligent-to-play-go-and-math.html" rel="alternate"></link><published>2025-02-19T00:00:00+01:00</published><updated>2025-02-19T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-19:/science/ai-super-intelligent-to-play-go-and-math.html</id><summary type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an artificial intelligences playing go, with mathematical formula flying in the background. The mathematical formula are flying in all directions, and the image is futuristic.&amp;quot;" class="small align-right" src="../science/attachments/robots_playing_go.jpg" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-03-01T00:00:00+01:00</updated><entry><title>Science must drive the narratives that shape society</title><link href="https://gael-varoquaux.info/science/science-must-drive-the-narratives-that-shape-society.html" rel="alternate"></link><published>2025-03-01T00:00:00+01:00</published><updated>2025-03-01T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-03-01:/science/science-must-drive-the-narratives-that-shape-society.html</id><summary type="html">&lt;img alt="A picture of me giving this speech" class="small align-right" src="../science/attachments/louvain_gael_dhc.jpg" /&gt;
+&lt;p&gt;I would like to take a brief moment to reflect on what drives me as an
+academic.&lt;/p&gt;
+&lt;p&gt;Academia’s root are in creating knowledge and sharing it. We, academics,
+have a role to play in shaping society. In computer science, we sometimes
+focus on the creation of technology. Here, creation …&lt;/p&gt;</summary><content type="html">&lt;img alt="A picture of me giving this speech" class="small align-right" src="../science/attachments/louvain_gael_dhc.jpg" /&gt;
+&lt;p&gt;I would like to take a brief moment to reflect on what drives me as an
+academic.&lt;/p&gt;
+&lt;p&gt;Academia’s root are in creating knowledge and sharing it. We, academics,
+have a role to play in shaping society. In computer science, we sometimes
+focus on the creation of technology. Here, creation of open technology is
+central to knowledge consolidation in computer science, because open
+technology can be studied, because open technology can be shared.
+But academia’s role in society is more than technology, even open.&lt;/p&gt;
+&lt;p&gt;Academia’s position in consolidating knowledge implies that it is trusted
+with responsibilities in shaping the narrative, for instance that of
+technology. An important narrative today is that of artificial
+intelligence, a new industrial revolution, they say. Our role here is to
+do a sober assessment, inventing the future of technology, but without
+false promises and blind spots. This work, as all broad scientific work,
+requires working across disciplines.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;The above text is extracted from my acceptance speech when receiving
+UC Louvain’s  Doctor Honoris Causa.&lt;/p&gt;
+&lt;p class="last"&gt;As stated in my full speech, I am incredibly greatful for this honor. I
+deeply thank all those that have been part of my scientific and
+technical adventures. They were all built through team works, with
+many amazing people, from all horizons, young and older, famous or
+invisible. Working together is what moves mountains.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="society"></category><category term="AI"></category><category term="award"></category></entry><entry><title>AI super-intelligent to play Go, and math?</title><link href="https://gael-varoquaux.info/science/ai-super-intelligent-to-play-go-and-math.html" rel="alternate"></link><published>2025-02-19T00:00:00+01:00</published><updated>2025-02-19T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-19:/science/ai-super-intelligent-to-play-go-and-math.html</id><summary type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an artificial intelligences playing go, with mathematical formula flying in the background. The mathematical formula are flying in all directions, and the image is futuristic.&amp;quot;" class="small align-right" src="../science/attachments/robots_playing_go.jpg" /&gt;
 &lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
@@ -10746,63 +10780,4 @@ surprising interface. You don’t really have to care what is going on,
 you can still use the resulting ‘proxied’ function as the original
 function: a simple function.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="design patterns"></category><category term="software architecture"></category><category term="selected"></category></entry><entry><title>Writing parallel code in a readable way</title><link href="https://gael-varoquaux.info/programming/writing-parallel-code-in-a-readable-way.html" rel="alternate"></link><published>2009-11-09T00:10:00+01:00</published><updated>2009-11-09T00:10:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-11-09:/programming/writing-parallel-code-in-a-readable-way.html</id><summary type="html">&lt;p&gt;Although I often have embarrasingly parallel problems (data parallel),
-and I have an 8-CPU box at work, I used to frown on writing parallel
-computing code when doing exploratory coding. We now have fantastic
-parallel computing facilities in Python (amongst other,
-&lt;a class="reference external" href="http://docs.python.org/library/multiprocessing.html"&gt;multiprocessing&lt;/a&gt;, &lt;a class="reference external" href="http://ipython.scipy.org/doc/rel-0.9.1/html/parallel/index.html"&gt;IPython&lt;/a&gt;, and &lt;a class="reference external" href="http://www.parallelpython.com/"&gt;parallel Python&lt;/a&gt;). However, in my
-opinion …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Although I often have embarrasingly parallel problems (data parallel),
-and I have an 8-CPU box at work, I used to frown on writing parallel
-computing code when doing exploratory coding. We now have fantastic
-parallel computing facilities in Python (amongst other,
-&lt;a class="reference external" href="http://docs.python.org/library/multiprocessing.html"&gt;multiprocessing&lt;/a&gt;, &lt;a class="reference external" href="http://ipython.scipy.org/doc/rel-0.9.1/html/parallel/index.html"&gt;IPython&lt;/a&gt;, and &lt;a class="reference external" href="http://www.parallelpython.com/"&gt;parallel Python&lt;/a&gt;). However, in my
-opinion, there are two reasons to hesitate to use them, especially when
-the code is very imature (which is almost always my case, in research
-settings):&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;It makes the code look less like the ideas it is trying to express.
-Peter Norvig made &lt;a class="reference external" href="http://www.archive.org/details/scipy09_day1_03-Peter_Norvig"&gt;a pretty convincing case&lt;/a&gt; for scientific code
-reading like math at &lt;a class="reference external" href="http://conference.scipy.org/"&gt;SciPy2009&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Because parallel computing is out of process, in Python, it is simply
-harder to debug (though I hear that the IPython guys are on that).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I have progressively developed a tiny tool to adress both problems, at
-least for my embarrasingly-parallel problems. I address the second
-problem by having a trivial switch to run my code without importing any
-fancy parallel computing tools. And I address the first problem using
-syntactic sugar to be able to type in map/reduce code that actually
-looks like standard procedural code:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;results&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Parallel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n_jobs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;
-            &lt;span class="n"&gt;delayed&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;my_calculation&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="n"&gt;data1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;data2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                                    &lt;span class="n"&gt;parameter1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;parameter2&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;data1&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;store1&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;data2&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;store2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;There are several tricks here:&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;I use a ‘&lt;em&gt;delayed&lt;/em&gt;‘ decorator that creates the argument list and
-keyword argument dictionary for me so that I can type something that
-really looks like a function call. Also, the decorator checks to see
-if the function and the arguments can be pickled, because if not the
-parallel computing libraries will raise errors, sometimes with
-hard-to-understand messages.&lt;/li&gt;
-&lt;li&gt;I use list comprehension to create the list to apply the map/reduce
-onto. List comprehension is really readable, and very powerful.&lt;/li&gt;
-&lt;li&gt;The ‘&lt;em&gt;Parallel&lt;/em&gt;‘ object hides all the cleverness. If the
-‘&lt;em&gt;n_jobs&lt;/em&gt;‘ parameter is set to 1, it does not call any parallel
-computing library. If it is set to -1, all the CPUs are used. The
-object instantiates the parallel computing context and also destroys
-it. While this is inefficient, it is great for catching errors early.
-And finally, while I have implemented this only for the
-multiprocessing module, any fork/join-based parallel computing
-library could be encapsulated the same way, thus providing a uniform
-API to do multi-node parallel computing or single-computer shared
-memory (as multi-processing uses the Unix fork call, and all modern
-Unices implement copy on write of memory pages, you get some shared
-memory for free without worrying about race conditions).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="topic"&gt;
-&lt;p class="topic-title"&gt;&lt;strong&gt;Update&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This pattern has actually evolved in the &lt;a class="reference external" href="https://pythonhosted.org/joblib/"&gt;joblib project&lt;/a&gt; ,
-which provides a lot of cleverness under the hood.&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="scientific computing"></category><category term="scipy"></category><category term="software engineering"></category><category term="joblib"></category></entry></feed>
+</content><category term="programming"></category><category term="python"></category><category term="design patterns"></category><category term="software architecture"></category><category term="selected"></category></entry></feed>
