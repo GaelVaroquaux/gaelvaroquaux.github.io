@@ -1,5 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-03-01T00:00:00+01:00</updated><entry><title>Science must drive the narratives that shape society</title><link href="https://gael-varoquaux.info/science/science-must-drive-the-narratives-that-shape-society.html" rel="alternate"></link><published>2025-03-01T00:00:00+01:00</published><updated>2025-03-01T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-03-01:/science/science-must-drive-the-narratives-that-shape-society.html</id><summary type="html">&lt;img alt="A picture of me giving this speech" class="small align-right" src="../science/attachments/louvain_gael_dhc.jpg" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-06-20T00:00:00+02:00</updated><entry><title>AIs that break down questions reason better</title><link href="https://gael-varoquaux.info/science/ais-that-break-down-questions-reason-better.html" rel="alternate"></link><published>2025-06-20T00:00:00+02:00</published><updated>2025-06-20T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-06-20:/science/ais-that-break-down-questions-reason-better.html</id><summary type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an AI that is thinking deeply. Philosophical references may be welcomed, for instance like the classic hamlet holding skull cliché.&amp;quot;" class="small align-right" src="../science/attachments/ai_thinking.jpg" /&gt;
+&lt;p&gt;The key to the most powerful conversational AIs is to reason by breaking
+down a complex task into simpler subproblems. Why is this crucial, and
+how does it work?&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-qui-decomposent-les-questions-raisonnent-mieux-2151428"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The recent release of …&lt;/p&gt;</summary><content type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an AI that is thinking deeply. Philosophical references may be welcomed, for instance like the classic hamlet holding skull cliché.&amp;quot;" class="small align-right" src="../science/attachments/ai_thinking.jpg" /&gt;
+&lt;p&gt;The key to the most powerful conversational AIs is to reason by breaking
+down a complex task into simpler subproblems. Why is this crucial, and
+how does it work?&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-qui-decomposent-les-questions-raisonnent-mieux-2151428"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The recent release of the conversational AI “DeepSeek R1” shook the
+financial markets because it showed a significant reduction in the costs
+of reasoning models. But what are these reasoning models?&lt;/p&gt;
+&lt;p&gt;To understand the challenges of reasoning in conversational AIs, we can
+ask them to solve riddles. I tried various logical riddles on different
+AIs, such as the puzzle where a man has to get a fox, a chicken, and a
+sack of corn across a river without one eating the other. The AI responds
+brilliantly. But how can we ensure that the AI is truly reasoning and not
+just reciting answers it has seen before? By replacing them with other
+equivalent animals (wolf, lamb, and hay), the AI does just as well. But
+it could have solved the problem by analogy with the previous classic
+one, rather than with reasonning. Indeed language models are very good at
+analogies. A conversational AI typically works by proposing a answer
+inspired by the flow of words (and corresponding concepts) in the texts
+on which it was trained.&lt;/p&gt;
+&lt;p&gt;If, instead of a riddle resembling a story, we try to play tic-tac-toe,
+the weaknesses appear. Most conversational AIs are very bad at
+tic-tac-toe, even going so far as to declare victory when faced with a
+defeat. Perhaps this is because analogy is not as useful. But activating
+the “reasoning” option makes them unbeatable. What is behind this option?&lt;/p&gt;
+&lt;p&gt;A third task helps to understand the reasoning mechanisms of a
+conversational AI: let’s ask it how many “L”s there are in
+“LOLLAPALOUZA”. There is a catch: ChatGPT was able to give me the correct
+for the number of Ls in “LOLLAPALOOZA”, a question often used in the past
+to show its limits. For “LOLLAPALOUZA”, it fails. Or rather, it needs
+help: if we tell it to spell out the word, then count the “L”s, it gives
+the correct answer. With the right intermediate steps, a problem is often
+much simpler. These decompositions into subproblems are called chains of
+thought in conversational AIs. The “reasoning” option of some AIs
+generates such chains.&lt;/p&gt;
+&lt;p&gt;DeepSeek R1 received much attention due to its excellence in breaking
+down problems to reason in such a way. To do this, it has been trained to
+generate reasoning patterns from questions, using reinforcement learning:
+through trial and error, on many problems generated with the associated
+answer, like math problems. Faced with a task, the AI still proceeds by
+analogy with the tasks it has seen during this learning phase, but it
+uses this analogy to sketch a battle plan, rather than a response. Each
+subproblem is then easier, and the AI can tackle it by analogy to
+problems already seen. By observing the chains of thought, we can even
+see the AI verifying its intermediate results. These chains of thought
+are not always visible, but we can guess them from the AI’s response
+time.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;With these reasoning mechanisms, a conversational AI is as good as I am
+at tic-tac-toe. But using such a model to play tic-tac-toe is like using
+a sledgehammer to crush a fly: it is very inefficient in computational
+cost compared to a specialized program for tic-tac-toe, which we have
+known how to do for decades.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>Science must drive the narratives that shape society</title><link href="https://gael-varoquaux.info/science/science-must-drive-the-narratives-that-shape-society.html" rel="alternate"></link><published>2025-03-01T00:00:00+01:00</published><updated>2025-03-01T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-03-01:/science/science-must-drive-the-narratives-that-shape-society.html</id><summary type="html">&lt;img alt="A picture of me giving this speech" class="small align-right" src="../science/attachments/louvain_gael_dhc.jpg" /&gt;
 &lt;p&gt;I would like to take a brief moment to reflect on what drives me as an
 academic.&lt;/p&gt;
 &lt;p&gt;Academia’s root are in creating knowledge and sharing it. We, academics,
@@ -10629,156 +10704,4 @@ but we have all the proper buzz words:&lt;/p&gt;
 this “success” is actually harmful (I believe), as there is so much
 interesting research that lies away of the trendy words and that needs
 to be done.&lt;/p&gt;
-</content><category term="science"></category><category term="personnal"></category><category term="physics"></category><category term="science"></category></entry><entry><title>Decoration in Python done right: Decorating and pickling</title><link href="https://gael-varoquaux.info/programming/decoration-in-python-done-right-decorating-and-pickling.html" rel="alternate"></link><published>2009-11-13T00:14:00+01:00</published><updated>2009-11-13T00:14:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-11-13:/programming/decoration-in-python-done-right-decorating-and-pickling.html</id><summary type="html">&lt;p&gt;Decoration is a fantastic pattern in Python that allows for very
-light-weight metaprograming with functions rather than objects (see
-&lt;a class="reference external" href="http://www.ibm.com/developerworks/linux/library/l-cpdecor.html"&gt;this article&lt;/a&gt; for an in-depth discussion). However, when decorating,
-it is very easy to break another great feature of the language: its
-reflectivity and its ability to do static representations of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Decoration is a fantastic pattern in Python that allows for very
-light-weight metaprograming with functions rather than objects (see
-&lt;a class="reference external" href="http://www.ibm.com/developerworks/linux/library/l-cpdecor.html"&gt;this article&lt;/a&gt; for an in-depth discussion). However, when decorating,
-it is very easy to break another great feature of the language: its
-reflectivity and its ability to do static representations of its
-internal objects: pickling.&lt;/p&gt;
-&lt;p&gt;In this blog post, I’d like to rewrite a post I made on the IPython
-mailing list a month ago, summing up the few things to have in mind when
-decorating a function.&lt;/p&gt;
-&lt;div class="section" id="a-pattern-to-avoid"&gt;
-&lt;h2&gt;A pattern to avoid?&lt;/h2&gt;
-&lt;p&gt;I have recently been revisiting my decoration code, to fight a common
-mistake I had been doing, and it was partly due to the heavy use of a
-simplified pattern for decorating:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;with_print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
-&lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
-
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;my_func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;kwargs&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;my_func&lt;/span&gt;
-
-&lt;span class="nd"&gt;@with_print&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;f called&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;The nice thing about this pattern is that is it quite easy to type, and
-to read.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="why-it-is-harmful"&gt;
-&lt;h2&gt;Why it is harmful&lt;/h2&gt;
-&lt;p&gt;The decorated function is actually the function ‘my_func’, with a
-reference to the original function ‘func’, a part of the scope of the
-decorator ‘with_print’, and thus in the closure of the with_print
-function.&lt;/p&gt;
-&lt;p&gt;The problem is that we have a closure here. Thus we have variables that
-are hard to get to (the undecorated function), and the decorated
-function is not picklable (which is more and more important to me, e.g.
-for parallel computing).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="some-solutions"&gt;
-&lt;h2&gt;Some solutions&lt;/h2&gt;
-&lt;div class="section" id="avoiding-the-closure"&gt;
-&lt;h3&gt;Avoiding the closure&lt;/h3&gt;
-&lt;p&gt;Use objects as a scope, rather than a closure:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;WithPrint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;
-
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__call__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;kwargs&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This solution is not enough: the following code won’t pickle:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nd"&gt;@WithPrint&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;g&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;g called&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;The reason this won’t pickle is that we have a name collision: the code
-above expands to:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;g&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;g called&amp;#39;&lt;/span&gt;
-
-&lt;span class="n"&gt;g&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;WithPrint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;and trying to pickle raises the following PicklingError:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Can&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;t pickle &amp;lt;function g at 0x6ed2a8&amp;gt;: it&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;same&lt;/span&gt; &lt;span class="nb"&gt;object&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;__main__&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;If we do:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;g&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;g called&amp;#39;&lt;/span&gt;
-
-&lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;WithPrint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;we can pickle h, hurray!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="using-functools-wraps"&gt;
-&lt;h3&gt;Using functools.wraps&lt;/h3&gt;
-&lt;p&gt;However, Python comes with the answer in the standard libary:
-functools.wraps does the name unmangling.&lt;/p&gt;
-&lt;p&gt;Thus the following code produces a pickleable f:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;functools&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;wraps&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;with_print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
-&lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
-    &lt;span class="nd"&gt;@wraps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;my_func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;kwargs&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;my_func&lt;/span&gt;
-
-&lt;span class="nd"&gt;@with_print&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;f called&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;The pickling works simply because using functools.wraps resets the&lt;/div&gt;
-&lt;div class="line"&gt;.func_name attribute of f to have a well-defined import path. Thus&lt;/div&gt;
-&lt;div class="line"&gt;pickling works, simply by storing the import path, as all pickling of&lt;/div&gt;
-&lt;div class="line"&gt;functions.&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Notice that there is only a one-line difference with the original code!&lt;/p&gt;
-&lt;p&gt;I actually tend to use a combination of both solution (an object, using
-functools.wraps), to keep a reference on the undecorated functions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Demo code of this blog post can be found &lt;a class="reference external" href="attachments/pickling_tests_py"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="take-home-messages-for-pickling"&gt;
-&lt;h2&gt;Take home messages for pickling&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Decorators can be more clever than you think, and might not return
-objects as simple as you think&lt;/li&gt;
-&lt;li&gt;Think about pickling, or you’ll get bitten at some point (for
-instance when doing parallel computing).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;and most important:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Use functools.wraps&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="a-remark-about-object-oriented-programming"&gt;
-&lt;h2&gt;A remark about object-oriented programming&lt;/h2&gt;
-&lt;p&gt;To jump on the band-wagon behind &lt;a class="reference external" href="http://blog.enthought.com/?p=223"&gt;Travis&lt;/a&gt;, I believe that this
-discussion teaches us a bit about object-oriented programming. When
-decorating, we are really taking a callable object, and redefining how
-the call is handled.&amp;nbsp; If we do this the naive way, we loose
-introspection (there is no way to access the original callable from
-Python), and as a result pickling, and many of the nice feature going
-with reflexivity in Python. This is because we trapped information in a
-scope that is not accessible by normal Python code (without playing at
-the frame level). If on the other hand, we accept that what we have
-behind all this are nested scope with a control of lookups, and we
-create a full-blown object, we have the benefits of the black box, and
-the benefits of reflexivity.&lt;/p&gt;
-&lt;p&gt;But this is not the point I want to make. The point I want to make is
-that, by decorating, we are piggy-backing on an absolutely universal
-object/interface: the callable. Everybody knows what a callable is, and
-knows how to employ it. From a pure object-oriented point of view,
-decorating is simply some kind of proxy design pattern. But, to stress
-Travis’s point, introducing new objects that have their own behavior
-puts cognitive load on the programmer. The real value of decoration is
-that it is object-oriented programming without adding any new or
-surprising interface. You don’t really have to care what is going on,
-you can still use the resulting ‘proxied’ function as the original
-function: a simple function.&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="design patterns"></category><category term="software architecture"></category><category term="selected"></category></entry></feed>
+</content><category term="science"></category><category term="personnal"></category><category term="physics"></category><category term="science"></category></entry></feed>
