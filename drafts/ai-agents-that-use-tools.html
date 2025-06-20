@@ -7,7 +7,7 @@
 
         <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
 
-        <title>AIs that break down questions reason better -- Gaël Varoquaux: computer / data / health science</title>
+        <title>AI agents that use tools -- Gaël Varoquaux: computer / data / health science</title>
 
     <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
 
@@ -18,10 +18,10 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <!-- OpenGraph -->
 	<meta property="og:type" content="article" />
-	<meta property="og:url" content="https://gael-varoquaux.info/science/ais-that-break-down-questions-reason-better.html" />
-	<meta property="og:title" content="AIs that break down questions reason better" />
-	<meta property="og:description" content="The key to the most powerful conversational AIs is to reason by breaking down a complex task into simpler subproblems. Why is this crucial, and how does it work? Note This post was originally..." />
-	<meta property="og:image" content="../science/attachments/ai_thinking.jpg" />
+	<meta property="og:url" content="https://gael-varoquaux.info/drafts/ai-agents-that-use-tools.html" />
+	<meta property="og:title" content="AI agents that use tools" />
+	<meta property="og:description" content="Modern AIs acquire new capabilities by combining tools to perform a complex task, controlling them like an agent. Unlike traditional programming, they define the sequences of actions..." />
+	<meta property="og:image" content="../science/attachments/robot_tool_friendly.png" />
 	<meta property="og:site_name" content="Gaël Varoquaux" />
     <meta property="og:logo" content="https://gael-varoquaux.info/images/gael.png" />
 </head>
@@ -38,7 +38,7 @@
                 <a href="https://gael-varoquaux.info" class="article-info">
 		    <h2 class="article-info">Gaël Varoquaux</h2>
 		</a>
-                <p>Fri 20 June 2025</p>
+                <p>Sun 20 July 2025</p>
                 <a href="/">&larr;Home</a>
             </hgroup>
         </header>
@@ -47,7 +47,7 @@
         <div class="content">
             <section class="post">
                 <header class="post-header">
-                    <h1>AIs that break down questions reason better</h1>
+                    <h1>AI agents that use tools</h1>
                         <p class="post-meta">
                             under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/science.html">science</a>
                                 <a class="post-category" href="https://gael-varoquaux.info/tag/research.html">research</a>
@@ -66,65 +66,59 @@
 </span>                        </p>
                 </header>
             </section>
-            <img alt="Image generated with &quot;LeChat&quot;, with the prompt &quot;Please generate an image of an AI that is thinking deeply. Philosophical references may be welcomed, for instance like the classic hamlet holding skull cliché.&quot;" class="small align-right" src="../science/attachments/ai_thinking.jpg" />
-<p>The key to the most powerful conversational AIs is to reason by breaking
-down a complex task into simpler subproblems. Why is this crucial, and
-how does it work?</p>
+            <img alt="Image generated with ChatGPT, with the prompt &quot;Please generate an image of an AI using a mechanical tool, such as a wrench. Please make the robot look rather friendly. Also, please make the image square&quot;" class="small align-right" src="../science/attachments/robot_tool_friendly.png" />
+<p>Modern AIs acquire new capabilities by combining tools to perform a
+complex task, controlling them like an agent. Unlike traditional
+programming, they define the sequences of actions themselves.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This post was originally published in French as part of my scientific
-chronicle in <a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-qui-decomposent-les-questions-raisonnent-mieux-2151428">Les Echos</a>.</p>
+chronicle in <a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/des-agents-ia-qui-utilisent-des-outils-2163252">Les Echos</a>.</p>
 </div>
-<p>The recent release of the conversational AI “DeepSeek R1” shook the
-financial markets because it showed a significant reduction in the costs
-of reasoning models. But what are these reasoning models?</p>
-<p>To understand the challenges of reasoning in conversational AIs, we can
-ask them to solve riddles. I tried various logical riddles on different
-AIs, such as the puzzle where a man has to get a fox, a chicken, and a
-sack of corn across a river without one eating the other. The AI responds
-brilliantly. But how can we ensure that the AI is truly reasoning and not
-just reciting answers it has seen before? By replacing them with other
-equivalent animals (wolf, lamb, and hay), the AI does just as well. But
-it could have solved the problem by analogy with the previous classic
-one, rather than with reasonning. Indeed language models are very good at
-analogies. A conversational AI typically works by proposing a answer
-inspired by the flow of words (and corresponding concepts) in the texts
-on which it was trained.</p>
-<p>If, instead of a riddle resembling a story, we try to play tic-tac-toe,
-the weaknesses appear. Most conversational AIs are very bad at
-tic-tac-toe, even going so far as to declare victory when faced with a
-defeat. Perhaps this is because analogy is not as useful. But activating
-the “reasoning” option makes them unbeatable. What is behind this option?</p>
-<p>A third task helps to understand the reasoning mechanisms of a
-conversational AI: let’s ask it how many “L”s there are in
-“LOLLAPALOUZA”. There is a catch: ChatGPT was able to give me the correct
-for the number of Ls in “LOLLAPALOOZA”, a question often used in the past
-to show its limits. For “LOLLAPALOUZA”, it fails. Or rather, it needs
-help: if we tell it to spell out the word, then count the “L”s, it gives
-the correct answer. With the right intermediate steps, a problem is often
-much simpler. These decompositions into subproblems are called chains of
-thought in conversational AIs. The “reasoning” option of some AIs
-generates such chains.</p>
-<p>DeepSeek R1 received much attention due to its excellence in breaking
-down problems to reason in such a way. To do this, it has been trained to
-generate reasoning patterns from questions, using reinforcement learning:
-through trial and error, on many problems generated with the associated
-answer, like math problems. Faced with a task, the AI still proceeds by
-analogy with the tasks it has seen during this learning phase, but it
-uses this analogy to sketch a battle plan, rather than a response. Each
-subproblem is then easier, and the AI can tackle it by analogy to
-problems already seen. By observing the chains of thought, we can even
-see the AI verifying its intermediate results. These chains of thought
-are not always visible, but we can guess them from the AI’s response
-time.</p>
+<p>Modern AIs are increasingly using tools. For example, if you ask a
+conversational AI to solve a complicated equation, the AI alone cannot do
+it. This is not surprising: there is no general mathematical formula. But
+if this AI knows how to use numerical equation-solving routines, it
+quickly gives us the answer. For example, “Le Chat” from Mistral
+generates a small program that uses the “Python” language and its
+numerical routines to solve our problem. The difficulty here is to
+generate the program that calls the right routines. This ability is an
+extension of conversational AI models that know how to answer questions
+by generating text. Here, the text is computer code and not French.</p>
+<p>By controlling the computer, the AI “acts”. That’s why it is said to be
+an “agent”. By coupling with other systems, agentic AIs develop new
+capabilities. The most powerful ones can then combine different tools by
+leveraging their complementarities. These agent systems are currently
+progressing very quickly, but they remind us of what we have always done
+in computer science: any complicated system is assembled from multiple
+routines, each with a specific functionality. Writing a computer program
+is precisely describing how we are going to call these routines to solve
+a problem. And yet, without the recent advances in AI, we have to specify
+all the steps, whereas agent AIs take a given goal and will themselves
+produce these steps. The difficulty then becomes to break down a task
+into sub-tasks, which is called planning, a difficult problem.</p>
+<p>In modern AIs, these planning skills are learned. The systems improve
+through trial and error: we give the AI lots of tasks to solve and the AI
+tries sequences of sub-tasks, deciding to use one tool or another. If it
+succeeds in the final task, it learns that the sequence of tool use was a
+good sequence for the task. This is called reinforcement learning, whose
+main inventors received the Turing Prize this year, the Nobel Prize of
+computer science.</p>
+<p>Another major driver of progress for agent AIs is the powerful ability of
+analogy and associative memory of language models. These language skills
+enable them to start from problems specified by the user in plain
+English, with an open vocabulary. They draw their strategies to use tools
+from a great knowledge of similar problems, but also know how to adapt
+these strategies to the intermediate responses of the tools. They can
+also interact with systems that are much more complex and indeterminate
+than computer routines. For example, an AI can go and fetch information
+on the internet, or even ask a human.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>With these reasoning mechanisms, a conversational AI is as good as I am
-at tic-tac-toe. But using such a model to play tic-tac-toe is like using
-a sledgehammer to crush a fly: it is very inefficient in computational
-cost compared to a specialized program for tic-tac-toe, which we have
-known how to do for decades.</p>
+<p>Agent AIs open new perspectives. But they also greatly increase computing
+costs, as they iterate over sub-tasks. Computing costs must be kept in
+mind, as they are an important hurdle to democratization of AI.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
