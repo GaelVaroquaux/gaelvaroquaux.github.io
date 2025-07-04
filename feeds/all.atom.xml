@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-06-20T00:00:00+02:00</updated><entry><title>AIs that break down questions reason better</title><link href="https://gael-varoquaux.info/science/ais-that-break-down-questions-reason-better.html" rel="alternate"></link><published>2025-06-20T00:00:00+02:00</published><updated>2025-06-20T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-06-20:/science/ais-that-break-down-questions-reason-better.html</id><summary type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an AI that is thinking deeply. Philosophical references may be welcomed, for instance like the classic hamlet holding skull cliché.&amp;quot;" class="small align-right" src="../science/attachments/ai_thinking.jpg" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-07-04T00:00:00+02:00</updated><entry><title>AI agents that use tools</title><link href="https://gael-varoquaux.info/science/ai-agents-that-use-tools.html" rel="alternate"></link><published>2025-07-04T00:00:00+02:00</published><updated>2025-07-04T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-07-04:/science/ai-agents-that-use-tools.html</id><summary type="html">&lt;img alt="Image generated with ChatGPT, with the prompt &amp;quot;Please generate an image of an AI using a mechanical tool, such as a wrench. Please make the robot look rather friendly. Also, please make the image square&amp;quot;" class="small align-right" src="../science/attachments/robot_tool_friendly.png" /&gt;
+&lt;p&gt;Modern AIs acquire new capabilities by combining tools to perform a
+complex task, controlling them like an agent. Unlike traditional
+programming, they define the sequences of actions themselves.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/des-agents-ia-qui-utilisent-des-outils-2163252"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Modern AIs are increasingly using …&lt;/p&gt;</summary><content type="html">&lt;img alt="Image generated with ChatGPT, with the prompt &amp;quot;Please generate an image of an AI using a mechanical tool, such as a wrench. Please make the robot look rather friendly. Also, please make the image square&amp;quot;" class="small align-right" src="../science/attachments/robot_tool_friendly.png" /&gt;
+&lt;p&gt;Modern AIs acquire new capabilities by combining tools to perform a
+complex task, controlling them like an agent. Unlike traditional
+programming, they define the sequences of actions themselves.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/des-agents-ia-qui-utilisent-des-outils-2163252"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Modern AIs are increasingly using tools. For example, if you ask a
+conversational AI to solve a complicated equation, the AI alone cannot do
+it. This is not surprising: there is no general mathematical formula. But
+if this AI knows how to use numerical equation-solving routines, it
+quickly gives us the answer. For example, “Le Chat” from Mistral
+generates a small program that uses the “Python” language and its
+numerical routines to solve our problem. The difficulty here is to
+generate the program that calls the right routines. This ability is an
+extension of conversational AI models that know how to answer questions
+by generating text. Here, the text is computer code and not French.&lt;/p&gt;
+&lt;p&gt;By controlling the computer, the AI “acts”. That’s why it is said to be
+an “agent”. By coupling with other systems, agentic AIs develop new
+capabilities. The most powerful ones can then combine different tools by
+leveraging their complementarities. These agent systems are currently
+progressing very quickly, but they remind us of what we have always done
+in computer science: any complicated system is assembled from multiple
+routines, each with a specific functionality. Writing a computer program
+is precisely describing how we are going to call these routines to solve
+a problem. And yet, without the recent advances in AI, we have to specify
+all the steps, whereas agent AIs take a given goal and will themselves
+produce these steps. The difficulty then becomes to break down a task
+into sub-tasks, which is called planning, a difficult problem.&lt;/p&gt;
+&lt;p&gt;In modern AIs, these planning skills are learned. The systems improve
+through trial and error: we give the AI lots of tasks to solve and the AI
+tries sequences of sub-tasks, deciding to use one tool or another. If it
+succeeds in the final task, it learns that the sequence of tool use was a
+good sequence for the task. This is called reinforcement learning, whose
+main inventors received the Turing Prize this year, the Nobel Prize of
+computer science.&lt;/p&gt;
+&lt;p&gt;Another major driver of progress for agent AIs is the powerful ability of
+analogy and associative memory of language models. These language skills
+enable them to start from problems specified by the user in plain
+English, with an open vocabulary. They draw their strategies to use tools
+from a great knowledge of similar problems, but also know how to adapt
+these strategies to the intermediate responses of the tools. They can
+also interact with systems that are much more complex and indeterminate
+than computer routines. For example, an AI can go and fetch information
+on the internet, or even ask a human.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Agent AIs open new perspectives. But they also greatly increase computing
+costs, as they iterate over sub-tasks. Computing costs must be kept in
+mind, as they are an important hurdle to democratization of AI.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>AIs that break down questions reason better</title><link href="https://gael-varoquaux.info/science/ais-that-break-down-questions-reason-better.html" rel="alternate"></link><published>2025-06-20T00:00:00+02:00</published><updated>2025-06-20T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-06-20:/science/ais-that-break-down-questions-reason-better.html</id><summary type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an AI that is thinking deeply. Philosophical references may be welcomed, for instance like the classic hamlet holding skull cliché.&amp;quot;" class="small align-right" src="../science/attachments/ai_thinking.jpg" /&gt;
 &lt;p&gt;The key to the most powerful conversational AIs is to reason by breaking
 down a complex task into simpler subproblems. Why is this crucial, and
 how does it work?&lt;/p&gt;
@@ -10686,26 +10756,4 @@ labs, Oslo&lt;/li&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="science"></category><category term="scientific computing"></category><category term="conferences"></category></entry><entry><title>General relativity, quantum physics, freely-falling planes and Bayesian statistics</title><link href="https://gael-varoquaux.info/science/general-relativity-quantum-physics-freely-falling-planes-and-bayesian-statistics.html" rel="alternate"></link><published>2009-12-08T22:20:00+01:00</published><updated>2009-12-08T22:20:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-12-08:/science/general-relativity-quantum-physics-freely-falling-planes-and-bayesian-statistics.html</id><summary type="html">&lt;p&gt;We’re famous: the &lt;a class="reference external" href="http://gael-varoquaux.info/science/acceleration-estimation-in-atom-interferometric-tests-of-the-einstein-equivalence-principle.html"&gt;work&lt;/a&gt; that concluded my PhD is now picked up by the
-press &lt;a class="reference external" href="http://www.physorg.com/news179481148.html"&gt;http://www.physorg.com/news179481148.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I hadn’t realized before reading this journalist’s version of the story,
-but we have all the proper buzz words:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;general relativity&lt;/li&gt;
-&lt;li&gt;quantum physics&lt;/li&gt;
-&lt;li&gt;freely-falling planes&lt;/li&gt;
-&lt;li&gt;Bayesian …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;We’re famous: the &lt;a class="reference external" href="http://gael-varoquaux.info/science/acceleration-estimation-in-atom-interferometric-tests-of-the-einstein-equivalence-principle.html"&gt;work&lt;/a&gt; that concluded my PhD is now picked up by the
-press &lt;a class="reference external" href="http://www.physorg.com/news179481148.html"&gt;http://www.physorg.com/news179481148.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I hadn’t realized before reading this journalist’s version of the story,
-but we have all the proper buzz words:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;general relativity&lt;/li&gt;
-&lt;li&gt;quantum physics&lt;/li&gt;
-&lt;li&gt;freely-falling planes&lt;/li&gt;
-&lt;li&gt;Bayesian statistics.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This kind of stuff makes great headlines, but the way we are judged on
-this “success” is actually harmful (I believe), as there is so much
-interesting research that lies away of the trendy words and that needs
-to be done.&lt;/p&gt;
-</content><category term="science"></category><category term="personnal"></category><category term="physics"></category><category term="science"></category></entry></feed>
+</content><category term="programming"></category><category term="python"></category><category term="science"></category><category term="scientific computing"></category><category term="conferences"></category></entry></feed>

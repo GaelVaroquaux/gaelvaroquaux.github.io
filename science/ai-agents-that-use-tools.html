@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>AI agents that use tools -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- OpenGraph -->
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://gael-varoquaux.info/science/ai-agents-that-use-tools.html" />
+	<meta property="og:title" content="AI agents that use tools" />
+	<meta property="og:description" content="Modern AIs acquire new capabilities by combining tools to perform a complex task, controlling them like an agent. Unlike traditional programming, they define the sequences of actions..." />
+	<meta property="og:image" content="../science/attachments/robot_tool_friendly.png" />
+	<meta property="og:site_name" content="Gaël Varoquaux" />
+    <meta property="og:logo" content="https://gael-varoquaux.info/images/gael.png" />
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Fri 04 July 2025</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>AI agents that use tools</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/science.html">science</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/research.html">research</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/ai.html">AI</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/chronicle.html">chronicle</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/ai-chronicle.html">AI chronicle</a>
+		    <span class="readtime">
+			&nbsp Read time: 3 min.
+		    </span>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+-->
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <img alt="Image generated with ChatGPT, with the prompt &quot;Please generate an image of an AI using a mechanical tool, such as a wrench. Please make the robot look rather friendly. Also, please make the image square&quot;" class="small align-right" src="../science/attachments/robot_tool_friendly.png" />
+<p>Modern AIs acquire new capabilities by combining tools to perform a
+complex task, controlling them like an agent. Unlike traditional
+programming, they define the sequences of actions themselves.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This post was originally published in French as part of my scientific
+chronicle in <a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/des-agents-ia-qui-utilisent-des-outils-2163252">Les Echos</a>.</p>
+</div>
+<p>Modern AIs are increasingly using tools. For example, if you ask a
+conversational AI to solve a complicated equation, the AI alone cannot do
+it. This is not surprising: there is no general mathematical formula. But
+if this AI knows how to use numerical equation-solving routines, it
+quickly gives us the answer. For example, “Le Chat” from Mistral
+generates a small program that uses the “Python” language and its
+numerical routines to solve our problem. The difficulty here is to
+generate the program that calls the right routines. This ability is an
+extension of conversational AI models that know how to answer questions
+by generating text. Here, the text is computer code and not French.</p>
+<p>By controlling the computer, the AI “acts”. That’s why it is said to be
+an “agent”. By coupling with other systems, agentic AIs develop new
+capabilities. The most powerful ones can then combine different tools by
+leveraging their complementarities. These agent systems are currently
+progressing very quickly, but they remind us of what we have always done
+in computer science: any complicated system is assembled from multiple
+routines, each with a specific functionality. Writing a computer program
+is precisely describing how we are going to call these routines to solve
+a problem. And yet, without the recent advances in AI, we have to specify
+all the steps, whereas agent AIs take a given goal and will themselves
+produce these steps. The difficulty then becomes to break down a task
+into sub-tasks, which is called planning, a difficult problem.</p>
+<p>In modern AIs, these planning skills are learned. The systems improve
+through trial and error: we give the AI lots of tasks to solve and the AI
+tries sequences of sub-tasks, deciding to use one tool or another. If it
+succeeds in the final task, it learns that the sequence of tool use was a
+good sequence for the task. This is called reinforcement learning, whose
+main inventors received the Turing Prize this year, the Nobel Prize of
+computer science.</p>
+<p>Another major driver of progress for agent AIs is the powerful ability of
+analogy and associative memory of language models. These language skills
+enable them to start from problems specified by the user in plain
+English, with an open vocabulary. They draw their strategies to use tools
+from a great knowledge of similar problems, but also know how to adapt
+these strategies to the intermediate responses of the tools. They can
+also interact with systems that are much more complex and indeterminate
+than computer routines. For example, an AI can go and fetch information
+on the internet, or even ask a human.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Agent AIs open new perspectives. But they also greatly increase computing
+costs, as they iterate over sub-tasks. Computing costs must be kept in
+mind, as they are an important hurdle to democratization of AI.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="topic">
+<p class="topic-title">AI chronicles</p>
+<p>Find all my AI chronicles <a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html">here</a></p>
+<p>The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.</p>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+-->
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+    <script>
+    // Highlight the current section in the TOC
+(function () {
+    'use strict';
+    var SectionScroller = {
+        anchorTops: [],
+
+        el: {
+            anchors: document.querySelectorAll('.toc-backref'),
+            anchorLinks: document.querySelectorAll('a.reference.internal')
+        },
+        
+        forEach: function(array, callback, scope) {
+            for (var i = 0, ii = array.length; i < ii; i++) {
+                callback.call(scope, i, array[i]);
+            }
+        },
+
+        throttle: function (fn, threshhold, scope) {
+          threshhold = threshhold || (threshhold = 250);
+          var last;
+          var deferTimer;
+          return function () {
+            var context = scope || this;
+            var now = +new Date();
+            var args = arguments;
+            if (last && now < last + threshhold) {
+              // hold on to it
+              clearTimeout(deferTimer);
+              deferTimer = setTimeout(function () {
+                last = now;
+                fn.apply(context, args);
+              }, threshhold);
+            } else {
+              last = now;
+              fn.apply(context, args);
+            }
+          };
+        },
+        
+        mathSign: function (x) {
+            x = +x; // convert to a number
+            if (x === 0 || isNaN(x)) {
+                return x;
+            }
+            return x > 0 ? 1 : -1;
+        },
+
+        anchorGetter: function () {
+            var SS = SectionScroller;
+            for (var i = 0, max = SS.el.anchors.length; i < max; i++) {
+                SS.anchorTops[i] = SS.el.anchors[i].offsetTop;
+            }
+            for (var j = 0, jj = SS.anchorTops.length; j < jj; j++) {
+                if (SS.anchorTops[j] - 350 < window.scrollY) {
+                    for (var x = 0, xx = SS.el.anchors.length; x < xx; x++) {
+                        SS.el.anchorLinks[x].classList.remove('selected');
+                    }
+                    SS.el.anchorLinks[j].classList.add('selected');
+                }
+            }
+        },
+        
+        smooth: function (e) {
+            var id = e.currentTarget.getAttribute('href');
+            var node = document.querySelector(id);
+            var nodeTop = node.offsetTop;
+            var winTop = window.scrollY;
+            var sign = SectionScroller.mathSign(nodeTop);
+            var scrollAmnt;
+            var down; 
+            if (nodeTop > winTop) {
+                down = true;
+                scrollAmnt = nodeTop - winTop;
+            } else {
+                down = false;
+                scrollAmnt = Math.abs(winTop - nodeTop);
+            }
+            
+            var scroller = function () {
+                if (down) {
+                    window.scrollTo(0, window.scrollY + 1);
+                } else {
+                    window.scrollTo(0, window.scrollY - 1);
+                }
+                scrollAmnt--;
+                if (scrollAmnt > 0)  {
+                    window.requestAnimationFrame(scroller);
+                }
+            };
+            window.requestAnimationFrame(scroller);
+            e.preventDefault();
+        },
+        
+        smoothScroll: function(e) {
+            var id = e.currentTarget.getAttribute('href');
+            var node = document.querySelector(id);
+            var scrollContainer = node;
+            do { //find scroll container
+                scrollContainer = scrollContainer.parentNode;
+                if (!scrollContainer) return;
+                scrollContainer.scrollTop += 1;
+            } while (scrollContainer.scrollTop === 0);
+
+            var targetY = 0;
+            do { //find the top of target relatively to the container
+                if (node == scrollContainer) break;
+                targetY += node.offsetTop;
+            } while (node === node.offsetParent);
+
+            var scroll = function(c, a, b, i) {
+                i++; if (i > 30) return;
+                c.scrollTop = a + (b - a) / 30 * i;
+                setTimeout(function(){ scroll(c, a, b, i); }, 20);
+            };
+            // start scrolling
+            scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+            e.preventDefault();
+        },
+
+        events: function () {
+            var SS = SectionScroller;
+            window.addEventListener('scroll', SS.throttle(SS.anchorGetter, 150));
+            SS.forEach(SS.el.anchorLinks, function (index, link) {
+                link.addEventListener('click', SS.smooth);
+            });
+        },
+
+        init: function () {
+            SectionScroller.anchorGetter();
+            SectionScroller.events();
+        }
+    };
+
+    SectionScroller.init();
+})();
+</script>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script  language="JavaScript" type="text/javascript">
+    /* From http://evirtus.net/pub/eflickrstream.asp */
+    /* Global variables */
+    var bolOnLoadRun=false;
+    var bolFlickrRun=false;
+    var objFlickrOutput=null;
+    
+    /* OnLoad events */
+    window.onload = function() {
+    bolOnLoadRun=true;
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	eFlickrStream();
+    };
+    }
+    
+    /*
+    eFlickrStream - Lovely, lovely photos! :-)
+    - 02.08.2007 @ 14:33: Initial version
+    */
+    function eFlickrStream() {
+    if (!bolFlickrRun ) { return false; } else { bolFlickrRun=false; }
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var strTarget='flickrstream';// Target container for the flickr badge (must allready exist in the document)
+    /*   *** Options/end ***     */
+    
+    if (!document.getElementById(strTarget)){return false;}// Exsist if target doesn't exsist
+    
+    var objTarget=document.getElementById(strTarget);
+    objTarget.appendChild(objFlickrOutput);// Append output
+    
+    objFlickrOutput=null;// We're done, delete stored variable value
+    objFlickr=null;
+    }
+    
+    /*
+    jsonFlickrFeed - Triggered when the Flickr json "feed" is loaded, generates Flickr photos output list item (Deefer "trigger method" from Patrick Quinn-Graham's DOM Flickr Badge)
+    - 02.08.2007 @ 14:33: Initial version
+    - 23.11.2007 @ 08:24: Updated to use eSetAttr(), enables the flickr link in IE
+    - 29.11.2007 @ 05:52: Some changes for easier configuration (of both options and text-strings)
+    */
+    function jsonFlickrFeed(objFlickr) {
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var intMaxImages=10;// Maximum number of images to show (1-20)
+    var bolThumbSquare=true;// Load the square thumbnails
+    var intThumbWidth=75;// Thumbnail width (omitted if set to "0")
+    var strLightbox='flickrstream';// Lightbox "group name" (define to mark the thumbnails for lightbox usage, adds rel="lightbox[value]" to image links)
+    var strImgAlt='[title]';// Alternative title for images ("[title]" will be replaced by image title)
+    var strImgLinkTitle='View a larger version of \"[title]\"';// Link title for the image link
+    /*   *** Options/end ***     */
+    
+    var objElm,objTxt,objImg,objLnk,objTmp,strTmp;
+    var intPhotos=objFlickr.items.length;
+    var objOut=document.createElement('ul');
+    objOut.setAttribute('class','flickrlist');
+    
+    for (var iCntA=0; ( (iCntA<intPhotos) && (iCntA<intMaxImages)); iCntA++) {
+    
+	objElm=document.createElement('li');// Create item container element (<li>)
+    
+	objLnk=document.createElement('a');// Create link (to the large(r) photo)
+	objLnk.setAttribute('href',objFlickr.items[iCntA].link);
+	objLnk.setAttribute('title',strImgLinkTitle.replace('[title]',objFlickr.items[iCntA].title));
+	if (strLightbox!=''){objLnk.setAttribute('rel','lightbox['+strLightbox+']');}// Add relation value for lightbox usage
+    
+	strTmp=objFlickr.items[iCntA].media.m;// Retreive thumbnail URI
+	if (bolThumbSquare){strTmp=strTmp.replace('_m.jpg','_s.jpg');}// Swap default thumbnail for square...
+    
+	objImg=document.createElement('img');// Main thumbnail
+	eSetAttr(objImg,'class','photo');
+	objImg.setAttribute('src',strTmp);
+	objImg.setAttribute('alt',strImgAlt.replace('[title]',objFlickr.items[iCntA].title));
+	if (intThumbWidth!=0){objImg.setAttribute('width',intThumbWidth);}
+    
+	objLnk.appendChild(objImg);// Append thumbnail to link
+	objElm.appendChild(objLnk);// Append link to container (li)
+
+	objOut.appendChild(objElm);// Append container to output object
+	}
+    
+    objFlickrOutput=objOut;// Store output for later use...
+    
+    if (bolOnLoadRun) {
+	eFlickrStream();
+	}
+    else {
+	bolFlickrRun=true;
+	}
+    }
+    
+    /*
+    eSetAttr/eGetAttr - An attempt to tame IE's weird DOM model
+    - 22.11.2007 @ 12:50 - Initial version
+    */
+    function eSetAttr(objTarget,strAttr,strValue) {
+    if (typeof window.attachEvent!='undefined' && typeof window.opera=='undefined') {
+    //    //Set attributes for IE
+	switch (strAttr) {
+	    case('class'):
+		objTarget.setAttribute('className',strValue);
+		break;
+	    case('style'):
+		objTarget.style.cssText=strValue;
+		break;
+	    default:
+		objTarget.setAttribute(strAttr,strValue);
+		break;
+	    }
+	}
+    else {
+    //    //Set attributes for /Other browsers/
+	objTarget.setAttribute(strAttr,strValue);
+	}
+    //66885349@N03
+    }
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+</body>
+</html>
