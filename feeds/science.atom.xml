@@ -26,7 +26,7 @@ generates a small program that uses the “Python” language and its
 numerical routines to solve our problem. The difficulty here is to
 generate the program that calls the right routines. This ability is an
 extension of conversational AI models that know how to answer questions
-by generating text. Here, the text is computer code and not French.&lt;/p&gt;
+by generating text. Here, the text is computer code and not English.&lt;/p&gt;
 &lt;p&gt;By controlling the computer, the AI “acts”. That’s why it is said to be
 an “agent”. By coupling with other systems, agentic AIs develop new
 capabilities. The most powerful ones can then combine different tools by
