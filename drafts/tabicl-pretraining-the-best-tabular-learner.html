@@ -74,7 +74,7 @@ choices, it is fast and scalable, efficient even without a GPU.</p>
 <div class="contents topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#recent-progress-in-tabular-learning-in-context-learning" id="toc-entry-1">Recent progress in tabular learning: In Context Learning</a><ul>
+<li><a class="reference internal" href="#recent-progress-in-tabular-learning-in-context-learning" id="toc-entry-1">Recent progress in tabular learning: In-Context Learning</a><ul>
 <li><a class="reference internal" href="#tabular-learning-as-a-completion-problem" id="toc-entry-2">Tabular learning as a completion problem</a></li>
 <li><a class="reference internal" href="#sophisticated-prior-via-data-generation" id="toc-entry-3">Sophisticated prior via data generation</a></li>
 </ul>
@@ -87,14 +87,19 @@ choices, it is fast and scalable, efficient even without a GPU.</p>
 <li><a class="reference internal" href="#the-result-a-powerful-and-easy-to-use-tabular-learner" id="toc-entry-7">The result: a powerful and easy to use tabular learner</a></li>
 </ul>
 </div>
+<p>This note is about the research behind TabICL <a class="reference external" href="https://arxiv.org/abs/2502.05564">[Qu et al 2025]</a>, work by Jing Qu, David Holzmüller,
+Marine le Morvan and myself, published at ICML 2025.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <div class="section" id="recent-progress-in-tabular-learning-in-context-learning">
-<h2><a class="toc-backref" href="#toc-entry-1">Recent progress in tabular learning: In Context Learning</a></h2>
+<h2><a class="toc-backref" href="#toc-entry-1">Recent progress in tabular learning: In-Context Learning</a></h2>
 <p>Describing the statistical structure of tables in general is very subtle.
-They do have some unique statistical feature. For instance, each column
+They do have some unique statistical features. For instance, each column
 is typical meaningful by itself, and more than linear combinations of
 columns (data <em>non rotationally invariant</em>, cf <a class="reference external" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html">[Grinsztajn et al, 2022]</a>).
 For long, tree-based models, in particular gradient-boosted trees, were
-the models that captured best this statistical structure.</p>
+the models that best captured this statistical structure.</p>
 <p>The question is indeed: <strong>how to build complex and rich inductive biases
 into statistical models</strong>?</p>
 <p>The group of <a class="reference external" href="https://ml.informatik.uni-freiburg.de/profile/hutter">F. Hutter</a> pionneered new
@@ -150,8 +155,8 @@ to a cost in <em>O(n p² + p n²)</em> for a table with <em>n</em> rows and <em>
 </div>
 <div class="section" id="tabicl-s-solution">
 <h3><a class="toc-backref" href="#toc-entry-6">TabICL’s solution</a></h3>
-<div class="section" id="rowwise-encoding">
-<h4>Rowwise encoding</h4>
+<div class="section" id="row-wise-encoding">
+<h4>Row-wise encoding</h4>
 <div class="figure align-right">
 <img alt="" src="../science/attachments/tabicl/tabicl_architecture.png" style="width: 60%;" />
 <p class="caption">To break the quadratic cost, TabICL first encodes the rows to a
@@ -213,12 +218,12 @@ on benchmarks:</p>
 <div class="figure align-right">
 <img alt="" src="../science/attachments/tabicl/tabarena.png" />
 <p class="caption">Experimental results, from a benchmark paper independent of the TabICL
-paper: tabarena <a class="reference external" href="https://arxiv.org/abs/2506.16791">[Erickson et al, 2025]</a></p>
+paper: TabArena <a class="reference external" href="https://arxiv.org/abs/2506.16791">[Erickson et al, 2025]</a></p>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>The benefit of TabICL becomes more marked for larger datasets:</p>
+<p>The benefit of TabICL over TabPFNv2 becomes more marked for larger datasets:</p>
 <div class="figure align-center">
 <img alt="" src="../science/attachments/tabicl/tabicl_scale_bench.png" style="width: 60%;" />
 <p class="caption">Rank (lower is best) as a function of dataset size.</p>
@@ -228,13 +233,34 @@ paper: tabarena <a class="reference external" href="https://arxiv.org/abs/2506.1
 </div>
 <p>All in all, TabICL is an excellent tabular predictor, and a push forward
 for tabular foundation models. From a foundamental standpoint, it shows
-that in-context learning is not only for few-shot learning, but that be
-very beneficial as sizes as large as <em>n=100 000</em>.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">TabICL is only one aspect of table foundation models. We are pursuing
-also another line of research that focuses on bringing knowledge about
-the real world in table foundation models, see <a class="reference external" href="carte-toward-table-foundation-models.html">CARTE</a> and more recently <a class="reference external" href="https://arxiv.org/abs/2505.14415">[Kim
+that in-context learning is not only for few-shot learning, but that it can be
+very beneficial for sample sizes as large as <em>n=100 000</em>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="topic">
+<p class="topic-title">More about TabICL</p>
+<p>There is a lot more in TabICL: the details of pretraining are crucial,
+implementation uses memory offloading (which is facilitated by the
+architecture, which dissociates the train X from the test y for most
+of the operations). To learn more about TabICL:</p>
+<ul class="simple">
+<li>The paper: <a class="reference external" href="https://arxiv.org/abs/2502.05564">https://arxiv.org/abs/2502.05564</a></li>
+<li>The github code: <strong>TabICL is 100% open source</strong>
+<a class="reference external" href="https://github.com/soda-inria/tabicl">https://github.com/soda-inria/tabicl</a></li>
+<li>Install the Python package, TabICL is just one pip install away
+<a class="reference external" href="https://pypi.org/project/tabicl/">https://pypi.org/project/tabicl/</a></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="topic">
+<p class="topic-title">Other topics in table foundation models: leveraging strings</p>
+<p>TabICL is only one aspect of table foundation models. We are pursuing
+also another line of research that focuses on using strings (in
+entries and column names) to bring knowledge about the real world in
+table foundation models, see <a class="reference external" href="carte-toward-table-foundation-models.html">CARTE</a> and more recently <a class="reference external" href="https://arxiv.org/abs/2505.14415">[Kim
 et al, 2025]</a>.</p>
 </div>
 </div>
