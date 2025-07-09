@@ -20,7 +20,7 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="https://gael-varoquaux.info/drafts/tabicl-pretraining-the-best-tabular-learner.html" />
 	<meta property="og:title" content="TabICL: Pretraining the best tabular learner" />
-	<meta property="og:description" content="Note TabICL is a state-of-the-art tabular learner [Qu et al 2025]. The key is it a very rich prior, that is baked in a pre-trained architecture -a table foundation model-, and leveraged by..." />
+	<meta property="og:description" content="Note TabICL is a state-of-the-art tabular learner [Qu et al 2025]. The key is its very rich prior, that is baked in a pre-trained architecture -a table foundation model-, and leveraged by..." />
 	<meta property="og:image" content="../science/attachments/tabicl/table_in_context_learning.png" />
 	<meta property="og:site_name" content="Gaël Varoquaux" />
     <meta property="og:logo" content="https://gael-varoquaux.info/images/gael.png" />
@@ -66,7 +66,7 @@
             </section>
             <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">TabICL is a state-of-the-art tabular learner <a class="reference external" href="https://arxiv.org/abs/2502.05564">[Qu et al 2025]</a>. The key is it a very rich
+<p class="last">TabICL is a state-of-the-art tabular learner <a class="reference external" href="https://arxiv.org/abs/2502.05564">[Qu et al 2025]</a>. The key is its very rich
 prior, that is baked in a pre-trained architecture -a table foundation
 model-, and leveraged by in-context-learning. Thanks to clever
 choices, it is fast and scalable, efficient even without a GPU.</p>
@@ -87,8 +87,8 @@ choices, it is fast and scalable, efficient even without a GPU.</p>
 <li><a class="reference internal" href="#the-result-a-powerful-and-easy-to-use-tabular-learner" id="toc-entry-7">The result: a powerful and easy to use tabular learner</a></li>
 </ul>
 </div>
-<p>This note is about the research behind TabICL <a class="reference external" href="https://arxiv.org/abs/2502.05564">[Qu et al 2025]</a>, work by Jing Qu, David Holzmüller,
-Marine le Morvan and myself, published at ICML 2025.</p>
+<p>This note is about the research behind TabICL <a class="reference external" href="https://arxiv.org/abs/2502.05564">[Qu et al 2025]</a>, work by Jingang Qu, David
+Holzmüller, myself, and Marine Le Morvan, published at ICML 2025.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -96,14 +96,15 @@ Marine le Morvan and myself, published at ICML 2025.</p>
 <h2><a class="toc-backref" href="#toc-entry-1">Recent progress in tabular learning: In-Context Learning</a></h2>
 <p>Describing the statistical structure of tables in general is very subtle.
 They do have some unique statistical features. For instance, each column
-is typical meaningful by itself, and more than linear combinations of
-columns (data <em>non rotationally invariant</em>, cf <a class="reference external" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html">[Grinsztajn et al, 2022]</a>).
+is typically meaningful by itself, more meaningful than linear
+combinations of columns (data <em>non rotationally invariant</em>, cf
+<a class="reference external" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html">[Grinsztajn et al, 2022]</a>).
 For long, tree-based models, in particular gradient-boosted trees, were
 the models that best captured this statistical structure.</p>
 <p>The question is indeed: <strong>how to build complex and rich inductive biases
 into statistical models</strong>?</p>
-<p>The group of <a class="reference external" href="https://ml.informatik.uni-freiburg.de/profile/hutter">F. Hutter</a> pionneered new
-answers to this question with their TabPFN work <a class="reference external" href="https://www.nature.com/articles/s41586-024-08328-6">[Hollmann et al, 2025]</a>.</p>
+<p>A pioneering contribution to this question was made with the TabPFN
+approach <a class="reference external" href="https://www.nature.com/articles/s41586-024-08328-6">[Hollmann et al, 2025]</a>.</p>
 <div class="section" id="tabular-learning-as-a-completion-problem">
 <h3><a class="toc-backref" href="#toc-entry-2">Tabular learning as a completion problem</a></h3>
 <div class="figure align-right">
@@ -123,7 +124,7 @@ using transformers.</p>
 <p>Teaching transformers to predict well requires showing them many many
 prediction problems.</p>
 <p>The benefit of this approach is that these prediction problems can be
-chosen to reflect well the downstream task. In particular, in becomes now
+chosen to reflect well the downstream task. In particular, it becomes now
 easy to bake in any form of inductive bias by simulating data.</p>
 <p>TabPFN simulates data by cascading a series of simple transformations
 combining very few columns. The data-generative processes are actually
@@ -189,23 +190,23 @@ are computed to be a function of the distribution of the column. For
 this, we use a set transformer, which is a scalable transformer-like way
 of building a function on sets (but without the quadratic complexity).</p>
 <p>After pretraining, we find that the column embeddings have learned a
-mapping that implicit captures statistical aspects of the data
+mapping that implicitly captures statistical aspects of the data
 distribution in the column, as the kurtosis or the skewness.</p>
 </div>
 </div>
 </div>
 <div class="section" id="the-result-a-powerful-and-easy-to-use-tabular-learner">
 <h2><a class="toc-backref" href="#toc-entry-7">The result: a powerful and easy to use tabular learner</a></h2>
-<p>After a lot of pretraining on very well chosen synthetic data, TabICL is
-a state-of-the-art tabular. Pretraining gave it the right inductive bias,
-as visible from the classifier-comparison plot below:</p>
+<p>After a lot of pretraining on synthetic data, TabICL is a
+state-of-the-art tabular learner. Pretraining gave it the right inductive
+bias, as visible from the classifier-comparison plot below:</p>
 <div class="figure">
 <img alt="" src="../science/attachments/tabicl/tabicl_comparison.png" style="width: 100%;" />
 <p class="caption">A classic classification comparison plot that shows the decision
 boundaries on very simple toy data. It is useful to get a feeling of
 how classifiers behave.</p>
 </div>
-<p>It is interesting to see that while TabICL form very flexible decision
+<p>It is interesting to see that while TabICL forms very flexible decision
 boundaries, they do extend along the horizontal and vertical axes, as the
 decision tree and random forest. These axis-aligned features are a
 very important aspect of the inductive bias.</p>
@@ -228,11 +229,14 @@ paper: TabArena <a class="reference external" href="https://arxiv.org/abs/2506.1
 <img alt="" src="../science/attachments/tabicl/tabicl_scale_bench.png" style="width: 60%;" />
 <p class="caption">Rank (lower is best) as a function of dataset size.</p>
 </div>
+<p>However, one limitation to keep in mind is that with in-context learners,
+as TabICL or TabPFN, inference (prediction on new datapoint) ican be
+costly.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>All in all, TabICL is an excellent tabular predictor, and a push forward
-for tabular foundation models. From a foundamental standpoint, it shows
+for tabular foundation models. From a fundamental standpoint, it shows
 that in-context learning is not only for few-shot learning, but that it can be
 very beneficial for sample sizes as large as <em>n=100 000</em>.</p>
 <div class="line-block">
