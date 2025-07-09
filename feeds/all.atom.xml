@@ -1,5 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-07-04T00:00:00+02:00</updated><entry><title>AI agents that use tools</title><link href="https://gael-varoquaux.info/science/ai-agents-that-use-tools.html" rel="alternate"></link><published>2025-07-04T00:00:00+02:00</published><updated>2025-07-04T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-07-04:/science/ai-agents-that-use-tools.html</id><summary type="html">&lt;img alt="Image generated with ChatGPT, with the prompt &amp;quot;Please generate an image of an AI using a mechanical tool, such as a wrench. Please make the robot look rather friendly. Also, please make the image square&amp;quot;" class="small align-right" src="../science/attachments/robot_tool_friendly.png" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-07-09T00:00:00+02:00</updated><entry><title>TabICL: Pretraining the best tabular learner</title><link href="https://gael-varoquaux.info/science/tabicl-pretraining-the-best-tabular-learner.html" rel="alternate"></link><published>2025-07-09T00:00:00+02:00</published><updated>2025-07-09T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-07-09:/science/tabicl-pretraining-the-best-tabular-learner.html</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;TabICL is a state-of-the-art tabular learner &lt;a class="reference external" href="https://arxiv.org/abs/2502.05564"&gt;[Qu et al 2025]&lt;/a&gt;. The key is its very rich
+prior, that is baked in a pre-trained architecture -a table foundation
+model-, and leveraged by in-context-learning. Thanks to clever
+choices, it is fast and scalable, efficient even without a GPU.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="contents topic" id="contents"&gt;
+&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#recent-progress-in-tabular-learning-in-context-learning" id="toc-entry-1"&gt;Recent progress …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;TabICL is a state-of-the-art tabular learner &lt;a class="reference external" href="https://arxiv.org/abs/2502.05564"&gt;[Qu et al 2025]&lt;/a&gt;. The key is its very rich
+prior, that is baked in a pre-trained architecture -a table foundation
+model-, and leveraged by in-context-learning. Thanks to clever
+choices, it is fast and scalable, efficient even without a GPU.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="contents topic" id="contents"&gt;
+&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#recent-progress-in-tabular-learning-in-context-learning" id="toc-entry-1"&gt;Recent progress in tabular learning: In-Context Learning&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#tabular-learning-as-a-completion-problem" id="toc-entry-2"&gt;Tabular learning as a completion problem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#sophisticated-prior-via-data-generation" id="toc-entry-3"&gt;Sophisticated prior via data generation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#tabicl-improved-architecture" id="toc-entry-4"&gt;TabICL: improved architecture&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-challenge-accounting-for-the-structure-of-tables" id="toc-entry-5"&gt;The challenge: accounting for the structure of tables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#tabicl-s-solution" id="toc-entry-6"&gt;TabICL’s solution&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#the-result-a-powerful-and-easy-to-use-tabular-learner" id="toc-entry-7"&gt;The result: a powerful and easy to use tabular learner&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;This note is about the research behind TabICL &lt;a class="reference external" href="https://arxiv.org/abs/2502.05564"&gt;[Qu et al 2025]&lt;/a&gt;, work by Jingang Qu, David
+Holzmüller, myself, and Marine Le Morvan, published at ICML 2025.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="recent-progress-in-tabular-learning-in-context-learning"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Recent progress in tabular learning: In-Context Learning&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Describing the statistical structure of tables in general is very subtle.
+They do have some unique statistical features. For instance, each column
+is typically meaningful by itself, more meaningful than linear
+combinations of columns (data &lt;em&gt;non rotationally invariant&lt;/em&gt;, cf
+&lt;a class="reference external" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html"&gt;[Grinsztajn et al, 2022]&lt;/a&gt;).
+For long, tree-based models, in particular gradient-boosted trees, were
+the models that best captured this statistical structure.&lt;/p&gt;
+&lt;p&gt;The question is indeed: &lt;strong&gt;how to build complex and rich inductive biases
+into statistical models&lt;/strong&gt;?&lt;/p&gt;
+&lt;p&gt;A pioneering contribution to this question was made with the TabPFN
+approach &lt;a class="reference external" href="https://www.nature.com/articles/s41586-024-08328-6"&gt;[Hollmann et al, 2025]&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="section" id="tabular-learning-as-a-completion-problem"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Tabular learning as a completion problem&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="../science/attachments/tabicl/table_in_context_learning.png" style="width: 100%;" /&gt;
+&lt;p class="caption"&gt;Prediction by table completion using across-row transformers&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The key idea behind this line of work is that tabular learning can be
+seen as completing a table where one column has a missing entry.
+Transformer-based large-language models are very good at completing
+sequences, in particular in the few-shot regime. Hence the idea to use a
+transformer architecture for this table-completion task.&lt;/p&gt;
+&lt;p&gt;More specifically, this is a &lt;em&gt;meta-learning&lt;/em&gt; setting (learning to learn),
+using transformers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="sophisticated-prior-via-data-generation"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;Sophisticated prior via data generation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Teaching transformers to predict well requires showing them many many
+prediction problems.&lt;/p&gt;
+&lt;p&gt;The benefit of this approach is that these prediction problems can be
+chosen to reflect well the downstream task. In particular, it becomes now
+easy to bake in any form of inductive bias by simulating data.&lt;/p&gt;
+&lt;p&gt;TabPFN simulates data by cascading a series of simple transformations
+combining very few columns. The data-generative processes are actually
+more subtle, but the idea being that they are plausible for data tables.&lt;/p&gt;
+&lt;p&gt;Experience (from us and others) shows that pretraining on a quality
+data-generation process is crucial to produce a good tabular learner,
+alike foundation models in other settings.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tabicl-improved-architecture"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;TabICL: improved architecture&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="the-challenge-accounting-for-the-structure-of-tables"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;The challenge: accounting for the structure of tables&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="../science/attachments/tabicl/tabpfn_architecture.png" style="width: 60%;" /&gt;
+&lt;p class="caption"&gt;Tables are 2D objects, and the TabPFNv2 architecture alternates
+attentions across row and across columns&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In practice, a table is not a 1D structure, like sentences. It is closer
+to a 2D structure, with rows and columns. A good architecture will
+account for this structure, and the TabPFNv2 architecture uses
+transformers with alternating across-row and across-column attention.&lt;/p&gt;
+&lt;p&gt;One problem is the computational complexity: attention is quadratic in
+the number of entries, and the bi-directional transform of TabPFNv2 leads
+to a cost in &lt;em&gt;O(n p² + p n²)&lt;/em&gt; for a table with &lt;em&gt;n&lt;/em&gt; rows and &lt;em&gt;p&lt;/em&gt; columns.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tabicl-s-solution"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;TabICL’s solution&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="section" id="row-wise-encoding"&gt;
+&lt;h4&gt;Row-wise encoding&lt;/h4&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="../science/attachments/tabicl/tabicl_architecture.png" style="width: 60%;" /&gt;
+&lt;p class="caption"&gt;To break the quadratic cost, TabICL first encodes the rows to a
+smaller, fixed-sized, represention, before performing across-row
+in-context learning.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;For more scalability and better inductive bias, our model, TabICL, first
+embeds the rows (using a first transformer) and then does in-context
+learning across rows (with a second transformer). The resulting
+computational complexity is &lt;em&gt;O(n p² + n²)&lt;/em&gt;, which is more scalable,
+though still quadratic in &lt;em&gt;n&lt;/em&gt; and &lt;em&gt;p&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Scalability is important because it enables us to pretrain TabICL on both
+small &lt;em&gt;and&lt;/em&gt; large datasets, and as a consquence TabICL is a good
+predictor for large datasets.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="column-specific-embeddings"&gt;
+&lt;h4&gt;Column-specific embeddings&lt;/h4&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="../science/attachments/tabicl/tabicl_embeddings.png" style="width: 100%;" /&gt;
+&lt;p class="caption"&gt;To apply different transformations on columns depending on their
+statistical properties, TabICL builds positional embeddings for
+columns that capture aspects of their distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Another important innovation of TabICL is that it inputs the entries in
+the transformer with column-specific embeddings. These column embeddings
+are computed to be a function of the distribution of the column. For
+this, we use a set transformer, which is a scalable transformer-like way
+of building a function on sets (but without the quadratic complexity).&lt;/p&gt;
+&lt;p&gt;After pretraining, we find that the column embeddings have learned a
+mapping that implicitly captures statistical aspects of the data
+distribution in the column, as the kurtosis or the skewness.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-result-a-powerful-and-easy-to-use-tabular-learner"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-7"&gt;The result: a powerful and easy to use tabular learner&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;After a lot of pretraining on synthetic data, TabICL is a
+state-of-the-art tabular learner. Pretraining gave it the right inductive
+bias, as visible from the classifier-comparison plot below:&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="" src="../science/attachments/tabicl/tabicl_comparison.png" style="width: 100%;" /&gt;
+&lt;p class="caption"&gt;A classic classification comparison plot that shows the decision
+boundaries on very simple toy data. It is useful to get a feeling of
+how classifiers behave.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;It is interesting to see that while TabICL forms very flexible decision
+boundaries, they do extend along the horizontal and vertical axes, as the
+decision tree and random forest. These axis-aligned features are a
+very important aspect of the inductive bias.&lt;/p&gt;
+&lt;p&gt;At the end of the day, TabICL is an excellent tabular learner, as visible
+on benchmarks:&lt;/p&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="../science/attachments/tabicl/result_comparison.png" /&gt;
+&lt;p class="caption"&gt;TabICL is a great predictor: Comparison of many predictors.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="../science/attachments/tabicl/tabarena.png" /&gt;
+&lt;p class="caption"&gt;Experimental results, from a benchmark paper independent of the TabICL
+paper: TabArena &lt;a class="reference external" href="https://arxiv.org/abs/2506.16791"&gt;[Erickson et al, 2025]&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The benefit of TabICL over TabPFNv2 becomes more marked for larger datasets:&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="../science/attachments/tabicl/tabicl_scale_bench.png" style="width: 60%;" /&gt;
+&lt;p class="caption"&gt;Rank (lower is best) as a function of dataset size.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;However, one limitation to keep in mind is that with in-context learners,
+as TabICL or TabPFN, inference (prediction on new datapoint) ican be
+costly.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;All in all, TabICL is an excellent tabular predictor, and a push forward
+for tabular foundation models. From a fundamental standpoint, it shows
+that in-context learning is not only for few-shot learning, but that it can be
+very beneficial for sample sizes as large as &lt;em&gt;n=100 000&lt;/em&gt;.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;More about TabICL&lt;/p&gt;
+&lt;p&gt;There is a lot more in TabICL: the details of pretraining are crucial,
+implementation uses memory offloading (which is facilitated by the
+architecture, which dissociates the train X from the test y for most
+of the operations). To learn more about TabICL:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The paper: &lt;a class="reference external" href="https://arxiv.org/abs/2502.05564"&gt;https://arxiv.org/abs/2502.05564&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The github code: &lt;strong&gt;TabICL is 100% open source&lt;/strong&gt;
+&lt;a class="reference external" href="https://github.com/soda-inria/tabicl"&gt;https://github.com/soda-inria/tabicl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install the Python package, TabICL is just one pip install away
+&lt;a class="reference external" href="https://pypi.org/project/tabicl/"&gt;https://pypi.org/project/tabicl/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;Other topics in table foundation models: leveraging strings&lt;/p&gt;
+&lt;p&gt;TabICL is only one aspect of table foundation models. We are pursuing
+also another line of research that focuses on using strings (in
+entries and column names) to bring knowledge about the real world in
+table foundation models, see &lt;a class="reference external" href="carte-toward-table-foundation-models.html"&gt;CARTE&lt;/a&gt; and more recently &lt;a class="reference external" href="https://arxiv.org/abs/2505.14415"&gt;[Kim
+et al, 2025]&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="machine learning"></category><category term="tabular learning"></category><category term="foundation models"></category></entry><entry><title>AI agents that use tools</title><link href="https://gael-varoquaux.info/science/ai-agents-that-use-tools.html" rel="alternate"></link><published>2025-07-04T00:00:00+02:00</published><updated>2025-07-04T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-07-04:/science/ai-agents-that-use-tools.html</id><summary type="html">&lt;img alt="Image generated with ChatGPT, with the prompt &amp;quot;Please generate an image of an AI using a mechanical tool, such as a wrench. Please make the robot look rather friendly. Also, please make the image square&amp;quot;" class="small align-right" src="../science/attachments/robot_tool_friendly.png" /&gt;
 &lt;p&gt;Modern AIs acquire new capabilities by combining tools to perform a
 complex task, controlling them like an agent. Unlike traditional
 programming, they define the sequences of actions themselves.&lt;/p&gt;
@@ -10670,90 +10884,4 @@ tools can be used.&lt;/p&gt;
 &lt;p&gt;I must apologize for the time it took to publish the proceedings. All
 this was actually a lot of work, and it has taken me a lot of energy. I
 hope that you will it was worth it.&lt;/p&gt;
-</content><category term="programming"></category><category term="python"></category><category term="science"></category><category term="scientific computing"></category><category term="publishing"></category></entry><entry><title>Announcing EuroScipy 2010</title><link href="https://gael-varoquaux.info/programming/announcing-euroscipy-2010.html" rel="alternate"></link><published>2009-12-14T01:01:00+01:00</published><updated>2009-12-14T01:01:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-12-14:/programming/announcing-euroscipy-2010.html</id><summary type="html">&lt;div class="section" id="the-3rd-european-meeting-on-python-in-science"&gt;
-&lt;h2&gt;The 3rd European meeting on Python in Science&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Paris, Ecole Normale Supérieure, July 8-11 2010&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We are happy to announce the 3rd EuroScipy meeting, in Paris, July 2010.&lt;/p&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;The EuroSciPy meeting is a cross-disciplinary gathering focused on the&lt;/div&gt;
-&lt;div class="line"&gt;use and development of the Python language in scientific research. This&lt;/div&gt;
-&lt;div class="line"&gt;event …&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="the-3rd-european-meeting-on-python-in-science"&gt;
-&lt;h2&gt;The 3rd European meeting on Python in Science&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Paris, Ecole Normale Supérieure, July 8-11 2010&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We are happy to announce the 3rd EuroScipy meeting, in Paris, July 2010.&lt;/p&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;The EuroSciPy meeting is a cross-disciplinary gathering focused on the&lt;/div&gt;
-&lt;div class="line"&gt;use and development of the Python language in scientific research. This&lt;/div&gt;
-&lt;div class="line"&gt;event strives to bring together both users and developers of&lt;/div&gt;
-&lt;div class="line"&gt;scientific tools, as well as academic research and state of the art&lt;/div&gt;
-&lt;div class="line"&gt;industry.&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="important-dates"&gt;
-&lt;h3&gt;Important dates&lt;/h3&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Registration opens&lt;/strong&gt;: Sunday March 29&lt;/div&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Paper submission deadline&lt;/strong&gt;: Sunday May 9&lt;/div&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Program announced&lt;/strong&gt;: Sunday May 22&lt;/div&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Tutorials tracks&lt;/strong&gt;: Thursday July 8 - Friday July 9&lt;/div&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Conference track&lt;/strong&gt;: Saturday July 10 - Sunday July 11&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="tutorial"&gt;
-&lt;h3&gt;Tutorial&lt;/h3&gt;
-&lt;p&gt;There will be two tutorial tracks at the conference, an introductory one,
-to bring up to speed with the Python language as a scientific tool, and
-an advanced track, during which experts of the field will lecture on
-specific advanced topics such as advanced use of numpy, scientific
-visualization, software engineering…&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="main-conference-topics"&gt;
-&lt;h3&gt;Main conference topics&lt;/h3&gt;
-&lt;p&gt;We will be soliciting talks on the follow topics:&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Presentations of scientific tools and libraries using the Python
-language, including but not limited to:&lt;ul&gt;
-&lt;li&gt;Vector and array manipulation&lt;/li&gt;
-&lt;li&gt;Parallel computing&lt;/li&gt;
-&lt;li&gt;Scientific visualization&lt;/li&gt;
-&lt;li&gt;Scientific data flow and persistence&lt;/li&gt;
-&lt;li&gt;Algorithms implemented or exposed in Python&lt;/li&gt;
-&lt;li&gt;Web applications and portals for science and engineering&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Reports on the use of Python in scientific achievements or ongoing
-projects.&lt;/li&gt;
-&lt;li&gt;General-purpose Python tools that can be of special interest to the
-scientific community.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Keynote Speaker: Hans Petter Langtangen&lt;/p&gt;
-&lt;p&gt;We are excited to welcome Hans Petter Langtangen as our keynote speaker.&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Director of scientific computing and bio-medical research at Simula
-labs, Oslo&lt;/li&gt;
-&lt;li&gt;Author of the famous book Python scripting for computational science
-&lt;a class="reference external" href="http://www.springer.com/math/cse/book/978-3-540-73915-9"&gt;http://www.springer.com/math/cse/book/978-3-540-73915-9&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="section" id="the-organizers"&gt;
-&lt;h4&gt;The organizers:&lt;/h4&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;Gaël Varoquaux (INRIA Saclay, Parietal), conference co-chair&lt;/div&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;Nicolas Chauvat (Logilab), conference co-chair&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="program-committee"&gt;
-&lt;h4&gt;Program committee&lt;/h4&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;Romain Brette (ENS Paris, DEC)&lt;/div&gt;
-&lt;div class="line"&gt;Mike Müller (Python Academy)&lt;/div&gt;
-&lt;div class="line"&gt;Christophe Pradal (CIRAD/INRIA, DigiPlantes team)&lt;/div&gt;
-&lt;div class="line"&gt;Pierre Raybault (CEA, DAM)&lt;/div&gt;
-&lt;div class="line"&gt;Jarrod Millman (UC Berkeley, Helen Wills NeuroScience institute)&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="science"></category><category term="scientific computing"></category><category term="conferences"></category></entry></feed>
+</content><category term="programming"></category><category term="python"></category><category term="science"></category><category term="scientific computing"></category><category term="publishing"></category></entry></feed>

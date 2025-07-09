@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaël Varoquaux, computer / data / health science">
+
+        <link rel="alternate"  href="https://gael-varoquaux.info/feeds/all.atom.xml" type="application/atom+xml" title="Gaël Varoquaux Full Atom Feed"/>
+
+        <title>TabICL: Pretraining the best tabular learner -- Gaël Varoquaux: computer / data / health science</title>
+
+    <link href="https://mastodon.social/@GaelVaroquaux" rel="me">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://gael-varoquaux.info/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- OpenGraph -->
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://gael-varoquaux.info/science/tabicl-pretraining-the-best-tabular-learner.html" />
+	<meta property="og:title" content="TabICL: Pretraining the best tabular learner" />
+	<meta property="og:description" content="Note TabICL is a state-of-the-art tabular learner [Qu et al 2025]. The key is its very rich prior, that is baked in a pre-trained architecture -a table foundation model-, and leveraged by..." />
+	<meta property="og:image" content="../science/attachments/tabicl/table_in_context_learning.png" />
+	<meta property="og:site_name" content="Gaël Varoquaux" />
+    <meta property="og:logo" content="https://gael-varoquaux.info/images/gael.png" />
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="https://gael-varoquaux.info">
+		    <img class="avatar" alt="Gaël Varoquaux" 
+                     src="https://gael-varoquaux.info/images/gael.png">
+                </a>
+                <a href="https://gael-varoquaux.info" class="article-info">
+		    <h2 class="article-info">Gaël Varoquaux</h2>
+		</a>
+                <p>Wed 09 July 2025</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>TabICL: Pretraining the best tabular learner</h1>
+                        <p class="post-meta">
+                            under                                 <a class="post-category" href="https://gael-varoquaux.info/tag/machine-learning.html">machine learning</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/tabular-learning.html">tabular learning</a>
+                                <a class="post-category" href="https://gael-varoquaux.info/tag/foundation-models.html">foundation models</a>
+		    <span class="readtime">
+			&nbsp Read time: 5 min.
+		    </span>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+-->
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>                        </p>
+                </header>
+            </section>
+            <div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">TabICL is a state-of-the-art tabular learner <a class="reference external" href="https://arxiv.org/abs/2502.05564">[Qu et al 2025]</a>. The key is its very rich
+prior, that is baked in a pre-trained architecture -a table foundation
+model-, and leveraged by in-context-learning. Thanks to clever
+choices, it is fast and scalable, efficient even without a GPU.</p>
+</div>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#recent-progress-in-tabular-learning-in-context-learning" id="toc-entry-1">Recent progress in tabular learning: In-Context Learning</a><ul>
+<li><a class="reference internal" href="#tabular-learning-as-a-completion-problem" id="toc-entry-2">Tabular learning as a completion problem</a></li>
+<li><a class="reference internal" href="#sophisticated-prior-via-data-generation" id="toc-entry-3">Sophisticated prior via data generation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tabicl-improved-architecture" id="toc-entry-4">TabICL: improved architecture</a><ul>
+<li><a class="reference internal" href="#the-challenge-accounting-for-the-structure-of-tables" id="toc-entry-5">The challenge: accounting for the structure of tables</a></li>
+<li><a class="reference internal" href="#tabicl-s-solution" id="toc-entry-6">TabICL’s solution</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-result-a-powerful-and-easy-to-use-tabular-learner" id="toc-entry-7">The result: a powerful and easy to use tabular learner</a></li>
+</ul>
+</div>
+<p>This note is about the research behind TabICL <a class="reference external" href="https://arxiv.org/abs/2502.05564">[Qu et al 2025]</a>, work by Jingang Qu, David
+Holzmüller, myself, and Marine Le Morvan, published at ICML 2025.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="recent-progress-in-tabular-learning-in-context-learning">
+<h2><a class="toc-backref" href="#toc-entry-1">Recent progress in tabular learning: In-Context Learning</a></h2>
+<p>Describing the statistical structure of tables in general is very subtle.
+They do have some unique statistical features. For instance, each column
+is typically meaningful by itself, more meaningful than linear
+combinations of columns (data <em>non rotationally invariant</em>, cf
+<a class="reference external" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html">[Grinsztajn et al, 2022]</a>).
+For long, tree-based models, in particular gradient-boosted trees, were
+the models that best captured this statistical structure.</p>
+<p>The question is indeed: <strong>how to build complex and rich inductive biases
+into statistical models</strong>?</p>
+<p>A pioneering contribution to this question was made with the TabPFN
+approach <a class="reference external" href="https://www.nature.com/articles/s41586-024-08328-6">[Hollmann et al, 2025]</a>.</p>
+<div class="section" id="tabular-learning-as-a-completion-problem">
+<h3><a class="toc-backref" href="#toc-entry-2">Tabular learning as a completion problem</a></h3>
+<div class="figure align-right">
+<img alt="" src="../science/attachments/tabicl/table_in_context_learning.png" style="width: 100%;" />
+<p class="caption">Prediction by table completion using across-row transformers</p>
+</div>
+<p>The key idea behind this line of work is that tabular learning can be
+seen as completing a table where one column has a missing entry.
+Transformer-based large-language models are very good at completing
+sequences, in particular in the few-shot regime. Hence the idea to use a
+transformer architecture for this table-completion task.</p>
+<p>More specifically, this is a <em>meta-learning</em> setting (learning to learn),
+using transformers.</p>
+</div>
+<div class="section" id="sophisticated-prior-via-data-generation">
+<h3><a class="toc-backref" href="#toc-entry-3">Sophisticated prior via data generation</a></h3>
+<p>Teaching transformers to predict well requires showing them many many
+prediction problems.</p>
+<p>The benefit of this approach is that these prediction problems can be
+chosen to reflect well the downstream task. In particular, it becomes now
+easy to bake in any form of inductive bias by simulating data.</p>
+<p>TabPFN simulates data by cascading a series of simple transformations
+combining very few columns. The data-generative processes are actually
+more subtle, but the idea being that they are plausible for data tables.</p>
+<p>Experience (from us and others) shows that pretraining on a quality
+data-generation process is crucial to produce a good tabular learner,
+alike foundation models in other settings.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="tabicl-improved-architecture">
+<h2><a class="toc-backref" href="#toc-entry-4">TabICL: improved architecture</a></h2>
+<div class="section" id="the-challenge-accounting-for-the-structure-of-tables">
+<h3><a class="toc-backref" href="#toc-entry-5">The challenge: accounting for the structure of tables</a></h3>
+<div class="figure align-right">
+<img alt="" src="../science/attachments/tabicl/tabpfn_architecture.png" style="width: 60%;" />
+<p class="caption">Tables are 2D objects, and the TabPFNv2 architecture alternates
+attentions across row and across columns</p>
+</div>
+<p>In practice, a table is not a 1D structure, like sentences. It is closer
+to a 2D structure, with rows and columns. A good architecture will
+account for this structure, and the TabPFNv2 architecture uses
+transformers with alternating across-row and across-column attention.</p>
+<p>One problem is the computational complexity: attention is quadratic in
+the number of entries, and the bi-directional transform of TabPFNv2 leads
+to a cost in <em>O(n p² + p n²)</em> for a table with <em>n</em> rows and <em>p</em> columns.</p>
+</div>
+<div class="section" id="tabicl-s-solution">
+<h3><a class="toc-backref" href="#toc-entry-6">TabICL’s solution</a></h3>
+<div class="section" id="row-wise-encoding">
+<h4>Row-wise encoding</h4>
+<div class="figure align-right">
+<img alt="" src="../science/attachments/tabicl/tabicl_architecture.png" style="width: 60%;" />
+<p class="caption">To break the quadratic cost, TabICL first encodes the rows to a
+smaller, fixed-sized, represention, before performing across-row
+in-context learning.</p>
+</div>
+<p>For more scalability and better inductive bias, our model, TabICL, first
+embeds the rows (using a first transformer) and then does in-context
+learning across rows (with a second transformer). The resulting
+computational complexity is <em>O(n p² + n²)</em>, which is more scalable,
+though still quadratic in <em>n</em> and <em>p</em>.</p>
+<p>Scalability is important because it enables us to pretrain TabICL on both
+small <em>and</em> large datasets, and as a consquence TabICL is a good
+predictor for large datasets.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="column-specific-embeddings">
+<h4>Column-specific embeddings</h4>
+<div class="figure align-right">
+<img alt="" src="../science/attachments/tabicl/tabicl_embeddings.png" style="width: 100%;" />
+<p class="caption">To apply different transformations on columns depending on their
+statistical properties, TabICL builds positional embeddings for
+columns that capture aspects of their distribution.</p>
+</div>
+<p>Another important innovation of TabICL is that it inputs the entries in
+the transformer with column-specific embeddings. These column embeddings
+are computed to be a function of the distribution of the column. For
+this, we use a set transformer, which is a scalable transformer-like way
+of building a function on sets (but without the quadratic complexity).</p>
+<p>After pretraining, we find that the column embeddings have learned a
+mapping that implicitly captures statistical aspects of the data
+distribution in the column, as the kurtosis or the skewness.</p>
+</div>
+</div>
+</div>
+<div class="section" id="the-result-a-powerful-and-easy-to-use-tabular-learner">
+<h2><a class="toc-backref" href="#toc-entry-7">The result: a powerful and easy to use tabular learner</a></h2>
+<p>After a lot of pretraining on synthetic data, TabICL is a
+state-of-the-art tabular learner. Pretraining gave it the right inductive
+bias, as visible from the classifier-comparison plot below:</p>
+<div class="figure">
+<img alt="" src="../science/attachments/tabicl/tabicl_comparison.png" style="width: 100%;" />
+<p class="caption">A classic classification comparison plot that shows the decision
+boundaries on very simple toy data. It is useful to get a feeling of
+how classifiers behave.</p>
+</div>
+<p>It is interesting to see that while TabICL forms very flexible decision
+boundaries, they do extend along the horizontal and vertical axes, as the
+decision tree and random forest. These axis-aligned features are a
+very important aspect of the inductive bias.</p>
+<p>At the end of the day, TabICL is an excellent tabular learner, as visible
+on benchmarks:</p>
+<div class="figure align-right">
+<img alt="" src="../science/attachments/tabicl/result_comparison.png" />
+<p class="caption">TabICL is a great predictor: Comparison of many predictors.</p>
+</div>
+<div class="figure align-right">
+<img alt="" src="../science/attachments/tabicl/tabarena.png" />
+<p class="caption">Experimental results, from a benchmark paper independent of the TabICL
+paper: TabArena <a class="reference external" href="https://arxiv.org/abs/2506.16791">[Erickson et al, 2025]</a></p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The benefit of TabICL over TabPFNv2 becomes more marked for larger datasets:</p>
+<div class="figure align-center">
+<img alt="" src="../science/attachments/tabicl/tabicl_scale_bench.png" style="width: 60%;" />
+<p class="caption">Rank (lower is best) as a function of dataset size.</p>
+</div>
+<p>However, one limitation to keep in mind is that with in-context learners,
+as TabICL or TabPFN, inference (prediction on new datapoint) ican be
+costly.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>All in all, TabICL is an excellent tabular predictor, and a push forward
+for tabular foundation models. From a fundamental standpoint, it shows
+that in-context learning is not only for few-shot learning, but that it can be
+very beneficial for sample sizes as large as <em>n=100 000</em>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="topic">
+<p class="topic-title">More about TabICL</p>
+<p>There is a lot more in TabICL: the details of pretraining are crucial,
+implementation uses memory offloading (which is facilitated by the
+architecture, which dissociates the train X from the test y for most
+of the operations). To learn more about TabICL:</p>
+<ul class="simple">
+<li>The paper: <a class="reference external" href="https://arxiv.org/abs/2502.05564">https://arxiv.org/abs/2502.05564</a></li>
+<li>The github code: <strong>TabICL is 100% open source</strong>
+<a class="reference external" href="https://github.com/soda-inria/tabicl">https://github.com/soda-inria/tabicl</a></li>
+<li>Install the Python package, TabICL is just one pip install away
+<a class="reference external" href="https://pypi.org/project/tabicl/">https://pypi.org/project/tabicl/</a></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="topic">
+<p class="topic-title">Other topics in table foundation models: leveraging strings</p>
+<p>TabICL is only one aspect of table foundation models. We are pursuing
+also another line of research that focuses on using strings (in
+entries and column names) to bring knowledge about the real world in
+table foundation models, see <a class="reference external" href="carte-toward-table-foundation-models.html">CARTE</a> and more recently <a class="reference external" href="https://arxiv.org/abs/2505.14415">[Kim
+et al, 2025]</a>.</p>
+</div>
+</div>
+
+            <div class="hr" style="margin-bottom: -.5em;"></div>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<span class="social_links">
+<!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="GaelVaroquaux">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js" async defer></script>
+-->
+<!-- Place this tag where you want the +1 button to render. -->
+<span class="g-plusone" data-size="medium"></span>
+</span>            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Gaël Varoquaux &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script
+src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+    <script>
+    // Highlight the current section in the TOC
+(function () {
+    'use strict';
+    var SectionScroller = {
+        anchorTops: [],
+
+        el: {
+            anchors: document.querySelectorAll('.toc-backref'),
+            anchorLinks: document.querySelectorAll('a.reference.internal')
+        },
+        
+        forEach: function(array, callback, scope) {
+            for (var i = 0, ii = array.length; i < ii; i++) {
+                callback.call(scope, i, array[i]);
+            }
+        },
+
+        throttle: function (fn, threshhold, scope) {
+          threshhold = threshhold || (threshhold = 250);
+          var last;
+          var deferTimer;
+          return function () {
+            var context = scope || this;
+            var now = +new Date();
+            var args = arguments;
+            if (last && now < last + threshhold) {
+              // hold on to it
+              clearTimeout(deferTimer);
+              deferTimer = setTimeout(function () {
+                last = now;
+                fn.apply(context, args);
+              }, threshhold);
+            } else {
+              last = now;
+              fn.apply(context, args);
+            }
+          };
+        },
+        
+        mathSign: function (x) {
+            x = +x; // convert to a number
+            if (x === 0 || isNaN(x)) {
+                return x;
+            }
+            return x > 0 ? 1 : -1;
+        },
+
+        anchorGetter: function () {
+            var SS = SectionScroller;
+            for (var i = 0, max = SS.el.anchors.length; i < max; i++) {
+                SS.anchorTops[i] = SS.el.anchors[i].offsetTop;
+            }
+            for (var j = 0, jj = SS.anchorTops.length; j < jj; j++) {
+                if (SS.anchorTops[j] - 350 < window.scrollY) {
+                    for (var x = 0, xx = SS.el.anchors.length; x < xx; x++) {
+                        SS.el.anchorLinks[x].classList.remove('selected');
+                    }
+                    SS.el.anchorLinks[j].classList.add('selected');
+                }
+            }
+        },
+        
+        smooth: function (e) {
+            var id = e.currentTarget.getAttribute('href');
+            var node = document.querySelector(id);
+            var nodeTop = node.offsetTop;
+            var winTop = window.scrollY;
+            var sign = SectionScroller.mathSign(nodeTop);
+            var scrollAmnt;
+            var down; 
+            if (nodeTop > winTop) {
+                down = true;
+                scrollAmnt = nodeTop - winTop;
+            } else {
+                down = false;
+                scrollAmnt = Math.abs(winTop - nodeTop);
+            }
+            
+            var scroller = function () {
+                if (down) {
+                    window.scrollTo(0, window.scrollY + 1);
+                } else {
+                    window.scrollTo(0, window.scrollY - 1);
+                }
+                scrollAmnt--;
+                if (scrollAmnt > 0)  {
+                    window.requestAnimationFrame(scroller);
+                }
+            };
+            window.requestAnimationFrame(scroller);
+            e.preventDefault();
+        },
+        
+        smoothScroll: function(e) {
+            var id = e.currentTarget.getAttribute('href');
+            var node = document.querySelector(id);
+            var scrollContainer = node;
+            do { //find scroll container
+                scrollContainer = scrollContainer.parentNode;
+                if (!scrollContainer) return;
+                scrollContainer.scrollTop += 1;
+            } while (scrollContainer.scrollTop === 0);
+
+            var targetY = 0;
+            do { //find the top of target relatively to the container
+                if (node == scrollContainer) break;
+                targetY += node.offsetTop;
+            } while (node === node.offsetParent);
+
+            var scroll = function(c, a, b, i) {
+                i++; if (i > 30) return;
+                c.scrollTop = a + (b - a) / 30 * i;
+                setTimeout(function(){ scroll(c, a, b, i); }, 20);
+            };
+            // start scrolling
+            scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+            e.preventDefault();
+        },
+
+        events: function () {
+            var SS = SectionScroller;
+            window.addEventListener('scroll', SS.throttle(SS.anchorGetter, 150));
+            SS.forEach(SS.el.anchorLinks, function (index, link) {
+                link.addEventListener('click', SS.smooth);
+            });
+        },
+
+        init: function () {
+            SectionScroller.anchorGetter();
+            SectionScroller.events();
+        }
+    };
+
+    SectionScroller.init();
+})();
+</script>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+    <script  language="JavaScript" type="text/javascript">
+    /* From http://evirtus.net/pub/eflickrstream.asp */
+    /* Global variables */
+    var bolOnLoadRun=false;
+    var bolFlickrRun=false;
+    var objFlickrOutput=null;
+    
+    /* OnLoad events */
+    window.onload = function() {
+    bolOnLoadRun=true;
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	eFlickrStream();
+    };
+    }
+    
+    /*
+    eFlickrStream - Lovely, lovely photos! :-)
+    - 02.08.2007 @ 14:33: Initial version
+    */
+    function eFlickrStream() {
+    if (!bolFlickrRun ) { return false; } else { bolFlickrRun=false; }
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var strTarget='flickrstream';// Target container for the flickr badge (must allready exist in the document)
+    /*   *** Options/end ***     */
+    
+    if (!document.getElementById(strTarget)){return false;}// Exsist if target doesn't exsist
+    
+    var objTarget=document.getElementById(strTarget);
+    objTarget.appendChild(objFlickrOutput);// Append output
+    
+    objFlickrOutput=null;// We're done, delete stored variable value
+    objFlickr=null;
+    }
+    
+    /*
+    jsonFlickrFeed - Triggered when the Flickr json "feed" is loaded, generates Flickr photos output list item (Deefer "trigger method" from Patrick Quinn-Graham's DOM Flickr Badge)
+    - 02.08.2007 @ 14:33: Initial version
+    - 23.11.2007 @ 08:24: Updated to use eSetAttr(), enables the flickr link in IE
+    - 29.11.2007 @ 05:52: Some changes for easier configuration (of both options and text-strings)
+    */
+    function jsonFlickrFeed(objFlickr) {
+    if ((!document.createElement) && (!document.getElementById) && (!document.getElementsByTagName) ) { return false; }// Test for required browser capabilities
+    
+    /*   *** Options/start ***   */
+    var intMaxImages=10;// Maximum number of images to show (1-20)
+    var bolThumbSquare=true;// Load the square thumbnails
+    var intThumbWidth=75;// Thumbnail width (omitted if set to "0")
+    var strLightbox='flickrstream';// Lightbox "group name" (define to mark the thumbnails for lightbox usage, adds rel="lightbox[value]" to image links)
+    var strImgAlt='[title]';// Alternative title for images ("[title]" will be replaced by image title)
+    var strImgLinkTitle='View a larger version of \"[title]\"';// Link title for the image link
+    /*   *** Options/end ***     */
+    
+    var objElm,objTxt,objImg,objLnk,objTmp,strTmp;
+    var intPhotos=objFlickr.items.length;
+    var objOut=document.createElement('ul');
+    objOut.setAttribute('class','flickrlist');
+    
+    for (var iCntA=0; ( (iCntA<intPhotos) && (iCntA<intMaxImages)); iCntA++) {
+    
+	objElm=document.createElement('li');// Create item container element (<li>)
+    
+	objLnk=document.createElement('a');// Create link (to the large(r) photo)
+	objLnk.setAttribute('href',objFlickr.items[iCntA].link);
+	objLnk.setAttribute('title',strImgLinkTitle.replace('[title]',objFlickr.items[iCntA].title));
+	if (strLightbox!=''){objLnk.setAttribute('rel','lightbox['+strLightbox+']');}// Add relation value for lightbox usage
+    
+	strTmp=objFlickr.items[iCntA].media.m;// Retreive thumbnail URI
+	if (bolThumbSquare){strTmp=strTmp.replace('_m.jpg','_s.jpg');}// Swap default thumbnail for square...
+    
+	objImg=document.createElement('img');// Main thumbnail
+	eSetAttr(objImg,'class','photo');
+	objImg.setAttribute('src',strTmp);
+	objImg.setAttribute('alt',strImgAlt.replace('[title]',objFlickr.items[iCntA].title));
+	if (intThumbWidth!=0){objImg.setAttribute('width',intThumbWidth);}
+    
+	objLnk.appendChild(objImg);// Append thumbnail to link
+	objElm.appendChild(objLnk);// Append link to container (li)
+
+	objOut.appendChild(objElm);// Append container to output object
+	}
+    
+    objFlickrOutput=objOut;// Store output for later use...
+    
+    if (bolOnLoadRun) {
+	eFlickrStream();
+	}
+    else {
+	bolFlickrRun=true;
+	}
+    }
+    
+    /*
+    eSetAttr/eGetAttr - An attempt to tame IE's weird DOM model
+    - 22.11.2007 @ 12:50 - Initial version
+    */
+    function eSetAttr(objTarget,strAttr,strValue) {
+    if (typeof window.attachEvent!='undefined' && typeof window.opera=='undefined') {
+    //    //Set attributes for IE
+	switch (strAttr) {
+	    case('class'):
+		objTarget.setAttribute('className',strValue);
+		break;
+	    case('style'):
+		objTarget.style.cssText=strValue;
+		break;
+	    default:
+		objTarget.setAttribute(strAttr,strValue);
+		break;
+	    }
+	}
+    else {
+    //    //Set attributes for /Other browsers/
+	objTarget.setAttribute(strAttr,strValue);
+	}
+    //66885349@N03
+    }
+    </script>
+    <script type="text/javascript" src="https://api.flickr.com/services/feeds/photos_public.gne?id=66885349@N03&amp;format=json&amp;" defer="defer"></script>
+</body>
+</html>
