@@ -1255,6 +1255,10 @@ header.post-header {
     margin-bottom: 3vh;
 }
 
+div.content h2 {
+    margin-top: 1.5em;
+}
+
 
 div.content h3 {
     font-size: 1.1em;
