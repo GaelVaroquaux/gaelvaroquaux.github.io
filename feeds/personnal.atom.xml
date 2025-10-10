@@ -1,5 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - personnal</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/personnal.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2020-02-16T00:00:00+01:00</updated><entry><title>Jean Dechoux, June 13rd 1923 – Feb 9th 2020</title><link href="https://gael-varoquaux.info/personnal/jean-dechoux-june-13rd-1923-feb-9th-2020.html" rel="alternate"></link><published>2020-02-16T00:00:00+01:00</published><updated>2020-02-16T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2020-02-16:/personnal/jean-dechoux-june-13rd-1923-feb-9th-2020.html</id><summary type="html">&lt;p&gt;Jean Dechoux was born between the first and the second world wars, in a
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - personnal</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/personnal.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-10-10T00:00:00+02:00</updated><entry><title>A national recognition; but science and open source are bitter victories</title><link href="https://gael-varoquaux.info/personnal/a-national-recognition-but-science-and-open-source-are-bitter-victories.html" rel="alternate"></link><published>2025-10-10T00:00:00+02:00</published><updated>2025-10-10T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-10-10:/personnal/a-national-recognition-but-science-and-open-source-are-bitter-victories.html</id><summary type="html">&lt;img alt="" class="align-right" src="../personnal/attachments/gael_speech.jpg" style="width: 400px;" /&gt;
+&lt;p&gt;I have recently been awarded &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Ordre_national_du_M%C3%A9rite"&gt;France’s national order of merit&lt;/a&gt;, for my career, in science, in open source, and around AI.&lt;/p&gt;
+&lt;p&gt;The speech that I gave carries messages important to me (French below; it
+flows better).&lt;/p&gt;
+&lt;div class="contents topic" id="contents"&gt;
+&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#speech-translated-to-english" id="toc-entry-1"&gt;Speech translated to English&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#le-texte-d-origine-en-francais" id="toc-entry-2"&gt;Le texte d’origine, en Français&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.content p …&lt;/style&gt;</summary><content type="html">&lt;img alt="" class="align-right" src="../personnal/attachments/gael_speech.jpg" style="width: 400px;" /&gt;
+&lt;p&gt;I have recently been awarded &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Ordre_national_du_M%C3%A9rite"&gt;France’s national order of merit&lt;/a&gt;, for my career, in science, in open source, and around AI.&lt;/p&gt;
+&lt;p&gt;The speech that I gave carries messages important to me (French below; it
+flows better).&lt;/p&gt;
+&lt;div class="contents topic" id="contents"&gt;
+&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#speech-translated-to-english" id="toc-entry-1"&gt;Speech translated to English&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#le-texte-d-origine-en-francais" id="toc-entry-2"&gt;Le texte d’origine, en Français&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.content p {
+    margin: .5ex 0;
+}
+
+p.centered-symbol {
+    margin: 1ex auto;
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(210, 210, 210);
+}
+&lt;/style&gt;&lt;div class="section" id="speech-translated-to-english"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Speech translated to English&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Receiving such a medal is a powerful symbol. But what battles does it honor?&lt;/p&gt;
+&lt;p&gt;My first battle, my first dream, was that of science, with the hope of understanding and improving the world. I probably turned to computers because they were simpler, less frightening, than society.&lt;/p&gt;
+&lt;p&gt;This led me to my second battle: the dream of democratizing this science and these digital tools, thanks to open source, also in the hope of making a better world.&lt;/p&gt;
+&lt;p&gt;The freedom I enjoyed, a privilege of researchers, allowed me to devote my time to these dreams. And many people helped on this journey, such as my colleagues at Inria and elsewhere –science is a team sport–, or free software developers from all over the world.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;And two decades later, we have won. Open source is everywhere. Statistical algorithms raise billions of dollars. But what good will this free software, these algorithms, have been if an Elon Musk can buy their vector of action and transform it into a fascist machine. This victory is bitter.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Science, open source, come to play within a societal context, mediated by norms and means of action. These means of action are rooted in economic rationality, and I find myself, to my great surprise, interested in commercial and financial logics.&lt;/p&gt;
+&lt;p&gt;Money is power. It is the ability to build, to buy Twitter or to finance Wikipedia. For science or open source to be successful, we need economic ambitions.&lt;/p&gt;
+&lt;p&gt;But I do not want to reduce the world to economic motivations. Science and free software result from the work of individuals who believe in what they are doing. With scikit-learn, as with many other open source projects, humble developers with few resources have created incredible wealth.&lt;/p&gt;
+&lt;p&gt;And it is these battles that today’s medal rewards. I have always been wary of individual distinctions. Success is rarely the work of a single person. We need more collective effort and fewer heroes, less ego.&lt;/p&gt;
+&lt;p&gt;And yet, I hope that this medal, this symbol, can be useful. Indeed, symbols create the collective narrative, and control the choices we make, individually or as a society. For both science and free software, the risk is to be invisible, unheard, and powerless.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Neither lines of code nor equations will be enough to make a better world. The privilege of a researcher is the independence of thoughts necessary for the consolidation of knowledge. The unique strength of open source software is to offer independence to the user. Beyond independence, this knowledge and these software are only useful if society embraces them. And for that, we must win the battle of the narrative.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Today, I have only one dream: that our children live in the best possible world. Between the global rise of fascism and climate warming, this dream faces many challenges. But we can fight for it. For this, as always, we need to gather people and unite around common causes. And thus, I thank you all for the support and help you have given me across the years, for today’s recognition.&lt;/p&gt;
+&lt;p class="centered-symbol"&gt;✶ ✶ ✶&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="le-texte-d-origine-en-francais"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Le texte d’origine, en Français&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Recevoir un tel insigne est un symbole puissant. Mais quels combats décore-t-il?&lt;/p&gt;
+&lt;p&gt;Mon premier combat, mon premier rêve a été celui de la science, avec l’espoir de comprendre et d’améliorer le monde. Je me suis probablement tourné vers les ordinateurs car ils étaient plus simples, moins effrayants, que la société.&lt;/p&gt;
+&lt;p&gt;Un deuxième combat est né en moi: le rêve de démocratiser cette science et ces outils numériques, grâce au logiciel libre, toujours dans l’espoir de faire un monde meilleur.&lt;/p&gt;
+&lt;p&gt;La liberté dont j’ai joui, privilège inouit des chercheurs, m’a permis de me consacrer à ces rêves. Et beaucoup m’ont aidé: mes collègues à Inria et ailleurs, car la science est un sport d’équipe; les développeurs logiciels libres partout dans le monde; mes parents, qui m’ont donné l’amour de la science même lorsque j’étais en échec scolaire.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Et deux décennies plus tard, nous avons gagné. Les logiciels libres sont partout. Les algorithmes statistiques font des levées de fonds de plusieurs milliards. Mais à quoi auront servi ces logiciels libres, ces algorithmes, si un Elon Musk peut racheter leur vecteur d’action et le transformer en machine à fascime. Cette victoire est amère.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;La science, le logiciel libre, se réalisent dans un contexte sociétal, médié par des normes et des moyens d’actions. Ces moyens d’actions sont ancrés dans le rationnel économique, et je me trouve, à ma grande surprise, à m’intéresser à des logiques commerciales et financières.&lt;/p&gt;
+&lt;p&gt;L’argent, c’est le pouvoir. C’est la capacité de réaliser, de racheter twitter ou de financer wikipedia. Pour le succès de la science ou du logiciel libre, nous avons besoin d’une ambition économique.&lt;/p&gt;
+&lt;p&gt;Mais je ne voudrais réduire le monde aux motivations économiques. La science et le logiciel libre résultent du travail d’individus qui croient à ce qu’ils font. Avec scikit-learn, comme avec beaucoup d’autres logiciels libres, des développeurs humbles et avec peu de moyens ont créé une richesse incroyable.&lt;/p&gt;
+&lt;p&gt;Et c’est ces combats que récompense aujourd’hui l’insigne que je reçois. Je me suis toujours méfié des distinctions individuelles. Un succès est rarement l’œuvre d’un seul. Nous avons besoin de plus de collectif et de moins de héros, de moins d’égo.&lt;/p&gt;
+&lt;p&gt;Et pourtant, j’espère que cette médaille, ce symbole, peut être utile. En effet, les symboles créent le récit collectif, et contrôlent les choix que nous faisons, individuellement ou en tant que société. Science comme logiciel libre, le risque est d’être invisibles, inaudibles, et impuissants.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;La ligne de code, ou l’équation, ne suffiront à faire un meilleur monde. Le privilège du chercheur, c’est l’indépendance de pensée nécessaire à la consolidation de la connaissance. L’atout du logiciel libre, c’est d’offrir une indépendance à l’utilisateur. Au-delà de l’indépendance, cette connaissance et ces logiciels ne sont utiles que si la société s’en empare. Et pour cela, il nous faut gagner la bataille du récit.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Aujourd’hui, je n’ai plus qu’un rêve: que nos enfants vivent dans le meilleur monde possible. Entre montée mondiale du fascime et réchauffement climatique, j’ai la détermination que ce rêve ne soit pas une chimère. Pour ce rêve, il nous faut encore réunir, rassembler, et je vous remercie tous des soutiens et des aides que vous m’avez apportés, de cet honneur que vous me faites aujourd’hui.&lt;/p&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="../personnal/attachments/gael_knight_monty_python.jpg" style="width: 300px;" /&gt;
+&lt;p class="caption"&gt;Technically, I might be a knight now&lt;/p&gt;
+&lt;/div&gt;
+&lt;p class="centered-symbol"&gt;✶ ✶ ✶&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="personnal"></category><category term="award"></category><category term="open source"></category><category term="science"></category></entry><entry><title>Jean Dechoux, June 13rd 1923 – Feb 9th 2020</title><link href="https://gael-varoquaux.info/personnal/jean-dechoux-june-13rd-1923-feb-9th-2020.html" rel="alternate"></link><published>2020-02-16T00:00:00+01:00</published><updated>2020-02-16T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2020-02-16:/personnal/jean-dechoux-june-13rd-1923-feb-9th-2020.html</id><summary type="html">&lt;p&gt;Jean Dechoux was born between the first and the second world wars, in a
 small French town, close to Germany. His family was that of poor
 farmers, who would work in coal mines to make up for the small size of
 their crops.&lt;/p&gt;
