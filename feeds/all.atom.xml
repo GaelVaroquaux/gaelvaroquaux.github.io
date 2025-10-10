@@ -69,6 +69,9 @@ p.centered-symbol {
 &lt;/div&gt;
 &lt;div class="section" id="le-texte-d-origine-en-francais"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Le texte d’origine, en Français&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;p&gt;Recevoir un tel insigne est un symbole puissant. Mais quels combats décore-t-il?&lt;/p&gt;
 &lt;p&gt;Mon premier combat, mon premier rêve a été celui de la science, avec l’espoir de comprendre et d’améliorer le monde. Je me suis probablement tourné vers les ordinateurs car ils étaient plus simples, moins effrayants, que la société.&lt;/p&gt;
 &lt;p&gt;Un deuxième combat est né en moi: le rêve de démocratiser cette science et ces outils numériques, grâce au logiciel libre, toujours dans l’espoir de faire un monde meilleur.&lt;/p&gt;
