@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-10-10T00:00:00+02:00</updated><entry><title>A national recognition; but science and open source are bitter victories</title><link href="https://gael-varoquaux.info/personnal/a-national-recognition-but-science-and-open-source-are-bitter-victories.html" rel="alternate"></link><published>2025-10-10T00:00:00+02:00</published><updated>2025-10-10T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-10-10:/personnal/a-national-recognition-but-science-and-open-source-are-bitter-victories.html</id><summary type="html">&lt;img alt="" class="align-right" src="../personnal/attachments/gael_speech.jpg" style="width: 400px;" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-10-29T00:00:00+01:00</updated><entry><title>Maïc, you lived 100 years, what changed?</title><link href="https://gael-varoquaux.info/personnal/maic-you-lived-100-years-what-changed.html" rel="alternate"></link><published>2025-10-29T00:00:00+01:00</published><updated>2025-10-29T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-10-29:/personnal/maic-you-lived-100-years-what-changed.html</id><summary type="html">&lt;p&gt;At Maïc’s 100th birthday, I asked her “you lived 100 years, what was the most important change for you?”. She mentioned “Internet”. I asked, why was the Internet important to her eyes? Because this is how she kept close contact with her loved ones, sharing travels or discussing everyday …&lt;/p&gt;</summary><content type="html">&lt;p&gt;At Maïc’s 100th birthday, I asked her “you lived 100 years, what was the most important change for you?”. She mentioned “Internet”. I asked, why was the Internet important to her eyes? Because this is how she kept close contact with her loved ones, sharing travels or discussing everyday life on her phone, her tablet…&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Born in 1925, she was of a generation sometimes called the silent one. And indeed, she was often low-key. Her father was an administrator in the countryside, and she arrived in Paris in her youth. She studied maths, joining the prestigious “Ecole Normale Supérieure”, which provided her with an income and led her to become a maths teacher. After meeting and marrying &lt;a class="reference external" href="jean-dechoux-june-13rd-1923-feb-9th-2020.html"&gt;Jean Dechoux&lt;/a&gt;, she used her income to fund his medical studies. The story goes that, living in a tiny room, she had to cook on the balcony.&lt;/p&gt;
+&lt;p&gt;Maïc was a teacher, one of those unsung heroes that have educated the masses. Nowadays, this is not a job title that is much acclaimed, unlike say “start-up founder”. But the only reason we have good computer scientists that create start-ups, the only reason we have researchers to build computer science, is because they had great teachers. Maïc was also a mother, a foster mother, a grandmother, a great grandmother. She was kind, humble, tireless, always positive. Her life philosophy was focused on doing the best with what she got.&lt;/p&gt;
+&lt;p&gt;Maïc never seemed left behind by the transformations of our world. Turning 100-years old, she was as sharp as ever, reading book after book and using her phone, her tablet, her computer. Whenever I hear how technology changes the world, I cannot help thinking of her, a 100-year-old geek. The world went through many transformations during her lifetime. But what she saw in these transformations, in Internet technology, is a way to stay in contact with others, a way to bring more humanity into our lives.&lt;/p&gt;
+&lt;img alt="" class="align-right" src="../personnal/attachments/nicole_dechoux.jpg" style="width: 350px;" /&gt;
+&lt;br/&gt;&lt;p&gt;&lt;em&gt;Remembering Nicole Dechoux, May 03rd 1925 - October 22nd 2025&lt;/em&gt;&lt;/p&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+
+&lt;style&gt;
+ div.poem p {margin: 0;}
+ div.poem div.line-block {clear: unset}
+&lt;/style&gt;&lt;div class="poem docutils container"&gt;
+&lt;p&gt;Il restera de toi ce que tu as donné&lt;/p&gt;
+&lt;p&gt;Au lieu de le garder dans des coffres rouillés…&lt;/p&gt;
+&lt;p&gt;Ce que tu as donné en d’autres fleurira…&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Il restera de toi ce que tu as offert&lt;/p&gt;
+&lt;p&gt;Entre tes bras ouverts un matin au soleil…&lt;/p&gt;
+&lt;p&gt;Ce que tu as offert en d’autres revivra…&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Il restera de toi un sourire épanoui&lt;/p&gt;
+&lt;p&gt;Aux bords de tes lèvres comme au bord de ton cœur…&lt;/p&gt;
+&lt;p&gt;Ce que tu as ouvert en d’autres grandira…&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Il restera de toi ce que tu as semé&lt;/p&gt;
+&lt;p&gt;Que tu as partagé aux mendiants du bonheur…&lt;/p&gt;
+&lt;p&gt;Ce que tu as semé en d’autres germera…&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Adapted from Simone Weil and Michel Scouarnec&lt;/em&gt;&lt;/p&gt;
+</content><category term="personnal"></category><category term="family"></category><category term="people"></category></entry><entry><title>A national recognition; but science and open source are bitter victories</title><link href="https://gael-varoquaux.info/personnal/a-national-recognition-but-science-and-open-source-are-bitter-victories.html" rel="alternate"></link><published>2025-10-10T00:00:00+02:00</published><updated>2025-10-10T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-10-10:/personnal/a-national-recognition-but-science-and-open-source-are-bitter-victories.html</id><summary type="html">&lt;img alt="" class="align-right" src="../personnal/attachments/gael_speech.jpg" style="width: 400px;" /&gt;
 &lt;p&gt;I have recently been awarded &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Ordre_national_du_M%C3%A9rite"&gt;France’s national order of merit&lt;/a&gt;, for my career, in science, in open source, and around AI.&lt;/p&gt;
 &lt;p&gt;The speech that I gave carries messages important to me (French below; it
 flows better).&lt;/p&gt;
@@ -10790,183 +10832,4 @@ life “rue Mouffetard”, or venture further to stroll on the river banks
 of the Seine, along which people dance to street music.&lt;/p&gt;
 &lt;img alt="" src="attachments/banner_euroscipy.jpg" /&gt;
 &lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="science"></category><category term="scientific computing"></category><category term="conferences"></category></entry><entry><title>PCA and ICA: Identifying combinations of variables</title><link href="https://gael-varoquaux.info/science/ica_vs_pca.html" rel="alternate"></link><published>2010-02-05T00:00:00+01:00</published><updated>2010-02-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-02-05:/science/ica_vs_pca.html</id><summary type="html">&lt;div class="topic"&gt;
-&lt;p class="topic-title"&gt;&lt;strong&gt;Dimension reduction and interpretability&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Suppose you have statistical data that too many dimensions, in other
-words too many variables of the same random process, that has been
-observed many times. You want to find out, from all these variables (or all
-these dimensions when speaking in terms of multivariate data …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="topic"&gt;
-&lt;p class="topic-title"&gt;&lt;strong&gt;Dimension reduction and interpretability&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Suppose you have statistical data that too many dimensions, in other
-words too many variables of the same random process, that has been
-observed many times. You want to find out, from all these variables (or all
-these dimensions when speaking in terms of multivariate data),
-what are the relevant combinations, or directions.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="dimension-reduction-with-pca"&gt;
-&lt;h2&gt;Dimension reduction with PCA&lt;/h2&gt;
-&lt;p&gt;If we have three-dimensional data, for instance simultaneous measurements
-made by three thermometers positioned at different locations in a room.
-The data forms a cluster of points in a 3D space:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/3d_data.jpg" style="width: 50%;" /&gt;
-&lt;p&gt;If the temperature in that room is conditioned by only two parameters,
-the setting of a heater and the outside temperature, we probably have
-too much data: the three sets of measurements can be expressed as a
-linear combination of two fluctuating variable, and an additional much
-smaller noise parameter. In other words, the data mostly lies in a 2D
-plane embedded in the 3D measurement space.&lt;/p&gt;
-&lt;p&gt;We can use PCA (Principal Component Analysis) to find this plane: PCA
-will give us the orthogonal basis in which the covariance matrix of our
-data is diagonal. The vectors of this basis point in successive
-orthogonal directions in which the data variance is maximum. In the case
-of data mainly residing on a 2D plane, the variance is much greater along
-the two first vectors, which define our plane of interest, than along the
-third one:&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="" src="https://gael-varoquaux.info/science/attachments/ica_pca/3d_data_pca_axis.jpg" style="width: 50%;" /&gt;
-&lt;p class="caption"&gt;The covariance eigenvectors identified by PCA are shown in red. The
-plane defined by the 2 largest eigenvectors is shown in light red.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;If we look at the data in the plane identified by PCA, it is clear that
-it was mostly 2D:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/3d_data_pca.jpg" style="width: 50%;" /&gt;
-&lt;/div&gt;
-&lt;div class="section" id="understanding-pca-with-a-gaussian-model"&gt;
-&lt;h2&gt;Understanding PCA with a Gaussian model&lt;/h2&gt;
-&lt;p&gt;Let &lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt; be two normal-distributed variables, describing the
-processes we are observing:&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;x&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
-&lt;/div&gt;
-&lt;p&gt;and&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;y&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
-&lt;/div&gt;
-&lt;p&gt;Let &lt;cite&gt;a&lt;/cite&gt; and &lt;cite&gt;b&lt;/cite&gt; be two observation variables, linear combinations of &lt;cite&gt;x&lt;/cite&gt;
-and &lt;cite&gt;y&lt;/cite&gt;:&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;a&lt;/i&gt; = &lt;i&gt;x&lt;/i&gt; + &lt;i&gt;y&lt;/i&gt;
-&lt;/div&gt;
-&lt;p&gt;and&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;b&lt;/i&gt; = 2 &lt;i&gt;y&lt;/i&gt;
-&lt;/div&gt;
-&lt;p&gt;PCA is performed by applying an SVD (singular value decomposition) on the
-observed data matrix:&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;Y&lt;/i&gt; = [&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...; &lt;i&gt;b&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...]
-&lt;/div&gt;
-&lt;p&gt;This is equivalent to find the eigenvalues and eigenvectors of
-&lt;span class="formula"&gt;&lt;i&gt;Y&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/span&gt;, the correlation matrix of the observed data. The
-multidimensional (or multivariate, in statistical jargon) probability
-density function of Y is written:&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ∼ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;M&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
-&lt;/div&gt;
-&lt;p&gt;where &lt;cite&gt;r&lt;/cite&gt; is the position is the &lt;cite&gt;(a,b)&lt;/cite&gt; observation space, and &lt;cite&gt;M&lt;/cite&gt; the
-correlation matrix. Diagonalizing the matrix &lt;cite&gt;M&lt;/cite&gt; corresponds to finding
-a rotation matrix &lt;cite&gt;U&lt;/cite&gt; such that:&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ∼ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;U&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;S&lt;/i&gt; &lt;i&gt;U&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
-&lt;/div&gt;
-&lt;p&gt;With &lt;cite&gt;S&lt;/cite&gt; a diagonal matrix. In other words, &lt;cite&gt;U&lt;/cite&gt; is a rotation of the
-observation space to change to a basis where the probability density
-function is written:&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ∼ &lt;i&gt;exp&lt;/i&gt;( − &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator"&gt;∑&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;) = &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator"&gt;∏&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;)
-&lt;/div&gt;
-&lt;p&gt;In this new basis, &lt;cite&gt;Y&lt;/cite&gt; can thus be interpreted as a sum of independent
-normal processes of different variance.&lt;/p&gt;
-&lt;p&gt;We can thus picture the PCA as a way of finding independent normal
-processes. The different steps of the argument exposed above can be
-pictured in the following figure:&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="" src="https://gael-varoquaux.info/science/attachments/ica_pca/pca_on_gaussian_data.png" style="width: 80%;" /&gt;
-&lt;p class="caption"&gt;First we represent samples drawn from
-&lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt; in their original space, the basis of the independent
-variables. Then we represent the (&lt;cite&gt;a&lt;/cite&gt;, &lt;cite&gt;b&lt;/cite&gt;) samples, and we apply PCA on
-these samples, to estimate the eigenvectors of the covariance matrix.
-Then we represent the data projected in the basis estimated by PCA. One
-important detail to note, is that after PCA, the data is most often
-rescaled: each direction is divided by the corresponding sample standard
-deviation identified by PCA. After this operation, all directions of
-space play the same role, the data is spheric, or “white”.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;PCA was able to identify the original independent variables &lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt;
-in the &lt;cite&gt;a&lt;/cite&gt; and &lt;cite&gt;b&lt;/cite&gt; samples only because they were mixed with different
-variance. For a isotropic Gaussian model, any basis can describe the data
-in terms of independent normal process.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="pca-on-non-normal-data"&gt;
-&lt;h2&gt;PCA on non normal data&lt;/h2&gt;
-&lt;p&gt;More generally, the PCA algorithm can be understood as an algorithm
-finding the direction of space with the highest sample variance, and
-moving on to the orthogonal subspace of this direction to find the next
-highest variance, and iteratively discovering an ordered orthogonal basis
-of highest variance. This is well adapted to normal processes, as their
-covariance is indeed diagonal in an orthogonal basis. In addition, the
-resulting vectors come with a “PCA score”, ie the variance of the data
-projected along the direction they define. Thus when using PCA for
-dimension reduction, we can choose the subspace defined by the first &lt;cite&gt;n&lt;/cite&gt;
-PCA vectors, on the basis that they explain a given percentage of the
-variance, and that the subspace they define is the subspace of dimension
-&lt;cite&gt;n&lt;/cite&gt; that explains the largest possible fraction of the total variance.&lt;/p&gt;
-&lt;p&gt;However, on strongly non-Gaussian processes, the variance may not be the
-quantity of interest.&lt;/p&gt;
-&lt;p&gt;Let us consider the same model as above, with two independent variables
-&lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt; thought with strongly non-Gaussian distributions. Here we
-use a mixture of a narrow Gaussian, and wide one, to populate the tails:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/non_gaussian_pdf.png" style="width: 40%;" /&gt;
-&lt;p&gt;We can apply the same operations on these random variables: change of
-basis to an observation basis made of &lt;cite&gt;a&lt;/cite&gt; and &lt;cite&gt;b&lt;/cite&gt;, and PCA on the
-resulting sample:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/pca_on_non_gaussian_data.png" style="width: 80%;" /&gt;
-&lt;p&gt;We can see that the PCA did not properly identify the original
-independent variables. The variance criteria is not good-enough when the
-principle axis of the observed distribution are not orthogonal, as the
-highest variance can be found in a direction mixing the two process.
-Indeed the largest PCA direction is found slightly off axis. In addition
-the second direction can only be found orthogonal to the first one, as
-this is a restriction of PCA.&lt;/p&gt;
-&lt;p&gt;On the other side, the data after PCA is much more spheric than the
-original data. No strong anisotropy is found in the central part of the
-sample cloud, which contributes most to the variance.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="ica-independent-non-gaussian-variables"&gt;
-&lt;h2&gt;ICA: independent, non-Gaussian variables&lt;/h2&gt;
-&lt;p&gt;For strongly non-Gaussian processes, the above example shows that
-separating independent process should be done by looking at fine details
-of the distribution, such as the tails. Indeed, after PCA, the Gaussian
-part of the processes have been separated by their variance, and the
-resulting, rescaled, samples cannot be decomposed in independent process
-in a Gaussian model, as they all have the same variance, and would
-already be considered independent under a Gaussian hypothesis.&lt;/p&gt;
-&lt;p&gt;A popular class of algorithms to separate independent sources, called ICA
-(independent component analysis) makes the simplification that finding
-independent sources out of such data can be reduced to finding maximally
-non-Gaussian. Indeed, the central-limit theorem tells us that the sum of
-non-Gaussian processes lead to Gaussian process. Conversely, with equal
-variance multivariate samples, the more non-Gaussian a signal extracted
-from the data, the less independent -and non-Gaussian- variables it
-contains.&lt;/p&gt;
-&lt;p&gt;A good discussion of these arguments can be found in following paper:
-&lt;a class="reference external" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/IJCNN99_tutorial3.html"&gt;http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/IJCNN99_tutorial3.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;ICA is thus an optimization algorithm that from the data extracts the
-direction with the least-Gaussian PDF, removes the data explained by this
-variable from the signal, and iterates.&lt;/p&gt;
-&lt;p&gt;Applying ICA to the previous model yields the following:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/ica_on_non_gaussian_data.png" style="width: 80%;" /&gt;
-&lt;p&gt;We can see that ICA has well identified the original independent data
-variables. Its use of the tails of the distribution was paramount for
-this task. In addition, ICA relaxes the constraint that all identified
-directions must be perpendicular. This flexibility was also important to
-match our data.&lt;/p&gt;
-&lt;div class="admonition note"&gt;
-&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;This discussion can now be seen as an &lt;a class="reference external" href="http://scikit-learn.org/stable/auto_examples/decomposition/plot_ica_vs_pca.html"&gt;example of the scikit-learn&lt;/a&gt;.
-Thus you can replicate the figure using the code in the scikit.&lt;/p&gt;
-&lt;/div&gt;
-&lt;!-- vim:set spell:
-vim:set autoindent: --&gt;
-&lt;/div&gt;
-</content><category term="science"></category><category term="machine learning"></category><category term="scientific computing"></category><category term="selected"></category></entry></feed>
+</content><category term="programming"></category><category term="python"></category><category term="science"></category><category term="scientific computing"></category><category term="conferences"></category></entry></feed>
