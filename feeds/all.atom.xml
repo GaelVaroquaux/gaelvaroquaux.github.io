@@ -1,5 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-10-29T00:00:00+01:00</updated><entry><title>Maïc, you lived 100 years, what changed?</title><link href="https://gael-varoquaux.info/personnal/maic-you-lived-100-years-what-changed.html" rel="alternate"></link><published>2025-10-29T00:00:00+01:00</published><updated>2025-10-29T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-10-29:/personnal/maic-you-lived-100-years-what-changed.html</id><summary type="html">&lt;p&gt;At Maïc’s 100th birthday, I asked her “you lived 100 years, what was the most important change for you?”. She mentioned “Internet”. I asked, why was the Internet important to her eyes? Because this is how she kept close contact with her loved ones, sharing travels or discussing everyday …&lt;/p&gt;</summary><content type="html">&lt;p&gt;At Maïc’s 100th birthday, I asked her “you lived 100 years, what was the most important change for you?”. She mentioned “Internet”. I asked, why was the Internet important to her eyes? Because this is how she kept close contact with her loved ones, sharing travels or discussing everyday life on her phone, her tablet…&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2026-02-01T00:00:00+01:00</updated><entry><title>2025 highlights: AI research and code</title><link href="https://gael-varoquaux.info/science/2025-highlights-ai-research-and-code.html" rel="alternate"></link><published>2026-02-01T00:00:00+01:00</published><updated>2026-02-01T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2026-02-01:/science/2025-highlights-ai-research-and-code.html</id><summary type="html">&lt;div class="figure align-right"&gt;
+&lt;img alt="" class="small" src="attachments/2025_highlights/eiffel_tower_ai.jpg" /&gt;
+&lt;p class="caption"&gt;AI is everywhere. Can you see it here?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;Some highlights about my work in 2025: progress on
+tabular-learning stands out, a publication on unpacking trade-off and
+consequences of scale in AI, and of course progress on the open-source
+data-science and machine learning stack.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;As 2026 starts, I’m looking …&lt;/p&gt;</summary><content type="html">&lt;div class="figure align-right"&gt;
+&lt;img alt="" class="small" src="attachments/2025_highlights/eiffel_tower_ai.jpg" /&gt;
+&lt;p class="caption"&gt;AI is everywhere. Can you see it here?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;Some highlights about my work in 2025: progress on
+tabular-learning stands out, a publication on unpacking trade-off and
+consequences of scale in AI, and of course progress on the open-source
+data-science and machine learning stack.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;As 2026 starts, I’m looking back on 2025. It was all about AI, with
+research in the &lt;a class="reference external" href="https://team.inria.fr/soda/"&gt;soda team&lt;/a&gt; on tabular
+machine learning stimulating better software.&lt;/p&gt;
+&lt;div class="contents topic" id="highlights"&gt;
+&lt;p class="topic-title"&gt;Highlights&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#beyond-maths-unpacking-the-scale-narrative-in-ai" id="toc-entry-1"&gt;Beyond maths: Unpacking the scale narrative in AI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#tabular-learning-research" id="toc-entry-2"&gt;Tabular-learning research&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#tabicl-open-source-table-foundation-model" id="toc-entry-3"&gt;TabICL:  open-source table foundation model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#retrieve-merge-predict-tradeoffs-of-predictions-from-data-lakes" id="toc-entry-4"&gt;Retrieve merge predict: tradeoffs of predictions from data lakes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#growing-the-machine-learning-and-data-science-stack" id="toc-entry-5"&gt;Growing the machine learning and data science stack&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#skrub-machine-learning-with-tables" id="toc-entry-6"&gt;Skrub: machine learning with tables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#fundamental-progress-in-scikit-learn" id="toc-entry-7"&gt;Fundamental progress in scikit-learn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="beyond-maths-unpacking-the-scale-narrative-in-ai"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;Beyond maths: Unpacking the scale narrative in AI&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Plotting the increase of the scale of notable AI systems in the last
+years reveals a staggering explosion. AI’s size has been growing super
+exponentially on a variety of dimensions: training compute, training cost
+(figure below), inference cost, amount of data used. Studying the wording
+used in pivotal publications as well as company communications shows that
+it anchors AI success in this growth, thus &lt;strong&gt;settings implicit social
+norms around scale&lt;/strong&gt;. But systematic analysis of benchmark results show
+that &lt;strong&gt;scale does not always bring benefit&lt;/strong&gt;. The narrative of scale is
+simplified and leaves aside many important ingredients of success of AI
+systems. In addition, the race for scale comes with planetary and
+societal consequences, which we study and &lt;a class="reference external" href="https://dl.acm.org/doi/10.1145/3715275.3732006"&gt;document&lt;/a&gt;. Ever-increasing
+inference costs threaten economic and electricity sustainability. An
+unstoppable appetite for training data leads to fitting models on
+enormous datasets that elude quality control, engulfing undesirable
+facets of internet (including child pornography) or eroding privacy. The
+race for scale has financial consequences, benefiting above all actors of
+compute, but also structuring an ecosystem where cash-rich and GPU-rich
+actors have leverage on priorities, industrial or academic. These actors
+sometimes have circular investments strategies: funding third parties
+that will spend all this funding in compute, which can fuel &lt;strong&gt;an
+investment bubble in AI&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="attachments/2025_highlights/cost_ai.png" style="width: 400px;" /&gt;
+&lt;p class="caption"&gt;Evolution of the training cost (in dollars) of notable AI systems
+across the years&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;We conclude our study, &lt;a class="reference external" href="https://dl.acm.org/doi/10.1145/3715275.3732006"&gt;published at FAccT&lt;/a&gt;, by underlining that &lt;strong&gt;academic
+research has a central role to play in these dynamics and must shape a
+healthy and grounded narrative&lt;/strong&gt;. We recommend to:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;pursue basic AI research of interest independent of scale, &lt;em&gt;eg&lt;/em&gt;
+uncertainty quantification, causality…&lt;/li&gt;
+&lt;li&gt;hold responsible norms, in particular avoiding asking for compute
+increase when editing or reviewing,&lt;/li&gt;
+&lt;li&gt;always publish measures of compute to document the tradeoffs.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="attachments/2025_highlights/pareto_schema.png" style="width: 400px;" /&gt;
+&lt;p class="caption"&gt;We need to document and explore the tradeoffs&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In addition, I personally want to push those tradeoffs in the direction
+of resource efficient progress, and not only resource intensive progress
+(as illustrated on the figure alongside),
+which is the easy route to task performance, but not the one that brings
+most value.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tabular-learning-research"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;Tabular-learning research&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="tabicl-open-source-table-foundation-model"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;TabICL:  open-source table foundation model&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Recent tabular-learning models have been bringing better performance. A
+poster example is that of the TabPFN series of models, that rely on
+pretrained transformers to bring excellent performance. However, the
+quadratic complexity of the transformers is a bottleneck. I do fear that
+the agenda of fancy tabular learning is leading us into a race for scale
+again.&lt;/p&gt;
+&lt;p&gt;With the &lt;a class="reference external" href="https://icml.cc/virtual/2025/poster/46681"&gt;TabICL model&lt;/a&gt; we
+strives to decrease this computational cost. We showed that a multi-stage
+architecture can build a pre-trained in-context predictor where the
+separation of states decreases the quadratic cost. The model can be
+pretrained on larger datasets, and thus results in the best performer in
+settings of larger tables. The model is faster than alternatives, in
+particular when using a CPU rather than a GPU. In addition, we released
+in &lt;strong&gt;open source all the code&lt;/strong&gt;, including the pretraining.&lt;/p&gt;
+&lt;p&gt;TabICL gives a table foundation model that is easy to use on modest or
+big hardware and that can be easily customized.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="retrieve-merge-predict-tradeoffs-of-predictions-from-data-lakes"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;Retrieve merge predict: tradeoffs of predictions from data lakes&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A full data-science pipeline must often assemble data across multiple
+source tables:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Alice is working on a base table that contains information about
+movies. She has also access to a data lake, or a collection of other
+tables on all sorts of subjects. She wants to predict the ranking of
+a movie based on as much information as possible. She would like to
+extract information from the data lake to the performance of her
+model.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The challenge is that the information of interest is mixed with a
+huge amount of unrelated data. Thus, Alice’s problem is: “how to find
+tables that are relevant to my problem? how to combine them with the
+base table?”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When the user is faced with a complex data lake, many
+tables and little explicit link between them, it is difficult to find the
+best assembly for a given machine-learning task. This problem requires
+not only finding which table must be joined in the main table of interest
+–a table retrieval problem–, but also how to aggregate multiple records
+when tables are linked through a many-to-one relation. While table
+retrieval is a classic problem of the data management literature, it had
+been understudied in the case of supervised machine learning. We
+assembled a systematic –and open– benchmark with data lakes emph{and}
+supervised-learning tasks (&lt;a class="reference external" href="https://openreview.net/pdf?id=4uPJN6yfY1"&gt;publication&lt;/a&gt;, &lt;a class="reference external" href="https://soda-inria.github.io/retrieve-merge-predict/"&gt;benchmark material&lt;/a&gt; ).&lt;/p&gt;
+&lt;p&gt;We found that supervised learning does change the picture compared to
+classic table-retrieval settings in that for a fixed compute budget, it
+is worth avoiding fancy retrieval methods, which can be very
+computationally costly, and rather using better supervised learning
+methods, which can be comparatively less expensive while being
+able to extract the relevant information from a noisy retrieval.&lt;/p&gt;
+&lt;div class="figure align-center"&gt;
+&lt;img alt="" src="attachments/2025_highlights/yadl_benchmark.png" style="width: 700px;" /&gt;
+&lt;p class="caption"&gt;A schema of the pipeline&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The pipeline that we studied here is one that is broader than the
+typical machine-learning modeling step. In my experience, data-science
+applications are often much more complex than mere tabular learning, and
+for these reason, we develop the skrub software, described below.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="growing-the-machine-learning-and-data-science-stack"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;Growing the machine learning and data science stack&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="skrub-machine-learning-with-tables"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;Skrub: machine learning with tables&lt;/a&gt;&lt;/h3&gt;
+&lt;a class="reference external image-reference" href="https://skrub-data.org"&gt;&lt;img alt="" class="align-right" src="attachments/skrub_logo.png" style="width: 150px;" /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://skrub-data.org"&gt;Skrub&lt;/a&gt; is a recent library to blend machine
+learning with data-frame computing. In 2025, we have ironed existing
+features to make them more performant and really easy to use. For
+instance the &lt;a class="reference external" href="https://skrub-data.org/stable/reference/generated/skrub.TableVectorizer.html"&gt;TableVectorizer&lt;/a&gt;
+is incredibly useful to build tabular machine-learning pipelines. But we
+have also added exciting new features:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;The &lt;a class="reference external" href="https://skrub-data.org/stable/reference/generated/skrub.ApplyToCols.html"&gt;ApplyToCols&lt;/a&gt; is an object that can use skrub’s powerful &lt;a class="reference external" href="https://skrub-data.org/stable/modules/multi_column_operations/selectors.html"&gt;selectors&lt;/a&gt; to apply transforms to some columns but not others. I find myself using it all the time.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://skrub-data.org/stable/data_ops.html"&gt;DataOps&lt;/a&gt; are an
+incredibly powerful way of blending dataframe transformation and
+scikit-learn fit/transform/predict API, to build complete machine
+learning pipeline across multiple tables. The benefit is that, unlike
+standard data wrangling code, they can be applied to new data,
+cross-validated, or any component of the pipeline can be tuned to
+maximize a prediction score. We even have added optuna support for this
+tuning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="fundamental-progress-in-scikit-learn"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-7"&gt;Fundamental progress in scikit-learn&lt;/a&gt;&lt;/h3&gt;
+&lt;a class="reference external image-reference" href="https://scikit-learn.org"&gt;&lt;img alt="" class="align-right" src="attachments/scikit-learn-logo.png" style="width: 150px;" /&gt;&lt;/a&gt;
+&lt;p&gt;What strikes me in the 2025 releases of &lt;a class="reference external" href="https://scikit-learn.org"&gt;scikit-learn&lt;/a&gt; is that we have been
+making progress on fundamental improvements to the core features:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Faster linear models and tree based model due to better algorithms
+(which, in certain cases give massive speedups).&lt;/li&gt;
+&lt;li&gt;Ramping up GPU support: we are progressively adding to scikit-learn a
+compute backend that enable GPU computing (an intro &lt;a class="reference external" href="https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_1_8_0.html#array-api-support-enables-gpu-computations"&gt;here&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Free-threaded: we now support the “free-threaded” version of Python,
+which removes a central lock and opens the door to
+heavily-multithreaded parallel computing. More of the ecosystem needs
+to support Python free-threaded for it to be widely used, but I am
+hoping that in the mid-term we’ll see great improvements to parallel
+computing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Exciting times :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="python"></category><category term="yearly report"></category></entry><entry><title>Maïc, you lived 100 years, what changed?</title><link href="https://gael-varoquaux.info/personnal/maic-you-lived-100-years-what-changed.html" rel="alternate"></link><published>2025-10-29T00:00:00+01:00</published><updated>2025-10-29T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-10-29:/personnal/maic-you-lived-100-years-what-changed.html</id><summary type="html">&lt;p&gt;At Maïc’s 100th birthday, I asked her “you lived 100 years, what was the most important change for you?”. She mentioned “Internet”. I asked, why was the Internet important to her eyes? Because this is how she kept close contact with her loved ones, sharing travels or discussing everyday …&lt;/p&gt;</summary><content type="html">&lt;p&gt;At Maïc’s 100th birthday, I asked her “you lived 100 years, what was the most important change for you?”. She mentioned “Internet”. I asked, why was the Internet important to her eyes? Because this is how she kept close contact with her loved ones, sharing travels or discussing everyday life on her phone, her tablet…&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -10768,68 +10972,4 @@ research. This research goes beyond my dreams.&lt;/p&gt;
 &lt;embed src="http://www.youtube.com/v/AOtQAhblRps&amp;amp;hl=en_US&amp;amp;fs=1&amp;amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"&gt;
 &lt;/embed&gt;
 &lt;/object&gt;
-&lt;/p&gt;</content><category term="programming"></category><category term="mayavi"></category><category term="scipy"></category><category term="python"></category><category term="scientific computing"></category><category term="art"></category></entry><entry><title>EuroScipy 2010, Paris July 8-11. Save the date!</title><link href="https://gael-varoquaux.info/programming/euroscipy-2010-paris-july-8-11-save-the-date.html" rel="alternate"></link><published>2010-02-14T00:02:00+01:00</published><updated>2010-02-14T00:02:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-02-14:/programming/euroscipy-2010-paris-july-8-11-save-the-date.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;EuroScipy 2010&lt;/strong&gt;, the 3rd European meeting on Python in Science, will
-be held July 8-11 in the center of Paris, at the &lt;a class="reference external" href="http://www.ens.fr/?lang=en"&gt;Ecole Normale
-Supérieure&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;We have made good progress in the organization, and we already have &lt;a class="reference external" href="http://www.euroscipy.org/conference/867?vid=primary"&gt;an
-exciting program&lt;/a&gt; although paper submission is not yet even open.&lt;/p&gt;
-&lt;div class="section" id="tutorial-tracks"&gt;
-&lt;h2&gt;Tutorial tracks …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;EuroScipy 2010&lt;/strong&gt;, the 3rd European meeting on Python in Science, will
-be held July 8-11 in the center of Paris, at the &lt;a class="reference external" href="http://www.ens.fr/?lang=en"&gt;Ecole Normale
-Supérieure&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;We have made good progress in the organization, and we already have &lt;a class="reference external" href="http://www.euroscipy.org/conference/867?vid=primary"&gt;an
-exciting program&lt;/a&gt; although paper submission is not yet even open.&lt;/p&gt;
-&lt;div class="section" id="tutorial-tracks"&gt;
-&lt;h2&gt;Tutorial tracks&lt;/h2&gt;
-&lt;p&gt;There will be two tutorials tracks:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.euroscipy.org/track/871"&gt;An introductory track&lt;/a&gt;, to bring attendees up to speed with Python
-in science. Even if you are a complete beginner, after these two
-days, you should be able to be efficient using Python for scientific
-purposes.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.euroscipy.org/track/872"&gt;An advanced tutorial track&lt;/a&gt;, covering in-depth specific tools and
-projects, aimed at experienced users and presented by leading experts
-of the topic.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We will soon be requesting feedback from you to help us choose between
-the different thrilling tutorial propositions that we have for these
-tracks. More on that later…&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="keynote-speakers"&gt;
-&lt;h2&gt;Keynote speakers&lt;/h2&gt;
-&lt;div class="section" id="hans-petter-langtangen"&gt;
-&lt;h3&gt;Hans Petter Langtangen&lt;/h3&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://simula.no/"&gt;Simula laboratory&lt;/a&gt;, Oslo, director of scientific computing and
-bio-medical research&lt;/li&gt;
-&lt;li&gt;Author of the famous book &lt;a class="reference external" href="http://www.springer.com/mathematics/numerical+and+computational+mathematics/book/978-3-540-73915-9"&gt;Python scripting for computational
-science&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="konrad-hinsen"&gt;
-&lt;h3&gt;Konrad Hinsen&lt;/h3&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.synchrotron-soleil.fr/"&gt;Synchrotron SOLEIL&lt;/a&gt; and &lt;a class="reference external" href="http://dirac.cnrs-orleans.fr/plone"&gt;Centre de Biophysique Moléculaire&lt;/a&gt;
-(Orléans)&lt;/li&gt;
-&lt;li&gt;One of the fathers of numeric, and developer of &lt;a class="reference external" href="http://dirac.cnrs-orleans.fr/plone/software/scientificpython/"&gt;Scientific Python.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="help-us-spread-the-word"&gt;
-&lt;h2&gt;Help us spread the word&lt;/h2&gt;
-&lt;p&gt;The poster of the conference can be downloaded:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/poster_euroscipy_2010.pdf"&gt;&lt;img alt="" src="attachments/poster_euroscipy_2010.jpg" /&gt;&lt;/a&gt;
-&lt;p&gt;Help us spread the word: print it and post it at your workplace!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="the-exciting-city-of-paris"&gt;
-&lt;h2&gt;The exciting city of Paris&lt;/h2&gt;
-&lt;p&gt;The conference will take place in the center of Paris, in the very
-lively “quartier latin”, in the prestigious and historical ‘Ecole
-Normale Supérieure’. In the morning, on your way to ENS, drop by a café
-for a French croissant, served by a French waiter with a typical French
-accent in English. In the evenings, walk one block to enjoy the night
-life “rue Mouffetard”, or venture further to stroll on the river banks
-of the Seine, along which people dance to street music.&lt;/p&gt;
-&lt;img alt="" src="attachments/banner_euroscipy.jpg" /&gt;
-&lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="science"></category><category term="scientific computing"></category><category term="conferences"></category></entry></feed>
+&lt;/p&gt;</content><category term="programming"></category><category term="mayavi"></category><category term="scipy"></category><category term="python"></category><category term="scientific computing"></category><category term="art"></category></entry></feed>
