@@ -1,5 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - programming</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2024-07-03T00:00:00+02:00</updated><entry><title>Skrub 0.2.0: tabular learning made easy</title><link href="https://gael-varoquaux.info/programming/skrub-020-tabular-learning-made-easy.html" rel="alternate"></link><published>2024-07-03T00:00:00+02:00</published><updated>2024-07-03T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-03:/programming/skrub-020-tabular-learning-made-easy.html</id><summary type="html">&lt;img alt="" class="align-center" src="attachments/skrub_schematic.png" style="width: 500px;" /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - programming</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/programming.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2026-01-14T00:00:00+01:00</updated><entry><title>Stepping up as probabl’s CSO to supercharge scikit-learn and its ecosystem</title><link href="https://gael-varoquaux.info/programming/stepping-up-as-probabls-cso-to-supercharge-scikit-learn-and-its-ecosystem.html" rel="alternate"></link><published>2026-01-14T00:00:00+01:00</published><updated>2026-01-14T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2026-01-14:/programming/stepping-up-as-probabls-cso-to-supercharge-scikit-learn-and-its-ecosystem.html</id><summary type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="../programming/attachments/probabl_team_2025.png" style="width: 400px;" /&gt;
+&lt;p class="caption"&gt;Probabl’s get together, in falls 2025&lt;/p&gt;
+&lt;/div&gt;
+&lt;p class="last"&gt;I’m thrilled to announce that I’m stepping up as &lt;a class="reference external" href="https://probabl.ai/?utm_source=employee_blog&amp;amp;utm_medium=social_employee&amp;amp;utm_campaign=202601_probabl_awareness_post"&gt;Probabl&lt;/a&gt;’s CSO (Chief Science Officer) to supercharge
+scikit-learn and its ecosystem, pursuing my dreams of tools that help go
+from data to impact.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="scikit-learn-a-central-tool"&gt;
+&lt;h2&gt;Scikit-learn, a central tool&lt;/h2&gt;
+&lt;p&gt;Scikit-learn is central …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="../programming/attachments/probabl_team_2025.png" style="width: 400px;" /&gt;
+&lt;p class="caption"&gt;Probabl’s get together, in falls 2025&lt;/p&gt;
+&lt;/div&gt;
+&lt;p class="last"&gt;I’m thrilled to announce that I’m stepping up as &lt;a class="reference external" href="https://probabl.ai/?utm_source=employee_blog&amp;amp;utm_medium=social_employee&amp;amp;utm_campaign=202601_probabl_awareness_post"&gt;Probabl&lt;/a&gt;’s CSO (Chief Science Officer) to supercharge
+scikit-learn and its ecosystem, pursuing my dreams of tools that help go
+from data to impact.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="scikit-learn-a-central-tool"&gt;
+&lt;h2&gt;Scikit-learn, a central tool&lt;/h2&gt;
+&lt;p&gt;Scikit-learn is central to data-scientists’ work: it is &lt;strong&gt;the most used
+machine-learning package&lt;/strong&gt;. It has grown over more than a decade,
+supported by volunteers’ time, donations, and grant funding, with a
+central role of Inria.&lt;/p&gt;
+&lt;div class="figure align-right"&gt;
+&lt;img alt="" src="../programming/attachments/scikit-learn_clickpy_2025.png" style="width: 350px;" /&gt;
+&lt;p class="caption"&gt;Scikit-learn download numbers; &lt;a class="reference external" href="https://clickpy.clickhouse.com/dashboard/scikit-learn"&gt;reproduce and explore on clickpy&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;And the usage numbers keep going up…&lt;/p&gt;
+&lt;p&gt;Scikit-learn keeps growing because it enables crucial applications:
+machine-learning that can be easily adapted to a given application. This
+type of AI does not make the headlines, but it is central to the value
+brought by data science. It is used across the board to extract insights
+from data and automate business-specific processes, thus ensuring
+function and efficiency of a wide variety of activities.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;And scikit-learn is quietly but steadily advancing. The recent releases
+bring progress in all directions: computational foundations (&lt;a class="reference external" href="https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_1_8_0.html#array-api-support-enables-gpu-computations"&gt;the array
+API enabling GPU support&lt;/a&gt;),
+user interface (&lt;a class="reference external" href="https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_1_8_0.html#html-representation-of-estimators"&gt;rich HTML displays&lt;/a&gt;),
+new models (eg &lt;a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.HDBSCAN.html"&gt;HDBSCAN&lt;/a&gt;,
+&lt;a class="reference external" href="https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_1_8_0.html#temperature-scaling-in-calibratedclassifiercv"&gt;temperature-scaling recalibration&lt;/a&gt; …), and always algorithmic
+improvements (release 1.8 brought &lt;a class="reference external" href="https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_1_8_0.html#efficiency-improvements-in-linear-models"&gt;marked speed ups to linear models&lt;/a&gt; or
+&lt;a class="reference external" href="https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_1_8_0.html#decisiontreeregressor-with-criterion-absolute-error"&gt;trees with MAE&lt;/a&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="a-new-opportunity-to-boost-scikit-learn-and-its-ecosystem"&gt;
+&lt;h2&gt;A new opportunity to boost scikit-learn and its ecosystem&lt;/h2&gt;
+&lt;p&gt;Probabl recently raised a &lt;a class="reference external" href="https://blog.probabl.ai/probabl-raises-a-13m-in-seed-to-accelerate-enterprise-grade-ai?utm_source=employee_blog&amp;amp;utm_medium=social_employee&amp;amp;utm_campaign=202601_blog_awareness_post"&gt;beautiful seed funding&lt;/a&gt;
+from investors who really understand the value and perspective of
+scikit-learn. We have a unique opportunity to accelerate scikit-learn’s
+development. Our analysis is that &lt;strong&gt;enterprises need dedicated tooling and
+partners to build best on scikit-learn&lt;/strong&gt;, and we’re hard at work to provide
+this.&lt;/p&gt;
+&lt;p&gt;2/3rd of probabl’s founders are scikit-learn contributors and we have
+been investing in all aspects of scikit-learn: features, releases,
+communication, documentation, and training. In addition, part of
+scikit-learn’s success has always been to nurture an ecosystem, for
+instance via its simple API that has become a standard. Thus Probabl is
+not only consolidating scikit-learn, but also this ecosystem: the &lt;a class="reference external" href="https://skops.readthedocs.io/en/stable/"&gt;skops
+project, to put scikit-learn based models in production&lt;/a&gt;, the &lt;a class="reference external" href="https://skrub-data.org"&gt;skrub project, that
+facilitates data preparation&lt;/a&gt;, the &lt;a class="reference external" href="https://skore.probabl.ai/?utm_source=employee_blog&amp;amp;utm_medium=social_employee&amp;amp;utm_campaign=202601_skore_awareness_post"&gt;young skore
+project to track data science&lt;/a&gt;, &lt;a class="reference external" href="https://fairlearn.org/"&gt;fairlearn
+to help avoiding machine learning that discriminates&lt;/a&gt;, and more upstream projects, such as &lt;a class="reference external" href="https://joblib.readthedocs.io/en/stable/"&gt;joblib
+for parallel computing&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="my-obsession-as-probabl-cso-serving-the-data-scientists"&gt;
+&lt;h2&gt;My obsession as Probabl CSO: serving the data scientists&lt;/h2&gt;
+&lt;p&gt;As CSO (Chief Science Officer) at Probabl, my role is to nourish our
+development strategy with understanding of machine learning, data
+science, and open source. Making sure that &lt;strong&gt;scikit-learn and its
+ecosystem are enterprise ready&lt;/strong&gt; will bring resources for scikit-learn’s
+sustainability, enabling its ecosystem to grow into a standard-setting
+platform for the industry, that continues &lt;strong&gt;to serve data scientists&lt;/strong&gt;.
+This mission will require consolidating the existing tools and patterns,
+and inventing new ones.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Probabl is in a unique position for this endeavor: Our core is an amazing
+team of engineers with deep knowledge of data science. Working directly
+with businesses gives us an acute understanding of where the ecosystem
+can be improved. On this topic, I also profoundly enjoy working with
+people who have a different DNA than the historical DNA of scikit-learn,
+with product research, marketing, and business mindsets. I believe that
+the union of our different cultures will make the scikit-learn ecosystem
+better.&lt;/p&gt;
+&lt;p&gt;Beyond the Probabl team, we have an amazing community, with a broader
+group of scikit-learn contributors who do an amazing job bringing
+together what makes scikit-learn so versatile, with a deep ecosystem of
+Python data tools enriched by so many different actors. I’m deeply
+greatful to the many scikit-learn and pydata contributors. At Probabl, we
+are very attuned to enabling the open-source contributor community. Such
+a community is what enables a single tool, scikit-learn, to serve a long
+tail of diverse usages.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="programming"></category><category term="open source"></category><category term="growth"></category><category term="communities"></category><category term="scikit-learn"></category><category term="inria"></category><category term="probabl"></category></entry><entry><title>Skrub 0.2.0: tabular learning made easy</title><link href="https://gael-varoquaux.info/programming/skrub-020-tabular-learning-made-easy.html" rel="alternate"></link><published>2024-07-03T00:00:00+02:00</published><updated>2024-07-03T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-03:/programming/skrub-020-tabular-learning-made-easy.html</id><summary type="html">&lt;img alt="" class="align-center" src="attachments/skrub_schematic.png" style="width: 500px;" /&gt;
 &lt;p&gt;We just released &lt;a class="reference external" href="https://skrub-data.org"&gt;skrub 0.2.0&lt;/a&gt;. This release
 markedly simplifies learning on complex dataframes.&lt;/p&gt;
 &lt;div class="section" id="model-tabular-learner-classifier"&gt;
@@ -7929,117 +8030,4 @@ easy, and if everybody does this, you’ll save time too.&lt;/p&gt;
 &lt;p&gt;In the long run we would like to get scipy itself under the same
 mechanism, and I would love to open the service to other major Python
 scientific computing librairies that form the scipy ecosystem.&lt;/p&gt;
-</content><category term="programming"></category><category term="scipy"></category><category term="publishing"></category></entry><entry><title>My travels this summer</title><link href="https://gael-varoquaux.info/programming/my-travels-this-summer.html" rel="alternate"></link><published>2008-10-05T23:24:00+02:00</published><updated>2008-10-05T23:24:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-10-05:/programming/my-travels-this-summer.html</id><summary type="html">&lt;p&gt;This summer has been hectic (life is hectic anyhow!). As I was switching
-fields from physics to neuro-imaging, I took the chance to travel to the
-US and to spend the summer doing Python-related stuff.&lt;/p&gt;
-&lt;div class="section" id="austin-enthought"&gt;
-&lt;h2&gt;Austin - Enthought&lt;/h2&gt;
-&lt;p&gt;I spent most of my time this summer at &lt;a class="reference external" href="http://www.enthought.com"&gt;Enthought&lt;/a&gt;, in Austin, Texas …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;This summer has been hectic (life is hectic anyhow!). As I was switching
-fields from physics to neuro-imaging, I took the chance to travel to the
-US and to spend the summer doing Python-related stuff.&lt;/p&gt;
-&lt;div class="section" id="austin-enthought"&gt;
-&lt;h2&gt;Austin - Enthought&lt;/h2&gt;
-&lt;p&gt;I spent most of my time this summer at &lt;a class="reference external" href="http://www.enthought.com"&gt;Enthought&lt;/a&gt;, in Austin, Texas.
-Actually it was the Enthought guys who really made my fantastic summer
-possible by paying me a good salary and thus indirectly funding my
-travels. Thanks Enthought, you guys rock.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/enthought-longhorn1.png"&gt;&lt;img alt="" src="attachments/enthought-longhorn1.png" /&gt;&lt;/a&gt;
-&lt;p&gt;Austin is a nice city. It’s got a very nice night life (thought the
-tequilla doesn’t match Jarrod’s expectations, and they don’t always
-accept South Africans in bars because they look like kids and “any
-college kid could fake this ID”).&lt;/p&gt;
-&lt;p&gt;I don’t know if it is particular to the Enthought guys, or it is just
-Texans in general, but the hospitality was simply incredible. I spent
-the summer at Eric Jones’ place (I had a separate little cabin for me,
-fantastic). I enjoyed a lot interacting with Eric’s family: Courtney and
-the kids, Zach and Liz. It was fun to be at a place with young children.
-By the way, they go around in scipy T-shirts and love when daddy’s
-friends (aka geeks) come around at the house. I bet they know the scipy
-community better than I do.&lt;/p&gt;
-&lt;p&gt;Of course, there is a catch: Eric lives out in the boonies (just in case
-you don’t speak Texan, this means “out in the bush”, ie in a remote
-location). It might even have been a trap: he lives in a &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Dry_counties"&gt;dry county&lt;/a&gt;.
-Moreover, I woke up one morning to find this in my living room:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/scorpion-300x240.jpg"&gt;&lt;img alt="" src="attachments/scorpion-300x240.jpg" /&gt;&lt;/a&gt;
-&lt;p&gt;It’s not deadly, I have been told, it just hurts a lot. On top of that,
-the kids brought back a dead black widow one day. Now it may seem to
-some that I am making a stupid fuss about nothing, but the scariest
-animals we have where I live are probably cats.&lt;/p&gt;
-&lt;p&gt;The Enthought office is a very pleasant place to work. It large with a
-lot of space for everybody. It is full of very nice people (I knew that
-before coming, but it was nice to have a confirmation). I had the nicest
-office I have ever had so far (they seem to be improving each time I
-change jobs, that a good sign). I’ll talk about what I did there in
-another post (I actually started a screen cast about this, but the state
-of video-editing software under Linux is abymissimal, and I could never
-edit the sound track).&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/p1010588-300x187.jpg"&gt;&lt;img alt="" src="attachments/p1010588-300x187.jpg" /&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class="section" id="visits-to-california"&gt;
-&lt;h2&gt;Visits to California&lt;/h2&gt;
-&lt;p&gt;I made two trips to California. First I went to UCLA for a summer school
-on mathematical method in neuro-imaging. It was the occasion for me to
-discover the field. One thing that stroke me was the importance of
-software in the field, and how little people are organized to limit
-duplication of efforts. On the other hand, we had a very nice
-presentation about a beautiful software engineering effort (&lt;a class="reference external" href="http://www.slicer.org"&gt;slicer&lt;/a&gt;)
-trying to build a platform to unite tools by Steve Pieper. Fernando and
-I where gritting our teethes during the talk, wondering what the license
-of the tools would be, and it turned out that Steve ended his talk with
-a discussion about why it seemed to him that the BSD was most suited. We
-were delighted.&lt;/p&gt;
-&lt;p&gt;My second visit was for the &lt;a class="reference external" href="http://conference.scipy.org"&gt;SciPy conference&lt;/a&gt; which was great fun. Fun
-to meet new people in real life, fun to meet old friends. I had the
-feeling the talks where excellent and I learned a lot of things. After
-the conference I went to Berkeley with the &lt;a class="reference external" href="http://projects.scipy.org/neuroimaging/ni/wiki"&gt;nipy&lt;/a&gt; team. Nipy stands for
-NeuroImaging in Python. It is a project led by a crack team at Berkeley
-with Chris Burns, Jarrod Millman, Fernando Perez, Tom Waite and now
-Matthew Brett. The &lt;a class="reference external" href="http://lnao.fr"&gt;team&lt;/a&gt; I am starting my new job with, in France,
-hopes to be able to integrate their software with nipy.&lt;/p&gt;
-&lt;p&gt;Berkeley is a nice place. I stayed at Fernando’s and Jarrod’s and it is
-always a pleasure to hang out with these guys. As far as work goes, we
-tried to do some 3D visualization of neuro-imaging data with Mayavi. We
-got some things done and the week ended in a party at Chris’s place
-where we greated Jarrod with a mac-book air displaying a really cool
-view of a brain. However I have the feeling I stayed just long-enough to
-understand the problems, and not to solve them. Damn, software is hard.
-Hopefuly my work will allow me to move further in this direction.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="back-in-france-and-off-to-prague"&gt;
-&lt;h2&gt;Back in France, and off to Prague&lt;/h2&gt;
-&lt;p&gt;Well, after all these travels, I got back to France. Off course the
-first thing I did with my girlfriend, Emmanuelle, was to shoot out of
-the country. I need to get away of a computer, sometimes. We went to
-Prague. It is a very beautyful city, it has good beers, and it is the
-home town of Ondrej Certik, so that made three good reasons to go there.
-We had a great week end strolling through the city, in the old streets
-or in the castles (photos &lt;a class="reference external" href="http://gael-varoquaux.info/journal/prague/index.html"&gt;here&lt;/a&gt;). Most people there speak English, but
-I was lucky-enough to order fried cheese (doesn’t that sound nice?) to a
-lady not speaking English, so we fell back on Russian as a common
-language, and it is always fun to me to speak Russian (now that’s a long
-sentence).&lt;/p&gt;
-&lt;p&gt;We had a bunch of beers with Ondrej. We spent some times talking the
-world into a better place. We discussed licensing, and agreed that
-&lt;a class="reference external" href="http://cython.org"&gt;Cython&lt;/a&gt; was sooooo cool, and talked about all things under the
-(scientific Python) sun.&lt;/p&gt;
-&lt;p&gt;In the past year I have the feeling I have been all over the place. I
-changed jobs three times, moved houses once in France and twice abroad,
-and visited a lot of countries for the fun of it. In the near future I
-am planning to settle down in France to get some work done.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="we-need-help"&gt;
-&lt;h2&gt;We need help&lt;/h2&gt;
-&lt;p&gt;Speaking of work, I am starting a new career in a new academic field.
-This is going to require a lot of focus from me, and it will not leave
-too much time for open source work in the near future. We need help!
-There are many ways to help and not all of them involve coding. I think
-I spend not more than 50% of my open-source-devoted time on coding. We
-need better docs. We need more marketing (we are really bad at this: we
-have fantastic tools, but it is hard to see them). We need people to
-help each-others on the mailing lists. We need packaging. All this is
-paramount and takes a lot of time… And we need coding.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/s_p10105761-225x300.jpg"&gt;&lt;img alt="" src="attachments/s_p10105761-225x300.jpg" /&gt;&lt;/a&gt;
-&lt;a class="reference external image-reference" href="attachments/s_p10105732-225x300.jpg"&gt;&lt;img alt="" src="attachments/s_p10105732-225x300.jpg" /&gt;&lt;/a&gt;
-&lt;a class="reference external image-reference" href="attachments/s_p10105831.jpg"&gt;&lt;img alt="" src="attachments/s_p10105831.jpg" /&gt;&lt;/a&gt;
-&lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="scipy"></category><category term="mayavi"></category><category term="personnal"></category><category term="scientific computing"></category><category term="travels"></category></entry></feed>
+</content><category term="programming"></category><category term="scipy"></category><category term="publishing"></category></entry></feed>
