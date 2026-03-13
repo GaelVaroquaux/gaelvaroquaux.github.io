@@ -237,7 +237,8 @@ choices, it is fast and scalable, efficient even without a GPU.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;This note is about the research behind TabICL &lt;a class="reference external" href="https://arxiv.org/abs/2502.05564"&gt;[Qu et al 2025]&lt;/a&gt;, work by Jingang Qu, David
-Holzmüller, myself, and Marine Le Morvan, published at ICML 2025.&lt;/p&gt;
+Holzmüller, myself, and Marine Le Morvan, published at ICML 2025, and
+available as &lt;cite&gt;open-source software &amp;lt;https://tabicl.readthedocs.io/en/latest/&amp;gt;&lt;/cite&gt;.&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
