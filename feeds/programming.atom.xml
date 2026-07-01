@@ -188,7 +188,7 @@ new enterprise, &lt;a class="reference external" href="https://probabl.ai"&gt;Pr
 sustainable development of a data-science commons.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="contents topic" id="contents"&gt;
-&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;a class="reference internal" href="#top"&gt;Contents&lt;/a&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#prelude-funding-scikit-learn-is-hard" id="toc-entry-1"&gt;Prelude: funding scikit-learn is hard&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#the-birth-of-a-new-ambition" id="toc-entry-2"&gt;The birth of a new ambition&lt;/a&gt;&lt;/li&gt;
@@ -202,7 +202,7 @@ new enterprise, &lt;a class="reference external" href="https://probabl.ai"&gt;Pr
 sustainable development of a data-science commons.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="contents topic" id="contents"&gt;
-&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;a class="reference internal" href="#top"&gt;Contents&lt;/a&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#prelude-funding-scikit-learn-is-hard" id="toc-entry-1"&gt;Prelude: funding scikit-learn is hard&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#the-birth-of-a-new-ambition" id="toc-entry-2"&gt;The birth of a new ambition&lt;/a&gt;&lt;/li&gt;
@@ -404,7 +404,9 @@ claim.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;A few days ago, François Chollet (the creator of Keras, the library that
 that democratized deep learning) &lt;a class="reference external" href="https://twitter.com/fchollet/status/1727186047115882624"&gt;posted&lt;/a&gt;:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="https://twitter.com/fchollet/status/1727186047115882624"&gt;&lt;img alt="Tweet from François Chollet: &amp;quot;People underestimate how impactful scikit-learn continues to be&amp;quot;" class="align-center" src="../programming/attachments/chollet_scikit_learn_impact.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://twitter.com/fchollet/status/1727186047115882624"&gt;
+&lt;img alt="Tweet from François Chollet: &amp;quot;People underestimate how impactful scikit-learn continues to be&amp;quot;" class="align-center" src="../programming/attachments/chollet_scikit_learn_impact.png" /&gt;
+&lt;/a&gt;
 &lt;p&gt;Indeed, scikit-learn continues to be the most popular machine …&lt;/p&gt;</summary><content type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;François Chollet rightfully said that people often underestimate the
@@ -413,11 +415,15 @@ claim.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;A few days ago, François Chollet (the creator of Keras, the library that
 that democratized deep learning) &lt;a class="reference external" href="https://twitter.com/fchollet/status/1727186047115882624"&gt;posted&lt;/a&gt;:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="https://twitter.com/fchollet/status/1727186047115882624"&gt;&lt;img alt="Tweet from François Chollet: &amp;quot;People underestimate how impactful scikit-learn continues to be&amp;quot;" class="align-center" src="../programming/attachments/chollet_scikit_learn_impact.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://twitter.com/fchollet/status/1727186047115882624"&gt;
+&lt;img alt="Tweet from François Chollet: &amp;quot;People underestimate how impactful scikit-learn continues to be&amp;quot;" class="align-center" src="../programming/attachments/chollet_scikit_learn_impact.png" /&gt;
+&lt;/a&gt;
 &lt;p&gt;Indeed, scikit-learn continues to be the most popular machine learning in
 surveys:&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
-&lt;a class="reference external image-reference" href="../programming/attachments/kaggle_survey_library_2022.png"&gt;&lt;img alt="" src="../programming/attachments/kaggle_survey_library_2022.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="../programming/attachments/kaggle_survey_library_2022.png"&gt;
+&lt;img alt="" src="../programming/attachments/kaggle_survey_library_2022.png" /&gt;
+&lt;/a&gt;
 &lt;p class="caption"&gt;Most popular machine-learning framework, according to &lt;a class="reference external" href="https://www.kaggle.com/kaggle-survey-2022"&gt;a Kaggle survey&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="admonition align-right note"&gt;
@@ -457,7 +463,9 @@ used:&lt;/p&gt;
 outdated? Surveys show that simple models such as linear models or models
 based on trees (including boosting) are actually the most used models:&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
-&lt;a class="reference external image-reference" href="../programming/attachments/popular_ml_algorithm_2022.png"&gt;&lt;img alt="" src="../programming/attachments/popular_ml_algorithm_2022.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="../programming/attachments/popular_ml_algorithm_2022.png"&gt;
+&lt;img alt="" src="../programming/attachments/popular_ml_algorithm_2022.png" /&gt;
+&lt;/a&gt;
 &lt;p class="caption"&gt;Most popular machine learning algorithm, according to &lt;a class="reference external" href="https://www.kaggle.com/code/dhirajkumar612/kaggle-survey-2022-data-analysis"&gt;a kaggle
 survey&lt;/a&gt;
 (apologies for the small fonts on the figure, I did not generate it)&lt;/p&gt;
@@ -472,7 +480,9 @@ different properties than images or text: it comes with heterogeneous
 columns which make sense by themselves, and tree-based models have the
 right inductive bias &lt;a class="reference external" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html"&gt;[Grinsztajn et al 2023]&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="figure align-center"&gt;
-&lt;a class="reference external image-reference" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html"&gt;&lt;img alt="" src="../programming/attachments/benchmark_tree_models.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html"&gt;
+&lt;img alt="" src="../programming/attachments/benchmark_tree_models.png" /&gt;
+&lt;/a&gt;
 &lt;p class="caption"&gt;&lt;strong&gt;Benchmark comparing models on tabular data while tuning
 hyper-parameters&lt;/strong&gt; (from &lt;a class="reference external" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract-Datasets_and_Benchmarks.html"&gt;Grinsztajn et al 2023&lt;/a&gt;) Each value corresponds to the test score of the
 best model (on the validation set) after a specific time spent doing
@@ -804,7 +814,9 @@ harder than it seems.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="a-good-fit"&gt;
 &lt;h2&gt;A good fit&lt;/h2&gt;
-&lt;a class="reference external image-reference" href="https://www.flickr.com/photos/randychiu/4602851011/"&gt;&lt;img alt="One Man Band, CCby2.0 from randychiu" class="align-right" src="../programming/attachments/one_man_band.jpg" style="width: 250px;" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://www.flickr.com/photos/randychiu/4602851011/"&gt;
+&lt;img alt="One Man Band, CCby2.0 from randychiu" class="align-right" src="../programming/attachments/one_man_band.jpg" style="width: 250px;" /&gt;
+&lt;/a&gt;
 &lt;p&gt;We are looking for someone into open source, but also who likes writing
 blog posts, social networks, organizing events, presenting scikit-learn,
 and improving processes.&lt;/p&gt;
@@ -850,7 +862,7 @@ there are communication challenges can help, as well as applying a few
 simple rules.&lt;/p&gt;
 &lt;img alt="" class="align-right" src="../programming/attachments/communication.png" style="width: 300px;" /&gt;
 &lt;div class="contents topic" id="contents"&gt;
-&lt;p class="topic-title"&gt;Contents&lt;/p&gt;
+&lt;p class="topic-title"&gt;&lt;a class="reference internal" href="#top"&gt;Contents&lt;/a&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#maintainer-s-anxiety" id="toc-entry-1"&gt;Maintainer’s anxiety&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#contributor-s-fatigue" id="toc-entry-2"&gt;Contributor’s fatigue&lt;/a&gt;&lt;/li&gt;
@@ -1974,7 +1986,9 @@ revenue of today’s Internet information engines comes from advertising.
 For this purpose they are designed to learn as much as possible about the
 reader. Then they sell this information bundled with a slot where the
 buyer can insert the optimal message to influence the reader.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="https://www.flickr.com/photos/benterrett/6929895752/"&gt;&lt;img alt="" class="align-right" src="https://farm8.staticflickr.com/7212/6929895752_2e359557b8_z_d.jpg" style="width: 25%;" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://www.flickr.com/photos/benterrett/6929895752/"&gt;
+&lt;img alt="" class="align-right" src="https://farm8.staticflickr.com/7212/6929895752_2e359557b8_z_d.jpg" style="width: 25%;" /&gt;
+&lt;/a&gt;
 &lt;p&gt;The Trump campaign used targeted Facebook ads presenting to
 unenthusiastic democrats information about Clinton tuned to discourage
 them from voting. For instance, &lt;a class="reference external" href="http://www.theverge.com/2016/10/27/13434246/donald-trump-targeted-dark-facebook-ads-black-voters"&gt;portraying her as racist to black voters&lt;/a&gt;.&lt;/p&gt;
@@ -2048,7 +2062,9 @@ leading to a loss of control on veracity&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 situations and information likely to increase it&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;a class="reference external image-reference" href="https://www.flickr.com/photos/cdevers/4602805654"&gt;&lt;img alt="" class="align-center" src="https://farm2.staticflickr.com/1376/4602805654_db8b6569fb_z_d.jpg" style="width: 80%;" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://www.flickr.com/photos/cdevers/4602805654"&gt;
+&lt;img alt="" class="align-center" src="https://farm2.staticflickr.com/1376/4602805654_db8b6569fb_z_d.jpg" style="width: 80%;" /&gt;
+&lt;/a&gt;
 </content><category term="programming"></category><category term="politics"></category><category term="data science"></category><category term="software"></category><category term="machine learning"></category><category term="society"></category></entry><entry><title>Better Python compressed persistence in joblib</title><link href="https://gael-varoquaux.info/programming/new_low-overhead_persistence_in_joblib_for_big_data.html" rel="alternate"></link><published>2016-05-20T00:00:00+02:00</published><updated>2016-05-20T00:00:00+02:00</updated><author><name>Alexandre Abadie &amp; Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2016-05-20:/programming/new_low-overhead_persistence_in_joblib_for_big_data.html</id><summary type="html">&lt;p class="first last"&gt;New persistence in joblib enables low-overhead storage of big data contained in arbitrary objects&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="problem-setting-persistence-for-big-data"&gt;
 &lt;h2&gt;Problem setting: persistence for big data&lt;/h2&gt;
@@ -2082,8 +2098,8 @@ of usable data with compressed persistence:&lt;/p&gt;
 &lt;p&gt;❷ Another drawback was that large numpy arrays (&amp;gt;10MB) contained in an
 arbitrary Python object were dumped in separate &lt;tt class="docutils literal"&gt;.npy&lt;/tt&gt; file, increasing
 the load on the file system &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
-&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;joblib&lt;/span&gt; &lt;span class="c1"&gt;# joblib version: 0.9.4&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;numpy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;joblib&lt;/span&gt; &lt;span class="c1"&gt;# joblib version: 0.9.4&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;obj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ones&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;))]&lt;/span&gt;
 
 &lt;span class="c1"&gt;# 3 files are generated:&lt;/span&gt;
@@ -2109,8 +2125,8 @@ new internal implementation. --&gt;
 &lt;p&gt;❶ &lt;strong&gt;Memory usage is now stable&lt;/strong&gt;:&lt;/p&gt;
 &lt;img alt="" src="https://gael-varoquaux.info/programming/attachments/new_pickle_mem_profile.png" /&gt;
 &lt;p&gt;❷ &lt;strong&gt;All numpy arrays are persisted in a single file&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
-&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;joblib&lt;/span&gt; &lt;span class="c1"&gt;# joblib version: 0.10.0 (dev)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;numpy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;joblib&lt;/span&gt; &lt;span class="c1"&gt;# joblib version: 0.10.0 (dev)&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;obj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ones&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5000&lt;/span&gt;&lt;span class="p"&gt;))]&lt;/span&gt;
 
 &lt;span class="c1"&gt;# only 1 file is generated:&lt;/span&gt;
@@ -2245,7 +2261,7 @@ persist in an &lt;a class="reference external" href="https://github.com/joblib/j
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This also works with compression file object available in the standard library,
 like &lt;tt class="docutils literal"&gt;gzip.GzipFile&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;bz2.Bz2File&lt;/tt&gt; or &lt;tt class="docutils literal"&gt;lzma.LzmaFile&lt;/tt&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;gzip&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;gzip&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;gzip&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;GzipFile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.gz&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;wb&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;    &lt;span class="n"&gt;joblib&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dump&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/tmp/test.pkl.gz&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -2646,7 +2662,9 @@ neuroimaging easier and more powerful&lt;/strong&gt;.&lt;/p&gt;
 for a better narration (thanks to &lt;a class="reference external" href="http://sphinx-gallery.readthedocs.org/en/latest/"&gt;sphinx-gallery&lt;/a&gt;).&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
 &lt;div class="figure align-right"&gt;
-&lt;a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/decoding/plot_mixed_gambles_space_net.html"&gt;&lt;img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_mixed_gambles_space_net_001.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/decoding/plot_mixed_gambles_space_net.html"&gt;
+&lt;img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_mixed_gambles_space_net_001.png" /&gt;
+&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Space net: spatial regularizations in decoding&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The &lt;a class="reference external" href="http://nilearn.github.io/decoding/space_net.html"&gt;“SpaceNet” decoder&lt;/a&gt; does spatial
@@ -2654,20 +2672,26 @@ regularizations such as TV-l1 or Graph-Net to identify predictive regions
 in decoding.&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
 &lt;div class="figure align-right"&gt;
-&lt;a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/connectivity/plot_compare_resting_state_decomposition.html"&gt;&lt;img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_compare_resting_state_decomposition_002.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/connectivity/plot_compare_resting_state_decomposition.html"&gt;
+&lt;img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_compare_resting_state_decomposition_002.png" /&gt;
+&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Dictionnary learning for resting-state parcellations&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Dictionnary learning is a &lt;a class="reference external" href="http://nilearn.github.io/connectivity/resting_state_networks.html#beyond-ica-dictionary-learning"&gt;promising alternative to ICA to learn networks&lt;/a&gt;.&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
 &lt;div class="figure align-right"&gt;
-&lt;a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/manipulating_visualizing/plot_prob_atlas.html#sphx-glr-auto-examples-manipulating-visualizing-plot-prob-atlas-py"&gt;&lt;img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_prob_atlas_003.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/manipulating_visualizing/plot_prob_atlas.html#sphx-glr-auto-examples-manipulating-visualizing-plot-prob-atlas-py"&gt;
+&lt;img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_prob_atlas_003.png" /&gt;
+&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Plotting sets of probabilistic maps&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;With &lt;a class="reference external" href="http://nilearn.github.io/manipulating_visualizing/plotting.html#different-plotting-functions"&gt;a simple function&lt;/a&gt;,
 you can plot outlines for multiple maps.&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
 &lt;div class="figure align-right"&gt;
-&lt;a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/manipulating_visualizing/plot_extract_rois_statistical_maps.html"&gt;&lt;img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_extract_rois_statistical_maps_003.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="http://nilearn.github.io/auto_examples/manipulating_visualizing/plot_extract_rois_statistical_maps.html"&gt;
+&lt;img alt="" src="http://nilearn.github.io/_images/sphx_glr_plot_extract_rois_statistical_maps_003.png" /&gt;
+&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Separating regions out of maps&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We have a set of functions to &lt;a class="reference external" href="http://nilearn.github.io/auto_examples/manipulating_visualizing/plot_extract_rois_statistical_maps.html"&gt;separate regions on maps&lt;/a&gt; or &lt;a class="reference external" href="http://nilearn.github.io/auto_examples/connectivity/plot_extract_regions_canica_maps.html"&gt;turn networks into a probabilistic parcellation&lt;/a&gt;.&lt;/p&gt;
@@ -2873,7 +2897,9 @@ for funding, and &lt;a class="reference external" href="http://lapaillasse.org/"
 &lt;h2&gt;Highlights of the sprints results&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Plotting of multiple maps&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;a class="reference external image-reference" href="https://circle-artifacts.com/gh/nilearn/nilearn/128/artifacts/0/home/ubuntu/nilearn/doc/_build/html/auto_examples/connectivity/plot_canica_resting_state.html"&gt;&lt;img alt="" class="align-right" src="attachments/nilearn_july_2015_sprint/plot_canica_resting_state_001.png" style="width: 200px;" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://circle-artifacts.com/gh/nilearn/nilearn/128/artifacts/0/home/ubuntu/nilearn/doc/_build/html/auto_examples/connectivity/plot_canica_resting_state.html"&gt;
+&lt;img alt="" class="align-right" src="attachments/nilearn_july_2015_sprint/plot_canica_resting_state_001.png" style="width: 200px;" /&gt;
+&lt;/a&gt;
 &lt;p&gt;A function to visualize overlays of various maps, eg for a
 probabilistic atlas, with defaults that try to adapt to the number of
 maps (see the &lt;a class="reference external" href="https://circle-artifacts.com/gh/nilearn/nilearn/128/artifacts/0/home/ubuntu/nilearn/doc/_build/html/auto_examples/manipulating_visualizing/plot_prob_atlas.html"&gt;example&lt;/a&gt;).
@@ -2881,14 +2907,18 @@ It’s very useful for example for &lt;a class="reference external" href="https:
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Sign of activation in glass brain&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;a class="reference external image-reference" href="https://circle-artifacts.com/gh/nilearn/nilearn/287/artifacts/0/home/ubuntu/nilearn/doc/_build/html/auto_examples/manipulating_visualizing/plot_demo_glass_brain_extensive.html"&gt;&lt;img alt="" class="align-right" src="attachments/nilearn_july_2015_sprint/plot_demo_glass_brain_extensive_005.png" style="width: 200px;" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://circle-artifacts.com/gh/nilearn/nilearn/287/artifacts/0/home/ubuntu/nilearn/doc/_build/html/auto_examples/manipulating_visualizing/plot_demo_glass_brain_extensive.html"&gt;
+&lt;img alt="" class="align-right" src="attachments/nilearn_july_2015_sprint/plot_demo_glass_brain_extensive_005.png" style="width: 200px;" /&gt;
+&lt;/a&gt;
 &lt;p&gt;Our glass brain plotting was greatly improved adding amongst other
 things the option to capture the sign of the activation in the color
 (see this &lt;a class="reference external" href="https://circle-artifacts.com/gh/nilearn/nilearn/287/artifacts/0/home/ubuntu/nilearn/doc/_build/html/auto_examples/manipulating_visualizing/plot_demo_glass_brain_extensive.html"&gt;example&lt;/a&gt;).&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Spatially-regularized decoder&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;a class="reference external image-reference" href="https://circle-artifacts.com/gh/nilearn/nilearn/287/artifacts/0/home/ubuntu/nilearn/doc/_build/html/auto_examples/decoding/plot_haxby_space_net.html"&gt;&lt;img alt="" class="align-right" src="attachments/nilearn_july_2015_sprint/plot_haxby_space_net_002.png" style="width: 200px;" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://circle-artifacts.com/gh/nilearn/nilearn/287/artifacts/0/home/ubuntu/nilearn/doc/_build/html/auto_examples/decoding/plot_haxby_space_net.html"&gt;
+&lt;img alt="" class="align-right" src="attachments/nilearn_july_2015_sprint/plot_haxby_space_net_002.png" style="width: 200px;" /&gt;
+&lt;/a&gt;
 &lt;p&gt;Decoders based on GraphNet and total variation have finally landed in
 nilearn. This has required a lot of work to get fast convergence and
 robust parameter selection. At the end of the day, it is much slower
@@ -2897,7 +2927,9 @@ than an SVM, but the maps look splendid
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Sparse dictionary learning&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;a class="reference external image-reference" href="https://circle-artifacts.com/gh/nilearn/nilearn/282/artifacts/0/home/ubuntu/nilearn/doc/_build/html/auto_examples/connectivity/plot_dict_learning_resting_state.html"&gt;&lt;img alt="" class="align-right" src="attachments/nilearn_july_2015_sprint/plot_dict_learning_resting_state_001.png" style="width: 200px;" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://circle-artifacts.com/gh/nilearn/nilearn/282/artifacts/0/home/ubuntu/nilearn/doc/_build/html/auto_examples/connectivity/plot_dict_learning_resting_state.html"&gt;
+&lt;img alt="" class="align-right" src="attachments/nilearn_july_2015_sprint/plot_dict_learning_resting_state_001.png" style="width: 200px;" /&gt;
+&lt;/a&gt;
 &lt;p&gt;We have almost merged sparse dictionnary learning as a alternative to ICA.
 Experience shows that on resting-state data, it gives more contrasted
 segmentation of networks
@@ -3114,7 +3146,9 @@ finding, I find myself tinkering with its input, and often breaking it.
 Good scientific code is code that can be reused, that can lead to
 large-scale experiments validating its underlying assumptions.&lt;/p&gt;
 &lt;div class="figure align-right"&gt;
-&lt;a class="reference external image-reference" href="https://twitter.com/divineomega/status/576165762911608833"&gt;&lt;img alt="" src="../programming/attachments/sqlite_code.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://twitter.com/divineomega/status/576165762911608833"&gt;
+&lt;img alt="" src="../programming/attachments/sqlite_code.png" /&gt;
+&lt;/a&gt;
 &lt;p class="caption"&gt;Sqlite is so much used that its developers have been woken up at
 night by users.&lt;/p&gt;
 &lt;/div&gt;
@@ -3689,7 +3723,9 @@ robust.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="highlights"&gt;
 &lt;h2&gt;Highlights&lt;/h2&gt;
-&lt;a class="reference external image-reference" href="https://twitter.com/t3kcit/status/434378452901187584"&gt;&lt;img alt="" src="https://pbs.twimg.com/media/Bgc45seCUAAbze1.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="https://twitter.com/t3kcit/status/434378452901187584"&gt;
+&lt;img alt="" src="https://pbs.twimg.com/media/Bgc45seCUAAbze1.png" /&gt;
+&lt;/a&gt;
 &lt;p&gt;&lt;strong&gt;Quality&lt;/strong&gt; — Looking at the commit log, there has been a huge amount of
 work to &lt;a class="reference external" href="http://scikit-learn.org/stable/whats_new.html#id7"&gt;fix minor annoying
 issues&lt;/a&gt;.&lt;/p&gt;
@@ -5293,12 +5329,16 @@ meeting &lt;a class="reference external" href="http://pythonneuro.sciencesconf.o
 &lt;p&gt;&lt;strong&gt;Come and join us at EuroScipy in Paris, Augst 25-28. Paris is a great
 city. The SciPy community is a friendly one.&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category><category term="conferences"></category><category term="scipy"></category><category term="python"></category><category term="science"></category></entry><entry><title>Scikit-learn sprint on April 1st</title><link href="https://gael-varoquaux.info/programming/scikit-learn-sprint-on-april-1st.html" rel="alternate"></link><published>2011-03-26T13:27:00+01:00</published><updated>2011-03-26T13:27:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2011-03-26:/programming/scikit-learn-sprint-on-april-1st.html</id><summary type="html">&lt;a class="reference external image-reference" href="http://scikit-learn.sourceforge.net/"&gt;&lt;img alt="" src="http://scikit-learn.sourceforge.net/stable/_static/scikit-learn-logo-small.png" /&gt;&lt;/a&gt;
+</content><category term="programming"></category><category term="conferences"></category><category term="scipy"></category><category term="python"></category><category term="science"></category></entry><entry><title>Scikit-learn sprint on April 1st</title><link href="https://gael-varoquaux.info/programming/scikit-learn-sprint-on-april-1st.html" rel="alternate"></link><published>2011-03-26T13:27:00+01:00</published><updated>2011-03-26T13:27:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2011-03-26:/programming/scikit-learn-sprint-on-april-1st.html</id><summary type="html">&lt;a class="reference external image-reference" href="http://scikit-learn.sourceforge.net/"&gt;
+&lt;img alt="" src="http://scikit-learn.sourceforge.net/stable/_static/scikit-learn-logo-small.png" /&gt;
+&lt;/a&gt;
 &lt;p&gt;The &lt;a class="reference external" href="http://scikit-learn.sourceforge.net/"&gt;scikit-learn&lt;/a&gt; team is organizing a sprint on April 1st (that next
 Friday). Join us in &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/wiki/Upcoming-events"&gt;Paris, Boston, or on IRC&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;With the rise of the data sciences, the scikit-learn, a &lt;strong&gt;BSD-licensed
 Python package for machine learning&lt;/strong&gt;, is becoming an asset for more and
-more endeavors. Machine learning has traditionally …&lt;/p&gt;</summary><content type="html">&lt;a class="reference external image-reference" href="http://scikit-learn.sourceforge.net/"&gt;&lt;img alt="" src="http://scikit-learn.sourceforge.net/stable/_static/scikit-learn-logo-small.png" /&gt;&lt;/a&gt;
+more endeavors. Machine learning has traditionally …&lt;/p&gt;</summary><content type="html">&lt;a class="reference external image-reference" href="http://scikit-learn.sourceforge.net/"&gt;
+&lt;img alt="" src="http://scikit-learn.sourceforge.net/stable/_static/scikit-learn-logo-small.png" /&gt;
+&lt;/a&gt;
 &lt;p&gt;The &lt;a class="reference external" href="http://scikit-learn.sourceforge.net/"&gt;scikit-learn&lt;/a&gt; team is organizing a sprint on April 1st (that next
 Friday). Join us in &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/wiki/Upcoming-events"&gt;Paris, Boston, or on IRC&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;With the rise of the data sciences, the scikit-learn, a &lt;strong&gt;BSD-licensed
@@ -5605,7 +5645,9 @@ success.&lt;/p&gt;
 toolkit in Python, we cleaned up the ICA code that I had been using, and
 we added it to the scikit, along with &lt;a class="reference external" href="http://scikit-learn.org/stable/auto_examples/decomposition/plot_ica_vs_pca.html"&gt;an example&lt;/a&gt; inspired from this
 earlier toy problem.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://scikit-learn.org/stable/auto_examples/decomposition/plot_ica_vs_pca.html"&gt;&lt;img alt="" class="align-center" src="http://scikit-learn.org/stable/_images/sphx_glr_plot_ica_vs_pca_001.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="http://scikit-learn.org/stable/auto_examples/decomposition/plot_ica_vs_pca.html"&gt;
+&lt;img alt="" class="align-center" src="http://scikit-learn.org/stable/_images/sphx_glr_plot_ica_vs_pca_001.png" /&gt;
+&lt;/a&gt;
 &lt;p&gt;While the pictures are not as pretty as the initial ones I had done
 (because we wanted to keep the example as simple as possible), I am very
 happy that this discussion is know more than a set of static pictures,
@@ -5862,9 +5904,9 @@ the &lt;em&gt;__init__&lt;/em&gt; parameters.&lt;/li&gt;
 of the &lt;em&gt;inspect&lt;/em&gt; module to find the signature of the &lt;em&gt;__init__&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr class="docutils" /&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;BaseEstimator&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nc"&gt;BaseEstimator&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="nd"&gt;@classmethod&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_param_names&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;cls&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;_get_param_names&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;cls&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;varargs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;kw&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;default&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;inspect&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;getargspec&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;cls&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
         &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;varargs&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
             &lt;span class="s1"&gt;&amp;#39;scikit learn estimators should always specify their &amp;#39;&lt;/span&gt;
@@ -5874,13 +5916,13 @@ of the &lt;em&gt;inspect&lt;/em&gt; module to find the signature of the &lt;em&g
         &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pop&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;
 
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_params&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;_get_params&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
         &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;key&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_param_names&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
             &lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;getattr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;out&lt;/span&gt;
 
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_set_params&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;_set_params&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="n"&gt;valid_params&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_param_names&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
         &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iteritems&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
             &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;key&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;valid_params&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Invalid parameter &lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s1"&gt; &amp;#39;&lt;/span&gt;
@@ -5905,7 +5947,7 @@ bringing in more problems than it solves.&lt;/p&gt;
 for parameters would be to decorate the &lt;em&gt;__init__&lt;/em&gt;, giving the
 possible parameters to be tested during the model selection:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nd"&gt;@cv_params&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;logspace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;1e-4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;l1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fit_intercept&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;l1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;.5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fit_intercept&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# ...&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;All the decorator has to do is to store the information in an attribute
@@ -6102,13 +6144,17 @@ the already-submitted abstract, or submit new abstracts.&lt;/p&gt;
 &lt;div class="line"&gt;EuroScipy 2010 is the annual European conference for scientists using Python. It will be held July 8-11 2010, in ENS, Paris, France.&lt;/div&gt;
 &lt;div class="line"&gt;&lt;strong&gt;Links: `Conference website`_,&amp;nbsp; `Call for papers`_,&amp;nbsp; `Practical information`_&lt;/strong&gt;&lt;/div&gt;
 &lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="scientific computing"></category><category term="conferences"></category><category term="science"></category></entry><entry><title>EuroScipy is finally open for registration</title><link href="https://gael-varoquaux.info/programming/euroscipy-is-finally-open-for-registration.html" rel="alternate"></link><published>2010-05-13T13:23:00+02:00</published><updated>2010-05-13T13:23:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-05-13:/programming/euroscipy-is-finally-open-for-registration.html</id><summary type="html">&lt;a class="reference external image-reference" href="attachments/poster_euroscipy_2010.pdf"&gt;&lt;img alt="" src="attachments/poster_euroscipy_2010.jpg" /&gt;&lt;/a&gt;
+</content><category term="programming"></category><category term="python"></category><category term="scientific computing"></category><category term="conferences"></category><category term="science"></category></entry><entry><title>EuroScipy is finally open for registration</title><link href="https://gael-varoquaux.info/programming/euroscipy-is-finally-open-for-registration.html" rel="alternate"></link><published>2010-05-13T13:23:00+02:00</published><updated>2010-05-13T13:23:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-05-13:/programming/euroscipy-is-finally-open-for-registration.html</id><summary type="html">&lt;a class="reference external image-reference" href="attachments/poster_euroscipy_2010.pdf"&gt;
+&lt;img alt="" src="attachments/poster_euroscipy_2010.jpg" /&gt;
+&lt;/a&gt;
 &lt;div class="section" id="the-registration-for-euroscipy-is-finally-open"&gt;
 &lt;h2&gt;The registration for &lt;a class="reference external" href="http://www.euroscipy.org//conference/euroscipy2010"&gt;EuroScipy&lt;/a&gt; is finally open.&lt;/h2&gt;
 &lt;p&gt;To register, go to the &lt;a class="reference external" href="http://www.euroscipy.org//conference/euroscipy2010"&gt;website&lt;/a&gt;, create an account, and you will see a
 &lt;em&gt;‘register to the conference’&lt;/em&gt; button on the left. Follow it to a page
 which presents a &lt;em&gt;‘shoping cart’&lt;/em&gt;. Simply submitting this information
-registers you to the conference, and on …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;a class="reference external image-reference" href="attachments/poster_euroscipy_2010.pdf"&gt;&lt;img alt="" src="attachments/poster_euroscipy_2010.jpg" /&gt;&lt;/a&gt;
+registers you to the conference, and on …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;a class="reference external image-reference" href="attachments/poster_euroscipy_2010.pdf"&gt;
+&lt;img alt="" src="attachments/poster_euroscipy_2010.jpg" /&gt;
+&lt;/a&gt;
 &lt;div class="section" id="the-registration-for-euroscipy-is-finally-open"&gt;
 &lt;h2&gt;The registration for &lt;a class="reference external" href="http://www.euroscipy.org//conference/euroscipy2010"&gt;EuroScipy&lt;/a&gt; is finally open.&lt;/h2&gt;
 &lt;p&gt;To register, go to the &lt;a class="reference external" href="http://www.euroscipy.org//conference/euroscipy2010"&gt;website&lt;/a&gt;, create an account, and you will see a
@@ -6207,14 +6253,20 @@ them. People pay large chunks of money for such training, usually.&lt;/p&gt;
 mailing-list on how to represent an additional information on a surface
 with &lt;a class="reference external" href="http://code.enthought.com/projects/mayavi"&gt;Mayavi&lt;/a&gt;, using color not given eg by the elevation. A &lt;a class="reference external" href="http://dpinte.wordpress.com/2010/03/30/4d-surface-plots-in-mayavi/"&gt;recent
 post&lt;/a&gt; on his blog by Didrik Pinte shows the problem quite well:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://dpinte.wordpress.com/2010/03/30/4d-surface-plots-in-mayavi/"&gt;&lt;img alt="" src="http://dpinte.files.wordpress.com/2010/03/option_valuation_3d.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="http://dpinte.wordpress.com/2010/03/30/4d-surface-plots-in-mayavi/"&gt;
+&lt;img alt="" src="http://dpinte.files.wordpress.com/2010/03/option_valuation_3d.png" /&gt;
+&lt;/a&gt;
 &lt;p&gt;This problem can be seen …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We have been getting a few questions on the &lt;a class="reference external" href="https://mail.enthought.com/mailman/listinfo/enthought-dev"&gt;enthought-dev&lt;/a&gt;
 mailing-list on how to represent an additional information on a surface
 with &lt;a class="reference external" href="http://code.enthought.com/projects/mayavi"&gt;Mayavi&lt;/a&gt;, using color not given eg by the elevation. A &lt;a class="reference external" href="http://dpinte.wordpress.com/2010/03/30/4d-surface-plots-in-mayavi/"&gt;recent
 post&lt;/a&gt; on his blog by Didrik Pinte shows the problem quite well:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://dpinte.wordpress.com/2010/03/30/4d-surface-plots-in-mayavi/"&gt;&lt;img alt="" src="http://dpinte.files.wordpress.com/2010/03/option_valuation_3d.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="http://dpinte.wordpress.com/2010/03/30/4d-surface-plots-in-mayavi/"&gt;
+&lt;img alt="" src="http://dpinte.files.wordpress.com/2010/03/option_valuation_3d.png" /&gt;
+&lt;/a&gt;
 &lt;p&gt;This problem can be seen as taking a standard &lt;a class="reference external" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/auto/mlab_helper_functions.html#enthought.mayavi.mlab.surf"&gt;surf&lt;/a&gt; plot:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/auto/mlab_helper_functions.html#enthought.mayavi.mlab.surf"&gt;&lt;img alt="" src="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/_images/enthought_mayavi_mlab_surf.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/auto/mlab_helper_functions.html#enthought.mayavi.mlab.surf"&gt;
+&lt;img alt="" src="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/_images/enthought_mayavi_mlab_surf.jpg" /&gt;
+&lt;/a&gt;
 &lt;p&gt;but coloring it with a different scalar than the elevation.&lt;/p&gt;
 &lt;p&gt;I would like to present two ways of solving this problem. First a very
 simple way specific to the exact problem, second a more complicated but
@@ -6227,13 +6279,13 @@ of an elevation plot. In our case, it is very easy to use the &lt;a class="refer
 function&lt;/a&gt; which can take the x, y, z positions of a grid giving the
 surface, but also an additional scalar value at these position:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Create some data&lt;/span&gt;
-&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;numpy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;np&lt;/span&gt;
 &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mgrid&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;
 &lt;span class="n"&gt;w&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;arctan&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="c1"&gt;# Visualize it&lt;/span&gt;
-&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;enthought.mayavi&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;mlab&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;enthought.mayavi&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;mlab&lt;/span&gt;
 &lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mesh&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;.05&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;scalars&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="c1"&gt;# Finally, add a few decorations.&lt;/span&gt;
@@ -6274,14 +6326,14 @@ but with two scalar values transformed successively in elevation and
 color:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;###############################################################&lt;/span&gt;
 &lt;span class="c1"&gt;# Create some data&lt;/span&gt;
-&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;numpy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;np&lt;/span&gt;
 &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mgrid&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;
 &lt;span class="n"&gt;w&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;arctan&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="c1"&gt;###############################################################&lt;/span&gt;
 &lt;span class="c1"&gt;# Visualize the data&lt;/span&gt;
-&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;enthought.mayavi&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;mlab&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;enthought.mayavi&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;mlab&lt;/span&gt;
 
 &lt;span class="c1"&gt;# Create the data source&lt;/span&gt;
 &lt;span class="n"&gt;src&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pipeline&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array2d_source&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -6320,7 +6372,9 @@ the ‘Surface’ module uses the ‘w’ scalar value to display the color.&lt;
 &lt;p&gt;This pattern is very powerful, and can be used with other sets of
 filters or modules. The example of this pattern that we use in the
 Mayavi documentation is the following:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/auto/example_atomic_orbital.html"&gt;&lt;img alt="" src="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/_images/example_atomic_orbital.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/auto/example_atomic_orbital.html"&gt;
+&lt;img alt="" src="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/_images/example_atomic_orbital.jpg" /&gt;
+&lt;/a&gt;
 &lt;p&gt;We use a ‘Contour’ filter to contour on the amplitude of a complex a
 field defined in the volume, and then switch to the phase to display the
 color. See the &lt;a class="reference external" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/auto/example_atomic_orbital.html"&gt;atomic orbital example&lt;/a&gt; in the Mayavi documentation for
@@ -6557,7 +6611,9 @@ science&lt;/a&gt;&lt;/li&gt;
 &lt;div class="section" id="help-us-spread-the-word"&gt;
 &lt;h2&gt;Help us spread the word&lt;/h2&gt;
 &lt;p&gt;The poster of the conference can be downloaded:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/poster_euroscipy_2010.pdf"&gt;&lt;img alt="" src="attachments/poster_euroscipy_2010.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/poster_euroscipy_2010.pdf"&gt;
+&lt;img alt="" src="attachments/poster_euroscipy_2010.jpg" /&gt;
+&lt;/a&gt;
 &lt;p&gt;Help us spread the word: print it and post it at your workplace!&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="the-exciting-city-of-paris"&gt;
@@ -6693,18 +6749,18 @@ decorating a function.&lt;/p&gt;
 &lt;p&gt;I have recently been revisiting my decoration code, to fight a common
 mistake I had been doing, and it was partly due to the heavy use of a
 simplified pattern for decorating:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;with_print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;with_print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
 &lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
 
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;my_func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;my_func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;kwargs&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;my_func&lt;/span&gt;
 
 &lt;span class="nd"&gt;@with_print&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;f called&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The nice thing about this pattern is that is it quite easy to type, and
@@ -6726,22 +6782,22 @@ for parallel computing).&lt;/p&gt;
 &lt;div class="section" id="avoiding-the-closure"&gt;
 &lt;h3&gt;Avoiding the closure&lt;/h3&gt;
 &lt;p&gt;Use objects as a scope, rather than a closure:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;WithPrint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nc"&gt;WithPrint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;
 
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__call__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="fm"&gt;__call__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;kwargs&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This solution is not enough: the following code won’t pickle:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nd"&gt;@WithPrint&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;g&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;g&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;g called&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The reason this won’t pickle is that we have a name collision: the code
 above expands to:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;g&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;g&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;g called&amp;#39;&lt;/span&gt;
 
 &lt;span class="n"&gt;g&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;WithPrint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -6750,7 +6806,7 @@ above expands to:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Can&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;t pickle &amp;lt;function g at 0x6ed2a8&amp;gt;: it&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;same&lt;/span&gt; &lt;span class="nb"&gt;object&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;__main__&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;If we do:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;g&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;g&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;g called&amp;#39;&lt;/span&gt;
 
 &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;WithPrint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -6762,18 +6818,18 @@ above expands to:&lt;/p&gt;
 &lt;p&gt;However, Python comes with the answer in the standard libary:
 functools.wraps does the name unmangling.&lt;/p&gt;
 &lt;p&gt;Thus the following code produces a pickleable f:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;functools&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;wraps&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;with_print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;functools&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;wraps&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;with_print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
 &lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="nd"&gt;@wraps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;my_func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;my_func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;kwargs&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;my_func&lt;/span&gt;
 
 &lt;span class="nd"&gt;@with_print&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;f called&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="line-block"&gt;
@@ -6916,7 +6972,7 @@ conference tutorial) a way to control the pseudo random number generator
 not involve setting the seed of the global PRNG, as this is evil,
 because it has global effects. The idea is to pass in to your functions
 a PRNG instance (by default the global one):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;prng&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;test&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;prng&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="n"&gt;pnrg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rand&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;if you want to use your function with a controlled PRNG, you can
@@ -7436,7 +7492,9 @@ command line interface on the web, in which you can enter Mayavi
 commands, and see the result. You have to be very careful to switch
 Mayavi in offscreen mode as soon as you load it. To see the result of a
 plot, just save it in a file. The sage notebook will display the image.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="http://nb.hpfem.org/home/pub/16/"&gt;&lt;img alt="" src="attachments/mayavi2_in_sage1.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="http://nb.hpfem.org/home/pub/16/"&gt;
+&lt;img alt="" src="attachments/mayavi2_in_sage1.png" /&gt;
+&lt;/a&gt;
 &lt;p&gt;I have always had in mind the use of Mayavi as a backend for a
 scientific web application, for instance for a neuromaging database, but
 what is really stuning with this implementation, is the way you interact
@@ -7451,9 +7509,13 @@ window with only your visualization, and a toolbar. If you want to
 change the properties of the objects on the visualization, or add some
 more, you need to click on a button on the toolbar, which displays a
 dialog, from which you can open more dialogs to edit the objects:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/mayavi_old_ui.png"&gt;&lt;img alt="" class="align-center" src="attachments/mayavi_old_ui.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/mayavi_old_ui.png"&gt;
+&lt;img alt="" class="align-center" src="attachments/mayavi_old_ui.png" /&gt;
+&lt;/a&gt;
 &lt;p&gt;I am thinking to changing this to a single dialog:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/mayavi_new_ui.png"&gt;&lt;img alt="" class="align-center" src="attachments/mayavi_new_ui.png" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/mayavi_new_ui.png"&gt;
+&lt;img alt="" class="align-center" src="attachments/mayavi_new_ui.png" /&gt;
+&lt;/a&gt;
 &lt;p&gt;The single-object-editing dialogs could still be opened by
 double-clicking on the pipeline.&lt;/p&gt;
 &lt;p&gt;I am not going to discuss why I believe the new version would be better
@@ -7475,7 +7537,7 @@ that you take a grid of the numbers c complex plane, and iterate on it
 the function f = lambda z: z**2 + c. You look at the divergence of
 this iteration, and plotting a mesure of the divergence gives you a nice
 figure. The code I wrote was:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ogrid&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;isnan&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ones&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;numpy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ogrid&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;isnan&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ones&lt;/span&gt;
 &lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;
 &lt;span class="n"&gt;threshold_time&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
@@ -7493,7 +7555,7 @@ assignment. As a result the dtype of z is not modified: z is not
 magically cast in a complex. Thus the imaginary information coming from
 c is lost. And that information is crucial to Mandelbrot.&lt;/p&gt;
 &lt;p&gt;The right code is:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ogrid&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;isnan&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ones&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;complex&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;numpy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ogrid&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;isnan&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ones&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;complex&lt;/span&gt;
 &lt;span class="n"&gt;c&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;
 &lt;span class="n"&gt;threshold_time&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;500&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="nb"&gt;complex&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -7615,7 +7677,7 @@ numpy arrays, but to save memory it takes as a signature the name of the
 file where the input array is stored, and the name of the filename where
 the output array should be stored. So I have some code that looks like
 this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;process_sessions&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;session_files&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;process_sessions&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;session_files&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;session_file&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;session_files&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
         &lt;span class="n"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;session_file&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;session_file&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;.out&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -7817,10 +7879,10 @@ of Mayavi and the VTK filters, but the big gain is that the resulting
 visualization can be explored interactively.&lt;/p&gt;
 &lt;p&gt;First, let us create the same scalar field as the previous example:. We
 open Mayavi and enter the following code in the Python shell:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;enthought.mayavi&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;mlab&lt;/span&gt;
-&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;enthought.mayavi&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;mlab&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;numpy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;np&lt;/span&gt;
 
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;V&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;V&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; A 3D sinusoidal lattice with a parabolic confinement. &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mgrid&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -7844,7 +7906,9 @@ the Glyph tab in this tab), to reduce the scale factor to 0.2. The
 vector field is still too dense, therefore we go to the Masking tab to
 enable masking, mask with an on ratio of 6 (one arrow out of 6 is
 masked) and turn off the random mode.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/vector_cut_plane2.jpg"&gt;&lt;img alt="" src="attachments/vector_cut_plane2.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/vector_cut_plane2.jpg"&gt;
+&lt;img alt="" src="attachments/vector_cut_plane2.jpg" /&gt;
+&lt;/a&gt;
 &lt;p&gt;To have nice colors, we also changed the color map of the vector field
 by going to the Colors and legend node just above the VectorCutPlane,
 and choosing a look up table &lt;strong&gt;in the VectorLUT&lt;/strong&gt; tab, as there can be
@@ -7863,7 +7927,9 @@ initial scalar field. In our case, all the trajectories end up in a
 local potential minimum, and moving the seed point along lets us see in
 which minimum each point will fall into, in other world the basin of
 attraction of each local minimum.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/streamline.jpg"&gt;&lt;img alt="" src="attachments/streamline.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/streamline.jpg"&gt;
+&lt;img alt="" src="attachments/streamline.jpg" /&gt;
+&lt;/a&gt;
 </content><category term="programming"></category><category term="mayavi"></category><category term="scipy"></category><category term="scientific computing"></category></entry><entry><title>Using Mayavi with Scipy: a tutorial</title><link href="https://gael-varoquaux.info/programming/using-mayavi-with-scipy-a-tutorial.html" rel="alternate"></link><published>2008-11-22T00:19:00+01:00</published><updated>2008-11-22T00:19:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2008-11-22:/programming/using-mayavi-with-scipy-a-tutorial.html</id><summary type="html">&lt;p&gt;Many years ago, I was working with a bright undergrad on the
 trajectories of a atoms in a complex light field created by the
 intersection of two laser beams. She had developped a code in C, and I
@@ -7895,9 +7961,9 @@ the problem.&lt;/p&gt;
 parabolic confinement. We will shake this potential and see how the
 particle jumps from a hole of the lattice to another. The parabolic
 confinement is there to limit the excursions of the particle:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;numpy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;np&lt;/span&gt;
 
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;V&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;V&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; A 3D sinusoidal lattice with a parabolic confinement. &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cos&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -7912,7 +7978,7 @@ mlab*&lt;/a&gt;) to interactively visualize this volumetric data. For this it is
 best to type the commands in an interactive Python shell, either using
 the built-in shell of the Mayavi2 application, on in ipython -wthread.
 Let us visualize the 3D isosurfaces of the potential:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;enthought.mayavi&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;mlab&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;enthought.mayavi&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;mlab&lt;/span&gt;
 &lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contour3d&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;V&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;We can interact with the visualization created by the above command by
@@ -7930,7 +7996,9 @@ result.&lt;/p&gt;
 &lt;p&gt;We can now click on the Colors and legends on the pipeline and change
 the colors used, by selecting a different LUT (Look Up Table). Let us
 select ‘Paired’ as it separates well levels.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/potential_ipython.jpg"&gt;&lt;img alt="" src="attachments/potential_ipython.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/potential_ipython.jpg"&gt;
+&lt;img alt="" src="attachments/potential_ipython.jpg" /&gt;
+&lt;/a&gt;
 &lt;p&gt;To get a better view of the potential, we would like to display more
 contours, but the problem with this approach is that closed contours
 hide their interior. On solution is to use a cut plane. Right-click on
@@ -7942,11 +8010,13 @@ colorbar. We can do this by typing:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;colorbar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Potential&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;orientation&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;vertical&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Or using the options in the LUT dialog visited earlier.&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/potential.jpg"&gt;&lt;img alt="" src="attachments/potential.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/potential.jpg"&gt;
+&lt;img alt="" src="attachments/potential.jpg" /&gt;
+&lt;/a&gt;
 &lt;p&gt;We want to study the motion of a particle in this potential. For this we
 need to derive the corresponding force, given by the gradient of the
 potential. We create a gradient function:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;gradient&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.01&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;gradient&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;0.01&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Return the gradient of f in (x, y, z). &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="n"&gt;fx&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="n"&gt;fx_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -7964,7 +8034,9 @@ on our grid:&lt;/p&gt;
 &lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;quiver3d&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;Z&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
                      &lt;span class="n"&gt;Vx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Vy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Vz&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;scale_factor&lt;/span&gt;&lt;span class="o"&gt;=-&lt;/span&gt;&lt;span class="mf"&gt;0.2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;a class="reference external image-reference" href="attachments/gradient.jpg"&gt;&lt;img alt="" src="attachments/gradient.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/gradient.jpg"&gt;
+&lt;img alt="" src="attachments/gradient.jpg" /&gt;
+&lt;/a&gt;
 &lt;p&gt;Now we can use scipy to integrate the trajectories. We first have to
 define a dynamical flow, the function that returns the derivative of the
 different parameters as a function of these parameters and of time. The
@@ -7974,14 +8046,14 @@ made of the force deriving from the potential, that we shake with time
 in the three direction, as well as a damping force. The damping
 coefficient and the amount and frequency of shaking have been tuned to
 give an interesting dynamic.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;flow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;flow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; The dynamical flow of the system &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
     &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vz&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;
     &lt;span class="n"&gt;fx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;fz&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;gradient&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;V&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;.2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;.2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;.2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;vz&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fx&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fy&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fz&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mf"&gt;0.3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;vz&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now we can integrate the trajectory:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;scipy.integrate&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;odeint&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;scipy.integrate&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;odeint&lt;/span&gt;
 
 &lt;span class="c1"&gt;# Initial conditions&lt;/span&gt;
 &lt;span class="n"&gt;R0&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -8000,7 +8072,9 @@ colormap:&lt;/p&gt;
                     &lt;span class="n"&gt;tube_radius&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;None&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;mlab&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;colorbar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;trajectory&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Time&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;orientation&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;vertical&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;a class="reference external image-reference" href="attachments/trajectories.jpg"&gt;&lt;img alt="" src="attachments/trajectories.jpg" /&gt;&lt;/a&gt;
+&lt;a class="reference external image-reference" href="attachments/trajectories.jpg"&gt;
+&lt;img alt="" src="attachments/trajectories.jpg" /&gt;
+&lt;/a&gt;
 &lt;p&gt;If I have time, I’ll show later how some of the operations we have done
 with numpy can be done with VTK and Mayavi. This will give us control of
 these operation via widgets and thus more interativity.&lt;/p&gt;

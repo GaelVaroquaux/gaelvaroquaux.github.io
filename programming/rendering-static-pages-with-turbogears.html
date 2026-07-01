@@ -76,20 +76,20 @@ turbogears to an html string (consider this as a brain dump, so that
 Google picks this up, hopefuly to help somebody not to loose a
 day like I did):</p>
 <div class="highlight"><pre><span></span><span class="c1"># First set up the environment you need for your webapp:</span>
-<span class="kn">import</span> <span class="nn">turbogears</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">turbogears</span>
 <span class="n">turbogears</span><span class="o">.</span><span class="n">update_config</span><span class="p">(</span><span class="n">configfile</span><span class="o">=</span><span class="s2">&quot;dev.cfg&quot;</span><span class="p">,</span>
                          <span class="n">modulename</span><span class="o">=</span><span class="s2">&quot;sanum.config&quot;</span><span class="p">)</span>
 
-<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">izip</span>
-<span class="kn">import</span> <span class="nn">turbogears.view</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span> <span class="n">izip</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">turbogears.view</span>
 <span class="n">turbogears</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">load_engines</span><span class="p">()</span>
 
-<span class="kn">import</span> <span class="nn">turbogears.util</span> <span class="k">as</span> <span class="nn">tg_util</span>
-<span class="kn">from</span> <span class="nn">turbogears.widgets</span> <span class="kn">import</span> <span class="n">js_location</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">turbogears.util</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tg_util</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">turbogears.widgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">js_location</span>
 
 <span class="n">engine</span> <span class="o">=</span> <span class="n">turbogears</span><span class="o">.</span><span class="n">view</span><span class="o">.</span><span class="n">engines</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;kid&#39;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">render_static</span><span class="p">(</span><span class="n">data_dict</span><span class="p">,</span> <span class="n">template</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">render_static</span><span class="p">(</span><span class="n">data_dict</span><span class="p">,</span> <span class="n">template</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot; Render a given template + its data dictionnary to a static html.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">data_dict</span><span class="p">[</span><span class="s1">&#39;tg_css&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">tg_util</span><span class="o">.</span><span class="n">setlike</span><span class="p">()</span>

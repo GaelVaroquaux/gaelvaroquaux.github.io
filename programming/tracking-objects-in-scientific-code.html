@@ -113,7 +113,7 @@ numpy arrays, but to save memory it takes as a signature the name of the
 file where the input array is stored, and the name of the filename where
 the output array should be stored. So I have some code that looks like
 this:</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">process_sessions</span><span class="p">(</span><span class="n">session_files</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">process_sessions</span><span class="p">(</span><span class="n">session_files</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">session_file</span> <span class="ow">in</span> <span class="n">session_files</span><span class="p">:</span>
         <span class="n">foo</span><span class="p">(</span><span class="n">session_file</span><span class="p">,</span> <span class="n">session_file</span> <span class="o">+</span> <span class="s1">&#39;.out&#39;</span><span class="p">)</span>
 </pre></div>

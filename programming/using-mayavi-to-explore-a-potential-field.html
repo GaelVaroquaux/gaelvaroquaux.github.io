@@ -84,10 +84,10 @@ of Mayavi and the VTK filters, but the big gain is that the resulting
 visualization can be explored interactively.</p>
 <p>First, let us create the same scalar field as the previous example:. We
 open Mayavi and enter the following code in the Python shell:</p>
-<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">enthought.mayavi</span> <span class="kn">import</span> <span class="n">mlab</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">enthought.mayavi</span><span class="w"> </span><span class="kn">import</span> <span class="n">mlab</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
-<span class="k">def</span> <span class="nf">V</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">V</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot; A 3D sinusoidal lattice with a parabolic confinement. &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="n">y</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="n">z</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mgrid</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">100</span><span class="n">j</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">100</span><span class="n">j</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">100</span><span class="n">j</span><span class="p">]</span>
@@ -111,7 +111,9 @@ the Glyph tab in this tab), to reduce the scale factor to 0.2. The
 vector field is still too dense, therefore we go to the Masking tab to
 enable masking, mask with an on ratio of 6 (one arrow out of 6 is
 masked) and turn off the random mode.</p>
-<a class="reference external image-reference" href="attachments/vector_cut_plane2.jpg"><img alt="" src="attachments/vector_cut_plane2.jpg" /></a>
+<a class="reference external image-reference" href="attachments/vector_cut_plane2.jpg">
+<img alt="" src="attachments/vector_cut_plane2.jpg" />
+</a>
 <p>To have nice colors, we also changed the color map of the vector field
 by going to the Colors and legend node just above the VectorCutPlane,
 and choosing a look up table <strong>in the VectorLUT</strong> tab, as there can be
@@ -130,7 +132,9 @@ initial scalar field. In our case, all the trajectories end up in a
 local potential minimum, and moving the seed point along lets us see in
 which minimum each point will fall into, in other world the basin of
 attraction of each local minimum.</p>
-<a class="reference external image-reference" href="attachments/streamline.jpg"><img alt="" src="attachments/streamline.jpg" /></a>
+<a class="reference external image-reference" href="attachments/streamline.jpg">
+<img alt="" src="attachments/streamline.jpg" />
+</a>
 
             <div class="hr" style="margin-bottom: -.5em;"></div>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->

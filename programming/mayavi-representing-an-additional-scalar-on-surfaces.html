@@ -68,9 +68,13 @@
 mailing-list on how to represent an additional information on a surface
 with <a class="reference external" href="http://code.enthought.com/projects/mayavi">Mayavi</a>, using color not given eg by the elevation. A <a class="reference external" href="http://dpinte.wordpress.com/2010/03/30/4d-surface-plots-in-mayavi/">recent
 post</a> on his blog by Didrik Pinte shows the problem quite well:</p>
-<a class="reference external image-reference" href="http://dpinte.wordpress.com/2010/03/30/4d-surface-plots-in-mayavi/"><img alt="" src="http://dpinte.files.wordpress.com/2010/03/option_valuation_3d.png" /></a>
+<a class="reference external image-reference" href="http://dpinte.wordpress.com/2010/03/30/4d-surface-plots-in-mayavi/">
+<img alt="" src="http://dpinte.files.wordpress.com/2010/03/option_valuation_3d.png" />
+</a>
 <p>This problem can be seen as taking a standard <a class="reference external" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/auto/mlab_helper_functions.html#enthought.mayavi.mlab.surf">surf</a> plot:</p>
-<a class="reference external image-reference" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/auto/mlab_helper_functions.html#enthought.mayavi.mlab.surf"><img alt="" src="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/_images/enthought_mayavi_mlab_surf.jpg" /></a>
+<a class="reference external image-reference" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/auto/mlab_helper_functions.html#enthought.mayavi.mlab.surf">
+<img alt="" src="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/_images/enthought_mayavi_mlab_surf.jpg" />
+</a>
 <p>but coloring it with a different scalar than the elevation.</p>
 <p>I would like to present two ways of solving this problem. First a very
 simple way specific to the exact problem, second a more complicated but
@@ -83,13 +87,13 @@ of an elevation plot. In our case, it is very easy to use the <a class="referenc
 function</a> which can take the x, y, z positions of a grid giving the
 surface, but also an additional scalar value at these position:</p>
 <div class="highlight"><pre><span></span><span class="c1"># Create some data</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mgrid</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">100</span><span class="n">j</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">100</span><span class="n">j</span><span class="p">]</span>
 <span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span>
 <span class="n">w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arctan</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="n">y</span><span class="p">)</span>
 
 <span class="c1"># Visualize it</span>
-<span class="kn">from</span> <span class="nn">enthought.mayavi</span> <span class="kn">import</span> <span class="n">mlab</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">enthought.mayavi</span><span class="w"> </span><span class="kn">import</span> <span class="n">mlab</span>
 <span class="n">mlab</span><span class="o">.</span><span class="n">mesh</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mf">.05</span><span class="o">*</span><span class="n">z</span><span class="p">,</span> <span class="n">scalars</span><span class="o">=</span><span class="n">w</span><span class="p">)</span>
 
 <span class="c1"># Finally, add a few decorations.</span>
@@ -130,14 +134,14 @@ but with two scalar values transformed successively in elevation and
 color:</p>
 <div class="highlight"><pre><span></span><span class="c1">###############################################################</span>
 <span class="c1"># Create some data</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mgrid</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">100</span><span class="n">j</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">100</span><span class="n">j</span><span class="p">]</span>
 <span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span>
 <span class="n">w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arctan</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="n">y</span><span class="p">)</span>
 
 <span class="c1">###############################################################</span>
 <span class="c1"># Visualize the data</span>
-<span class="kn">from</span> <span class="nn">enthought.mayavi</span> <span class="kn">import</span> <span class="n">mlab</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">enthought.mayavi</span><span class="w"> </span><span class="kn">import</span> <span class="n">mlab</span>
 
 <span class="c1"># Create the data source</span>
 <span class="n">src</span> <span class="o">=</span> <span class="n">mlab</span><span class="o">.</span><span class="n">pipeline</span><span class="o">.</span><span class="n">array2d_source</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
@@ -176,7 +180,9 @@ the ‘Surface’ module uses the ‘w’ scalar value to display the color.</p>
 <p>This pattern is very powerful, and can be used with other sets of
 filters or modules. The example of this pattern that we use in the
 Mayavi documentation is the following:</p>
-<a class="reference external image-reference" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/auto/example_atomic_orbital.html"><img alt="" src="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/_images/example_atomic_orbital.jpg" /></a>
+<a class="reference external image-reference" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/auto/example_atomic_orbital.html">
+<img alt="" src="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/_images/example_atomic_orbital.jpg" />
+</a>
 <p>We use a ‘Contour’ filter to contour on the amplitude of a complex a
 field defined in the volume, and then switch to the phase to display the
 color. See the <a class="reference external" href="http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/auto/example_atomic_orbital.html">atomic orbital example</a> in the Mayavi documentation for
