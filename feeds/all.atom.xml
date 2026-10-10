@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2026-01-14T00:00:00+01:00</updated><entry><title>Stepping up as probabl’s CSO to supercharge scikit-learn and its ecosystem</title><link href="https://gael-varoquaux.info/programming/stepping-up-as-probabls-cso-to-supercharge-scikit-learn-and-its-ecosystem.html" rel="alternate"></link><published>2026-01-14T00:00:00+01:00</published><updated>2026-01-14T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2026-01-14:/programming/stepping-up-as-probabls-cso-to-supercharge-scikit-learn-and-its-ecosystem.html</id><summary type="html">&lt;div class="admonition note"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2026-06-10T00:00:00+02:00</updated><entry><title>Will Intellectual Bulldozers Solve Math?</title><link href="https://gael-varoquaux.info/science/will-intellectual-bulldozers-solve-math.html" rel="alternate"></link><published>2026-06-10T00:00:00+02:00</published><updated>2026-06-10T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2026-06-10:/science/will-intellectual-bulldozers-solve-math.html</id><summary type="html">&lt;img alt="" class="small align-right" src="content/science/attachments/intellectual_bulldozer.jpg" style="width: 153.6px; height: 115.19999999999999px;" /&gt;
+&lt;p&gt;An AI has just disproved an 80-year-old mathematical conjecture, where the best human minds failed for decades. It is a feat that invites us to rethink, well beyond mathematics, what artificial intelligence really changes about our professions.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;img alt="" class="small align-right" src="content/science/attachments/intellectual_bulldozer.jpg" style="width: 153.6px; height: 115.19999999999999px;" /&gt;
+&lt;p&gt;An AI has just disproved an 80-year-old mathematical conjecture, where the best human minds failed for decades. It is a feat that invites us to rethink, well beyond mathematics, what artificial intelligence really changes about our professions.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-pelleteuses-intellectuelles-de-lia-vont-elles-resoudre-les-maths-2240794"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;An AI overcomes a central Erdős conjecture&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Imagine n points placed on a plane. How many pairs of points can be separated by a distance of exactly 1? In 1946, the mathematician Paul Erdős conjectured that this number of pairs could not grow beyond a certain limit. Eighty years later, an AI has just disproved this conjecture by constructing, for a given n, a set of points containing more such pairs than Erdős believed possible.&lt;/p&gt;
+&lt;p&gt;This result is striking: it concretely demonstrates that an AI can solve problems on which the best mathematicians stumbled for decades. It is part of a broader trend: AIs are gradually becoming capable of handling complex formal problems, and computer scientists like me are turning to them more and more.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;How does an AI achieve such results? It draws on encyclopedic knowledge: the entirety of mathematical publications, public computer code, and results from sometimes distant fields. Here, for example, tools from number theory were brought to bear on a geometry problem. The AI can also tirelessly explore leads that each have only a small chance of succeeding, something a human would not do for lack of time or motivation. This power is multiplied when the AI is paired with an automatic verification program, able to validate or invalidate each lead in real time. In the Erdős case, the AI proposed a first draft of the construction; mathematicians at OpenAI then refined it and verified it.&lt;/p&gt;
+&lt;p&gt;An AI is to the intellect what a bulldozer is to a construction site: remarkably powerful for certain tasks, but incapable of carrying out every step needed to build a house. A construction project requires plans upstream and finishing work downstream. Likewise, all mathematical research begins with something the AI does not do: asking the right question. Erdős was famous for precisely that, his ability to formulate questions that seemed simple but profoundly pushed back the frontiers of mathematics.&lt;/p&gt;
+&lt;p&gt;Yet asking a structuring question earns no prize. The rewards go to those who prove difficult theorems, the most visible and most glorified task. When AI excels at that task, it would be tempting to conclude that it is “doing the math” for us. That would be a mistake. The real question lies elsewhere: how do we reassess what truly matters in intellectual work, now that some of its steps can be automated? This question applies to every profession. Just as we do not measure the progress of a construction project by the cubic meters of earth a bulldozer has moved, we cannot judge the progress of intellectual work by the number of lines of code or pages of reports produced, because thanks to AI, volume has become easy.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>Stepping up as probabl’s CSO to supercharge scikit-learn and its ecosystem</title><link href="https://gael-varoquaux.info/programming/stepping-up-as-probabls-cso-to-supercharge-scikit-learn-and-its-ecosystem.html" rel="alternate"></link><published>2026-01-14T00:00:00+01:00</published><updated>2026-01-14T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2026-01-14:/programming/stepping-up-as-probabls-cso-to-supercharge-scikit-learn-and-its-ecosystem.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;div class="figure align-right"&gt;
 &lt;img alt="" src="../programming/attachments/probabl_team_2025.png" style="width: 400px;" /&gt;
@@ -11003,63 +11031,4 @@ surprising interface. You don’t really have to care what is going on,
 you can still use the resulting ‘proxied’ function as the original
 function: a simple function.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="design patterns"></category><category term="software architecture"></category><category term="selected"></category></entry><entry><title>Writing parallel code in a readable way</title><link href="https://gael-varoquaux.info/programming/writing-parallel-code-in-a-readable-way.html" rel="alternate"></link><published>2009-11-09T00:10:00+01:00</published><updated>2009-11-09T00:10:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-11-09:/programming/writing-parallel-code-in-a-readable-way.html</id><summary type="html">&lt;p&gt;Although I often have embarrasingly parallel problems (data parallel),
-and I have an 8-CPU box at work, I used to frown on writing parallel
-computing code when doing exploratory coding. We now have fantastic
-parallel computing facilities in Python (amongst other,
-&lt;a class="reference external" href="http://docs.python.org/library/multiprocessing.html"&gt;multiprocessing&lt;/a&gt;, &lt;a class="reference external" href="http://ipython.scipy.org/doc/rel-0.9.1/html/parallel/index.html"&gt;IPython&lt;/a&gt;, and &lt;a class="reference external" href="http://www.parallelpython.com/"&gt;parallel Python&lt;/a&gt;). However, in my
-opinion …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Although I often have embarrasingly parallel problems (data parallel),
-and I have an 8-CPU box at work, I used to frown on writing parallel
-computing code when doing exploratory coding. We now have fantastic
-parallel computing facilities in Python (amongst other,
-&lt;a class="reference external" href="http://docs.python.org/library/multiprocessing.html"&gt;multiprocessing&lt;/a&gt;, &lt;a class="reference external" href="http://ipython.scipy.org/doc/rel-0.9.1/html/parallel/index.html"&gt;IPython&lt;/a&gt;, and &lt;a class="reference external" href="http://www.parallelpython.com/"&gt;parallel Python&lt;/a&gt;). However, in my
-opinion, there are two reasons to hesitate to use them, especially when
-the code is very imature (which is almost always my case, in research
-settings):&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;It makes the code look less like the ideas it is trying to express.
-Peter Norvig made &lt;a class="reference external" href="http://www.archive.org/details/scipy09_day1_03-Peter_Norvig"&gt;a pretty convincing case&lt;/a&gt; for scientific code
-reading like math at &lt;a class="reference external" href="http://conference.scipy.org/"&gt;SciPy2009&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Because parallel computing is out of process, in Python, it is simply
-harder to debug (though I hear that the IPython guys are on that).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I have progressively developed a tiny tool to adress both problems, at
-least for my embarrasingly-parallel problems. I address the second
-problem by having a trivial switch to run my code without importing any
-fancy parallel computing tools. And I address the first problem using
-syntactic sugar to be able to type in map/reduce code that actually
-looks like standard procedural code:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;results&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Parallel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n_jobs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;
-            &lt;span class="n"&gt;delayed&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;my_calculation&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="n"&gt;data1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;data2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                                    &lt;span class="n"&gt;parameter1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;parameter2&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;data1&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;store1&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;data2&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;store2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;There are several tricks here:&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;I use a ‘&lt;em&gt;delayed&lt;/em&gt;‘ decorator that creates the argument list and
-keyword argument dictionary for me so that I can type something that
-really looks like a function call. Also, the decorator checks to see
-if the function and the arguments can be pickled, because if not the
-parallel computing libraries will raise errors, sometimes with
-hard-to-understand messages.&lt;/li&gt;
-&lt;li&gt;I use list comprehension to create the list to apply the map/reduce
-onto. List comprehension is really readable, and very powerful.&lt;/li&gt;
-&lt;li&gt;The ‘&lt;em&gt;Parallel&lt;/em&gt;‘ object hides all the cleverness. If the
-‘&lt;em&gt;n_jobs&lt;/em&gt;‘ parameter is set to 1, it does not call any parallel
-computing library. If it is set to -1, all the CPUs are used. The
-object instantiates the parallel computing context and also destroys
-it. While this is inefficient, it is great for catching errors early.
-And finally, while I have implemented this only for the
-multiprocessing module, any fork/join-based parallel computing
-library could be encapsulated the same way, thus providing a uniform
-API to do multi-node parallel computing or single-computer shared
-memory (as multi-processing uses the Unix fork call, and all modern
-Unices implement copy on write of memory pages, you get some shared
-memory for free without worrying about race conditions).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="topic"&gt;
-&lt;p class="topic-title"&gt;&lt;strong&gt;Update&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This pattern has actually evolved in the &lt;a class="reference external" href="https://pythonhosted.org/joblib/"&gt;joblib project&lt;/a&gt; ,
-which provides a lot of cleverness under the hood.&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="scientific computing"></category><category term="scipy"></category><category term="software engineering"></category><category term="joblib"></category></entry></feed>
+</content><category term="programming"></category><category term="python"></category><category term="design patterns"></category><category term="software architecture"></category><category term="selected"></category></entry></feed>
