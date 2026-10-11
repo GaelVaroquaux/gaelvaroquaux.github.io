@@ -1,5 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2026-01-14T00:00:00+01:00</updated><entry><title>Stepping up as probabl’s CSO to supercharge scikit-learn and its ecosystem</title><link href="https://gael-varoquaux.info/programming/stepping-up-as-probabls-cso-to-supercharge-scikit-learn-and-its-ecosystem.html" rel="alternate"></link><published>2026-01-14T00:00:00+01:00</published><updated>2026-01-14T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2026-01-14:/programming/stepping-up-as-probabls-cso-to-supercharge-scikit-learn-and-its-ecosystem.html</id><summary type="html">&lt;div class="admonition note"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/all.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2026-06-10T00:00:00+02:00</updated><entry><title>How much plagiarism is there in the mathematical genius of big AI?</title><link href="https://gael-varoquaux.info/science/how-much-plagiarism-is-there-in-the-mathematical-genius-of-big-ai.html" rel="alternate"></link><published>2026-06-10T00:00:00+02:00</published><updated>2026-06-10T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2026-06-10:/science/how-much-plagiarism-is-there-in-the-mathematical-genius-of-big-ai.html</id><summary type="html">&lt;img alt="" class="small align-right" src="https://gael-varoquaux.info/science/attachments/plagiarism_maths.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;Result after result, OpenAI’s AIs are solving famous mathematical problems. But researchers recognize in them their own unfinished lines of work, explored with these very tools: how does an idea go from a conversation to a discovery?&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;img alt="" class="small align-right" src="https://gael-varoquaux.info/science/attachments/plagiarism_maths.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;Result after result, OpenAI’s AIs are solving famous mathematical problems. But researchers recognize in them their own unfinished lines of work, explored with these very tools: how does an idea go from a conversation to a discovery?&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/quelle-part-de-plagiat-dans-le-genie-mathematique-des-geants-de-lia-2256078"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;Navier-Stokes, one of the seven “Millennium Problems”, “non-sofic” groups, then, a few days ago, 722 papers in one go: OpenAI is stringing together impressive results that we are still digesting. Where does the intelligence of their AI come from?&lt;/p&gt;
+&lt;p&gt;A language model is first and foremost an immense memory, which works by analogy. Give it the riddle of the ferryman who must take a wolf, a goat and a cabbage across a river: even if you rename the characters, it manages. Beyond exact matches, it recognizes the structure of a problem it has already seen. In mathematics, this memory is precious: the first difficulty of research is to read, again and again, to find in prior work, close or distant, the tool that will unlock the situation. The AI has read everything.&lt;/p&gt;
+&lt;p&gt;But the AI does more than adapt known solutions: it breaks problems down into simpler steps, a “chain of thought”, each step drawing on its memory. Knowing how to break things down is learned from examples, like those in school textbooks. To multiply the examples, the AI is made to produce thousands of attempts on problems whose solution can be checked, looking for the sequences of steps that succeed: this is reinforcement learning. By seeing many fruitful sequences, the AI builds itself an implicit library of decomposition strategies, which it transposes to new problems.&lt;/p&gt;
+&lt;p&gt;Researchers’ conversations with the AI are also full of new sequences of steps on cutting-edge problems. A mathematician working with an assistant guides it, corrects it, steers it toward an unusual path: each session is a successful chain of reasoning, annotated by an expert. These sessions are kept by the AI providers.&lt;/p&gt;
+&lt;p&gt;Yet researchers recognize their own lines of work in OpenAI’s results. Tristan Buckmaster and Levent Alpöge had been working for a year, with OpenAI’s tools, on an unpublished approach to Navier-Stokes; OpenAI only took it up very recently, with a proof that Buckmaster finds surprisingly close. Andreas Thom had discussed with ChatGPT for months techniques that are out of fashion for this problem, the very ones at the heart of OpenAI’s proof. At Anthropic, Claude has just “discovered” enzymes that a PhD student in Copenhagen says he has been studying since 2022, having entrusted it with his unpublished data. The companies deny it, but OpenAI first conceded that it “cannot rule out” that “de-identified” data improved its models.&lt;/p&gt;
+&lt;p&gt;We will probably never get to the bottom of this story. But to de-identify an idea is to strip it of its name: precisely what separates inspiration from plagiarism. We accept the tools’ terms without reading them, terms that often allow the use of our data “to improve the service”. When we entrust them with an idea, do the AI giants slip from improvement to plagiarism, and will they be shocked, shocked, to learn where their discoveries came from?&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;div class="section" id="sources"&gt;
+&lt;h2&gt;Sources&lt;/h2&gt;
+&lt;p&gt;Non-sofic groups (Andreas Thom)&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Andreas Thom, “On the existence of non-sofic groups”, guest post on Terence Tao’s blog, September 11, 2026: &lt;a class="reference external" href="https://terrytao.wordpress.com/2026/09/11/on-the-existence-of-non-sofic-groups/"&gt;https://terrytao.wordpress.com/2026/09/11/on-the-existence-of-non-sofic-groups/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The Verge, “Where does OpenAI get mathematics training data”: &lt;a class="reference external" href="https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data"&gt;https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Quartz: &lt;a class="reference external" href="https://qz.com/openai-mathematician-training-data-dishonesty-andreas-thom-091026"&gt;https://qz.com/openai-mathematician-training-data-dishonesty-andreas-thom-091026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Notebookcheck: &lt;a class="reference external" href="https://www.notebookcheck.net/Plainly-dishonest-mathematician-says-OpenAI-lied-to-him-about-training-on-his-private-chats.1395716.0.html"&gt;https://www.notebookcheck.net/Plainly-dishonest-mathematician-says-OpenAI-lied-to-him-about-training-on-his-private-chats.1395716.0.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Post-Cutoff: &lt;a class="reference external" href="https://postcutoff.com/p/2026-09-11-thom-non-sofic-groups-guest-post/"&gt;https://postcutoff.com/p/2026-09-11-thom-non-sofic-groups-guest-post/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Navier-Stokes (Tristan Buckmaster and Levent Alpöge)&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;OpenAI, announcement of the Navier-Stokes solution (and updates): &lt;a class="reference external" href="https://openai.com/index/navier-stokes-solution/"&gt;https://openai.com/index/navier-stokes-solution/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tristan Buckmaster, statement: &lt;a class="reference external" href="https://cims.nyu.edu/~tristanb/statement.pdf"&gt;https://cims.nyu.edu/~tristanb/statement.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CNBC, September 9, 2026: &lt;a class="reference external" href="https://www.cnbc.com/2026/09/09/openai-navier-stokes-math-problem-solved.html"&gt;https://www.cnbc.com/2026/09/09/openai-navier-stokes-math-problem-solved.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Quanta Magazine, September 8, 2026: &lt;a class="reference external" href="https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/"&gt;https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wikipedia, “Navier–Stokes priority controversy”: &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_priority_controversy"&gt;https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_priority_controversy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;OpenAI’s 722 papers (October 6, 2026)&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;OpenAI, “Sharing AI progress in mathematics”: &lt;a class="reference external" href="https://openai.com/index/sharing-ai-progress-in-mathematics/"&gt;https://openai.com/index/sharing-ai-progress-in-mathematics/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New Scientist, “OpenAI announces 722 mathematical discoveries in one go”: &lt;a class="reference external" href="https://www.newscientist.com/article/2592421-openai-announces-722-mathematical-discoveries-in-one-go/"&gt;https://www.newscientist.com/article/2592421-openai-announces-722-mathematical-discoveries-in-one-go/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New Scientist, “The most interesting mathematical discoveries in OpenAI’s 722 new papers”: &lt;a class="reference external" href="https://www.newscientist.com/article/2592703-the-most-interesting-mathematical-discoveries-in-openais-722-new-papers/"&gt;https://www.newscientist.com/article/2592703-the-most-interesting-mathematical-discoveries-in-openais-722-new-papers/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Scientific American, “OpenAI unleashes hundreds more math results upon a field already in shock”: &lt;a class="reference external" href="https://www.scientificamerican.com/article/openai-unleashes-hundreds-more-math-results-upon-a-field-already-in-shock/"&gt;https://www.scientificamerican.com/article/openai-unleashes-hundreds-more-math-results-upon-a-field-already-in-shock/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Quartz: &lt;a class="reference external" href="https://qz.com/openai-math-results-github-millennium-prize-100726"&gt;https://qz.com/openai-math-results-github-millennium-prize-100726&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Enzymes (Anthropic and Mario Rodríguez Mestre)&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Anthropic, “Claude discovers novel enzyme system”: &lt;a class="reference external" href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"&gt;https://www.anthropic.com/news/claude-discovers-novel-enzyme-system&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Anthropic, preprint: &lt;a class="reference external" href="https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf"&gt;https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CNET, “Did Anthropic find a novel enzyme?”: &lt;a class="reference external" href="https://www.cnet.com/tech/services-and-software/did-anthropic-find-a-novel-enzyme/"&gt;https://www.cnet.com/tech/services-and-software/did-anthropic-find-a-novel-enzyme/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DongA Science: &lt;a class="reference external" href="https://www.dongascience.com/en/news/80107"&gt;https://www.dongascience.com/en/news/80107&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Endpoints News, interview with Anthropic’s life sciences team: &lt;a class="reference external" href="https://endpoints.news/qa-anthropics-life-sciences-team-talk-claudes-first-scientific-discovery/"&gt;https://endpoints.news/qa-anthropics-life-sciences-team-talk-claudes-first-scientific-discovery/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Learning to reason with reinforcement learning&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Zelikman et al., “STaR: Bootstrapping Reasoning With Reasoning”, NeurIPS 2022: &lt;a class="reference external" href="https://arxiv.org/abs/2203.14465"&gt;https://arxiv.org/abs/2203.14465&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DeepSeek-AI, “DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning”, 2025: &lt;a class="reference external" href="https://arxiv.org/abs/2501.12948"&gt;https://arxiv.org/abs/2501.12948&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>Will Intellectual Bulldozers Solve Math?</title><link href="https://gael-varoquaux.info/science/will-intellectual-bulldozers-solve-math.html" rel="alternate"></link><published>2026-06-10T00:00:00+02:00</published><updated>2026-06-10T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2026-06-10:/science/will-intellectual-bulldozers-solve-math.html</id><summary type="html">&lt;div class="figure align-right"&gt;
+&lt;img alt="" class="small" src="../science/attachments/intellectual_bulldozer.jpg" style="width: 50%;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;An AI has just disproved an 80-year-old mathematical conjecture, where the best human minds failed for decades. It is a feat that invites us to rethink, well beyond mathematics, what artificial intelligence really changes about our professions.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="figure align-right"&gt;
+&lt;img alt="" class="small" src="../science/attachments/intellectual_bulldozer.jpg" style="width: 50%;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;An AI has just disproved an 80-year-old mathematical conjecture, where the best human minds failed for decades. It is a feat that invites us to rethink, well beyond mathematics, what artificial intelligence really changes about our professions.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-pelleteuses-intellectuelles-de-lia-vont-elles-resoudre-les-maths-2240794"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;An AI overcomes a central Erdős conjecture&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Imagine n points placed on a plane. How many pairs of points can be separated by a distance of exactly 1? In 1946, the mathematician Paul Erdős conjectured that this number of pairs could not grow beyond a certain limit. Eighty years later, an AI has just disproved this conjecture by constructing, for a given n, a set of points containing more such pairs than Erdős believed possible.&lt;/p&gt;
+&lt;p&gt;This result is striking: it concretely demonstrates that an AI can solve problems on which the best mathematicians stumbled for decades. It is part of a broader trend: AIs are gradually becoming capable of handling complex formal problems, and computer scientists like me are turning to them more and more.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;How does an AI achieve such results? It draws on encyclopedic knowledge: the entirety of mathematical publications, public computer code, and results from sometimes distant fields. Here, for example, tools from number theory were brought to bear on a geometry problem. The AI can also tirelessly explore leads that each have only a small chance of succeeding, something a human would not do for lack of time or motivation. This power is multiplied when the AI is paired with an automatic verification program, able to validate or invalidate each lead in real time. In the Erdős case, the AI proposed a first draft of the construction; mathematicians at OpenAI then refined it and verified it.&lt;/p&gt;
+&lt;p&gt;An AI is to the intellect what a bulldozer is to a construction site: remarkably powerful for certain tasks, but incapable of carrying out every step needed to build a house. A construction project requires plans upstream and finishing work downstream. Likewise, all mathematical research begins with something the AI does not do: asking the right question. Erdős was famous for precisely that, his ability to formulate questions that seemed simple but profoundly pushed back the frontiers of mathematics.&lt;/p&gt;
+&lt;p&gt;Yet asking a structuring question earns no prize. The rewards go to those who prove difficult theorems, the most visible and most glorified task. When AI excels at that task, it would be tempting to conclude that it is “doing the math” for us. That would be a mistake. The real question lies elsewhere: how do we reassess what truly matters in intellectual work, now that some of its steps can be automated? This question applies to every profession. Just as we do not measure the progress of a construction project by the cubic meters of earth a bulldozer has moved, we cannot judge the progress of intellectual work by the number of lines of code or pages of reports produced, because thanks to AI, volume has become easy.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>Stepping up as probabl’s CSO to supercharge scikit-learn and its ecosystem</title><link href="https://gael-varoquaux.info/programming/stepping-up-as-probabls-cso-to-supercharge-scikit-learn-and-its-ecosystem.html" rel="alternate"></link><published>2026-01-14T00:00:00+01:00</published><updated>2026-01-14T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2026-01-14:/programming/stepping-up-as-probabls-cso-to-supercharge-scikit-learn-and-its-ecosystem.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;div class="figure align-right"&gt;
 &lt;img alt="" src="../programming/attachments/probabl_team_2025.png" style="width: 400px;" /&gt;
@@ -460,7 +559,224 @@ table foundation models, see &lt;a class="reference external" href="carte-toward
 et al, 2025]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="science"></category><category term="machine learning"></category><category term="tabular learning"></category><category term="foundation models"></category></entry><entry><title>2024 highlights: of computer science and society</title><link href="https://gael-varoquaux.info/science/2024-highlights-of-computer-science-and-society.html" rel="alternate"></link><published>2025-01-01T00:00:00+01:00</published><updated>2025-01-01T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-01-01:/science/2024-highlights-of-computer-science-and-society.html</id><summary type="html">&lt;div class="admonition note"&gt;
+</content><category term="science"></category><category term="machine learning"></category><category term="tabular learning"></category><category term="foundation models"></category></entry><entry><title>AI agents that use tools</title><link href="https://gael-varoquaux.info/science/ai-agents-that-use-tools.html" rel="alternate"></link><published>2025-07-04T00:00:00+02:00</published><updated>2025-07-04T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-07-04:/science/ai-agents-that-use-tools.html</id><summary type="html">&lt;img alt="Image generated with ChatGPT, with the prompt &amp;quot;Please generate an image of an AI using a mechanical tool, such as a wrench. Please make the robot look rather friendly. Also, please make the image square&amp;quot;" class="small align-right" src="../science/attachments/robot_tool_friendly.png" style="width: 50%;" /&gt;
+&lt;p&gt;Modern AIs acquire new capabilities by combining tools to perform a
+complex task, controlling them like an agent. Unlike traditional
+programming, they define the sequences of actions themselves.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/des-agents-ia-qui-utilisent-des-outils-2163252"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Modern AIs are increasingly using …&lt;/p&gt;</summary><content type="html">&lt;img alt="Image generated with ChatGPT, with the prompt &amp;quot;Please generate an image of an AI using a mechanical tool, such as a wrench. Please make the robot look rather friendly. Also, please make the image square&amp;quot;" class="small align-right" src="../science/attachments/robot_tool_friendly.png" style="width: 50%;" /&gt;
+&lt;p&gt;Modern AIs acquire new capabilities by combining tools to perform a
+complex task, controlling them like an agent. Unlike traditional
+programming, they define the sequences of actions themselves.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/des-agents-ia-qui-utilisent-des-outils-2163252"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Modern AIs are increasingly using tools. For example, if you ask a
+conversational AI to solve a complicated equation, the AI alone cannot do
+it. This is not surprising: there is no general mathematical formula. But
+if this AI knows how to use numerical equation-solving routines, it
+quickly gives us the answer. For example, “Le Chat” from Mistral
+generates a small program that uses the “Python” language and its
+numerical routines to solve our problem. The difficulty here is to
+generate the program that calls the right routines. This ability is an
+extension of conversational AI models that know how to answer questions
+by generating text. Here, the text is computer code and not English.&lt;/p&gt;
+&lt;p&gt;By controlling the computer, the AI “acts”. That’s why it is said to be
+an “agent”. By coupling with other systems, agentic AIs develop new
+capabilities. The most powerful ones can then combine different tools by
+leveraging their complementarities. These agent systems are currently
+progressing very quickly, but they remind us of what we have always done
+in computer science: any complicated system is assembled from multiple
+routines, each with a specific functionality. Writing a computer program
+is precisely describing how we are going to call these routines to solve
+a problem. And yet, without the recent advances in AI, we have to specify
+all the steps, whereas agent AIs take a given goal and will themselves
+produce these steps. The difficulty then becomes to break down a task
+into sub-tasks, which is called planning, a difficult problem.&lt;/p&gt;
+&lt;p&gt;In modern AIs, these planning skills are learned. The systems improve
+through trial and error: we give the AI lots of tasks to solve and the AI
+tries sequences of sub-tasks, deciding to use one tool or another. If it
+succeeds in the final task, it learns that the sequence of tool use was a
+good sequence for the task. This is called reinforcement learning, whose
+main inventors received the Turing Prize this year, the Nobel Prize of
+computer science.&lt;/p&gt;
+&lt;p&gt;Another major driver of progress for agent AIs is the powerful ability of
+analogy and associative memory of language models. These language skills
+enable them to start from problems specified by the user in plain
+English, with an open vocabulary. They draw their strategies to use tools
+from a great knowledge of similar problems, but also know how to adapt
+these strategies to the intermediate responses of the tools. They can
+also interact with systems that are much more complex and indeterminate
+than computer routines. For example, an AI can go and fetch information
+on the internet, or even ask a human.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Agent AIs open new perspectives. But they also greatly increase computing
+costs, as they iterate over sub-tasks. Computing costs must be kept in
+mind, as they are an important hurdle to democratization of AI.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>AIs that break down questions reason better</title><link href="https://gael-varoquaux.info/science/ais-that-break-down-questions-reason-better.html" rel="alternate"></link><published>2025-06-20T00:00:00+02:00</published><updated>2025-06-20T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-06-20:/science/ais-that-break-down-questions-reason-better.html</id><summary type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an AI that is thinking deeply. Philosophical references may be welcomed, for instance like the classic hamlet holding skull cliché.&amp;quot;" class="small align-right" src="../science/attachments/ai_thinking.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;The key to the most powerful conversational AIs is to reason by breaking
+down a complex task into simpler subproblems. Why is this crucial, and
+how does it work?&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-qui-decomposent-les-questions-raisonnent-mieux-2151428"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The recent release of …&lt;/p&gt;</summary><content type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an AI that is thinking deeply. Philosophical references may be welcomed, for instance like the classic hamlet holding skull cliché.&amp;quot;" class="small align-right" src="../science/attachments/ai_thinking.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;The key to the most powerful conversational AIs is to reason by breaking
+down a complex task into simpler subproblems. Why is this crucial, and
+how does it work?&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-qui-decomposent-les-questions-raisonnent-mieux-2151428"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The recent release of the conversational AI “DeepSeek R1” shook the
+financial markets because it showed a significant reduction in the costs
+of reasoning models. But what are these reasoning models?&lt;/p&gt;
+&lt;p&gt;To understand the challenges of reasoning in conversational AIs, we can
+ask them to solve riddles. I tried various logical riddles on different
+AIs, such as the puzzle where a man has to get a fox, a chicken, and a
+sack of corn across a river without one eating the other. The AI responds
+brilliantly. But how can we ensure that the AI is truly reasoning and not
+just reciting answers it has seen before? By replacing them with other
+equivalent animals (wolf, lamb, and hay), the AI does just as well. But
+it could have solved the problem by analogy with the previous classic
+one, rather than with reasonning. Indeed language models are very good at
+analogies. A conversational AI typically works by proposing a answer
+inspired by the flow of words (and corresponding concepts) in the texts
+on which it was trained.&lt;/p&gt;
+&lt;p&gt;If, instead of a riddle resembling a story, we try to play tic-tac-toe,
+the weaknesses appear. Most conversational AIs are very bad at
+tic-tac-toe, even going so far as to declare victory when faced with a
+defeat. Perhaps this is because analogy is not as useful. But activating
+the “reasoning” option makes them unbeatable. What is behind this option?&lt;/p&gt;
+&lt;p&gt;A third task helps to understand the reasoning mechanisms of a
+conversational AI: let’s ask it how many “L”s there are in
+“LOLLAPALOUZA”. There is a catch: ChatGPT was able to give me the correct
+for the number of Ls in “LOLLAPALOOZA”, a question often used in the past
+to show its limits. For “LOLLAPALOUZA”, it fails. Or rather, it needs
+help: if we tell it to spell out the word, then count the “L”s, it gives
+the correct answer. With the right intermediate steps, a problem is often
+much simpler. These decompositions into subproblems are called chains of
+thought in conversational AIs. The “reasoning” option of some AIs
+generates such chains.&lt;/p&gt;
+&lt;p&gt;DeepSeek R1 received much attention due to its excellence in breaking
+down problems to reason in such a way. To do this, it has been trained to
+generate reasoning patterns from questions, using reinforcement learning:
+through trial and error, on many problems generated with the associated
+answer, like math problems. Faced with a task, the AI still proceeds by
+analogy with the tasks it has seen during this learning phase, but it
+uses this analogy to sketch a battle plan, rather than a response. Each
+subproblem is then easier, and the AI can tackle it by analogy to
+problems already seen. By observing the chains of thought, we can even
+see the AI verifying its intermediate results. These chains of thought
+are not always visible, but we can guess them from the AI’s response
+time.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;With these reasoning mechanisms, a conversational AI is as good as I am
+at tic-tac-toe. But using such a model to play tic-tac-toe is like using
+a sledgehammer to crush a fly: it is very inefficient in computational
+cost compared to a specialized program for tic-tac-toe, which we have
+known how to do for decades.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>AI super-intelligent to play Go, and math?</title><link href="https://gael-varoquaux.info/science/ai-super-intelligent-to-play-go-and-math.html" rel="alternate"></link><published>2025-02-19T00:00:00+01:00</published><updated>2025-02-19T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-19:/science/ai-super-intelligent-to-play-go-and-math.html</id><summary type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an artificial intelligences playing go, with mathematical formula flying in the background. The mathematical formula are flying in all directions, and the image is futuristic.&amp;quot;" class="small align-right" src="../science/attachments/robots_playing_go.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/lia-le-go-et-les-maths-2140332"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="imitation-is-not-creation"&gt;
+&lt;h2&gt;Imitation is not …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an artificial intelligences playing go, with mathematical formula flying in the background. The mathematical formula are flying in all directions, and the image is futuristic.&amp;quot;" class="small align-right" src="../science/attachments/robots_playing_go.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/lia-le-go-et-les-maths-2140332"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="imitation-is-not-creation"&gt;
+&lt;h2&gt;Imitation is not creation&lt;/h2&gt;
+&lt;p&gt;For several decades, calculators have been better than humans in an
+intellectual task: mental arithmetic. Yet, we do not call this
+“super-intelligence.” Probably because it is humans who specified all the
+rules for these calculations to the machine. Similarly, a computer has a
+superhuman ability to memorize information exactly, such as numbers, but
+we do not consider it super-intelligent for that reason. Perhaps this is
+because it does not teach us anything new. However, in 2017, an AI
+started teaching the best Go players moves and strategies that no one had
+ever known. How is this possible? Will AI surpass its creator and become
+super-intelligent in all fields?&lt;/p&gt;
+&lt;p&gt;Most recent breakthroughs in AI rely on learning methods where the
+computer imitates humans. For example, to create computer-vision systems,
+we provide the computer with many annotated images describing what they
+represent. Likewise, conversational AIs learn by training to complete
+examples of text. Under these conditions, it is difficult for AI to
+surpass its creator.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="when-ais-invent"&gt;
+&lt;h2&gt;When AIs invent&lt;/h2&gt;
+&lt;p&gt;But AlphaZero, the AI champion in Go, operates on a different principle:
+reinforcement learning. Here, the AI takes actions –moves in the game of
+Go– and receives a “reward” if it wins the game. Through countless games,
+it optimizes its strategies to maximize rewards, including exploring new
+strategies. AlphaZero trained by playing tens of millions of games
+against itself. This is how the AI was able to create new strategies,
+unrestricted by human knowledge.&lt;/p&gt;
+&lt;p&gt;Such learning, based on millions of trial-and-error attempts, does not
+apply to all problems –it requires the ability to perform rapid
+experiments, like in a computer game, which remains the only domain where
+a true super-intelligence has been achieved. However, there is hope in
+mathematics, another intellectual game.&lt;/p&gt;
+&lt;p&gt;Indeed, progress in generative AI for language –that power tools such as
+ChatGPT– can be applied to mathematical proofs, which consist of
+sequences of symbols. Trained on numerous proofs, an AI can learn to
+complete partial proofs. However, such a generative AI will produce
+sequences without guarantees of mathematical validity. Another tool,
+using proof-verification techniques based on symbolic AI, can then filter
+out only the correct sequences, giving a “reward” signal. Reinforcement
+learning finally comes in, using its exploration schemes to maximize this
+reward and discover new valid proof steps.&lt;/p&gt;
+&lt;p&gt;This is how, in July 2024, the AlphaProof AI won a silver medal at the
+International Mathematical Olympiad. Further progress may eventually lead
+to “super-intelligence” in mathematics. However, we are still far from
+general super-intelligence, as, both in Go and mathematics, progress is
+made possible by the ease of verifying whether one has “won” or not.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>2024 highlights: of computer science and society</title><link href="https://gael-varoquaux.info/science/2024-highlights-of-computer-science-and-society.html" rel="alternate"></link><published>2025-01-01T00:00:00+01:00</published><updated>2025-01-01T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-01-01:/science/2024-highlights-of-computer-science-and-society.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;For me, 2024 was full of back and forth between research,
 software, and connecting these to society. Here, I lay out some
@@ -780,7 +1096,151 @@ reading. Taking a step back to figure out what is important is always a
 good exercise for me.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="statistics"></category><category term="yearly report"></category></entry><entry><title>CARTE: toward table foundation models</title><link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="alternate"></link><published>2024-07-19T00:00:00+02:00</published><updated>2024-07-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-19:/science/carte-toward-table-foundation-models.html</id><summary type="html">&lt;div class="admonition note"&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="statistics"></category><category term="yearly report"></category></entry><entry><title>When AIs must overcome the data</title><link href="https://gael-varoquaux.info/science/when-ais-must-overcome-the-data.html" rel="alternate"></link><published>2024-12-22T00:00:00+01:00</published><updated>2024-12-22T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-12-22:/science/when-ais-must-overcome-the-data.html</id><summary type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
+&lt;img alt="Image generated with &amp;quot;ChatGPT&amp;quot;, with the prompt &amp;quot;Please generate an image of a robot arm wrestling a figure made of numbers. This figure does not look like a robot, but more like a human, however it is made of numbers.&amp;quot;" class="small align-right" src="../science/attachments/robot_wresting_numbers.jpg" style="width: 50%;" /&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/quand-lia-doit-depasser-les-donnees-2126369"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
+&lt;img alt="Image generated with &amp;quot;ChatGPT&amp;quot;, with the prompt &amp;quot;Please generate an image of a robot arm wrestling a figure made of numbers. This figure does not look like a robot, but more like a human, however it is made of numbers.&amp;quot;" class="small align-right" src="../science/attachments/robot_wresting_numbers.jpg" style="width: 50%;" /&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/quand-lia-doit-depasser-les-donnees-2126369"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In 2023, Microsoft’s conversational AI insulted users.
+Salary-recommendation engines ignore women’s degrees to underpay them. At
+the start of the Covid-19 pandemic, predictions of hospital stays
+consistently underestimated the duration. These three issues all stem
+from the same failure: predictive engines, artificial intelligences, that
+have learned from biases. The rude conversational AI replicated its
+training texts, some of which came from internet forums where politeness
+is sometimes overlooked. The medical AI only considered finished
+hospitalizations, and, as the epidemic had just begun, only patients
+with mild forms had already been discharged, while the more seriously ill
+remained hospitalized.&lt;/p&gt;
+&lt;p&gt;To obtain an AI that doesn’t say nonsense, the biases must be
+“corrected.” The problem of too-short observation windows is a classic
+issue in medical statistics: more importance must be placed on the few
+individuals who have been sick for a long time. A similar solution is
+used to improve conversational AIs: weighting the training text sources
+based on the deviation from the desired behavior.&lt;/p&gt;
+&lt;div class="section" id="aligning-on-which-values"&gt;
+&lt;h2&gt;Aligning on which values?&lt;/h2&gt;
+&lt;p&gt;The problem of bias is universal in statistics. And modern AIs are
+statistical because they learn from data. The notion of bias is very
+relative. It should be understood as a gap between the available data and
+the desired behavior. Therefore, &lt;strong&gt;there is no such thing as unbiased data,
+or a universal bias correction&lt;/strong&gt;. Much of the effort to improve AIs focuses
+on reducing this gap between training and the desired behavior.&lt;/p&gt;
+&lt;p&gt;For example, when training AIs for autonomous vehicles, one difficulty is
+that the data contains very few traffic accidents. Simulators are
+sometimes used to fill this gap. They are inherently less rich than
+reality and are mixed with real-world driving. There is a well-controled
+gap between the resulting mixture and typical driving, this gap is there
+to put emphasis on safety requirements in unfavorable scenarios. This is
+another form of data correction.&lt;/p&gt;
+&lt;p&gt;Just as the notion of data bias depends on how well the data match a
+targeted use, an AI does not produce absolute or objective truth. Without
+corrections, it simply replicates its behavior based on what it has
+observed. And when corrections are made, the whole question is how to
+correct it. For powerful AIs, we then talk about “alignment” towards
+goals and values. As AI incorporates the values of its designers, one
+might wonder whether the same AI can be socially acceptable in all
+cultures.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>Do AIs reason or recite?</title><link href="https://gael-varoquaux.info/science/do-ais-reason-or-recite.html" rel="alternate"></link><published>2024-10-19T00:00:00+02:00</published><updated>2024-10-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-10-19:/science/do-ais-reason-or-recite.html</id><summary type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
+&lt;img alt="Image generated with &amp;quot;ChatGPT&amp;quot;, with the prompt &amp;quot;Please generate an image of a robot with a stream of numbers coming out of his mouth. The robot is on the left, facing right, and the numbers flow, as if they were sound.&amp;quot;" class="small align-right" src="../science/attachments/robot_numbers_flow_mouth.jpg" style="width: 50%;" /&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-raisonnent-elles-ou-recitent-elles-2103079"&gt;Les Echos&lt;/a&gt;. I updated it with new …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
+&lt;img alt="Image generated with &amp;quot;ChatGPT&amp;quot;, with the prompt &amp;quot;Please generate an image of a robot with a stream of numbers coming out of his mouth. The robot is on the left, facing right, and the numbers flow, as if they were sound.&amp;quot;" class="small align-right" src="../science/attachments/robot_numbers_flow_mouth.jpg" style="width: 50%;" /&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-raisonnent-elles-ou-recitent-elles-2103079"&gt;Les Echos&lt;/a&gt;. I updated it with new references.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Conversational AI, or large language models, are sometimes seen as the
+gateway to general artificial intelligence. ChatGPT, for example, can
+answer questions asked at the International Mathematical Olympiad. And
+yet, on other, seemingly much simpler questions, ChatGPT makes surprising
+mistakes. What aspects of conversational AI intelligence explain its
+ability to solve some problems and not others?&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://arxiv.org/abs/2309.13638"&gt;Thomas McCoy and co-authors&lt;/a&gt;
+conjecture that it has to do with their underlying model of
+autoregression: technically, these AIs are trained to complete texts
+found on the Internet. If an AI is very good at calculating (9/5) x + 32,
+but not (7/5) x + 31, it is because the first formula corresponds to the
+conversion of degrees Celsius to Fahrenheit, a very frequent conversion
+on the Internet, while the second does not correspond to any particular
+formula. Conversational AIs would therefore be good at reproducing what
+they’ve already seen. Indeed, numerous studies have shown that they have
+a certain tendency to reproduce snippets of known text. So, if an AI can
+solve problems from the International Mathematical Olympiad, is it simply
+because it has memorized the answer?&lt;/p&gt;
+&lt;div class="section" id="something-new"&gt;
+&lt;h2&gt;Something new?&lt;/h2&gt;
+&lt;p&gt;In terms of intelligence, inventing a new mathematical demonstration
+requires mastering abstractions and the ability to string together
+complicated logical reasoning with an imposed start and finish. This
+seems much more difficult than memorizing a demonstration. This is one of
+the traditional oppositions in machine learning, the line of research
+that gave rise to today’s AIs: memorizing is one thing, knowing how to
+generalize is another. For example, if I memorize all the additions
+between two numbers smaller than ten, I cannot extrapolate beyond that. To
+go further, I need to master the logic of addition… or memorize more.&lt;/p&gt;
+&lt;p&gt;And precisely, conversational AIs have an enormous capacity for
+memorization, and have been trained on almost the entire Internet. Given
+a question, they can often dip into their memory to find answers. So, are
+they intelligent or just have a great memory? Scientists are still
+debating the importance of memory to their abilities. Some argue that
+their storage capacity is ultimately limited by the size of the Internet.
+Others wonder to what extent the impressive successes highlighted are not
+on tasks already solved on the Internet, questioning their ability to do
+anything new.&lt;/p&gt;
+&lt;p&gt;But could memorization be an aspect of intelligence? In 1987, Lenat and
+Feigenbaum conjectured that, for a cognitive agent, accumulating
+knowledge enables it to solve new tasks with less learning. Perhaps the
+intelligence of conversational AI lies in knowing how to pick up the
+right bits of information, and combine them.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;Related academic work:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;a class="reference external" href="https://www.pnas.org/doi/10.1073/pnas.2322420121"&gt;Embers of autoregression show how large language models are shaped
+by the problem they are trained to solve&lt;/a&gt;, R. Thomas McCoy,
+Shunyu Yao, Dan Friedman, Mathew D. Hardy, and Thomas L. Griffiths,
+PNAS 2024 (&lt;a class="reference external" href="https://arxiv.org/abs/2309.13638"&gt;ArXiv&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Princeton researchers show that properties of large language models
+(LLMs) are governed by the data that they are trained on, including
+for they arithmetics abilities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;a class="reference external" href="https://arxiv.org/abs/2410.05229"&gt;GSM-Symbolic: Understanding the Limitations of Mathematical
+Reasoning in Large Language Models&lt;/a&gt;, Iman Mirzadeh, Keivan Alizadeh
+Hooman Shahrokhi, Oncel Tuzel, Samy Bengio, Mehrdad Farajtabar&lt;/p&gt;
+&lt;p&gt;Apple researchers show that LLMs solve mathematical challenge via
+probabilistic &lt;strong&gt;pattern matching&lt;/strong&gt; on previously seen examples, rather
+than logical reasonning.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>CARTE: toward table foundation models</title><link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="alternate"></link><published>2024-07-19T00:00:00+02:00</published><updated>2024-07-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-19:/science/carte-toward-table-foundation-models.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;Foundation models, pretrained and readily usable for many downstream
 tasks, have changed the way we process text, images, and sound. Can we
@@ -10480,586 +10940,4 @@ research. This research goes beyond my dreams.&lt;/p&gt;
 &lt;embed src="http://www.youtube.com/v/AOtQAhblRps&amp;amp;hl=en_US&amp;amp;fs=1&amp;amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"&gt;
 &lt;/embed&gt;
 &lt;/object&gt;
-&lt;/p&gt;</content><category term="programming"></category><category term="mayavi"></category><category term="scipy"></category><category term="python"></category><category term="scientific computing"></category><category term="art"></category></entry><entry><title>EuroScipy 2010, Paris July 8-11. Save the date!</title><link href="https://gael-varoquaux.info/programming/euroscipy-2010-paris-july-8-11-save-the-date.html" rel="alternate"></link><published>2010-02-14T00:02:00+01:00</published><updated>2010-02-14T00:02:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-02-14:/programming/euroscipy-2010-paris-july-8-11-save-the-date.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;EuroScipy 2010&lt;/strong&gt;, the 3rd European meeting on Python in Science, will
-be held July 8-11 in the center of Paris, at the &lt;a class="reference external" href="http://www.ens.fr/?lang=en"&gt;Ecole Normale
-Supérieure&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;We have made good progress in the organization, and we already have &lt;a class="reference external" href="http://www.euroscipy.org/conference/867?vid=primary"&gt;an
-exciting program&lt;/a&gt; although paper submission is not yet even open.&lt;/p&gt;
-&lt;div class="section" id="tutorial-tracks"&gt;
-&lt;h2&gt;Tutorial tracks …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;EuroScipy 2010&lt;/strong&gt;, the 3rd European meeting on Python in Science, will
-be held July 8-11 in the center of Paris, at the &lt;a class="reference external" href="http://www.ens.fr/?lang=en"&gt;Ecole Normale
-Supérieure&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;We have made good progress in the organization, and we already have &lt;a class="reference external" href="http://www.euroscipy.org/conference/867?vid=primary"&gt;an
-exciting program&lt;/a&gt; although paper submission is not yet even open.&lt;/p&gt;
-&lt;div class="section" id="tutorial-tracks"&gt;
-&lt;h2&gt;Tutorial tracks&lt;/h2&gt;
-&lt;p&gt;There will be two tutorials tracks:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.euroscipy.org/track/871"&gt;An introductory track&lt;/a&gt;, to bring attendees up to speed with Python
-in science. Even if you are a complete beginner, after these two
-days, you should be able to be efficient using Python for scientific
-purposes.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.euroscipy.org/track/872"&gt;An advanced tutorial track&lt;/a&gt;, covering in-depth specific tools and
-projects, aimed at experienced users and presented by leading experts
-of the topic.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We will soon be requesting feedback from you to help us choose between
-the different thrilling tutorial propositions that we have for these
-tracks. More on that later…&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="keynote-speakers"&gt;
-&lt;h2&gt;Keynote speakers&lt;/h2&gt;
-&lt;div class="section" id="hans-petter-langtangen"&gt;
-&lt;h3&gt;Hans Petter Langtangen&lt;/h3&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://simula.no/"&gt;Simula laboratory&lt;/a&gt;, Oslo, director of scientific computing and
-bio-medical research&lt;/li&gt;
-&lt;li&gt;Author of the famous book &lt;a class="reference external" href="http://www.springer.com/mathematics/numerical+and+computational+mathematics/book/978-3-540-73915-9"&gt;Python scripting for computational
-science&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="konrad-hinsen"&gt;
-&lt;h3&gt;Konrad Hinsen&lt;/h3&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="http://www.synchrotron-soleil.fr/"&gt;Synchrotron SOLEIL&lt;/a&gt; and &lt;a class="reference external" href="http://dirac.cnrs-orleans.fr/plone"&gt;Centre de Biophysique Moléculaire&lt;/a&gt;
-(Orléans)&lt;/li&gt;
-&lt;li&gt;One of the fathers of numeric, and developer of &lt;a class="reference external" href="http://dirac.cnrs-orleans.fr/plone/software/scientificpython/"&gt;Scientific Python.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="help-us-spread-the-word"&gt;
-&lt;h2&gt;Help us spread the word&lt;/h2&gt;
-&lt;p&gt;The poster of the conference can be downloaded:&lt;/p&gt;
-&lt;a class="reference external image-reference" href="attachments/poster_euroscipy_2010.pdf"&gt;
-&lt;img alt="" src="attachments/poster_euroscipy_2010.jpg" /&gt;
-&lt;/a&gt;
-&lt;p&gt;Help us spread the word: print it and post it at your workplace!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="the-exciting-city-of-paris"&gt;
-&lt;h2&gt;The exciting city of Paris&lt;/h2&gt;
-&lt;p&gt;The conference will take place in the center of Paris, in the very
-lively “quartier latin”, in the prestigious and historical ‘Ecole
-Normale Supérieure’. In the morning, on your way to ENS, drop by a café
-for a French croissant, served by a French waiter with a typical French
-accent in English. In the evenings, walk one block to enjoy the night
-life “rue Mouffetard”, or venture further to stroll on the river banks
-of the Seine, along which people dance to street music.&lt;/p&gt;
-&lt;img alt="" src="attachments/banner_euroscipy.jpg" /&gt;
-&lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="science"></category><category term="scientific computing"></category><category term="conferences"></category></entry><entry><title>PCA and ICA: Identifying combinations of variables</title><link href="https://gael-varoquaux.info/science/ica_vs_pca.html" rel="alternate"></link><published>2010-02-05T00:00:00+01:00</published><updated>2010-02-05T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2010-02-05:/science/ica_vs_pca.html</id><summary type="html">&lt;div class="topic"&gt;
-&lt;p class="topic-title"&gt;&lt;strong&gt;Dimension reduction and interpretability&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Suppose you have statistical data that too many dimensions, in other
-words too many variables of the same random process, that has been
-observed many times. You want to find out, from all these variables (or all
-these dimensions when speaking in terms of multivariate data …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="topic"&gt;
-&lt;p class="topic-title"&gt;&lt;strong&gt;Dimension reduction and interpretability&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Suppose you have statistical data that too many dimensions, in other
-words too many variables of the same random process, that has been
-observed many times. You want to find out, from all these variables (or all
-these dimensions when speaking in terms of multivariate data),
-what are the relevant combinations, or directions.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="dimension-reduction-with-pca"&gt;
-&lt;h2&gt;Dimension reduction with PCA&lt;/h2&gt;
-&lt;p&gt;If we have three-dimensional data, for instance simultaneous measurements
-made by three thermometers positioned at different locations in a room.
-The data forms a cluster of points in a 3D space:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/3d_data.jpg" style="width: 50%;" /&gt;
-&lt;p&gt;If the temperature in that room is conditioned by only two parameters,
-the setting of a heater and the outside temperature, we probably have
-too much data: the three sets of measurements can be expressed as a
-linear combination of two fluctuating variable, and an additional much
-smaller noise parameter. In other words, the data mostly lies in a 2D
-plane embedded in the 3D measurement space.&lt;/p&gt;
-&lt;p&gt;We can use PCA (Principal Component Analysis) to find this plane: PCA
-will give us the orthogonal basis in which the covariance matrix of our
-data is diagonal. The vectors of this basis point in successive
-orthogonal directions in which the data variance is maximum. In the case
-of data mainly residing on a 2D plane, the variance is much greater along
-the two first vectors, which define our plane of interest, than along the
-third one:&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="" src="https://gael-varoquaux.info/science/attachments/ica_pca/3d_data_pca_axis.jpg" style="width: 50%;" /&gt;
-&lt;p class="caption"&gt;The covariance eigenvectors identified by PCA are shown in red. The
-plane defined by the 2 largest eigenvectors is shown in light red.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;If we look at the data in the plane identified by PCA, it is clear that
-it was mostly 2D:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/3d_data_pca.jpg" style="width: 50%;" /&gt;
-&lt;/div&gt;
-&lt;div class="section" id="understanding-pca-with-a-gaussian-model"&gt;
-&lt;h2&gt;Understanding PCA with a Gaussian model&lt;/h2&gt;
-&lt;p&gt;Let &lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt; be two normal-distributed variables, describing the
-processes we are observing:&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;x&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
-&lt;/div&gt;
-&lt;p&gt;and&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;y&lt;/i&gt; = &lt;span class="scriptfont"&gt;N&lt;/span&gt;(0, 1)
-&lt;/div&gt;
-&lt;p&gt;Let &lt;cite&gt;a&lt;/cite&gt; and &lt;cite&gt;b&lt;/cite&gt; be two observation variables, linear combinations of &lt;cite&gt;x&lt;/cite&gt;
-and &lt;cite&gt;y&lt;/cite&gt;:&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;a&lt;/i&gt; = &lt;i&gt;x&lt;/i&gt; + &lt;i&gt;y&lt;/i&gt;
-&lt;/div&gt;
-&lt;p&gt;and&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;b&lt;/i&gt; = 2 &lt;i&gt;y&lt;/i&gt;
-&lt;/div&gt;
-&lt;p&gt;PCA is performed by applying an SVD (singular value decomposition) on the
-observed data matrix:&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;Y&lt;/i&gt; = [&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;a&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...; &lt;i&gt;b&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;i&gt;b&lt;/i&gt;&lt;sub&gt;3&lt;/sub&gt;...]
-&lt;/div&gt;
-&lt;p&gt;This is equivalent to find the eigenvalues and eigenvectors of
-&lt;span class="formula"&gt;&lt;i&gt;Y&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;Y&lt;/i&gt;&lt;/span&gt;, the correlation matrix of the observed data. The
-multidimensional (or multivariate, in statistical jargon) probability
-density function of Y is written:&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ∼ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;M&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
-&lt;/div&gt;
-&lt;p&gt;where &lt;cite&gt;r&lt;/cite&gt; is the position is the &lt;cite&gt;(a,b)&lt;/cite&gt; observation space, and &lt;cite&gt;M&lt;/cite&gt; the
-correlation matrix. Diagonalizing the matrix &lt;cite&gt;M&lt;/cite&gt; corresponds to finding
-a rotation matrix &lt;cite&gt;U&lt;/cite&gt; such that:&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ∼ &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;r&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;U&lt;/i&gt;&lt;sup&gt; &lt;i&gt;T&lt;/i&gt;&lt;/sup&gt;&lt;i&gt;S&lt;/i&gt; &lt;i&gt;U&lt;/i&gt; &lt;i&gt;r&lt;/i&gt;)
-&lt;/div&gt;
-&lt;p&gt;With &lt;cite&gt;S&lt;/cite&gt; a diagonal matrix. In other words, &lt;cite&gt;U&lt;/cite&gt; is a rotation of the
-observation space to change to a basis where the probability density
-function is written:&lt;/p&gt;
-&lt;div class="formula"&gt;
-&lt;i&gt;p&lt;/i&gt;(&lt;i&gt;Y&lt;/i&gt;) ∼ &lt;i&gt;exp&lt;/i&gt;( − &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator"&gt;∑&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;) = &lt;span class="limits"&gt;&lt;sup class="limit"&gt; &lt;/sup&gt;&lt;span class="limit"&gt;&lt;span class="bigoperator"&gt;∏&lt;/span&gt;&lt;/span&gt;&lt;sub class="limit"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt; &lt;i&gt;exp&lt;/i&gt;( − &lt;i&gt;σ&lt;/i&gt;&lt;sub&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt; &lt;i&gt;r&lt;/i&gt;&lt;span class="scripts"&gt;&lt;sup class="script"&gt;2&lt;/sup&gt;&lt;sub class="script"&gt;&lt;i&gt;i&lt;/i&gt;&lt;/sub&gt;&lt;/span&gt;)
-&lt;/div&gt;
-&lt;p&gt;In this new basis, &lt;cite&gt;Y&lt;/cite&gt; can thus be interpreted as a sum of independent
-normal processes of different variance.&lt;/p&gt;
-&lt;p&gt;We can thus picture the PCA as a way of finding independent normal
-processes. The different steps of the argument exposed above can be
-pictured in the following figure:&lt;/p&gt;
-&lt;div class="figure align-center"&gt;
-&lt;img alt="" src="https://gael-varoquaux.info/science/attachments/ica_pca/pca_on_gaussian_data.png" style="width: 80%;" /&gt;
-&lt;p class="caption"&gt;First we represent samples drawn from
-&lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt; in their original space, the basis of the independent
-variables. Then we represent the (&lt;cite&gt;a&lt;/cite&gt;, &lt;cite&gt;b&lt;/cite&gt;) samples, and we apply PCA on
-these samples, to estimate the eigenvectors of the covariance matrix.
-Then we represent the data projected in the basis estimated by PCA. One
-important detail to note, is that after PCA, the data is most often
-rescaled: each direction is divided by the corresponding sample standard
-deviation identified by PCA. After this operation, all directions of
-space play the same role, the data is spheric, or “white”.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;PCA was able to identify the original independent variables &lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt;
-in the &lt;cite&gt;a&lt;/cite&gt; and &lt;cite&gt;b&lt;/cite&gt; samples only because they were mixed with different
-variance. For a isotropic Gaussian model, any basis can describe the data
-in terms of independent normal process.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="pca-on-non-normal-data"&gt;
-&lt;h2&gt;PCA on non normal data&lt;/h2&gt;
-&lt;p&gt;More generally, the PCA algorithm can be understood as an algorithm
-finding the direction of space with the highest sample variance, and
-moving on to the orthogonal subspace of this direction to find the next
-highest variance, and iteratively discovering an ordered orthogonal basis
-of highest variance. This is well adapted to normal processes, as their
-covariance is indeed diagonal in an orthogonal basis. In addition, the
-resulting vectors come with a “PCA score”, ie the variance of the data
-projected along the direction they define. Thus when using PCA for
-dimension reduction, we can choose the subspace defined by the first &lt;cite&gt;n&lt;/cite&gt;
-PCA vectors, on the basis that they explain a given percentage of the
-variance, and that the subspace they define is the subspace of dimension
-&lt;cite&gt;n&lt;/cite&gt; that explains the largest possible fraction of the total variance.&lt;/p&gt;
-&lt;p&gt;However, on strongly non-Gaussian processes, the variance may not be the
-quantity of interest.&lt;/p&gt;
-&lt;p&gt;Let us consider the same model as above, with two independent variables
-&lt;cite&gt;x&lt;/cite&gt; and &lt;cite&gt;y&lt;/cite&gt; thought with strongly non-Gaussian distributions. Here we
-use a mixture of a narrow Gaussian, and wide one, to populate the tails:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/non_gaussian_pdf.png" style="width: 40%;" /&gt;
-&lt;p&gt;We can apply the same operations on these random variables: change of
-basis to an observation basis made of &lt;cite&gt;a&lt;/cite&gt; and &lt;cite&gt;b&lt;/cite&gt;, and PCA on the
-resulting sample:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/pca_on_non_gaussian_data.png" style="width: 80%;" /&gt;
-&lt;p&gt;We can see that the PCA did not properly identify the original
-independent variables. The variance criteria is not good-enough when the
-principle axis of the observed distribution are not orthogonal, as the
-highest variance can be found in a direction mixing the two process.
-Indeed the largest PCA direction is found slightly off axis. In addition
-the second direction can only be found orthogonal to the first one, as
-this is a restriction of PCA.&lt;/p&gt;
-&lt;p&gt;On the other side, the data after PCA is much more spheric than the
-original data. No strong anisotropy is found in the central part of the
-sample cloud, which contributes most to the variance.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="ica-independent-non-gaussian-variables"&gt;
-&lt;h2&gt;ICA: independent, non-Gaussian variables&lt;/h2&gt;
-&lt;p&gt;For strongly non-Gaussian processes, the above example shows that
-separating independent process should be done by looking at fine details
-of the distribution, such as the tails. Indeed, after PCA, the Gaussian
-part of the processes have been separated by their variance, and the
-resulting, rescaled, samples cannot be decomposed in independent process
-in a Gaussian model, as they all have the same variance, and would
-already be considered independent under a Gaussian hypothesis.&lt;/p&gt;
-&lt;p&gt;A popular class of algorithms to separate independent sources, called ICA
-(independent component analysis) makes the simplification that finding
-independent sources out of such data can be reduced to finding maximally
-non-Gaussian. Indeed, the central-limit theorem tells us that the sum of
-non-Gaussian processes lead to Gaussian process. Conversely, with equal
-variance multivariate samples, the more non-Gaussian a signal extracted
-from the data, the less independent -and non-Gaussian- variables it
-contains.&lt;/p&gt;
-&lt;p&gt;A good discussion of these arguments can be found in following paper:
-&lt;a class="reference external" href="http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/IJCNN99_tutorial3.html"&gt;http://www.cis.hut.fi/aapo/papers/IJCNN99_tutorialweb/IJCNN99_tutorial3.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;ICA is thus an optimization algorithm that from the data extracts the
-direction with the least-Gaussian PDF, removes the data explained by this
-variable from the signal, and iterates.&lt;/p&gt;
-&lt;p&gt;Applying ICA to the previous model yields the following:&lt;/p&gt;
-&lt;img alt="" class="align-center" src="https://gael-varoquaux.info/science/attachments/ica_pca/ica_on_non_gaussian_data.png" style="width: 80%;" /&gt;
-&lt;p&gt;We can see that ICA has well identified the original independent data
-variables. Its use of the tails of the distribution was paramount for
-this task. In addition, ICA relaxes the constraint that all identified
-directions must be perpendicular. This flexibility was also important to
-match our data.&lt;/p&gt;
-&lt;div class="admonition note"&gt;
-&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;This discussion can now be seen as an &lt;a class="reference external" href="http://scikit-learn.org/stable/auto_examples/decomposition/plot_ica_vs_pca.html"&gt;example of the scikit-learn&lt;/a&gt;.
-Thus you can replicate the figure using the code in the scikit.&lt;/p&gt;
-&lt;/div&gt;
-&lt;!-- vim:set spell:
-vim:set autoindent: --&gt;
-&lt;/div&gt;
-</content><category term="science"></category><category term="machine learning"></category><category term="scientific computing"></category><category term="selected"></category></entry><entry><title>The SciPy 2009 proceedings are online</title><link href="https://gael-varoquaux.info/programming/the-scipy-2009-proceedings-are-online.html" rel="alternate"></link><published>2009-12-20T18:49:00+01:00</published><updated>2009-12-20T18:49:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-12-20:/programming/the-scipy-2009-proceedings-are-online.html</id><summary type="html">&lt;p&gt;We are finally announcing the online edition of SciPy proceedings:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://conference.scipy.org/proceedings/SciPy2009/"&gt;http://conference.scipy.org/proceedings/SciPy2009/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This year, we tried to raise the bar in terms of article quality. This
-involved having a more strict review process, and we must thank a lot
-all the reviewers. I have the feeling …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We are finally announcing the online edition of SciPy proceedings:&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://conference.scipy.org/proceedings/SciPy2009/"&gt;http://conference.scipy.org/proceedings/SciPy2009/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This year, we tried to raise the bar in terms of article quality. This
-involved having a more strict review process, and we must thank a lot
-all the reviewers. I have the feeling it did improve the quality of the
-final papers. Actually, I must say that there are some really nice
-papers in the proceedings. I am not going to list them here, you can
-have a glance at the contents, but they range from fairly technical
-papers on tools development that are more in the software engineering
-and computer science fields, to application papers demonstrating how the
-tools can be used.&lt;/p&gt;
-&lt;p&gt;I must apologize for the time it took to publish the proceedings. All
-this was actually a lot of work, and it has taken me a lot of energy. I
-hope that you will it was worth it.&lt;/p&gt;
-</content><category term="programming"></category><category term="python"></category><category term="science"></category><category term="scientific computing"></category><category term="publishing"></category></entry><entry><title>Announcing EuroScipy 2010</title><link href="https://gael-varoquaux.info/programming/announcing-euroscipy-2010.html" rel="alternate"></link><published>2009-12-14T01:01:00+01:00</published><updated>2009-12-14T01:01:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-12-14:/programming/announcing-euroscipy-2010.html</id><summary type="html">&lt;div class="section" id="the-3rd-european-meeting-on-python-in-science"&gt;
-&lt;h2&gt;The 3rd European meeting on Python in Science&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Paris, Ecole Normale Supérieure, July 8-11 2010&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We are happy to announce the 3rd EuroScipy meeting, in Paris, July 2010.&lt;/p&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;The EuroSciPy meeting is a cross-disciplinary gathering focused on the&lt;/div&gt;
-&lt;div class="line"&gt;use and development of the Python language in scientific research. This&lt;/div&gt;
-&lt;div class="line"&gt;event …&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="section" id="the-3rd-european-meeting-on-python-in-science"&gt;
-&lt;h2&gt;The 3rd European meeting on Python in Science&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Paris, Ecole Normale Supérieure, July 8-11 2010&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We are happy to announce the 3rd EuroScipy meeting, in Paris, July 2010.&lt;/p&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;The EuroSciPy meeting is a cross-disciplinary gathering focused on the&lt;/div&gt;
-&lt;div class="line"&gt;use and development of the Python language in scientific research. This&lt;/div&gt;
-&lt;div class="line"&gt;event strives to bring together both users and developers of&lt;/div&gt;
-&lt;div class="line"&gt;scientific tools, as well as academic research and state of the art&lt;/div&gt;
-&lt;div class="line"&gt;industry.&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="important-dates"&gt;
-&lt;h3&gt;Important dates&lt;/h3&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Registration opens&lt;/strong&gt;: Sunday March 29&lt;/div&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Paper submission deadline&lt;/strong&gt;: Sunday May 9&lt;/div&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Program announced&lt;/strong&gt;: Sunday May 22&lt;/div&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Tutorials tracks&lt;/strong&gt;: Thursday July 8 - Friday July 9&lt;/div&gt;
-&lt;div class="line"&gt;&lt;strong&gt;Conference track&lt;/strong&gt;: Saturday July 10 - Sunday July 11&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="tutorial"&gt;
-&lt;h3&gt;Tutorial&lt;/h3&gt;
-&lt;p&gt;There will be two tutorial tracks at the conference, an introductory one,
-to bring up to speed with the Python language as a scientific tool, and
-an advanced track, during which experts of the field will lecture on
-specific advanced topics such as advanced use of numpy, scientific
-visualization, software engineering…&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="main-conference-topics"&gt;
-&lt;h3&gt;Main conference topics&lt;/h3&gt;
-&lt;p&gt;We will be soliciting talks on the follow topics:&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Presentations of scientific tools and libraries using the Python
-language, including but not limited to:&lt;ul&gt;
-&lt;li&gt;Vector and array manipulation&lt;/li&gt;
-&lt;li&gt;Parallel computing&lt;/li&gt;
-&lt;li&gt;Scientific visualization&lt;/li&gt;
-&lt;li&gt;Scientific data flow and persistence&lt;/li&gt;
-&lt;li&gt;Algorithms implemented or exposed in Python&lt;/li&gt;
-&lt;li&gt;Web applications and portals for science and engineering&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Reports on the use of Python in scientific achievements or ongoing
-projects.&lt;/li&gt;
-&lt;li&gt;General-purpose Python tools that can be of special interest to the
-scientific community.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Keynote Speaker: Hans Petter Langtangen&lt;/p&gt;
-&lt;p&gt;We are excited to welcome Hans Petter Langtangen as our keynote speaker.&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Director of scientific computing and bio-medical research at Simula
-labs, Oslo&lt;/li&gt;
-&lt;li&gt;Author of the famous book Python scripting for computational science
-&lt;a class="reference external" href="http://www.springer.com/math/cse/book/978-3-540-73915-9"&gt;http://www.springer.com/math/cse/book/978-3-540-73915-9&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="section" id="the-organizers"&gt;
-&lt;h4&gt;The organizers:&lt;/h4&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;Gaël Varoquaux (INRIA Saclay, Parietal), conference co-chair&lt;/div&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;Nicolas Chauvat (Logilab), conference co-chair&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="program-committee"&gt;
-&lt;h4&gt;Program committee&lt;/h4&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;Romain Brette (ENS Paris, DEC)&lt;/div&gt;
-&lt;div class="line"&gt;Mike Müller (Python Academy)&lt;/div&gt;
-&lt;div class="line"&gt;Christophe Pradal (CIRAD/INRIA, DigiPlantes team)&lt;/div&gt;
-&lt;div class="line"&gt;Pierre Raybault (CEA, DAM)&lt;/div&gt;
-&lt;div class="line"&gt;Jarrod Millman (UC Berkeley, Helen Wills NeuroScience institute)&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="science"></category><category term="scientific computing"></category><category term="conferences"></category></entry><entry><title>General relativity, quantum physics, freely-falling planes and Bayesian statistics</title><link href="https://gael-varoquaux.info/science/general-relativity-quantum-physics-freely-falling-planes-and-bayesian-statistics.html" rel="alternate"></link><published>2009-12-08T22:20:00+01:00</published><updated>2009-12-08T22:20:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-12-08:/science/general-relativity-quantum-physics-freely-falling-planes-and-bayesian-statistics.html</id><summary type="html">&lt;p&gt;We’re famous: the &lt;a class="reference external" href="http://gael-varoquaux.info/science/acceleration-estimation-in-atom-interferometric-tests-of-the-einstein-equivalence-principle.html"&gt;work&lt;/a&gt; that concluded my PhD is now picked up by the
-press &lt;a class="reference external" href="http://www.physorg.com/news179481148.html"&gt;http://www.physorg.com/news179481148.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I hadn’t realized before reading this journalist’s version of the story,
-but we have all the proper buzz words:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;general relativity&lt;/li&gt;
-&lt;li&gt;quantum physics&lt;/li&gt;
-&lt;li&gt;freely-falling planes&lt;/li&gt;
-&lt;li&gt;Bayesian …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;We’re famous: the &lt;a class="reference external" href="http://gael-varoquaux.info/science/acceleration-estimation-in-atom-interferometric-tests-of-the-einstein-equivalence-principle.html"&gt;work&lt;/a&gt; that concluded my PhD is now picked up by the
-press &lt;a class="reference external" href="http://www.physorg.com/news179481148.html"&gt;http://www.physorg.com/news179481148.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I hadn’t realized before reading this journalist’s version of the story,
-but we have all the proper buzz words:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;general relativity&lt;/li&gt;
-&lt;li&gt;quantum physics&lt;/li&gt;
-&lt;li&gt;freely-falling planes&lt;/li&gt;
-&lt;li&gt;Bayesian statistics.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This kind of stuff makes great headlines, but the way we are judged on
-this “success” is actually harmful (I believe), as there is so much
-interesting research that lies away of the trendy words and that needs
-to be done.&lt;/p&gt;
-</content><category term="science"></category><category term="personnal"></category><category term="physics"></category><category term="science"></category></entry><entry><title>Decoration in Python done right: Decorating and pickling</title><link href="https://gael-varoquaux.info/programming/decoration-in-python-done-right-decorating-and-pickling.html" rel="alternate"></link><published>2009-11-13T00:14:00+01:00</published><updated>2009-11-13T00:14:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-11-13:/programming/decoration-in-python-done-right-decorating-and-pickling.html</id><summary type="html">&lt;p&gt;Decoration is a fantastic pattern in Python that allows for very
-light-weight metaprograming with functions rather than objects (see
-&lt;a class="reference external" href="http://www.ibm.com/developerworks/linux/library/l-cpdecor.html"&gt;this article&lt;/a&gt; for an in-depth discussion). However, when decorating,
-it is very easy to break another great feature of the language: its
-reflectivity and its ability to do static representations of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Decoration is a fantastic pattern in Python that allows for very
-light-weight metaprograming with functions rather than objects (see
-&lt;a class="reference external" href="http://www.ibm.com/developerworks/linux/library/l-cpdecor.html"&gt;this article&lt;/a&gt; for an in-depth discussion). However, when decorating,
-it is very easy to break another great feature of the language: its
-reflectivity and its ability to do static representations of its
-internal objects: pickling.&lt;/p&gt;
-&lt;p&gt;In this blog post, I’d like to rewrite a post I made on the IPython
-mailing list a month ago, summing up the few things to have in mind when
-decorating a function.&lt;/p&gt;
-&lt;div class="section" id="a-pattern-to-avoid"&gt;
-&lt;h2&gt;A pattern to avoid?&lt;/h2&gt;
-&lt;p&gt;I have recently been revisiting my decoration code, to fight a common
-mistake I had been doing, and it was partly due to the heavy use of a
-simplified pattern for decorating:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;with_print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
-&lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
-
-    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;my_func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;kwargs&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;my_func&lt;/span&gt;
-
-&lt;span class="nd"&gt;@with_print&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;f called&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;The nice thing about this pattern is that is it quite easy to type, and
-to read.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="why-it-is-harmful"&gt;
-&lt;h2&gt;Why it is harmful&lt;/h2&gt;
-&lt;p&gt;The decorated function is actually the function ‘my_func’, with a
-reference to the original function ‘func’, a part of the scope of the
-decorator ‘with_print’, and thus in the closure of the with_print
-function.&lt;/p&gt;
-&lt;p&gt;The problem is that we have a closure here. Thus we have variables that
-are hard to get to (the undecorated function), and the decorated
-function is not picklable (which is more and more important to me, e.g.
-for parallel computing).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="some-solutions"&gt;
-&lt;h2&gt;Some solutions&lt;/h2&gt;
-&lt;div class="section" id="avoiding-the-closure"&gt;
-&lt;h3&gt;Avoiding the closure&lt;/h3&gt;
-&lt;p&gt;Use objects as a scope, rather than a closure:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nc"&gt;WithPrint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;object&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;
-
-    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="fm"&gt;__call__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;kwargs&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This solution is not enough: the following code won’t pickle:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nd"&gt;@WithPrint&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;g&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;g called&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;The reason this won’t pickle is that we have a name collision: the code
-above expands to:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;g&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;g called&amp;#39;&lt;/span&gt;
-
-&lt;span class="n"&gt;g&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;WithPrint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;and trying to pickle raises the following PicklingError:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Can&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;t pickle &amp;lt;function g at 0x6ed2a8&amp;gt;: it&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;same&lt;/span&gt; &lt;span class="nb"&gt;object&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;__main__&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;If we do:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;g&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;g called&amp;#39;&lt;/span&gt;
-
-&lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;WithPrint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;we can pickle h, hurray!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="using-functools-wraps"&gt;
-&lt;h3&gt;Using functools.wraps&lt;/h3&gt;
-&lt;p&gt;However, Python comes with the answer in the standard libary:
-functools.wraps does the name unmangling.&lt;/p&gt;
-&lt;p&gt;Thus the following code produces a pickleable f:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;functools&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;wraps&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;with_print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Decorate a function to print its arguments.&lt;/span&gt;
-&lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
-    &lt;span class="nd"&gt;@wraps&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;my_func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-        &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;kwargs&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kwargs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;my_func&lt;/span&gt;
-
-&lt;span class="nd"&gt;@with_print&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;f called&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="line-block"&gt;
-&lt;div class="line"&gt;The pickling works simply because using functools.wraps resets the&lt;/div&gt;
-&lt;div class="line"&gt;.func_name attribute of f to have a well-defined import path. Thus&lt;/div&gt;
-&lt;div class="line"&gt;pickling works, simply by storing the import path, as all pickling of&lt;/div&gt;
-&lt;div class="line"&gt;functions.&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Notice that there is only a one-line difference with the original code!&lt;/p&gt;
-&lt;p&gt;I actually tend to use a combination of both solution (an object, using
-functools.wraps), to keep a reference on the undecorated functions.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Demo code of this blog post can be found &lt;a class="reference external" href="attachments/pickling_tests_py"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="take-home-messages-for-pickling"&gt;
-&lt;h2&gt;Take home messages for pickling&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Decorators can be more clever than you think, and might not return
-objects as simple as you think&lt;/li&gt;
-&lt;li&gt;Think about pickling, or you’ll get bitten at some point (for
-instance when doing parallel computing).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;and most important:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Use functools.wraps&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="a-remark-about-object-oriented-programming"&gt;
-&lt;h2&gt;A remark about object-oriented programming&lt;/h2&gt;
-&lt;p&gt;To jump on the band-wagon behind &lt;a class="reference external" href="http://blog.enthought.com/?p=223"&gt;Travis&lt;/a&gt;, I believe that this
-discussion teaches us a bit about object-oriented programming. When
-decorating, we are really taking a callable object, and redefining how
-the call is handled.&amp;nbsp; If we do this the naive way, we loose
-introspection (there is no way to access the original callable from
-Python), and as a result pickling, and many of the nice feature going
-with reflexivity in Python. This is because we trapped information in a
-scope that is not accessible by normal Python code (without playing at
-the frame level). If on the other hand, we accept that what we have
-behind all this are nested scope with a control of lookups, and we
-create a full-blown object, we have the benefits of the black box, and
-the benefits of reflexivity.&lt;/p&gt;
-&lt;p&gt;But this is not the point I want to make. The point I want to make is
-that, by decorating, we are piggy-backing on an absolutely universal
-object/interface: the callable. Everybody knows what a callable is, and
-knows how to employ it. From a pure object-oriented point of view,
-decorating is simply some kind of proxy design pattern. But, to stress
-Travis’s point, introducing new objects that have their own behavior
-puts cognitive load on the programmer. The real value of decoration is
-that it is object-oriented programming without adding any new or
-surprising interface. You don’t really have to care what is going on,
-you can still use the resulting ‘proxied’ function as the original
-function: a simple function.&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="design patterns"></category><category term="software architecture"></category><category term="selected"></category></entry><entry><title>Writing parallel code in a readable way</title><link href="https://gael-varoquaux.info/programming/writing-parallel-code-in-a-readable-way.html" rel="alternate"></link><published>2009-11-09T00:10:00+01:00</published><updated>2009-11-09T00:10:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2009-11-09:/programming/writing-parallel-code-in-a-readable-way.html</id><summary type="html">&lt;p&gt;Although I often have embarrasingly parallel problems (data parallel),
-and I have an 8-CPU box at work, I used to frown on writing parallel
-computing code when doing exploratory coding. We now have fantastic
-parallel computing facilities in Python (amongst other,
-&lt;a class="reference external" href="http://docs.python.org/library/multiprocessing.html"&gt;multiprocessing&lt;/a&gt;, &lt;a class="reference external" href="http://ipython.scipy.org/doc/rel-0.9.1/html/parallel/index.html"&gt;IPython&lt;/a&gt;, and &lt;a class="reference external" href="http://www.parallelpython.com/"&gt;parallel Python&lt;/a&gt;). However, in my
-opinion …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Although I often have embarrasingly parallel problems (data parallel),
-and I have an 8-CPU box at work, I used to frown on writing parallel
-computing code when doing exploratory coding. We now have fantastic
-parallel computing facilities in Python (amongst other,
-&lt;a class="reference external" href="http://docs.python.org/library/multiprocessing.html"&gt;multiprocessing&lt;/a&gt;, &lt;a class="reference external" href="http://ipython.scipy.org/doc/rel-0.9.1/html/parallel/index.html"&gt;IPython&lt;/a&gt;, and &lt;a class="reference external" href="http://www.parallelpython.com/"&gt;parallel Python&lt;/a&gt;). However, in my
-opinion, there are two reasons to hesitate to use them, especially when
-the code is very imature (which is almost always my case, in research
-settings):&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;It makes the code look less like the ideas it is trying to express.
-Peter Norvig made &lt;a class="reference external" href="http://www.archive.org/details/scipy09_day1_03-Peter_Norvig"&gt;a pretty convincing case&lt;/a&gt; for scientific code
-reading like math at &lt;a class="reference external" href="http://conference.scipy.org/"&gt;SciPy2009&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Because parallel computing is out of process, in Python, it is simply
-harder to debug (though I hear that the IPython guys are on that).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I have progressively developed a tiny tool to adress both problems, at
-least for my embarrasingly-parallel problems. I address the second
-problem by having a trivial switch to run my code without importing any
-fancy parallel computing tools. And I address the first problem using
-syntactic sugar to be able to type in map/reduce code that actually
-looks like standard procedural code:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;results&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Parallel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n_jobs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;
-            &lt;span class="n"&gt;delayed&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;my_calculation&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="n"&gt;data1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;data2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-                                    &lt;span class="n"&gt;parameter1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;parameter2&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-            &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;data1&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;store1&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;data2&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;store2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;There are several tricks here:&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;I use a ‘&lt;em&gt;delayed&lt;/em&gt;‘ decorator that creates the argument list and
-keyword argument dictionary for me so that I can type something that
-really looks like a function call. Also, the decorator checks to see
-if the function and the arguments can be pickled, because if not the
-parallel computing libraries will raise errors, sometimes with
-hard-to-understand messages.&lt;/li&gt;
-&lt;li&gt;I use list comprehension to create the list to apply the map/reduce
-onto. List comprehension is really readable, and very powerful.&lt;/li&gt;
-&lt;li&gt;The ‘&lt;em&gt;Parallel&lt;/em&gt;‘ object hides all the cleverness. If the
-‘&lt;em&gt;n_jobs&lt;/em&gt;‘ parameter is set to 1, it does not call any parallel
-computing library. If it is set to -1, all the CPUs are used. The
-object instantiates the parallel computing context and also destroys
-it. While this is inefficient, it is great for catching errors early.
-And finally, while I have implemented this only for the
-multiprocessing module, any fork/join-based parallel computing
-library could be encapsulated the same way, thus providing a uniform
-API to do multi-node parallel computing or single-computer shared
-memory (as multi-processing uses the Unix fork call, and all modern
-Unices implement copy on write of memory pages, you get some shared
-memory for free without worrying about race conditions).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="topic"&gt;
-&lt;p class="topic-title"&gt;&lt;strong&gt;Update&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This pattern has actually evolved in the &lt;a class="reference external" href="https://pythonhosted.org/joblib/"&gt;joblib project&lt;/a&gt; ,
-which provides a lot of cleverness under the hood.&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="programming"></category><category term="python"></category><category term="scientific computing"></category><category term="scipy"></category><category term="software engineering"></category><category term="joblib"></category></entry></feed>
+&lt;/p&gt;</content><category term="programming"></category><category term="mayavi"></category><category term="scipy"></category><category term="python"></category><category term="scientific computing"></category><category term="art"></category></entry></feed>

@@ -1,5 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2025-07-09T00:00:00+02:00</updated><entry><title>TabICL: Pretraining the best tabular learner</title><link href="https://gael-varoquaux.info/science/tabicl-pretraining-the-best-tabular-learner.html" rel="alternate"></link><published>2025-07-09T00:00:00+02:00</published><updated>2025-07-09T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-07-09:/science/tabicl-pretraining-the-best-tabular-learner.html</id><summary type="html">&lt;div class="admonition note"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gaël Varoquaux - science</title><link href="https://gael-varoquaux.info/" rel="alternate"></link><link href="https://gael-varoquaux.info/feeds/science.atom.xml" rel="self"></link><id>https://gael-varoquaux.info/</id><updated>2026-06-10T00:00:00+02:00</updated><entry><title>How much plagiarism is there in the mathematical genius of big AI?</title><link href="https://gael-varoquaux.info/science/how-much-plagiarism-is-there-in-the-mathematical-genius-of-big-ai.html" rel="alternate"></link><published>2026-06-10T00:00:00+02:00</published><updated>2026-06-10T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2026-06-10:/science/how-much-plagiarism-is-there-in-the-mathematical-genius-of-big-ai.html</id><summary type="html">&lt;img alt="" class="small align-right" src="https://gael-varoquaux.info/science/attachments/plagiarism_maths.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;Result after result, OpenAI’s AIs are solving famous mathematical problems. But researchers recognize in them their own unfinished lines of work, explored with these very tools: how does an idea go from a conversation to a discovery?&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;img alt="" class="small align-right" src="https://gael-varoquaux.info/science/attachments/plagiarism_maths.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;Result after result, OpenAI’s AIs are solving famous mathematical problems. But researchers recognize in them their own unfinished lines of work, explored with these very tools: how does an idea go from a conversation to a discovery?&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/quelle-part-de-plagiat-dans-le-genie-mathematique-des-geants-de-lia-2256078"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;p&gt;Navier-Stokes, one of the seven “Millennium Problems”, “non-sofic” groups, then, a few days ago, 722 papers in one go: OpenAI is stringing together impressive results that we are still digesting. Where does the intelligence of their AI come from?&lt;/p&gt;
+&lt;p&gt;A language model is first and foremost an immense memory, which works by analogy. Give it the riddle of the ferryman who must take a wolf, a goat and a cabbage across a river: even if you rename the characters, it manages. Beyond exact matches, it recognizes the structure of a problem it has already seen. In mathematics, this memory is precious: the first difficulty of research is to read, again and again, to find in prior work, close or distant, the tool that will unlock the situation. The AI has read everything.&lt;/p&gt;
+&lt;p&gt;But the AI does more than adapt known solutions: it breaks problems down into simpler steps, a “chain of thought”, each step drawing on its memory. Knowing how to break things down is learned from examples, like those in school textbooks. To multiply the examples, the AI is made to produce thousands of attempts on problems whose solution can be checked, looking for the sequences of steps that succeed: this is reinforcement learning. By seeing many fruitful sequences, the AI builds itself an implicit library of decomposition strategies, which it transposes to new problems.&lt;/p&gt;
+&lt;p&gt;Researchers’ conversations with the AI are also full of new sequences of steps on cutting-edge problems. A mathematician working with an assistant guides it, corrects it, steers it toward an unusual path: each session is a successful chain of reasoning, annotated by an expert. These sessions are kept by the AI providers.&lt;/p&gt;
+&lt;p&gt;Yet researchers recognize their own lines of work in OpenAI’s results. Tristan Buckmaster and Levent Alpöge had been working for a year, with OpenAI’s tools, on an unpublished approach to Navier-Stokes; OpenAI only took it up very recently, with a proof that Buckmaster finds surprisingly close. Andreas Thom had discussed with ChatGPT for months techniques that are out of fashion for this problem, the very ones at the heart of OpenAI’s proof. At Anthropic, Claude has just “discovered” enzymes that a PhD student in Copenhagen says he has been studying since 2022, having entrusted it with his unpublished data. The companies deny it, but OpenAI first conceded that it “cannot rule out” that “de-identified” data improved its models.&lt;/p&gt;
+&lt;p&gt;We will probably never get to the bottom of this story. But to de-identify an idea is to strip it of its name: precisely what separates inspiration from plagiarism. We accept the tools’ terms without reading them, terms that often allow the use of our data “to improve the service”. When we entrust them with an idea, do the AI giants slip from improvement to plagiarism, and will they be shocked, shocked, to learn where their discoveries came from?&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr class="docutils" /&gt;
+&lt;div class="section" id="sources"&gt;
+&lt;h2&gt;Sources&lt;/h2&gt;
+&lt;p&gt;Non-sofic groups (Andreas Thom)&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Andreas Thom, “On the existence of non-sofic groups”, guest post on Terence Tao’s blog, September 11, 2026: &lt;a class="reference external" href="https://terrytao.wordpress.com/2026/09/11/on-the-existence-of-non-sofic-groups/"&gt;https://terrytao.wordpress.com/2026/09/11/on-the-existence-of-non-sofic-groups/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The Verge, “Where does OpenAI get mathematics training data”: &lt;a class="reference external" href="https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data"&gt;https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Quartz: &lt;a class="reference external" href="https://qz.com/openai-mathematician-training-data-dishonesty-andreas-thom-091026"&gt;https://qz.com/openai-mathematician-training-data-dishonesty-andreas-thom-091026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Notebookcheck: &lt;a class="reference external" href="https://www.notebookcheck.net/Plainly-dishonest-mathematician-says-OpenAI-lied-to-him-about-training-on-his-private-chats.1395716.0.html"&gt;https://www.notebookcheck.net/Plainly-dishonest-mathematician-says-OpenAI-lied-to-him-about-training-on-his-private-chats.1395716.0.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Post-Cutoff: &lt;a class="reference external" href="https://postcutoff.com/p/2026-09-11-thom-non-sofic-groups-guest-post/"&gt;https://postcutoff.com/p/2026-09-11-thom-non-sofic-groups-guest-post/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Navier-Stokes (Tristan Buckmaster and Levent Alpöge)&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;OpenAI, announcement of the Navier-Stokes solution (and updates): &lt;a class="reference external" href="https://openai.com/index/navier-stokes-solution/"&gt;https://openai.com/index/navier-stokes-solution/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tristan Buckmaster, statement: &lt;a class="reference external" href="https://cims.nyu.edu/~tristanb/statement.pdf"&gt;https://cims.nyu.edu/~tristanb/statement.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CNBC, September 9, 2026: &lt;a class="reference external" href="https://www.cnbc.com/2026/09/09/openai-navier-stokes-math-problem-solved.html"&gt;https://www.cnbc.com/2026/09/09/openai-navier-stokes-math-problem-solved.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Quanta Magazine, September 8, 2026: &lt;a class="reference external" href="https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/"&gt;https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wikipedia, “Navier–Stokes priority controversy”: &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_priority_controversy"&gt;https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_priority_controversy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;OpenAI’s 722 papers (October 6, 2026)&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;OpenAI, “Sharing AI progress in mathematics”: &lt;a class="reference external" href="https://openai.com/index/sharing-ai-progress-in-mathematics/"&gt;https://openai.com/index/sharing-ai-progress-in-mathematics/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New Scientist, “OpenAI announces 722 mathematical discoveries in one go”: &lt;a class="reference external" href="https://www.newscientist.com/article/2592421-openai-announces-722-mathematical-discoveries-in-one-go/"&gt;https://www.newscientist.com/article/2592421-openai-announces-722-mathematical-discoveries-in-one-go/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New Scientist, “The most interesting mathematical discoveries in OpenAI’s 722 new papers”: &lt;a class="reference external" href="https://www.newscientist.com/article/2592703-the-most-interesting-mathematical-discoveries-in-openais-722-new-papers/"&gt;https://www.newscientist.com/article/2592703-the-most-interesting-mathematical-discoveries-in-openais-722-new-papers/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Scientific American, “OpenAI unleashes hundreds more math results upon a field already in shock”: &lt;a class="reference external" href="https://www.scientificamerican.com/article/openai-unleashes-hundreds-more-math-results-upon-a-field-already-in-shock/"&gt;https://www.scientificamerican.com/article/openai-unleashes-hundreds-more-math-results-upon-a-field-already-in-shock/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Quartz: &lt;a class="reference external" href="https://qz.com/openai-math-results-github-millennium-prize-100726"&gt;https://qz.com/openai-math-results-github-millennium-prize-100726&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Enzymes (Anthropic and Mario Rodríguez Mestre)&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Anthropic, “Claude discovers novel enzyme system”: &lt;a class="reference external" href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"&gt;https://www.anthropic.com/news/claude-discovers-novel-enzyme-system&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Anthropic, preprint: &lt;a class="reference external" href="https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf"&gt;https://www-cdn.anthropic.com/22573675ada52a8ca8a97a1a4b4326b2f208a071.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CNET, “Did Anthropic find a novel enzyme?”: &lt;a class="reference external" href="https://www.cnet.com/tech/services-and-software/did-anthropic-find-a-novel-enzyme/"&gt;https://www.cnet.com/tech/services-and-software/did-anthropic-find-a-novel-enzyme/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DongA Science: &lt;a class="reference external" href="https://www.dongascience.com/en/news/80107"&gt;https://www.dongascience.com/en/news/80107&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Endpoints News, interview with Anthropic’s life sciences team: &lt;a class="reference external" href="https://endpoints.news/qa-anthropics-life-sciences-team-talk-claudes-first-scientific-discovery/"&gt;https://endpoints.news/qa-anthropics-life-sciences-team-talk-claudes-first-scientific-discovery/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Learning to reason with reinforcement learning&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Zelikman et al., “STaR: Bootstrapping Reasoning With Reasoning”, NeurIPS 2022: &lt;a class="reference external" href="https://arxiv.org/abs/2203.14465"&gt;https://arxiv.org/abs/2203.14465&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DeepSeek-AI, “DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning”, 2025: &lt;a class="reference external" href="https://arxiv.org/abs/2501.12948"&gt;https://arxiv.org/abs/2501.12948&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>Will Intellectual Bulldozers Solve Math?</title><link href="https://gael-varoquaux.info/science/will-intellectual-bulldozers-solve-math.html" rel="alternate"></link><published>2026-06-10T00:00:00+02:00</published><updated>2026-06-10T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2026-06-10:/science/will-intellectual-bulldozers-solve-math.html</id><summary type="html">&lt;div class="figure align-right"&gt;
+&lt;img alt="" class="small" src="../science/attachments/intellectual_bulldozer.jpg" style="width: 50%;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;An AI has just disproved an 80-year-old mathematical conjecture, where the best human minds failed for decades. It is a feat that invites us to rethink, well beyond mathematics, what artificial intelligence really changes about our professions.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="figure align-right"&gt;
+&lt;img alt="" class="small" src="../science/attachments/intellectual_bulldozer.jpg" style="width: 50%;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;An AI has just disproved an 80-year-old mathematical conjecture, where the best human minds failed for decades. It is a feat that invites us to rethink, well beyond mathematics, what artificial intelligence really changes about our professions.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-pelleteuses-intellectuelles-de-lia-vont-elles-resoudre-les-maths-2240794"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;An AI overcomes a central Erdős conjecture&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Imagine n points placed on a plane. How many pairs of points can be separated by a distance of exactly 1? In 1946, the mathematician Paul Erdős conjectured that this number of pairs could not grow beyond a certain limit. Eighty years later, an AI has just disproved this conjecture by constructing, for a given n, a set of points containing more such pairs than Erdős believed possible.&lt;/p&gt;
+&lt;p&gt;This result is striking: it concretely demonstrates that an AI can solve problems on which the best mathematicians stumbled for decades. It is part of a broader trend: AIs are gradually becoming capable of handling complex formal problems, and computer scientists like me are turning to them more and more.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;How does an AI achieve such results? It draws on encyclopedic knowledge: the entirety of mathematical publications, public computer code, and results from sometimes distant fields. Here, for example, tools from number theory were brought to bear on a geometry problem. The AI can also tirelessly explore leads that each have only a small chance of succeeding, something a human would not do for lack of time or motivation. This power is multiplied when the AI is paired with an automatic verification program, able to validate or invalidate each lead in real time. In the Erdős case, the AI proposed a first draft of the construction; mathematicians at OpenAI then refined it and verified it.&lt;/p&gt;
+&lt;p&gt;An AI is to the intellect what a bulldozer is to a construction site: remarkably powerful for certain tasks, but incapable of carrying out every step needed to build a house. A construction project requires plans upstream and finishing work downstream. Likewise, all mathematical research begins with something the AI does not do: asking the right question. Erdős was famous for precisely that, his ability to formulate questions that seemed simple but profoundly pushed back the frontiers of mathematics.&lt;/p&gt;
+&lt;p&gt;Yet asking a structuring question earns no prize. The rewards go to those who prove difficult theorems, the most visible and most glorified task. When AI excels at that task, it would be tempting to conclude that it is “doing the math” for us. That would be a mistake. The real question lies elsewhere: how do we reassess what truly matters in intellectual work, now that some of its steps can be automated? This question applies to every profession. Just as we do not measure the progress of a construction project by the cubic meters of earth a bulldozer has moved, we cannot judge the progress of intellectual work by the number of lines of code or pages of reports produced, because thanks to AI, volume has become easy.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>TabICL: Pretraining the best tabular learner</title><link href="https://gael-varoquaux.info/science/tabicl-pretraining-the-best-tabular-learner.html" rel="alternate"></link><published>2025-07-09T00:00:00+02:00</published><updated>2025-07-09T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-07-09:/science/tabicl-pretraining-the-best-tabular-learner.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;TabICL is a state-of-the-art tabular learner &lt;a class="reference external" href="https://arxiv.org/abs/2502.05564"&gt;[Qu et al 2025]&lt;/a&gt;. The key is its very rich
 prior, that is baked in a pre-trained architecture -a table foundation
@@ -214,7 +313,224 @@ table foundation models, see &lt;a class="reference external" href="carte-toward
 et al, 2025]&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="science"></category><category term="machine learning"></category><category term="tabular learning"></category><category term="foundation models"></category></entry><entry><title>2024 highlights: of computer science and society</title><link href="https://gael-varoquaux.info/science/2024-highlights-of-computer-science-and-society.html" rel="alternate"></link><published>2025-01-01T00:00:00+01:00</published><updated>2025-01-01T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-01-01:/science/2024-highlights-of-computer-science-and-society.html</id><summary type="html">&lt;div class="admonition note"&gt;
+</content><category term="science"></category><category term="machine learning"></category><category term="tabular learning"></category><category term="foundation models"></category></entry><entry><title>AI agents that use tools</title><link href="https://gael-varoquaux.info/science/ai-agents-that-use-tools.html" rel="alternate"></link><published>2025-07-04T00:00:00+02:00</published><updated>2025-07-04T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-07-04:/science/ai-agents-that-use-tools.html</id><summary type="html">&lt;img alt="Image generated with ChatGPT, with the prompt &amp;quot;Please generate an image of an AI using a mechanical tool, such as a wrench. Please make the robot look rather friendly. Also, please make the image square&amp;quot;" class="small align-right" src="../science/attachments/robot_tool_friendly.png" style="width: 50%;" /&gt;
+&lt;p&gt;Modern AIs acquire new capabilities by combining tools to perform a
+complex task, controlling them like an agent. Unlike traditional
+programming, they define the sequences of actions themselves.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/des-agents-ia-qui-utilisent-des-outils-2163252"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Modern AIs are increasingly using …&lt;/p&gt;</summary><content type="html">&lt;img alt="Image generated with ChatGPT, with the prompt &amp;quot;Please generate an image of an AI using a mechanical tool, such as a wrench. Please make the robot look rather friendly. Also, please make the image square&amp;quot;" class="small align-right" src="../science/attachments/robot_tool_friendly.png" style="width: 50%;" /&gt;
+&lt;p&gt;Modern AIs acquire new capabilities by combining tools to perform a
+complex task, controlling them like an agent. Unlike traditional
+programming, they define the sequences of actions themselves.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/des-agents-ia-qui-utilisent-des-outils-2163252"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Modern AIs are increasingly using tools. For example, if you ask a
+conversational AI to solve a complicated equation, the AI alone cannot do
+it. This is not surprising: there is no general mathematical formula. But
+if this AI knows how to use numerical equation-solving routines, it
+quickly gives us the answer. For example, “Le Chat” from Mistral
+generates a small program that uses the “Python” language and its
+numerical routines to solve our problem. The difficulty here is to
+generate the program that calls the right routines. This ability is an
+extension of conversational AI models that know how to answer questions
+by generating text. Here, the text is computer code and not English.&lt;/p&gt;
+&lt;p&gt;By controlling the computer, the AI “acts”. That’s why it is said to be
+an “agent”. By coupling with other systems, agentic AIs develop new
+capabilities. The most powerful ones can then combine different tools by
+leveraging their complementarities. These agent systems are currently
+progressing very quickly, but they remind us of what we have always done
+in computer science: any complicated system is assembled from multiple
+routines, each with a specific functionality. Writing a computer program
+is precisely describing how we are going to call these routines to solve
+a problem. And yet, without the recent advances in AI, we have to specify
+all the steps, whereas agent AIs take a given goal and will themselves
+produce these steps. The difficulty then becomes to break down a task
+into sub-tasks, which is called planning, a difficult problem.&lt;/p&gt;
+&lt;p&gt;In modern AIs, these planning skills are learned. The systems improve
+through trial and error: we give the AI lots of tasks to solve and the AI
+tries sequences of sub-tasks, deciding to use one tool or another. If it
+succeeds in the final task, it learns that the sequence of tool use was a
+good sequence for the task. This is called reinforcement learning, whose
+main inventors received the Turing Prize this year, the Nobel Prize of
+computer science.&lt;/p&gt;
+&lt;p&gt;Another major driver of progress for agent AIs is the powerful ability of
+analogy and associative memory of language models. These language skills
+enable them to start from problems specified by the user in plain
+English, with an open vocabulary. They draw their strategies to use tools
+from a great knowledge of similar problems, but also know how to adapt
+these strategies to the intermediate responses of the tools. They can
+also interact with systems that are much more complex and indeterminate
+than computer routines. For example, an AI can go and fetch information
+on the internet, or even ask a human.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Agent AIs open new perspectives. But they also greatly increase computing
+costs, as they iterate over sub-tasks. Computing costs must be kept in
+mind, as they are an important hurdle to democratization of AI.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>AIs that break down questions reason better</title><link href="https://gael-varoquaux.info/science/ais-that-break-down-questions-reason-better.html" rel="alternate"></link><published>2025-06-20T00:00:00+02:00</published><updated>2025-06-20T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-06-20:/science/ais-that-break-down-questions-reason-better.html</id><summary type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an AI that is thinking deeply. Philosophical references may be welcomed, for instance like the classic hamlet holding skull cliché.&amp;quot;" class="small align-right" src="../science/attachments/ai_thinking.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;The key to the most powerful conversational AIs is to reason by breaking
+down a complex task into simpler subproblems. Why is this crucial, and
+how does it work?&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-qui-decomposent-les-questions-raisonnent-mieux-2151428"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The recent release of …&lt;/p&gt;</summary><content type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an AI that is thinking deeply. Philosophical references may be welcomed, for instance like the classic hamlet holding skull cliché.&amp;quot;" class="small align-right" src="../science/attachments/ai_thinking.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;The key to the most powerful conversational AIs is to reason by breaking
+down a complex task into simpler subproblems. Why is this crucial, and
+how does it work?&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-qui-decomposent-les-questions-raisonnent-mieux-2151428"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The recent release of the conversational AI “DeepSeek R1” shook the
+financial markets because it showed a significant reduction in the costs
+of reasoning models. But what are these reasoning models?&lt;/p&gt;
+&lt;p&gt;To understand the challenges of reasoning in conversational AIs, we can
+ask them to solve riddles. I tried various logical riddles on different
+AIs, such as the puzzle where a man has to get a fox, a chicken, and a
+sack of corn across a river without one eating the other. The AI responds
+brilliantly. But how can we ensure that the AI is truly reasoning and not
+just reciting answers it has seen before? By replacing them with other
+equivalent animals (wolf, lamb, and hay), the AI does just as well. But
+it could have solved the problem by analogy with the previous classic
+one, rather than with reasonning. Indeed language models are very good at
+analogies. A conversational AI typically works by proposing a answer
+inspired by the flow of words (and corresponding concepts) in the texts
+on which it was trained.&lt;/p&gt;
+&lt;p&gt;If, instead of a riddle resembling a story, we try to play tic-tac-toe,
+the weaknesses appear. Most conversational AIs are very bad at
+tic-tac-toe, even going so far as to declare victory when faced with a
+defeat. Perhaps this is because analogy is not as useful. But activating
+the “reasoning” option makes them unbeatable. What is behind this option?&lt;/p&gt;
+&lt;p&gt;A third task helps to understand the reasoning mechanisms of a
+conversational AI: let’s ask it how many “L”s there are in
+“LOLLAPALOUZA”. There is a catch: ChatGPT was able to give me the correct
+for the number of Ls in “LOLLAPALOOZA”, a question often used in the past
+to show its limits. For “LOLLAPALOUZA”, it fails. Or rather, it needs
+help: if we tell it to spell out the word, then count the “L”s, it gives
+the correct answer. With the right intermediate steps, a problem is often
+much simpler. These decompositions into subproblems are called chains of
+thought in conversational AIs. The “reasoning” option of some AIs
+generates such chains.&lt;/p&gt;
+&lt;p&gt;DeepSeek R1 received much attention due to its excellence in breaking
+down problems to reason in such a way. To do this, it has been trained to
+generate reasoning patterns from questions, using reinforcement learning:
+through trial and error, on many problems generated with the associated
+answer, like math problems. Faced with a task, the AI still proceeds by
+analogy with the tasks it has seen during this learning phase, but it
+uses this analogy to sketch a battle plan, rather than a response. Each
+subproblem is then easier, and the AI can tackle it by analogy to
+problems already seen. By observing the chains of thought, we can even
+see the AI verifying its intermediate results. These chains of thought
+are not always visible, but we can guess them from the AI’s response
+time.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;With these reasoning mechanisms, a conversational AI is as good as I am
+at tic-tac-toe. But using such a model to play tic-tac-toe is like using
+a sledgehammer to crush a fly: it is very inefficient in computational
+cost compared to a specialized program for tic-tac-toe, which we have
+known how to do for decades.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>AI super-intelligent to play Go, and math?</title><link href="https://gael-varoquaux.info/science/ai-super-intelligent-to-play-go-and-math.html" rel="alternate"></link><published>2025-02-19T00:00:00+01:00</published><updated>2025-02-19T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-02-19:/science/ai-super-intelligent-to-play-go-and-math.html</id><summary type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an artificial intelligences playing go, with mathematical formula flying in the background. The mathematical formula are flying in all directions, and the image is futuristic.&amp;quot;" class="small align-right" src="../science/attachments/robots_playing_go.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/lia-le-go-et-les-maths-2140332"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="imitation-is-not-creation"&gt;
+&lt;h2&gt;Imitation is not …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">&lt;img alt="Image generated with &amp;quot;LeChat&amp;quot;, with the prompt &amp;quot;Please generate an image of an artificial intelligences playing go, with mathematical formula flying in the background. The mathematical formula are flying in all directions, and the image is futuristic.&amp;quot;" class="small align-right" src="../science/attachments/robots_playing_go.jpg" style="width: 50%;" /&gt;
+&lt;p&gt;Since 2017, an AI has been defeating the best Go experts, despite the game being particularly challenging. Such “super intelligence” is rare, but it could also emerge in fundamental mathematics.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/lia-le-go-et-les-maths-2140332"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="imitation-is-not-creation"&gt;
+&lt;h2&gt;Imitation is not creation&lt;/h2&gt;
+&lt;p&gt;For several decades, calculators have been better than humans in an
+intellectual task: mental arithmetic. Yet, we do not call this
+“super-intelligence.” Probably because it is humans who specified all the
+rules for these calculations to the machine. Similarly, a computer has a
+superhuman ability to memorize information exactly, such as numbers, but
+we do not consider it super-intelligent for that reason. Perhaps this is
+because it does not teach us anything new. However, in 2017, an AI
+started teaching the best Go players moves and strategies that no one had
+ever known. How is this possible? Will AI surpass its creator and become
+super-intelligent in all fields?&lt;/p&gt;
+&lt;p&gt;Most recent breakthroughs in AI rely on learning methods where the
+computer imitates humans. For example, to create computer-vision systems,
+we provide the computer with many annotated images describing what they
+represent. Likewise, conversational AIs learn by training to complete
+examples of text. Under these conditions, it is difficult for AI to
+surpass its creator.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="when-ais-invent"&gt;
+&lt;h2&gt;When AIs invent&lt;/h2&gt;
+&lt;p&gt;But AlphaZero, the AI champion in Go, operates on a different principle:
+reinforcement learning. Here, the AI takes actions –moves in the game of
+Go– and receives a “reward” if it wins the game. Through countless games,
+it optimizes its strategies to maximize rewards, including exploring new
+strategies. AlphaZero trained by playing tens of millions of games
+against itself. This is how the AI was able to create new strategies,
+unrestricted by human knowledge.&lt;/p&gt;
+&lt;p&gt;Such learning, based on millions of trial-and-error attempts, does not
+apply to all problems –it requires the ability to perform rapid
+experiments, like in a computer game, which remains the only domain where
+a true super-intelligence has been achieved. However, there is hope in
+mathematics, another intellectual game.&lt;/p&gt;
+&lt;p&gt;Indeed, progress in generative AI for language –that power tools such as
+ChatGPT– can be applied to mathematical proofs, which consist of
+sequences of symbols. Trained on numerous proofs, an AI can learn to
+complete partial proofs. However, such a generative AI will produce
+sequences without guarantees of mathematical validity. Another tool,
+using proof-verification techniques based on symbolic AI, can then filter
+out only the correct sequences, giving a “reward” signal. Reinforcement
+learning finally comes in, using its exploration schemes to maximize this
+reward and discover new valid proof steps.&lt;/p&gt;
+&lt;p&gt;This is how, in July 2024, the AlphaProof AI won a silver medal at the
+International Mathematical Olympiad. Further progress may eventually lead
+to “super-intelligence” in mathematics. However, we are still far from
+general super-intelligence, as, both in Go and mathematics, progress is
+made possible by the ease of verifying whether one has “won” or not.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>2024 highlights: of computer science and society</title><link href="https://gael-varoquaux.info/science/2024-highlights-of-computer-science-and-society.html" rel="alternate"></link><published>2025-01-01T00:00:00+01:00</published><updated>2025-01-01T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2025-01-01:/science/2024-highlights-of-computer-science-and-society.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;For me, 2024 was full of back and forth between research,
 software, and connecting these to society. Here, I lay out some
@@ -534,7 +850,151 @@ reading. Taking a step back to figure out what is important is always a
 good exercise for me.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="statistics"></category><category term="yearly report"></category></entry><entry><title>CARTE: toward table foundation models</title><link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="alternate"></link><published>2024-07-19T00:00:00+02:00</published><updated>2024-07-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-19:/science/carte-toward-table-foundation-models.html</id><summary type="html">&lt;div class="admonition note"&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="machine learning"></category><category term="statistics"></category><category term="yearly report"></category></entry><entry><title>When AIs must overcome the data</title><link href="https://gael-varoquaux.info/science/when-ais-must-overcome-the-data.html" rel="alternate"></link><published>2024-12-22T00:00:00+01:00</published><updated>2024-12-22T00:00:00+01:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-12-22:/science/when-ais-must-overcome-the-data.html</id><summary type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
+&lt;img alt="Image generated with &amp;quot;ChatGPT&amp;quot;, with the prompt &amp;quot;Please generate an image of a robot arm wrestling a figure made of numbers. This figure does not look like a robot, but more like a human, however it is made of numbers.&amp;quot;" class="small align-right" src="../science/attachments/robot_wresting_numbers.jpg" style="width: 50%;" /&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/quand-lia-doit-depasser-les-donnees-2126369"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Improving conversational artificial intelligences or simpler prediction engines involves overcoming biases, that is, going beyond the limits of data. But the notion of bias is subtle, as it depends on the goals.&lt;/p&gt;
+&lt;img alt="Image generated with &amp;quot;ChatGPT&amp;quot;, with the prompt &amp;quot;Please generate an image of a robot arm wrestling a figure made of numbers. This figure does not look like a robot, but more like a human, however it is made of numbers.&amp;quot;" class="small align-right" src="../science/attachments/robot_wresting_numbers.jpg" style="width: 50%;" /&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/quand-lia-doit-depasser-les-donnees-2126369"&gt;Les Echos&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In 2023, Microsoft’s conversational AI insulted users.
+Salary-recommendation engines ignore women’s degrees to underpay them. At
+the start of the Covid-19 pandemic, predictions of hospital stays
+consistently underestimated the duration. These three issues all stem
+from the same failure: predictive engines, artificial intelligences, that
+have learned from biases. The rude conversational AI replicated its
+training texts, some of which came from internet forums where politeness
+is sometimes overlooked. The medical AI only considered finished
+hospitalizations, and, as the epidemic had just begun, only patients
+with mild forms had already been discharged, while the more seriously ill
+remained hospitalized.&lt;/p&gt;
+&lt;p&gt;To obtain an AI that doesn’t say nonsense, the biases must be
+“corrected.” The problem of too-short observation windows is a classic
+issue in medical statistics: more importance must be placed on the few
+individuals who have been sick for a long time. A similar solution is
+used to improve conversational AIs: weighting the training text sources
+based on the deviation from the desired behavior.&lt;/p&gt;
+&lt;div class="section" id="aligning-on-which-values"&gt;
+&lt;h2&gt;Aligning on which values?&lt;/h2&gt;
+&lt;p&gt;The problem of bias is universal in statistics. And modern AIs are
+statistical because they learn from data. The notion of bias is very
+relative. It should be understood as a gap between the available data and
+the desired behavior. Therefore, &lt;strong&gt;there is no such thing as unbiased data,
+or a universal bias correction&lt;/strong&gt;. Much of the effort to improve AIs focuses
+on reducing this gap between training and the desired behavior.&lt;/p&gt;
+&lt;p&gt;For example, when training AIs for autonomous vehicles, one difficulty is
+that the data contains very few traffic accidents. Simulators are
+sometimes used to fill this gap. They are inherently less rich than
+reality and are mixed with real-world driving. There is a well-controled
+gap between the resulting mixture and typical driving, this gap is there
+to put emphasis on safety requirements in unfavorable scenarios. This is
+another form of data correction.&lt;/p&gt;
+&lt;p&gt;Just as the notion of data bias depends on how well the data match a
+targeted use, an AI does not produce absolute or objective truth. Without
+corrections, it simply replicates its behavior based on what it has
+observed. And when corrections are made, the whole question is how to
+correct it. For powerful AIs, we then talk about “alignment” towards
+goals and values. As AI incorporates the values of its designers, one
+might wonder whether the same AI can be socially acceptable in all
+cultures.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>Do AIs reason or recite?</title><link href="https://gael-varoquaux.info/science/do-ais-reason-or-recite.html" rel="alternate"></link><published>2024-10-19T00:00:00+02:00</published><updated>2024-10-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-10-19:/science/do-ais-reason-or-recite.html</id><summary type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
+&lt;img alt="Image generated with &amp;quot;ChatGPT&amp;quot;, with the prompt &amp;quot;Please generate an image of a robot with a stream of numbers coming out of his mouth. The robot is on the left, facing right, and the numbers flow, as if they were sound.&amp;quot;" class="small align-right" src="../science/attachments/robot_numbers_flow_mouth.jpg" style="width: 50%;" /&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-raisonnent-elles-ou-recitent-elles-2103079"&gt;Les Echos&lt;/a&gt;. I updated it with new …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Despite their apparent intelligence, conversational artificial intelligences often lack logic. The debate rages on: do they reason or do they recite snatches of text memorized on the Internet?&lt;/p&gt;
+&lt;img alt="Image generated with &amp;quot;ChatGPT&amp;quot;, with the prompt &amp;quot;Please generate an image of a robot with a stream of numbers coming out of his mouth. The robot is on the left, facing right, and the numbers flow, as if they were sound.&amp;quot;" class="small align-right" src="../science/attachments/robot_numbers_flow_mouth.jpg" style="width: 50%;" /&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This post was originally published in French as part of my scientific
+chronicle in &lt;a class="reference external" href="https://www.lesechos.fr/idees-debats/sciences-prospective/les-ia-raisonnent-elles-ou-recitent-elles-2103079"&gt;Les Echos&lt;/a&gt;. I updated it with new references.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Conversational AI, or large language models, are sometimes seen as the
+gateway to general artificial intelligence. ChatGPT, for example, can
+answer questions asked at the International Mathematical Olympiad. And
+yet, on other, seemingly much simpler questions, ChatGPT makes surprising
+mistakes. What aspects of conversational AI intelligence explain its
+ability to solve some problems and not others?&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://arxiv.org/abs/2309.13638"&gt;Thomas McCoy and co-authors&lt;/a&gt;
+conjecture that it has to do with their underlying model of
+autoregression: technically, these AIs are trained to complete texts
+found on the Internet. If an AI is very good at calculating (9/5) x + 32,
+but not (7/5) x + 31, it is because the first formula corresponds to the
+conversion of degrees Celsius to Fahrenheit, a very frequent conversion
+on the Internet, while the second does not correspond to any particular
+formula. Conversational AIs would therefore be good at reproducing what
+they’ve already seen. Indeed, numerous studies have shown that they have
+a certain tendency to reproduce snippets of known text. So, if an AI can
+solve problems from the International Mathematical Olympiad, is it simply
+because it has memorized the answer?&lt;/p&gt;
+&lt;div class="section" id="something-new"&gt;
+&lt;h2&gt;Something new?&lt;/h2&gt;
+&lt;p&gt;In terms of intelligence, inventing a new mathematical demonstration
+requires mastering abstractions and the ability to string together
+complicated logical reasoning with an imposed start and finish. This
+seems much more difficult than memorizing a demonstration. This is one of
+the traditional oppositions in machine learning, the line of research
+that gave rise to today’s AIs: memorizing is one thing, knowing how to
+generalize is another. For example, if I memorize all the additions
+between two numbers smaller than ten, I cannot extrapolate beyond that. To
+go further, I need to master the logic of addition… or memorize more.&lt;/p&gt;
+&lt;p&gt;And precisely, conversational AIs have an enormous capacity for
+memorization, and have been trained on almost the entire Internet. Given
+a question, they can often dip into their memory to find answers. So, are
+they intelligent or just have a great memory? Scientists are still
+debating the importance of memory to their abilities. Some argue that
+their storage capacity is ultimately limited by the size of the Internet.
+Others wonder to what extent the impressive successes highlighted are not
+on tasks already solved on the Internet, questioning their ability to do
+anything new.&lt;/p&gt;
+&lt;p&gt;But could memorization be an aspect of intelligence? In 1987, Lenat and
+Feigenbaum conjectured that, for a cognitive agent, accumulating
+knowledge enables it to solve new tasks with less learning. Perhaps the
+intelligence of conversational AI lies in knowing how to pick up the
+right bits of information, and combine them.&lt;/p&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;Related academic work:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;a class="reference external" href="https://www.pnas.org/doi/10.1073/pnas.2322420121"&gt;Embers of autoregression show how large language models are shaped
+by the problem they are trained to solve&lt;/a&gt;, R. Thomas McCoy,
+Shunyu Yao, Dan Friedman, Mathew D. Hardy, and Thomas L. Griffiths,
+PNAS 2024 (&lt;a class="reference external" href="https://arxiv.org/abs/2309.13638"&gt;ArXiv&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Princeton researchers show that properties of large language models
+(LLMs) are governed by the data that they are trained on, including
+for they arithmetics abilities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;&lt;a class="reference external" href="https://arxiv.org/abs/2410.05229"&gt;GSM-Symbolic: Understanding the Limitations of Mathematical
+Reasoning in Large Language Models&lt;/a&gt;, Iman Mirzadeh, Keivan Alizadeh
+Hooman Shahrokhi, Oncel Tuzel, Samy Bengio, Mehrdad Farajtabar&lt;/p&gt;
+&lt;p&gt;Apple researchers show that LLMs solve mathematical challenge via
+probabilistic &lt;strong&gt;pattern matching&lt;/strong&gt; on previously seen examples, rather
+than logical reasonning.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="topic"&gt;
+&lt;p class="topic-title"&gt;AI chronicles&lt;/p&gt;
+&lt;p&gt;Find all my AI chronicles &lt;a class="reference external" href="https://gael-varoquaux.info/tag/ai-chronicle.html"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The goals of these “AI chronicles” is to introduce concepts of AI to a broader public, staying at a very very high level.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content><category term="science"></category><category term="science"></category><category term="research"></category><category term="AI"></category><category term="chronicle"></category><category term="AI chronicle"></category></entry><entry><title>CARTE: toward table foundation models</title><link href="https://gael-varoquaux.info/science/carte-toward-table-foundation-models.html" rel="alternate"></link><published>2024-07-19T00:00:00+02:00</published><updated>2024-07-19T00:00:00+02:00</updated><author><name>Gaël Varoquaux</name></author><id>tag:gael-varoquaux.info,2024-07-19:/science/carte-toward-table-foundation-models.html</id><summary type="html">&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;Foundation models, pretrained and readily usable for many downstream
 tasks, have changed the way we process text, images, and sound. Can we
